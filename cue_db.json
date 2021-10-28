@@ -1208,7 +1208,9 @@
       "role":"stagemanager",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"https://xrtheater.live/scenes/C8WoeGB"},
+                 "link":"https://xrtheater.live/scenes/C8WoeGB",
+                "refreshUI": true
+                },
       "trig": {"type": "button",
                "time": 0}
     },
@@ -1672,6 +1674,7 @@
       "action": {"type": "change_scene",
                  "link":"https://xrtheater.live/scenes/9rF2nTR"},
       "trig": {"type": "button",
+        "sceneLink": "https://xrtheater.live/scenes/C8WoeGB",
                "time": 0}
     },
     {
