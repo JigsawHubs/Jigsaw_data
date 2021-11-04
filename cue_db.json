@@ -1848,7 +1848,7 @@
                   "name" : "Brendan"
                   },
                   "action": {"type": "change_avatar",
-                             "link":"https://onboardxr.github.io/onboard_json/avatar/NPC_A_6.glb"}
+                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_6.glb"}
                 }
                 },
       "trig": {"type": "button",
@@ -1890,7 +1890,7 @@
                   "name" : "part1"
                   },
                   "action": {"type": "change_avatar",
-                             "link":"https://onboardxr.github.io/onboard_json/avatar/NPC_A_7.glb"}
+                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_7.glb"}
                 }
                 },
       "trig": {"type": "button",
@@ -1911,7 +1911,7 @@
                   "name" : "part2"
                   },
                   "action": {"type": "change_avatar",
-                             "link":"https://onboardxr.github.io/onboard_json/avatar/NPC_A_8.glb"}
+                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_8.glb"}
                 }
                 },
       "trig": {"type": "button",
@@ -1932,7 +1932,7 @@
                   "name" : "part3"
                   },
                   "action": {"type": "change_avatar",
-                             "link":"https://onboardxr.github.io/onboard_json/avatar/NPC_A_9.glb"}
+                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_9.glb"}
                 }
                 },
       "trig": {"type": "button",
@@ -1953,7 +1953,7 @@
                   "name" : "part4"
                   },
                   "action": {"type": "change_avatar",
-                             "link":"https://onboardxr.github.io/onboard_json/avatar/NPC_A_10.glb"}
+                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_10.glb"}
                 }
                 },
       "trig": {"type": "button",
@@ -1965,7 +1965,7 @@
       "role": "stagemanager",
       "target": { "type": "glb",
                   "dest": "url",
-                  "src":  "https://onboardxr.github.io/onboard_json/object/NPC_A_5.glb"},
+                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_5.glb"},
       "action": {"type": "spawn_item",
                 "applyGravityOnSpawn": true,
                  "pos": {"x": -0.8558118380201258, "y": 0.18801773071321337, "z": 3.273670557199318},
@@ -1980,7 +1980,7 @@
       "role": "stagemanager",
       "target": { "type": "glb",
                   "dest": "url",
-                  "src":  "https://onboardxr.github.io/onboard_json/object/NPC_A_5.glb"},
+                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_5.glb"},
       "action": {"type": "spawn_item",
         "applyGravityOnSpawn": true,
                  "pos": {"x": 4.984077377171349, "y": 0.18801773071289407, "z": 2.4457790309856193},
@@ -2001,7 +2001,7 @@
                  "name": "NPC_SM_2_how_to_walk",
                  "target": { "role": "participant" },
                  "action": { "type": "load_360_video",
-                  "src" : "https://onboardxr.github.io/onboard_json/video/NPC_A_13-14.glb"}
+                  "src" : "https://jigsawhubs.github.io/Jigsaw_data/video/NPC_A_13-14.glb"}
                 }
               },
     "trig": {"type": "button",
