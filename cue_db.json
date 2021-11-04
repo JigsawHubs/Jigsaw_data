@@ -1830,7 +1830,7 @@
       "role":"stagemanager",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"https://onboardxr.live/scenes/TdzdXTr"},
+                 "link":"https://onboardxr.live/scenes/De4qP7u"},
       "trig": {"type": "button",
                "time": 0}
     },
@@ -1853,6 +1853,96 @@
                 },
       "trig": {"type": "button",
                 "groupChain" : "NPC_SM_2_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_2_brnd_starting_scale",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "NPC_SM_2_brnd_starting_scale",
+                  "target": { "role" : "participant",
+                    "aspect" : "scale" },
+                  "action": { "type": "manipulate_avatar",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 0,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "linear",
+                     "duration": 0
+                     },
+                     "timelines" : [
+                      {"x": 400, "y": 400, "z": 400}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_2_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_2_brnd_starting_position",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "NPC_SM_2_brnd_starting_position",
+                  "target": { "role" : "participant",
+                    "aspect" : "position" },
+                  "action": { "type": "manipulate_avatar",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 0,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "linear",
+                     "duration": 0
+                     },
+                     "timelines" : [
+                      {"x": -19.5, "y": -10, "z": -388.5}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_2_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_2_brnd_starting_rotation",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "NPC_SM_2_brnd_starting_rotation",
+                  "target": { "role" : "participant",
+                    "aspect" : "rotation" },
+                  "action": { "type": "manipulate_avatar",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 0,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "linear",
+                     "duration": 0
+                     },
+                     "timelines" : [
+                       {"x": 1.5707963267948966, "y":0, "z":0}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_2_group",
                "time": 0}
     },
     {
@@ -1896,7 +1986,7 @@
                 },
       "trig": {"type": "button",
         "groupChain" : "NPC_SM_2_group",
-               "time": 0}
+               "time": 3000}
     },
     {
       "name": "NPC_SM_2_part1_to_char",
@@ -2071,14 +2161,62 @@
                "time": 0}
     },
     {
+      "name": "NPC_SM_2_participants_starting_rotation",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "NPC_SM_2_participants_starting_rotation",
+                  "target": { "role" : "participant",
+                    "aspect" : "rotation" },
+                  "action": { "type": "manipulate_avatar",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 0,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "linear",
+                     "duration": 0
+                     },
+                     "timelines" : [
+                       {"x": -1.5707963267948966, "y":3.141592653589793, "z":0}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_2_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_2_disable_part_motion",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "NPC_SM_2_disable_part_motion",
+                   "target": { "role": "participant" },
+                   "action": { "type": "socket_toggle_movement",
+                    "movement" : true}
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_2_group",
+               "time": 0}
+    },
+    {
       "name": "NPC_SM_2_spawn_throwing_rock_1",
       "role": "stagemanager",
       "target": { "type": "glb",
                   "dest": "url",
                   "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_5.glb"},
       "action": {"type": "spawn_item",
-                "applyGravityOnSpawn": true,
-                 "pos": {"x": -0.8558118380201258, "y": 0.18801773071321337, "z": 3.273670557199318},
+                "applyGravityOnSpawn": false,
+                 "pos": {"x": 3.5, "y": 334.5, "z": -54},
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
@@ -2092,8 +2230,8 @@
                   "dest": "url",
                   "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_5.glb"},
       "action": {"type": "spawn_item",
-        "applyGravityOnSpawn": true,
-                 "pos": {"x": 4.984077377171349, "y": 0.18801773071289407, "z": 2.4457790309856193},
+        "applyGravityOnSpawn": false,
+                 "pos": {"x": 0, "y": 334.5, "z": -54},
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
@@ -2127,7 +2265,7 @@
                "function_name": "cueSocket",
                "_cue": { 
                  "name": "NPC_SM_3",
-                 "target": { "role": "stagemanager" },
+                 "target": { "role": "participant" },
                  "action": { "type": "play_360_cutscene",
                   "itemMap" : "NPC_SM_2_how_to_walk",
                   "fadeDuration" : 3000}
