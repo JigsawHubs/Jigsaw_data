@@ -1867,6 +1867,7 @@
                   "target": { "role" : "participant",
                     "aspect" : "scale" },
                   "action": { "type": "manipulate_avatar",
+                    "attr": "object3D",
                     "anime": {
                      "targets": "",
                      "delay" : 0,
@@ -1897,6 +1898,7 @@
                   "target": { "role" : "participant",
                     "aspect" : "position" },
                   "action": { "type": "manipulate_avatar",
+                    "attr": "object3D",
                     "anime": {
                      "targets": "",
                      "delay" : 0,
@@ -1927,6 +1929,7 @@
                   "target": { "role" : "participant",
                     "aspect" : "rotation" },
                   "action": { "type": "manipulate_avatar",
+                    "attr": "object3D",
                     "anime": {
                      "targets": "",
                      "delay" : 0,
@@ -2151,6 +2154,7 @@
                     "aspect" : "rotation" },
                   "action": { "type": "manipulate_avatar",
                     "anime": {
+                      "attr": "object3D",
                      "targets": "",
                      "delay" : 0,
                      "loop": false,
