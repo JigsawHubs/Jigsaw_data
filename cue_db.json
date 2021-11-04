@@ -1864,7 +1864,8 @@
                  "function_name": "cueSocket",
                  "_cue": { 
                   "name": "NPC_SM_2_brnd_starting_scale",
-                  "target": { "role" : "participant",
+                  "target": { "role" : "individual",
+                    "name" : "Brendan",
                     "aspect" : "scale" },
                   "action": { "type": "manipulate_avatar",
                     "attr": "object3D",
@@ -1895,7 +1896,8 @@
                  "function_name": "cueSocket",
                  "_cue": { 
                   "name": "NPC_SM_2_brnd_starting_position",
-                  "target": { "role" : "participant",
+                  "target": { "role" : "individual",
+                    "name" : "Brendan",
                     "aspect" : "position" },
                   "action": { "type": "manipulate_avatar",
                     "attr": "object3D",
@@ -1926,7 +1928,8 @@
                  "function_name": "cueSocket",
                  "_cue": { 
                   "name": "NPC_SM_2_brnd_starting_rotation",
-                  "target": { "role" : "participant",
+                  "target": { "role" : "individual",
+                    "name" : "Brendan",
                     "aspect" : "rotation" },
                   "action": { "type": "manipulate_avatar",
                     "attr": "object3D",
@@ -2153,8 +2156,8 @@
                   "target": { "role" : "participant",
                     "aspect" : "rotation" },
                   "action": { "type": "manipulate_avatar",
+                    "attr": "object3D",
                     "anime": {
-                      "attr": "object3D",
                      "targets": "",
                      "delay" : 0,
                      "loop": false,
