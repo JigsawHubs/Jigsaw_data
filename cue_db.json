@@ -1946,28 +1946,6 @@
                "time": 0}
     },
     {
-      "name": "NPC_SM_2_brnd_to_waypoint",
-      "role": "stagemanager",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": {
-                  "name": "NPC_SM_2_brnd_to_waypoint",
-                  "role": "stagemanager",
-                  "target": { "role": "individual",
-                    "name": "Brendan"},
-                  "action": {"type": "jump_to_waypoint",
-                             "anchor":"#NPCSM2brndstart"},
-                  "trig": {"type": "button",
-                           "time": 0}
-                }
-                },
-      "trig": {"type": "button",
-                "groupChain" : "NPC_SM_2_group",
-               "time": 0}
-    },
-    {
       "name": "NPC_SM_2_brnd_mute",
       "role": "stagemanager",
       "target": { },
