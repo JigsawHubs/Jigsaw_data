@@ -1205,7 +1205,7 @@
     },
     {
       "name": "Change_to_LGTTB",
-      "role":"stagemanager",
+      "role":"test",
       "target": { },
       "action": {"type": "change_scene",
                  "link":"https://onboardxr.live/scenes/gmLnLxz",
@@ -1216,7 +1216,7 @@
     },
     {
       "name": "Brendan_starting_position",
-      "role": "stagemanager",
+      "role": "test",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -1238,7 +1238,7 @@
     },
     {
       "name": "Brendan2_starting_position",
-      "role": "stagemanager",
+      "role": "test",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -1261,7 +1261,7 @@
     },
     {
       "name": "change_Brendan_to_Octopus",
-      "role": "stagemanager",
+      "role": "test",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -1282,7 +1282,7 @@
     },
     {
       "name": "change_Brendan2_to_Invis",
-      "role": "stagemanager",
+      "role": "test",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -1303,7 +1303,7 @@
     },
     {
       "name": "music_rolloff",
-      "role": "stagemanager",
+      "role": "test",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -1324,7 +1324,7 @@
     },
     {
       "name": "music_rolloff",
-      "role": "stagemanager",
+      "role": "test",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -1345,7 +1345,7 @@
     },
     {
       "name": "music_rolloff",
-      "role": "stagemanager",
+      "role": "test",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -1366,7 +1366,7 @@
     },
     {
       "name": "music_rolloff",
-      "role": "stagemanager",
+      "role": "test",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -1400,7 +1400,7 @@
     },
     {
       "name": "load_heart_A",
-      "role": "stagemanager",
+      "role": "test",
       "target": { "type": "glb",
                   "dest": "url",
                   "src":  "https://xrtheater-assets.xrtheater.live/files/d3238919-696f-448a-84f6-b9cf0e7e26c9.glb"},
@@ -1414,7 +1414,7 @@
     },
     {
       "name": "Audience_lock_waypoint",
-      "role": "stagemanager",
+      "role": "test",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -1456,7 +1456,7 @@
     },
     {
       "name": "change_Brendan_to_Invis",
-      "role": "stagemanager",
+      "role": "test",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -1477,7 +1477,7 @@
     },
     {
       "name": "into_heart_shrink_av",
-      "role": "stagemanager",
+      "role": "test",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -1507,7 +1507,7 @@
     },
     {
       "name": "into_heart_grow_av",
-      "role": "stagemanager",
+      "role": "test",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -1635,7 +1635,7 @@
     },
     {
       "name": "MoveHeartA",
-      "role": "stagemanager",
+      "role": "test",
       "target": { "type": "glb",
                   "dest": "local",
                   "src": "load_heart_A"},
@@ -1652,7 +1652,7 @@
     },
     {
       "name": "MoveHeartA",
-      "role": "stagemanager",
+      "role": "test",
       "target": { "type": "glb",
                   "dest": "local",
                   "src": "load_heart_A"},
@@ -1669,7 +1669,7 @@
     },
     {
       "name": "Change_to_UW",
-      "role":"stagemanager",
+      "role":"test",
       "target": { },
       "action": {"type": "change_scene",
                  "link":"https://onboardxr.live/scenes/7RNhFMc"},
@@ -1755,7 +1755,7 @@
     },
     {
       "name": "change_aud_avatar_back",
-      "role": "stagemanager",
+      "role": "test",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -1771,7 +1771,7 @@
     },
     {
       "name": "ghost_to_spawn",
-      "role": "stagemanager",
+      "role": "test",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -1824,6 +1824,220 @@
                 },
       "trig": {"type": "button",
                "time": 0}
-    }
+    },
+    {
+      "name": "NPC_SM_1",
+      "role":"stagemanager",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"https://onboardxr.live/scenes/TdzdXTr"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_2_brnd_to_hero",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "NPC_SM_2_brnd_to_hero",
+                  "role":"stagemanager",
+                  "target": { "role" : "individual",
+                  "name" : "Brendan"
+                  },
+                  "action": {"type": "change_avatar",
+                             "link":"https://onboardxr.github.io/onboard_json/avatar/NPC_A_6.glb"}
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "NPC_SM_2_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_2_brnd_mute",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "NPC_SM_2_brnd_mute",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["Brendan"],
+                    "rolloff": 1000000,
+                    "refDistance": 0.00000001
+                    }
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_2_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_2_part1_to_char",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "NPC_SM_2_part1_to_char",
+                  "role":"stagemanager",
+                  "target": { "role" : "individual",
+                  "name" : "part1"
+                  },
+                  "action": {"type": "change_avatar",
+                             "link":"https://onboardxr.github.io/onboard_json/avatar/NPC_A_7.glb"}
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "NPC_SM_2_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_2_part2_to_char",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "NPC_SM_2_part2_to_char",
+                  "role":"stagemanager",
+                  "target": { "role" : "individual",
+                  "name" : "part2"
+                  },
+                  "action": {"type": "change_avatar",
+                             "link":"https://onboardxr.github.io/onboard_json/avatar/NPC_A_8.glb"}
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "NPC_SM_2_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_2_part3_to_char",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "NPC_SM_2_part3_to_char",
+                  "role":"stagemanager",
+                  "target": { "role" : "individual",
+                  "name" : "part3"
+                  },
+                  "action": {"type": "change_avatar",
+                             "link":"https://onboardxr.github.io/onboard_json/avatar/NPC_A_9.glb"}
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "NPC_SM_2_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_2_part4_to_char",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "NPC_SM_2_part4_to_char",
+                  "role":"stagemanager",
+                  "target": { "role" : "individual",
+                  "name" : "part4"
+                  },
+                  "action": {"type": "change_avatar",
+                             "link":"https://onboardxr.github.io/onboard_json/avatar/NPC_A_10.glb"}
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "NPC_SM_2_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_2_spawn_throwing_rock_1",
+      "role": "stagemanager",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://onboardxr.github.io/onboard_json/object/NPC_A_5.glb"},
+      "action": {"type": "spawn_item",
+                "applyGravityOnSpawn": true,
+                 "pos": {"x": -0.8558118380201258, "y": 0.18801773071321337, "z": 3.273670557199318},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_2_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_2_spawn_throwing_rock_2",
+      "role": "stagemanager",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://onboardxr.github.io/onboard_json/object/NPC_A_5.glb"},
+      "action": {"type": "spawn_item",
+        "applyGravityOnSpawn": true,
+                 "pos": {"x": 4.984077377171349, "y": 0.18801773071289407, "z": 2.4457790309856193},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_2_group",
+               "time": 0}
+    },
+    {
+    "name": "NPC_SM_2_how_to_walk",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                 "name": "NPC_SM_2_how_to_walk",
+                 "target": { "role": "participant" },
+                 "action": { "type": "load_360_video",
+                  "src" : "https://onboardxr.github.io/onboard_json/video/NPC_A_13-14.glb"}
+                }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_2_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_3",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                 "name": "NPC_SM_3",
+                 "target": { "role": "stagemanager" },
+                 "action": { "type": "play_360_cutscene",
+                  "itemMap" : "NPC_SM_2_how_to_walk",
+                  "fadeDuration" : 3000}
+              }
+              },
+    "trig": {"type": "button",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_4",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "TBD"},
+    "action": {"type": "spawn_item",
+               "pos": "TBD",
+               "rot": {"x": 0, "y":0, "z":0},
+               "scale": {"x": 1, "y":1, "z":1}},
+    "trig": {"type": "button",
+             "time": 0}
+  }
       ]
 }
