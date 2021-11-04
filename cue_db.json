@@ -1856,6 +1856,28 @@
                "time": 0}
     },
     {
+      "name": "NPC_SM_2_brnd_to_waypoint",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "NPC_SM_2_brnd_to_waypoint",
+                  "role": "stagemanager",
+                  "target": { "role": "individual",
+                    "name": "Brendan"},
+                  "action": {"type": "jump_to_waypoint",
+                             "anchor":"#NPCSM2brndstart"},
+                  "trig": {"type": "button",
+                           "time": 0}
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "NPC_SM_2_group",
+               "time": 0}
+    },
+    {
       "name": "NPC_SM_2_brnd_mute",
       "role": "stagemanager",
       "target": { },
@@ -1961,6 +1983,94 @@
                "time": 0}
     },
     {
+      "name": "NPC_SM_2_part1_to_waypoint",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "NPC_SM_2_part1_to_waypoint",
+                  "role": "stagemanager",
+                  "target": { "role": "individual",
+                    "name": "part1"},
+                  "action": {"type": "jump_to_waypoint",
+                             "anchor":"#NPCSM2Aud1"},
+                  "trig": {"type": "button",
+                           "time": 0}
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "NPC_SM_2_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_2_part2_to_waypoint",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "NPC_SM_2_part2_to_waypoint",
+                  "role": "stagemanager",
+                  "target": { "role": "individual",
+                    "name": "part2"},
+                  "action": {"type": "jump_to_waypoint",
+                             "anchor":"#NPCSM2Aud2"},
+                  "trig": {"type": "button",
+                           "time": 0}
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "NPC_SM_2_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_2_part3_to_waypoint",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "NPC_SM_2_part3_to_waypoint",
+                  "role": "stagemanager",
+                  "target": { "role": "individual",
+                    "name": "part3"},
+                  "action": {"type": "jump_to_waypoint",
+                             "anchor":"#NPCSM2Aud3"},
+                  "trig": {"type": "button",
+                           "time": 0}
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "NPC_SM_2_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_2_part4_to_waypoint",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "NPC_SM_2_part4_to_waypoint",
+                  "role": "stagemanager",
+                  "target": { "role": "individual",
+                    "name": "part4"},
+                  "action": {"type": "jump_to_waypoint",
+                             "anchor":"#NPCSM2Aud4"},
+                  "trig": {"type": "button",
+                           "time": 0}
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "NPC_SM_2_group",
+               "time": 0}
+    },
+    {
       "name": "NPC_SM_2_spawn_throwing_rock_1",
       "role": "stagemanager",
       "target": { "type": "glb",
@@ -2001,7 +2111,7 @@
                  "name": "NPC_SM_2_how_to_walk",
                  "target": { "role": "participant" },
                  "action": { "type": "load_360_video",
-                  "src" : "https://jigsawhubs.github.io/Jigsaw_data/video/NPC_A_13-14.glb"}
+                  "src" : "https://jigsawhubs.github.io/Jigsaw_data/video/NPC_A_13-14.gif"}
                 }
               },
     "trig": {"type": "button",
