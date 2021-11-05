@@ -2271,6 +2271,48 @@
                "scale": {"x": 1, "y":1, "z":1}},
     "trig": {"type": "button",
              "time": 0}
+  },
+  {
+    "name": "NPC_SM_5_anim_position_track",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                 "name": "NPC_SM_5_anim_position_track",
+                 "target": { "role": ["participant", "stagemanager"]},
+                 "action": { "type" : "lock_waypoint",
+                   "waypoint" : "NPCWaypoint1",
+                   "attr": "object3D",
+                   "recallAud" : true,
+                   "maxDist" : 5,
+                   "anime" : {
+                    "targets": "position",
+                    "delay" : 0,
+                    "loop": false,
+                    "autoplay": true,
+                    "easing": "easeOutSine",
+                    "duration": 1000
+                    },
+                    "timelines" : [
+                      {"x": -12.652003368557434, "y": 75.6824835653678, "z": 11.248309762504245, "delay": 1000},
+                      {"x": -13.856772620807321, "y": 80.53636727468498, "z": 113.11095380654953,"delay": 0},
+                      {"x": -4.280754121461163, "y": 83.58976219280288, "z": 131.5111232485526},
+                      {"x": 2.6455185618095154, "y": 81.25326255624206, "z": 135.94028382579597},
+                      {"x": 14.83102221620128, "y": 77.00437326524528, "z": 149.0321940325511},
+                      {"x": 231.09301500949138, "y": 44.25090660689197, "z": 141.28363338311203},
+                      {"x": 386.4284378857851, "y": 106.1139738299748, "z": 56.580869495368894},
+                      {"x": 279.4561940760713, "y": 28.611096009584365, "z": 73.25164732425979},
+                      {"x": -11.56656233441497, "y": 13.920090560913119, "z": 74.16158308150203}
+                    ]
+                  }
+                }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_5_group",
+             "time": 0}
   }
+
       ]
 }
