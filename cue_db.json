@@ -2249,49 +2249,51 @@
                   "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/99f9f039-b02a-41f6-91a3-30d9fdb23c58.glb"},
       "action": {"type": "spawn_item",
         "applyGravityOnSpawn": false,
-                 "pos": {"x": 2, "y": 337, "z": -54.5},
-                 "rot": {"x": 89.99999999999999, "y":0, "z":0},
+                 "pos": {"x": 2.1164517402648926, "y": 338.6104736328125, "z": -50.629791259765625},
+                 "rot": {"x": 1.5707963267948966, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
         "groupChain" : "NPC_SM_2_group",
                "time": 0}
     },
     {
-    "name": "NPC_SM_2_how_to_walk",
-    "role": "stagemanager",
-    "target": { },
-    "action": {"type": "call_method_from_object",
-               "object_name": "sockSys",
-               "function_name": "cueSocket",
-               "_cue": { 
-                 "name": "NPC_SM_2_how_to_walk",
-                 "target": { "role": "participant" },
-                 "action": { "type": "load_360_video",
-                  "src" : "https://jigsawhubs.github.io/Jigsaw_data/video/NPC_A_13-14.gif"}
-                }
-              },
-    "trig": {"type": "button",
-      "groupChain" : "NPC_SM_2_group",
-             "time": 0}
-  },
-  {
-    "name": "NPC_SM_3",
-    "role": "stagemanager",
-    "target": { },
-    "action": {"type": "call_method_from_object",
-               "object_name": "sockSys",
-               "function_name": "cueSocket",
-               "_cue": { 
-                 "name": "NPC_SM_3",
-                 "target": { "role": "participant" },
-                 "action": { "type": "play_360_cutscene",
-                  "itemMap" : "NPC_SM_2_how_to_walk",
-                  "fadeDuration" : 3000}
-              }
-              },
-    "trig": {"type": "button",
-             "time": 0}
-  },
+      "name": "NPC_SM_2_how_to_walk",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "NPC_SM_2_how_to_walk",
+                   "target": { "role" : "participant"},
+                   "action": { "type": "spawn_360_gif",
+                    "src": "https://jigsawhubs.github.io/Jigsaw_data/video/NPC_A_13-14.gif"
+                    }
+                  }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_3",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_play_360_gif",
+                   "target": { "role" : "participant"},
+                   "action": { "type": "play_360_gif",
+                    "itemMap": "NPC_SM_2_how_to_walk",
+                    "fadeDuration": 3000,
+                    "fadeDelay": 3000
+                    }
+                  }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
   {
     "name": "NPC_SM_4",
     "role": "stagemanager",
@@ -2325,19 +2327,16 @@
                     "delay" : 0,
                     "loop": false,
                     "autoplay": true,
-                    "easing": "easeOutSine",
+                    "easing": "linear",
                     "duration": 1000
                     },
                     "timelines" : [
-                      {"x": -12.652003368557434, "y": 75.6824835653678, "z": 11.248309762504245, "delay": 1000},
-                      {"x": -13.856772620807321, "y": 80.53636727468498, "z": 113.11095380654953,"delay": 0},
-                      {"x": -4.280754121461163, "y": 83.58976219280288, "z": 131.5111232485526},
-                      {"x": 2.6455185618095154, "y": 81.25326255624206, "z": 135.94028382579597},
-                      {"x": 14.83102221620128, "y": 77.00437326524528, "z": 149.0321940325511},
-                      {"x": 231.09301500949138, "y": 44.25090660689197, "z": 141.28363338311203},
-                      {"x": 386.4284378857851, "y": 106.1139738299748, "z": 56.580869495368894},
-                      {"x": 279.4561940760713, "y": 28.611096009584365, "z": 73.25164732425979},
-                      {"x": -11.56656233441497, "y": 13.920090560913119, "z": 74.16158308150203}
+                      {"x": -6.24986340858672, "y": 207.53865741650947, "z": 28.03797361500431, "delay": 1000, "easing" : "easeInSine"},
+                      {"x": -8.430758165944011, "y": 175.35186353476817, "z": 129.54606952942618, "delay": 0, "easing": "linear"},
+                      {"x": 137.28702215817535, "y": 175.6124970906266, "z": 98.95628265125501, "delay": 0, "easing": "linear"},
+                      {"x": 219.45314474584418, "y": 223.42106233286123, "z": 10.741536798002995, "delay": 1000, "easing": "easeOutSine"},
+                      {"x": 176.7347928969658, "y": 191.30843739169345, "z": 10.741536798002995, "delay": 1000, "easing": "easeInSine"},
+                      {"x": -4.435971920738762, "y": 174.5540570068354, "z": 10.741536798002995,"delay": 1000, "easing": "linear"}
                     ]
                   }
                 }
