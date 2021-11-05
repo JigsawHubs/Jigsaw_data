@@ -2432,11 +2432,11 @@
                 "action": { "type": "manipulate_avatar",
                   "attr": "object3D",
                   "anime": {
-                   "targets": "",
+                   "targets": "rotation",
                    "delay" : 1000,
                    "loop": false,
                    "autoplay": false,
-                   "easing": "linear",
+                   "easing": "easeInOutSine",
                    "duration": 1000
                    },
                    "timelines" : [
