@@ -2521,6 +2521,102 @@
       "trig": {"type": "button",
         "groupChain" : "NPC_SM_5_group",
                 "time": 0}
+      },
+      {
+        "name": "NPC_SM_5_brnd_scale",
+        "role": "stagemanager",
+        "target": { },
+        "action": {"type": "call_method_from_object",
+                   "object_name": "sockSys",
+                   "function_name": "cueSocket",
+                   "_cue": { 
+                    "name": "NPC_SM_5_brnd_scale",
+                    "target": { "role" : "individual",
+                      "name" : "Brendan",
+                      "aspect" : "scale" },
+                    "action": { "type": "manipulate_avatar",
+                      "attr": "object3D",
+                      "anime": {
+                       "targets": "",
+                       "delay" : 0,
+                       "loop": false,
+                       "autoplay": false,
+                       "easing": "linear",
+                       "duration": 0
+                       },
+                       "timelines" : [
+                        {"x": 5, "y": 5, "z": 5}
+                       ]
+                     }
+                   }
+                  },
+        "trig": {"type": "button",
+          "groupChain" : "NPC_SM_5_group",
+                 "time": 0}
+      },
+      {
+        "name": "NPC_SM_5_brnd_position",
+        "role": "stagemanager",
+        "target": { },
+        "action": {"type": "call_method_from_object",
+                   "object_name": "sockSys",
+                   "function_name": "cueSocket",
+                   "_cue": { 
+                    "name": "NPC_SM_5_brnd_position",
+                    "target": { "role" : "individual",
+                      "name" : "Brendan",
+                      "aspect" : "position" },
+                    "action": { "type": "manipulate_avatar",
+                      "attr": "object3D",
+                      "anime": {
+                       "targets": "",
+                       "delay" : 0,
+                       "loop": false,
+                       "autoplay": false,
+                       "easing": "linear",
+                       "duration": 0
+                       },
+                       "timelines" : [
+                        {"x": -6.3, "y": 182.5, "z": 47}
+                       ]
+                     }
+                   }
+                  },
+        "trig": {"type": "button",
+          "groupChain" : "NPC_SM_5_group",
+                 "time": 0}
+      },
+      {
+        "name": "NPC_SM_5_brnd_rotation",
+        "role": "stagemanager",
+        "target": { },
+        "action": {"type": "call_method_from_object",
+                   "object_name": "sockSys",
+                   "function_name": "cueSocket",
+                   "_cue": { 
+                    "name": "NPC_SM_5_brnd_rotation",
+                    "target": { "role" : "individual",
+                      "name" : "Brendan",
+                      "aspect" : "rotation" },
+                    "action": { "type": "manipulate_avatar",
+                      "attr": "object3D",
+                      "anime": {
+                       "targets": "",
+                       "delay" : 0,
+                       "loop": false,
+                       "autoplay": false,
+                       "easing": "linear",
+                       "duration": 0
+                       },
+                       "timelines" : [
+                         {"x": 0, "y":0, "z":0}
+                       ]
+                     }
+                   }
+                  },
+        "trig": {"type": "button",
+          "groupChain" : "NPC_SM_5_group",
+                 "time": 0}
       }
       ]
 }
