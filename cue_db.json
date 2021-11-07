@@ -2393,7 +2393,7 @@
                    "waypoint" : "NPCWaypoint1",
                    "attr": "object3D",
                    "recallAud" : true,
-                   "maxDist" : 0.0001,
+                   "maxDist" : 5,
                    "anime" : {
                     "targets": "position",
                     "delay" : 1000,
@@ -2439,7 +2439,7 @@
                    "duration": 1000
                    },
                    "timelines" : [
-                     {"x": 0, "y":3.141592653589793, "z":0, "duration": 5500, "delay": 2000},
+                     {"x": 0, "y":3.141592653589793, "z":0, "duration": 5500, "delay": 3000},
                      {"x": 0, "y":4.71238898038469, "z":0, "delay": 3500, "duration": 2000},
                      {"x": 0, "y":7.853981633974483, "z":0, "delay": 6000, "duration": 1000},
                      {"x": 0, "y":9.42477796076938, "z":0, "delay": 2000, "duration": 3000}
@@ -2450,6 +2450,77 @@
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_5_group",
              "time": 0}
-    }
+    },
+    {
+      "name": "NPC_SM_5_omni_anim_rotation",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "NPC_SM_5_anim_rotation_omni",
+                  "target": { "role": ["participant", "stagemanager"],
+                    "aspect" : "rotation" },
+                  "action": { "type": "move",
+                    "mapItem": "NPC_SM_2_spawn_prop_omni",
+                    "attr": "object3D",
+                    "anime": {
+                     "targets": "rotation",
+                     "delay" : 1000,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "easeInOutSine",
+                     "duration": 1000
+                     },
+                     "timelines" : [
+                       {"x": 0, "y":0, "z":0, "duration": 5500, "delay": 3000},
+                       {"x": 0, "y":1.5707963267948966, "z":0, "delay": 3500, "duration": 2000},
+                       {"x": 0, "y":4.71238898038469, "z":0, "delay": 6000, "duration": 1000},
+                       {"x": 0, "y":6.28318612, "z":0, "delay": 2000, "duration": 3000}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_5_group",
+               "time": 0}
+      },
+      {
+        "name": "NPC_SM_5_omni_anim_position",
+        "role": "stagemanager",
+        "target": { },
+        "action": {"type": "call_method_from_object",
+                   "object_name": "sockSys",
+                   "function_name": "cueSocket",
+                   "_cue": { 
+                     "name": "NPC_SM_5_omni_anim_position",
+                     "target": { "role": ["participant", "stagemanager"], "aspect" : "position"},
+                     "action": { "type" : "move",
+                      "mapItem": "NPC_SM_2_spawn_prop_omni",
+                       "attr": "object3D",
+                       "anime" : {
+                        "targets": "position",
+                        "delay" : 1000,
+                        "loop": false,
+                        "autoplay": true,
+                        "easing": "linear",
+                        "duration": 1000
+                        },
+                        "timelines" : [
+                          {"x": -6.24986340858672, "y": 207.53865741650947, "z": 28.03797361500431, "delay": 1000, "easing" : "easeInSine", "duration": 5500},
+                          {"x": -8.430758165944011, "y": 175.35186353476817, "z": 129.54606952942618, "delay": 0, "easing": "easeOutSine", "duration": 3500},
+                          {"x": 137.28702215817535, "y": 175.6124970906266, "z": 98.95628265125501, "delay": 2000, "easing": "easeInSine", "duration": 3500},
+                          {"x": 219.45314474584418, "y": 223.42106233286123, "z": 10.741536798002995, "delay": 0, "easing": "easeOutSine", "duration": 2500},
+                          {"x": 176.7347928969658, "y": 191.30843739169345, "z": 10.741536798002995, "delay": 1000, "easing": "easeInSine", "duration": 2000},
+                          {"x": -4.435971920738762, "y": 174.5540570068354, "z": 10.741536798002995,"delay": 0, "easing": "easeOutSine", "duration": 3000}
+                        ]
+                      }
+                    }
+                  },
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_5_group",
+                "time": 0}
+      }
       ]
 }
