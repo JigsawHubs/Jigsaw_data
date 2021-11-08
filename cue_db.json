@@ -1754,6 +1754,42 @@
                "time": 0}
     },
     {
+      "name": "start_position",
+      "role": "charA",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"#charA"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "start_position",
+      "role": "charB",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"#charB"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "start_position",
+      "role": "charC",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"#charC"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "start_position",
+      "role": "music",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"#music"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
       "name": "change_aud_avatar_back",
       "role": "test",
       "target": { },
