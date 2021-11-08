@@ -2497,7 +2497,7 @@
                    "function_name": "cueSocket",
                    "_cue": { 
                     "name": "NPC_SM_3_anim_rotation_omni",
-                    "target": { "role": ["participant", "stagemanager"],
+                    "target": { "role": "general",
                       "aspect" : "rotation" },
                     "action": { "type": "socket_manipulate_object",
                       "mapItem": "NPC_SM_2_spawn_prop_omni",
