@@ -2753,9 +2753,9 @@
                 "dest": "url",
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/63bb85c7-b50c-4b5d-9720-2de8a51844af.glb"},
     "action": {"type": "spawn_item",
-               "pos": {"x": 37, "y":220, "z":-23},
-               "rot": {"x": 1.5707963267948966, "y":3.141592653589793, "z":0},
-               "scale": {"x": 50, "y":50, "z":50}},
+               "pos": {"x": -2.5, "y":182.5, "z":47},
+               "rot": {"x": 0, "y":3.141592653589793, "z":0},
+               "scale": {"x": 2, "y":2, "z":2}},
     "trig": {"type": "button",
              "time": 0}
   }
