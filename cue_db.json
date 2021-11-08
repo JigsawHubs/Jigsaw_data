@@ -2407,6 +2407,26 @@
                "time": 500}
     },
     {
+      "name": "NPC_SM_2_load_360_skybox",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "NPC_SM_2_load_360_skybox",
+                   "target": { "role": "general" },
+                   "action": { "type": "load_360_image",
+                    "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/563b1246-d961-4b57-ad49-85d2ac17f927.png",
+                    "position" : {"x": -11, "y": 42, "z": 20.5},
+                    "scale" : {"x": 300, "y": 250, "z": 250}
+                  }
+                  }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
       "name": "NPC_SM_2_spawn_prop_omni",
       "role": "stagemanager",
       "target": { },
@@ -2758,7 +2778,280 @@
                "scale": {"x": 5, "y":5, "z":5}},
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_5_group",
-             "time": 2000}
+             "time": 6000}
+  },
+  {
+    "name": "NPC_SM_6_smoke_monster",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "TBD"},
+    "action": {"type": "spawn_item",
+               "pos": "TBD",
+               "rot": "TBD",
+               "scale": "TBD"},
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_6_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_6_brnd_hidden_position",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                "name": "NPC_SM_6_brnd_hidden_position",
+                "target": { "role" : "individual",
+                  "name" : "Brendan",
+                  "aspect" : "position" },
+                "action": { "type": "manipulate_avatar",
+                  "attr": "object3D",
+                  "anime": {
+                   "targets": "",
+                   "delay" : 0,
+                   "loop": false,
+                   "autoplay": false,
+                   "easing": "linear",
+                   "duration": 0
+                   },
+                   "timelines" : [
+                    {"x": -6.435971920738762, "y": 0, "z": 42}
+                   ]
+                 }
+               }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_6_group",
+             "time": 46000}
+  },
+  {
+    "name": "NPC_SM_6_brnd_NPC_scale",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                "name": "NPC_SM_6_brnd_hidden_position",
+                "target": { "role" : "individual",
+                  "name" : "Brendan",
+                  "aspect" : "scale" },
+                "action": { "type": "manipulate_avatar",
+                  "attr": "object3D",
+                  "anime": {
+                   "targets": "",
+                   "delay" : 0,
+                   "loop": false,
+                   "autoplay": false,
+                   "easing": "linear",
+                   "duration": 0
+                   },
+                   "timelines" : [
+                    {"x": 5, "y": 5, "z": 5}
+                   ]
+                 }
+               }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_6_group",
+             "time": 46000}
+  },
+  {
+    "name": "NPC_SM_6_brnd_to_NPC",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": {
+                "name": "NPC_SM_2_brnd_to_hero",
+                "role":"stagemanager",
+                "target": { "role" : "individual",
+                "name" : "Brendan"
+                },
+                "action": {"type": "change_avatar",
+                           "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_25.glb"}
+              }
+              },
+    "trig": {"type": "button",
+              "groupChain" : "NPC_SM_6_group",
+             "time": 55000}
+  },
+  {
+    "name": "NPC_SM_6_brnd_mute",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                 "name": "NPC_SM_2_brnd_mute",
+                 "target": { "role": "general" },
+                 "action": { "type": "change_rolloff",
+                  "names": ["Brendan"],
+                  "rolloff": 1000000,
+                  "refDistance": 0.00000001
+                  }
+              }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_6_group",
+             "time": 56500}
+  },
+  {
+    "name": "NPC_SM_6_corpse_rock_1",
+    "role": "test",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://xrtheater-assets.xrtheater.live/files/cb8acb7f-a285-495b-9927-e36d7184d7f0.glb"},
+    "action": {"type": "spawn_item",
+      "pos": "TBD",
+      "rot": "TBD",
+      "scale": {"x": 1, "y":1, "z":1}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_6_group",
+             "time": 60000}
+  },
+  {
+    "name": "NPC_SM_6_corpse_rock_2",
+    "role": "test",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://xrtheater-assets.xrtheater.live/files/9cef6175-78df-4fe4-84b7-536f86733ed3.glb"},
+    "action": {"type": "spawn_item",
+      "pos": "TBD",
+      "rot": "TBD",
+      "scale": {"x": 1, "y":1, "z":1}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_6_group",
+             "time": 60000}
+  },
+  {
+    "name": "NPC_SM_6_corpse_rock_3",
+    "role": "test",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://xrtheater-assets.xrtheater.live/files/9b48666d-da9c-4a8f-8d82-d294233da9db.glb"},
+    "action": {"type": "spawn_item",
+      "pos": "TBD",
+      "rot": "TBD",
+      "scale": {"x": 1, "y":1, "z":1}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_6_group",
+             "time": 60000}
+  },
+  {
+    "name": "NPC_SM_6_corpse_rock_4",
+    "role": "test",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://xrtheater-assets.xrtheater.live/files/cd8c31d7-571d-4af3-9a53-2d61e8092071.glb"},
+    "action": {"type": "spawn_item",
+      "pos": "TBD",
+      "rot": "TBD",
+      "scale": {"x": 1, "y":1, "z":1}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_6_group",
+             "time": 60000}
+  },
+  {
+    "name": "Spawn_rock_13",
+    "role": "test",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://xrtheater-assets.xrtheater.live/files/0d64504f-e4ad-40f0-9907-ff21052f4b0e.glb"},
+    "action": {"type": "spawn_item",
+      "pos": "TBD",
+      "rot": "TBD",
+      "scale": {"x": 1, "y":1, "z":1}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_6_group",
+             "time": 60000}
+  },
+  {
+    "name": "NPC_SM_6_corpse_rock_5",
+    "role": "test",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://xrtheater-assets.xrtheater.live/files/c142f47c-0f59-474e-b916-8fd781caf61a.glb"},
+    "action": {"type": "spawn_item",
+      "pos": "TBD",
+      "rot": "TBD",
+      "scale": {"x": 1, "y":1, "z":1}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_6_group",
+             "time": 60000}
+  },
+  {
+    "name": "NPC_SM_6_corpse_rock_6",
+    "role": "test",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://xrtheater-assets.xrtheater.live/files/3d50fe91-17dd-480e-8266-8c535dea1d86.glb"},
+    "action": {"type": "spawn_item",
+      "pos": "TBD",
+      "rot": "TBD",
+      "scale": {"x": 1, "y":1, "z":1}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_6_group",
+             "time": 60000}
+  },
+  {
+    "name": "NPC_SM_6_corpse_rock_7",
+    "role": "test",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://xrtheater-assets.xrtheater.live/files/ba961298-27c4-4ab6-a891-023c2a4c2c75.glb"},
+    "action": {"type": "spawn_item",
+      "pos": "TBD",
+      "rot": "TBD",
+      "scale": {"x": 1, "y":1, "z":1}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_6_group",
+             "time": 60000}
+  },
+  {
+    "name": "NPC_SM_6_delete_smoke_monster",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "src": "NPC_SM_6_smoke_monster"},
+    "action": {"type": "delete"},
+    "trig": {"type": "button",
+             "time": 60000}
+  },
+  {
+    "name": "NPC_SM_6_brnd_NPC_position",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                "name": "NPC_SM_6_brnd_NPC_position",
+                "target": { "role" : "individual",
+                  "name" : "Brendan",
+                  "aspect" : "position" },
+                "action": { "type": "manipulate_avatar",
+                  "attr": "object3D",
+                  "anime": {
+                   "targets": "",
+                   "delay" : 0,
+                   "loop": false,
+                   "autoplay": false,
+                   "easing": "linear",
+                   "duration": 0
+                   },
+                   "timelines" : [
+                    {"x": 12.578047438897544, "y": 174.45406616210934, "z": 11.643794284063707}
+                   ]
+                 }
+               }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_6_group",
+             "time": 61000}
   }
       ]
 }
