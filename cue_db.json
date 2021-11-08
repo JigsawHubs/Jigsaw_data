@@ -2316,9 +2316,7 @@
     {
       "name": "NPC_SM_2_spawn_prop_omni",
       "role": "stagemanager",
-      "target": { "type": "glb",
-                  "dest": "url",
-                  "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/99f9f039-b02a-41f6-91a3-30d9fdb23c58.glb"},
+      "target": { "role": "general"},
       "action": {"type": "socket_spawn_object",
         "applyGravityOnSpawn": false,
                  "pos": {"x": 2.1164517402648926, "y": 338.6104736328125, "z": -50.629791259765625},
@@ -2326,6 +2324,26 @@
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
         "groupChain" : "NPC_SM_2_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_2_spawn_prop_omni",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "NPC_SM_2_spawn_prop_omni",
+                  "target": { "role": "general"},
+                  "action": {"type": "socket_spawn_object",
+                    "applyGravityOnSpawn": false,
+                             "pos": {"x": 2.1164517402648926, "y": 338.6104736328125, "z": -50.629791259765625},
+                             "rot": {"x": 1.5707963267948966, "y":0, "z":0},
+                             "scale": {"x": 1, "y":1, "z":1}}
+                }
+                },
+      "trig": {"type": "button",
                "time": 0}
     },
     {
