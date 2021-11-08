@@ -2327,6 +2327,37 @@
                "time": 0}
     },
     {
+      "name": "NPC_SM_2_participants_starting_rotation_2",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "NPC_SM_2_participants_starting_rotation_2",
+                  "target": { "role" : "participant",
+                    "aspect" : "rotation" },
+                  "action": { "type": "manipulate_avatar",
+                    "attr": "object3D",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 0,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "linear",
+                     "duration": 0
+                     },
+                     "timelines" : [
+                       {"x": -1.5707963267948966, "y":3.141592653589793, "z":0}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_2_group",
+               "time": 2000}
+    },
+    {
       "name": "NPC_SM_2_participants_starting_scale",
       "role": "stagemanager",
       "target": { },
