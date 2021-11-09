@@ -2497,7 +2497,7 @@
                         {"x": 137.28702215817535, "y": 175.6124970906266, "z": 98.95628265125501, "delay": 2000, "easing": "easeInSine", "duration": 3500},
                         {"x": 219.45314474584418, "y": 223.42106233286123, "z": 10.741536798002995, "delay": 0, "easing": "easeOutSine", "duration": 2500},
                         {"x": 176.7347928969658, "y": 193.30843739169345, "z": 10.741536798002995, "delay": 1000, "easing": "easeInSine", "duration": 2000},
-                        {"x": -4.31793773315427, "y": 174.55405700683608, "z": 16.741536798002995,"delay": 0, "easing": "easeOutSine", "duration": 3000}
+                        {"x": -8.31793773315427, "y": 180.55405700683608, "z": -2.741536798002995,"delay": 0, "easing": "easeOutSine", "duration": 3000}
                       ]
                     }
                   }
@@ -2602,7 +2602,7 @@
                             {"x": 137.28702215817535, "y": 176.6124970906266, "z": 98.95628265125501, "delay": 2000, "easing": "easeInSine", "duration": 3500},
                             {"x": 219.45314474584418, "y": 224.42106233286123, "z": 10.741536798002995, "delay": 0, "easing": "easeOutSine", "duration": 2500},
                             {"x": 176.7347928969658, "y": 194.30843739169345, "z": 10.741536798002995, "delay": 1000, "easing": "easeInSine", "duration": 2000},
-                            {"x": -4.435971920738762, "y": 178.4540570068354, "z": 10.741536798002995,"delay": 0, "easing": "easeOutSine", "duration": 3000}
+                            {"x": -8.435971920738762, "y": 187.6740570068354, "z": -5.741536798002995,"delay": 0, "easing": "easeOutSine", "duration": 3000}
                           ]
                         }
                       }
@@ -2673,7 +2673,7 @@
                             {"x": 229.45314474584418, "y": 224.42106233286123, "z": 10.741536798002995, "delay": 0, "easing": "easeOutSine", "duration": 2500},
                             {"x": 209.45314474584418, "y": 224.42106233286123, "z": 10.741536798002995, "delay": 0, "easing": "easeOutSine", "duration": 1000},
                             {"x": 166.7347928969658, "y": 192.30843739169345, "z": 10.741536798002995, "delay": 0, "easing": "easeInSine", "duration": 2000},
-                            {"x": -6.435971920738762, "y": 182.5540570068354, "z": 42,"delay": 0, "easing": "easeOutSine", "duration": 3000}
+                            {"x": -6.435971920738762, "y": 183.5540570068354, "z": 42,"delay": 0, "easing": "easeOutSine", "duration": 3000}
                          ]
                        }
                      }
@@ -2745,9 +2745,9 @@
                   "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_5.glb"},
       "action": {"type": "spawn_item",
                 "applyGravityOnSpawn": false,
-                 "pos": {"x": -6.248605032291202, "y": 174.55405700683602, "z": 14.87318684588578},
+                 "pos": {"x": -6.5, "y": 188.6, "z": -4.6},
                  "rot": {"x": 0, "y":0, "z":0},
-                 "scale": {"x": 1, "y":1, "z":1}},
+                 "scale": {"x": 0.3, "y":0.3, "z":0.3}},
       "trig": {"type": "button",
         "groupChain" : "NPC_SM_5_group",
                "time": 0}
@@ -2759,10 +2759,160 @@
                   "dest": "url",
                   "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_5.glb"},
       "action": {"type": "spawn_item",
-        "applyGravityOnSpawn": false,
-                 "pos": {"x": -2.748605032291202, "y": 174.55405700683602, "z": 14.87318684588578},
+                "applyGravityOnSpawn": false,
+                 "pos": {"x": -6.6, "y": 188.3, "z": -4.5},
                  "rot": {"x": 0, "y":0, "z":0},
-                 "scale": {"x": 1, "y":1, "z":1}},
+                 "scale": {"x": 0.3, "y":0.3, "z":0.3}},
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_5_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_5_spawn_throwing_rock_3",
+      "role": "stagemanager",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_5.glb"},
+      "action": {"type": "spawn_item",
+                "applyGravityOnSpawn": false,
+                 "pos": {"x": -6.5, "y": 188, "z": -4.5},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 0.3, "y":0.3, "z":0.3}},
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_5_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_5_spawn_throwing_rock_4",
+      "role": "stagemanager",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_5.glb"},
+      "action": {"type": "spawn_item",
+                "applyGravityOnSpawn": false,
+                 "pos": {"x": -8, "y": 188.6, "z": -4.6},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 0.3, "y":0.3, "z":0.3}},
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_5_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_5_spawn_throwing_rock_5",
+      "role": "stagemanager",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_5.glb"},
+      "action": {"type": "spawn_item",
+                "applyGravityOnSpawn": false,
+                 "pos": {"x": -8.1, "y": 188.3, "z": -4.5},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 0.3, "y":0.3, "z":0.3}},
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_5_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_5_spawn_throwing_rock_6",
+      "role": "stagemanager",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_5.glb"},
+      "action": {"type": "spawn_item",
+                "applyGravityOnSpawn": false,
+                 "pos": {"x": -8, "y": 188, "z": -4.5},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 0.3, "y":0.3, "z":0.3}},
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_5_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_5_spawn_throwing_rock_7",
+      "role": "stagemanager",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_5.glb"},
+      "action": {"type": "spawn_item",
+                "applyGravityOnSpawn": false,
+                 "pos": {"x": -9.5, "y": 188.6, "z": -4.6},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 0.3, "y":0.3, "z":0.3}},
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_5_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_5_spawn_throwing_rock_8",
+      "role": "stagemanager",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_5.glb"},
+      "action": {"type": "spawn_item",
+                "applyGravityOnSpawn": false,
+                 "pos": {"x": -9.6, "y": 188.3, "z": -4.5},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 0.3, "y":0.3, "z":0.3}},
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_5_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_5_spawn_throwing_rock_9",
+      "role": "stagemanager",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_5.glb"},
+      "action": {"type": "spawn_item",
+                "applyGravityOnSpawn": false,
+                 "pos": {"x": -9.5, "y": 188, "z": -4.5},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 0.3, "y":0.3, "z":0.3}},
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_5_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_5_spawn_throwing_rock_10",
+      "role": "stagemanager",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_5.glb"},
+      "action": {"type": "spawn_item",
+                "applyGravityOnSpawn": false,
+                 "pos": {"x": -11, "y": 188.6, "z": -4.6},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 0.3, "y":0.3, "z":0.3}},
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_5_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_5_spawn_throwing_rock_11",
+      "role": "stagemanager",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_5.glb"},
+      "action": {"type": "spawn_item",
+                "applyGravityOnSpawn": false,
+                 "pos": {"x": -11.1, "y": 188.3, "z": -4.5},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 0.3, "y":0.3, "z":0.3}},
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_5_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_5_spawn_throwing_rock_12",
+      "role": "stagemanager",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_5.glb"},
+      "action": {"type": "spawn_item",
+                "applyGravityOnSpawn": false,
+                 "pos": {"x": -11, "y": 188, "z": -4.5},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 0.3, "y":0.3, "z":0.3}},
       "trig": {"type": "button",
         "groupChain" : "NPC_SM_5_group",
                "time": 0}
@@ -2774,7 +2924,7 @@
                 "dest": "url",
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/63bb85c7-b50c-4b5d-9720-2de8a51844af.glb"},
     "action": {"type": "spawn_item",
-               "pos": {"x": -2.5, "y":185.5, "z":47},
+               "pos": {"x": -2.5, "y":18.5, "z":47},
                "rot": {"x": 0, "y":3.141592653589793, "z":0},
                "scale": {"x": 5, "y":5, "z":5}},
     "trig": {"type": "button",
