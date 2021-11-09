@@ -2584,7 +2584,7 @@
                      "function_name": "cueSocket",
                      "_cue": { 
                        "name": "NPC_SM_3_omni_anim_position",
-                       "target": { "role": ["participant", "stagemanager"], "aspect" : "position"},
+                       "target": { "role": "general", "aspect" : "position"},
                        "action": { "type" : "socket_manipulate_object",
                         "mapItem": "NPC_SM_2_spawn_prop_omni",
                          "attr": "object3D",
@@ -2717,6 +2717,25 @@
             "groupChain" : "NPC_SM_3_group",
                    "time": 6500}
         },
+        {
+          "name": "NPC_SM_3_enable_brnd_motion",
+          "role": "stagemanager",
+          "target": { },
+          "action": {"type": "call_method_from_object",
+                     "object_name": "sockSys",
+                     "function_name": "cueSocket",
+                     "_cue": { 
+                       "name": "NPC_SM_2_disable_brnd_motion",
+                       "target": { "role": "individual", 
+                      "name": "Brendan"},
+                       "action": { "type": "socket_toggle_movement",
+                        "movement" : false}
+                    }
+                    },
+          "trig": {"type": "button",
+            "groupChain" : "NPC_SM_2_group",
+                   "time": 24000}
+        },
     {
       "name": "NPC_SM_4",
       "role": "stagemanager",
@@ -2735,6 +2754,7 @@
                   }
                 },
       "trig": {"type": "button",
+        "groupChain" : "NPC_SM_4_group",
                "time": 0}
     },
     {
@@ -2924,12 +2944,43 @@
                 "dest": "url",
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/63bb85c7-b50c-4b5d-9720-2de8a51844af.glb"},
     "action": {"type": "spawn_item",
-               "pos": {"x": -2.5, "y":18.5, "z":47},
+               "pos": {"x": 30, "y":18.5, "z":47},
                "rot": {"x": 0, "y":3.141592653589793, "z":0},
                "scale": {"x": 5, "y":5, "z":5}},
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_5_group",
-             "time": 6000}
+             "time": 3000}
+  },
+  {
+    "name": "NPC_SM_5_slide_in_NPC",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                 "name": "NPC_SM_5_slide_in_NPC",
+                 "target": { "role": "stagemanager", "aspect" : "position"},
+                 "action": { "type" : "socket_manipulate_object",
+                  "mapItem": "NPC_SM_5_looping_NPC",
+                   "attr": "object3D",
+                   "anime" : {
+                    "targets": "position",
+                    "delay" : 0,
+                    "loop": false,
+                    "autoplay": true,
+                    "easing": "easeOutElastic(1, .6)",
+                    "duration": 1500
+                    },
+                    "timelines" : [
+                      {"x": -2.7, "y":18.5, "z":47}
+                    ]
+                  }
+                }
+              },
+  "trig": {"type": "button",
+    "groupChain" : "NPC_SM_5_group",
+            "time": 4000}
   },
   {
     "name": "NPC_SM_6_smoke_monster",
