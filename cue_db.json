@@ -2970,7 +2970,7 @@
                     "delay" : 0,
                     "loop": false,
                     "autoplay": true,
-                    "easing": "easeOutElastic(1, .6)",
+                    "easing": "easeOutElastic(10, .6)",
                     "duration": 1500
                     },
                     "timelines" : [
