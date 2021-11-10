@@ -1922,7 +1922,7 @@
       "role":"stagemanager",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"https://onboardxr.live/scenes/De4qP7u"},
+                 "link":"https://onboardxr.live/scenes/L5BFUGs"},
       "trig": {"type": "button",
         "groupChain" : "NPC_SM_1_group",
                "time": 0}
@@ -3289,10 +3289,10 @@
                  "name": "NPC_SM_7_anim_part_position",
                  "target": { "role": ["participant", "stagemanager"], "aspect" : "position"},
                  "action": { "type" : "lock_waypoint",
-                   "waypoint" : "NPCWaypoint1",
+                   "waypoint" : "NPCWaypoint2",
                    "attr": "object3D",
                    "recallAud" : true,
-                   "maxDist" : 5,
+                   "maxDist" : 0.5,
                    "anime" : {
                     "targets": "position",
                     "delay" : 1000,
@@ -3302,7 +3302,9 @@
                     "duration": 1000
                     },
                     "timelines" : [
-                      "TBD"
+                      {"x": -8.113759546013023, "y": 189.30568875659392, "z": 0.6735130921177064, "delay": 0, "duration": 6000, "easing": "linear"},
+                      {"x": 14.158124912653195, "y": 189.30568875659392, "z": 8.135603680233011, "delay": 4000, "duration": 10000, "easing": "linear"},
+                      {"x": 13.71990492640203, "y": 182.19648303027643, "z": 8.074767513621072, "delay": 0, "duration": 6000, "easing": "linear"}
                     ]
                   }
                 }
@@ -3333,7 +3335,7 @@
                    "duration": 0
                    },
                    "timelines" : [
-                     "TBD"
+                    {"x": 0, "y": 7.0685834705770345, "z": 0, "delay": 11000, "duration": 8000, "easing": "easeInOutSine"}
                    ]
                  }
                }
@@ -3364,7 +3366,7 @@
                    "duration": 0
                    },
                    "timelines" : [
-                     {"x": 0.7, "y":0.7, "z":0.7}
+                    {"x": 4, "y": 4, "z": 4, "delay": 26000, "duration": 2000, "easing": "easeInOutSine"}
                    ]
                  }
                }
@@ -3385,12 +3387,12 @@
                  "target": { "role": "general" },
                  "action": { "type": "socket_fade_skybox_opacity",
                   "itemMap" : "NPC_SM_2_load_360_skybox",
-                  "fadeDuration" : 10000}
+                  "fadeDuration" : 3000}
               }
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_7_group",
-             "time": "TBD"}
+             "time": 29000}
   },
   {
     "name": "NPC_SM_7_shrink_black_skybox",
@@ -3416,14 +3418,14 @@
                     "duration": 1000
                     },
                     "timelines" : [
-                      { "x": 100, "y": 100, "z": 100, "easing": "easeInOutSine", "duration": 10000 }
+                      { "x": 100, "y": 100, "z": 100, "delay": 0, "easing": "easeInOutSine", "duration": 5000 }
                     ]
                   }
               }
               },
     "trig": {"type": "button",
               "groupChain" : "NPC_SM_7_group",
-             "time": "TBD"}
+             "time": 32000}
   },
   {
     "name": "NPC_SM_7_load_360_skybox",
@@ -3444,7 +3446,44 @@
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_7_group",
-             "time": 0}
+             "time": 33000}
+  },
+  {
+    "name": "NPC_SM_7_delete_360_colorful_skybox",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                 "name": "NPC_SM_7_delete_360_colorful_skybox",
+                 "target": { "role": "general" },
+                 "action": { "type": "delete",
+                  "src" : "NPC_SM_7_load_360_skybox"
+                }
+                }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_7_group",
+             "time": 33000}
+  },
+  {
+    "name": "NPC_SM_7_delete_STRT",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": {
+                "name": "NPC_SM_7_delete_STRT",
+                "target": { "role": "general" },
+                "action": {"type": "call_global_function",
+                           "function_name":"TBD"}
+              }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_7_group",
+             "time": 33000}
   }
       ]
 }
