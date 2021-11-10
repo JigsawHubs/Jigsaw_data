@@ -1924,6 +1924,7 @@
       "action": {"type": "change_scene",
                  "link":"https://onboardxr.live/scenes/De4qP7u"},
       "trig": {"type": "button",
+        "groupChain" : "NPC_SM_1_group",
                "time": 0}
     },
     {
@@ -2944,7 +2945,7 @@
                 "dest": "url",
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/63bb85c7-b50c-4b5d-9720-2de8a51844af.glb"},
     "action": {"type": "spawn_item",
-               "pos": {"x": 30, "y":185, "z":47},
+               "pos": {"x": 30, "y":187, "z":47},
                "rot": {"x": 0, "y":3.141592653589793, "z":0},
                "scale": {"x": 5, "y":5, "z":5}},
     "trig": {"type": "button",
@@ -2973,7 +2974,7 @@
                     "duration": 1500
                     },
                     "timelines" : [
-                      {"x": -2.7, "y":185, "z":47}
+                      {"x": -2.7, "y":187, "z":47}
                     ]
                   }
                 }
