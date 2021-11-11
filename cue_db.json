@@ -3487,6 +3487,20 @@
              "time": 33000}
   },
   {
+    "name": "NPC_SM_7_load_ventricle",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_39.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": 0, "y":-100, "z":0},
+               "rot": {"x": 0, "y":0, "z":0},
+               "scale": {"x": 2, "y":2, "z":2}},
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_7_group",
+             "time": 33000}
+  },
+  {
     "name": "NPC_SM_8",
     "role": "stagemanager",
     "target": { },
@@ -3522,20 +3536,6 @@
                   "fadeDuration" : 3000}
               }
               },
-    "trig": {"type": "button",
-      "groupChain" : "NPC_SM_9_group",
-             "time": 0}
-  },
-  {
-    "name": "NPC_SM_9_load_ventricle",
-    "role": "stagemanager",
-    "target": { "type": "glb",
-                "dest": "url",
-                "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_39.glb"},
-    "action": {"type": "spawn_item",
-               "pos": {"x": 0, "y":-100, "z":0},
-               "rot": {"x": 0, "y":0, "z":0},
-               "scale": {"x": 2, "y":2, "z":2}},
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_9_group",
              "time": 0}
