@@ -3531,11 +3531,11 @@
     "role": "stagemanager",
     "target": { "type": "glb",
                 "dest": "url",
-                "src":  "https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_39.glb"},
+                "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_39.glb"},
     "action": {"type": "spawn_item",
                "pos": {"x": 0, "y":-100, "z":0},
                "rot": {"x": 0, "y":0, "z":0},
-               "scale": {"x": 1, "y":1, "z":1}},
+               "scale": {"x": 2, "y":2, "z":2}},
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_9_group",
              "time": 0}
@@ -3613,13 +3613,13 @@
                "object_name": "sockSys",
                "function_name": "cueSocket",
                "_cue": { 
-                 "name": "NPC_SM_7_anim_part_position",
+                 "name": "NPC_SM_9_anim_part_position",
                  "target": { "role": ["participant", "stagemanager"], "aspect" : "position"},
                  "action": { "type" : "lock_waypoint",
-                   "waypoint" : "NPCWaypoint2",
+                   "waypoint" : "NPCWaypoint3",
                    "attr": "object3D",
                    "recallAud" : true,
-                   "maxDist" : 0.5,
+                   "maxDist" : 0.1,
                    "anime" : {
                     "targets": "position",
                     "delay" : 1000,
@@ -3629,12 +3629,51 @@
                     "duration": 1000
                     },
                     "timelines" : [
-                      {"x": -8.113759546013023, "y": 189.30568875659392, "z": 0.6735130921177064, "delay": 0, "duration": 6000, "easing": "linear"},
-                      {"x": 14.158124912653195, "y": 189.30568875659392, "z": 8.135603680233011, "delay": 4000, "duration": 10000, "easing": "linear"},
-                      {"x": 13.71990492640203, "y": 182.19648303027643, "z": 8.074767513621072, "delay": 0, "duration": 6000, "easing": "linear"}
+                      {"x": 245.3386861455923, "y": 234.08700392207302, "z": 19.507121740528348, "delay": 58000, "duration": 5000, "easing": "easeInSine"},
+                      {"x": 281.2498780374571, "y": 234.69598227344594, "z": 13.998316167828914, "delay": 0, "easing": "linear", "duration": 1500},
+                      {"x": 309.5030388235464, "y": 235.8238476841758, "z": 14.656894971329239, "delay": 0, "easing": "linear", "duration": 800},
+                      {"x": 320.1093467277769, "y": 235.9068684013055, "z": 17.52648059380149, "delay": 0, "easing": "linear", "duration": 800},
+                      {"x": 362.2008510219342, "y": 236.4688358665341, "z": 64.00999192903858, "delay": 0, "easing": "linear", "duration": 1400},
+                      {"x": 381.6240920782126, "y": 235.7083213243946, "z": 78.3841168113202, "delay": 0, "easing": "linear", "duration": 1000},
+                      {"x": 453.4008395837911, "y": 236.10531398438425, "z": 94.65883584216863, "delay": 0, "easing": "linear", "duration": 1000},
+                      {"x": 493.03260635151753, "y": 234.85274177837474, "z": 140.75721581426623, "delay": 0, "easing": "linear", "duration": 900},
+                      {"x": 510.2637348473553, "y": 225.1797771866567, "z": 207.47017160312512, "delay": 0, "easing": "easeOutSine", "duration": 900}
+                      
                     ]
                   }
                 }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_9_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_9_part_scale",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                "name": "NPC_SM_9_part_scale",
+                "target": { "role" : "individual",
+                  "name" : "___",
+                  "aspect" : "scale" },
+                "action": { "type": "manipulate_avatar",
+                  "attr": "object3D",
+                  "anime": {
+                   "targets": "",
+                   "delay" : 0,
+                   "loop": false,
+                   "autoplay": false,
+                   "easing": "linear",
+                   "duration": 0
+                   },
+                   "timelines" : [
+                    {"x": 0.7, "y": 0.7, "z": 0.7, "delay": 45000, "duration": 4000}
+                   ]
+                 }
+               }
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_9_group",
@@ -3645,16 +3684,16 @@
     "role": "stagemanager",
     "target": { "type": "glb",
                 "dest": "local",
-                "src": "load_heart_A"},
+                "src": "NPC_SM_9_load_ventricle"},
     "action": {"type": "move",
                "duration": 0,
                "loop": false,
-               "pos": {"x": 170.50000000000009, "y":150.5, "z":100},
-               "rot": {"x": -0.1, "y":249.3, "z":-0.1},
-               "scale": {"x": 1, "y":1, "z":1}},
+               "pos": {"x": 400.40386951589255, "y": 255.0142558914274, "z": 90.24813225086168},
+               "rot": {"x": 0, "y":-1.57, "z":0},
+               "scale": {"x": 1.5, "y":1.5, "z":1.5}},
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_9_group",
-      "time": 0
+      "time": 62000
     }
   }
       ]
