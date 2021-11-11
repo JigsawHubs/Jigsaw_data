@@ -3501,12 +3501,12 @@
                             "mapItem": "NPC_SM_6_corpse_rock_1", 
                           "pause": false
               }
-              },
+              }
+            },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_8_group",
              "time": 33000}
-    }
-  },
+    },
   {
     "name": "NPC_SM_9_fade_black_skybox",
     "role": "stagemanager",
