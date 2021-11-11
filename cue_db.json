@@ -3656,8 +3656,7 @@
                "function_name": "cueSocket",
                "_cue": { 
                 "name": "NPC_SM_9_part_scale",
-                "target": { "role" : "individual",
-                  "name" : "___",
+                "target": { "role" : ["participant", "stagemanager"],
                   "aspect" : "scale" },
                 "action": { "type": "manipulate_avatar",
                   "attr": "object3D",
@@ -3695,6 +3694,480 @@
       "groupChain" : "NPC_SM_9_group",
       "time": 62000
     }
+  },
+  {
+    "name": "NPC_SM_10_A_1",
+    "role":"stagemanager",
+    "target": { },
+    "action": {"type": "change_scene",
+               "link":"https://onboardxr.live/scenes/mGFRrw4"},
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_10_A_1_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_A_2_brnd_to_octopus",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": {
+                "name": "NPC_SM_10_A_2_brnd_to_octopus",
+                "role":"stagemanager",
+                "target": { "role" : "individual",
+                "name" : "Brendan"
+                },
+                "action": {"type": "change_avatar",
+                           "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_53.glb"}
+              }
+              },
+    "trig": {"type": "button",
+              "groupChain" : "NPC_SM_10_A_2_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_A_2_brnd_mute",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                 "name": "NPC_SM_10_A_2_brnd_mute",
+                 "target": { "role": "general" },
+                 "action": { "type": "change_rolloff",
+                  "names": ["Brendan"],
+                  "rolloff": 1000000,
+                  "refDistance": 0.00000001
+                  }
+              }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_10_A_2_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_B_1",
+    "role":"stagemanager",
+    "target": { },
+    "action": {"type": "change_scene",
+               "link":"https://onboardxr.live/scenes/5455HHw"},
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_10_B_1_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_B_2_brnd_to_bird",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": {
+                "name": "NPC_SM_10_B_2_brnd_to_bird",
+                "role":"stagemanager",
+                "target": { "role" : "individual",
+                "name" : "Brendan"
+                },
+                "action": {"type": "change_avatar",
+                           "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_45.glb"}
+              }
+              },
+    "trig": {"type": "button",
+              "groupChain" : "NPC_SM_10_B_2_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_B_2_brnd_mute",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                 "name": "NPC_SM_10_B_2_brnd_mute",
+                 "target": { "role": "general" },
+                 "action": { "type": "change_rolloff",
+                  "names": ["Brendan"],
+                  "rolloff": 1000000,
+                  "refDistance": 0.00000001
+                  }
+              }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_10_B_2_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_B_2_plank_1",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://uploads-prod.reticulum.io/files/23606596-7ab8-42ae-8646-f85659c53e34.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -0.5, "y":15.2, "z":19.3},
+               "rot": {"x":-7.999999999999998, "y":0, "z":0},
+               "scale": {"x": 1, "y":1, "z":1}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_10_B_2_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_B_2_plank_2",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://uploads-prod.reticulum.io/files/23606596-7ab8-42ae-8646-f85659c53e34.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": 9.5, "y":12.3, "z":18.9},
+               "rot": {"x":-1.0000000000001052, "y":86.99999999999996, "z":-39.99999999999989},
+               "scale": {"x": 3.3000000000000007, "y":3.3000000000000007, "z":3.3000000000000007}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_10_B_2_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_B_2_plank_3",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://uploads-prod.reticulum.io/files/23606596-7ab8-42ae-8646-f85659c53e34.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -5.300000000000001, "y":10.1, "z":15.3},
+               "rot": {"x":174, "y":-21.000000000000036, "z":-179},
+               "scale": {"x": 1, "y":1, "z":1}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_10_B_2_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_B_2_plank_4",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://uploads-prod.reticulum.io/files/23606596-7ab8-42ae-8646-f85659c53e34.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -9, "y":12.23, "z":19.5},
+               "rot": {"x":-4.9999999999999964, "y":-6.000000000000001, "z":28},
+               "scale": {"x": 1, "y":1, "z":1}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_10_B_2_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_B_2_plank_5",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://uploads-prod.reticulum.io/files/23606596-7ab8-42ae-8646-f85659c53e34.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": 1, "y":10, "z":16.2},
+               "rot": {"x":172, "y":-22, "z":-180},
+               "scale": {"x": 1, "y":1, "z":1}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_10_B_2_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_C_1",
+    "role":"stagemanager",
+    "target": { },
+    "action": {"type": "change_scene",
+               "link":"https://onboardxr.live/scenes/pdAB23q"},
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_10_C_1_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_C_2_brnd_to_fox",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": {
+                "name": "NPC_SM_10_C_2_brnd_to_fox",
+                "role":"stagemanager",
+                "target": { "role" : "individual",
+                "name" : "Brendan"
+                },
+                "action": {"type": "change_avatar",
+                           "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_61.glb"}
+              }
+              },
+    "trig": {"type": "button",
+              "groupChain" : "NPC_SM_10_C_2_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_C_2_brnd_mute",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                 "name": "NPC_SM_10_C_2_brnd_mute",
+                 "target": { "role": "general" },
+                 "action": { "type": "change_rolloff",
+                  "names": ["Brendan"],
+                  "rolloff": 1000000,
+                  "refDistance": 0.00000001
+                  }
+              }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_10_C_2_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_11",
+    "role":"stagemanager",
+    "target": { },
+    "action": {"type": "change_scene",
+               "link":"https://onboardxr.live/scenes/PUc2JeK"},
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_11_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_12_jenga_1",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -61.5, "y":8.3, "z":-11.72},
+               "rot": {"x": 2, "y":240.00000000000003, "z":186},
+               "scale": {"x": 0.6000000000000001, "y":0.6000000000000001, "z":0.6000000000000001}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_12_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_12_jenga_2",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -61.800000000000004, "y":8.8, "z":-11.02},
+               "rot": {"x": 105.00000000000001, "y":-7, "z":0},
+               "scale": {"x": 0.75, "y":0.75, "z":0.75}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_12_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_12_jenga_3",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -61, "y":8.2, "z":-12.219999999999999},
+               "rot": {"x": 200, "y":177, "z":-92.00000000000001},
+               "scale": {"x": 0.4000000000000001, "y":0.4000000000000001, "z":0.4000000000000001}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_12_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_12_jenga_4",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -61.300000000000004, "y":8.3, "z":-11.820000000000002},
+               "rot": {"x": -1, "y":60.99999999999997, "z":6.000000000000002},
+               "scale": {"x": 0.6000000000000001, "y":0.6000000000000001, "z":0.6000000000000001}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_12_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_12_jenga_5",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -61.4, "y":8.450000000000001, "z":-11.219999999999999},
+               "rot": {"x": 63.999999999999986, "y":3.999999999999998, "z":94.99999999999999},
+               "scale": {"x": 0.45, "y":0.45, "z":0.45}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_12_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_12_jenga_6",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -61.300000000000004, "y":8.8, "z":-11.420000000000002},
+               "rot": {"x":-1.0000000000000002, "y":61, "z":6.000000000000004},
+               "scale": {"x": 0.6000000000000001, "y":0.6000000000000001, "z":0.6000000000000001}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_12_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_12_jenga_7",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -61, "y":9.05, "z":-11.919999999999998},
+               "rot": {"x":200, "y":2.999999999999998, "z":87.99999999999999},
+               "scale": {"x": 0.4000000000000001, "y":0.4000000000000001, "z":0.4000000000000001}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_12_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_12_jenga_8",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -61.1, "y":9.700000000000001, "z":-11.82},
+               "rot": {"x":-178, "y":-81.00000000000003, "z":6.000000000000002},
+               "scale": {"x": 0.5, "y":0.5, "z":0.5}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_12_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_12_jenga_9",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -61.800000000000004, "y":9.700000000000001, "z":-10.920000000000002},
+               "rot": {"x":-169, "y":-217.00000000000003, "z":6.000000000000002},
+               "scale": {"x": 0.6000000000000001, "y":0.6000000000000001, "z":0.6000000000000001}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_12_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_12_jenga_10",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -61.1, "y":9.55, "z":-11.419999999999998},
+               "rot": {"x":-160.00000000000003, "y":2.999999999999998, "z":87.99999999999997},
+               "scale": {"x": 0.4000000000000001, "y":0.4000000000000001, "z":0.4000000000000001}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_12_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_12_jenga_11",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -61.5, "y":9.8, "z":-12.020000000000001},
+               "rot": {"x":-325, "y":-60.000000000000036, "z":6.000000000000002},
+               "scale": {"x": 0.7, "y":0.7, "z":0.7}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_12_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_12_jenga_12",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -61.60000000000001, "y":10.3, "z":-11.020000000000003},
+               "rot": {"x":5.000000000000002, "y":287, "z":-177},
+               "scale": {"x": 0.7, "y":0.7, "z":0.7}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_12_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_12_jenga_13",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -61.599999999999994, "y":9.750000000000002, "z":-10.319999999999999},
+               "rot": {"x":-95.00000000000003, "y":102, "z":87.99999999999997},
+               "scale": {"x": 0.5, "y":0.5, "z":0.5}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_12_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_12_jenga_14",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -61.699999999999996, "y":10.95, "z":-10.920000000000002},
+               "rot": {"x":-177, "y":123.99999999999997, "z":2.0000000000000018},
+               "scale": {"x": 0.7000000000000001, "y":0.7000000000000001, "z":0.7000000000000001}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_12_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_12_brnd_to_NPC",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": {
+                "name": "NPC_SM_12_brnd_to_NPC",
+                "role":"stagemanager",
+                "target": { "role" : "individual",
+                "name" : "Brendan"
+                },
+                "action": {"type": "change_avatar",
+                           "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_25.glb"}
+              }
+              },
+    "trig": {"type": "button",
+              "groupChain" : "NPC_SM_12_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_12_brnd_mute",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                 "name": "NPC_SM_12_brnd_mute",
+                 "target": { "role": "general" },
+                 "action": { "type": "change_rolloff",
+                  "names": ["Brendan"],
+                  "rolloff": 1000000,
+                  "refDistance": 0.00000001
+                  }
+              }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_12_group",
+             "time": 0}
   }
       ]
 }
