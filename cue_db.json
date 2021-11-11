@@ -3683,7 +3683,7 @@
     "role": "stagemanager",
     "target": { "type": "glb",
                 "dest": "local",
-                "src": "NPC_SM_9_load_ventricle"},
+                "src": "NPC_SM_7_load_ventricle"},
     "action": {"type": "move",
                "duration": 0,
                "loop": false,
