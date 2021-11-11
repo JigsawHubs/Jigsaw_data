@@ -1922,7 +1922,7 @@
       "role":"stagemanager",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"https://onboardxr.live/scenes/L5BFUGs"},
+                 "link":"https://onboardxr.live/scenes/zdh9JUN"},
       "trig": {"type": "button",
         "groupChain" : "NPC_SM_1_group",
                "time": 0}
