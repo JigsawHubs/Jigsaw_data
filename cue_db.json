@@ -650,7 +650,7 @@
                       "aspect": "scale"
                   },
                    "action": { "type": "manipulate_skybox_360",
-                    "itemMap" : "NPC_61A",
+                    "mapItem" : "NPC_61A",
                     "anime": {
                       "targets": "",
                       "delay" : 0,
@@ -682,7 +682,7 @@
                       "aspect": "rotation"
                   },
                    "action": { "type": "manipulate_skybox_360",
-                    "itemMap" : "NPC_61B",
+                    "mapItem" : "NPC_61B",
                     "anime": {
                       "targets": "",
                       "delay" : 0,
@@ -715,7 +715,7 @@
                       "aspect": "position"
                   },
                    "action": { "type": "manipulate_skybox_360",
-                    "itemMap" : "NPC_61B",
+                    "mapItem" : "NPC_61B",
                     "anime": {
                       "targets": "",
                       "delay" : 0,
@@ -885,7 +885,7 @@
                       "aspect": "scale"
                   },
                    "action": { "type": "manipulate_skybox_360",
-                    "itemMap" : "NPC_51A",
+                    "mapItem" : "NPC_51A",
                     "anime": {
                       "targets": "",
                       "delay" : 0,
@@ -2748,7 +2748,7 @@
                    "name": "test_play_360_gif",
                    "target": { "role" : "participant"},
                    "action": { "type": "play_360_gif",
-                    "itemMap": "NPC_SM_2_how_to_walk",
+                    "mapItem": "NPC_SM_2_how_to_walk",
                     "fadeDuration": 3000,
                     "fadeDelay": 3000
                     }
@@ -2945,12 +2945,12 @@
                 "dest": "url",
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/63bb85c7-b50c-4b5d-9720-2de8a51844af.glb"},
     "action": {"type": "spawn_item",
-               "pos": {"x": 30, "y":187, "z":47},
+               "pos": {"x": 30, "y":189, "z":47},
                "rot": {"x": 0, "y":3.141592653589793, "z":0},
                "scale": {"x": 5, "y":5, "z":5}},
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_5_group",
-             "time": 3000}
+             "time": 2000}
   },
   {
     "name": "NPC_SM_5_slide_in_NPC",
@@ -2970,11 +2970,11 @@
                     "delay" : 0,
                     "loop": false,
                     "autoplay": true,
-                    "easing": "easeOutElastic(10, .6)",
+                    "easing": "easeOutElastic(10, .9)",
                     "duration": 1500
                     },
                     "timelines" : [
-                      {"x": -2.7, "y":187, "z":47}
+                      {"x": -2.7, "y":189, "z":47}
                     ]
                   }
                 }
@@ -3111,7 +3111,7 @@
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/6f66bc08-17d3-44f0-9cd6-c4c92afa0aa4.glb"},
     "action": {"type": "spawn_item",
       "pauseOnSpawn": true,
-      "pos": {"x": 3.4000000000000004, "y": 183.3, "z": -0.4000000000000001},
+      "pos": {"x": 8.4000000000000004, "y": 186.3, "z": -0.4000000000000001},
       "rot": {"x": 88.99999999999999, "y": 54.00000000000001, "z": 0},
       "scale": {"x": 1, "y":1, "z":1}},
     "trig": {"type": "button",
@@ -3125,7 +3125,7 @@
                 "dest": "url",
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/de9ea485-9471-4788-a7de-c691ee609513.glb"},
     "action": {"type": "spawn_item",
-      "pos": {"x": 3.2, "y": 183.1, "z": 0.0999999999999998},
+      "pos": {"x": 8.2, "y": 186.1, "z": 0.0999999999999998},
       "rot": {"x": 86, "y": 0, "z": 0},
       "scale": {"x": 1, "y":1, "z":1}},
     "trig": {"type": "button",
@@ -3139,7 +3139,7 @@
                 "dest": "url",
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/5961d152-168c-4e92-9ea2-82e07d61c0be.glb"},
     "action": {"type": "spawn_item",
-      "pos": {"x": 3.6, "y": 182.6, "z": -0.4000000000000001},
+      "pos": {"x": 8.6, "y": 185.6, "z": -0.4000000000000001},
       "rot": {"x": 63, "y": 0, "z": 0},
       "scale": {"x": 1, "y":1, "z":1}},
     "trig": {"type": "button",
@@ -3153,7 +3153,7 @@
                 "dest": "url",
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/d595a9f2-e90d-48c8-9414-e944e1a66690.glb"},
     "action": {"type": "spawn_item",
-      "pos": {"x": 4.1, "y":181.7, "z":0.2999999999999999},
+      "pos": {"x": 9.1, "y":184.7, "z":0.2999999999999999},
       "rot": {"x": 0, "y":0, "z":0},
       "scale": {"x": 1, "y":1, "z":1}},
     "trig": {"type": "button",
@@ -3167,7 +3167,7 @@
                 "dest": "url",
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/c9b58f4f-cbbc-4001-b447-20969a263457.glb"},
     "action": {"type": "spawn_item",
-      "pos": {"x": 3.8, "y":183, "z":1.9},
+      "pos": {"x": 8.8, "y":186, "z":1.9},
       "rot": {"x": -67, "y":1, "z":1},
       "scale": {"x": 1, "y":1, "z":1}},
     "trig": {"type": "button",
@@ -3181,7 +3181,7 @@
                 "dest": "url",
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/2245d67b-7c40-4df1-9c9e-bc2d3e0f5497.glb"},
     "action": {"type": "spawn_item",
-      "pos": {"x": 4, "y":182.2, "z":1},
+      "pos": {"x": 9, "y":185.2, "z":1},
       "rot": {"x": 0, "y":0, "z":0},
       "scale": {"x": 1, "y":1, "z":1}},
     "trig": {"type": "button",
@@ -3195,7 +3195,7 @@
                 "dest": "url",
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/e9e776b7-a680-4560-a729-cf67ad936c81.glb"},
     "action": {"type": "spawn_item",
-      "pos": {"x": 3.8, "y":182.5, "z":1.4},
+      "pos": {"x": 8.8, "y":185.5, "z":1.4},
       "rot": {"x": 0, "y":0, "z":0},
       "scale": {"x": 1, "y":1, "z":1}},
     "trig": {"type": "button",
@@ -3209,7 +3209,7 @@
                 "dest": "url",
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/425d9394-ea1e-47a6-8ed5-44e2d3b7536e.glb"},
     "action": {"type": "spawn_item",
-      "pos": {"x": 4.2, "y":182.5, "z":1.4},
+      "pos": {"x": 9.2, "y":187.5, "z":1.4},
       "rot": {"x": 0, "y":0, "z":0},
       "scale": {"x": 1, "y":1, "z":1}},
     "trig": {"type": "button",
@@ -3387,7 +3387,7 @@
                  "name": "NPC_SM_7_fade_colorful_skybox",
                  "target": { "role": "general" },
                  "action": { "type": "socket_fade_skybox_opacity",
-                  "itemMap" : "NPC_SM_2_load_360_skybox",
+                  "mapItem" : "NPC_SM_2_load_360_skybox",
                   "fadeDuration" : 3000}
               }
               },
@@ -3408,7 +3408,7 @@
                     "aspect": "scale"
                 },
                  "action": { "type": "manipulate_skybox_360",
-                  "itemMap" : "NPC_SM_6_load_360_skybox",
+                  "mapItem" : "NPC_SM_6_load_360_skybox",
                   "attr": "object3D",
                   "anime": {
                     "targets": "",
@@ -3518,7 +3518,7 @@
                  "name": "NPC_SM_7_fade_black_skybox",
                  "target": { "role": "general" },
                  "action": { "type": "socket_fade_skybox_opacity",
-                  "itemMap" : "NPC_SM_6_load_360_skybox",
+                  "mapItem" : "NPC_SM_6_load_360_skybox",
                   "fadeDuration" : 3000}
               }
               },
