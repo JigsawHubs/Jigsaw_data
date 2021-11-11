@@ -3238,7 +3238,7 @@
                  "target": { "role": "general" },
                  "action": { "type": "load_360_image",
                   "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/38e9bb67-753d-48d6-80b6-ed0b12507504.png",
-                  "position" : {"x": -11, "y": 42, "z": 20.5},
+                  "position" : {"x": -11, "y": 100, "z": 20.5},
                   "scale" : {"x": 350, "y": 300, "z": 300}
                 }
                 }
