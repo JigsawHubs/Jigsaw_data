@@ -1837,8 +1837,8 @@
                    "target": { "role": "general" },
                    "action": { "type": "change_rolloff",
                     "names": ["---"],
-                    "rolloff": 0.3,
-                    "refDistance": 24
+                    "rolloff": 1,
+                    "refDistance": 28
                     }
                 }
                 },
