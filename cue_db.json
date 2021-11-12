@@ -1753,6 +1753,15 @@
       "trig": {"type": "button",
                "time": 0}
     },
+        {
+      "name": "host_avatar",
+      "role":"host",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/host-avatar--with-rig.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
     {
       "name": "start_position",
       "role": "charA",
