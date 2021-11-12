@@ -10,6 +10,7 @@
   "charB":{"name":"--","role":"charB"},
   "charC":{"name":"--","role":"charC"},
   "music":{"name":"music","role":"music"},
+  "host":{"name":"host","role":"host"},
   "mike": {"name":"___","role":"stagemanager"},
   "brnd": {"name": "Brendan", "role": "brnd"},
   "brnd2": {"name": "Brendan2", "role": "brnd2"},
