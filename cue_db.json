@@ -2502,18 +2502,145 @@
                       "duration": 1000
                       },
                       "timelines" : [
-                        {"x": -11.290920535989299, "y": 199.5255253078421, "z": 70.20355420003261, "delay": 1000, "easing" : "easeInOutSine", "duration": 18000},
+                        {"x": -11.290920535989299, "y": 196.5255253078421, "z": 70.20355420003261, "delay": 1000, "easing" : "easeInOutSine", "duration": 18000},
                         {"x": -8.868491825995344, "y": 187.8240228794682, "z": 34.287204158887846, "delay": 6000, "easing": "easeInSine", "duration": 6000},
                         {"x": -9.130275558062639, "y": 169.40029290899673, "z": 22.89086328838054, "delay": 0, "easing": "linear", "duration": 2000},
                         {"x": -9.647542698982448, "y": 184.94054703667388, "z": 17.935316054249057, "delay": 0, "easing": "linear", "duration": 2000},
-                        {"x": -54.653630938741266, "y": 188.12296755186756, "z": -29.27643261090883, "delay": 0, "easing": "easeOutSine", "duration": 10000},
+                        {"x": -54.653630938741266, "y": 189.12296755186756, "z": -29.27643261090883, "delay": 0, "easing": "easeOutSine", "duration": 10000},
                         {"x": -42.95834841516507, "y": 190.67598402778634, "z": 1.2185372711071059,"delay": 67000, "easing": "easeInSine", "duration": 7000},
                         {"x": -23.615493339958554, "y": 190.7126282580375, "z": 1.1625235025168243,"delay": 0, "easing": "linear", "duration": 6000},
-                        {"x": -9.63372332191948, "y": 184.99830989739243, "z": 29.39133209193063,"delay": 0, "easing": "easeOutSine", "duration": 4000},
-                        {"x": 8.333624463419644, "y": 191.59502519691947, "z": 1.222851661512039,"delay": 7000, "easing": "easeInOutSine", "duration": 3000}
+                        {"x": -9.63372332191948, "y": 186.99830989739243, "z": 29.39133209193063,"delay": 0, "easing": "easeOutSine", "duration": 4000}
                       ]
                     }
                   }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_3_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_3_part1_ending_position",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "NPC_SM_3_part1_ending_position",
+                  "target": { "role" : "individual",
+                    "name" : "part1",
+                    "aspect" : "position" },
+                  "action": { "type": "manipulate_avatar",
+                    "attr": "object3D",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 0,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "linear",
+                     "duration": 0
+                     },
+                     "timelines" : [
+                      {"x": 0.8229785120926323, "y": 183.62300003539977, "z": -3.285568575284821, "delay": 125000, "duration": 3000, "easing": "easeInOutSine"}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_3_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_3_part2_ending_position",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "NPC_SM_3_part2_ending_position",
+                  "target": { "role" : "individual",
+                    "name" : "part2",
+                    "aspect" : "position" },
+                  "action": { "type": "manipulate_avatar",
+                    "attr": "object3D",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 0,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "linear",
+                     "duration": 0
+                     },
+                     "timelines" : [
+                      {"x": 0.5193551210688202, "y": 183.60129285144416, "z": -4.998417462255325, "delay": 125000, "duration": 3000, "easing": "easeInOutSine"}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_3_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_3_part3_ending_position",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "NPC_SM_3_part3_ending_position",
+                  "target": { "role" : "individual",
+                    "name" : "part3",
+                    "aspect" : "position" },
+                  "action": { "type": "manipulate_avatar",
+                    "attr": "object3D",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 0,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "linear",
+                     "duration": 0
+                     },
+                     "timelines" : [
+                      {"x": 0.4175752278337691, "y": 183.54992726455606, "z": -6.588345729516472, "delay": 125000, "duration": 3000, "easing": "easeInOutSine"}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_3_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_3_part4_ending_position",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "NPC_SM_3_part4_ending_position",
+                  "target": { "role" : "individual",
+                    "name" : "part4",
+                    "aspect" : "position" },
+                  "action": { "type": "manipulate_avatar",
+                    "attr": "object3D",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 0,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "linear",
+                     "duration": 0
+                     },
+                     "timelines" : [
+                      {"x": 0.9788687760815334, "y": 183.51889022547186, "z": -8.940693304684531, "delay": 125000, "duration": 3000, "easing": "easeInOutSine"}
+                     ]
+                   }
+                 }
                 },
       "trig": {"type": "button",
         "groupChain" : "NPC_SM_3_group",
@@ -2616,15 +2743,14 @@
                           "duration": 1000
                           },
                           "timelines" : [
-                            {"x": -11.290920535989299, "y": 200.5255253078421, "z": 70.20355420003261, "delay": 1000, "easing" : "easeInOutSine", "duration": 18000},
+                            {"x": -11.290920535989299, "y": 197.5255253078421, "z": 70.20355420003261, "delay": 1000, "easing" : "easeInOutSine", "duration": 18000},
                             {"x": -8.868491825995344, "y": 188.8240228794682, "z": 34.287204158887846, "delay": 6000, "easing": "easeInSine", "duration": 6000},
                             {"x": -9.130275558062639, "y": 170.40029290899673, "z": 22.89086328838054, "delay": 0, "easing": "linear", "duration": 2000},
                             {"x": -9.647542698982448, "y": 185.94054703667388, "z": 17.935316054249057, "delay": 0, "easing": "linear", "duration": 2000},
-                            {"x": -54.653630938741266, "y": 189.12296755186756, "z": -29.27643261090883, "delay": 0, "easing": "easeOutSine", "duration": 10000},
+                            {"x": -54.653630938741266, "y": 190.12296755186756, "z": -29.27643261090883, "delay": 0, "easing": "easeOutSine", "duration": 10000},
                             {"x": -42.95834841516507, "y": 191.67598402778634, "z": 1.2185372711071059,"delay": 67000, "easing": "easeInSine", "duration": 7000},
-                            {"x": -23.615493339958554, "y": 191.7126282580375, "z": 1.1625235025168243,"delay": 0, "easing": "linear", "duration": 6000},
-                            {"x": -9.63372332191948, "y": 185.99830989739243, "z": 29.39133209193063,"delay": 0, "easing": "easeOutSine", "duration": 4000},
-                            {"x": 8.333624463419644, "y": 192.59502519691947, "z": 1.222851661512039,"delay": 7000, "easing": "easeInOutSine", "duration": 3000}
+                            {"x": -20.63372332191948, "y": 187.99830989739243, "z": 9.39133209193063,"delay": 0, "easing": "easeOutSine", "duration": 6000},
+                            {"x": 5.333624463419644, "y": 186.59502519691947, "z": -6.222851661512039,"delay": 7000, "easing": "easeInOutSine", "duration": 3000}
                           ]
                         }
                       }
