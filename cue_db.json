@@ -5311,6 +5311,37 @@
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_12_group",
              "time": 1500}
+  },
+  {
+    "name": "NPC_SM_13_part_into_light",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                "name": "NPC_SM_13_part_into_light",
+                "target": { "role" : ["pariticpant", "stagemanger"],
+                  "aspect" : "position" },
+                "action": { "type": "manipulate_avatar",
+                  "attr": "object3D",
+                  "anime": {
+                   "targets": "",
+                   "delay" : 0,
+                   "loop": false,
+                   "autoplay": true,
+                   "easing": "easeInSine",
+                   "duration": 5000
+                   },
+                   "timelines" : [
+                    {"x": -94.45810709134439, "y": 8.11494720458983, "z": -14.1648429624734}
+                   ]
+                 }
+               }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_13_group",
+             "time": 0}
   }
       ]
 }
