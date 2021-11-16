@@ -2762,10 +2762,10 @@
                "object_name": "sockSys",
                "function_name": "cueSocket",
                "_cue": { 
-                 "name": "NPC_SM_5_slide_in_NPC",
+                 "name": "NPC_SM_345_slide_in_NPC",
                  "target": { "role": "stagemanager", "aspect" : "position"},
                  "action": { "type" : "socket_manipulate_object",
-                  "mapItem": "NPC_SM_5_looping_NPC",
+                  "mapItem": "NPC_SM_345_looping_NPC",
                    "attr": "object3D",
                    "anime" : {
                     "targets": "position",
@@ -2784,6 +2784,16 @@
   "trig": {"type": "button",
     "groupChain" : "NPC_SM_345_group",
             "time": 74000}
+  },
+  {
+    "name": "NPC_SM_345_delete_NPC",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "src": "NPC_SM_345_looping_NPC"},
+    "action": {"type": "delete"},
+    "trig": {"type": "button",
+      "groupChain": "NPC_SM_345_group",
+             "time": 120000}
   },
   {
     "name": "NPC_SM_6_smoke_monster",
