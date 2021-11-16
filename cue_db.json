@@ -4377,7 +4377,7 @@
     "role":"stagemanager",
     "target": { },
     "action": {"type": "change_scene",
-               "link":"https://onboardxr.live/scenes/mGFRrw4"},
+               "link":"https://onboardxr.live/scenes/zdh9JUN"},
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_10_A_1_group",
              "time": 0}
