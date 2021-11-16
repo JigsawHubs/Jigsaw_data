@@ -2802,12 +2802,90 @@
                 "dest": "url",
                 "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_19.glb"},
     "action": {"type": "spawn_item",
-      "pos": {"x": -47.653630938741266, "y": 50.12296755186756, "z": -24.27643261090883},
+      "pos": {"x": 100, "y": 190.09996367208856, "z": -200},
       "rot": {"x": 0, "y":3.9269908169872414, "z":0},
-      "scale": {"x": 0.2, "y":0.2, "z":0.2}},
+      "scale": {"x": 0.15, "y":0.15, "z":0.15}},
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_6_group",
              "time": 0}
+  },
+  {
+    "name": "NPC_SM_6_slide_in_smoke",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                 "name": "NPC_SM_6_slide_in_smoke",
+                 "target": { "role": "stagemanager", "aspect" : "position"},
+                 "action": { "type" : "socket_manipulate_object",
+                  "mapItem": "NPC_SM_6_smoke_monster",
+                   "attr": "object3D",
+                   "anime" : {
+                    "targets": "position",
+                    "delay" : 0,
+                    "loop": false,
+                    "autoplay": true,
+                    "easing": "easeOutElastic(1, .1)",
+                    "duration": 4000
+                    },
+                    "timelines" : [
+                      {"x": -34.28658615980113, "y": 189.90917605110286, "z": -5.5232422300881625}
+                    ]
+                  }
+                }
+              },
+  "trig": {"type": "button",
+    "groupChain" : "NPC_SM_6_group",
+            "time": 2000}
+  },
+  {
+    "name": "NPC_SM_6_smoke_anim_position",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                 "name": "NPC_SM_6_smoke_anim_position",
+                 "target": { "role": "general", "aspect" : "position"},
+                 "action": { "type" : "socket_manipulate_object",
+                  "mapItem": "NPC_SM_6_smoke_monster",
+                   "attr": "object3D",
+                   "anime" : {
+                    "targets": "position",
+                    "delay" : 1000,
+                    "loop": false,
+                    "autoplay": true,
+                    "easing": "linear",
+                    "duration": 1000
+                    },
+                    "timelines" : [
+                        {"x": -32.28658615980113, "y": 189.90917605110286, "z": -5.5232422300881625, "delay": 18000, "easing": "easeInSine", "duration": 1},
+                        {"x": -30.035013902942165, "y": 191.2054828458551, "z": -5.047107767170219, "delay": 500, "easing": "easeOutSine", "duration": 0},
+                        {"x": -28.987645993571878, "y": 190.72456730174127, "z": -5.4966218281889345, "delay": 750, "easing": "easeOutSine", "duration": 0},
+                        {"x": -27.887645993571878, "y": 191.2054828458551, "z": -5.4966218281889345, "delay": 250, "easing": "easeOutSine", "duration": 0},
+                        {"x": -26.753674244111767, "y": 190.63789347691795, "z": -5.557227515988292, "delay": 300, "easing": "easeOutSine", "duration": 0},
+                        {"x": -25.90182425963903, "y": 191.53791522712945, "z": -5.6095222994542855, "delay": 250, "easing": "easeOutSine", "duration": 0},
+                        {"x": -25.09115884954206, "y": 192.3928791147863, "z": -5.58032448961124, "delay": 600, "easing": "easeOutSine", "duration": 0},
+                        {"x": -24.089402953490545, "y": 191.6295484314419, "z": -5.612224042592181, "delay": 250, "easing": "easeOutSine", "duration": 0},
+                        {"x": -22.540372138609865, "y": 190.776971760952, "z": -5.613576706546868, "delay": 350, "easing": "easeOutSine", "duration": 0},
+                        {"x": -21.11367636666339, "y": 191.43831329701814, "z": -5.376072732496019, "delay": 250, "easing": "easeOutSine", "duration": 0},
+                        {"x": -20.151486472825784, "y": 190.85530416151053, "z": -5.481468289840503, "delay": 350, "easing": "easeOutSine", "duration": 0},
+                        {"x": -18.865994313999577, "y": 191.44529335182017, "z": -5.50941792081381, "delay": 250, "easing": "easeOutSine", "duration": 0},
+                        {"x": -17.93614884541189, "y": 190.9234252983882, "z": -5.369868397720931, "delay": 350, "easing": "easeOutSine", "duration": 0},
+                        {"x": -16.363567401488682, "y": 191.0681943333208, "z": -5.604705901369589, "delay": 250, "easing": "easeOutSine", "duration": 0},
+                        {"x": -15.324206739829995, "y": 191.06819433352445, "z": -5.676747859455881, "delay": 350, "easing": "easeOutSine", "duration": 0},
+                        {"x": -13.460983823966536, "y": 190.6509137262996, "z": -6.02243815973344, "delay": 350, "easing": "easeOutSine", "duration": 0},
+                        {"x": -11.58119073244206, "y": 190.04637404254322, "z": -5.699177528463501, "delay": 350, "easing": "easeOutSine", "duration": 0}
+                    ]
+                  }
+                }
+              },
+  "trig": {"type": "button",
+    "groupChain" : "NPC_SM_6_group",
+            "time": 0}
   },
   {
     "name": "NPC_SM_6_anim_position_track",
@@ -3293,7 +3371,7 @@
                "object_name": "sockSys",
                "function_name": "cueSocket",
                "_cue": {
-                "name": "NPC_SM_2_brnd_to_hero",
+                "name": "NPC_SM_6_brnd_to_NPC",
                 "role":"stagemanager",
                 "target": { "role" : "individual",
                 "name" : "Brendan"
