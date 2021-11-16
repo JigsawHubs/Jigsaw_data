@@ -1977,7 +1977,7 @@
                      "loop": false,
                      "autoplay": false,
                      "easing": "linear",
-                     "duration": 1
+                     "duration": 0
                      },
                      "timelines" : [
                       {"x": 150, "y": 150, "z": 150}
@@ -2041,7 +2041,7 @@
                      "loop": false,
                      "autoplay": false,
                      "easing": "linear",
-                     "duration": 1
+                     "duration": 0
                      },
                      "timelines" : [
                        {"x": 1.5707963267948966, "y":0, "z":0}
@@ -2197,7 +2197,7 @@
                      "loop": false,
                      "autoplay": false,
                      "easing": "linear",
-                     "duration": 1
+                     "duration": 0
                      },
                      "timelines" : [
                       {"x": 3.5, "y": 337, "z": -52.7}
@@ -2229,7 +2229,7 @@
                      "loop": false,
                      "autoplay": false,
                      "easing": "linear",
-                     "duration": 1
+                     "duration": 0
                      },
                      "timelines" : [
                       {"x": 2.8, "y": 337, "z": -53}
@@ -2261,7 +2261,7 @@
                      "loop": false,
                      "autoplay": false,
                      "easing": "linear",
-                     "duration": 1
+                     "duration": 0
                      },
                      "timelines" : [
                       {"x": 1, "y": 337, "z": -52.7}
@@ -2293,7 +2293,7 @@
                      "loop": false,
                      "autoplay": false,
                      "easing": "linear",
-                     "duration": 1
+                     "duration": 0
                      },
                      "timelines" : [
                       {"x": 0, "y": 337, "z": -52.7}
@@ -2335,37 +2335,6 @@
       "trig": {"type": "button",
         "groupChain" : "NPC_SM_2_group",
                "time": 0}
-    },
-    {
-      "name": "NPC_SM_2_participants_starting_rotation_2",
-      "role": "stagemanager",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": { 
-                  "name": "NPC_SM_2_participants_starting_rotation_2",
-                  "target": { "role" : "participant",
-                    "aspect" : "rotation" },
-                  "action": { "type": "manipulate_avatar",
-                    "attr": "object3D",
-                    "anime": {
-                     "targets": "",
-                     "delay" : 0,
-                     "loop": false,
-                     "autoplay": false,
-                     "easing": "linear",
-                     "duration": 1000
-                     },
-                     "timelines" : [
-                       {"x": -1.5707963267948966, "y":3.141592653589793, "z":0}
-                     ]
-                   }
-                 }
-                },
-      "trig": {"type": "button",
-        "groupChain" : "NPC_SM_2_group",
-               "time": 2000}
     },
     {
       "name": "NPC_SM_2_disable_part_motion",
@@ -2506,6 +2475,7 @@
                      "duration": 1000
                      },
                      "timelines" : [
+                      {"x": -1.5707963267948966, "y":3.141592653589793, "z":0, "duration": 0, "delay": 0, "easing": "easeInOutSine"},
                        {"x": 0, "y":3.141592653589793, "z":0, "duration": 7000, "delay": 6000, "easing": "easeInOutSine"},
                        {"x": 0, "y":0, "z":0, "delay": 2000, "duration": 4000, "easing": "easeInOutSine"},
                        {"x": 0, "y":-2.356194490192345, "z":0, "delay": 17000, "duration": 10000, "easing": "easeInOutSine"}
@@ -2831,7 +2801,7 @@
                     "duration": 1000
                     },
                     "timelines" : [
-                        {"x": -32.28658615980113, "y": 189.90917605110286, "z": -5.5232422300881625, "delay": 17000, "easing": "easeInSine", "duration": 1},
+                        {"x": -32.28658615980113, "y": 189.90917605110286, "z": -5.5232422300881625, "delay": 17000, "easing": "easeInSine", "duration": 0},
                         {"x": -30.035013902942165, "y": 191.2054828458551, "z": -5.047107767170219, "delay": 500, "easing": "easeOutSine", "duration": 0},
                         {"x": -28.987645993571878, "y": 190.72456730174127, "z": -5.4966218281889345, "delay": 750, "easing": "easeOutSine", "duration": 0},
                         {"x": -27.887645993571878, "y": 191.2054828458551, "z": -5.4966218281889345, "delay": 250, "easing": "easeOutSine", "duration": 0},
@@ -3339,7 +3309,7 @@
                    "loop": false,
                    "autoplay": false,
                    "easing": "linear",
-                   "duration": 1
+                   "duration": 0
                    },
                    "timelines" : [
                     {"x": -6.435971920738762, "y": 0, "z": 42}
@@ -3371,7 +3341,7 @@
                    "loop": false,
                    "autoplay": false,
                    "easing": "linear",
-                   "duration": 1
+                   "duration": 1000
                    },
                    "timelines" : [
                     {"x": 2, "y": 2, "z": 2}
@@ -3589,7 +3559,7 @@
                    "loop": false,
                    "autoplay": false,
                    "easing": "linear",
-                   "duration": 1
+                   "duration": 0
                    },
                    "timelines" : [
                     {"x": 12.578047438897544, "y": 174.45406616210934, "z": 11.643794284063707}
@@ -4188,7 +4158,7 @@
                    "duration": 1
                    },
                    "timelines" : [
-                    {"x": 263.40386951589255, "y": -500.0142558914274, "z": -2.24813225086168, "delay": 0, "duration": 1, "easing": "linear"}
+                    {"x": 263.40386951589255, "y": -500.0142558914274, "z": -2.24813225086168, "delay": 0, "duration": 0, "easing": "linear"}
                    ]
                  }
                }
@@ -5075,7 +5045,7 @@
                    "loop": false,
                    "autoplay": false,
                    "easing": "linear",
-                   "duration": 1
+                   "duration": 0
                    },
                    "timelines" : [
                     {"x": -48.35321105173253, "y": 23.798595062522168, "z": -9.040520655671918}
@@ -5107,7 +5077,7 @@
                    "loop": false,
                    "autoplay": false,
                    "easing": "linear",
-                   "duration": 1
+                   "duration": 0
                    },
                    "timelines" : [
                     {"x": -45.28603255167745, "y": 23.798595062522168, "z": -7.559634647991288}
@@ -5139,7 +5109,7 @@
                    "loop": false,
                    "autoplay": false,
                    "easing": "linear",
-                   "duration": 1
+                   "duration": 0
                    },
                    "timelines" : [
                     {"x": -46.65042933668102, "y": 23.798595062522168, "z": -8.666999678715692}
@@ -5171,7 +5141,7 @@
                    "loop": false,
                    "autoplay": false,
                    "easing": "linear",
-                   "duration": 1
+                   "duration": 0
                    },
                    "timelines" : [
                     {"x": -46.885524773236334, "y": 23.798595062522168, "z": -8.992788233148692}
@@ -5205,7 +5175,7 @@
                    "duration": 1
                    },
                    "timelines" : [
-                    {"x": -1.5707963267948966, "y":-0.7853981633974483, "z":0,"delay": 0, "easing": "linear", "duration": 1},
+                    {"x": -1.5707963267948966, "y":-0.7853981633974483, "z":0,"delay": 0, "easing": "linear", "duration": 20},
                      {"x": 0, "y":-0.7853981633974483, "z":0, "delay": 9000, "easing": "linear", "duration": 3000},
                      {"x": 0, "y":-3.9269908169872414, "z":0, "delay": 0, "easing": "linear", "duration": 5000}
                    ]
