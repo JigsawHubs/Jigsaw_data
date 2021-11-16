@@ -2324,10 +2324,10 @@
                      "loop": false,
                      "autoplay": false,
                      "easing": "linear",
-                     "duration": 1
+                     "duration": 1000
                      },
                      "timelines" : [
-                       {"x": -1.5707963267948966, "y":0, "z":0}
+                       {"x": -1.5707963267948966, "y":3.141592653589793, "z":0}
                      ]
                    }
                  }
@@ -2355,7 +2355,7 @@
                      "loop": false,
                      "autoplay": false,
                      "easing": "linear",
-                     "duration": 1
+                     "duration": 1000
                      },
                      "timelines" : [
                        {"x": -1.5707963267948966, "y":3.141592653589793, "z":0}
@@ -2366,37 +2366,6 @@
       "trig": {"type": "button",
         "groupChain" : "NPC_SM_2_group",
                "time": 2000}
-    },
-    {
-      "name": "NPC_SM_2_participants_starting_scale",
-      "role": "stagemanager",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": { 
-                  "name": "NPC_SM_2_participants_starting_rotation",
-                  "target": { "role" : "participant",
-                    "aspect" : "rotation" },
-                  "action": { "type": "manipulate_avatar",
-                    "attr": "object3D",
-                    "anime": {
-                     "targets": "",
-                     "delay" : 0,
-                     "loop": false,
-                     "autoplay": false,
-                     "easing": "linear",
-                     "duration": 1
-                     },
-                     "timelines" : [
-                       {"x": -1.5707963267948966, "y":3.141592653589793, "z":0}
-                     ]
-                   }
-                 }
-                },
-      "trig": {"type": "button",
-        "groupChain" : "NPC_SM_2_group",
-               "time": 0}
     },
     {
       "name": "NPC_SM_2_disable_part_motion",
@@ -2975,6 +2944,7 @@
                    "duration": 1000
                    },
                    "timelines" : [
+                    {"x": 0, "y":-2.356194490192345, "z":0, "delay": 0, "duration": 20, "easing": "easeInOutSine"},
                      {"x": 0, "y":-0.7853981633974483, "z":0, "delay": 0, "duration": 7000, "easing": "easeInSine"},
                      {"x": 0, "y":0.7853981633974483, "z":0, "delay": 0, "duration": 7000, "easing": "linear"},
                      {"x": 0, "y":0, "z":0, "delay": 0, "duration": 2000, "easing": "easeOutSine"},
@@ -3707,6 +3677,7 @@
                    "duration": 1
                    },
                    "timelines" : [
+                    {"x": 0, "y": 1.5707963267948966, "z": 0, "delay": 0, "duration": 20, "easing": "easeInOutSine"},
                     {"x": 0, "y": -1.5707963267948966, "z": 0, "delay": 11000, "duration": 8000, "easing": "easeInOutSine"}
                    ]
                  }
