@@ -3300,6 +3300,24 @@
              "time": 22000}
   },
   {
+    "name": "NPC_SM_6_disable_part_motion",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                 "name": "NPC_SM_6_disable_part_motion",
+                 "target": { "role": "participant"},
+                 "action": { "type": "socket_toggle_movement",
+                  "movement" : true}
+              }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_6_group",
+             "time": 24000}
+  },
+  {
     "name": "NPC_SM_6_brnd_hidden_position",
     "role": "stagemanager",
     "target": { },
