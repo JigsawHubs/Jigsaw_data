@@ -2878,7 +2878,39 @@
                         {"x": -16.363567401488682, "y": 191.0681943333208, "z": -5.604705901369589, "delay": 250, "easing": "easeOutSine", "duration": 0},
                         {"x": -15.324206739829995, "y": 191.06819433352445, "z": -5.676747859455881, "delay": 350, "easing": "easeOutSine", "duration": 0},
                         {"x": -13.460983823966536, "y": 190.6509137262996, "z": -6.02243815973344, "delay": 350, "easing": "easeOutSine", "duration": 0},
-                        {"x": -11.58119073244206, "y": 190.04637404254322, "z": -5.699177528463501, "delay": 350, "easing": "easeOutSine", "duration": 0}
+                        {"x": -11.58119073244206, "y": 190.04637404254322, "z": -5.699177528463501, "delay": 350, "easing": "easeOutSine", "duration": 0},
+                        {"x": -8.58119073244206, "y": 183.04637404254322, "z": -5.699177528463501, "delay":23000, "easing": "easeInElastic(1, .6)", "duration": 1000}
+                    ]
+                  }
+                }
+              },
+  "trig": {"type": "button",
+    "groupChain" : "NPC_SM_6_group",
+            "time": 0}
+  },
+  {
+    "name": "NPC_SM_6_smoke_anim_scale",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                 "name": "NPC_SM_6_smoke_anim_scale",
+                 "target": { "role": "general", "aspect" : "scale"},
+                 "action": { "type" : "socket_manipulate_object",
+                  "mapItem": "NPC_SM_6_smoke_monster",
+                   "attr": "object3D",
+                   "anime" : {
+                    "targets": "scale",
+                    "delay" : 1000,
+                    "loop": false,
+                    "autoplay": true,
+                    "easing": "linear",
+                    "duration": 1000
+                    },
+                    "timelines" : [
+                        {"x": 0.4, "y": 0.4, "z": 0.4, "delay": 41000, "easing": "linear", "duration": 5000}
                     ]
                   }
                 }
@@ -4021,7 +4053,7 @@
                    },
                    "timelines" : [
                     {"x": 263.40386951589255, "y": 202.0142558914274, "z": -2.24813225086168, "delay": 40000, "duration": 3000, "easing": "easeInSine"},
-                    {"x": 263.40386951589255, "y": 125.0142558914274, "z": -2.24813225086168, "delay": 0, "duration": 7000, "easing": "linear"}
+                    {"x": 263.40386951589255, "y": 140.0142558914274, "z": -2.24813225086168, "delay": 0, "duration": 7000, "easing": "linear"}
                    ]
                  }
                }
