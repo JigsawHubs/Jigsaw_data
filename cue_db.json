@@ -3241,7 +3241,7 @@
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_6_group",
-             "time": 46000}
+             "time": 50000}
   },
   {
     "name": "NPC_SM_6_brnd_NPC_scale",
@@ -3273,7 +3273,7 @@
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_6_group",
-             "time": 46000}
+             "time": 50000}
   },
   {
     "name": "NPC_SM_6_brnd_to_NPC",
@@ -3330,7 +3330,7 @@
       "scale": {"x": 1, "y":1, "z":1}},
     "trig": {"type": "button",
               "groupChain": "NPC_SM_6_group",
-             "time": 60000}
+             "time": 54000}
   },
   {
     "name": "NPC_SM_6_corpse_rock_2",
@@ -3344,7 +3344,7 @@
       "scale": {"x": 1, "y":1, "z":1}},
     "trig": {"type": "button",
               "groupChain": "NPC_SM_6_group",
-             "time": 60000}
+             "time": 54000}
   },
   {
     "name": "NPC_SM_6_corpse_rock_3",
@@ -3358,7 +3358,7 @@
       "scale": {"x": 1, "y":1, "z":1}},
     "trig": {"type": "button",
               "groupChain": "NPC_SM_6_group",
-             "time": 60000}
+             "time": 54000}
   },
   {
     "name": "NPC_SM_6_corpse_rock_4",
@@ -3372,7 +3372,7 @@
       "scale": {"x": 1, "y":1, "z":1}},
     "trig": {"type": "button",
               "groupChain": "NPC_SM_6_group",
-             "time": 60000}
+             "time": 54000}
   },
   {
     "name": "NPC_SM_6_corpse_rock_5",
@@ -3386,7 +3386,7 @@
       "scale": {"x": 1, "y":1, "z":1}},
     "trig": {"type": "button",
               "groupChain": "NPC_SM_6_group",
-             "time": 60000}
+             "time": 54000}
   },
   {
     "name": "NPC_SM_6_corpse_rock_6",
@@ -3400,7 +3400,7 @@
       "scale": {"x": 1, "y":1, "z":1}},
     "trig": {"type": "button",
               "groupChain": "NPC_SM_6_group",
-             "time": 60000}
+             "time": 54000}
   },
   {
     "name": "NPC_SM_6_corpse_rock_7",
@@ -3414,7 +3414,7 @@
       "scale": {"x": 1, "y":1, "z":1}},
     "trig": {"type": "button",
               "groupChain": "NPC_SM_6_group",
-             "time": 60000}
+             "time": 54000}
   },
   {
     "name": "NPC_SM_6_corpse_rock_8",
@@ -3428,7 +3428,7 @@
       "scale": {"x": 1, "y":1, "z":1}},
     "trig": {"type": "button",
               "groupChain": "NPC_SM_6_group",
-             "time": 60000}
+             "time": 54000}
   },
   {
     "name": "NPC_SM_6_delete_smoke_monster",
@@ -3438,7 +3438,7 @@
     "action": {"type": "delete"},
     "trig": {"type": "button",
       "groupChain": "NPC_SM_6_group",
-             "time": 60000}
+             "time": 56000}
   },
   {
     "name": "NPC_SM_6_load_360_skybox",
@@ -3459,7 +3459,7 @@
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_6_group",
-             "time": 60000}
+             "time": 50000}
   },
   {
     "name": "NPC_SM_6_brnd_NPC_position",
