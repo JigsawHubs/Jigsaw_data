@@ -3702,7 +3702,7 @@
                    "targets": "",
                    "delay" : 0,
                    "loop": false,
-                   "autoplay": false,
+                   "autoplay": true,
                    "easing": "linear",
                    "duration": 0
                    },
