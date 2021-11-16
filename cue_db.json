@@ -3163,14 +3163,14 @@
                    "duration": 0
                    },
                    "timelines" : [
-                    {"x": 0.8229785120926323, "y": 183.62300003539977, "z": -3.285568575284821, "delay": 22000, "duration": 2000, "easing": "easeInOutSine"}
+                    {"x": 0.8229785120926323, "y": 183.62300003539977, "z": -3.285568575284821, "delay": 0, "duration": 2000, "easing": "easeInOutSine"}
                    ]
                  }
                }
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_6_group",
-             "time": 0}
+             "time": 22000}
   },
   {
     "name": "NPC_SM_6_part2_ending_position",
@@ -3195,14 +3195,14 @@
                    "duration": 0
                    },
                    "timelines" : [
-                    {"x": 0.5193551210688202, "y": 183.60129285144416, "z": -4.998417462255325, "delay": 22000, "duration": 2000, "easing": "easeInOutSine"}
+                    {"x": 0.5193551210688202, "y": 183.60129285144416, "z": -4.998417462255325, "delay": 0, "duration": 2000, "easing": "easeInOutSine"}
                    ]
                  }
                }
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_6_group",
-             "time": 0}
+             "time": 22000}
   },
   {
     "name": "NPC_SM_6_part3_ending_position",
@@ -3227,14 +3227,14 @@
                    "duration": 0
                    },
                    "timelines" : [
-                    {"x": 0.4175752278337691, "y": 183.54992726455606, "z": -6.588345729516472, "delay": 22000, "duration": 2000, "easing": "easeInOutSine"}
+                    {"x": 0.4175752278337691, "y": 183.54992726455606, "z": -6.588345729516472, "delay": 0, "duration": 2000, "easing": "easeInOutSine"}
                    ]
                  }
                }
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_6_group",
-             "time": 0}
+             "time": 22000}
   },
   {
     "name": "NPC_SM_6_part4_ending_position",
@@ -3259,14 +3259,14 @@
                    "duration": 0
                    },
                    "timelines" : [
-                    {"x": 0.9788687760815334, "y": 183.51889022547186, "z": -8.940693304684531, "delay": 22000, "duration": 2000, "easing": "easeInOutSine"}
+                    {"x": 0.9788687760815334, "y": 183.51889022547186, "z": -8.940693304684531, "delay": 0, "duration": 2000, "easing": "easeInOutSine"}
                    ]
                  }
                }
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_6_group",
-             "time": 0}
+             "time": 22000}
   },
   {
     "name": "NPC_SM_6_SM_ending_position",
@@ -3290,14 +3290,14 @@
                    "duration": 0
                    },
                    "timelines" : [
-                    {"x": 1.9788687760815334, "y": 183.51889022547186, "z": -8.940693304684531, "delay": 22000, "duration": 2000, "easing": "easeInOutSine"}
+                    {"x": 1.9788687760815334, "y": 183.51889022547186, "z": -8.940693304684531, "delay": 0, "duration": 2000, "easing": "easeInOutSine"}
                    ]
                  }
                }
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_6_group",
-             "time": 0}
+             "time": 22000}
   },
   {
     "name": "NPC_SM_6_brnd_hidden_position",
