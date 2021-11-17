@@ -2200,7 +2200,7 @@
                      "duration": 0
                      },
                      "timelines" : [
-                      {"x": 3.5, "y": 337, "z": -52.7}
+                      {"x": 3.5, "y": 550, "z": -52.7}
                      ]
                    }
                  }
@@ -2232,7 +2232,7 @@
                      "duration": 0
                      },
                      "timelines" : [
-                      {"x": 2.8, "y": 337, "z": -53}
+                      {"x": 2.8, "y": 550, "z": -53}
                      ]
                    }
                  }
@@ -2264,7 +2264,7 @@
                      "duration": 0
                      },
                      "timelines" : [
-                      {"x": 1, "y": 337, "z": -52.7}
+                      {"x": 1, "y": 550, "z": -52.7}
                      ]
                    }
                  }
@@ -2296,7 +2296,7 @@
                      "duration": 0
                      },
                      "timelines" : [
-                      {"x": 0, "y": 337, "z": -52.7}
+                      {"x": 0, "y": 550, "z": -52.7}
                      ]
                    }
                  }
@@ -2366,7 +2366,7 @@
                    "target": { "role": "general" },
                    "action": { "type": "load_360_image",
                     "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/563b1246-d961-4b57-ad49-85d2ac17f927.png",
-                    "position" : {"x": -11, "y": 42, "z": 20.5},
+                    "position" : {"x": -11, "y": 125, "z": 20.5},
                     "scale" : {"x": 300, "y": 250, "z": 250}
                   }
                   }
@@ -2388,7 +2388,7 @@
                     "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/99f9f039-b02a-41f6-91a3-30d9fdb23c58.glb"},
                   "action": {"type": "socket_spawn_object",
                     "applyGravityOnSpawn": false,
-                             "pos": {"x": 2.1164517402648926, "y": 338.6104736328125, "z": -50.629791259765625},
+                             "pos": {"x": 2.1164517402648926, "y": 551.6104736328125, "z": -50.329791259765625},
                              "rot": {"x": 1.5707963267948966, "y":0, "z":0},
                              "scale": {"x": 1, "y":1, "z":1}}
                 }
