@@ -2440,7 +2440,7 @@
                      },
                      "timelines" : [
                       {"x": -1.7036861381270958, "y": 370.94779073009295, "z": 12.347355102945968, "delay": 1000, "easing" : "easeInSine", "duration": 9000},
-                      {"x": -14.174468795724406, "y": 193.7553165676077, "z": 67.94308056722014, "delay": 0, "easing" : "easeInSine", "duration": 9000},
+                      {"x": -14.174468795724406, "y": 193.7553165676077, "z": 67.94308056722014, "delay": 0, "easing" : "easeOutSine", "duration": 9000},
                             {"x": -11.752040085730451, "y": 185.05381413923382, "z": 32.02673052607537, "delay": 6000, "easing": "easeInSine", "duration": 6000},
                             {"x": -12.013823817797746, "y": 166.63008416876235, "z": 20.630389655568063, "delay": 0, "easing": "linear", "duration": 2000},
                             {"x": -12.531090958717556, "y": 182.1703382964395, "z": 15.67484242143658, "delay": 0, "easing": "linear", "duration": 2000},
@@ -2587,8 +2587,8 @@
                      },
                      "timelines" : [
                       {"x": -1.5707963267948966, "y":3.141592653589793, "z":0, "duration": 0, "delay": 0, "easing": "easeInOutSine"},
-                       {"x": 0, "y":3.141592653589793, "z":0, "duration": 9000, "delay": 1000, "easing": "easeInOutSine"},
-                       {"x": 0, "y":0, "z":0, "delay": 0, "duration": 9000, "easing": "easeInOutSine"},
+                       {"x": 0, "y":3.141592653589793, "z":0, "duration": 9000, "delay": 1000, "easing": "easeInSine"},
+                       {"x": 0, "y":0, "z":0, "delay": 0, "duration": 9000, "easing": "easeOutSine"},
                        {"x": 0, "y":-2.356194490192345, "z":0, "delay": 17000, "duration": 10000, "easing": "easeInOutSine"}
                      ]
                    }
@@ -2621,8 +2621,8 @@
                        "duration": 1000
                        },
                        "timelines" : [
-                        {"x": 0, "y":0, "z":0, "duration": 9000, "delay": 1000, "easing": "easeInOutSine"},
-                        {"x": 0, "y":-3.141592653589793, "z":0, "delay": 0, "duration": 9000, "easing": "easeInOutSine"},
+                        {"x": 0, "y":0, "z":0, "duration": 9000, "delay": 1000, "easing": "easeInSine"},
+                        {"x": 0, "y":-3.141592653589793, "z":0, "delay": 0, "duration": 9000, "easing": "easeOutSine"},
                         {"x": 0, "y":-5.497787143782138, "z":0, "delay": 17000, "duration": 10000, "easing": "easeInOutSine"}
                        ]
                      }
