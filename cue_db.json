@@ -2012,7 +2012,7 @@
                      "duration": 0
                      },
                      "timelines" : [
-                      {"x": -19.5, "y": 42, "z": -30}
+                      {"x": -19.5, "y": 180, "z": -30}
                      ]
                    }
                  }
@@ -2366,7 +2366,7 @@
                    "target": { "role": "general" },
                    "action": { "type": "load_360_image",
                     "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/563b1246-d961-4b57-ad49-85d2ac17f927.png",
-                    "position" : {"x": -11, "y": 135, "z": 20.5},
+                    "position" : {"x": -7, "y": 135, "z": -5.5},
                     "scale" : {"x": 325, "y": 275, "z": 275}
                   }
                   }
@@ -3151,8 +3151,8 @@
                    },
                    "timelines" : [
                     {"x": 0, "y":-2.356194490192345, "z":0, "delay": 0, "duration": 0, "easing": "easeInOutSine"},
-                     {"x": 0, "y":-0.7853981633974483, "z":0, "delay": 0, "duration": 14000, "easing": "easeInSine"},
-                     {"x": 0, "y":0, "z":0, "delay": 0, "duration": 2000, "easing": "easeOutSine"},
+                     {"x": 0, "y":-0.7853981633974483, "z":0, "delay": 0, "duration": 7000, "easing": "easeInSine"},
+                     {"x": 0, "y":0, "z":0, "delay": 0, "duration": 7000, "easing": "easeOutSine"},
                      {"x": 0, "y":1.5707963267948966, "z":0, "delay": 6000, "duration": 2000, "easing": "easeInOutSine"}
                    ]
                  }
@@ -3191,6 +3191,39 @@
                 },
       "trig": {"type": "button",
         "groupChain" : "NPC_SM_6_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_6_shrink_colorful_skybox",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "NPC_SM_7_shrink_black_skybox",
+                   "target": { "role": "general",
+                      "aspect": "scale"
+                  },
+                   "action": { "type": "manipulate_skybox_360",
+                    "mapItem" : "NPC_SM_2_load_360_skybox",
+                    "attr": "object3D",
+                    "anime": {
+                      "targets": "",
+                      "delay" : 0,
+                      "loop": false,
+                      "autoplay": false,
+                      "easing": "easeInSine",
+                      "duration": 1000
+                      },
+                      "timelines" : [
+                        {"x": 200, "y": 150, "z": 150,"delay": 7000, "easing": "linear", "duration": 7000}
+                      ]
+                    }
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "NPC_SM_6_group",
                "time": 0}
     },
     {
@@ -3512,7 +3545,7 @@
                    "duration": 1000
                    },
                    "timelines" : [
-                    {"x": 2, "y": 2, "z": 2}
+                    {"x": 1.2, "y": 1.2, "z": 1.2}
                    ]
                  }
                }
@@ -3698,7 +3731,7 @@
                  "target": { "role": "general" },
                  "action": { "type": "load_360_image",
                   "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/38e9bb67-753d-48d6-80b6-ed0b12507504.png",
-                  "position" : {"x": -11, "y": 100, "z": 20.5},
+                  "position" : {"x": -7, "y": 100, "z": -5.5},
                   "scale" : {"x": 350, "y": 300, "z": 300}
                 }
                 }
@@ -3972,7 +4005,7 @@
                  "target": { "role": "general" },
                  "action": { "type": "load_360_image",
                   "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/30333992-8e92-40ac-908c-6532959a1c43.png",
-                  "position" : {"x": -11, "y": 150, "z": 20.5},
+                  "position" : {"x": -7, "y": 150, "z": -5.5},
                   "scale" : {"x": 350, "y": 350, "z": 350}
                 }
                 }
