@@ -2012,7 +2012,7 @@
                      "duration": 0
                      },
                      "timelines" : [
-                      {"x": -19.5, "y": 200, "z": -40}
+                      {"x": -19.5, "y": 200, "z": -55}
                      ]
                    }
                  }
@@ -3346,7 +3346,7 @@
                  "object_name": "sockSys",
                  "function_name": "cueSocket",
                  "_cue": { 
-                   "name": "NPC_SM_7_shrink_black_skybox",
+                   "name": "NPC_SM_6_shrink_colorful_skybox",
                    "target": { "role": "general",
                       "aspect": "scale"
                   },
@@ -4007,7 +4007,7 @@
                    "duration": 1
                    },
                    "timelines" : [
-                    {"x": 2, "y": 2, "z": 2, "delay": 26000, "duration": 2000, "easing": "easeInOutSine"}
+                    {"x": 0.7, "y": 0.7, "z": 0.7, "delay": 26000, "duration": 2000, "easing": "easeInOutSine"}
                    ]
                  }
                }
@@ -4082,39 +4082,6 @@
                     ]
                   }
               }
-              },
-    "trig": {"type": "button",
-              "groupChain" : "NPC_SM_7_group",
-             "time": 32000}
-  },
-  {
-    "name": "NPC_SM_7_move_black_skybox",
-    "role": "stagemanager",
-    "target": { },
-    "action": {"type": "call_method_from_object",
-               "object_name": "sockSys",
-               "function_name": "cueSocket",
-               "_cue": { 
-                "name": "NPC_SM_7_move_black_skybox",
-                "target": { "role": "general",
-                   "aspect": "position"
-               },
-                "action": { "type": "manipulate_skybox_360",
-                 "mapItem" : "NPC_SM_6_load_360_skybox",
-                 "attr": "object3D",
-                 "anime": {
-                   "targets": "",
-                   "delay" : 0,
-                   "loop": false,
-                   "autoplay": false,
-                   "easing": "easeInSine",
-                   "duration": 1000
-                   },
-                   "timelines" : [
-                     { "x": -11, "y": 150, "z": 20.5, "delay": 0, "easing": "easeInOutSine", "duration": 5000 }
-                   ]
-                 }
-             }
               },
     "trig": {"type": "button",
               "groupChain" : "NPC_SM_7_group",
