@@ -2475,11 +2475,83 @@
                      "duration": 0
                      },
                      "timelines" : [
-                      {"x": -11.290920535989299, "y": 197.5255253078421, "z": 70.20355420003261, "delay": 1000, "easing" : "easeInOutSine", "duration": 18000},
-                            {"x": -8.868491825995344, "y": 188.8240228794682, "z": 34.287204158887846, "delay": 6000, "easing": "easeInSine", "duration": 6000},
-                            {"x": -9.130275558062639, "y": 170.40029290899673, "z": 22.89086328838054, "delay": 0, "easing": "linear", "duration": 2000},
-                            {"x": -9.647542698982448, "y": 185.94054703667388, "z": 17.935316054249057, "delay": 0, "easing": "linear", "duration": 2000},
-                            {"x": -54.653630938741266, "y": 190.12296755186756, "z": -29.27643261090883, "delay": 0, "easing": "easeOutSine", "duration": 10000}
+                      {"x": -12.174468795724406, "y": 193.7553165676077, "z": 68.04308056722016, "delay": 1000, "easing" : "easeInOutSine", "duration": 18000},
+                            {"x": -9.752040085730451, "y": 185.05381413923382, "z": 32.12673052607539, "delay": 6000, "easing": "easeInSine", "duration": 6000},
+                            {"x": -10.013823817797746, "y": 166.63008416876235, "z": 20.730389655568086, "delay": 0, "easing": "linear", "duration": 2000},
+                            {"x": -10.531090958717556, "y": 182.1703382964395, "z": 15.774842421436603, "delay": 0, "easing": "linear", "duration": 2000},
+                            {"x": -52.50118241644058, "y": 186.35275881163318, "z": -28.373510020536678, "delay": 0, "easing": "easeOutSine", "duration": 10000}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_345_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_345_part3_anim_position",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "NPC_SM_345_part3_anim_position",
+                  "target": { "role" : "individual",
+                    "name" : "part3",
+                    "aspect" : "position" },
+                  "action": { "type": "manipulate_avatar",
+                    "attr": "object3D",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 0,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "linear",
+                     "duration": 0
+                     },
+                     "timelines" : [
+                      {"x": -10.674468795724406, "y": 193.7553165676077, "z": 68.04308056722016, "delay": 1000, "easing" : "easeInOutSine", "duration": 18000},
+                            {"x": -8.252040085730451, "y": 185.05381413923382, "z": 32.12673052607539, "delay": 6000, "easing": "easeInSine", "duration": 6000},
+                            {"x": -8.513823817797746, "y": 166.63008416876235, "z": 20.730389655568086, "delay": 0, "easing": "linear", "duration": 2000},
+                            {"x": -9.031090958717556, "y": 182.1703382964395, "z": 15.774842421436603, "delay": 0, "easing": "linear", "duration": 2000},
+                            {"x": -53.5618425882204, "y": 186.35275881163318, "z": -27.312849848756855, "delay": 0, "easing": "easeOutSine", "duration": 10000}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_345_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_345_part4_anim_position",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "NPC_SM_345_part4_anim_position",
+                  "target": { "role" : "individual",
+                    "name" : "part4",
+                    "aspect" : "position" },
+                  "action": { "type": "manipulate_avatar",
+                    "attr": "object3D",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 0,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "linear",
+                     "duration": 0
+                     },
+                     "timelines" : [
+                      {"x": -9.174468795724406, "y": 193.7553165676077, "z": 67.94308056722014, "delay": 1000, "easing" : "easeInOutSine", "duration": 18000},
+                            {"x": -6.752040085730451, "y": 185.05381413923382, "z": 32.02673052607537, "delay": 6000, "easing": "easeInSine", "duration": 6000},
+                            {"x": -7.013823817797746, "y": 166.63008416876235, "z": 20.630389655568063, "delay": 0, "easing": "linear", "duration": 2000},
+                            {"x": -7.531090958717556, "y": 182.1703382964395, "z": 15.67484242143658, "delay": 0, "easing": "linear", "duration": 2000},
+                            {"x": -54.551792081881544, "y": 186.35275881163318, "z": -26.181478998858363, "delay": 0, "easing": "easeOutSine", "duration": 10000}
                      ]
                    }
                  }
