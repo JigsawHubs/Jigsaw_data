@@ -2656,7 +2656,7 @@
                           "timelines" : [
                             {"x": -4.587234397862203, "y": 374.7179994703273, "z": 10.086881470133491, "delay": 950, "easing" : "easeInSine", "duration": 9000},
                             {"x": -11.290920535989299, "y": 197.5255253078421, "z": 70.20355420003261, "delay": 0, "easing" : "easeOutSine", "duration": 9000},
-                            {"x": -8.868491825995344, "y": 188.8240228794682, "z": 34.287204158887846, "delay": 6000, "easing": "easeInSine", "duration": 6000},
+                            {"x": -8.868491825995344, "y": 188.8240228794682, "z": 34.287204158887846, "delay": 6050, "easing": "easeInSine", "duration": 6000},
                             {"x": -9.130275558062639, "y": 170.40029290899673, "z": 22.89086328838054, "delay": 0, "easing": "linear", "duration": 2000},
                             {"x": -9.647542698982448, "y": 185.94054703667388, "z": 17.935316054249057, "delay": 0, "easing": "linear", "duration": 2000},
                             {"x": -54.653630938741266, "y": 190.12296755186756, "z": -29.27643261090883, "delay": 0, "easing": "easeOutSine", "duration": 10000}
@@ -3145,35 +3145,35 @@
              "time": 0}
     },
     {
-      "name": "NPC_SM_6_omni_anim_scale",
+      "name": "NPC_SM_6_anim_scale",
       "role": "stagemanager",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
                  "function_name": "cueSocket",
                  "_cue": { 
-                   "name": "NPC_SM_6_omni_anim_scale",
-                   "target": { "role": "general", "aspect" : "scale"},
-                   "action": { "type" : "socket_manipulate_object",
-                    "mapItem": "NPC_SM_2_spawn_prop_omni",
-                     "attr": "object3D",
-                     "anime" : {
-                      "targets": "scale",
-                      "delay" : 1000,
-                      "loop": false,
-                      "autoplay": true,
-                      "easing": "linear",
-                      "duration": 1000
-                      },
-                      "timelines" : [
-                        {"x": 0.2, "y": 0.2, "z": 0.2,"delay": 7000, "easing": "linear", "duration": 7000}
-                      ]
-                    }
-                  }
+                  "name": "NPC_SM_6_anim_scale",
+                  "target": { "role" : ["participant", "stagemanager"],
+                    "aspect" : "scale" },
+                  "action": { "type": "manipulate_avatar",
+                    "attr": "object3D",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 0,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "linear",
+                     "duration": 1
+                     },
+                     "timelines" : [
+                      {"x": 0.2, "y": 0.2, "z": 0.2,"delay": 7000, "easing": "linear", "duration": 7000}
+                     ]
+                   }
+                 }
                 },
-    "trig": {"type": "button",
-      "groupChain" : "NPC_SM_6_group",
-              "time": 0}
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_6_group",
+               "time": 0}
     },
     {
       "name": "NPC_SM_6_omni_anim_position",
