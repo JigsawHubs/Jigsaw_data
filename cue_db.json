@@ -2694,7 +2694,7 @@
                        "duration": 1000
                        },
                        "timelines" : [
-                        {"x": 0, "y":0, "z":0, "duration": 9000, "delay": 1000, "easing": "easeInSine"},
+                        {"x": 0, "y":0, "z":0, "duration": 9000, "delay": 985, "easing": "easeInSine"},
                         {"x": 0, "y":-3.141592653589793, "z":0, "delay": 0, "duration": 9000, "easing": "easeOutSine"},
                         {"x": 0, "y":-5.497787143782138, "z":0, "delay": 17000, "duration": 10000, "easing": "easeInOutSine"}
                        ]
@@ -2987,7 +2987,7 @@
                     "delay" : 0,
                     "loop": false,
                     "autoplay": true,
-                    "easing": "easeOutElastic(1, .1)",
+                    "easing": "easeOutElastic(1, .9)",
                     "duration": 4000
                     },
                     "timelines" : [
@@ -3022,16 +3022,16 @@
                     "duration": 1000
                     },
                     "timelines" : [
-                        {"x": -32.28658615980113, "y": 189.90917605110286, "z": -5.5232422300881625, "delay": 17000, "easing": "easeInSine", "duration": 0},
-                        {"x": -30.035013902942165, "y": 191.2054828458551, "z": -5.047107767170219, "delay": 500, "easing": "easeOutSine", "duration": 0},
-                        {"x": -28.987645993571878, "y": 190.72456730174127, "z": -5.4966218281889345, "delay": 750, "easing": "easeOutSine", "duration": 0},
-                        {"x": -27.887645993571878, "y": 191.2054828458551, "z": -5.4966218281889345, "delay": 250, "easing": "easeOutSine", "duration": 0},
-                        {"x": -26.753674244111767, "y": 190.63789347691795, "z": -5.557227515988292, "delay": 300, "easing": "easeOutSine", "duration": 0},
-                        {"x": -25.90182425963903, "y": 191.53791522712945, "z": -5.6095222994542855, "delay": 250, "easing": "easeOutSine", "duration": 0},
-                        {"x": -25.09115884954206, "y": 192.3928791147863, "z": -5.58032448961124, "delay": 600, "easing": "easeOutSine", "duration": 0},
+                        {"x": -32.28658615980113, "y": 189.90917605110286, "z": -5.5232422300881625, "delay": 16700, "easing": "easeInSine", "duration": 0},
+                        {"x": -30.035013902942165, "y": 191.2054828458551, "z": -5.047107767170219, "delay": 500, "easing": "easeOutSine", "duration": 100},
+                        {"x": -28.987645993571878, "y": 190.72456730174127, "z": -5.4966218281889345, "delay": 500, "easing": "easeOutSine", "duration": 0},
+                        {"x": -27.887645993571878, "y": 191.2054828458551, "z": -5.4966218281889345, "delay": 500, "easing": "easeOutSine", "duration": 0},
+                        {"x": -26.753674244111767, "y": 190.63789347691795, "z": -5.557227515988292, "delay": 500, "easing": "easeOutSine", "duration": 0},
+                        {"x": -25.90182425963903, "y": 191.53791522712945, "z": -5.6095222994542855, "delay": 300, "easing": "easeOutSine", "duration": 0},
+                        {"x": -25.09115884954206, "y": 192.3928791147863, "z": -5.58032448961124, "delay": 250, "easing": "easeOutSine", "duration": 0},
                         {"x": -24.089402953490545, "y": 191.6295484314419, "z": -5.612224042592181, "delay": 250, "easing": "easeOutSine", "duration": 0},
-                        {"x": -22.540372138609865, "y": 190.776971760952, "z": -5.613576706546868, "delay": 350, "easing": "easeOutSine", "duration": 0},
-                        {"x": -21.11367636666339, "y": 191.43831329701814, "z": -5.376072732496019, "delay": 250, "easing": "easeOutSine", "duration": 0},
+                        {"x": -22.540372138609865, "y": 190.776971760952, "z": -5.613576706546868, "delay": 600, "easing": "easeOutSine", "duration": 0},
+                        {"x": -21.11367636666339, "y": 191.43831329701814, "z": -5.376072732496019, "delay": 300, "easing": "easeOutSine", "duration": 0},
                         {"x": -20.151486472825784, "y": 190.85530416151053, "z": -5.481468289840503, "delay": 350, "easing": "easeOutSine", "duration": 0},
                         {"x": -18.865994313999577, "y": 191.44529335182017, "z": -5.50941792081381, "delay": 250, "easing": "easeOutSine", "duration": 0},
                         {"x": -17.93614884541189, "y": 190.9234252983882, "z": -5.369868397720931, "delay": 350, "easing": "easeOutSine", "duration": 0},
@@ -3122,7 +3122,7 @@
                    "timelines" : [
                     {"x": -43.39892870904734, "y": 187.90577528755196, "z": -2.418835491685349,"delay": 0, "easing": "easeInSine", "duration": 7000},
                     {"x": -28.45759425327237, "y": 183.92110740018262, "z": -1.6458496093749937,"delay": 0, "easing": "easeOutSine", "duration": 7000},
-                    {"x": -11.457594253272367, "y": 183.92110740018262, "z": -1.6458496093749937,"delay": 2500, "easing": "linear", "duration": 8000},
+                    {"x": -11.457594253272367, "y": 183.92110740018262, "z": -1.6458496093749937,"delay": 3000, "easing": "linear", "duration": 8000},
                     {"x": -0.31222514595534934, "y": 183.62279750279018, "z": -5.398980730159152,"delay": 0, "easing": "easeInOutSine", "duration": 2000}
                    ]
                  }
@@ -3157,7 +3157,7 @@
                    "timelines" : [
                     {"x": -42.05542582479291, "y": 187.90577528755196, "z": -0.9339112511935832,"delay": 0, "easing": "easeInSine", "duration": 7000},
                     {"x": -27.886165681843796, "y": 183.92110740018262, "z": -1.6172781808035586,"delay": 0, "easing": "easeOutSine", "duration": 7000},
-                    {"x": -10.886165681843796, "y": 183.92110740018262, "z": -1.6172781808035586,"delay": 2500, "easing": "linear", "duration": 8000},
+                    {"x": -10.886165681843796, "y": 183.92110740018262, "z": -1.6172781808035586,"delay": 3000, "easing": "linear", "duration": 8000},
                     {"x": -0.2836537173839143, "y": 183.62279750279018, "z": -5.970409301587723,"delay": 0, "easing": "easeInOutSine", "duration": 2000}
                    ]
                  }
@@ -3192,7 +3192,7 @@
                    "timelines" : [
                     {"x": -40.9947656530131, "y": 187.90577528755196, "z": 0.126748920586238,"delay": 0, "easing": "easeInSine", "duration": 7000},
                     {"x": -27.45759425327237, "y": 183.92110740018262, "z": -1.6172781808035586,"delay": 0, "easing": "easeOutSine", "duration": 7000},
-                    {"x": -10.457594253272367, "y": 183.92110740018262, "z": -1.6172781808035586,"delay": 2500, "easing": "linear", "duration": 8000},
+                    {"x": -10.457594253272367, "y": 183.92110740018262, "z": -1.6172781808035586,"delay": 3000, "easing": "linear", "duration": 8000},
                     {"x": -0.28365371738391454, "y": 183.62279750279018, "z": -6.398980730159152,"delay": 0, "easing": "easeInOutSine", "duration": 2000}
                    ]
                  }
@@ -3227,7 +3227,7 @@
                    "timelines" : [
                     {"x": -39.8633948031146, "y": 187.90577528755196, "z": 1.1166984142473884,"delay": 0, "easing": "easeInSine", "duration": 7000},
                     {"x": -27.029022824700938, "y": 183.92110740018262, "z": -1.6458496093749937,"delay": 0, "easing": "easeOutSine", "duration": 7000},
-                    {"x": -10.029022824700938, "y": 183.92110740018262, "z": -1.6458496093749937,"delay": 2500, "easing": "linear", "duration": 8000},
+                    {"x": -10.029022824700938, "y": 183.92110740018262, "z": -1.6458496093749937,"delay": 3000, "easing": "linear", "duration": 8000},
                     {"x": -0.31222514595534956, "y": 183.62279750279018, "z": -6.82755215873058,"delay": 0, "easing": "easeInOutSine", "duration": 2000}
                    ]
                  }
@@ -3298,7 +3298,7 @@
                     {"x": 0, "y":-2.356194490192345, "z":0, "delay": 0, "duration": 0, "easing": "easeInOutSine"},
                      {"x": 0, "y":-0.7853981633974483, "z":0, "delay": 0, "duration": 7000, "easing": "easeInSine"},
                      {"x": 0, "y":0, "z":0, "delay": 0, "duration": 7000, "easing": "easeOutSine"},
-                     {"x": 0, "y":1.5707963267948966, "z":0, "delay": 8500, "duration": 2000, "easing": "easeInOutSine"}
+                     {"x": 0, "y":1.5707963267948966, "z":0, "delay": 9000, "duration": 2000, "easing": "easeInOutSine"}
                    ]
                  }
                }
@@ -3395,8 +3395,8 @@
                       "timelines" : [
                         {"x": -42.95834841516507, "y": 191.67598402778634, "z": 1.2185372711071059,"delay": 0, "easing": "easeInSine", "duration": 7000},
                         {"x": -27.63372332191948, "y": 184.99830989739243, "z": -1,"delay": 0, "easing": "easeOutSine", "duration": 7000},
-                        {"x": -10.63372332191948, "y": 184.99830989739243, "z": -1,"delay": 2500, "easing": "linear", "duration": 8000},
-                        {"x": 0.333624463419644, "y": 184.7, "z": -6.222851661512039,"delay": 0, "easing": "easeInOutSine", "duration": 1970}
+                        {"x": -10.63372332191948, "y": 184.99830989739243, "z": -1,"delay": 3000, "easing": "linear", "duration": 8000},
+                        {"x": 0.333624463419644, "y": 184.7, "z": -6.222851661512039,"delay": 0, "easing": "easeInOutSine", "duration": 1930}
                       ]
                     }
                   }
@@ -3430,7 +3430,7 @@
                      "timelines" : [
                       {"x": 0, "y":-3.9269908169872414, "z":0, "delay": 0, "duration": 7000, "easing": "easeInSine"},
                       {"x": 0, "y":-3.141592653589793, "z":0, "delay": 0, "duration": 7000, "easing": "easeOutSine"},
-                      {"x": 0, "y":-1.5707963267948966, "z":0, "delay": 8500, "duration": 2000, "easing": "easeInOutSine"}
+                      {"x": 0, "y":-1.5707963267948966, "z":0, "delay": 9000, "duration": 1930, "easing": "easeInOutSine"}
                      ]
                    }
                  }
@@ -4128,24 +4128,6 @@
              "time": 33000}
   },
   {
-    "name": "NPC_SM_7_delete_STRT",
-    "role": "stagemanager",
-    "target": { },
-    "action": {"type": "call_method_from_object",
-               "object_name": "sockSys",
-               "function_name": "cueSocket",
-               "_cue": {
-                "name": "NPC_SM_7_delete_STRT",
-                "target": { "role": "general" },
-                "action": {"type": "call_global_function",
-                           "function_name":"deleteSTRT"}
-              }
-              },
-    "trig": {"type": "button",
-      "groupChain" : "NPC_SM_7_group",
-             "time": 33000}
-  },
-  {
     "name": "NPC_SM_7_load_ventricle",
     "role": "stagemanager",
     "target": { "type": "glb",
@@ -4192,7 +4174,7 @@
                  "target": { "role": "general" },
                  "action": { "type": "socket_fade_skybox_opacity",
                   "mapItem" : "NPC_SM_6_load_360_skybox",
-                  "fadeDuration" : 3000}
+                  "fadeDuration" : 8000}
               }
               },
     "trig": {"type": "button",
@@ -4223,7 +4205,7 @@
                     "duration": 1000
                     },
                     "timelines" : [
-                      { "x": 0, "y": 10000, "z": 0, "delay": 10000, "easing": "easeInSine", "duration": 30000 }
+                      { "x": 0, "y": 10000, "z": 0, "delay": 0, "easing": "easeInSine", "duration": 65000 }
                     ]
                   }
               }
@@ -4255,8 +4237,8 @@
                    "duration": 1
                    },
                    "timelines" : [
-                    {"x": 25, "y": 20, "z": 25, "delay": 27000, "duration": 10000, "easing": "linear"},
-                    {"x": 150, "y": 75, "z": 150, "delay": 3000, "duration": 7000, "easing": "linear"}
+                    {"x": 25, "y": 20, "z": 25, "delay": 40000, "duration": 5000, "easing": "linear"},
+                    {"x": 150, "y": 75, "z": 150, "delay": 5000, "duration": 3000, "easing": "linear"}
                    ]
                  }
                }
@@ -4288,7 +4270,7 @@
                    "duration": 1
                    },
                    "timelines" : [
-                    {"x": 263.40386951589255, "y": 202.0142558914274, "z": -2.24813225086168, "delay": 40000, "duration": 3000, "easing": "easeInSine"},
+                    {"x": 263.40386951589255, "y": 202.0142558914274, "z": -2.24813225086168, "delay": 45000, "duration": 5000, "easing": "easeInSine"},
                     {"x": 263.40386951589255, "y": 140.0142558914274, "z": -2.24813225086168, "delay": 0, "duration": 7000, "easing": "linear"}
                    ]
                  }
@@ -4322,7 +4304,7 @@
                     "duration": 1000
                     },
                     "timelines" : [
-                      {"x": 245.3386861455923, "y": 234.08700392207302, "z": 19.507121740528348, "delay": 58000, "duration": 5000, "easing": "easeInSine"},
+                      {"x": 245.3386861455923, "y": 234.08700392207302, "z": 19.507121740528348, "delay": 2000, "duration": 5000, "easing": "easeInSine"},
                       {"x": 281.2498780374571, "y": 234.69598227344594, "z": 13.998316167828914, "delay": 0, "easing": "linear", "duration": 1500},
                       {"x": 309.5030388235464, "y": 235.8238476841758, "z": 14.656894971329239, "delay": 0, "easing": "linear", "duration": 800},
                       {"x": 320.1093467277769, "y": 235.9068684013055, "z": 17.52648059380149, "delay": 0, "easing": "linear", "duration": 800},
@@ -4338,7 +4320,7 @@
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_9_group",
-             "time": 0}
+             "time": 58000}
   },
   {
     "name": "NPC_SM_9_part_scale",
@@ -4385,7 +4367,7 @@
                "scale": {"x": 1.5, "y":1.5, "z":1.5}},
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_9_group",
-      "time": 62000
+      "time": 64000
     }
   },
   {
@@ -4407,7 +4389,7 @@
               },
     "trig": {"type": "button",
               "groupChain" : "NPC_SM_9_group",
-             "time": 62500}
+             "time": 64300}
   },
   {
     "name": "NPC_SM_9_brnd_mute",
@@ -4428,7 +4410,7 @@
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_9_group",
-             "time": 62000}
+             "time": 65000}
   },
   {
     "name": "NPC_SM_9_brnd_below",
@@ -4460,7 +4442,7 @@
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_9_group",
-             "time": 62000}
+             "time": 64300}
   },
   {
     "name": "NPC_SM_9_enable_flight",
@@ -4478,7 +4460,7 @@
               },
     "trig": {"type": "button",
               "groupChain" : "NPC_SM_9_group",
-             "time": 63000}
+             "time": 66000}
   },
 {
   "name": "NPC_SM_9_delete_360_red_skybox",
@@ -4497,7 +4479,7 @@
             },
   "trig": {"type": "button",
     "groupChain" : "NPC_SM_9_group",
-           "time": 63000}
+           "time": 65000}
 },
 {
   "name": "NPC_SM_9_delete_360_black_skybox",
@@ -4516,7 +4498,7 @@
             },
   "trig": {"type": "button",
     "groupChain" : "NPC_SM_9_group",
-           "time": 63000}
+           "time": 65000}
 },
 {
   "name": "NPC_SM_9_delete_corpse_rock_1",
