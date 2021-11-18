@@ -2012,7 +2012,7 @@
                      "duration": 0
                      },
                      "timelines" : [
-                      {"x": -19.5, "y": 180, "z": -30}
+                      {"x": -19.5, "y": 200, "z": -40}
                      ]
                    }
                  }
@@ -2070,7 +2070,26 @@
                 },
       "trig": {"type": "button",
         "groupChain" : "NPC_SM_2_group",
-               "time": 500}
+               "time": 1500}
+    },
+    {
+      "name": "NPC_SM_2_enable_brnd_flight",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "NPC_SM_2_enable_brnd_flight",
+                   "target": { "role": "individual", 
+                    "name": "Brendan" },
+                   "action": { "type": "socket_toggle_flight",
+                    "flight" : true}
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "NPC_SM_2_group",
+               "time": 1500}
     },
     {
       "name": "NPC_SM_2_brnd_mute",
@@ -2352,7 +2371,25 @@
                 },
       "trig": {"type": "button",
         "groupChain" : "NPC_SM_2_group",
-               "time": 500}
+               "time": 1500}
+    },
+    {
+      "name": "NPC_SM_2_enable_part_flight",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "NPC_SM_2_enable_part_flight",
+                   "target": { "role": "participant" },
+                   "action": { "type": "socket_toggle_flight",
+                    "flight" : true}
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "NPC_SM_2_group",
+               "time": 1500}
     },
     {
       "name": "NPC_SM_2_load_360_skybox",
@@ -2565,6 +2602,42 @@
                "time": 0}
     },
     {
+      "name": "NPC_SM_345_disable_part_motion",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "NPC_SM_345_disable_part_motion",
+                   "target": { "role": "participant" },
+                   "action": { "type": "socket_toggle_movement",
+                    "movement" : true}
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_345_group",
+               "time": 45500}
+    },
+    {
+      "name": "NPC_SM_345_enable_part_flight",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "NPC_SM_345_enable_part_flight",
+                   "target": { "role": "participant" },
+                   "action": { "type": "socket_toggle_flight",
+                    "flight" : true}
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "NPC_SM_345_group",
+               "time": 45500}
+    },
+    {
       "name": "NPC_SM_345_anim_rotation",
       "role": "stagemanager",
       "target": { },
@@ -2654,9 +2727,9 @@
                           "duration": 1000
                           },
                           "timelines" : [
-                            {"x": -4.587234397862203, "y": 374.7179994703273, "z": 10.086881470133491, "delay": 950, "easing" : "easeInSine", "duration": 9000},
+                            {"x": -4.587234397862203, "y": 374.7179994703273, "z": 10.086881470133491, "delay": 975, "easing" : "easeInSine", "duration": 9000},
                             {"x": -11.290920535989299, "y": 197.5255253078421, "z": 70.20355420003261, "delay": 0, "easing" : "easeOutSine", "duration": 9000},
-                            {"x": -8.868491825995344, "y": 188.8240228794682, "z": 34.287204158887846, "delay": 6050, "easing": "easeInSine", "duration": 6000},
+                            {"x": -8.868491825995344, "y": 188.8240228794682, "z": 34.287204158887846, "delay": 6025, "easing": "easeInSine", "duration": 6000},
                             {"x": -9.130275558062639, "y": 170.40029290899673, "z": 22.89086328838054, "delay": 0, "easing": "linear", "duration": 2000},
                             {"x": -9.647542698982448, "y": 185.94054703667388, "z": 17.935316054249057, "delay": 0, "easing": "linear", "duration": 2000},
                             {"x": -54.653630938741266, "y": 190.12296755186756, "z": -29.27643261090883, "delay": 0, "easing": "easeOutSine", "duration": 10000}
@@ -2735,6 +2808,42 @@
           "trig": {"type": "button",
             "groupChain" : "NPC_SM_345_group",
                    "time": 0}
+        },
+        {
+          "name": "NPC_SM_345_enable_brnd_motion",
+          "role": "stagemanager",
+          "target": { },
+          "action": {"type": "call_method_from_object",
+                     "object_name": "sockSys",
+                     "function_name": "cueSocket",
+                     "_cue": { 
+                       "name": "NPC_SM_345_disable_part_motion",
+                       "target": { "role": "individual", "name": "Brendan" },
+                       "action": { "type": "socket_toggle_movement",
+                        "movement" : true}
+                    }
+                    },
+          "trig": {"type": "button",
+            "groupChain" : "NPC_SM_345_group",
+                   "time": 45500}
+        },
+        {
+          "name": "NPC_SM_345_enable_brnd_flight",
+          "role": "stagemanager",
+          "target": { },
+          "action": {"type": "call_method_from_object",
+                     "object_name": "sockSys",
+                     "function_name": "cueSocket",
+                     "_cue": { 
+                       "name": "NPC_SM_345_enable_brnd_flight",
+                       "target": { "role": "individual", "name": "Brendan" },
+                       "action": { "type": "socket_toggle_flight",
+                        "flight" : true}
+                    }
+                    },
+          "trig": {"type": "button",
+                    "groupChain" : "NPC_SM_345_group",
+                   "time": 45500}
         },
         {
           "name": "NPC_SM_345_brnd_rotation",
@@ -3129,6 +3238,42 @@
              "time": 0}
   },
   {
+    "name": "NPC_SM_6_disable_part_motion",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                 "name": "NPC_SM_6_disable_part_motion",
+                 "target": { "role": "participant" },
+                 "action": { "type": "socket_toggle_movement",
+                  "movement" : true}
+              }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_6_group",
+             "time": 24500}
+  },
+  {
+    "name": "NPC_SM_6_enable_part_flight",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                 "name": "NPC_SM_6_enable_part_flight",
+                 "target": { "role": "participant" },
+                 "action": { "type": "socket_toggle_flight",
+                  "flight" : true}
+              }
+              },
+    "trig": {"type": "button",
+              "groupChain" : "NPC_SM_6_group",
+             "time": 24500}
+  },
+  {
     "name": "NPC_SM_6_anim_rotation",
     "role": "stagemanager",
     "target": { },
@@ -3471,24 +3616,6 @@
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_6_group",
              "time": 22000}
-  },
-  {
-    "name": "NPC_SM_6_disable_part_motion",
-    "role": "stagemanager",
-    "target": { },
-    "action": {"type": "call_method_from_object",
-               "object_name": "sockSys",
-               "function_name": "cueSocket",
-               "_cue": { 
-                 "name": "NPC_SM_6_disable_part_motion",
-                 "target": { "role": "participant"},
-                 "action": { "type": "socket_toggle_movement",
-                  "movement" : true}
-              }
-              },
-    "trig": {"type": "button",
-      "groupChain" : "NPC_SM_6_group",
-             "time": 24000}
   },
   {
     "name": "NPC_SM_6_brnd_hidden_position",
