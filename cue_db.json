@@ -2417,43 +2417,6 @@
                "time": 0}
     },
     {
-      "name": "NPC_SM_345_anim_position_track",
-      "role": "stagemanager",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": { 
-                   "name": "NPC_SM_345_anim_position_track",
-                   "target": { "role": ["participant", "stagemanager"], "aspect" : "position"},
-                   "action": { "type" : "lock_waypoint",
-                     "waypoint" : "NPCWaypoint1",
-                     "attr": "object3D",
-                     "recallAud" : true,
-                     "maxDist" : 5,
-                     "anime" : {
-                      "targets": "position",
-                      "delay" : 1000,
-                      "loop": false,
-                      "autoplay": true,
-                      "easing": "linear",
-                      "duration": 1000
-                      },
-                      "timelines" : [
-                        {"x": -11.290920535989299, "y": 196.5255253078421, "z": 70.20355420003261, "delay": 1000, "easing" : "easeInOutSine", "duration": 18000},
-                        {"x": -8.868491825995344, "y": 187.8240228794682, "z": 34.287204158887846, "delay": 6000, "easing": "easeInSine", "duration": 6000},
-                        {"x": -9.130275558062639, "y": 169.40029290899673, "z": 22.89086328838054, "delay": 0, "easing": "linear", "duration": 2000},
-                        {"x": -9.647542698982448, "y": 184.94054703667388, "z": 17.935316054249057, "delay": 0, "easing": "linear", "duration": 2000},
-                        {"x": -54.653630938741266, "y": 189.12296755186756, "z": -29.27643261090883, "delay": 0, "easing": "easeOutSine", "duration": 10000}
-                      ]
-                    }
-                  }
-                },
-      "trig": {"type": "button",
-        "groupChain" : "NPC_SM_345_group",
-               "time": 0}
-    },
-    {
       "name": "NPC_SM_345_part1_anim_position",
       "role": "stagemanager",
       "target": { },
