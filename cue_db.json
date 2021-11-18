@@ -2385,7 +2385,7 @@
                  "_cue": {
                   "name": "NPC_SM_2_spawn_prop_omni",
                   "target": { "role": "general",
-                    "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/99f9f039-b02a-41f6-91a3-30d9fdb23c58.glb"},
+                    "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_2.glb"},
                   "action": {"type": "socket_spawn_object",
                     "applyGravityOnSpawn": false,
                              "pos": {"x": 2.1164517402648926, "y": 551.9104736328125, "z": -50.029791259765625},
@@ -2481,6 +2481,42 @@
                             {"x": -12.013823817797746, "y": 166.63008416876235, "z": 20.630389655568063, "delay": 0, "easing": "linear", "duration": 2000},
                             {"x": -12.531090958717556, "y": 182.1703382964395, "z": 15.67484242143658, "delay": 0, "easing": "linear", "duration": 2000},
                             {"x": -51.01625817594881, "y": 186.35275881163318, "z": -29.7170129047911, "delay": 0, "easing": "easeOutSine", "duration": 10000}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_345_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_345_part2_anim_position",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "NPC_SM_345_part2_anim_position",
+                  "target": { "role" : "individual",
+                    "name" : "part2",
+                    "aspect" : "position" },
+                  "action": { "type": "manipulate_avatar",
+                    "attr": "object3D",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 0,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "linear",
+                     "duration": 0
+                     },
+                     "timelines" : [
+                      {"x": -11.290920535989299, "y": 197.5255253078421, "z": 70.20355420003261, "delay": 1000, "easing" : "easeInOutSine", "duration": 18000},
+                            {"x": -8.868491825995344, "y": 188.8240228794682, "z": 34.287204158887846, "delay": 6000, "easing": "easeInSine", "duration": 6000},
+                            {"x": -9.130275558062639, "y": 170.40029290899673, "z": 22.89086328838054, "delay": 0, "easing": "linear", "duration": 2000},
+                            {"x": -9.647542698982448, "y": 185.94054703667388, "z": 17.935316054249057, "delay": 0, "easing": "linear", "duration": 2000},
+                            {"x": -54.653630938741266, "y": 190.12296755186756, "z": -29.27643261090883, "delay": 0, "easing": "easeOutSine", "duration": 10000}
                      ]
                    }
                  }
@@ -5290,14 +5326,34 @@
              "time": 1500}
   },
   {
-    "name": "NPC_SM_13_part_into_light",
+    "name": "NPC_SM_13_part_to_invis",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": {
+                "name": "NPC_SM_13_part_to_invis",
+                "role":"stagemanager",
+                "target": { "role" : "participant"
+                },
+                "action": {"type": "change_avatar",
+                           "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_24.glb"}
+              }
+              },
+    "trig": {"type": "button",
+              "groupChain" : "NPC_SM_13_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_13A_part_into_light",
     "role": "stagemanager",
     "target": { },
     "action": {"type": "call_method_from_object",
                "object_name": "sockSys",
                "function_name": "cueSocket",
                "_cue": { 
-                "name": "NPC_SM_13_part_into_light",
+                "name": "NPC_SM_13A_part_into_light",
                 "target": { "role" : ["participant", "stagemanager"],
                   "aspect" : "position" },
                 "action": { "type": "manipulate_avatar",
@@ -5317,7 +5373,7 @@
                }
               },
     "trig": {"type": "button",
-      "groupChain" : "NPC_SM_13_group",
+      "groupChain" : "NPC_SM_13A_group",
              "time": 0}
   }
       ]
