@@ -2844,7 +2844,7 @@
     "action": {"type": "delete"},
     "trig": {"type": "button",
       "groupChain": "NPC_SM_345_group",
-             "time": 120000}
+             "time": 240000}
   },
   {
     "name": "NPC_SM_6_smoke_monster",
