@@ -3527,8 +3527,8 @@
                        "duration": 1
                        },
                        "timelines" : [
-                        {"x": 1, "y": 1, "z": 1, "delay": 7000, "easing" : "easeInSine", "duration": 7000},
-                        {"x": 3, "y": 3, "z": 3, "delay": 5000, "easing" : "easeInSine", "duration": 2000}
+                        {"x": 0.7, "y": 0.7, "z": 0.7, "delay": 7000, "easing" : "easeInSine", "duration": 7000},
+                        {"x": 3, "y": 3, "z": 3, "delay": 11000, "easing" : "easeInSine", "duration": 2000}
                        ]
                      }
                    }
