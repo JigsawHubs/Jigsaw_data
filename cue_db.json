@@ -2989,7 +2989,7 @@
                     "loop": false,
                     "autoplay": true,
                     "easing": "easeOutElastic(1, .9)",
-                    "duration": 4000
+                    "duration": 7000
                     },
                     "timelines" : [
                       {"x": -34.28658615980113, "y": 189.90917605110286, "z": -5.5232422300881625}
@@ -2999,7 +2999,7 @@
               },
   "trig": {"type": "button",
     "groupChain" : "NPC_SM_6_group",
-            "time": 2000}
+            "time": 0}
   },
   {
     "name": "NPC_SM_6_smoke_anim_position",
