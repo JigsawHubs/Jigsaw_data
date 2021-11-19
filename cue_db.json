@@ -2660,7 +2660,7 @@
                      },
                      "timelines" : [
                       {"x": -1.5707963267948966, "y":3.141592653589793, "z":0, "duration": 0, "delay": 0, "easing": "easeInOutSine"},
-                       {"x": 0, "y":3.141592653589793, "z":0, "duration": 8500, "delay": 6000, "easing": "easeInSine"},
+                       {"x": 0, "y":3.141592653589793, "z":0, "duration": 4500, "delay": 10000, "easing": "easeInSine"},
                        {"x": 0, "y":0, "z":0, "delay": 0, "duration": 4500, "easing": "easeOutSine"},
                        {"x": 0, "y":-2.356194490192345, "z":0, "delay": 17000, "duration": 10000, "easing": "easeInOutSine"}
                      ]
@@ -2694,7 +2694,7 @@
                        "duration": 1000
                        },
                        "timelines" : [
-                        {"x": 0, "y":0, "z":0, "duration": 8500, "delay": 6000, "easing": "easeInSine"},
+                        {"x": 0, "y":0, "z":0, "duration": 4500, "delay": 10000, "easing": "easeInSine"},
                         {"x": 0, "y":-3.141592653589793, "z":0, "delay": 0, "duration": 4500, "easing": "easeOutSine"},
                         {"x": 0, "y":-5.497787143782138, "z":0, "delay": 16500, "duration": 10000, "easing": "easeInOutSine"}
                        ]
