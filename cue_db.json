@@ -4140,7 +4140,7 @@
     "role": "stagemanager",
     "target": { "type": "glb",
                 "dest": "url",
-                "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_39.glb"},
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/18a38a93-2fc0-4633-b077-5dfec307b99e.glb"},
     "action": {"type": "spawn_item",
                "pos": {"x": 0, "y":-100, "z":0},
                "rot": {"x": 0, "y":0, "z":0},
