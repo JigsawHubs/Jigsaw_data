@@ -2694,9 +2694,9 @@
                        "duration": 1000
                        },
                        "timelines" : [
-                        {"x": 0, "y":0, "z":0, "duration": 9000, "delay": 990, "easing": "easeInSine"},
-                        {"x": 0, "y":-3.141592653589793, "z":0, "delay": 0, "duration": 9000, "easing": "easeOutSine"},
-                        {"x": 0, "y":-5.497787143782138, "z":0, "delay": 17000, "duration": 10000, "easing": "easeInOutSine"}
+                        {"x": 0, "y":0, "z":0, "duration": 9000, "delay": 1000, "easing": "easeInSine"},
+                        {"x": 0, "y":-3.141592653589793, "z":0, "delay": 150, "duration": 9000, "easing": "easeOutSine"},
+                        {"x": 0, "y":-5.497787143782138, "z":0, "delay": 16850, "duration": 10000, "easing": "easeInOutSine"}
                        ]
                      }
                    }
