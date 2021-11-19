@@ -4205,7 +4205,7 @@
                     "duration": 1000
                     },
                     "timelines" : [
-                      { "x": 0, "y": 10000, "z": 0, "delay": 0, "easing": "easeInSine", "duration": 65000 }
+                      { "x": 0, "y": 100, "z": 0, "delay": 0, "easing": "easeInSine", "duration": 65000 }
                     ]
                   }
               }
