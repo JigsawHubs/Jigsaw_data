@@ -4572,7 +4572,7 @@
     "role":"stagemanager",
     "target": { },
     "action": {"type": "change_scene",
-               "link":"https://onboardxr.live/scenes/zdh9JUN"},
+               "link":"https://onboardxr.live/scenes/mGFRrw4"},
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_10_A_1_group",
              "time": 0}
@@ -4929,7 +4929,7 @@
                    "duration": 1
                    },
                    "timelines" : [
-                    {"x": 1000, "y": 0.1, "z": 1000, "delay": 0, "duration": 5000, "easing": "easeInSine"}
+                    {"x": 100, "y": 0.1, "z": 100, "delay": 0, "duration": 5000, "easing": "easeInSine"}
                    ]
                  }
                }
