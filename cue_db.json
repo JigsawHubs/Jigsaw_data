@@ -2414,7 +2414,7 @@
     },
     {
       "name": "NPC_SM_2_spawn_direction_light",
-      "role": "stagemanager",
+      "role": "none",
       "target": { "type": "glb",
                   "dest": "url",
                   "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/9cc451cc-db52-406a-89e3-ac435bd8f737.glb"},
@@ -2425,7 +2425,6 @@
         "rot": {"x": 89, "y": -59.99999999999999, "z": 0},
         "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
-                "groupChain": "NPC_SM_2_group",
                "time": 0}
     },
     {
@@ -4096,6 +4095,22 @@
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_7_group",
              "time": 29000}
+  },
+  {
+    "name": "NPC_SM_7_move_directional_light",
+    "role": "none",
+    "target": { "type": "glb",
+                "dest": "local",
+                "src": "NPC_SM_2_spawn_direction_light"},
+                "action": {"type": "move",
+                  "duration": 5000,
+                  "loop": false,
+                  "pos": {"x": -11.5, "y": -1000, "z": -4},
+        "rot": {"x": 89, "y": -59.99999999999999, "z": 0},
+        "scale": {"x": 1, "y":1, "z":1}},
+    "trig": {"type": "button",
+      "time": 27000
+    }
   },
   {
     "name": "NPC_SM_7_shrink_black_skybox",
