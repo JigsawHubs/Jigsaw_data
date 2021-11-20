@@ -4929,7 +4929,7 @@
                    "duration": 1
                    },
                    "timelines" : [
-                    {"x": 100, "y": 0.1, "z": 100, "delay": 0, "duration": 5000, "easing": "easeInSine"}
+                    {"x": 25, "y": 0.1, "z": 25, "delay": 0, "duration": 5000, "easing": "easeInSine"}
                    ]
                  }
                }
