@@ -2402,7 +2402,7 @@
                    "name": "NPC_SM_2_load_360_skybox",
                    "target": { "role": "general" },
                    "action": { "type": "load_360_image",
-                    "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/563b1246-d961-4b57-ad49-85d2ac17f927.png",
+                    "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/161a764c-09b3-4362-8951-0b2d687c6eaa.png",
                     "position" : {"x": -7, "y": 225, "z": -5.5},
                     "scale" : {"x": 325, "y": 275, "z": 275}
                   }
@@ -3868,7 +3868,7 @@
                  "name": "NPC_SM_6_load_360_skybox",
                  "target": { "role": "general" },
                  "action": { "type": "load_360_image",
-                  "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/38e9bb67-753d-48d6-80b6-ed0b12507504.png",
+                  "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/687ada2b-5911-4f41-b2be-46e8f4e4e172.png",
                   "position" : {"x": -7, "y": 100, "z": -5.5},
                   "scale" : {"x": 350, "y": 300, "z": 300}
                 }
