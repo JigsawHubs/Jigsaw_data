@@ -2422,7 +2422,7 @@
                  "_cue": {
                   "name": "NPC_SM_2_spawn_prop_omni",
                   "target": { "role": "general",
-                    "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_2.glb"},
+                    "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/7dae82aa-1c3f-4ab3-98fc-b8ffcc2b624f.glb"},
                   "action": {"type": "socket_spawn_object",
                     "applyGravityOnSpawn": false,
                              "pos": {"x": 2.1164517402648926, "y": 551.9104736328125, "z": -50.029791259765625},
