@@ -2402,7 +2402,7 @@
                    "name": "NPC_SM_2_load_360_skybox",
                    "target": { "role": "general" },
                    "action": { "type": "load_360_image",
-                    "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/161a764c-09b3-4362-8951-0b2d687c6eaa.png",
+                    "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/563b1246-d961-4b57-ad49-85d2ac17f927.png",
                     "position" : {"x": -7, "y": 225, "z": -5.5},
                     "scale" : {"x": 325, "y": 275, "z": 275}
                   }
@@ -2417,7 +2417,7 @@
       "role": "stagemanager",
       "target": { "type": "glb",
                   "dest": "url",
-                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_1.gif"},
+                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_1.glb"},
       "action": {"type": "spawn_item",
         "pauseOnSpawn": false,
         "applyGravityOnSpawn" : false,
