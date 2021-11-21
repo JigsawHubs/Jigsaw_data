@@ -4144,8 +4144,8 @@
                     "duration": 1000
                     },
                     "timelines" : [
-                      {"x": -1.5001864097279756, "y": 185.48051792732184, "z": -5.730333509897111, "delay": 1000, "duration": 6000, "easing": "easeInOutSine"},
-                      {"x": -7.842922157169932, "y": 185.7923811381821, "z": -5.552291149372676, "delay": 4000, "duration": 10000, "easing": "easeInSine"},
+                      {"x": -1.5001864097279756, "y": 184.68051792732184, "z": -5.730333509897111, "delay": 1000, "duration": 10000, "easing": "easeInOutSine"},
+                      {"x": -7.842922157169932, "y": 184.6923811381821, "z": -5.552291149372676, "delay": 0, "duration": 10000, "easing": "easeInSine"},
                       {"x": -8.08756334897549, "y": 183.79519241569514, "z": -5.1741958258779475, "delay": 0, "duration": 6000, "easing": "easeOutSine"}
                     ]
                   }
@@ -4265,7 +4265,7 @@
                 "action": {"type": "move",
                   "duration": 5000,
                   "loop": false,
-                  "pos": {"x": -11.5, "y": -1000, "z": -4},
+                  "pos": {"x": 200, "y": -1000, "z": 100},
         "rot": {"x": 89, "y": -59.99999999999999, "z": 0},
         "scale": {"x": 1, "y":1, "z":1}},
     "trig": {"type": "button",
@@ -4325,7 +4325,7 @@
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_7_group",
-             "time": 33000}
+             "time": 34000}
   },
   {
     "name": "NPC_SM_7_delete_360_colorful_skybox",
@@ -4344,6 +4344,16 @@
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_7_group",
+             "time": 33000}
+  },
+  {
+    "name": "NPC_SM_7_delete_directional_light",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "src": "NPC_SM_2_spawn_direction_light"},
+    "action": {"type": "delete"},
+    "trig": {"type": "button",
+      "groupChain": "NPC_SM_7_group",
              "time": 33000}
   },
   {
@@ -4555,7 +4565,7 @@
                   "scale": {"x": 1.5, "y":1.5, "z":1.5}},
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_9_group",
-      "time": 64000
+      "time": 63000
     }
   },
   {
@@ -4696,7 +4706,7 @@
   "action": {"type": "delete"},
   "trig": {"type": "button",
     "groupChain" : "NPC_SM_9_group",
-           "time": 63000}
+           "time": 2000}
 },
 {
   "name": "NPC_SM_9_delete_corpse_rock_2",
@@ -4706,7 +4716,7 @@
   "action": {"type": "delete"},
   "trig": {"type": "button",
     "groupChain" : "NPC_SM_9_group",
-           "time": 63000}
+           "time": 2000}
 },
 {
   "name": "NPC_SM_9_delete_corpse_rock_3",
@@ -4716,17 +4726,7 @@
   "action": {"type": "delete"},
   "trig": {"type": "button",
     "groupChain" : "NPC_SM_9_group",
-           "time": 63000}
-},
-{
-  "name": "NPC_SM_9_delete_corpse_rock_3",
-  "role": "stagemanager",
-  "target": { "type": "glb",
-              "src": "NPC_SM_6_corpse_rock_3"},
-  "action": {"type": "delete"},
-  "trig": {"type": "button",
-    "groupChain" : "NPC_SM_9_group",
-           "time": 63000}
+           "time": 2000}
 },
 {
   "name": "NPC_SM_9_delete_corpse_rock_4",
@@ -4736,7 +4736,7 @@
   "action": {"type": "delete"},
   "trig": {"type": "button",
     "groupChain" : "NPC_SM_9_group",
-           "time": 63000}
+           "time": 2000}
 },
 {
   "name": "NPC_SM_9_delete_corpse_rock_5",
@@ -4746,7 +4746,7 @@
   "action": {"type": "delete"},
   "trig": {"type": "button",
     "groupChain" : "NPC_SM_9_group",
-           "time": 63000}
+           "time": 2000}
 },
 {
   "name": "NPC_SM_9_delete_corpse_rock_6",
@@ -4756,7 +4756,7 @@
   "action": {"type": "delete"},
   "trig": {"type": "button",
     "groupChain" : "NPC_SM_9_group",
-           "time": 63000}
+           "time": 2000}
 },
 {
   "name": "NPC_SM_9_delete_corpse_rock_7",
@@ -4766,7 +4766,7 @@
   "action": {"type": "delete"},
   "trig": {"type": "button",
     "groupChain" : "NPC_SM_9_group",
-           "time": 63000}
+           "time": 2000}
 },
 {
   "name": "NPC_SM_9_delete_corpse_rock_8",
@@ -4776,7 +4776,7 @@
   "action": {"type": "delete"},
   "trig": {"type": "button",
     "groupChain" : "NPC_SM_9_group",
-           "time": 63000}
+           "time": 2000}
 },
   {
     "name": "NPC_SM_10_A_1",
