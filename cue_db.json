@@ -3691,7 +3691,7 @@
                    "duration": 0
                    },
                    "timelines" : [
-                    {"x": -6.435971920738762, "y": 0, "z": 42}
+                    {"x": -100.58119073244206, "y": 183.04637404254322, "z": 100.699177528463501}
                    ]
                  }
                }
@@ -3961,18 +3961,18 @@
                    "delay" : 0,
                    "loop": false,
                    "autoplay": false,
-                   "easing": "linear",
-                   "duration": 0
+                   "easing": "easeOutElastic(10, .9)",
+                   "duration": 5000
                    },
                    "timelines" : [
-                    {"x": 12.578047438897544, "y": 184.45406616210934, "z": -11.643794284063707}
+                    {"x": -2.58119073244206, "y": 183.04637404254322, "z": -5.699177528463501}
                    ]
                  }
                }
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_6_group",
-             "time": 61000}
+             "time": 59000}
   },
   {
     "name": "NPC_SM_6_enable_brnd_motion",
