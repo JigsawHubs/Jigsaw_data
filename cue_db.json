@@ -2421,7 +2421,7 @@
       "action": {"type": "spawn_item",
         "pauseOnSpawn": false,
         "applyGravityOnSpawn" : false,
-        "pos": {"x": -11.5, "y": 180, "z": -4},
+        "pos": {"x": 200, "y": 350, "z": 100},
         "rot": {"x": 89, "y": -59.99999999999999, "z": 0},
         "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
