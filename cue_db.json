@@ -2959,12 +2959,12 @@
                   "dest": "url",
                   "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/63bb85c7-b50c-4b5d-9720-2de8a51844af.glb"},
       "action": {"type": "spawn_item",
-                 "pos": {"x": -47.653630938741266, "y": 300.12296755186756, "z": -24.27643261090883},
+                 "pos": {"x": 120, "y": 190.12296755186756, "z": 100},
                  "rot": {"x": 0, "y":3.9269908169872414, "z":0},
                  "scale": {"x": 3, "y":3, "z":3}},
       "trig": {"type": "button",
         "groupChain" : "NPC_SM_345_group",
-               "time": 72000}
+               "time": 67000}
     },
   {
     "name": "NPC_SM_345_slide_in_NPC",
@@ -2985,17 +2985,17 @@
                     "loop": false,
                     "autoplay": true,
                     "easing": "easeOutElastic(10, .9)",
-                    "duration": 1500
+                    "duration": 5000
                     },
                     "timelines" : [
-                      {"x": -47.653630938741266, "y": 190.12296755186756, "z": -24.27643261090883}
+                      {"x": -43.653630938741266, "y": 190.12296755186756, "z": -24.27643261090883}
                     ]
                   }
                 }
               },
   "trig": {"type": "button",
     "groupChain" : "NPC_SM_345_group",
-            "time": 74000}
+            "time": 70500}
   },
   {
     "name": "NPC_SM_345_delete_NPC",
