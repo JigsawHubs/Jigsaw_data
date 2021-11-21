@@ -3962,6 +3962,165 @@
              "time": 61000}
   },
   {
+    "name": "NPC_SM_6_smoke_anim_scale",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                 "name": "NPC_SM_6_smoke_anim_scale",
+                 "target": { "role": "general", "aspect" : "scale"},
+                 "action": { "type" : "socket_manipulate_object",
+                  "mapItem": "NPC_SM_6_smoke_monster",
+                   "attr": "object3D",
+                   "anime" : {
+                    "targets": "scale",
+                    "delay" : 1000,
+                    "loop": false,
+                    "autoplay": true,
+                    "easing": "linear",
+                    "duration": 1000
+                    },
+                    "timelines" : [
+                        {"x": 0.4, "y": 0.4, "z": 0.4, "delay": 41000, "easing": "linear", "duration": 5000}
+                    ]
+                  }
+                }
+              },
+  "trig": {"type": "button",
+    "groupChain" : "NPC_SM_6_group",
+            "time": 0}
+  },
+  {
+    "name": "NPC_SM_7_part1_anim_position",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                "name": "NPC_SM_7_part1_anim_position",
+                "target": { "role" : "individual",
+                  "name" : "part1",
+                  "aspect" : "position" },
+                "action": { "type": "manipulate_avatar",
+                  "attr": "object3D",
+                  "anime": {
+                   "targets": "",
+                   "delay" : 0,
+                   "loop": false,
+                   "autoplay": false,
+                   "easing": "linear",
+                   "duration": 1
+                   },
+                   "timelines" : [
+                    {"x": -0.48, "y": 183.62279750279018, "z": -5.8,"delay": 0, "easing": "linear", "duration": 10000}
+                   ]
+                 }
+               }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_7_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_7_part2_anim_position",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                "name": "NPC_SM_7_part2_anim_position",
+                "target": { "role" : "individual",
+                  "name" : "part2",
+                  "aspect" : "position" },
+                "action": { "type": "manipulate_avatar",
+                  "attr": "object3D",
+                  "anime": {
+                   "targets": "",
+                   "delay" : 0,
+                   "loop": false,
+                   "autoplay": false,
+                   "easing": "linear",
+                   "duration": 1
+                   },
+                   "timelines" : [
+                    {"x": -0.46, "y": 183.62279750279018, "z": -5.9,"delay": 0, "easing": "linear", "duration": 10000}
+                   ]
+                 }
+               }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_7_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_7_part3_anim_position",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                "name": "NPC_SM_7_part3_anim_position",
+                "target": { "role" : "individual",
+                  "name" : "part3",
+                  "aspect" : "position" },
+                "action": { "type": "manipulate_avatar",
+                  "attr": "object3D",
+                  "anime": {
+                   "targets": "",
+                   "delay" : 0,
+                   "loop": false,
+                   "autoplay": false,
+                   "easing": "linear",
+                   "duration": 1
+                   },
+                   "timelines" : [
+                    {"x": -0.46, "y": 183.62279750279018, "z": -6.1,"delay": 0, "easing": "linear", "duration": 10000}
+                   ]
+                 }
+               }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_7_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_7_part4_anim_position",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                "name": "NPC_SM_7_part4_anim_position",
+                "target": { "role" : "individual",
+                  "name" : "part4",
+                  "aspect" : "position" },
+                "action": { "type": "manipulate_avatar",
+                  "attr": "object3D",
+                  "anime": {
+                   "targets": "",
+                   "delay" : 0,
+                   "loop": false,
+                   "autoplay": false,
+                   "easing": "linear",
+                   "duration": 1
+                   },
+                   "timelines" : [
+                    {"x": -0.48, "y": 183.62279750279018, "z": -6.2,"delay": 0, "easing": "linear", "duration": 10000}
+                   ]
+                 }
+               }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_7_group",
+             "time": 0}
+  },
+  {
     "name": "NPC_SM_7_anim_part_position",
     "role": "stagemanager",
     "target": { },
@@ -3994,7 +4153,7 @@
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_7_group",
-             "time": 0}
+             "time": 10000}
   },
   {
     "name": "NPC_SM_7_anim_part_rotation",
