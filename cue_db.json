@@ -5466,7 +5466,7 @@
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/4dfdb807-b791-4f88-80d4-67e9d4abe222.glb"},
     "action": {"type": "spawn_item",
                "pos": {"x": -47.2, "y":1.575, "z":-4.8},
-               "rot": {"x":8, "y":191, "z":3.0000000000000004},
+               "rot": {"x":0, "y":0, "z":0},
                "scale": {"x": 2.5, "y":2.5, "z":2.5}},
     "trig": {"type": "button",
               "groupChain": "NPC_SM_12_group",
