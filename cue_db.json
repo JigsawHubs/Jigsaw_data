@@ -2012,7 +2012,7 @@
                      "duration": 0
                      },
                      "timelines" : [
-                      {"x": -19.5, "y": 200, "z": -230}
+                      {"x": -19.5, "y": 200, "z": -1000}
                      ]
                    }
                  }
@@ -2467,6 +2467,38 @@
                 },
       "trig": {"type": "button",
         "groupChain" : "NPC_SM_2_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_2_A_brnd_animate_in",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "NPC_SM_2_A_brnd_animate_in",
+                  "target": { "role" : "individual",
+                    "name" : "Brendan",
+                    "aspect" : "position" },
+                  "action": { "type": "manipulate_avatar",
+                    "attr": "object3D",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 0,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "linear",
+                     "duration": 0
+                     },
+                     "timelines" : [
+                      {"x": -19.5, "y": 200, "z": -230, "duration": 10000, "delay": 0, "easing": "easeInOutSine"}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_2_A_group",
                "time": 0}
     },
     {
@@ -4500,7 +4532,7 @@
                    },
                    "timelines" : [
                     {"x":45.68229576961745, "y": 150.4445028474226, "z": 12.687293941817439, "delay": 50000, "duration": 5000, "easing": "easeInSine"},
-                    {"x":45.68229576961745, "y": 130.4445028474226, "z": 12.687293941817439, "delay": 0, "duration": 7000, "easing": "linear"}
+                    {"x":45.68229576961745, "y": 110.4445028474226, "z": 12.687293941817439, "delay": 0, "duration": 7000, "easing": "linear"}
                    ]
                  }
                }
