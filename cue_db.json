@@ -2417,7 +2417,7 @@
       "role": "stagemanager",
       "target": { "type": "glb",
                   "dest": "url",
-                  "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/9cc451cc-db52-406a-89e3-ac435bd8f737.glb"},
+                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_1.gif"},
       "action": {"type": "spawn_item",
         "pauseOnSpawn": false,
         "applyGravityOnSpawn" : false,
