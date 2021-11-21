@@ -5459,6 +5459,41 @@
              "time": 0}
   },
   {
+    "name": "NPC_SM_12_lantern",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/4dfdb807-b791-4f88-80d4-67e9d4abe222.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -47.2, "y":1.575, "z":-4.8},
+               "rot": {"x":8, "y":191, "z":3.0000000000000004},
+               "scale": {"x": 2.5, "y":2.5, "z":2.5}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_12_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_12_brnd_to_NPC",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": {
+                "name": "NPC_SM_12_brnd_to_NPC",
+                "role":"stagemanager",
+                "target": { "role" : "individual",
+                "name" : "Brendan"
+                },
+                "action": {"type": "change_avatar",
+                           "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_25.glb"}
+              }
+              },
+    "trig": {"type": "button",
+              "groupChain" : "NPC_SM_12_group",
+             "time": 0}
+  },
+  {
     "name": "NPC_SM_12_brnd_to_NPC",
     "role": "stagemanager",
     "target": { },
@@ -5672,7 +5707,7 @@
                    "duration": 1
                    },
                    "timelines" : [
-                    {"x": -1.5707963267948966, "y":-0.7853981633974483, "z":0,"delay": 0, "easing": "linear", "duration": 20},
+                    {"x": -1.5707963267948966, "y":-0.7853981633974483, "z":0,"delay": 0, "easing": "linear", "duration": 5000},
                      {"x": 0, "y":-0.7853981633974483, "z":0, "delay": 9000, "easing": "linear", "duration": 3000},
                      {"x": 0, "y":-3.9269908169872414, "z":0, "delay": 0, "easing": "linear", "duration": 5000}
                    ]
@@ -5705,7 +5740,7 @@
                    "duration": 1
                    },
                    "timelines" : [
-                     {"x": 0.3, "y":0.3, "z":0.3,"delay": 0, "duration": 3000, "easing": "linear"},
+                     {"x": 0.3, "y":0.3, "z":0.3,"delay": 0, "duration": 7000, "easing": "easeOutSine"},
                      {"x": 0.7, "y":0.7, "z":0.7, "delay": 0, "duration": 10000, "easing": "linear"}
                    ]
                  }
@@ -5748,7 +5783,7 @@
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_12_group",
-             "time": 1500}
+             "time": 6000}
   },
   {
     "name": "NPC_SM_13_part_to_invis",
