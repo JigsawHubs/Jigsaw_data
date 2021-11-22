@@ -4210,7 +4210,7 @@
                    },
                    "timelines" : [
                     {"x": 0, "y": 1.5707963267948966, "z": 0, "delay": 0, "duration": 20, "easing": "easeInOutSine"},
-                    {"x": 0, "y": -1.5707963267948966, "z": 0, "delay": 11000, "duration": 8000, "easing": "easeInOutSine"}
+                    {"x": 0, "y": -1.5707963267948966, "z": 0, "delay": 21000, "duration": 8000, "easing": "easeInOutSine"}
                    ]
                  }
                }
@@ -4241,7 +4241,7 @@
                    "duration": 1
                    },
                    "timelines" : [
-                    {"x": 0.5, "y": 0.5, "z": 0.5, "delay": 26000, "duration": 2000, "easing": "easeInOutSine"}
+                    {"x": 0.5, "y": 0.5, "z": 0.5, "delay": 36000, "duration": 2000, "easing": "easeInOutSine"}
                    ]
                  }
                }
@@ -4267,7 +4267,7 @@
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_7_group",
-             "time": 7000}
+             "time": 17000}
   },
   {
     "name": "NPC_SM_7_fade_colorful_skybox",
@@ -4286,7 +4286,7 @@
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_7_group",
-             "time": 29000}
+             "time": 39000}
   },
   {
     "name": "NPC_SM_7_move_directional_light",
@@ -4302,7 +4302,7 @@
         "scale": {"x": 1, "y":1, "z":1}},
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_7_group",
-      "time": 27000
+      "time": 37000
     }
   },
   {
@@ -4336,7 +4336,7 @@
               },
     "trig": {"type": "button",
               "groupChain" : "NPC_SM_7_group",
-             "time": 31000}
+             "time": 41000}
   },
   {
     "name": "NPC_SM_7_load_360_skybox",
@@ -4357,7 +4357,7 @@
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_7_group",
-             "time": 34000}
+             "time": 44000}
   },
   {
     "name": "NPC_SM_7_delete_360_colorful_skybox",
@@ -4376,7 +4376,7 @@
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_7_group",
-             "time": 33000}
+             "time": 43000}
   },
   {
     "name": "NPC_SM_7_delete_directional_light",
@@ -4386,7 +4386,7 @@
     "action": {"type": "delete"},
     "trig": {"type": "button",
       "groupChain": "NPC_SM_7_group",
-             "time": 33000}
+             "time": 43000}
   },
   {
     "name": "NPC_SM_7_load_ventricle",
@@ -4400,7 +4400,7 @@
                "scale": {"x": 1.5, "y":1.5, "z":1.5}},
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_7_group",
-             "time": 33000}
+             "time": 43000}
   },
   {
     "name": "NPC_SM_8",
