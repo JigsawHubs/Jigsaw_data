@@ -5463,7 +5463,7 @@
     "role": "stagemanager",
     "target": { "type": "glb",
                 "dest": "url",
-                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/4dfdb807-b791-4f88-80d4-67e9d4abe222.glb"},
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/394b8c42-e9fa-41fb-b7f3-a0ff2a55fe73.glb"},
     "action": {"type": "spawn_item",
                "pos": {"x": -47.2, "y":1.575, "z":-4.8},
                "rot": {"x":0, "y":0, "z":0},
