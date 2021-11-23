@@ -2574,17 +2574,74 @@
                "time": 0}
     },
     {
-      "name": "NPC_SM_2_how_to_walk",
+      "name": "NPC_SM_2_how_to_walk_gif",
       "role": "stagemanager",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
                  "function_name": "cueSocket",
                  "_cue": { 
-                   "name": "NPC_SM_2_how_to_walk",
+                   "name": "NPC_SM_2_how_to_walk_gif",
                    "target": { "role" : "participant"},
                    "action": { "type": "spawn_360_gif",
                     "src": "https://jigsawhubs.github.io/Jigsaw_data/video/NPC_A_13-14.gif"
+                    }
+                  }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_2_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_2_health_gif",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "NPC_SM_2_health_gif",
+                   "target": { "role" : "participant"},
+                   "action": { "type": "spawn_360_gif",
+                    "src": "https://jigsawhubs.github.io/Jigsaw_data/video/NPC_A_20.gif"
+                    }
+                  }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_2_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_2_rock_gif",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "NPC_SM_2_rock_gif",
+                   "target": { "role" : "participant"},
+                   "action": { "type": "spawn_360_gif",
+                    "src": "https://jigsawhubs.github.io/Jigsaw_data/video/NPC_A_21.gif"
+                    }
+                  }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_2_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_2_path_gif",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "NPC_SM_2_path_gif",
+                   "target": { "role" : "participant"},
+                   "action": { "type": "spawn_360_gif",
+                    "src": "https://jigsawhubs.github.io/Jigsaw_data/video/NPC_A_41.gif"
                     }
                   }
                 },
