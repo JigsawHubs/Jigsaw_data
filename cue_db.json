@@ -5306,7 +5306,7 @@
              "time": 0}
   },
   {
-    "name": "NPC_SM_10_B_3_ice_doors",
+    "name": "NPC_SM_10_C_3_ice_doors",
     "role": "stagemanager",
     "target": { "type": "glb",
                 "dest": "url",
@@ -5316,7 +5316,7 @@
                "rot": {"x":0, "y":0, "z":0},
                "scale": {"x": 1, "y":1, "z":1}},
     "trig": {"type": "button",
-              "groupChain": "NPC_SM_10_B_3_group",
+              "groupChain": "NPC_SM_10_C_3_group",
              "time": 0}
   },
   {
