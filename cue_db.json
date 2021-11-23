@@ -2072,7 +2072,7 @@
                      "duration": 0
                      },
                      "timelines" : [
-                      {"x": -19.5, "y": 200, "z": -400}
+                      {"x": -19.5, "y": 200, "z": -700}
                      ]
                    }
                  }
@@ -3066,6 +3066,62 @@
     "trig": {"type": "button",
       "groupChain": "NPC_SM_345_group",
              "time": 240000}
+  },
+  {
+    "name": "NPC_SM_345_rock_1",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/4cecae72-e7ab-4745-8888-2aa2b980cb02.glb"},
+    "action": {"type": "spawn_item",
+      "pos": {"x": -50.41625817594881, "y": 187.35275881163318, "z": -29.1170129047911},
+      "rot": {"x": -180, "y":0, "z":-180},
+      "scale": {"x": 0.7, "y":0.7, "z":0.7}},
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_345_rock_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_345_rock_2",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/4cecae72-e7ab-4745-8888-2aa2b980cb02.glb"},
+    "action": {"type": "spawn_item",
+      "pos": {"x": -51.90118241644058, "y": 187.35275881163318, "z": -27.773510020536678},
+      "rot": {"x": 0, "y":0, "z":0},
+      "scale": {"x": 0.7, "y":0.7, "z":0.7}},
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_345_rock_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_345_rock_3",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/4cecae72-e7ab-4745-8888-2aa2b980cb02.glb"},
+    "action": {"type": "spawn_item",
+      "pos": {"x": -52.9618425882204, "y": 187.35275881163318, "z": -26.712849848756855},
+      "rot": {"x": 0, "y":0, "z":0},
+      "scale": {"x": 0.7, "y":0.7, "z":0.7}},
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_345_rock_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_345_rock_4",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/4cecae72-e7ab-4745-8888-2aa2b980cb02.glb"},
+    "action": {"type": "spawn_item",
+      "pos": {"x": -53.951792081881544, "y": 187.35275881163318, "z": -26.712849848756855},
+      "rot": {"x": 0, "y":0, "z":0},
+      "scale": {"x": 0.7, "y":0.7, "z":0.7}},
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_345_rock_group",
+             "time": 0}
   },
   {
     "name": "NPC_SM_6_smoke_monster",
