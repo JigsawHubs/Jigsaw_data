@@ -3569,7 +3569,7 @@
                       "duration": 1000
                       },
                       "timelines" : [
-                        {"x": 200, "y": 150, "z": 150,"delay": 7000, "easing": "linear", "duration": 7000}
+                        {"x": 175, "y": 150, "z": 150,"delay": 7000, "easing": "linear", "duration": 7000}
                       ]
                     }
                 }
