@@ -1934,6 +1934,66 @@
                  "link":"https://onboardxr.live/scenes/zdh9JUN"},
       "trig": {"type": "button",
         "groupChain" : "NPC_SM_1_group",
+               "time": 3000}
+    },
+    {
+      "name": "NPC_SM_1_delete_jenga_1",
+      "role": "stagemanager",
+      "target": { "type": "glb",
+                  "src": "NPC_SM_12_jenga_1"},
+      "action": {"type": "delete"},
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_1_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_1_delete_jenga_2",
+      "role": "stagemanager",
+      "target": { "type": "glb",
+                  "src": "NPC_SM_12_jenga_2"},
+      "action": {"type": "delete"},
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_1_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_1_delete_jenga_3",
+      "role": "stagemanager",
+      "target": { "type": "glb",
+                  "src": "NPC_SM_12_jenga_3"},
+      "action": {"type": "delete"},
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_1_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_1_delete_jenga_4",
+      "role": "stagemanager",
+      "target": { "type": "glb",
+                  "src": "NPC_SM_12_jenga_4"},
+      "action": {"type": "delete"},
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_1_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_1_delete_jenga_5",
+      "role": "stagemanager",
+      "target": { "type": "glb",
+                  "src": "NPC_SM_12_jenga_5"},
+      "action": {"type": "delete"},
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_1_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_1_delete_jenga_6",
+      "role": "stagemanager",
+      "target": { "type": "glb",
+                  "src": "NPC_SM_12_jenga_6"},
+      "action": {"type": "delete"},
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_1_group",
                "time": 0}
     },
     {
