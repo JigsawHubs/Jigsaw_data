@@ -5306,6 +5306,20 @@
              "time": 0}
   },
   {
+    "name": "NPC_SM_10_B_3_ice_doors",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/e1619049-54ac-4409-a9c9-9f526f11eab0.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": 0, "y":0, "z":0},
+               "rot": {"x":0, "y":0, "z":0},
+               "scale": {"x": 1, "y":1, "z":1}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_10_B_3_group",
+             "time": 0}
+  },
+  {
     "name": "NPC_SM_11_scale_part",
     "role": "stagemanager",
     "target": { },
