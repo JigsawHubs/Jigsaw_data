@@ -1997,6 +1997,69 @@
                "time": 0}
     },
     {
+      "name": "NPC_SM_2_brnd2_to_invis",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "NPC_SM_2_brnd_to_hero",
+                  "role":"stagemanager",
+                  "target": { "role" : "individual",
+                  "name" : "Brendan2"
+                  },
+                  "action": {"type": "change_avatar",
+                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_24.glb"}
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "NPC_SM_2_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_2_brnd2_god_mic",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "NPC_SM_2_brnd2_god_mic",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["Brendan2"],
+                    "rolloff": 0,
+                    "refDistance": 1
+                    }
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_2_group",
+               "time": 2000}
+    },
+    {
+      "name": "NPC_SM_2_stagemanager_to_invis",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "NPC_SM_2_brnd_to_hero",
+                  "role":"stagemanager",
+                  "target": { "role" : "individual",
+                  "name" : "Brendan2"
+                  },
+                  "action": {"type": "change_avatar",
+                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_24.glb"}
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "NPC_SM_2_group",
+               "time": 0}
+    },
+    {
       "name": "NPC_SM_2_brnd_to_hero",
       "role": "stagemanager",
       "target": { },
@@ -2265,7 +2328,7 @@
                  "function_name": "cueSocket",
                  "_cue": { 
                   "name": "NPC_SM_2_part1_starting_position",
-                  "target": { "role" : "individual",
+                  "target": { "role" : ["stagemanager", "individual"],
                     "name" : "part1",
                     "aspect" : "position" },
                   "action": { "type": "manipulate_avatar",
@@ -2570,7 +2633,7 @@
                  "function_name": "cueSocket",
                  "_cue": { 
                   "name": "NPC_SM_345_part1_anim_position",
-                  "target": { "role" : "individual",
+                  "target": { "role" : ["stagemanager", "individual"],
                     "name" : "part1",
                     "aspect" : "position" },
                   "action": { "type": "manipulate_avatar",
@@ -3313,7 +3376,7 @@
                "function_name": "cueSocket",
                "_cue": { 
                 "name": "NPC_SM_6_part1_anim_position",
-                "target": { "role" : "individual",
+                "target": { "role" : ["stagemanager", "individual"],
                   "name" : "part1",
                   "aspect" : "position" },
                 "action": { "type": "manipulate_avatar",
@@ -4188,7 +4251,7 @@
                "function_name": "cueSocket",
                "_cue": { 
                 "name": "NPC_SM_7_part1_anim_position",
-                "target": { "role" : "individual",
+                "target": { "role" : ["stagemanager", "individual"],
                   "name" : "part1",
                   "aspect" : "position" },
                 "action": { "type": "manipulate_avatar",
@@ -5727,7 +5790,7 @@
                "function_name": "cueSocket",
                "_cue": { 
                 "name": "NPC_SM_12_part1_starting_position",
-                "target": { "role" : "individual",
+                "target": { "role" : ["stagemanager", "individual"],
                   "name" : "part1",
                   "aspect" : "position" },
                 "action": { "type": "manipulate_avatar",

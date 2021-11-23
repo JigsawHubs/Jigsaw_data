@@ -13,7 +13,7 @@
   "host":{"name":"host","role":"host"},
   "mike": {"name":"___","role":"stagemanager"},
   "brnd": {"name": "Brendan", "role": "brnd"},
-  "brnd2": {"name": "Brendan2", "role": "brnd2"},
+  "brnd2": {"name": "Brendan2", "role": "stagemanager"},
   "part1": {"name": "part1", "role": "participant"},
   "part2": {"name": "part2", "role": "participant"},
   "part3": {"name": "part3", "role": "participant"},
