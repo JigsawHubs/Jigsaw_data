@@ -2464,7 +2464,7 @@
                    "action": { "type": "load_360_image",
                     "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/563b1246-d961-4b57-ad49-85d2ac17f927.png",
                     "position" : {"x": -7, "y": 225, "z": -5.5},
-                    "scale" : {"x": 325, "y": 275, "z": 275}
+                    "scale" : {"x": 275, "y": 250, "z": 250}
                   }
                   }
                 },
@@ -4491,7 +4491,7 @@
               },
     "trig": {"type": "button",
               "groupChain" : "NPC_SM_7_group",
-             "time": 41000}
+             "time": 39000}
   },
   {
     "name": "NPC_SM_7_load_360_skybox",
@@ -4506,7 +4506,7 @@
                  "action": { "type": "load_360_image",
                   "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/30333992-8e92-40ac-908c-6532959a1c43.png",
                   "position" : {"x": -7, "y": 150, "z": -5.5},
-                  "scale" : {"x": 350, "y": 350, "z": 350}
+                  "scale" : {"x": 200, "y": 200, "z": 200}
                 }
                 }
               },
