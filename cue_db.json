@@ -3133,6 +3133,27 @@
                "time": 57000}
     },
     {
+      "name": "NPC_SM_345_rock_gif",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "NPC_SM_345_rock_gif",
+                   "target": { "role" : "participant"},
+                   "action": { "type": "play_360_gif",
+                    "mapItem": "NPC_SM_2_rock_gif",
+                    "fadeDuration": 3000,
+                    "fadeDelay": 3000
+                    }
+                  }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_345_group",
+               "time": 76000}
+    },
+    {
       "name": "NPC_SM_345_looping_NPC",
       "role": "stagemanager",
       "target": { "type": "glb",
@@ -3423,6 +3444,27 @@
   "trig": {"type": "button",
     "groupChain" : "NPC_SM_6_group",
             "time": 0}
+  },
+  {
+    "name": "NPC_SM_6_gif",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                 "name": "NPC_SM_6_gif",
+                 "target": { "role" : "participant"},
+                 "action": { "type": "play_360_gif",
+                  "mapItem": "NPC_SM_2_health_gif",
+                  "fadeDuration": 3000,
+                  "fadeDelay": 3000
+                  }
+                }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_6_group",
+             "time": 44000}
   },
   {
     "name": "NPC_SM_6_part1_anim_position",
@@ -4966,6 +5008,27 @@
     "trig": {"type": "button",
               "groupChain" : "NPC_SM_9_group",
              "time": 66000}
+  },
+  {
+    "name": "NPC_SM_9_gif",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                 "name": "NPC_SM_9_gif",
+                 "target": { "role" : "participant"},
+                 "action": { "type": "play_360_gif",
+                  "mapItem": "NPC_SM_2_path_gif",
+                  "fadeDuration": 3000,
+                  "fadeDelay": 3000
+                  }
+                }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_9_group",
+             "time": 69000}
   },
 {
   "name": "NPC_SM_9_delete_360_red_skybox",
