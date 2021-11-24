@@ -6528,12 +6528,12 @@
                             "duration": 1000
                             },
                             "timelines" : [
-                              {"x": -2.0001864097279756, "y": 184.68051792732184, "z": -5.730333509897111, "delay": 1500, "duration": 10000, "easing": "easeInOutSine"},
+                              {"x":  -1.3001864097279756, "y": 184.68051792732184, "z": -5.730333509897111, "delay": 1500, "duration": 10000, "easing": "easeInOutSine"},
                               {"x": -8.342922157169932, "y": 184.6923811381821, "z": -5.552291149372676, "delay": 0, "duration": 10000, "easing": "easeInSine"},
                               {"x": -8.58756334897549, "y": 183.79519241569514, "z": -5.1741958258779475, "delay": 0, "duration": 6000, "easing": "easeOutSine"}
                             ]
                           }
-                        }
+                        } 
                       },
             "trig": {"type": "button",
               "groupChain" : "NPC_SM_7_group",
