@@ -17,5 +17,6 @@
   "part1": {"name": "part1", "role": "participant"},
   "part2": {"name": "part2", "role": "participant"},
   "part3": {"name": "part3", "role": "participant"},
-  "part4": {"name": "part4", "role": "participant"}
+  "part4": {"name": "part4", "role": "participant"},
+  "cinematic" : {"name": "camera", "role": "housemanager"}
  }
