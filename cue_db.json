@@ -4665,7 +4665,7 @@
                  "target": { "role": "general" },
                  "action": { "type": "load_360_image",
                   "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/30333992-8e92-40ac-908c-6532959a1c43.png",
-                  "position" : {"x": -7, "y": 150, "z": -5.5},
+                  "position" : {"x": -7, "y": 120, "z": -5.5},
                   "scale" : {"x": 200, "y": 200, "z": 200}
                 }
                 }
@@ -6369,7 +6369,7 @@
                        {"x": 0.2, "y":0, "z":0, "delay": 6000, "duration": 6000, "easing": "easeOutSine"},
                        {"x": 0.2, "y":-2.356194490192345, "z":0, "delay": 5000, "duration": 10000, "easing": "easeInOutSine"},
                        {"x": 0.5, "y":-1.956194490192345, "z":0, "delay": 1500, "duration": 2000, "easing": "easeInOutSine"},
-                       {"x": 0.4, "y":-2.256194490192345, "z":0, "delay": 4000, "duration": 2000, "easing": "easeInOutSine"}
+                       {"x": 0.45, "y":-2.056194490192345, "z":0, "delay": 4000, "duration": 2000, "easing": "easeInOutSine"}
                      ]
                    }
                  }
