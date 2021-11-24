@@ -6254,16 +6254,16 @@
                   "attr": "object3D",
                   "anime": {
                    "targets": "",
-                   "delay" : 0,
+                   "delay" : 15000,
                    "loop": false,
                    "autoplay": true,
                    "easing": "easeInSine",
                    "duration": 0
                    },
                    "timelines" : [
-                    {"x": -65.69676088167867, "y": 520.002484649347, "z": 0.355277583622875, "duration": 0, "delay": 15000, "easing": "easeInOutSine"},
+                    {"x": -65.69676088167867, "y": 520.002484649347, "z": 0.355277583622875, "duration": 1, "delay": 15000, "easing": "easeInOutSine"},
                     {"x": 2.210436986144683, "y":545.65, "z":-53.6665139712834, "duration": 12000, "delay": 0, "easing": "easeInOutSine"},
-                    {"x": 2.3576229524763, "y": 549.3731523005426, "z": -53.59724524892083, "duration": 0, "delay": 500, "easing": "easeInOutSine"}
+                    {"x": 2.3576229524763, "y": 549.3731523005426, "z": -53.59724524892083, "duration": 0, "delay": 1500, "easing": "easeInOutSine"}
                    ]
                  }
                }
@@ -6296,7 +6296,7 @@
                    "timelines" : [
                     {"x": -1, "y":4.941592653589793, "z":-1, "duration": 0, "delay": 15000, "easing": "easeInOutSine"},
                     {"x": 1.5707963267948966, "y":6.283185307179586, "z":0, "duration": 12000, "delay": 0, "easing": "easeInOutSine"},
-                    {"x": -1.3707963267948966, "y":3.141592653589793, "z":0, "duration": 0, "delay": 500, "easing": "easeInOutSine"}
+                    {"x": -1.3707963267948966, "y":3.141592653589793, "z":0, "duration": 0, "delay": 1500, "easing": "easeInOutSine"}
                    ]
                  }
                }
