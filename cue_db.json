@@ -6266,7 +6266,7 @@
                    "timelines" : [
                     {"x": -65.69676088167867, "y": 520.002484649347, "z": 0.355277583622875, "duration": 0, "delay": 15000, "easing": "easeInOutSine"},
                     {"x": 2.210436986144683, "y":545.65, "z":-53.6665139712834, "duration": 12000, "delay": 0, "easing": "easeInOutSine"},
-                    {"x": 2.3576229524763, "y": 549.7731523005426, "z": -53.59724524892083, "duration": 0, "delay": 500, "easing": "easeInOutSine"}
+                    {"x": 2.3576229524763, "y": 549.3731523005426, "z": -53.59724524892083, "duration": 0, "delay": 500, "easing": "easeInOutSine"}
                    ]
                  }
                }
@@ -6307,6 +6307,77 @@
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_2_A_group",
              "time": 0}
-  }
+  },
+  {
+    "name": "NPC_SM_345_CAM_position",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                "name": "NPC_SM_345_CAM_position",
+                "target": { "role" : "cinematic",
+                  "aspect" : "position" },
+                "action": { "type": "manipulate_avatar",
+                  "attr": "object3D",
+                  "anime": {
+                   "targets": "",
+                   "delay" : 0,
+                   "loop": false,
+                   "autoplay": false,
+                   "easing": "linear",
+                   "duration": 0
+                   },
+                   "timelines" : [
+                    {"x": -7.6979062547143435, "y": 282.5543083999295, "z": 42.6825391673529, "delay": 925, "easing" : "easeInSine", "duration": 13500},
+  {"x": 6.57919162106818, "y": 190.7580713186869, "z": 68.3151296665619, "delay": 0, "easing" : "easeOutSine", "duration": 4500},
+  {"x": -9.109663038206751, "y": 185.256568890313, "z": 31.749882826618013, "delay": 6125, "easing": "easeInSine", "duration": 6000},
+  {"x": -9.371446770274046, "y": 176.83283891984152, "z": 26.353541956110703, "delay": 0, "easing": "linear", "duration": 2000},
+  {"x": -9.888713911193856, "y": 187.37309304751867, "z": 15.397994721979222, "delay": 0, "easing": "linear", "duration": 2000},
+  {"x": -52.688940019062315, "y": 187.55551356271235, "z": -27.65280929039321, "delay": 0, "easing": "easeOutSine", "duration": 10000}
+                   ]
+                 }
+               }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_345_group",
+             "time": 0}
+    },
+    {
+      "name": "NPC_SM_345_CAM_rotation",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "NPC_SM_345_CAM_rotation",
+                  "target": { "role": "cinematic",
+                    "aspect" : "rotation" },
+                  "action": { "type": "manipulate_avatar",
+                    "attr": "object3D",
+                    "anime": {
+                     "targets": "rotation",
+                     "delay" : 1000,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "easeInOutSine",
+                     "duration": 1000
+                     },
+                     "timelines" : [
+                      {"x": -1.3707963267948966, "y":3.141592653589793, "z":0, "duration": 0, "delay": 0, "easing": "easeInOutSine"},
+                       {"x": 0.2, "y":3.141592653589793, "z":0, "duration": 4500, "delay": 10000, "easing": "easeInSine"},
+                       {"x": 0.2, "y":0.6415926535897931, "z":0, "delay": 0, "duration": 4500, "easing": "easeOutSine"},
+                       {"x": 0.2, "y":0, "z":0, "delay": 6000, "duration": 6000, "easing": "easeOutSine"},
+                       {"x": 0.2, "y":-2.356194490192345, "z":0, "delay": 5000, "duration": 10000, "easing": "easeInOutSine"}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_345_group",
+               "time": 0}
+      }
       ]
 }
