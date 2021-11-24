@@ -2537,7 +2537,7 @@
     },
     {
       "name": "NPC_SM_2_spawn_direction_light",
-      "role": "stagemanager",
+      "role": "none",
       "target": { "type": "glb",
                   "dest": "url",
                   "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_1.glb"},
@@ -2548,7 +2548,6 @@
         "rot": {"x": 89, "y": -59.99999999999999, "z": 0},
         "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
-        "groupChain" : "NPC_SM_2_group",
                "time": 0}
     },
     {
@@ -4607,7 +4606,7 @@
   },
   {
     "name": "NPC_SM_7_move_directional_light",
-    "role": "stagemanager",
+    "role": "none",
     "target": { "type": "glb",
                 "dest": "local",
                 "src": "NPC_SM_2_spawn_direction_light"},
@@ -4618,7 +4617,6 @@
         "rot": {"x": 89, "y": -59.99999999999999, "z": 0},
         "scale": {"x": 1, "y":1, "z":1}},
     "trig": {"type": "button",
-      "groupChain" : "NPC_SM_7_group",
       "time": 37000
     }
   },
@@ -4697,12 +4695,11 @@
   },
   {
     "name": "NPC_SM_7_delete_directional_light",
-    "role": "stagemanager",
+    "role": "none",
     "target": { "type": "glb",
                 "src": "NPC_SM_2_spawn_direction_light"},
     "action": {"type": "delete"},
     "trig": {"type": "button",
-      "groupChain": "NPC_SM_7_group",
              "time": 43000}
   },
   {
@@ -6676,7 +6673,7 @@
                            },
                            "timelines" : [
                             {"x": 0.2, "y": -1.8707963267948966, "z": 0, "delay": 0, "duration": 0, "easing": "easeInSine"},
-                            {"x": 0, "y": -1.5707963267948966, "z": 0, "delay": 1500, "duration": 3000, "easing": "easeInSine"},
+                            {"x": 0, "y": -1.5707963267948966, "z": 0, "delay": 4000, "duration": 500, "easing": "easeInSine"},
                             {"x": 0, "y": -1.9707963267948966, "z": 0, "delay": 1500, "duration": 500, "easing": "easeInSine"},
                             {"x": 0, "y": -2.3707963267948966, "z": 0, "delay": 0, "duration": 500, "easing": "easeInSine"},
                             {"x": 0, "y": -2.1707963267948966, "z": 0, "delay": 1200, "duration": 500, "easing": "easeInSine"},
