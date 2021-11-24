@@ -6430,7 +6430,7 @@
                          "duration": 1000
                          },
                          "timelines" : [
-                          {"x": 0.2, "y":-2.356194490192345, "z":0, "delay": 0, "duration": 0, "easing": "easeInOutSine"},
+                          {"x": 0.45, "y":-2.056194490192345, "z":0, "delay": 0, "duration": 1, "easing": "easeInOutSine"},
                      {"x": 0.2, "y":-0.7853981633974483, "z":0, "delay": 0, "duration": 7000, "easing": "easeInSine"},
                      {"x": -0.3, "y":0, "z":0, "delay": 0, "duration": 7000, "easing": "easeOutSine"},
                      {"x": 0.2, "y":1.5707963267948966, "z":0, "delay": 11000, "duration": 3000, "easing": "easeInOutSine"}
@@ -6495,7 +6495,9 @@
                            "duration": 1
                            },
                            "timelines" : [
-                            {"x": -0.69132448865745184, "y": 183.62279750279018, "z": -5.8,"delay": 1000, "easing": "linear", "duration": 9000}
+                            {"x": -0.69132448865745184, "y": 183.62279750279018, "z": -5.8,"delay": 1000, "easing": "linear", "duration": 9000},
+                            {"x": -5.08756334897549, "y": 185.99519241569514, "z": -1.1741958258779475,"delay": 28000, "easing": "linear", "duration": 1},
+                            {"x": -8.58756334897549, "y": 183.79519241569514, "z": -8.1741958258779475, "delay": 3000, "duration": 1, "easing": "easeOutSine"}
                            ]
                          }
                        }
@@ -6564,7 +6566,9 @@
                             {"x": 0.2, "y": 1.5707963267948966, "z": 0, "delay": 0, "duration": 0, "easing": "easeInOutSine"},
                             {"x": -0.2, "y": -1.5707963267948966, "z": 0, "delay": 21000, "duration": 8000, "easing": "easeInOutSine"},
                             {"x": 0.2, "y": -1.5707963267948966, "z": 0, "delay": 0, "duration": 6000, "easing": "easeInOutSine"},
-                            {"x": 0, "y": -1.5707963267948966, "z": 0, "delay": 1000, "duration": 2000, "easing": "easeInOutSine"}
+                            {"x": 0, "y": -1.5707963267948966, "z": 0, "delay": 1000, "duration": 2000, "easing": "easeInOutSine"},
+                            {"x": -0.15, "y": 0.2707963267948966, "z": 0, "delay": 500, "duration": 1, "easing": "easeInOutSine"},
+                            {"x": 0, "y": -1.5707963267948966, "z": 0, "delay": 3000, "duration": 1, "easing": "easeInOutSine"}
                            ]
                          }
                        }
@@ -6668,7 +6672,7 @@
                            "duration": 1
                            },
                            "timelines" : [
-                            {"x": 0.2, "y": -1.8707963267948966, "z": 0, "delay": 0, "duration": 0, "easing": "easeInSine"},
+                            {"x": 0.2, "y": -2.1707963267948966, "z": 0, "delay": 0, "duration": 0, "easing": "easeInSine"},
                             {"x": 0, "y": -1.5707963267948966, "z": 0, "delay": 4000, "duration": 500, "easing": "easeInSine"},
                             {"x": 0, "y": -1.9707963267948966, "z": 0, "delay": 1500, "duration": 500, "easing": "easeInSine"},
                             {"x": 0, "y": -2.3707963267948966, "z": 0, "delay": 0, "duration": 500, "easing": "easeInSine"},
