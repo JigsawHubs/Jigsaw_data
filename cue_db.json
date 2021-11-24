@@ -2582,7 +2582,7 @@
                  "function_name": "cueSocket",
                  "_cue": { 
                    "name": "NPC_SM_2_how_to_walk_gif",
-                   "target": { "role" : "participant"},
+                   "target": { "role" : ["participant", "cinematic"]},
                    "action": { "type": "spawn_360_gif",
                     "src": "https://jigsawhubs.github.io/Jigsaw_data/video/NPC_A_13-14.gif"
                     }
@@ -2601,7 +2601,7 @@
                  "function_name": "cueSocket",
                  "_cue": { 
                    "name": "NPC_SM_2_health_gif",
-                   "target": { "role" : "participant"},
+                   "target": { "role" : ["participant", "cinematic"]},
                    "action": { "type": "spawn_360_gif",
                     "src": "https://jigsawhubs.github.io/Jigsaw_data/video/NPC_A_20.gif"
                     }
@@ -2620,7 +2620,7 @@
                  "function_name": "cueSocket",
                  "_cue": { 
                    "name": "NPC_SM_2_rock_gif",
-                   "target": { "role" : "participant"},
+                   "target": { "role" : ["participant", "cinematic"]},
                    "action": { "type": "spawn_360_gif",
                     "src": "https://jigsawhubs.github.io/Jigsaw_data/video/NPC_A_21.gif"
                     }
@@ -2639,7 +2639,7 @@
                  "function_name": "cueSocket",
                  "_cue": { 
                    "name": "NPC_SM_2_path_gif",
-                   "target": { "role" : "participant"},
+                   "target": { "role" : ["participant", "cinematic"]},
                    "action": { "type": "spawn_360_gif",
                     "src": "https://jigsawhubs.github.io/Jigsaw_data/video/NPC_A_41.gif"
                     }
@@ -3120,9 +3120,9 @@
                  "function_name": "cueSocket",
                  "_cue": { 
                    "name": "NPC_SM_345_gif",
-                   "target": { "role" : "participant"},
+                   "target": { "role" : ["participant", "cinematic"]},
                    "action": { "type": "play_360_gif",
-                    "mapItem": "NPC_SM_2_how_to_walk",
+                    "mapItem": "NPC_SM_2_how_to_walk_gif",
                     "fadeDuration": 3000,
                     "fadeDelay": 3000
                     }
@@ -3141,7 +3141,7 @@
                  "function_name": "cueSocket",
                  "_cue": { 
                    "name": "NPC_SM_345_rock_gif",
-                   "target": { "role" : "participant"},
+                   "target": { "role" : ["participant", "cinematic"]},
                    "action": { "type": "play_360_gif",
                     "mapItem": "NPC_SM_2_rock_gif",
                     "fadeDuration": 3000,
@@ -3454,7 +3454,7 @@
                "function_name": "cueSocket",
                "_cue": { 
                  "name": "NPC_SM_6_gif",
-                 "target": { "role" : "participant"},
+                 "target": { "role" : ["participant", "cinematic"]},
                  "action": { "type": "play_360_gif",
                   "mapItem": "NPC_SM_2_health_gif",
                   "fadeDuration": 3000,
@@ -5018,7 +5018,7 @@
                "function_name": "cueSocket",
                "_cue": { 
                  "name": "NPC_SM_9_gif",
-                 "target": { "role" : "participant"},
+                 "target": { "role" : ["participant", "cinematic"]},
                  "action": { "type": "play_360_gif",
                   "mapItem": "NPC_SM_2_path_gif",
                   "fadeDuration": 3000,
@@ -6378,6 +6378,74 @@
       "trig": {"type": "button",
         "groupChain" : "NPC_SM_345_group",
                "time": 0}
-      }
+      },
+      {
+        "name": "NPC_SM_6_CAM_position",
+        "role": "stagemanager",
+        "target": { },
+        "action": {"type": "call_method_from_object",
+                   "object_name": "sockSys",
+                   "function_name": "cueSocket",
+                   "_cue": { 
+                    "name": "NPC_SM_6_CAM_position",
+                    "target": { "role" : "cinematic",
+                      "aspect" : "position" },
+                    "action": { "type": "manipulate_avatar",
+                      "attr": "object3D",
+                      "anime": {
+                       "targets": "",
+                       "delay" : 0,
+                       "loop": false,
+                       "autoplay": false,
+                       "easing": "linear",
+                       "duration": 0
+                       },
+                       "timelines" : [
+                        {"x": -41.33472509464945, "y": 188.10853003863113, "z": -0.7461536485718459,"delay": 0, "easing": "easeInSine", "duration": 6950},
+                        {"x": -27.68195756436176, "y": 187.12887148587959, "z": -1.1032760809832018,"delay": 0, "easing": "easeOutSine", "duration": 7000},
+                        {"x": -10.681957564361761, "y": 183.98650920216895, "z": -1.1032760809832018,"delay": 2950, "easing": "linear", "duration": 7000},
+                        {"x": -0.173839803034323, "y": 184.7, "z": -6.174617419069758,"delay": 0, "easing": "easeInOutSine", "duration": 3000}
+                       ]
+                     }
+                   }
+                  },
+        "trig": {"type": "button",
+          "groupChain" : "NPC_SM_6_group",
+                 "time": 0}
+        },
+        {
+          "name": "NPC_SM_6_CAM_rotation",
+          "role": "stagemanager",
+          "target": { },
+          "action": {"type": "call_method_from_object",
+                     "object_name": "sockSys",
+                     "function_name": "cueSocket",
+                     "_cue": { 
+                      "name": "NPC_SM_6_CAM_rotation",
+                      "target": { "role": "cinematic",
+                        "aspect" : "rotation" },
+                      "action": { "type": "manipulate_avatar",
+                        "attr": "object3D",
+                        "anime": {
+                         "targets": "rotation",
+                         "delay" : 1000,
+                         "loop": false,
+                         "autoplay": false,
+                         "easing": "easeInOutSine",
+                         "duration": 1000
+                         },
+                         "timelines" : [
+                          {"x": 0.2, "y":-2.356194490192345, "z":0, "delay": 0, "duration": 0, "easing": "easeInOutSine"},
+                     {"x": 0.2, "y":-0.7853981633974483, "z":0, "delay": 0, "duration": 7000, "easing": "easeInSine"},
+                     {"x": -0.3, "y":0, "z":0, "delay": 0, "duration": 7000, "easing": "easeOutSine"},
+                     {"x": 0.2, "y":1.5707963267948966, "z":0, "delay": 11000, "duration": 3000, "easing": "easeInOutSine"}
+                         ]
+                       }
+                     }
+                    },
+          "trig": {"type": "button",
+            "groupChain" : "NPC_SM_6_group",
+                   "time": 0}
+          }  
       ]
 }
