@@ -6370,7 +6370,9 @@
                        {"x": 0.2, "y":3.141592653589793, "z":0, "duration": 4500, "delay": 10000, "easing": "easeInSine"},
                        {"x": 0.2, "y":0.6415926535897931, "z":0, "delay": 0, "duration": 4500, "easing": "easeOutSine"},
                        {"x": 0.2, "y":0, "z":0, "delay": 6000, "duration": 6000, "easing": "easeOutSine"},
-                       {"x": 0.2, "y":-2.356194490192345, "z":0, "delay": 5000, "duration": 10000, "easing": "easeInOutSine"}
+                       {"x": 0.2, "y":-2.356194490192345, "z":0, "delay": 5000, "duration": 10000, "easing": "easeInOutSine"},
+                       {"x": 0.5, "y":-1.956194490192345, "z":0, "delay": 1500, "duration": 2000, "easing": "easeInOutSine"},
+                       {"x": 0.4, "y":-2.256194490192345, "z":0, "delay": 0, "duration": 0, "easing": "easeInOutSine"}
                      ]
                    }
                  }
