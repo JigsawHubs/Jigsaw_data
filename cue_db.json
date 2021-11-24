@@ -5323,7 +5323,7 @@
   },
   {
     "name": "NPC_SM_10_B_2_plank_1",
-    "role": "stagemanager",
+    "role": "none",
     "target": { "type": "glb",
                 "dest": "url",
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/5c9faf49-235b-4f05-8a94-666de3970af2.glb"},
@@ -5332,12 +5332,11 @@
                "rot": {"x":0, "y":0, "z":0},
                "scale": {"x": 1, "y":1, "z":1}},
     "trig": {"type": "button",
-              "groupChain": "NPC_SM_10_B_2_group",
              "time": 0}
   },
   {
     "name": "NPC_SM_10_B_2_plank_2",
-    "role": "stagemanager",
+    "role": "none",
     "target": { "type": "glb",
                 "dest": "url",
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/5c9faf49-235b-4f05-8a94-666de3970af2.glb"},
@@ -5346,12 +5345,11 @@
       "rot": {"x":0, "y":0, "z":-10},
       "scale": {"x": 3.3000000000000007, "y":3.3000000000000007, "z":3.3000000000000007}},
     "trig": {"type": "button",
-              "groupChain": "NPC_SM_10_B_2_group",
              "time": 0}
   },
   {
     "name": "NPC_SM_10_B_2_plank_3",
-    "role": "stagemanager",
+    "role": "none",
     "target": { "type": "glb",
                 "dest": "url",
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/5c9faf49-235b-4f05-8a94-666de3970af2.glb"},
@@ -5360,12 +5358,11 @@
                "rot": {"x":0, "y":-21.000000000000036, "z":-179},
                "scale": {"x": 1, "y":1, "z":1}},
     "trig": {"type": "button",
-              "groupChain": "NPC_SM_10_B_2_group",
              "time": 0}
   },
   {
     "name": "NPC_SM_10_B_2_plank_4",
-    "role": "stagemanager",
+    "role": "none",
     "target": { "type": "glb",
                 "dest": "url",
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/5c9faf49-235b-4f05-8a94-666de3970af2.glb"},
@@ -5374,12 +5371,11 @@
                "rot": {"x":0, "y":0, "z":10},
                "scale": {"x": 1, "y":1, "z":1}},
     "trig": {"type": "button",
-              "groupChain": "NPC_SM_10_B_2_group",
              "time": 0}
   },
   {
     "name": "NPC_SM_10_B_2_plank_5",
-    "role": "stagemanager",
+    "role": "none",
     "target": { "type": "glb",
                 "dest": "url",
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/5c9faf49-235b-4f05-8a94-666de3970af2.glb"},
@@ -5388,7 +5384,6 @@
                "rot": {"x":0, "y":120, "z":0},
                "scale": {"x": 1, "y":1, "z":1}},
     "trig": {"type": "button",
-              "groupChain": "NPC_SM_10_B_2_group",
              "time": 0}
   },
   {
@@ -5553,52 +5548,47 @@
   },
   {
     "name": "NPC_SM_11_delete_plank_1",
-    "role": "stagemanager",
+    "role": "none",
     "target": { "type": "glb",
                 "src": "NPC_SM_10_B_2_plank_1"},
     "action": {"type": "delete"},
     "trig": {"type": "button",
-      "groupChain" : "NPC_SM_11_group",
              "time": 0}
   },
   {
     "name": "NPC_SM_11_delete_plank_2",
-    "role": "stagemanager",
+    "role": "none",
     "target": { "type": "glb",
                 "src": "NPC_SM_10_B_2_plank_2"},
     "action": {"type": "delete"},
     "trig": {"type": "button",
-      "groupChain" : "NPC_SM_11_group",
              "time": 0}
   },
   {
     "name": "NPC_SM_11_delete_plank_3",
-    "role": "stagemanager",
+    "role": "none",
     "target": { "type": "glb",
                 "src": "NPC_SM_10_B_2_plank_3"},
     "action": {"type": "delete"},
     "trig": {"type": "button",
-      "groupChain" : "NPC_SM_11_group",
              "time": 0}
   },
   {
     "name": "NPC_SM_11_delete_plank_4",
-    "role": "stagemanager",
+    "role": "none",
     "target": { "type": "glb",
                 "src": "NPC_SM_10_B_2_plank_4"},
     "action": {"type": "delete"},
     "trig": {"type": "button",
-      "groupChain" : "NPC_SM_11_group",
              "time": 0}
   },
   {
     "name": "NPC_SM_11_delete_plank_5",
-    "role": "stagemanager",
+    "role": "none",
     "target": { "type": "glb",
                 "src": "NPC_SM_10_B_2_plank_5"},
     "action": {"type": "delete"},
     "trig": {"type": "button",
-      "groupChain" : "NPC_SM_11_group",
              "time": 0}
   },
   {
