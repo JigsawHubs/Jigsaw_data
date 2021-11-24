@@ -6373,8 +6373,9 @@
                        {"x": 0.2, "y":-2.356194490192345, "z":0, "delay": 5000, "duration": 10000, "easing": "easeInOutSine"},
                        {"x": 0.5, "y":-1.956194490192345, "z":0, "delay": 1500, "duration": 2000, "easing": "easeInOutSine"},
                        {"x": 0.45, "y":-2.056194490192345, "z":0, "delay": 32000, "duration": 2000, "easing": "easeInOutSine"},
-                       {"x": -0.2, "y":2.356194490192345, "z":0, "delay": 7000, "duration": 1, "easing": "easeInOutSine"},
-                       {"x": -0.2, "y":2.656194490192345, "z":0, "delay": 0, "duration": 8000, "easing": "easeInOutSine"}
+                       {"x": -0.2, "y":2.356194490192345, "z":0, "delay": 6550, "duration": 1, "easing": "easeInOutSine"},
+                       {"x": -0.2, "y":2.656194490192345, "z":0, "delay": 0, "duration": 8000, "easing": "easeInOutSine"},
+                       {"x": 0.45, "y":-2.056194490192345, "z":0, "delay": 0, "duration": 1, "easing": "easeInOutSine"}
                      ]
                    }
                  }
