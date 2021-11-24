@@ -6448,6 +6448,110 @@
           "trig": {"type": "button",
             "groupChain" : "NPC_SM_6_group",
                    "time": 0}
+          },
+          {
+            "name": "NPC_SM_6_CAM_scale",
+            "role": "stagemanager",
+            "target": { },
+            "action": {"type": "call_method_from_object",
+                       "object_name": "sockSys",
+                       "function_name": "cueSocket",
+                       "_cue": { 
+                        "name": "NPC_SM_6_CAM_scale",
+                        "target": { "role" : "cinematic",
+                          "aspect" : "scale" },
+                        "action": { "type": "manipulate_avatar",
+                          "attr": "object3D",
+                          "anime": {
+                           "targets": "",
+                           "delay" : 0,
+                           "loop": false,
+                           "autoplay": false,
+                           "easing": "linear",
+                           "duration": 1
+                           },
+                           "timelines" : [
+                            {"x": 0.2, "y": 0.2, "z": 0.2,"delay": 7000, "easing": "linear", "duration": 7000}
+                           ]
+                         }
+                       }
+                      },
+            "trig": {"type": "button",
+              "groupChain" : "NPC_SM_6_group",
+                     "time": 0}
+          },
+          {
+            "name": "NPC_SM_7_CAM_position",
+            "role": "stagemanager",
+            "target": { },
+            "action": {"type": "call_method_from_object",
+                       "object_name": "sockSys",
+                       "function_name": "cueSocket",
+                       "_cue": { 
+                        "name": "NPC_SM_7_part1_anim_position",
+                        "target": { "role" : "cinematic",
+                          "aspect" : "position" },
+                        "action": { "type": "manipulate_avatar",
+                          "attr": "object3D",
+                          "anime": {
+                           "targets": "",
+                           "delay" : 0,
+                           "loop": false,
+                           "autoplay": false,
+                           "easing": "linear",
+                           "duration": 1
+                           },
+                           "timelines" : [
+                            {"x": -0.98, "y": 183.62279750279018, "z": -5.8,"delay": 0, "easing": "linear", "duration": 10000}
+                           ]
+                         }
+                       }
+                      },
+            "trig": {"type": "button",
+              "groupChain" : "NPC_SM_7_group",
+                     "time": 0}
+          },
+          {
+            "name": "NPC_SM_9_CAM_position",
+            "role": "stagemanager",
+            "target": { },
+            "action": {"type": "call_method_from_object",
+                       "object_name": "sockSys",
+                       "function_name": "cueSocket",
+                       "_cue": { 
+                         "name": "NPC_SM_9_anim_part_position",
+                         "target": { "role": "cinematic", "aspect" : "position"},
+                         "action": { "type" : "lock_waypoint",
+                           "waypoint" : "NPCWaypoint3",
+                           "attr": "object3D",
+                           "recallAud" : true,
+                           "maxDist" : 0.1,
+                           "anime" : {
+                            "targets": "position",
+                            "delay" : 1000,
+                            "loop": false,
+                            "autoplay": true,
+                            "easing": "linear",
+                            "duration": 1000
+                            },
+                            "timelines" : [
+                              {"x": 48.35642411560717, "y": 210.52776566213626, "z": 15.18644798898042, "delay": 1500, "duration": 3000, "easing": "easeInSine"},
+                              {"x": 102.10936085524516, "y": 211.34699286060226, "z": 11.46724494210593, "delay": 0, "easing": "linear", "duration": 1500},
+                              {"x": 123.01583221464385, "y": 211.71688809096906, "z": 13.397707950890041, "delay": 0, "easing": "linear", "duration": 500},
+                              {"x": 136.09498204134468, "y": 211.85121951865798, "z": 23.529305704037732, "delay": 0, "easing": "linear", "duration": 500},
+                              {"x": 171.03187840996895, "y": 211.65418789773506, "z": 65.37972428642911, "delay": 0, "easing": "linear", "duration": 1200},
+                              {"x": 193.92554119401404, "y": 212.07074406656446, "z": 78.62184802956773, "delay": 0, "easing": "linear", "duration": 700},
+                              {"x": 252.88232585464056, "y": 211.44135579900828, "z": 89.17120324500563, "delay": 0, "easing": "linear", "duration": 1200},
+                              {"x": 276.9629853765556, "y": 211.8856618359682, "z": 104.61302314252679, "delay": 0, "easing": "linear", "duration": 700},
+                              {"x": 309.0484515590496, "y": 209.9779148917379, "z": 161.01396432571218, "delay": 0, "easing": "linear", "duration": 1000},
+                              {"x": 318.17908944658024, "y": 201.68069742872257, "z": 203.04625369943403, "delay": 0, "easing": "easeOutSine", "duration": 1000}
+                            ]
+                          }
+                        }
+                      },
+            "trig": {"type": "button",
+              "groupChain" : "NPC_SM_9_group",
+                     "time": 57000}
           }  
       ]
 }
