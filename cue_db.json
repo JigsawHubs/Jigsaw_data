@@ -2525,7 +2525,7 @@
                    "name": "NPC_SM_2_load_360_skybox",
                    "target": { "role": "general" },
                    "action": { "type": "load_360_image",
-                    "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/563b1246-d961-4b57-ad49-85d2ac17f927.png",
+                    "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/bd9946cc-8911-4b12-9852-b3ce9bfdcb4e.png",
                     "position" : {"x": -7, "y": 225, "z": -5.5},
                     "scale" : {"x": 275, "y": 250, "z": 250}
                   }
@@ -6248,7 +6248,7 @@
                    "loop": false,
                    "autoplay": true,
                    "easing": "easeInSine",
-                   "duration": 0
+                   "duration": 1
                    },
                    "timelines" : [
                     {"x": -65.69676088167867, "y": 520.002484649347, "z": 0.355277583622875, "duration": 1, "delay": 52000, "easing": "easeInOutSine"},
