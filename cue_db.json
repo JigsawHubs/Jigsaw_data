@@ -6251,7 +6251,7 @@
                    "duration": 1
                    },
                    "timelines" : [
-                    {"x": -65.69676088167867, "y": 520.002484649347, "z": 0.355277583622875, "duration": 1, "delay": 52000, "easing": "easeInOutSine"},
+                    {"x": -65.69676088167867, "y": 520.002484649347, "z": 0.355277583622875, "duration": 1, "delay": 0, "easing": "easeInOutSine"},
                     {"x": 2.210436986144683, "y":545.65, "z":-53.6665139712834, "duration": 6000, "delay": 2500, "easing": "easeInOutSine"},
                     {"x": 2.3576229524763, "y": 549.3731523005426, "z": -53.59724524892083, "duration": 1, "delay": 1500, "easing": "easeInOutSine"}
                    ]
@@ -6260,7 +6260,7 @@
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_2_A_group",
-             "time": 0}
+             "time": 52000}
   },
   {
     "name": "NPC_SM_2_A_CAM_rotation",
@@ -6284,7 +6284,7 @@
                    "duration": 0
                    },
                    "timelines" : [
-                    {"x": -1, "y":4.941592653589793, "z":-1, "duration": 1, "delay": 52000, "easing": "easeInOutSine"},
+                    {"x": -1, "y":4.941592653589793, "z":-1, "duration": 1, "delay": 0, "easing": "easeInOutSine"},
                     {"x": 1.5707963267948966, "y":6.283185307179586, "z":0, "duration": 6000, "delay": 2500, "easing": "easeInOutSine"},
                     {"x": -1.3707963267948966, "y":3.141592653589793, "z":0, "duration": 1, "delay": 1500, "easing": "easeInOutSine"}
                    ]
@@ -6293,7 +6293,7 @@
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_2_A_group",
-             "time": 0}
+             "time": 52000}
   },
   {
     "name": "NPC_SM_345_CAM_position",
