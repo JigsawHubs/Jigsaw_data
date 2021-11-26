@@ -4248,7 +4248,7 @@
                  "name": "NPC_SM_6_load_360_skybox",
                  "target": { "role": "general" },
                  "action": { "type": "load_360_image",
-                  "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/687ada2b-5911-4f41-b2be-46e8f4e4e172.png",
+                  "src" : "https://jigsawhubs.github.io/Jigsaw_data/image/NPC_A_black.png",
                   "position" : {"x": -7, "y": 100, "z": -5.5},
                   "scale" : {"x": 350, "y": 300, "z": 300}
                 }
@@ -4664,7 +4664,7 @@
                  "name": "NPC_SM_7_load_360_skybox",
                  "target": { "role": "general" },
                  "action": { "type": "load_360_image",
-                  "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/30333992-8e92-40ac-908c-6532959a1c43.png",
+                  "src" : "https://jigsawhubs.github.io/Jigsaw_data/image/NPC_A_red.png",
                   "position" : {"x": -7, "y": 120, "z": -5.5},
                   "scale" : {"x": 200, "y": 200, "z": 200}
                 }
@@ -6930,7 +6930,10 @@
                            },
                            "timelines" : [
                             {"x": -30.7726820955078972, "y": 22.258394108738582, "z": 0.97935581523373,"delay": 0, "easing": "linear", "duration": 1},
-                            {"x": 30.7726820955078972, "y": 22.258394108738582, "z": 0.97935581523373,"delay": 0, "easing": "linear", "duration": 15000}
+                            {"x": 30.7726820955078972, "y": 22.258394108738582, "z": 0.97935581523373,"delay": 0, "easing": "linear", "duration": 15000},
+                            {"x": 1, "y": 10.258394108738582, "z": 13.97935581523373,"delay": 0, "easing": "linear", "duration": 1},
+                            {"x": 10, "y": 20.258394108738582, "z": 17.97935581523373,"delay": 15000, "easing": "linear", "duration": 1},
+                            {"x": -10.5, "y": 11.258394108738582, "z": 15.97935581523373,"delay": 15000, "easing": "linear", "duration": 1}
                            ]
                          }
                        }
@@ -6962,7 +6965,10 @@
                            },
                            "timelines" : [
                             {"x": -0.4, "y": -1.57, "z": 0, "delay": 0, "duration": 1, "easing": "easeInSine"},
-                            {"x": -0.4, "y": -4.71238898038469, "z": 0, "delay": 0, "duration": 15000, "easing": "easeInSine"}
+                            {"x": -0.4, "y": -4.71238898038469, "z": 0, "delay": 0, "duration": 15000, "easing": "easeInSine"},
+                            {"x": 0.5, "y": -3.141592653589793, "z": 0, "delay": 0, "duration": 1, "easing": "easeInSine"},
+                            {"x": -0.5, "y": 0.9853981633974483, "z": 0, "delay": 15000, "duration": 1, "easing": "easeInSine"},
+                            {"x": 0, "y": -1.5707963267948966, "z": 0, "delay": 15000, "duration": 1, "easing": "easeInSine"}
                            ]
                          }
                        }
