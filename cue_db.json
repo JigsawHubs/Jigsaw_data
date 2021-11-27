@@ -3937,7 +3937,7 @@
                        },
                        "timelines" : [
                         {"x": 0.7, "y": 0.7, "z": 0.7, "delay": 7000, "easing" : "easeInSine", "duration": 7000},
-                        {"x": 3, "y": 3, "z": 3, "delay": 11000, "easing" : "easeInSine", "duration": 2000}
+                        {"x": 1.5, "y": 1.5, "z": 1.5, "delay": 11000, "easing" : "easeInSine", "duration": 2000}
                        ]
                      }
                    }
@@ -4143,10 +4143,10 @@
       "applyGravityOnSpawn" : false,
       "pos": {"x": -7.450033664703369, "y": 183.84788818359375, "z": -6.191864013671875},
       "rot": {"x": 88.99999999999999, "y": 54.00000000000001, "z": 0},
-      "scale": {"x": 1, "y":1, "z":1}},
+      "scale": {"x": 1.2, "y":1.2, "z":1.2}},
     "trig": {"type": "button",
               "groupChain": "NPC_SM_6_group",
-             "time": 54000}
+             "time": 53000}
   },
   {
     "name": "NPC_SM_6_corpse_rock_2",
@@ -4158,10 +4158,10 @@
       "applyGravityOnSpawn" : false,
       "pos": {"x": -7.43428897857666, "y": 183.6910430908203, "z": -6.494771957397461},
       "rot": {"x": 86, "y": 0, "z": 0},
-      "scale": {"x": 1, "y":1, "z":1}},
+      "scale": {"x": 1.2, "y":1.2, "z":1.2}},
     "trig": {"type": "button",
               "groupChain": "NPC_SM_6_group",
-             "time": 54000}
+             "time": 53000}
   },
   {
     "name": "NPC_SM_6_corpse_rock_3",
@@ -4173,10 +4173,10 @@
       "applyGravityOnSpawn" : false,
       "pos": {"x": -6.837052822113037, "y": 183.64247436523438, "z": -4.9736552238464355},
       "rot": {"x": 63, "y": 0, "z": 0},
-      "scale": {"x": 1, "y":1, "z":1}},
+      "scale": {"x": 1.2, "y":1.2, "z":1.2}},
     "trig": {"type": "button",
               "groupChain": "NPC_SM_6_group",
-             "time": 54000}
+             "time": 53000}
   },
   {
     "name": "NPC_SM_6_corpse_rock_4",
@@ -4188,10 +4188,10 @@
       "applyGravityOnSpawn" : false,
       "pos": {"x": -7.183813095092773, "y":183.840380859375, "z":-5.409921646118164},
       "rot": {"x": 0, "y":0, "z":0},
-      "scale": {"x": 1, "y":1, "z":1}},
+      "scale": {"x": 1.2, "y":1.2, "z":1.2}},
     "trig": {"type": "button",
               "groupChain": "NPC_SM_6_group",
-             "time": 54000}
+             "time": 53000}
   },
   {
     "name": "NPC_SM_6_corpse_rock_5",
@@ -4203,10 +4203,10 @@
       "applyGravityOnSpawn" : false,
       "pos": {"x": -6.677567005157471, "y":183.67230529785156, "z":-5.9041523933410645},
       "rot": {"x": -67, "y":1, "z":1},
-      "scale": {"x": 1, "y":1, "z":1}},
+      "scale": {"x": 1.2, "y":1.2, "z":1.2}},
     "trig": {"type": "button",
               "groupChain": "NPC_SM_6_group",
-             "time": 54000}
+             "time": 53000}
   },
   {
     "name": "NPC_SM_6_corpse_rock_6",
@@ -4218,10 +4218,10 @@
       "applyGravityOnSpawn" : false,
       "pos": {"x": -6.899189472198486, "y":183.66585083007812, "z":-5.380363941192627},
       "rot": {"x": 0, "y":0, "z":0},
-      "scale": {"x": 1, "y":1, "z":1}},
+      "scale": {"x": 1.2, "y":1.2, "z":1.2}},
     "trig": {"type": "button",
               "groupChain": "NPC_SM_6_group",
-             "time": 54000}
+             "time": 53000}
   },
   {
     "name": "NPC_SM_6_corpse_rock_7",
@@ -4233,10 +4233,10 @@
       "applyGravityOnSpawn" : false,
       "pos": {"x": -7.047224044799805, "y":183.7150604248047, "z":-5.973589897155762},
       "rot": {"x": 0, "y":0, "z":0},
-      "scale": {"x": 1, "y":1, "z":1}},
+      "scale": {"x": 1.2, "y":1.2, "z":1.2}},
     "trig": {"type": "button",
               "groupChain": "NPC_SM_6_group",
-             "time": 54000}
+             "time": 53000}
   },
   {
     "name": "NPC_SM_6_corpse_rock_8",
@@ -4248,10 +4248,10 @@
       "applyGravityOnSpawn" : false,
       "pos": {"x": -6.766655921936035, "y":183.7327606201172, "z":-6.170908451080322},
       "rot": {"x": 0, "y":0, "z":0},
-      "scale": {"x": 1, "y":1, "z":1}},
+      "scale": {"x": 1.2, "y":1.2, "z":1.2}},
     "trig": {"type": "button",
               "groupChain": "NPC_SM_6_group",
-             "time": 54000}
+             "time": 53000}
   },
   {
     "name": "NPC_SM_6_graveyard_light",
