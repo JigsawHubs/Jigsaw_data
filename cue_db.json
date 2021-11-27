@@ -3194,7 +3194,7 @@
                  "scale": {"x": 3, "y":3, "z":3}},
       "trig": {"type": "button",
         "groupChain" : "NPC_SM_345_group",
-               "time": 67000}
+               "time": 70000}
     },
   {
     "name": "NPC_SM_345_slide_in_NPC",
@@ -3215,7 +3215,7 @@
                     "loop": false,
                     "autoplay": true,
                     "easing": "easeOutSine",
-                    "duration": 5000
+                    "duration": 7000
                     },
                     "timelines" : [
                       {"x": -43.653630938741266, "y": 190.12296755186756, "z": -24.27643261090883}
@@ -3225,7 +3225,7 @@
               },
   "trig": {"type": "button",
     "groupChain" : "NPC_SM_345_group",
-            "time": 70500}
+            "time": 73000}
   },
   {
     "name": "NPC_SM_345_delete_NPC",
