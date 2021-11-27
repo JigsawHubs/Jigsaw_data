@@ -3937,7 +3937,7 @@
                        },
                        "timelines" : [
                         {"x": 0.7, "y": 0.7, "z": 0.7, "delay": 7000, "easing" : "easeInSine", "duration": 7000},
-                        {"x": 1.5, "y": 1.5, "z": 1.5, "delay": 11000, "easing" : "easeInSine", "duration": 2000}
+                        {"x": 1.8, "y": 1.8, "z": 1.8, "delay": 11000, "easing" : "easeInSine", "duration": 2000}
                        ]
                      }
                    }
