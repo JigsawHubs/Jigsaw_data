@@ -3174,7 +3174,7 @@
                    "action": { "type": "play_360_gif",
                     "mapItem": "NPC_SM_2_rock_gif",
                     "fadeDuration": 3000,
-                    "fadeDelay": 3000
+                    "fadeDelay": 6000
                     }
                   }
                 },
