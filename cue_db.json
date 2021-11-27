@@ -3340,7 +3340,7 @@
                 "dest": "url",
                 "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_19.glb"},
     "action": {"type": "spawn_item",
-      "pos": {"x": 100, "y": 190.09996367208856, "z": -200},
+      "pos": {"x": 200, "y": 190.09996367208856, "z": -300},
       "rot": {"x": 0, "y":3.9269908169872414, "z":0},
       "scale": {"x": 0.15, "y":0.15, "z":0.15}},
     "trig": {"type": "button",
@@ -3362,11 +3362,11 @@
                    "attr": "object3D",
                    "anime" : {
                     "targets": "position",
-                    "delay" : 0,
+                    "delay" : 2000,
                     "loop": false,
                     "autoplay": true,
-                    "easing": "easeOutElastic(1, .9)",
-                    "duration": 7000
+                    "easing": "easeOutSine",
+                    "duration": 3000
                     },
                     "timelines" : [
                       {"x": -34.28658615980113, "y": 189.90917605110286, "z": -5.5232422300881625}
