@@ -7145,6 +7145,37 @@
             "trig": {"type": "button",
               "groupChain" : "NPC_SM_10_C_2_group",
                      "time": 0}
+          },
+          {
+            "name": "NPC_SM_11_CAM_scale",
+            "role": "stagemanager",
+            "target": { },
+            "action": {"type": "call_method_from_object",
+                       "object_name": "sockSys",
+                       "function_name": "cueSocket",
+                       "_cue": { 
+                        "name": "NPC_SM_11_CAM_scale",
+                        "target": { "role" : "cinematic",
+                          "aspect" : "scale" },
+                        "action": { "type": "manipulate_avatar",
+                          "attr": "object3D",
+                          "anime": {
+                           "targets": "",
+                           "delay" : 0,
+                           "loop": false,
+                           "autoplay": false,
+                           "easing": "linear",
+                           "duration": 1
+                           },
+                           "timelines" : [
+                            {"x": 100, "y": 0.1, "z": 100, "delay": 0, "duration": 5000, "easing": "easeInSine"}
+                           ]
+                         }
+                       }
+                      },
+            "trig": {"type": "button",
+              "groupChain" : "NPC_SM_11_group",
+                     "time": 0}
           }
       ]
 }
