@@ -3180,7 +3180,7 @@
                 },
       "trig": {"type": "button",
         "groupChain" : "NPC_SM_345_group",
-               "time": 86000}
+               "time": 92000}
     },
     {
       "name": "NPC_SM_345_looping_NPC",
