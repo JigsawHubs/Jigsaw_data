@@ -2046,10 +2046,31 @@
                  "object_name": "sockSys",
                  "function_name": "cueSocket",
                  "_cue": {
-                  "name": "NPC_SM_2_brnd_to_hero",
+                  "name": "NPC_SM_2_stagemanager_to_invis",
                   "role":"stagemanager",
                   "target": { "role" : "individual",
-                  "name" : "Brendan2"
+                  "name" : "___"
+                  },
+                  "action": {"type": "change_avatar",
+                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_24.glb"}
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "NPC_SM_2_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_2_camera_to_invis",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "NPC_SM_2_camera_to_invis",
+                  "role":"stagemanager",
+                  "target": { "role" : "individual",
+                  "name" : "camera"
                   },
                   "action": {"type": "change_avatar",
                              "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_24.glb"}
@@ -3292,7 +3313,7 @@
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/4cecae72-e7ab-4745-8888-2aa2b980cb02.glb"},
     "action": {"type": "spawn_item",
       "pos": {"x": -50.41625817594881, "y": 187.35275881163318, "z": -29.1170129047911},
-      "rot": {"x": -180, "y":0, "z":-180},
+      "rot": {"x": 0, "y":0, "z":0},
       "scale": {"x": 0.4, "y":0.4, "z":0.4}},
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_345_rock_group",
