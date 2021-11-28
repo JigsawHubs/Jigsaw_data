@@ -3055,11 +3055,16 @@
                          "duration": 1000
                          },
                          "timelines" : [
-                          {"x": -11.290920535989299, "y": 197.5255253078421, "z": 55.20355420003261, "delay": 6000, "easing" : "linear", "duration": 7000},
-                          {"x": 3.290920535989299, "y": 192.3255253078421, "z": 64.20355420003261, "delay": 6000, "easing" : "linear", "duration": 6000},
-                          {"x": -9.130275558062639, "y": 188.8240228794682, "z": 7.89086328838054, "delay": 0, "easing": "linear", "duration": 2000},
-                          {"x": -9.647542698982448, "y": 185.94054703667388, "z": 2.935316054249057, "delay": 0, "easing": "linear", "duration": 2000},
-                          {"x": -40.953630938741266, "y": 186.52296755186756, "z": -25.27643261090883, "delay": 0, "easing": "easeOutSine", "duration": 10000}
+                          {"x": -5.939077466925751, "y": 246.12176238908467, "z": -37.145217835083066, "delay": 0, "easing" : "easeInSine", "duration": 15000},
+                          {"x": -5.939077466925751, "y": 198.12176238908467, "z": -41.145217835083066, "delay": 0, "easing" : "easeOutSine", "duration": 5000},
+                          {"x": 219.524863904552657, "y": 198.12176238908467, "z": -15.902577147963783, "delay": 0, "easing" : "easeInSine", "duration": 5000},
+                          {"x": 26.939077466925752, "y": 198.12176238908467, "z": 37.145217835083066, "delay": 0, "easing" : "linear", "duration": 4000},
+                          {"x": 26.939077466925752, "y": 198.12176238908467, "z": 37.145217835083066, "delay": 0, "easing" : "easeOutSine", "duration": 5000},
+                          {"x": -10.868491825995346, "y": 191.8240228794682, "z": 35.287204158887846, "delay": 0, "easing": "easeInSine", "duration": 4000},
+                          {"x": -11.130275558062639, "y": 186.40029290899673, "z": 19.89086328838054, "delay": 0, "easing": "linear", "duration": 1500},
+                          {"x": -11.647542698982448, "y": 194.94054703667388, "z": 11.935316054249057, "delay": 0, "easing": "linear", "duration": 1500},
+                          {"x": -46.64754269898245, "y": 194.94054703667388, "z": -17.935316054249057, "delay": 0, "easing": "linear", "duration": 5000},
+                          {"x": -50.41099025162198, "y": 194.12296755186756, "z": -27.862219048535735, "delay": 0, "easing": "easeOutSine", "duration": 3000}
                          ]
                        }
                      }
@@ -3127,11 +3132,13 @@
                          "duration": 1
                          },
                          "timelines" : [
-                          {"x": 0.9707963267948966, "y":0, "z":0, "duration": 0, "delay": 0, "easing": "easeInOutSine"},
-                         {"x": 0, "y":0, "z":0, "duration": 7000, "delay": 6000, "easing": "easeInOutSine"},
-                         {"x": 0, "y":-2.5,"delay": 2000, "duration": 4000, "easing": "easeInOutSine"},
-                         {"x": 0, "y":-3.141592653589793, "z":0, "delay": 6000, "duration": 6000, "easing": "easeOutSine"},
-                         {"x": 0, "y":-5.497787143782138, "z":0, "delay": 5000, "duration": 10000, "easing": "easeInOutSine"}
+                          {"x": 0, "y":0, "z":0, "duration": 5000, "delay": 15000, "easing": "easeOutSine"},
+                        {"x": 0, "y":-0.7853981633974483, "z":0, "duration": 5000, "delay": 0, "easing": "easeInSine"},
+                        {"x": 0, "y":-1.5707963267948966, "z":0, "duration": 4000, "delay": 0, "easing": "linear"},
+                        {"x": 0, "y":-2.5, "z":0, "delay": 0, "duration": 5000, "easing": "easeOutSine"},
+                        {"x": 0, "y":-3.141592653589793, "z":0, "delay": 0, "duration": 4000, "easing": "easeInSine"},
+                        {"x": 0, "y":-4.71238898038469, "z":0, "delay": 3000, "duration": 5000, "easing": "linear"},
+                        {"x": 0, "y":-5.497787143782138, "z":0, "delay": 0, "duration": 3000, "easing": "easeOutSine"}
                          ]
                        }
                      }
