@@ -6742,7 +6742,7 @@
                               {"x": 309.0484515590496, "y": 209.9779148917379, "z": 161.01396432571218, "delay": 0, "easing": "linear", "duration": 1000},
                               {"x": 318.17908944658024, "y": 201.68069742872257, "z": 203.04625369943403, "delay": 0, "easing": "easeOutSine", "duration": 1000},
                               {"x": 335.17908944658024, "y": 203.58069742872257, "z": 218.04625369943403, "delay": 5000, "easing": "easeOutSine", "duration": 1},
-                              {"x": 300.17908944658024, "y": 203.58069742872257, "z": 218.04625369943403, "delay": 0, "easing": "easeOutSine", "duration": 10000}
+                              {"x": 300.17908944658024, "y": 203.58069742872257, "z": 218.04625369943403, "delay": 0, "easing": "easeOutSine", "duration": 20000}
                             ]
                           }
                         }
@@ -6783,7 +6783,7 @@
                             {"x": 0, "y": -2.6707963267948966, "z": 0, "delay": 0, "duration": 500, "easing": "easeInSine"},
                             {"x": 0, "y": -3.0707963267948966, "z": 0, "delay": 0, "duration": 500, "easing": "easeInSine"},
                             {"x": 0, "y": -5.426990816987241, "z": 0, "delay": 5000, "duration": 1, "easing": "easeInOutSine"},
-                            {"x": 0, "y": -6.997787143782138, "z": 0, "delay": 0, "duration": 10000, "easing": "easeInSine"}
+                            {"x": 0, "y": -6.997787143782138, "z": 0, "delay": 3000, "duration": 20000, "easing": "easeInSine"}
                            ]
                          }
                        }
