@@ -6245,7 +6245,7 @@
                "function_name": "cueSocket",
                "_cue": { 
                 "name": "NPC_SM_13A_part_into_light",
-                "target": { "role" : ["participant", "stagemanager"],
+                "target": { "role" : ["participant", "stagemanager", "cinematic"],
                   "aspect" : "position" },
                 "action": { "type": "manipulate_avatar",
                   "attr": "object3D",
@@ -6625,7 +6625,10 @@
                             {"x": 0.8321549682863987, "y": 184.3, "z": -4.093598801305299,"delay": 0, "easing": "linear", "duration": 10000},
                             {"x": 0.4021549682863987, "y": 184.3, "z": -3.103598801305299,"delay": 0, "easing": "easeOutSine", "duration": 9000},
                             {"x": -0.7276904046916947, "y": 183.6, "z": -4.620400784836581,"delay": 0, "easing": "easeInOutSine", "duration": 9000},
-                            {"x": -0.7276904046916947, "y": 185.2, "z": -4.620400784836581,"delay": 9000, "easing": "easeInOutSine", "duration": 10000}
+                            {"x": -0.7276904046916947, "y": 186.2, "z": -4.620400784836581,"delay": 9000, "easing": "easeInOutSine", "duration": 10000},
+                            {"x": -5.7276904046916947, "y": 186.2, "z": -2.620400784836581,"delay":0, "easing": "easeInSine", "duration": 6000},
+                            {"x": -10.0276904046916947, "y": 186.2, "z": -5.520400784836581,"delay":0, "easing": "easeOutSine", "duration": 4000},
+                            {"x": -10.0276904046916947, "y": 184.2, "z": -5.520400784836581,"delay":0, "easing": "easeInOutSine", "duration": 6000}
                            ]
                          }
                        }
@@ -6635,14 +6638,14 @@
                      "time": 0}
           },
           {
-            "name": "NPC_SM_7_anim_part_rotation",
+            "name": "NPC_SM_7_CAM_rotation",
             "role": "stagemanager",
             "target": { },
             "action": {"type": "call_method_from_object",
                        "object_name": "sockSys",
                        "function_name": "cueSocket",
                        "_cue": { 
-                        "name": "NPC_SM_7_anim_part_rotation",
+                        "name": "NPC_SM_7_CAM_rotation",
                         "target": { "role" : "cinematic",
                           "aspect" : "rotation" },
                         "action": { "type": "manipulate_avatar",
@@ -6660,7 +6663,11 @@
                             {"x": 0.2, "y":1.5707963267948966, "z":0, "delay": 0, "duration": 11000, "easing": "easeInSine"},
                             {"x": 0.2, "y":0.9707963267948966, "z":0, "delay": 0, "duration": 18000, "easing": "easeOutSine"},
                             {"x": 0.5, "y":1.3707963267948966, "z":0, "delay": 0, "duration": 9000, "easing": "easeInOutSine"},
-                            {"x": 0, "y":0.4707963267948966, "z":0, "delay": 0, "duration": 4000, "easing": "easeInOutSine"}
+                            {"x": 0, "y":0.4707963267948966, "z":0, "delay": 0, "duration": 4000, "easing": "easeInOutSine"},
+                            {"x": -0.2, "y":0.4707963267948966, "z":0, "delay": 5000, "duration": 10000, "easing": "easeInSine"},
+                            {"x": -0.2, "y":-0.1707963267948966, "z":0, "delay": 0, "duration": 6000, "easing": "linear"},
+                            {"x": -0.2, "y":-1.5707963267948966, "z":0, "delay": 0, "duration": 4000, "easing": "linear"},
+                            {"x": 0.15, "y":-1.5707963267948966, "z":0, "delay": 0, "duration": 6000, "easing": "easeOutSine"}
                            ]
                          }
                        }
@@ -6670,14 +6677,14 @@
                      "time": 0}
           },
           {
-            "name": "NPC_SM_7_anim_part_scale",
+            "name": "NPC_SM_7_CAM_scale",
             "role": "stagemanager",
             "target": { },
             "action": {"type": "call_method_from_object",
                        "object_name": "sockSys",
                        "function_name": "cueSocket",
                        "_cue": { 
-                        "name": "NPC_SM_7_anim_part_scale",
+                        "name": "NPC_SM_7_CAM_scale",
                         "target": { "role" : "cinematic",
                           "aspect" : "scale" },
                         "action": { "type": "manipulate_avatar",
