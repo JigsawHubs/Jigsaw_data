@@ -2704,8 +2704,8 @@
                      },
                      "timelines" : [
                       {"x": 5, "y": 549.65, "z": -53.8, "delay": 0, "easing" : "easeInSine", "duration": 0},
-                      {"x": -5.055529207190643, "y": 247.8612887562722, "z": -43.91542657531744, "delay": 0, "easing" : "easeInSine", "duration": 15000},
-                      {"x": -5.055529207190643, "y": 191.35155364885028, "z": -42.88474420227059, "delay": 0, "easing" : "easeOutSine", "duration": 5000},
+                      {"x": -5.055529207190643, "y": 247.8612887562722, "z": -43.91542657531744, "delay": 0, "easing" : "easeInSine", "duration": 11000},
+                      {"x": -5.055529207190643, "y": 191.35155364885028, "z": -42.88474420227059, "delay": 0, "easing" : "easeOutSine", "duration": 9000},
                       {"x": 21.379657760808023, "y": 191.35155364885028, "z": -16.50784507229061, "delay": 0, "easing" : "easeInSine", "duration": 5000},
                       {"x": 28.678603834113275, "y": 191.35155364885028, "z": 38.028766094818174, "delay": 0, "easing" : "linear", "duration": 4000},
                       {"x": 4.627953755861304, "y": 190.55531656760772, "z": 70.11831349062362, "delay": 0, "easing" : "easeOutSine", "duration": 5000},
@@ -2746,8 +2746,8 @@
                      },
                      "timelines" : [
                       {"x": 3, "y": 549.75, "z": -53.8, "delay": 0, "easing" : "easeInSine", "duration": 0},
-                      {"x": -7.055529207190643, "y": 247.9612887562722, "z": -43.91542657531744, "delay": 0, "easing" : "easeInSine", "duration": 15000},
-                      {"x": -7.055529207190643, "y": 191.35155364885028, "z": -42.98474420227061, "delay": 0, "easing" : "easeOutSine", "duration": 5000},
+                      {"x": -7.055529207190643, "y": 247.9612887562722, "z": -43.91542657531744, "delay": 0, "easing" : "easeInSine", "duration": 11000},
+                      {"x": -7.055529207190643, "y": 191.35155364885028, "z": -42.98474420227061, "delay": 0, "easing" : "easeOutSine", "duration": 9000},
                       {"x": 20.0361548765536, "y": 191.35155364885028, "z": -17.99276931278238, "delay": 0, "easing" : "easeInSine", "duration": 5000},
                       {"x": 28.778603834113298, "y": 191.35155364885028, "z": 36.028766094818174, "delay": 0, "easing" : "linear", "duration": 4000},
                       {"x": 6.29008820136558, "y": 190.55531656760772, "z": 69.00148356397041, "delay": 0, "easing" : "easeOutSine", "duration": 5000},
@@ -2788,8 +2788,8 @@
                      },
                      "timelines" : [
                       {"x": 1.5, "y": 549.75, "z": -53.8, "delay": 0, "easing" : "easeInSine", "duration": 0},
-                      {"x": -8.555529207190643, "y": 247.9612887562722, "z": -43.91542657531744, "delay": 0, "easing" : "easeInSine", "duration": 15000},
-                      {"x": -8.555529207190643, "y": 191.35155364885028, "z": -42.98474420227061, "delay": 0, "easing" : "easeOutSine", "duration": 5000},
+                      {"x": -8.555529207190643, "y": 247.9612887562722, "z": -43.91542657531744, "delay": 0, "easing" : "easeInSine", "duration": 11000},
+                      {"x": -8.555529207190643, "y": 191.35155364885028, "z": -42.98474420227061, "delay": 0, "easing" : "easeOutSine", "duration": 9000},
                       {"x": 18.975494704773777, "y": 191.35155364885028, "z": -19.053429484562198, "delay": 0, "easing" : "easeInSine", "duration": 5000},
                       {"x": 28.778603834113298, "y": 191.35155364885028, "z": 34.528766094818174, "delay": 0, "easing" : "linear", "duration": 4000},
                       {"x": 7.49180362468598, "y": 190.55531656760772, "z": 68.10377534781448, "delay": 0, "easing" : "easeOutSine", "duration": 5000},
@@ -2830,8 +2830,8 @@
                      },
                      "timelines" : [
                       {"x": 0, "y": 549.65, "z": -53.8, "delay": 0, "easing" : "easeInSine", "duration": 0},
-                      {"x": -10.055529207190643, "y": 247.8612887562722, "z": -43.91542657531744, "delay": 0, "easing" : "easeInSine", "duration": 15000},
-                      {"x": -10.055529207190643, "y": 191.35155364885028, "z": -42.88474420227059, "delay": 0, "easing" : "easeOutSine", "duration": 5000},
+                      {"x": -10.055529207190643, "y": 247.8612887562722, "z": -43.91542657531744, "delay": 0, "easing" : "easeInSine", "duration": 11000},
+                      {"x": -10.055529207190643, "y": 191.35155364885028, "z": -42.88474420227059, "delay": 0, "easing" : "easeOutSine", "duration": 9000},
                       {"x": 17.844123854875285, "y": 191.35155364885028, "z": -20.04337897822335, "delay": 0, "easing" : "easeInSine", "duration": 5000},
                       {"x": 28.678603834113275, "y": 191.35155364885028, "z": 33.028766094818174, "delay": 0, "easing" : "linear", "duration": 4000},
                       {"x": 8.633671833595972, "y": 190.55531656760772, "z": 67.12595277010384, "delay": 0, "easing" : "easeOutSine", "duration": 5000},
@@ -2907,7 +2907,7 @@
                      },
                      "timelines" : [
                       {"x": -1.5707963267948966, "y":3.141592653589793, "z":0, "duration": 0, "delay": 0, "easing": "easeInOutSine"},
-                      {"x": 0, "y":3.141592653589793, "z":0, "duration": 5000, "delay": 15000, "easing": "easeOutSine"},
+                      {"x": 0, "y":3.141592653589793, "z":0, "duration": 9000, "delay": 11000, "easing": "easeOutSine"},
                       {"x": 0, "y":2.356194490192345, "z":0, "duration": 5000, "delay": 0, "easing": "easeInSine"},
                       {"x": 0, "y":1.5707963267948966, "z":0, "duration": 4000, "delay": 0, "easing": "linear"},
                       {"x": 0, "y":0.6415926535897931, "z":0, "delay": 0, "duration": 5000, "easing": "easeOutSine"},
@@ -2945,7 +2945,7 @@
                        "duration": 1000
                        },
                        "timelines" : [
-                        {"x": 0, "y":0, "z":0, "duration": 5000, "delay": 15000, "easing": "easeOutSine"},
+                        {"x": 0, "y":0, "z":0, "duration": 9000, "delay": 11000, "easing": "easeOutSine"},
                         {"x": 0, "y":-0.7853981633974483, "z":0, "duration": 5000, "delay": 0, "easing": "easeInSine"},
                         {"x": 0, "y":-1.5707963267948966, "z":0, "duration": 4000, "delay": 0, "easing": "linear"},
                         {"x": 0, "y":-2.5, "z":0, "delay": 0, "duration": 5000, "easing": "easeOutSine"},
@@ -2982,8 +2982,8 @@
                           "duration": 1000
                           },
                           "timelines" : [
-                            {"x": -7.939077466925751, "y": 250.12176238908467, "z": -40.145217835083066, "delay": 0, "easing" : "easeInSine", "duration": 15000},
-                            {"x": -7.939077466925751, "y": 195.12176238908467, "z": -45.145217835083066, "delay": 0, "easing" : "easeOutSine", "duration": 5000},
+                            {"x": -7.939077466925751, "y": 300.12176238908467, "z": -40.145217835083066, "delay": 0, "easing" : "easeInSine", "duration": 11000},
+                            {"x": -7.939077466925751, "y": 195.12176238908467, "z": -45.145217835083066, "delay": 0, "easing" : "easeOutSine", "duration": 9000},
                             {"x": 20.939077466925751, "y": 195.12176238908467, "z": -20.145217835083066, "delay": 0, "easing" : "easeInSine", "duration": 5000},
                             {"x": 30.939077466925751, "y": 195.12176238908467, "z": 35.145217835083066, "delay": 0, "easing" : "linear", "duration": 4000},
                             {"x": 8.290920535989299, "y": 194.3255253078421, "z": 70.20355420003261, "delay": 0, "easing" : "easeOutSine", "duration": 5000},
@@ -3023,7 +3023,7 @@
                          "duration": 1
                          },
                          "timelines" : [
-                          {"x": 5, "y": 5, "z": 5, "delay": 1000, "easing" : "easeInSine", "duration": 5500}
+                          {"x": 5, "y": 5, "z": 5, "delay": 4000, "easing" : "easeInSine", "duration": 7000}
                          ]
                        }
                      }
@@ -3055,16 +3055,16 @@
                          "duration": 1000
                          },
                          "timelines" : [
-                          {"x": -3.9390774669257507, "y": 236.12176238908467, "z": -41.145217835083066, "delay": 0, "easing" : "easeInSine", "duration": 15000},
-                          {"x": -3.9390774669257507, "y": 198.12176238908467, "z": -41.145217835083066, "delay": 0, "easing" : "easeOutSine", "duration": 5000},
-                          {"x": 13.868009655060277, "y": 194.12176238908467, "z": -31.145217835083066, "delay": 0, "easing" : "easeInSine", "duration": 5000},
-                          {"x": 16.939077466925756, "y": 194.12176238908467, "z": 39.145217835083066, "delay": 0, "easing" : "linear", "duration": 4000},
-                          {"x": -3.2922639436538272, "y": 193.3255253078421, "z": 61.38143215879137, "delay": 0, "easing" : "easeOutSine", "duration": 5000},
-                          {"x": -12.868491825995346, "y": 187.8240228794682, "z": 25.287204158887846, "delay": 0, "easing": "easeInSine", "duration": 4000},
-                          {"x": -13.13027555806264, "y": 187.40029290899673, "z": 9.89086328838054, "delay": 0, "easing": "linear", "duration": 1500},
-                          {"x": -13.64754269898245, "y": 190.94054703667388, "z": 1.935316054249057, "delay": 0, "easing": "linear", "duration": 1500},
-                          {"x": -36.64754269898245, "y": 190.94054703667388, "z": -19.935316054249057, "delay": 0, "easing": "linear", "duration": 5000},
-                          {"x": -41.92570887738341, "y": 190.12296755186756, "z": -22.20536479904336, "delay": 0, "easing": "easeOutSine", "duration": 3000}
+                          {"x": -3.9390774669257507, "y": 234.12176238908467, "z": -41.145217835083066, "delay": 0, "easing" : "easeInSine", "duration": 11000},
+                          {"x": -3.9390774669257507, "y": 196.12176238908467, "z": -41.145217835083066, "delay": 0, "easing" : "easeOutSine", "duration": 9000},
+                          {"x": 13.868009655060277, "y": 192.12176238908467, "z": -31.145217835083066, "delay": 0, "easing" : "easeInSine", "duration": 5000},
+                          {"x": 8.939077466925756, "y": 192.12176238908467, "z": 39.145217835083066, "delay": 0, "easing" : "linear", "duration": 4000},
+                          {"x": -3.2922639436538272, "y": 191.3255253078421, "z": 61.38143215879137, "delay": 0, "easing" : "easeOutSine", "duration": 5000},
+                          {"x": -12.868491825995346, "y": 185.8240228794682, "z": 25.287204158887846, "delay": 0, "easing": "easeInSine", "duration": 4000},
+                          {"x": -13.13027555806264, "y": 185.40029290899673, "z": 9.89086328838054, "delay": 0, "easing": "linear", "duration": 1500},
+                          {"x": -13.64754269898245, "y": 188.94054703667388, "z": 1.935316054249057, "delay": 0, "easing": "linear", "duration": 1500},
+                          {"x": -36.64754269898245, "y": 188.94054703667388, "z": -19.935316054249057, "delay": 0, "easing": "linear", "duration": 5000},
+                          {"x": -41.92570887738341, "y": 188.12296755186756, "z": -22.20536479904336, "delay": 0, "easing": "easeOutSine", "duration": 3000}
                          ]
                        }
                      }
@@ -3132,7 +3132,7 @@
                          "duration": 1
                          },
                          "timelines" : [
-                          {"x": 0, "y":0, "z":0, "duration": 5000, "delay": 15000, "easing": "easeOutSine"},
+                          {"x": 0, "y":0, "z":0, "duration": 9000, "delay": 11000, "easing": "easeOutSine"},
                         {"x": 0, "y":-0.7853981633974483, "z":0, "duration": 5000, "delay": 0, "easing": "easeInSine"},
                         {"x": 0, "y":-1.5707963267948966, "z":0, "duration": 4000, "delay": 0, "easing": "linear"},
                         {"x": 0, "y":-2.5, "z":0, "delay": 0, "duration": 5000, "easing": "easeOutSine"},
@@ -3355,6 +3355,30 @@
              "time": 0}
   },
   {
+    "name": "NPC_SM_6_smoke_monster",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": {
+                "name": "NPC_SM_6_smoke_monster",
+                "role": {},
+                "target": { "type": "glb",
+                  "role": "individual", "name": "Brendan",
+                            "dest": "url",
+                            "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_19.glb"},
+                "action": {"type": "spawn_item",
+                  "pos": {"x": 200, "y": 190.09996367208856, "z": -300},
+                  "rot": {"x": 0, "y":3.9269908169872414, "z":0},
+                  "scale": {"x": 0.15, "y":0.15, "z":0.15}}
+              }
+              },
+  "trig": {"type": "button",
+    "groupChain" : "NPC_SM_6_group",
+            "time": 0}
+  },
+  {
     "name": "NPC_SM_6_slide_in_smoke",
     "role": "stagemanager",
     "target": { },
@@ -3363,7 +3387,7 @@
                "function_name": "cueSocket",
                "_cue": { 
                  "name": "NPC_SM_6_slide_in_smoke",
-                 "target": { "role": "stagemanager", "aspect" : "position"},
+                 "target": { "role": "individual", "name": "Brendan", "aspect" : "position"},
                  "action": { "type" : "socket_manipulate_object",
                   "mapItem": "NPC_SM_6_smoke_monster",
                    "attr": "object3D",
@@ -3394,7 +3418,7 @@
                "function_name": "cueSocket",
                "_cue": { 
                  "name": "NPC_SM_6_smoke_anim_position",
-                 "target": { "role": "general", "aspect" : "position"},
+                 "target": { "role": "individual", "name": "Brendan", "aspect" : "position"},
                  "action": { "type" : "socket_manipulate_object",
                   "mapItem": "NPC_SM_6_smoke_monster",
                    "attr": "object3D",
