@@ -3076,8 +3076,8 @@
                          "duration": 1000
                          },
                          "timelines" : [
-                          {"x": -3.9390774669257507, "y": 286.12176238908467, "z": -41.145217835083066, "delay": 0, "easing" : "easeInSine", "duration": 11000},
-                          {"x": -3.9390774669257507, "y": 196.12176238908467, "z": -41.145217835083066, "delay": 0, "easing" : "easeOutSine", "duration": 9000},
+                          {"x": -3.9390774669257507, "y": 283.12176238908467, "z": -36.145217835083066, "delay": 0, "easing" : "easeInSine", "duration": 11000},
+                          {"x": -3.9390774669257507, "y": 193.12176238908467, "z": -36.145217835083066, "delay": 0, "easing" : "easeOutSine", "duration": 9000},
                           {"x": 13.868009655060277, "y": 192.12176238908467, "z": -31.145217835083066, "delay": 0, "easing" : "easeInSine", "duration": 5000},
                           {"x": 8.939077466925756, "y": 192.12176238908467, "z": 39.145217835083066, "delay": 0, "easing" : "linear", "duration": 4000},
                           {"x": -3.2922639436538272, "y": 191.3255253078421, "z": 61.38143215879137, "delay": 0, "easing" : "easeOutSine", "duration": 5000},
@@ -3153,6 +3153,7 @@
                          "duration": 1
                          },
                          "timelines" : [
+                          {"x": 0.9707963267948966, "y":0, "z":0, "duration": 0, "delay": 0, "easing": "easeOutSine"},
                           {"x": 0, "y":0, "z":0, "duration": 9000, "delay": 11000, "easing": "easeOutSine"},
                         {"x": 0, "y":-0.7853981633974483, "z":0, "duration": 5000, "delay": 0, "easing": "easeInSine"},
                         {"x": 0, "y":-1.5707963267948966, "z":0, "duration": 4000, "delay": 0, "easing": "linear"},
