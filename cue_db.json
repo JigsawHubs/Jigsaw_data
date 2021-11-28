@@ -4042,7 +4042,7 @@
       },
   {
     "name": "NPC_SM_6_SM_ending_position",
-    "role": "stagemanager",
+    "role": "none",
     "target": { },
     "action": {"type": "call_method_from_object",
                "object_name": "sockSys",
@@ -4068,7 +4068,6 @@
                }
               },
     "trig": {"type": "button",
-      "groupChain" : "NPC_SM_6_group",
              "time": 22000}
   },
   {
@@ -4458,14 +4457,14 @@
                    "duration": 1
                    },
                    "timelines" : [
-                    {"x": -0.98, "y": 183.62279750279018, "z": -5.8,"delay": 0, "easing": "linear", "duration": 9000}
+                    {"x": -0.98, "y": 183.62279750279018, "z": -5.8,"delay": 0, "easing": "linear", "duration": 8000}
                    ]
                  }
                }
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_7_group",
-             "time": 0}
+             "time": 38000}
   },
   {
     "name": "NPC_SM_7_part2_anim_position",
@@ -4490,14 +4489,14 @@
                    "duration": 1
                    },
                    "timelines" : [
-                    {"x": -0.96, "y": 183.62279750279018, "z": -5.9,"delay": 0, "easing": "linear", "duration": 9000}
+                    {"x": -0.96, "y": 183.62279750279018, "z": -5.9,"delay": 0, "easing": "linear", "duration": 8000}
                    ]
                  }
                }
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_7_group",
-             "time": 0}
+             "time": 38000}
   },
   {
     "name": "NPC_SM_7_part3_anim_position",
@@ -4522,14 +4521,14 @@
                    "duration": 1
                    },
                    "timelines" : [
-                    {"x": -0.96, "y": 183.62279750279018, "z": -6.1,"delay": 0, "easing": "linear", "duration": 9000}
+                    {"x": -0.96, "y": 183.62279750279018, "z": -6.1,"delay": 0, "easing": "linear", "duration": 8000}
                    ]
                  }
                }
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_7_group",
-             "time": 0}
+             "time": 38000}
   },
   {
     "name": "NPC_SM_7_part4_anim_position",
@@ -4554,14 +4553,14 @@
                    "duration": 1
                    },
                    "timelines" : [
-                    {"x": -0.98, "y": 183.62279750279018, "z": -6.2,"delay": 0, "easing": "linear", "duration": 9000}
+                    {"x": -0.98, "y": 183.62279750279018, "z": -6.2,"delay": 0, "easing": "linear", "duration": 8000}
                    ]
                  }
                }
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_7_group",
-             "time": 0}
+             "time": 38000}
   },
   {
     "name": "NPC_SM_7_anim_part_position",
@@ -4596,7 +4595,7 @@
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_7_group",
-             "time": 9000}
+             "time": 47000}
   },
   {
     "name": "NPC_SM_7_anim_part_rotation",
@@ -4621,14 +4620,14 @@
                    },
                    "timelines" : [
                     {"x": 0, "y": 1.5707963267948966, "z": 0, "delay": 0, "duration": 0, "easing": "easeInOutSine"},
-                    {"x": 0, "y": -1.5707963267948966, "z": 0, "delay": 20000, "duration": 11000, "easing": "easeInOutSine"}
+                    {"x": 0, "y": -1.5707963267948966, "z": 0, "delay": 0, "duration": 11000, "easing": "easeInOutSine"}
                    ]
                  }
                }
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_7_group",
-             "time": 0}
+             "time": 58000}
   },
   {
     "name": "NPC_SM_7_anim_part_scale",
@@ -6354,7 +6353,7 @@
                    "timelines" : [
                     {"x": -65.69676088167867, "y": 520.002484649347, "z": 0.355277583622875, "duration": 1, "delay": 0, "easing": "easeInOutSine"},
                     {"x": 2.210436986144683, "y":545.65, "z":-53.6665139712834, "duration": 10000, "delay": 3000, "easing": "easeInOutSine"},
-                    {"x": 2.3576229524763, "y": 549.3731523005426, "z": -53.59724524892083, "duration": 1, "delay": 4000, "easing": "easeInOutSine"}
+                    {"x": 2, "y": 547.1731523005426, "z": -52.79724524892083, "duration": 1, "delay": 4000, "easing": "easeInOutSine"}
                    ]
                  }
                }
@@ -6418,15 +6417,21 @@
                    "duration": 0
                    },
                    "timelines" : [
-                    {"x": -7.6979062547143435, "y": 282.5543083999295, "z": 42.6825391673529, "delay": 925, "easing" : "easeInSine", "duration": 13500},
-  {"x": 6.57919162106818, "y": 190.7580713186869, "z": 68.3151296665619, "delay": 0, "easing" : "easeOutSine", "duration": 4500},
-  {"x": -9.109663038206751, "y": 185.256568890313, "z": 31.749882826618013, "delay": 6125, "easing": "easeInSine", "duration": 6000},
-  {"x": -9.371446770274046, "y": 176.83283891984152, "z": 26.353541956110703, "delay": 0, "easing": "linear", "duration": 2000},
-  {"x": -9.888713911193856, "y": 187.37309304751867, "z": 15.397994721979222, "delay": 0, "easing": "linear", "duration": 2000},
-  {"x": -52.688940019062315, "y": 187.55551356271235, "z": -27.65280929039321, "delay": 0, "easing": "easeOutSine", "duration": 10000},
-  {"x": -36.688940019062315, "y": 195.55551356271235, "z": -35.65280929039321, "delay": 29000, "easing": "easeOutSine", "duration": 1},
-  {"x": -40.688940019062315, "y": 195.55551356271235, "z": -39.65280929039321, "delay": 0, "easing": "easeOutSine", "duration": 8000},
-  {"x": -52.688940019062315, "y": 187.55551356271235, "z": -27.65280929039321, "delay": 0, "easing": "easeOutSine", "duration": 1}
+                    {"x": 2, "y": 547.1731523005426, "z": -52.79724524892083, "delay": 0, "easing" : "easeInSine", "duration": 11000},
+                    {"x": -8.055529207190643, "y": 295.3844410568148, "z": -42.912671824238274, "delay": 0, "easing" : "easeInSine", "duration": 11000},
+                    {"x": -8.055529207190643, "y": 192.35430839992947, "z": -40.40789650281321, "delay": 0, "easing" : "easeOutSine", "duration": 9000},
+                    {"x": 17.506941612995767, "y": 192.35430839992947, "z": -16.877769611597643, "delay": 0, "easing" : "easeInSine", "duration": 5000},
+                    {"x": 26.201756134655895, "y": 192.35430839992947, "z": 35.028766094818174, "delay": 0, "easing" : "linear", "duration": 4000},
+                    {"x": 5.549060249188894, "y": 191.5580713186869, "z": 66.33858633720935, "delay": 0, "easing" : "easeOutSine", "duration": 5000},
+                    {"x": -8.752040085730451, "y": 186.056568890313, "z": 34.54988282661799, "delay": 0, "easing": "easeInSine", "duration": 4000},
+                    {"x": -9.013823817797746, "y": 180.03283891984153, "z": 19.153541956110683, "delay": 0, "easing": "linear", "duration": 1500},
+                    {"x": -9.531090958717556, "y": 184.17309304751868, "z": 11.1979947219792, "delay": 0, "easing": "linear", "duration": 1500},
+                    {"x": -45.91022136671259, "y": 189.17309304751868, "z": -15.818864313984164, "delay": 0, "easing": "linear", "duration": 5000},
+                    {"x": -51.38618271525584, "y": 188.35551356271236, "z": -25.844296756978846, "delay": 0, "easing": "easeOutSine", "duration": 3000},
+                    {"x": -51.38618271525584, "y": 192.35551356271236, "z": -10.844296756978846, "delay": 3000, "easing": "easeInOutSine", "duration": 10000},
+                    {"x": -25.38618271525584, "y": 195.35551356271236, "z": -25.844296756978846, "delay": 0, "easing": "easeInOutSine", "duration": 9000},
+                    {"x": -40.38618271525584, "y": 197.35551356271236, "z": -40.844296756978846, "delay": 0, "easing": "easeInOutSine", "duration": 8000},
+                    {"x": -51.38618271525584, "y": 188.35551356271236, "z": -25.844296756978846, "delay": 0, "easing": "easeInOutSine", "duration": 3000}
                    ]
                  }
                }
@@ -6458,15 +6463,18 @@
                      },
                      "timelines" : [
                       {"x": -1.3707963267948966, "y":3.141592653589793, "z":0, "duration": 0, "delay": 0, "easing": "easeInOutSine"},
-                       {"x": 0.2, "y":3.141592653589793, "z":0, "duration": 4500, "delay": 10000, "easing": "easeInSine"},
-                       {"x": 0.2, "y":0.6415926535897931, "z":0, "delay": 0, "duration": 4500, "easing": "easeOutSine"},
-                       {"x": 0.2, "y":0, "z":0, "delay": 6000, "duration": 6000, "easing": "easeOutSine"},
-                       {"x": 0.2, "y":-2.356194490192345, "z":0, "delay": 5000, "duration": 10000, "easing": "easeInOutSine"},
-                       {"x": 0.5, "y":-1.956194490192345, "z":0, "delay": 1500, "duration": 2000, "easing": "easeInOutSine"},
-                       {"x": 0.45, "y":-2.056194490192345, "z":0, "delay": 16000, "duration": 2000, "easing": "easeInOutSine"},
-                       {"x": -0.2, "y":2.356194490192345, "z":0, "delay": 6550, "duration": 1, "easing": "easeInOutSine"},
-                       {"x": -0.2, "y":2.656194490192345, "z":0, "delay": 0, "duration": 8000, "easing": "easeInOutSine"},
-                       {"x": 0.45, "y":-2.056194490192345, "z":0, "delay": 0, "duration": 1, "easing": "easeInOutSine"}
+                      {"x": 0.2, "y":3.141592653589793, "z":0, "duration": 9000, "delay": 11000, "easing": "easeOutSine"},
+                      {"x": 0.2, "y":2.356194490192345, "z":0, "duration": 5000, "delay": 0, "easing": "easeInSine"},
+                      {"x": 0.2, "y":1.5707963267948966, "z":0, "duration": 4000, "delay": 0, "easing": "linear"},
+                      {"x": 0.2, "y":0.6415926535897931, "z":0, "delay": 0, "duration": 5000, "easing": "easeOutSine"},
+                      {"x": 0.2, "y":0, "z":0, "delay": 0, "duration": 4000, "easing": "easeInSine"},
+                      {"x": 0.2, "y":-1.5707963267948966, "z":0, "delay": 3000, "duration": 5000, "easing": "linear"},
+                      {"x": 0.2, "y":-2.356194490192345, "z":0, "delay": 0, "duration": 3000, "easing": "easeOutSine"},
+                      {"x": 0.5, "y":-1.956194490192345, "z":0, "delay": 1000, "duration": 2000, "easing": "easeInOutSine"},
+                      {"x": 0, "y":-0.3, "z":0, "delay": 0, "duration": 10000, "easing": "easeInSine"},
+                      {"x": -0.1, "y":1.4, "z":0, "delay": 0, "duration": 9000, "easing": "linear"},
+                      {"x": -0.3, "y":2.7, "z":0, "delay": 0, "duration": 8000, "easing": "linear"},
+                      {"x": 0.5, "y":4.4, "z":0, "delay": 0, "duration": 3000, "easing": "easeOutSine"}
                      ]
                    }
                  }
@@ -6497,10 +6505,12 @@
                        "duration": 0
                        },
                        "timelines" : [
-                        {"x": -41.33472509464945, "y": 188.10853003863113, "z": -0.7461536485718459,"delay": 0, "easing": "easeInSine", "duration": 6950},
-                        {"x": -27.70262938255131, "y": 186.75625502380265, "z": -1.147537258547431,"delay": 0, "easing": "easeOutSine", "duration": 7000},
-                        {"x": -10.70262938255131, "y": 186.75625502380265, "z": -1.147537258547431,"delay": 2950, "easing": "linear", "duration": 7000},
-                        {"x": -0.39132448865745184, "y": 183.68072743166994, "z": -6.153945600880208,"delay": 0, "easing": "easeInOutSine", "duration": 3000}
+                        {"x": -51.38618271525584, "y": 188.35551356271236, "z": -25.844296756978846, "delay": 0, "easing": "easeInOutSine", "duration": 0},
+                        {"x": -39.526212561235084, "y": 188.90853003863114, "z": 1.95108904762168,"delay": 0, "easing": "easeInSine", "duration": 10000},
+                        {"x": -28.36672807421003, "y": 185.20929886024138, "z": -1.353520380648531,"delay": 0, "easing": "easeOutSine", "duration": 7000},
+                        {"x": -10.466728074210032, "y": 185.20929886024138, "z": -1.353520380648531,"delay": 0, "easing": "linear", "duration": 6500},
+                        {"x": -5.267181098701195, "y": 185.20929886024138, "z": -3.603461905492035,"delay": 0, "easing": "linear", "duration": 7000},
+                        {"x": 0.8321549682863987, "y": 184.3, "z": -7.093598801305299,"delay": 0, "easing": "easeOutSine", "duration": 5000}
                        ]
                      }
                    }
@@ -6531,10 +6541,24 @@
                          "duration": 1000
                          },
                          "timelines" : [
-                          {"x": 0.45, "y":-2.056194490192345, "z":0, "delay": 0, "duration": 1, "easing": "easeInOutSine"},
-                     {"x": 0.2, "y":-0.7853981633974483, "z":0, "delay": 0, "duration": 7000, "easing": "easeInSine"},
-                     {"x": -0.3, "y":0, "z":0, "delay": 0, "duration": 7000, "easing": "easeOutSine"},
-                     {"x": 0.2, "y":1.5707963267948966, "z":0, "delay": 11000, "duration": 3000, "easing": "easeInOutSine"}
+                          {"x": 0.5, "y":-1.956194490192345, "z":0, "delay": 0, "duration": 0, "easing": "easeInOutSine"},
+                          {"x": 0.15, "y":-2.356194490192345, "z":0, "delay": 0, "duration": 0, "easing": "easeInOutSine"},
+                          {"x": 0.15, "y":-0.7853981633974483, "z":0, "delay": 0, "duration": 10000, "easing": "easeInSine"},
+                          {"x": 0.15, "y":0, "z":0, "delay": 0, "duration": 7000, "easing": "easeOutSine"},
+                          {"x": 0.15, "y":0.7853981633974483, "z":0, "delay": 6500, "duration": 7000, "easing": "linear"},
+                          {"x": 0.15, "y":1.7707963267948966, "z":0, "delay": 0, "duration": 5000, "easing": "easeOutSine"},
+                          {"x": 0.15, "y":1.9707963267948966, "z":0, "delay": 0, "duration": 500, "easing": "easeInOutSine"},
+                          {"x": 0.15, "y":1.5707963267948966, "z":0, "delay": 0, "duration": 650, "easing": "easeInOutSine"},
+                          {"x": 0.15, "y":1.8707963267948966, "z":0, "delay": 0, "duration": 650, "easing": "easeInOutSine"},
+                          {"x": 0.15, "y":1.6707963267948966, "z":0, "delay": 0, "duration": 450, "easing": "easeInOutSine"},
+                          {"x": 0.15, "y":1.8707963267948966, "z":0, "delay": 0, "duration": 450, "easing": "easeInOutSine"},
+                          {"x": 0.15, "y":1.7207963267948966, "z":0, "delay": 0, "duration": 400, "easing": "easeInOutSine"},
+                          {"x": 0.15, "y":1.8207963267948966, "z":0, "delay": 0, "duration": 400, "easing": "easeInOutSine"},
+                          {"x": 0.15, "y":1.7507963267948966, "z":0, "delay": 0, "duration": 400, "easing": "easeInOutSine"},
+                          {"x": 0.15, "y":1.7907963267948966, "z":0, "delay": 0, "duration": 400, "easing": "easeInOutSine"},
+                          {"x": 0.35, "y":1.7707963267948966, "z":0, "delay": 0, "duration": 600, "easing": "easeInOutSine"},
+                          {"x": 0.2, "y":1.7707963267948966, "z":0, "delay": 1400, "duration": 4000, "easing": "easeInOutSine"},
+                          {"x": 0.2, "y":1.9707963267948966, "z":0, "delay": 13000, "duration": 2000, "easing": "easeInOutSine"}
                          ]
                        }
                      }
@@ -6575,7 +6599,7 @@
                      "time": 0}
           },
           {
-            "name": "NPC_SM_7_CAM_position_1",
+            "name": "NPC_SM_7_CAM_position",
             "role": "stagemanager",
             "target": { },
             "action": {"type": "call_method_from_object",
@@ -6596,9 +6620,12 @@
                            "duration": 1
                            },
                            "timelines" : [
-                            {"x": -0.69132448865745184, "y": 183.62279750279018, "z": -5.8,"delay": 1000, "easing": "linear", "duration": 9000},
-                            {"x": -5.08756334897549, "y": 185.99519241569514, "z": -1.1741958258779475,"delay": 28000, "easing": "linear", "duration": 1},
-                            {"x": -8.58756334897549, "y": 183.79519241569514, "z": -8.1741958258779475, "delay": 3000, "duration": 1, "easing": "easeOutSine"}
+                            {"x": 0.8321549682863987, "y": 184.3, "z": -7.093598801305299,"delay": 0, "easing": "easeOutSine", "duration": 0},
+                            {"x": 1.0321549682863987, "y": 184.3, "z": -5.593598801305299,"delay": 0, "easing": "easeInSine", "duration": 10000},
+                            {"x": 0.8321549682863987, "y": 184.3, "z": -4.093598801305299,"delay": 0, "easing": "linear", "duration": 10000},
+                            {"x": 0.4021549682863987, "y": 184.3, "z": -3.103598801305299,"delay": 0, "easing": "easeOutSine", "duration": 9000},
+                            {"x": -0.7276904046916947, "y": 183.6, "z": -4.620400784836581,"delay": 0, "easing": "easeInOutSine", "duration": 9000},
+                            {"x": -0.7276904046916947, "y": 185.2, "z": -4.620400784836581,"delay": 9000, "easing": "easeInOutSine", "duration": 10000}
                            ]
                          }
                        }
@@ -6606,41 +6633,6 @@
             "trig": {"type": "button",
               "groupChain" : "NPC_SM_7_group",
                      "time": 0}
-          },
-          {
-            "name": "NPC_SM_7_CAM_position_2",
-            "role": "stagemanager",
-            "target": { },
-            "action": {"type": "call_method_from_object",
-                       "object_name": "sockSys",
-                       "function_name": "cueSocket",
-                       "_cue": { 
-                         "name": "NPC_SM_7_anim_part_position",
-                         "target": { "role": "cinematic", "aspect" : "position"},
-                         "action": { "type" : "lock_waypoint",
-                           "waypoint" : "NPCWaypoint2",
-                           "attr": "object3D",
-                           "recallAud" : true,
-                           "maxDist" : 2,
-                           "anime" : {
-                            "targets": "position",
-                            "delay" : 1000,
-                            "loop": false,
-                            "autoplay": true,
-                            "easing": "linear",
-                            "duration": 1000
-                            },
-                            "timelines" : [
-                              {"x":  -1.3001864097279756, "y": 184.68051792732184, "z": -5.730333509897111, "delay": 1500, "duration": 10000, "easing": "easeInOutSine"},
-                              {"x": -8.342922157169932, "y": 184.6923811381821, "z": -5.552291149372676, "delay": 0, "duration": 10000, "easing": "easeInSine"},
-                              {"x": -8.58756334897549, "y": 183.79519241569514, "z": -5.1741958258779475, "delay": 0, "duration": 6000, "easing": "easeOutSine"}
-                            ]
-                          }
-                        } 
-                      },
-            "trig": {"type": "button",
-              "groupChain" : "NPC_SM_7_group",
-                     "time": 10000}
           },
           {
             "name": "NPC_SM_7_anim_part_rotation",
@@ -6664,12 +6656,11 @@
                            "duration": 1
                            },
                            "timelines" : [
-                            {"x": 0.2, "y": 1.5707963267948966, "z": 0, "delay": 0, "duration": 0, "easing": "easeInOutSine"},
-                            {"x": -0.2, "y": -1.5707963267948966, "z": 0, "delay": 21000, "duration": 8000, "easing": "easeInOutSine"},
-                            {"x": 0.2, "y": -1.5707963267948966, "z": 0, "delay": 0, "duration": 6000, "easing": "easeInOutSine"},
-                            {"x": 0, "y": -1.5707963267948966, "z": 0, "delay": 1000, "duration": 2000, "easing": "easeInOutSine"},
-                            {"x": -0.15, "y": 0.2707963267948966, "z": 0, "delay": 500, "duration": 1, "easing": "easeInOutSine"},
-                            {"x": 0.1, "y": -2.1707963267948966, "z": 0, "delay": 3000, "duration": 1, "easing": "easeInOutSine"}
+                            {"x": 0.2, "y":1.9707963267948966, "z":0, "delay": 0, "duration": 0, "easing": "easeInOutSine"},
+                            {"x": 0.2, "y":1.5707963267948966, "z":0, "delay": 0, "duration": 11000, "easing": "easeInSine"},
+                            {"x": 0.2, "y":0.9707963267948966, "z":0, "delay": 0, "duration": 18000, "easing": "easeOutSine"},
+                            {"x": 0.5, "y":1.3707963267948966, "z":0, "delay": 0, "duration": 9000, "easing": "easeInOutSine"},
+                            {"x": 0, "y":0.4707963267948966, "z":0, "delay": 0, "duration": 4000, "easing": "easeInOutSine"}
                            ]
                          }
                        }
