@@ -4621,7 +4621,38 @@
                    "duration": 1
                    },
                    "timelines" : [
-                    {"x": 0.5, "y": 0.5, "z": 0.5, "delay": 36000, "duration": 2000, "easing": "easeInOutSine"}
+                    {"x": 0.5, "y": 0.5, "z": 0.5, "delay": 36000, "duration": 5000, "easing": "easeInOutSine"}
+                   ]
+                 }
+               }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_7_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_7_anim_brnd_scale",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                "name": "NPC_SM_7_anim_brnd_scale",
+                "target": { "role" : "individual", "name": "Brendan",
+                  "aspect" : "scale" },
+                "action": { "type": "manipulate_avatar",
+                  "attr": "object3D",
+                  "anime": {
+                   "targets": "",
+                   "delay" : 0,
+                   "loop": false,
+                   "autoplay": false,
+                   "easing": "linear",
+                   "duration": 1
+                   },
+                   "timelines" : [
+                    {"x": 0.7, "y": 0.7, "z": 0.7, "delay": 36000, "duration": 5000, "easing": "easeInOutSine"}
                    ]
                  }
                }
