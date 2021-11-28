@@ -2602,7 +2602,7 @@
                  "function_name": "cueSocket",
                  "_cue": { 
                    "name": "NPC_SM_2_how_to_walk_gif",
-                   "target": { "role" : ["participant", "cinematic"]},
+                   "target": { "role" : ["participant"]},
                    "action": { "type": "spawn_360_gif",
                     "src": "https://jigsawhubs-1-assets.onboardxr.live/files/5fb239de-5970-4e18-8106-e16d67f17b1a.gif"
                     }
@@ -2621,7 +2621,7 @@
                  "function_name": "cueSocket",
                  "_cue": { 
                    "name": "NPC_SM_2_health_gif",
-                   "target": { "role" : ["participant", "cinematic"]},
+                   "target": { "role" : ["participant"]},
                    "action": { "type": "spawn_360_gif",
                     "src": "https://jigsawhubs.github.io/Jigsaw_data/video/NPC_A_20.gif"
                     }
@@ -2640,7 +2640,7 @@
                  "function_name": "cueSocket",
                  "_cue": { 
                    "name": "NPC_SM_2_rock_gif",
-                   "target": { "role" : ["participant", "cinematic"]},
+                   "target": { "role" : ["participant"]},
                    "action": { "type": "spawn_360_gif",
                     "src": "https://jigsawhubs.github.io/Jigsaw_data/video/NPC_A_21.gif"
                     }
@@ -2659,7 +2659,7 @@
                  "function_name": "cueSocket",
                  "_cue": { 
                    "name": "NPC_SM_2_path_gif",
-                   "target": { "role" : ["participant", "cinematic"]},
+                   "target": { "role" : ["participant"]},
                    "action": { "type": "spawn_360_gif",
                     "src": "https://jigsawhubs-1-assets.onboardxr.live/files/c7c8503b-9b4a-4a33-9427-dfc9fc6402ed.gif"
                     }
@@ -3178,7 +3178,7 @@
                  "function_name": "cueSocket",
                  "_cue": { 
                    "name": "NPC_SM_345_gif",
-                   "target": { "role" : ["participant", "cinematic"]},
+                   "target": { "role" : ["participant"]},
                    "action": { "type": "play_360_gif",
                     "mapItem": "NPC_SM_2_how_to_walk_gif",
                     "fadeDuration": 3000,
@@ -3199,7 +3199,7 @@
                  "function_name": "cueSocket",
                  "_cue": { 
                    "name": "NPC_SM_345_rock_gif",
-                   "target": { "role" : ["participant", "cinematic"]},
+                   "target": { "role" : ["participant"]},
                    "action": { "type": "play_360_gif",
                     "mapItem": "NPC_SM_2_rock_gif",
                     "fadeDuration": 3000,
@@ -3528,7 +3528,7 @@
                "function_name": "cueSocket",
                "_cue": { 
                  "name": "NPC_SM_6_gif",
-                 "target": { "role" : ["participant", "cinematic"]},
+                 "target": { "role" : ["participant"]},
                  "action": { "type": "play_360_gif",
                   "mapItem": "NPC_SM_2_health_gif",
                   "fadeDuration": 3000,
@@ -5140,7 +5140,7 @@
                "function_name": "cueSocket",
                "_cue": { 
                  "name": "NPC_SM_9_gif",
-                 "target": { "role" : ["participant", "cinematic"]},
+                 "target": { "role" : ["participant"]},
                  "action": { "type": "play_360_gif",
                   "mapItem": "NPC_SM_2_path_gif",
                   "fadeDuration": 3000,
@@ -6195,7 +6195,7 @@
                "function_name": "cueSocket",
                "_cue": { 
                 "name": "NPC_SM_2_participants_starting_scale",
-                "target": { "role" : "participant",
+                "target": { "role" : ["participant", "stagemanager", "cinematic"],
                   "aspect" : "scale" },
                 "action": { "type": "manipulate_avatar",
                   "attr": "object3D",
