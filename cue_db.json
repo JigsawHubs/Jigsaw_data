@@ -4316,11 +4316,20 @@
   {
     "name": "NPC_SM_6_delete_smoke_monster",
     "role": "stagemanager",
-    "target": { "type": "glb",
-                "src": "NPC_SM_6_smoke_monster"},
-    "action": {"type": "delete"},
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                 "name": "NPC_SM_6_delete_smoke_monster",
+                 "target": { "role": "individual", "name": "Brendan" },
+                 "action": { "type": "delete",
+                  "src" : "NPC_SM_6_smoke_monster"
+                }
+                }
+              },
     "trig": {"type": "button",
-      "groupChain": "NPC_SM_6_group",
+      "groupChain" : "NPC_SM_6_group",
              "time": 56000}
   },
   {
