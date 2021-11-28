@@ -4813,7 +4813,7 @@
   },
   {
     "name": "NPC_SM_8",
-    "role": "stagemanager",
+    "role": "none",
     "target": { },
     "action": {"type": "call_method_from_object",
                "object_name": "sockSys",
@@ -4829,7 +4829,6 @@
               }
             },
     "trig": {"type": "button",
-      "groupChain" : "NPC_SM_8_group",
              "time": 33000}
     },
   {
@@ -4875,7 +4874,7 @@
                     "duration": 1000
                     },
                     "timelines" : [
-                      { "x": 0, "y": 100, "z": 0, "delay": 0, "easing": "easeInSine", "duration": 65000 }
+                      { "x": 0, "y": 75, "z": 0, "delay": 0, "easing": "easeInSine", "duration": 64000 }
                     ]
                   }
               }
@@ -4940,7 +4939,7 @@
                    "duration": 1
                    },
                    "timelines" : [
-                    {"x":45.68229576961745, "y": 150.4445028474226, "z": 12.687293941817439, "delay": 50000, "duration": 5000, "easing": "easeInSine"},
+                    {"x":45.68229576961745, "y": 150.4445028474226, "z": 12.687293941817439, "delay": 0, "duration": 5000, "easing": "easeInSine"},
                     {"x":45.68229576961745, "y": 80.4445028474226, "z": 12.687293941817439, "delay": 0, "duration": 7000, "easing": "linear"}
                    ]
                  }
@@ -4948,7 +4947,7 @@
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_9_group",
-             "time": 0}
+             "time": 50000}
   },
   {
     "name": "NPC_SM_9_anim_part_position",
@@ -5114,13 +5113,13 @@
                  "action": { "type": "play_360_gif",
                   "mapItem": "NPC_SM_2_path_gif",
                   "fadeDuration": 3000,
-                  "fadeDelay": 3000
+                  "fadeDelay": 8000
                   }
                 }
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_9_group",
-             "time": 69000}
+             "time": 72000}
   },
 {
   "name": "NPC_SM_9_delete_360_red_skybox",
@@ -5139,7 +5138,7 @@
             },
   "trig": {"type": "button",
     "groupChain" : "NPC_SM_9_group",
-           "time": 65000}
+           "time": 64000}
 },
 {
   "name": "NPC_SM_9_delete_360_black_skybox",
@@ -5158,7 +5157,7 @@
             },
   "trig": {"type": "button",
     "groupChain" : "NPC_SM_9_group",
-           "time": 65000}
+           "time": 8000}
 },
 {
   "name": "NPC_SM_9_delete_corpse_rock_1",
