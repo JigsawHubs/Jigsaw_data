@@ -5277,7 +5277,7 @@
                "link":"https://onboardxr.live/scenes/mGFRrw4"},
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_10_A_1_group",
-             "time": 7000}
+             "time": 7500}
   },
   {
     "name": "NPC_SM_10_A_2_brnd_to_octopus",
@@ -5393,7 +5393,7 @@
                "link":"https://onboardxr.live/scenes/5455HHw"},
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_10_B_1_group",
-             "time": 0}
+             "time": 7500}
   },
   {
     "name": "NPC_SM_10_B_2_brnd_to_bird",
@@ -5556,7 +5556,7 @@
                "link":"https://onboardxr.live/scenes/ZuUVMsB"},
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_10_C_1_group",
-             "time": 0}
+             "time": 7500}
   },
   {
     "name": "NPC_SM_10_C_2_brnd_to_fox",
