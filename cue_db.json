@@ -5372,7 +5372,7 @@
              "time": 0}
   },
   {
-    "name": "NPC_SM_10_A_2_lantern",
+    "name": "NPC_SM_10_variable_2_lantern",
     "role": "stagemanager",
     "target": { "type": "glb",
                 "dest": "url",
@@ -5535,7 +5535,7 @@
              "time": 0}
   },
   {
-    "name": "NPC_SM_10_B_2_lantern",
+    "name": "NPC_SM_10_variable_2_lantern",
     "role": "stagemanager",
     "target": { "type": "glb",
                 "dest": "url",
@@ -5633,7 +5633,7 @@
              "time": 0}
   },
   {
-    "name": "NPC_SM_10_C_2_lantern",
+    "name": "NPC_SM_10_variable_2_lantern",
     "role": "stagemanager",
     "target": { "type": "glb",
                 "dest": "url",
@@ -5648,7 +5648,7 @@
   },
   {
     "name": "NPC_SM_10_C_3_ice_doors",
-    "role": "stagemanager",
+    "role": "none",
     "target": { "type": "glb",
                 "dest": "url",
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/e1619049-54ac-4409-a9c9-9f526f11eab0.glb"},
@@ -5657,7 +5657,6 @@
                "rot": {"x":0, "y":0, "z":0},
                "scale": {"x": 1, "y":1, "z":1}},
     "trig": {"type": "button",
-              "groupChain": "NPC_SM_10_C_3_group",
              "time": 0}
   },
   {
@@ -5956,18 +5955,21 @@
              "time": 0}
   },
   {
-    "name": "NPC_SM_12_lantern",
+    "name": "NPC_SM_12_move_lantern",
     "role": "stagemanager",
     "target": { "type": "glb",
-                "dest": "url",
-                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/394b8c42-e9fa-41fb-b7f3-a0ff2a55fe73.glb"},
-    "action": {"type": "spawn_item",
-               "pos": {"x": -47.2, "y":1.575, "z":-4.8},
-               "rot": {"x":0, "y":0, "z":0},
-               "scale": {"x": 2.5, "y":2.5, "z":2.5}},
+                "dest": "local",
+                "src": "NPC_SM_10_variable_2_lantern"},
+                "action": {"type": "move",
+                  "duration": 0,
+                  "loop": false,
+                  "pos": {"x": -47.2, "y": 1.575, "z": -4.8},
+                  "rot": {"x": 0, "y":0, "z":0},
+                  "scale": {"x": 2.5, "y":2.5, "z":2.5}},
     "trig": {"type": "button",
-              "groupChain": "NPC_SM_12_group",
-             "time": 7000}
+      "groupChain" : "NPC_SM_9_group",
+      "time": 0
+    }
   },
   {
     "name": "NPC_SM_12_brnd_to_NPC",
