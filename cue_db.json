@@ -6882,19 +6882,17 @@
                            "duration": 1
                            },
                            "timelines" : [
-                            {"x": -276.1679974457218, "y": 96.00000000000006, "z": 59.40194461024462,"delay": 0, "easing": "linear", "duration": 1},
-                            {"x": -240.71548217666373, "y": 80.04086734566393, "z": 55.51986395650834,"delay": 24000, "easing": "easeOutSine", "duration": 10000},
-                            {"x": -174.90416693672486, "y": 60.99999999999992, "z": 51.811310064990735,"delay": 9000, "easing": "easeOutSine", "duration": 39000},
-                            {"x": -154.11863583485703, "y": 55.99999999999992, "z": 48.22628971586626,"delay": 10000, "easing": "linear", "duration": 5000},
-                            {"x": -150.3000710367389, "y": 52.99999999999992, "z": 25.368876299778996,"delay": 0, "easing": "linear", "duration": 5000},
-                            {"x": -52.91290181250552, "y": 30.99999999999992, "z": -3.010974536795745,"delay": 10000, "easing": "easeOutSine", "duration": 28000},
-                            {"x": -55.71546371088016, "y": 30.95749419856184, "z": -29.6673662960759,"delay": 8000, "easing": "linear", "duration": 7000},
-                            {"x": -124.2563503896807, "y": 53.01767801261613, "z": -46.59905142468708,"delay": 0, "easing": "linear", "duration": 15000},
-                            {"x": -121.11383698610406, "y": 49.342435855263865, "z": -61.35242856271715,"delay": 0, "easing": "linear", "duration": 5000},
-                            {"x": 20.484498145171013, "y": -6.394928473750747, "z": -43.0152379127507,"delay": 0, "easing": "linear", "duration": 25000},
-                            {"x": 91.18594117948726, "y": -26.056487823980625, "z": -21.885079301173835,"delay": 0, "easing": "linear", "duration": 10000},
-                            {"x": 242.14393609620944, "y": -83.54634170149475, "z": -11.37991677501763,"delay": 0, "easing": "linear", "duration": 15000},
-                            {"x": 375.8747650173832, "y": -135.13681333067737, "z": 21.457725990920522,"delay": 0, "easing": "linear", "duration": 15000}
+                            {"x": -294.0089597032785, "y":  99.00799333555521, "z": 56.50380316840261,"delay": 0, "easing": "easeInOutSine", "duration": 0},
+                            {"x": -276.0928609616629, "y": 95.43362465750151, "z": 45.13978195256465,"delay": 0, "easing": "easeInOutSine", "duration": 20000},
+                            {"x": -249.68507986638315, "y": 77.69346942648959, "z": 33.54886516234671,"delay": 4000, "easing": "easeInOutSine", "duration": 7000},
+                            {"x": -196.08744525869156, "y": 60.78003171732537, "z": 22.95135634283674,"delay": 12000, "easing": "easeInOutSine", "duration": 28000},
+                            {"x": -191.24296605430322, "y": 56.862808219394026, "z": 32.983170026796806,"delay": 4000, "easing": "easeInOutSine", "duration": 22000},
+                            {"x": -159.3821316591818, "y": 55.20032521149163, "z": 27.31891643029549,"delay": 4000, "easing": "easeInSine", "duration": 4000},
+                            {"x": -65.60529047909421, "y": 31.550472227863033, "z": -7.306560107004637,"delay": 0, "easing": "easeOutSine", "duration": 30000},
+                            {"x": -58.31463106900569, "y": 28.40641411851369, "z": -31.658205973458777,"delay": 2000, "easing": "easeInOutSine", "duration": 6000},
+                            {"x": -124.35105167552203, "y": 52.17672429751396, "z": -46.22573143487647,"delay": 2000, "easing": "easeInOutSine", "duration": 18000},
+                            {"x": -121.43729612854928, "y": 49.19322898860802, "z": -62.5110259040382,"delay": 1000, "easing": "easeInOutSine", "duration": 4000},
+                            {"x": 278.3134662954094, "y": -99.44451345471886, "z": 2.0556665912450383,"delay": 2000, "easing": "easeInSine", "duration": 34000}
                            ]
                          }
                        }
@@ -6925,12 +6923,15 @@
                            "duration": 1
                            },
                            "timelines" : [
-                            {"x": 0, "y":0.7, "z": 0, "delay": 0, "duration": 1, "easing": "easeInSine"},
-                            {"x": 0, "y":1.67, "z": 0, "delay": 92000, "duration": 10000, "easing": "easeInOutSine"},
-                            {"x": 0, "y":0, "z": 0, "delay": 20000, "duration": 8000, "easing": "easeInOutSine"},
-                            {"x": 0.2, "y":1.4, "z": 0, "delay": 8000, "duration": 7000, "easing": "easeInOutSine"},
-                            {"x": 0, "y":0, "z": 0, "delay": 12000, "duration": 3000, "easing": "easeInSine"},
-                            {"x": -0.3, "y":-1.5, "z": 0, "delay": 0, "duration": 5000, "easing": "linear"}
+                            {"x": -0.1, "y":-1.27, "z": 0, "delay": 0, "duration": 0, "easing": "easeInOutSine"},
+                            {"x": 0.1, "y":-3.7, "z": 0, "delay": 0, "duration": 20000, "easing": "easeInOutSine"},
+                            {"x": 0.1, "y":-2.9, "z": 0, "delay": 4000, "duration": 7000, "easing": "easeInOutSine"},
+                            {"x": 0.1, "y":-2.1, "z": 0, "delay": 8000, "duration": 4000, "easing": "easeInOutSine"},
+                            {"x": 0.1, "y":-1.3, "z": 0, "delay": 32000, "duration": 22000, "easing": "easeInOutSine"},
+                            {"x": 0.1, "y":-0.2, "z": 0, "delay": 8000, "duration": 30000, "easing": "easeOutSine"},
+                            {"x": 0.3, "y":1.4, "z": 0, "delay": 2000, "duration": 6000, "easing": "easeOutSine"},
+                            {"x": 0, "y":-0.2, "z": 0, "delay": 18000, "duration": 2000, "easing": "easeInOutSine"},
+                            {"x": -0.4, "y":-1.6, "z": 0, "delay": 1000, "duration": 4000, "easing": "easeInOutSine"}
                            ]
                          }
                        }
