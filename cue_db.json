@@ -5372,6 +5372,20 @@
              "time": 0}
   },
   {
+    "name": "NPC_SM_10_A_2_lantern",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/394b8c42-e9fa-41fb-b7f3-a0ff2a55fe73.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -47.2, "y":-300, "z":-4.8},
+               "rot": {"x":0, "y":0, "z":0},
+               "scale": {"x": 2.5, "y":2.5, "z":2.5}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_10_A_2_group",
+             "time": 30000}
+  },
+  {
     "name": "NPC_SM_10_B_1",
     "role":"stagemanager",
     "target": { },
@@ -5521,6 +5535,20 @@
              "time": 0}
   },
   {
+    "name": "NPC_SM_10_B_2_lantern",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/394b8c42-e9fa-41fb-b7f3-a0ff2a55fe73.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -47.2, "y":-300, "z":-4.8},
+               "rot": {"x":0, "y":0, "z":0},
+               "scale": {"x": 2.5, "y":2.5, "z":2.5}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_10_B_2_group",
+             "time": 30000}
+  },
+  {
     "name": "NPC_SM_10_C_1",
     "role":"stagemanager",
     "target": { },
@@ -5603,6 +5631,20 @@
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_10_C_2_group",
              "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_C_2_lantern",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/394b8c42-e9fa-41fb-b7f3-a0ff2a55fe73.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -47.2, "y":-300, "z":-4.8},
+               "rot": {"x":0, "y":0, "z":0},
+               "scale": {"x": 2.5, "y":2.5, "z":2.5}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_10_C_2_group",
+             "time": 30000}
   },
   {
     "name": "NPC_SM_10_C_3_ice_doors",
