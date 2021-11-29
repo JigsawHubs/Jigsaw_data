@@ -3982,7 +3982,7 @@
                        },
                        "timelines" : [
                         {"x": 0.9, "y": 0.9, "z": 0.9, "delay": 7000, "easing" : "easeInSine", "duration": 7000},
-                        {"x": 1.8, "y": 1.8, "z": 1.8, "delay": 11000, "easing" : "easeInSine", "duration": 2000}
+                        {"x": 1.5, "y": 1.5, "z": 1.5, "delay": 11000, "easing" : "easeInSine", "duration": 2000}
                        ]
                      }
                    }
@@ -4457,7 +4457,7 @@
                    "duration": 1
                    },
                    "timelines" : [
-                    {"x": -0.98, "y": 183.62279750279018, "z": -5.8,"delay": 0, "easing": "linear", "duration": 8000}
+                    {"x": -0.85, "y": 183.62279750279018, "z": -5,"delay": 0, "easing": "linear", "duration": 8000}
                    ]
                  }
                }
@@ -4489,7 +4489,7 @@
                    "duration": 1
                    },
                    "timelines" : [
-                    {"x": -0.96, "y": 183.62279750279018, "z": -5.9,"delay": 0, "easing": "linear", "duration": 8000}
+                    {"x": -0.8, "y": 183.62279750279018, "z": -5.3,"delay": 0, "easing": "linear", "duration": 8000}
                    ]
                  }
                }
@@ -4521,7 +4521,7 @@
                    "duration": 1
                    },
                    "timelines" : [
-                    {"x": -0.96, "y": 183.62279750279018, "z": -6.1,"delay": 0, "easing": "linear", "duration": 8000}
+                    {"x": -0.8, "y": 183.62279750279018, "z": -5.7,"delay": 0, "easing": "linear", "duration": 8000}
                    ]
                  }
                }
@@ -4553,7 +4553,7 @@
                    "duration": 1
                    },
                    "timelines" : [
-                    {"x": -0.98, "y": 183.62279750279018, "z": -6.2,"delay": 0, "easing": "linear", "duration": 8000}
+                    {"x": -0.85, "y": 183.62279750279018, "z": -6,"delay": 0, "easing": "linear", "duration": 8000}
                    ]
                  }
                }
@@ -4651,14 +4651,14 @@
                    "duration": 1
                    },
                    "timelines" : [
-                    {"x": 0.5, "y": 0.5, "z": 0.5, "delay": 36000, "duration": 5000, "easing": "easeInOutSine"}
+                    {"x": 0.5, "y": 0.5, "z": 0.5, "delay": 0, "duration": 7000, "easing": "easeInOutSine"}
                    ]
                  }
                }
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_7_group",
-             "time": 0}
+             "time": 73000}
   },
   {
     "name": "NPC_SM_7_anim_brnd_scale",
@@ -4682,14 +4682,14 @@
                    "duration": 1
                    },
                    "timelines" : [
-                    {"x": 0.7, "y": 0.7, "z": 0.7, "delay": 36000, "duration": 5000, "easing": "easeInOutSine"}
+                    {"x": 0.7, "y": 0.7, "z": 0.7, "delay": 0, "duration": 7000, "easing": "easeInOutSine"}
                    ]
                  }
                }
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_7_group",
-             "time": 0}
+             "time": 73000}
   },
   {
     "name": "NPC_SM_7_delete_omni",
@@ -4708,7 +4708,7 @@
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_7_group",
-             "time": 17000}
+             "time": 55000}
   },
   {
     "name": "NPC_SM_7_fade_colorful_skybox",
@@ -4727,7 +4727,7 @@
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_7_group",
-             "time": 38000}
+             "time": 74000}
   },
   {
     "name": "NPC_SM_7_move_directional_light",
@@ -4776,7 +4776,7 @@
               },
     "trig": {"type": "button",
               "groupChain" : "NPC_SM_7_group",
-             "time": 39000}
+             "time": 74000}
   },
   {
     "name": "NPC_SM_7_load_360_skybox",
@@ -4797,7 +4797,7 @@
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_7_group",
-             "time": 44000}
+             "time": 82000}
   },
   {
     "name": "NPC_SM_7_delete_360_colorful_skybox",
@@ -4816,7 +4816,7 @@
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_7_group",
-             "time": 43000}
+             "time": 81000}
   },
   {
     "name": "NPC_SM_7_delete_directional_light",
@@ -4839,7 +4839,7 @@
                "scale": {"x": 1.5, "y":1.5, "z":1.5}},
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_7_group",
-             "time": 43000}
+             "time": 81000}
   },
   {
     "name": "NPC_SM_8",
