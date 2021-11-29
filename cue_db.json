@@ -1997,6 +1997,16 @@
                "time": 0}
     },
     {
+      "name": "NPC_SM_1_delete_lantern",
+      "role": "stagemanager",
+      "target": { "type": "glb",
+                  "src": "NPC_SM_10_variable_2_lantern"},
+      "action": {"type": "delete"},
+      "trig": {"type": "button",
+        "groupChain": "NPC_SM_1_group",
+               "time": 0}
+    },
+    {
       "name": "NPC_SM_2_brnd2_to_invis",
       "role": "stagemanager",
       "target": { },
@@ -3440,7 +3450,7 @@
                     },
                     "timelines" : [
                       {"x": -32.08658615980113, "y": 190.00917605110286, "z": -5.5232422300881625, "delay": 0, "easing": "easeInSine", "duration": 11700},
-                        {"x": -30.58658615980113, "y": 188.90917605110286, "z": -5.5232422300881625, "delay": 500, "easing": "easeInSine", "duration": 100},
+                        {"x": -30.58658615980113, "y": 188.90917605110286, "z": -5.5232422300881625, "delay": 600, "easing": "easeInSine", "duration": 100},
                         {"x": -29.035013902942165, "y": 190.0054828458551, "z": -5.047107767170219, "delay": 500, "easing": "easeOutSine", "duration": 0},
                         {"x": -27.987645993571878, "y": 188.92456730174127, "z": -5.4966218281889345, "delay": 500, "easing": "easeOutSine", "duration": 0},
                         {"x": -26.887645993571878, "y": 190.0054828458551, "z": -5.4966218281889345, "delay": 500, "easing": "easeOutSine", "duration": 0},
