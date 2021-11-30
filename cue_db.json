@@ -2611,7 +2611,7 @@
                  "object_name": "sockSys",
                  "function_name": "cueSocket",
                  "_cue": {
-                  "name": "NPC_SM_2_spawn_prop_omni",
+                  "name": "NPC_SM_2_spawn_prop_omni_wall",
                   "target": { "role": "general",
                     "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/0964d717-ad72-4b08-a18f-0af4f21f5d6d.glb"},
                   "action": {"type": "socket_spawn_object",
@@ -6216,6 +6216,38 @@
              "time": 0}
   },
   {
+    "name": "NPC_SM_12_brnd_starting_scale",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                "name": "NPC_SM_12_brnd_starting_scale",
+                "target": { "role" : "individual",
+                  "name" : "Brendan",
+                  "aspect" : "scale" },
+                "action": { "type": "manipulate_avatar",
+                  "attr": "object3D",
+                  "anime": {
+                   "targets": "",
+                   "delay" : 0,
+                   "loop": false,
+                   "autoplay": false,
+                   "easing": "linear",
+                   "duration": 0
+                   },
+                   "timelines" : [
+                    {"x": 0.6, "y": 0.6, "z": 0.6, "duration": 0, "easing": "easeInOutSine", "delay": 0}
+                   ]
+                 }
+               }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_12_group",
+             "time": 0}
+  },
+  {
     "name": "NPC_SM_12_part1_starting_position",
     "role": "stagemanager",
     "target": { },
@@ -6224,7 +6256,7 @@
                "function_name": "cueSocket",
                "_cue": { 
                 "name": "NPC_SM_12_part1_starting_position",
-                "target": { "role" : ["stagemanager", "individual"],
+                "target": { "role" : "individual",
                   "name" : "part1",
                   "aspect" : "position" },
                 "action": { "type": "manipulate_avatar",
