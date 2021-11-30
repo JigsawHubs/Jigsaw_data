@@ -3507,7 +3507,7 @@
                "function_name": "cueSocket",
                "_cue": { 
                  "name": "NPC_SM_6_smoke_anim_scale",
-                 "target": { "role": "general", "aspect" : "scale"},
+                 "target": { "role": "individual", "name": "Brendan", "aspect" : "scale"},
                  "action": { "type" : "socket_manipulate_object",
                   "mapItem": "NPC_SM_6_smoke_monster",
                    "attr": "object3D",
@@ -4412,37 +4412,6 @@
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_6_group",
              "time": 61000}
-  },
-  {
-    "name": "NPC_SM_6_smoke_anim_scale",
-    "role": "stagemanager",
-    "target": { },
-    "action": {"type": "call_method_from_object",
-               "object_name": "sockSys",
-               "function_name": "cueSocket",
-               "_cue": { 
-                 "name": "NPC_SM_6_smoke_anim_scale",
-                 "target": { "role": "general", "aspect" : "scale"},
-                 "action": { "type" : "socket_manipulate_object",
-                  "mapItem": "NPC_SM_6_smoke_monster",
-                   "attr": "object3D",
-                   "anime" : {
-                    "targets": "scale",
-                    "delay" : 1000,
-                    "loop": false,
-                    "autoplay": true,
-                    "easing": "linear",
-                    "duration": 1000
-                    },
-                    "timelines" : [
-                        {"x": 0.4, "y": 0.4, "z": 0.4, "delay": 41000, "easing": "linear", "duration": 5000}
-                    ]
-                  }
-                }
-              },
-  "trig": {"type": "button",
-    "groupChain" : "NPC_SM_6_group",
-            "time": 0}
   },
   {
     "name": "NPC_SM_7_part1_anim_position",
