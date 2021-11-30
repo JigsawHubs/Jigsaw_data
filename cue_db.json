@@ -6578,8 +6578,8 @@
                "object_name": "sockSys",
                "function_name": "cueSocket",
                "_cue": { 
-                "name": "NPC_SM_2_CAM_starting_pos",
-                "target": { "role" : "cinematic",
+                "name": "NPC_SM_13_recall_brnd",
+                "target": { "role" : "individual", "name": "Brendan",
                   "aspect" : "position" },
                 "action": { "type": "manipulate_avatar",
                   "attr": "object3D",
@@ -7837,12 +7837,13 @@
                            },
                            "timelines" : [
                             {"x": -70.69498110625977, "y": 21.867194597216745, "z": -32.99057581542245,"delay": 0, "easing": "linear", "duration": 1},
-                            {"x": -94.05497474683045, "y": 19.532583862991622, "z": -33.24761058998363,"delay": 0, "easing": "linear", "duration": 23000},
-                            {"x": -76.1402429386099, "y": 9.514947204587615, "z": -8.736602483835775,"delay": 500, "easing": "linear", "duration": 1},
-                            {"x": -82.04677113809177, "y": 9.114947204590555, "z": -12.592155180302392,"delay": 12000, "easing": "linear", "duration": 1},
-                            {"x": -73.04677113809177, "y": 9.114947204590555, "z": -10.592155180302392,"delay": 10000, "easing": "linear", "duration": 1},
-                            {"x": -73.04677113809177, "y": 9.114947204590555, "z": -14.592155180302392,"delay": 0, "easing": "linear", "duration": 10000},
-                            {"x": -100.04677113809177, "y": 20.114947204590555, "z": -12.592155180302392,"delay": 0, "easing": "linear", "duration": 1}
+                            {"x": -94.05497474683045, "y": 19.532583862991622, "z": -33.24761058998363,"delay": 0, "easing": "linear", "duration": 45000},
+                            {"x": -76.1402429386099, "y": 9.514947204587615, "z": -8.736602483835775,"delay": 5000, "easing": "linear", "duration": 1},
+                            {"x": -82.04677113809177, "y": 9.114947204590555, "z": -12.592155180302392,"delay": 45000, "easing": "linear", "duration": 1},
+                            {"x": -73.04677113809177, "y": 9.114947204590555, "z": -10.592155180302392,"delay": 20000, "easing": "linear", "duration": 1},
+                            {"x": -73.04677113809177, "y": 9.114947204590555, "z": -14.592155180302392,"delay": 0, "easing": "linear", "duration": 55000},
+                            {"x": -100.04677113809177, "y": 20.114947204590555, "z": -12.592155180302392,"delay": 0, "easing": "linear", "duration": 1},
+                            {"x": -73.59986393330573, "y": 7.759807992154939, "z": -13.945655323384521,"delay": 20000, "easing": "linear", "duration": 1}
                            ]
                          }
                        }
@@ -7874,11 +7875,11 @@
                            },
                            "timelines" : [
                             {"x": -0.2, "y":8.739379797371932, "z": 0, "delay": 0, "duration": 0, "easing": "linear"},
-{"x": -0.2, "y":10.310176124166828, "z": 0, "delay": 0, "duration": 23000, "easing": "linear"},
-{"x": -0.2, "y":6.668583470577035, "z": 0, "delay": 500, "duration": 1, "easing": "linear"},
-{"x": -0.1, "y":4.68583470577035, "z": 0, "delay": 12000, "duration": 1, "easing": "linear"},
-{"x": -0.1, "y":7.8274273593601436, "z": 0, "delay": 10000, "duration": 1, "easing": "linear"},
-{"x": -0.1, "y":4.68583470577035, "z": 0, "delay": 10000, "duration": 1, "easing": "linear"}
+{"x": -0.2, "y":10.310176124166828, "z": 0, "delay": 0, "duration": 45000, "easing": "linear"},
+{"x": -0.2, "y":6.668583470577035, "z": 0, "delay": 5000, "duration": 1, "easing": "linear"},
+{"x": -0.1, "y":4.68583470577035, "z": 0, "delay": 45000, "duration": 1, "easing": "linear"},
+{"x": -0.1, "y":7.8274273593601436, "z": 0, "delay": 0, "duration": 55000, "easing": "linear"},
+{"x": -0.1, "y":1.57, "z": 0, "delay": 0, "duration": 1, "easing": "linear"}
                            ]
                          }
                        }
