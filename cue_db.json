@@ -2591,10 +2591,32 @@
                  "_cue": {
                   "name": "NPC_SM_2_spawn_prop_omni",
                   "target": { "role": "general",
-                    "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/7dae82aa-1c3f-4ab3-98fc-b8ffcc2b624f.glb"},
+                    "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/3be1607c-d147-4701-b014-4b51ed003464.glb"},
                   "action": {"type": "socket_spawn_object",
                     "applyGravityOnSpawn": false,
                              "pos": {"x": 2.1164517402648926, "y": 551.9104736328125, "z": -50.029791259765625},
+                             "rot": {"x": 1.5707963267948966, "y":0, "z":0},
+                             "scale": {"x": 1, "y":1, "z":1}}
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_2_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_2_spawn_prop_omni_wall",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "NPC_SM_2_spawn_prop_omni",
+                  "target": { "role": "general",
+                    "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/0964d717-ad72-4b08-a18f-0af4f21f5d6d.glb"},
+                  "action": {"type": "socket_spawn_object",
+                    "applyGravityOnSpawn": false,
+                             "pos": {"x": 2.1164517402648926, "y": 553.3, "z": -50.029791259765625},
                              "rot": {"x": 1.5707963267948966, "y":0, "z":0},
                              "scale": {"x": 1, "y":1, "z":1}}
                 }
@@ -5365,6 +5387,25 @@
              "time": 30000}
   },
   {
+    "name": "NPC_SM_10_variable_2_light_gif",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                 "name": "NPC_SM_10_variable_2_light_gif",
+                 "target": { "role" : ["participant"]},
+                 "action": { "type": "spawn_360_gif",
+                  "src": "https://jigsawhubs-1-assets.onboardxr.live/files/519464e8-e13f-489c-8e88-2a30c37a8c22.gif"
+                  }
+                }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_10_A_2_group",
+             "time": 30000}
+  },
+  {
     "name": "NPC_SM_10_B_1",
     "role":"stagemanager",
     "target": { },
@@ -5568,6 +5609,25 @@
              "time": 20000}
   },
   {
+    "name": "NPC_SM_10_variable_2_light_gif",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                 "name": "NPC_SM_10_variable_2_light_gif",
+                 "target": { "role" : ["participant"]},
+                 "action": { "type": "spawn_360_gif",
+                  "src": "https://jigsawhubs-1-assets.onboardxr.live/files/519464e8-e13f-489c-8e88-2a30c37a8c22.gif"
+                  }
+                }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_10_B_2_group",
+             "time": 30000}
+  },
+  {
     "name": "NPC_SM_10_C_1",
     "role":"stagemanager",
     "target": { },
@@ -5704,6 +5764,25 @@
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_10_C_2_group",
              "time": 20000}
+  },
+  {
+    "name": "NPC_SM_10_variable_2_light_gif",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                 "name": "NPC_SM_10_variable_2_light_gif",
+                 "target": { "role" : ["participant"]},
+                 "action": { "type": "spawn_360_gif",
+                  "src": "https://jigsawhubs-1-assets.onboardxr.live/files/519464e8-e13f-489c-8e88-2a30c37a8c22.gif"
+                  }
+                }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_10_C_2_group",
+             "time": 30000}
   },
   {
     "name": "NPC_SM_10_C_3_ice_doors",
@@ -6026,9 +6105,30 @@
                   "rot": {"x": 0, "y":0, "z":0},
                   "scale": {"x": 2.5, "y":2.5, "z":2.5}},
     "trig": {"type": "button",
-      "groupChain" : "NPC_SM_9_group",
+      "groupChain" : "NPC_SM_12_group",
       "time": 0
     }
+  },
+  {
+    "name": "NPC_SM_12_gif",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                 "name": "NPC_SM_12_gif",
+                 "target": { "role" : ["participant"]},
+                 "action": { "type": "play_360_gif",
+                  "mapItem": "NPC_SM_10_variable_2_light_gif",
+                  "fadeDuration": 3000,
+                  "fadeDelay": 3000
+                  }
+                }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_12_group",
+             "time": 30000}
   },
   {
     "name": "NPC_SM_12_brnd_to_NPC",
