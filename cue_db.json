@@ -4937,7 +4937,7 @@
                    "duration": 1
                    },
                    "timelines" : [
-                    {"x": 6, "y": 4, "z": 6, "delay": 35000, "duration": 15000, "easing": "easeInSine"},
+                    {"x": 3, "y": 2, "z": 3, "delay": 35000, "duration": 15000, "easing": "easeInSine"},
                     {"x": 100, "y": 66, "z": 100, "delay": 0, "duration": 5000, "easing": "linear"}
                    ]
                  }
@@ -6238,10 +6238,10 @@
                    "duration": 0
                    },
                    "timelines" : [
-                    {"x": -46, "y":  21.765517264863714, "z": -6.5, "duration": 0, "easing": "easeOutSine", "delay": 0},
-                    {"x": -46, "y":  1.2, "z": -6.5, "duration": 10000, "easing": "easeInSine", "delay": 5000},
-                    {"x": -42.5, "y":  0.5, "z": -6.8, "duration": 5000, "easing": "linear", "delay": 0},
-                    {"x": -43.4, "y":  0, "z": 0, "duration": 5000, "easing": "easeOutSine", "delay": 0}
+                    {"x": -46, "y":  21.765517264863714, "z": -6.5, "duration": 0, "easing": "easeInOutSine", "delay": 0},
+                    {"x": -46, "y":  1.2, "z": -6.5, "duration": 10000, "easing": "easeInOutSine", "delay": 5000},
+                    {"x": -42.5, "y":  0.5, "z": -6.8, "duration": 5000, "easing": "easeInOutSine", "delay": 0},
+                    {"x": -43.4, "y":  0, "z": 0, "duration": 5000, "easing": "easeInOutSine", "delay": 0}
                    ]
                  }
                }
@@ -6343,7 +6343,7 @@
                    "duration": 0
                    },
                    "timelines" : [
-                    {"x": -47.5, "y":  21.765517264863714, "z": -7.4, "duration": 0, "easing": "easeOutSine", "delay": 0},
+                    {"x": -47.5, "y":  21.765517264863714, "z": -7.4, "duration": 0, "easing": "easeIn", "delay": 0},
                     {"x": -47.5, "y":  1.2, "z": -7.4, "duration": 10000, "easing": "easeInSine", "delay": 5000},
                     {"x": -44, "y":  0.5, "z": -7.4, "duration": 5000, "easing": "linear", "delay": 0},
                     {"x": -39.5, "y":  0, "z": -2, "duration": 5000, "easing": "easeOutSine", "delay": 0}
@@ -6356,7 +6356,73 @@
              "time": 0}
   },
   {
-    "name": "NPC_SM_12_part_starting_rotation",
+    "name": "NPC_SM_12_part1_starting_rotation",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                "name": "NPC_SM_12_part_starting_rotation",
+                "target": { "role" : "individual", "name": "part1",
+                  "aspect" : "rotation" },
+                "action": { "type": "manipulate_avatar",
+                  "attr": "object3D",
+                  "anime": {
+                   "targets": "",
+                   "delay" : 0,
+                   "loop": false,
+                   "autoplay": false,
+                   "easing": "linear",
+                   "duration": 1
+                   },
+                   "timelines" : [
+                    {"x": 0, "y":2.5, "z":0,"delay": 0, "easing": "linear", "duration": 0},
+                    {"x": 0, "y":2, "z":0,"delay": 15000, "easing": "linear", "duration": 5000},
+                    {"x": 0, "y":0.6, "z":0,"delay": 0, "easing": "linear", "duration": 5000}
+                   ]
+                 }
+               }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_12_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_12_part2_starting_rotation",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                "name": "NPC_SM_12_part2_starting_rotation",
+                "target": { "role" : "individual", "name": "part2",
+                  "aspect" : "rotation" },
+                "action": { "type": "manipulate_avatar",
+                  "attr": "object3D",
+                  "anime": {
+                   "targets": "",
+                   "delay" : 0,
+                   "loop": false,
+                   "autoplay": false,
+                   "easing": "linear",
+                   "duration": 1
+                   },
+                   "timelines" : [
+                    {"x": 0, "y":2.5, "z":0,"delay": 0, "easing": "linear", "duration": 0},
+                    {"x": 0, "y":2, "z":0,"delay": 15000, "easing": "linear", "duration": 5000},
+                    {"x": 0, "y":0.7, "z":0,"delay": 0, "easing": "linear", "duration": 5000}
+                   ]
+                 }
+               }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_12_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_12_part3_starting_rotation",
     "role": "stagemanager",
     "target": { },
     "action": {"type": "call_method_from_object",
@@ -6379,7 +6445,40 @@
                    "timelines" : [
                     {"x": 0, "y":2.5, "z":0,"delay": 0, "easing": "linear", "duration": 0},
                     {"x": 0, "y":2, "z":0,"delay": 15000, "easing": "linear", "duration": 5000},
-                    {"x": 0, "y":1, "z":0,"delay": 0, "easing": "linear", "duration": 5000}
+                    {"x": 0, "y":0.8, "z":0,"delay": 0, "easing": "linear", "duration": 5000}
+                   ]
+                 }
+               }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_12_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_12_part4_starting_rotation",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                "name": "NPC_SM_12_part_starting_rotation",
+                "target": { "role" : "participant",
+                  "aspect" : "rotation" },
+                "action": { "type": "manipulate_avatar",
+                  "attr": "object3D",
+                  "anime": {
+                   "targets": "",
+                   "delay" : 0,
+                   "loop": false,
+                   "autoplay": false,
+                   "easing": "linear",
+                   "duration": 1
+                   },
+                   "timelines" : [
+                    {"x": 0, "y":2.5, "z":0,"delay": 0, "easing": "linear", "duration": 0},
+                    {"x": 0, "y":2, "z":0,"delay": 15000, "easing": "linear", "duration": 5000},
+                    {"x": 0, "y":0.9, "z":0,"delay": 0, "easing": "linear", "duration": 5000}
                    ]
                  }
                }
