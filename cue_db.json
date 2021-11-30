@@ -6536,7 +6536,7 @@
               },
     "trig": {"type": "button",
               "groupChain" : "NPC_SM_13_group",
-             "time": 0}
+             "time": 59000}
   },
   {
     "name": "NPC_SM_13A_part_into_light",
