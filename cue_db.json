@@ -6539,6 +6539,37 @@
              "time": 59000}
   },
   {
+    "name": "NPC_SM_13_recall_brnd",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                "name": "NPC_SM_2_CAM_starting_pos",
+                "target": { "role" : "cinematic",
+                  "aspect" : "position" },
+                "action": { "type": "manipulate_avatar",
+                  "attr": "object3D",
+                  "anime": {
+                   "targets": "",
+                   "delay" : 0,
+                   "loop": false,
+                   "autoplay": true,
+                   "easing": "easeInSine",
+                   "duration": 0
+                   },
+                   "timelines" : [
+                    {"x": -77.56781006268669, "y": 8.11494720458983, "z": -13.944862796980713, "duration": 15000, "easing": "linear", "delay": 0}
+                   ]
+                 }
+               }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_2_group",
+             "time": 30000}
+  },
+  {
     "name": "NPC_SM_13A_part_into_light",
     "role": "stagemanager",
     "target": { },
