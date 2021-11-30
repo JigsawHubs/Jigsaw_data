@@ -7029,9 +7029,9 @@
                             {"x": 0.2, "y":0.9707963267948966, "z":0, "delay": 0, "duration": 18000, "easing": "easeOutSine"},
                             {"x": 0.5, "y":1.3707963267948966, "z":0, "delay": 0, "duration": 9000, "easing": "easeInOutSine"},
                             {"x": 0, "y":0.4707963267948966, "z":0, "delay": 0, "duration": 4000, "easing": "easeInOutSine"},
-                            {"x": -0.2, "y":0.4707963267948966, "z":0, "delay": 5000, "duration": 10000, "easing": "easeInSine"},
-                            {"x": -0.2, "y":-0.1707963267948966, "z":0, "delay": 0, "duration": 6000, "easing": "linear"},
-                            {"x": -0.2, "y":-1.5707963267948966, "z":0, "delay": 0, "duration": 4000, "easing": "linear"},
+                            {"x": -0.4, "y":0.4707963267948966, "z":0, "delay": 5000, "duration": 10000, "easing": "easeInSine"},
+                            {"x": -0.4, "y":-0.1707963267948966, "z":0, "delay": 0, "duration": 6000, "easing": "linear"},
+                            {"x": -0.4, "y":-1.5707963267948966, "z":0, "delay": 0, "duration": 4000, "easing": "linear"},
                             {"x": 0.15, "y":-1.5707963267948966, "z":0, "delay": 0, "duration": 6000, "easing": "easeOutSine"}
                            ]
                          }
