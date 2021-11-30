@@ -6875,7 +6875,7 @@
                         {"x": -28.36672807421003, "y": 185.20929886024138, "z": -1.353520380648531,"delay": 0, "easing": "easeOutSine", "duration": 7000},
                         {"x": -10.466728074210032, "y": 185.20929886024138, "z": -1.353520380648531,"delay": 0, "easing": "linear", "duration": 6500},
                         {"x": -5.267181098701195, "y": 185.20929886024138, "z": -3.603461905492035,"delay": 0, "easing": "linear", "duration": 7000},
-                        {"x": 0.8321549682863987, "y": 184.3, "z": -7.093598801305299,"delay": 0, "easing": "easeOutSine", "duration": 5000}
+                        {"x": 0.65, "y": 184.3, "z": -7.093598801305299,"delay": 0, "easing": "easeOutSine", "duration": 5000}
                        ]
                      }
                    }
@@ -6985,15 +6985,18 @@
                            "duration": 1
                            },
                            "timelines" : [
-                            {"x": 0.8321549682863987, "y": 184.3, "z": -7.093598801305299,"delay": 0, "easing": "easeOutSine", "duration": 0},
-                            {"x": 1.0321549682863987, "y": 184.3, "z": -5.593598801305299,"delay": 0, "easing": "easeInSine", "duration": 10000},
-                            {"x": 0.8321549682863987, "y": 184.3, "z": -4.093598801305299,"delay": 0, "easing": "linear", "duration": 10000},
+                            {"x": 0.65, "y": 184.3, "z": -7.093598801305299,"delay": 0, "easing": "easeOutSine", "duration": 0},
+                            {"x": 0.85, "y": 184.3, "z": -5.593598801305299,"delay": 0, "easing": "easeInSine", "duration": 10000},
+                            {"x": 0.65, "y": 184.3, "z": -4.093598801305299,"delay": 0, "easing": "linear", "duration": 10000},
                             {"x": 0.4021549682863987, "y": 184.3, "z": -3.103598801305299,"delay": 0, "easing": "easeOutSine", "duration": 9000},
                             {"x": -0.7276904046916947, "y": 183.6, "z": -4.620400784836581,"delay": 0, "easing": "easeInOutSine", "duration": 9000},
                             {"x": -0.7276904046916947, "y": 186.2, "z": -4.620400784836581,"delay": 9000, "easing": "easeInOutSine", "duration": 10000},
                             {"x": -5.7276904046916947, "y": 186.2, "z": -2.620400784836581,"delay":0, "easing": "easeInSine", "duration": 6000},
                             {"x": -10.0276904046916947, "y": 186.2, "z": -5.520400784836581,"delay":0, "easing": "easeOutSine", "duration": 4000},
-                            {"x": -10.0276904046916947, "y": 184.2, "z": -5.520400784836581,"delay":0, "easing": "easeInOutSine", "duration": 6000}
+                            {"x": -10.0276904046916947, "y": 184.2, "z": -5.520400784836581,"delay":0, "easing": "easeInOutSine", "duration": 6000},
+                            {"x": -10.0276904046916947, "y": 184.8, "z": -9.5,"delay":0, "easing": "easeInOutSine", "duration": 6000},
+                            {"x": -7.8276904046916947, "y": 183.8, "z": -9.5,"delay":0, "easing": "easeInOutSine", "duration": 6000},
+                            {"x": -6.5276904046916947, "y": 184.1, "z": -6.9,"delay":0, "easing": "easeOutSine", "duration": 60000}
                            ]
                          }
                        }
@@ -7032,7 +7035,8 @@
                             {"x": -0.4, "y":0.4707963267948966, "z":0, "delay": 5000, "duration": 10000, "easing": "easeInSine"},
                             {"x": -0.4, "y":-0.1707963267948966, "z":0, "delay": 0, "duration": 6000, "easing": "linear"},
                             {"x": -0.4, "y":-1.5707963267948966, "z":0, "delay": 0, "duration": 4000, "easing": "linear"},
-                            {"x": 0.15, "y":-1.5707963267948966, "z":0, "delay": 0, "duration": 6000, "easing": "easeOutSine"}
+                            {"x": 0.15, "y":-1.5707963267948966, "z":0, "delay": 0, "duration": 6000, "easing": "easeOutSine"},
+                            {"x": 0.25, "y":-2.6707963267948966, "z":0, "delay": 6000, "duration": 6000, "easing": "easeInOutSine"}
                            ]
                          }
                        }
@@ -7096,7 +7100,8 @@
                             "duration": 1000
                             },
                             "timelines" : [
-                              {"x": 48.35642411560717, "y": 210.52776566213626, "z": 15.18644798898042, "delay": 1500, "duration": 3000, "easing": "easeInSine"},
+                              {"x": -8.5276904046916947, "y": 184.1, "z": -6.9,"delay":0, "easing": "easeInOutSine", "duration": 5000},
+                              {"x": 48.35642411560717, "y": 210.52776566213626, "z": 15.18644798898042, "delay": 53500, "duration": 3000, "easing": "easeInSine"},
                               {"x": 102.10936085524516, "y": 211.34699286060226, "z": 11.46724494210593, "delay": 0, "easing": "linear", "duration": 1500},
                               {"x": 123.01583221464385, "y": 211.71688809096906, "z": 13.397707950890041, "delay": 0, "easing": "linear", "duration": 500},
                               {"x": 136.09498204134468, "y": 211.85121951865798, "z": 23.529305704037732, "delay": 0, "easing": "linear", "duration": 500},
@@ -7114,7 +7119,7 @@
                       },
             "trig": {"type": "button",
               "groupChain" : "NPC_SM_9_group",
-                     "time": 57000}
+                     "time": 0}
           },
           {
             "name": "NPC_SM_9_CAM_rotation",
@@ -7138,8 +7143,8 @@
                            "duration": 1
                            },
                            "timelines" : [
-                            {"x": 0.1, "y": -2.1707963267948966, "z": 0, "delay": 0, "duration": 0, "easing": "easeInSine"},
-                            {"x": 0, "y": -1.5707963267948966, "z": 0, "delay": 4000, "duration": 500, "easing": "easeInSine"},
+                            {"x": 0.1, "y": -2.1707963267948966, "z": 0, "delay": 0, "duration": 5000, "easing": "easeInSine"},
+                            {"x": 0, "y": -1.5707963267948966, "z": 0, "delay": 56000, "duration": 500, "easing": "easeInSine"},
                             {"x": 0, "y": -1.9707963267948966, "z": 0, "delay": 1500, "duration": 500, "easing": "easeInSine"},
                             {"x": 0, "y": -2.3707963267948966, "z": 0, "delay": 0, "duration": 500, "easing": "easeInSine"},
                             {"x": 0, "y": -2.1707963267948966, "z": 0, "delay": 1200, "duration": 500, "easing": "easeInSine"},
@@ -7155,7 +7160,7 @@
                       },
             "trig": {"type": "button",
               "groupChain" : "NPC_SM_9_group",
-                     "time": 57000}
+                     "time": 0}
           },
           {
             "name": "NPC_SM_10_A_1_CAM_position",
