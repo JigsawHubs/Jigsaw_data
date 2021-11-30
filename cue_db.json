@@ -2556,7 +2556,7 @@
                    "name": "NPC_SM_2_load_360_skybox",
                    "target": { "role": "general" },
                    "action": { "type": "load_360_image",
-                    "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/bd9946cc-8911-4b12-9852-b3ce9bfdcb4e.png",
+                    "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/106fc3d6-ef8b-4a3e-a578-209c7c14c012.png",
                     "position" : {"x": -7, "y": 225, "z": -5.5},
                     "scale" : {"x": 275, "y": 250, "z": 250}
                   }
@@ -4041,7 +4041,7 @@
                         {"x": -13.363567401488682, "y": 184.9681943333208, "z": -5.604705901369589, "delay": 250, "easing": "easeOutSine", "duration": 0},
                         {"x": -12.024206739829995, "y": 184.06819433352445, "z": -5.676747859455881, "delay": 350, "easing": "easeOutSine", "duration": 0},
                         {"x": -10.060983823966536, "y": 183.9509137262996, "z": -5.676747859455881, "delay": 350, "easing": "easeOutSine", "duration": 0},
-                        {"x": -6.58119073244206, "y": 183.04637404254322, "z": -5.399177528463501, "delay": 350, "easing": "easeOutSine", "duration": 0}
+                        {"x": -6.58119073244206, "y": 183.04637404254322, "z": -5.399177528463501, "delay": 0, "easing": "easeOutSine", "duration": 4000}
                        ]
                      }
                    }
@@ -4352,7 +4352,7 @@
                  "name": "NPC_SM_6_load_360_skybox",
                  "target": { "role": "general" },
                  "action": { "type": "load_360_image",
-                  "src" : "https://jigsawhubs.github.io/Jigsaw_data/image/NPC_A_black.png",
+                  "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/7a093dfe-a0cf-40a7-9312-fab95078fb17.jpg",
                   "position" : {"x": -7, "y": 100, "z": -5.5},
                   "scale" : {"x": 350, "y": 300, "z": 300}
                 }
@@ -4565,7 +4565,7 @@
                     "duration": 1000
                     },
                     "timelines" : [
-                      {"x": -1.5001864097279756, "y": 184.48051792732184, "z": -5.730333509897111, "delay": 1000, "duration": 10000, "easing": "easeInOutSine"},
+                      {"x": -1.5001864097279756, "y": 184.48051792732184, "z": -5.530333509897111, "delay": 1000, "duration": 10000, "easing": "easeInOutSine"},
                       {"x": -7.842922157169932, "y": 184.4923811381821, "z": -5.552291149372676, "delay": 0, "duration": 10000, "easing": "easeInSine"},
                       {"x": -8.08756334897549, "y": 183.79519241569514, "z": -5.1741958258779475, "delay": 0, "duration": 6000, "easing": "easeOutSine"}
                     ]
@@ -4768,7 +4768,7 @@
                  "name": "NPC_SM_7_load_360_skybox",
                  "target": { "role": "general" },
                  "action": { "type": "load_360_image",
-                  "src" : "https://jigsawhubs.github.io/Jigsaw_data/image/NPC_A_red.png",
+                  "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/0133a85c-4f1a-40d5-b3ae-008add7fe5e4.png ",
                   "position" : {"x": -7, "y": 120, "z": -5.5},
                   "scale" : {"x": 200, "y": 200, "z": 200}
                 }
