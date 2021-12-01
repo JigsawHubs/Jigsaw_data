@@ -7035,7 +7035,7 @@
                             {"x": -0.5, "y":-1.5707963267948966, "z":0, "delay": 0, "duration": 4000, "easing": "linear"},
                             {"x": 0.15, "y":-1.5707963267948966, "z":0, "delay": 0, "duration": 6000, "easing": "easeOutSine"},
                             {"x": 0.25, "y":-2.6707963267948966, "z":0, "delay": 10000, "duration": 6000, "easing": "easeInOutSine"},
-                            {"x": 0.25, "y":-2.1707963267948966, "z":0, "delay": 0, "duration": 60000, "easing": "easeInOutSine"}
+                            {"x": 0.25, "y":-2.0707963267948966, "z":0, "delay": 0, "duration": 60000, "easing": "easeInOutSine"}
                            ]
                          }
                        }
@@ -7083,7 +7083,7 @@
                        "object_name": "sockSys",
                        "function_name": "cueSocket",
                        "_cue": { 
-                        "name": "NPC_SM_9_group",
+                        "name": "NPC_SM_9_CAM_position",
                         "target": { "role" : "cinematic",
                           "aspect" : "position" },
                         "action": { "type": "manipulate_avatar",
@@ -7108,58 +7108,15 @@
                               {"x": 276.9629853765556, "y": 211.8856618359682, "z": 104.61302314252679, "delay": 0, "easing": "linear", "duration": 700},
                               {"x": 309.0484515590496, "y": 209.9779148917379, "z": 161.01396432571218, "delay": 0, "easing": "linear", "duration": 1000},
                               {"x": 318.17908944658024, "y": 201.68069742872257, "z": 203.04625369943403, "delay": 0, "easing": "easeOutSine", "duration": 1000},
-                              {"x": 335.17908944658024, "y": 203.58069742872257, "z": 218.04625369943403, "delay": 5000, "easing": "easeOutSine", "duration": 1},
-                              {"x": 300.17908944658024, "y": 203.58069742872257, "z": 218.04625369943403, "delay": 0, "easing": "easeOutSine", "duration": 20000}
+                              {"x": 330.17908944658024, "y": 204.68069742872257, "z": 203.04625369943403, "delay": 3000, "easing": "easeOutSine", "duration": 15000},
+                              {"x": 330.17908944658024, "y": 204.68069742872257, "z": 220.04625369943403, "delay": 0, "easing": "easeOutSine", "duration": 15000},
+                              {"x": 310.17908944658024, "y": 204.68069742872257, "z": 220.04625369943403, "delay": 0, "easing": "easeOutSine", "duration": 15000}
                            ]
                          }
                        }
                       },
             "trig": {"type": "button",
               "groupChain" : "NPC_SM_9_group",
-                     "time": 0}
-          },
-          {
-            "name": "NPC_SM_9_CAM_position",
-            "role": "none",
-            "target": { },
-            "action": {"type": "call_method_from_object",
-                       "object_name": "sockSys",
-                       "function_name": "cueSocket",
-                       "_cue": { 
-                         "name": "NPC_SM_9_anim_part_position",
-                         "target": { "role": "cinematic", "aspect" : "position"},
-                         "action": { "type" : "lock_waypoint",
-                           "waypoint" : "NPCWaypoint3",
-                           "attr": "object3D",
-                           "recallAud" : true,
-                           "maxDist" : 2,
-                           "anime" : {
-                            "targets": "position",
-                            "delay" : 1000,
-                            "loop": false,
-                            "autoplay": true,
-                            "easing": "linear",
-                            "duration": 1000
-                            },
-                            "timelines" : [
-                              {"x": -8.7276904046916947, "y": 184.2, "z": -8.0,"delay":3000, "easing": "easeOutSine", "duration": 53000},
-                              {"x": 48.35642411560717, "y": 210.52776566213626, "z": 15.18644798898042, "delay": 0, "duration": 3000, "easing": "easeInSine"},
-                              {"x": 102.10936085524516, "y": 211.34699286060226, "z": 11.46724494210593, "delay": 0, "easing": "linear", "duration": 1500},
-                              {"x": 123.01583221464385, "y": 211.71688809096906, "z": 13.397707950890041, "delay": 0, "easing": "linear", "duration": 500},
-                              {"x": 136.09498204134468, "y": 211.85121951865798, "z": 23.529305704037732, "delay": 0, "easing": "linear", "duration": 500},
-                              {"x": 171.03187840996895, "y": 211.65418789773506, "z": 65.37972428642911, "delay": 0, "easing": "linear", "duration": 1200},
-                              {"x": 193.92554119401404, "y": 212.07074406656446, "z": 78.62184802956773, "delay": 0, "easing": "linear", "duration": 700},
-                              {"x": 252.88232585464056, "y": 211.44135579900828, "z": 89.17120324500563, "delay": 0, "easing": "linear", "duration": 1200},
-                              {"x": 276.9629853765556, "y": 211.8856618359682, "z": 104.61302314252679, "delay": 0, "easing": "linear", "duration": 700},
-                              {"x": 309.0484515590496, "y": 209.9779148917379, "z": 161.01396432571218, "delay": 0, "easing": "linear", "duration": 1000},
-                              {"x": 318.17908944658024, "y": 201.68069742872257, "z": 203.04625369943403, "delay": 0, "easing": "easeOutSine", "duration": 1000},
-                              {"x": 335.17908944658024, "y": 203.58069742872257, "z": 218.04625369943403, "delay": 5000, "easing": "easeOutSine", "duration": 1},
-                              {"x": 300.17908944658024, "y": 203.58069742872257, "z": 218.04625369943403, "delay": 0, "easing": "easeOutSine", "duration": 20000}
-                            ]
-                          }
-                        }
-                      },
-            "trig": {"type": "button",
                      "time": 0}
           },
           {
@@ -7184,8 +7141,8 @@
                            "duration": 1
                            },
                            "timelines" : [
-                            {"x": 0.1, "y": -2.1707963267948966, "z": 0, "delay": 0, "duration": 5000, "easing": "easeInSine"},
-                            {"x": 0, "y": -1.5707963267948966, "z": 0, "delay": 56000, "duration": 500, "easing": "easeInSine"},
+                            {"x": 0.25, "y":-2.0707963267948966, "z":-6.283185307179586, "delay": 0, "duration": 0, "easing": "easeInSine"},{"x": 0.25, "y":-2.0707963267948966, "z":0, "delay": 8000, "duration": 15000, "easing": "easeInSine"},
+                            {"x": 0, "y": -1.5707963267948966, "z": 0, "delay": 35500, "duration": 500, "easing": "easeInSine"},
                             {"x": 0, "y": -1.9707963267948966, "z": 0, "delay": 1500, "duration": 500, "easing": "easeInSine"},
                             {"x": 0, "y": -2.3707963267948966, "z": 0, "delay": 0, "duration": 500, "easing": "easeInSine"},
                             {"x": 0, "y": -2.1707963267948966, "z": 0, "delay": 1200, "duration": 500, "easing": "easeInSine"},
@@ -7193,8 +7150,9 @@
                             {"x": 0, "y": -2.5707963267948966, "z": 0, "delay": 1200, "duration": 500, "easing": "easeInSine"},
                             {"x": 0, "y": -2.6707963267948966, "z": 0, "delay": 0, "duration": 500, "easing": "easeInSine"},
                             {"x": 0, "y": -3.0707963267948966, "z": 0, "delay": 0, "duration": 500, "easing": "easeInSine"},
-                            {"x": 0, "y": -5.426990816987241, "z": 0, "delay": 5000, "duration": 1, "easing": "easeInOutSine"},
-                            {"x": 0, "y": -6.997787143782138, "z": 0, "delay": 3000, "duration": 20000, "easing": "easeInSine"}
+                            {"x": 0, "y": -4.5707963267948966, "z": 0, "delay": 3000, "duration": 15000, "easing": "easeInOutSine"},
+                            {"x": 0, "y": -5.7707963267948966, "z": 0, "delay": 0, "duration": 15000, "easing": "easeInOutSine"},
+                            {"x": 0, "y": -6.8707963267948966, "z": 0, "delay": 0, "duration": 15000, "easing": "easeInOutSine"}
                            ]
                          }
                        }
