@@ -2558,6 +2558,7 @@
                    "action": { "type": "load_360_image",
                     "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/106fc3d6-ef8b-4a3e-a578-209c7c14c012.png",
                     "position" : {"x": -7, "y": 225, "z": -5.5},
+                    "rotation" : {"x": 0, "y": 1.5707963267948966, "z": 0},
                     "scale" : {"x": 275, "y": 250, "z": 250}
                   }
                   }
@@ -2655,7 +2656,7 @@
                    "name": "NPC_SM_2_health_gif",
                    "target": { "role" : ["participant"]},
                    "action": { "type": "spawn_360_gif",
-                    "src": "https://jigsawhubs.github.io/Jigsaw_data/video/NPC_A_20.gif"
+                    "src": "https://jigsawhubs-1-assets.onboardxr.live/files/ea63336f-85c4-4c83-adc5-b6f61206423f.gif"
                     }
                   }
                 },
@@ -2674,7 +2675,7 @@
                    "name": "NPC_SM_2_rock_gif",
                    "target": { "role" : ["participant"]},
                    "action": { "type": "spawn_360_gif",
-                    "src": "https://jigsawhubs.github.io/Jigsaw_data/video/NPC_A_21.gif"
+                    "src": "https://jigsawhubs-1-assets.onboardxr.live/files/b9ebb5d2-bf42-4ce1-8688-b25069e299de.gif"
                     }
                   }
                 },
@@ -2693,7 +2694,7 @@
                    "name": "NPC_SM_2_path_gif",
                    "target": { "role" : ["participant"]},
                    "action": { "type": "spawn_360_gif",
-                    "src": "https://jigsawhubs-1-assets.onboardxr.live/files/c7c8503b-9b4a-4a33-9427-dfc9fc6402ed.gif"
+                    "src": "https://jigsawhubs-1-assets.onboardxr.live/files/7608211b-944e-4eb7-9ba0-91f09ab568d3.gif"
                     }
                   }
                 },
@@ -4792,6 +4793,7 @@
                  "action": { "type": "load_360_image",
                   "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/0133a85c-4f1a-40d5-b3ae-008add7fe5e4.png",
                   "position" : {"x": -7, "y": 120, "z": -5.5},
+                  "rotation" : {"x": 0, "y": 1.5707963267948966, "z": 0},
                   "scale" : {"x": 200, "y": 200, "z": 200}
                 }
                 }
@@ -7066,13 +7068,34 @@
                            "duration": 1
                            },
                            "timelines" : [
-                            {"x": 0.5, "y": 0.5, "z": 0.5, "delay": 36000, "duration": 2000, "easing": "easeInOutSine"}
+                            {"x": 0.5, "y": 0.5, "z": 0.5, "delay": 0, "duration": 5000, "easing": "easeInOutSine"}
                            ]
                          }
                        }
                       },
             "trig": {"type": "button",
               "groupChain" : "NPC_SM_7_group",
+                     "time": 73000}
+          },
+          {
+            "name": "NPC_SM_7_CAM_to_rock_camera",
+            "role": "stagemanager",
+            "target": { },
+            "action": {"type": "call_method_from_object",
+                       "object_name": "sockSys",
+                       "function_name": "cueSocket",
+                       "_cue": {
+                        "name": "NPC_SM_2_brnd_to_hero",
+                        "role":"stagemanager",
+                        "target": { "role" : "individual",
+                        "name" : "Brendan2"
+                        },
+                        "action": {"type": "change_avatar",
+                                   "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_camera.glb"}
+                      }
+                      },
+            "trig": {"type": "button",
+                      "groupChain" : "NPC_SM_7_group",
                      "time": 0}
           },
           {
