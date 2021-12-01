@@ -4382,7 +4382,7 @@
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_6_group",
-             "time": 50000}
+             "time": 51000}
   },
   {
     "name": "NPC_SM_6_brnd_NPC_position",
@@ -4790,7 +4790,7 @@
                  "name": "NPC_SM_7_load_360_skybox",
                  "target": { "role": "general" },
                  "action": { "type": "load_360_image",
-                  "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/0133a85c-4f1a-40d5-b3ae-008add7fe5e4.png ",
+                  "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/0133a85c-4f1a-40d5-b3ae-008add7fe5e4.png",
                   "position" : {"x": -7, "y": 120, "z": -5.5},
                   "scale" : {"x": 200, "y": 200, "z": 200}
                 }
@@ -6702,23 +6702,23 @@
                "object_name": "sockSys",
                "function_name": "cueSocket",
                "_cue": { 
-                "name": "NPC_SM_2_A_CAM_position",
+                "name": "NPC_SM_2_CAM_starting_pos",
                 "target": { "role" : "cinematic",
                   "aspect" : "position" },
                 "action": { "type": "manipulate_avatar",
                   "attr": "object3D",
                   "anime": {
                    "targets": "",
-                   "delay" : 15000,
+                   "delay" : 0,
                    "loop": false,
                    "autoplay": true,
                    "easing": "easeInSine",
-                   "duration": 1
+                   "duration": 0
                    },
                    "timelines" : [
-                    {"x": -65.69676088167867, "y": 520.002484649347, "z": 0.355277583622875, "duration": 1, "delay": 0, "easing": "easeInOutSine"},
-                    {"x": 2.210436986144683, "y":545.65, "z":-53.6665139712834, "duration": 10000, "delay": 3000, "easing": "easeInOutSine"},
-                    {"x": 2, "y": 547.1731523005426, "z": -52.79724524892083, "duration": 1, "delay": 4000, "easing": "easeInOutSine"}
+                    {"x": -0.4, "y": 547.1731523005426, "z": -52.29724524892083,"delay":0, "easing":"linear", "duration":1},
+{"x": 4.6, "y": 547.1731523005426, "z": -52.29724524892083, "delay":0, "easing":"easeInOutSine", "duration":7000},
+{"x": 2, "y": 547.1731523005426, "z": -52.79724524892083,"delay":5000, "easing":"linear", "duration":1}
                    ]
                  }
                }
@@ -6749,9 +6749,8 @@
                    "duration": 0
                    },
                    "timelines" : [
-                    {"x": -1, "y":4.941592653589793, "z":-1, "duration": 1, "delay": 0, "easing": "easeInOutSine"},
-                    {"x": 1.5707963267948966, "y":6.283185307179586, "z":0, "duration": 10000, "delay": 3000, "easing": "easeInOutSine"},
-                    {"x": -1.4707963267948966, "y":3.141592653589793, "z":0, "duration": 1, "delay": 4000, "easing": "easeInOutSine"}
+                    {"x": 1.3707963267948966, "y":6.283185307179586, "z":0, "duration": 1, "delay": 0, "easing": "easeInOutSine"},
+                    {"x": -1.4707963267948966, "y":3.141592653589793, "z":0,"duration": 1, "delay": 12000, "easing": "easeInOutSine"}
                    ]
                  }
                }
@@ -6989,9 +6988,9 @@
                             {"x": 0.65, "y": 184.3, "z": -4.093598801305299,"delay": 0, "easing": "linear", "duration": 10000},
                             {"x": 0.4021549682863987, "y": 184.3, "z": -3.103598801305299,"delay": 0, "easing": "easeOutSine", "duration": 9000},
                             {"x": -0.7276904046916947, "y": 183.6, "z": -4.620400784836581,"delay": 0, "easing": "easeInOutSine", "duration": 9000},
-                            {"x": -0.7276904046916947, "y": 186.2, "z": -4.620400784836581,"delay": 9000, "easing": "easeInOutSine", "duration": 10000},
-                            {"x": -5.7276904046916947, "y": 186.2, "z": -2.620400784836581,"delay":0, "easing": "easeInSine", "duration": 6000},
-                            {"x": -10.0276904046916947, "y": 186.2, "z": -5.520400784836581,"delay":0, "easing": "easeOutSine", "duration": 4000},
+                            {"x": -0.7276904046916947, "y": 185.7, "z": -4.620400784836581,"delay": 9000, "easing": "easeInOutSine", "duration": 10000},
+                            {"x": -5.7276904046916947, "y": 185.7, "z": -2.620400784836581,"delay":0, "easing": "easeInSine", "duration": 6000},
+                            {"x": -10.0276904046916947, "y": 185.7, "z": -5.520400784836581,"delay":0, "easing": "easeOutSine", "duration": 4000},
                             {"x": -10.0276904046916947, "y": 184.2, "z": -5.520400784836581,"delay":0, "easing": "easeInOutSine", "duration": 6000},
                             {"x": -10.0276904046916947, "y": 184.8, "z": -9.5,"delay":5000, "easing": "easeInOutSine", "duration": 6000},
                             {"x": -7.8276904046916947, "y": 183.8, "z": -9.5,"delay":0, "easing": "easeInOutSine", "duration": 6000},
@@ -7031,9 +7030,9 @@
                             {"x": 0.2, "y":0.9707963267948966, "z":0, "delay": 0, "duration": 18000, "easing": "easeOutSine"},
                             {"x": 0.5, "y":1.3707963267948966, "z":0, "delay": 0, "duration": 9000, "easing": "easeInOutSine"},
                             {"x": 0, "y":0.4707963267948966, "z":0, "delay": 0, "duration": 4000, "easing": "easeInOutSine"},
-                            {"x": -0.4, "y":0.4707963267948966, "z":0, "delay": 5000, "duration": 10000, "easing": "easeInSine"},
-                            {"x": -0.4, "y":-0.1707963267948966, "z":0, "delay": 0, "duration": 6000, "easing": "linear"},
-                            {"x": -0.4, "y":-1.5707963267948966, "z":0, "delay": 0, "duration": 4000, "easing": "linear"},
+                            {"x": -0.5, "y":0.4707963267948966, "z":0, "delay": 5000, "duration": 10000, "easing": "easeInSine"},
+                            {"x": -0.5, "y":-0.1707963267948966, "z":0, "delay": 0, "duration": 6000, "easing": "linear"},
+                            {"x": -0.5, "y":-1.5707963267948966, "z":0, "delay": 0, "duration": 4000, "easing": "linear"},
                             {"x": 0.15, "y":-1.5707963267948966, "z":0, "delay": 0, "duration": 6000, "easing": "easeOutSine"},
                             {"x": 0.25, "y":-2.6707963267948966, "z":0, "delay": 10000, "duration": 6000, "easing": "easeInOutSine"}
                            ]
