@@ -6634,7 +6634,7 @@
                    "duration": 0
                    },
                    "timelines" : [
-                    {"x": -77.56781006268669, "y": 8.11494720458983, "z": -13.944862796980713, "duration": 15000, "easing": "linear", "delay": 0}
+                    {"x": -80.56781006268669, "y": 8.11494720458983, "z": -13.944862796980713, "duration": 15000, "easing": "linear", "delay": 0}
                    ]
                  }
                }
@@ -6642,6 +6642,37 @@
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_13_group",
              "time": 30000}
+  },
+  {
+    "name": "NPC_SM_13_brnd_to_light",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                "name": "NPC_SM_13_brnd_to_light",
+                "target": { "role" : "individual", "name": "Brendan",
+                  "aspect" : "position" },
+                "action": { "type": "manipulate_avatar",
+                  "attr": "object3D",
+                  "anime": {
+                   "targets": "",
+                   "delay" : 0,
+                   "loop": false,
+                   "autoplay": true,
+                   "easing": "easeInSine",
+                   "duration": 7000
+                   },
+                   "timelines" : [
+                    {"x": -89.45810709134439, "y": 7.81494720458983, "z": -14.1048429624734}
+                   ]
+                 }
+               }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_13_group",
+             "time": 174000}
   },
   {
     "name": "NPC_SM_13A_part_into_light",
@@ -6665,7 +6696,7 @@
                    "duration": 5000
                    },
                    "timelines" : [
-                    {"x": -94.45810709134439, "y": 8.11494720458983, "z": -14.1648429624734}
+                    {"x": -94.45810709134439, "y": 9.51494720458983, "z": -14.1648429624734}
                    ]
                  }
                }
@@ -7902,7 +7933,7 @@
                             {"x": -73.04677113809177, "y": 9.114947204590555, "z": -10.592155180302392,"delay": 0, "easing": "linear", "duration": 1},
                             {"x": -73.04677113809177, "y": 9.114947204590555, "z": -14.592155180302392,"delay": 0, "easing": "linear", "duration": 19000},
                             {"x": -100.04677113809177, "y": 20.114947204590555, "z": -12.592155180302392,"delay": 0, "easing": "linear", "duration": 1},
-                            {"x": -76.56781006268669, "y": 8.11494720458983, "z": -13.94486279698071,"delay": 24000, "easing": "linear", "duration": 1}
+                            {"x": -79.56781006268669, "y": 8.11494720458983, "z": -13.91486279698071,"delay": 24000, "easing": "linear", "duration": 1}
                            ]
                          }
                        }
