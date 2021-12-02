@@ -5080,7 +5080,7 @@
                   "scale": {"x": 1.5, "y":1.5, "z":1.5}},
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_9_group",
-      "time": 61000
+      "time": 58000
     }
   },
   {
