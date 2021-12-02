@@ -3869,7 +3869,7 @@
                       "duration": 1000
                       },
                       "timelines" : [
-                        {"x": 175, "y": 240, "z": 150,"delay": 7000, "easing": "linear", "duration": 7000}
+                        {"x": 175, "y": 210, "z": 150,"delay": 7000, "easing": "linear", "duration": 7000}
                       ]
                     }
                 }
@@ -3878,7 +3878,6 @@
                 "groupChain" : "NPC_SM_6_group",
                "time": 0}
     },
-
     {
       "name": "NPC_SM_6_delete_360_colorful_skybox",
       "role": "stagemanager",
