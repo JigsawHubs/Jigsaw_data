@@ -2556,8 +2556,8 @@
                    "name": "NPC_SM_2_load_360_skybox",
                    "target": { "role": "general" },
                    "action": { "type": "load_360_image",
-                    "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/106fc3d6-ef8b-4a3e-a578-209c7c14c012.png",
-                    "position" : {"x": -7, "y": 210, "z": -5.5},
+                    "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/a57a87a7-c162-4219-a4d5-b1d0adef07f8.png",
+                    "position" : {"x": -7, "y": 220, "z": -5.5},
                     "rotation" : {"x": 0, "y": 90, "z": 0},
                     "scale" : {"x": 275, "y": 250, "z": 250}
                   }
@@ -3245,6 +3245,28 @@
                "time": 97000}
     },
     {
+      "name": "NPC_SM_345_load_360_skybox",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "NPC_SM_345_load_360_skybox",
+                   "target": { "role": "general" },
+                   "action": { "type": "load_360_image",
+                    "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/106fc3d6-ef8b-4a3e-a578-209c7c14c012.png",
+                    "position" : {"x": -7, "y": 190, "z": -5.5},
+                    "rotation" : {"x": 0, "y": 90, "z": 0},
+                    "scale" : {"x": 300, "y": 300, "z": 300}
+                  }
+                  }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_2_group",
+               "time": 90000}
+    },
+    {
       "name": "NPC_SM_345_looping_NPC",
       "role": "stagemanager",
       "target": { "type": "glb",
@@ -3836,7 +3858,7 @@
                       "aspect": "scale"
                   },
                    "action": { "type": "manipulate_skybox_360",
-                    "mapItem" : "NPC_SM_2_load_360_skybox",
+                    "mapItem" : "NPC_SM_345_load_360_skybox",
                     "attr": "object3D",
                     "anime": {
                       "targets": "",
@@ -3847,7 +3869,7 @@
                       "duration": 1000
                       },
                       "timelines" : [
-                        {"x": 175, "y": 150, "z": 150,"delay": 7000, "easing": "linear", "duration": 7000}
+                        {"x": 175, "y": 240, "z": 150,"delay": 7000, "easing": "linear", "duration": 7000}
                       ]
                     }
                 }
@@ -7275,16 +7297,11 @@
                            },
                            "timelines" : [
                             {"x": -294.0089597032785, "y":  99.00799333555521, "z": 56.50380316840261,"delay": 0, "easing": "easeInOutSine", "duration": 0},
-                            {"x": -276.0928609616629, "y": 95.43362465750151, "z": 45.13978195256465,"delay": 0, "easing": "easeInOutSine", "duration": 20000},
-                            {"x": -249.68507986638315, "y": 77.69346942648959, "z": 33.54886516234671,"delay": 4000, "easing": "easeInOutSine", "duration": 7000},
-                            {"x": -196.08744525869156, "y": 60.78003171732537, "z": 22.95135634283674,"delay": 12000, "easing": "easeInOutSine", "duration": 28000},
+                            {"x": -276.0928609616629, "y": 95.43362465750151, "z": 45.13978195256465,"delay": 5000, "easing": "easeInOutSine", "duration": 20000},
+                            {"x": -254.68507986638315, "y": 77.69346942648959, "z": 33.54886516234671,"delay": 4000, "easing": "easeInOutSine", "duration": 7000},
+                            {"x": -182.08744525869156, "y": 56.78003171732537, "z": 20.95135634283674,"delay": 12000, "easing": "easeInOutSine", "duration": 28000},
                             {"x": -191.24296605430322, "y": 56.862808219394026, "z": 32.983170026796806,"delay": 4000, "easing": "easeInOutSine", "duration": 22000},
-                            {"x": -159.3821316591818, "y": 55.20032521149163, "z": 27.31891643029549,"delay": 4000, "easing": "easeInSine", "duration": 4000},
-                            {"x": -65.60529047909421, "y": 31.550472227863033, "z": -7.306560107004637,"delay": 0, "easing": "easeOutSine", "duration": 30000},
-                            {"x": -58.31463106900569, "y": 28.40641411851369, "z": -31.658205973458777,"delay": 2000, "easing": "easeInOutSine", "duration": 6000},
-                            {"x": -124.35105167552203, "y": 52.17672429751396, "z": -46.22573143487647,"delay": 2000, "easing": "easeInOutSine", "duration": 18000},
-                            {"x": -121.43729612854928, "y": 49.19322898860802, "z": -62.5110259040382,"delay": 1000, "easing": "easeInOutSine", "duration": 4000},
-                            {"x": 278.3134662954094, "y": -99.44451345471886, "z": 2.0556665912450383,"delay": 2000, "easing": "easeInSine", "duration": 34000}
+                            {"x": -170.24296605430322, "y": 76.862808219394026, "z": 32.983170026796806,"delay": 6000, "easing": "easeInOutSine", "duration": 15000}
                            ]
                          }
                        }
@@ -7316,14 +7333,12 @@
                            },
                            "timelines" : [
                             {"x": -0.1, "y":-1.27, "z": 0, "delay": 0, "duration": 0, "easing": "easeInOutSine"},
-                            {"x": 0.1, "y":-3.7, "z": 0, "delay": 0, "duration": 20000, "easing": "easeInOutSine"},
+                            {"x": 0.1, "y":-3.7, "z": 0, "delay": 5000, "duration": 20000, "easing": "easeInOutSine"},
                             {"x": 0.1, "y":-2.9, "z": 0, "delay": 4000, "duration": 7000, "easing": "easeInOutSine"},
                             {"x": 0.1, "y":-2.1, "z": 0, "delay": 8000, "duration": 4000, "easing": "easeInOutSine"},
-                            {"x": 0.1, "y":-1.3, "z": 0, "delay": 32000, "duration": 22000, "easing": "easeInOutSine"},
-                            {"x": 0.1, "y":-0.2, "z": 0, "delay": 8000, "duration": 30000, "easing": "easeOutSine"},
-                            {"x": 0.3, "y":1.4, "z": 0, "delay": 2000, "duration": 6000, "easing": "easeOutSine"},
-                            {"x": 0, "y":-0.2, "z": 0, "delay": 18000, "duration": 2000, "easing": "easeInOutSine"},
-                            {"x": -0.4, "y":-1.6, "z": 0, "delay": 1000, "duration": 4000, "easing": "easeInOutSine"}
+                            {"x": 0.1, "y":-3.1, "z": 0, "delay": 22000, "duration": 6000, "easing": "easeInOutSine"},
+                            {"x": 0.1, "y":-1.3, "z": 0, "delay": 4000, "duration": 22000, "easing": "easeInOutSine"},
+                            {"x": -0.1, "y":-0.85, "z": 0, "delay": 9000, "duration": 15000, "easing": "easeInOutSine"}
                            ]
                          }
                        }
