@@ -7193,7 +7193,7 @@
                            "duration": 1
                            },
                            "timelines" : [
-                            {"x": -8.7276904046916947, "y": 184.2, "z": -8.0,"delay":3000, "easing": "easeOutSine", "duration": 53000},
+                            {"x": -8.7276904046916947, "y": 184.2, "z": -8.0,"delay":4000, "easing": "easeOutSine", "duration": 53000},
                               {"x": 48.35642411560717, "y": 210.52776566213626, "z": 15.18644798898042, "delay": 0, "duration": 3000, "easing": "easeInSine"},
                               {"x": 102.10936085524516, "y": 211.34699286060226, "z": 11.46724494210593, "delay": 0, "easing": "linear", "duration": 1500},
                               {"x": 123.01583221464385, "y": 211.71688809096906, "z": 13.397707950890041, "delay": 0, "easing": "linear", "duration": 500},
@@ -7239,7 +7239,7 @@
                            "timelines" : [
                             {"x": 0.25, "y":-2.0707963267948966, "z":-6.283185307179586, "delay": 0, "duration": 0, "easing": "easeInOutSine"},
                             {"x": 0.25, "y":-2.0707963267948966, "z":0, "delay": 8000, "duration": 15000, "easing": "easeInOutSine"},
-                            {"x": 0, "y": -1.5707963267948966, "z": 0, "delay": 35500, "duration": 500, "easing": "easeInSine"},
+                            {"x": 0, "y": -1.5707963267948966, "z": 0, "delay": 36500, "duration": 500, "easing": "easeInSine"},
                             {"x": 0, "y": -1.9707963267948966, "z": 0, "delay": 1500, "duration": 500, "easing": "easeInSine"},
                             {"x": 0, "y": -2.3707963267948966, "z": 0, "delay": 0, "duration": 500, "easing": "easeInSine"},
                             {"x": 0, "y": -2.1707963267948966, "z": 0, "delay": 1200, "duration": 500, "easing": "easeInSine"},
