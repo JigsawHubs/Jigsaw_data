@@ -7164,7 +7164,8 @@
                            "duration": 1
                            },
                            "timelines" : [
-                            {"x": 0.25, "y":-2.0707963267948966, "z":-6.283185307179586, "delay": 0, "duration": 0, "easing": "easeInSine"},{"x": 0.25, "y":-2.0707963267948966, "z":0, "delay": 8000, "duration": 15000, "easing": "easeInSine"},
+                            {"x": 0.25, "y":-2.0707963267948966, "z":-6.283185307179586, "delay": 0, "duration": 0, "easing": "easeInOutSine"},
+                            {"x": 0.25, "y":-2.0707963267948966, "z":0, "delay": 8000, "duration": 15000, "easing": "easeInOutSine"},
                             {"x": 0, "y": -1.5707963267948966, "z": 0, "delay": 35500, "duration": 500, "easing": "easeInSine"},
                             {"x": 0, "y": -1.9707963267948966, "z": 0, "delay": 1500, "duration": 500, "easing": "easeInSine"},
                             {"x": 0, "y": -2.3707963267948966, "z": 0, "delay": 0, "duration": 500, "easing": "easeInSine"},
