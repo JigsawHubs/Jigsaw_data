@@ -6718,7 +6718,7 @@
                    },
                    "timelines" : [
                     {"x": -0.4, "y": 547.1731523005426, "z": -52.29724524892083,"delay":0, "easing":"linear", "duration":1},
-{"x": 4.6, "y": 547.1731523005426, "z": -52.29724524892083, "delay":0, "easing":"easeInOutSine", "duration":7000},
+{"x": 4.6, "y": 546.1731523005426, "z": -52.29724524892083, "delay":0, "easing":"easeInOutSine", "duration":7000},
 {"x": 2, "y": 547.1731523005426, "z": -52.79724524892083,"delay":5000, "easing":"linear", "duration":1}
                    ]
                  }
