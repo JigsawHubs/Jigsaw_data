@@ -7084,7 +7084,7 @@
                        "object_name": "sockSys",
                        "function_name": "cueSocket",
                        "_cue": {
-                        "name": "NPC_SM_2_brnd_to_hero",
+                        "name": "NPC_SM_7_CAM_to_rock_camera",
                         "role":"stagemanager",
                         "target": { "role" : "individual",
                         "name" : "camera"
