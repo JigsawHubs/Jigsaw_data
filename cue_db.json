@@ -3255,7 +3255,7 @@
                    "name": "NPC_SM_345_load_360_skybox",
                    "target": { "role": "general" },
                    "action": { "type": "load_360_image",
-                    "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/106fc3d6-ef8b-4a3e-a578-209c7c14c012.png",
+                    "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/87a81c24-4be6-417c-8133-277dbff5a83b.png",
                     "position" : {"x": -7, "y": 190, "z": -5.5},
                     "rotation" : {"x": 0, "y": 90, "z": 0},
                     "scale" : {"x": 300, "y": 300, "z": 300}
