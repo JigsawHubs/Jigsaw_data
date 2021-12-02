@@ -7095,7 +7095,7 @@
                       },
             "trig": {"type": "button",
                       "groupChain" : "NPC_SM_7_group",
-                     "time": 84000}
+                     "time": 70000}
           },
           {
             "name": "NPC_SM_9_CAM_position",
