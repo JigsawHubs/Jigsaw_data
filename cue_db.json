@@ -5171,7 +5171,7 @@
             },
   "trig": {"type": "button",
     "groupChain" : "NPC_SM_9_group",
-           "time": 64000}
+           "time": 63000}
 },
 {
   "name": "NPC_SM_9_delete_360_black_skybox",
