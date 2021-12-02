@@ -3263,7 +3263,7 @@
                   }
                 },
       "trig": {"type": "button",
-        "groupChain" : "NPC_SM_2_group",
+        "groupChain" : "NPC_SM_345_group",
                "time": 90000}
     },
     {
@@ -3877,6 +3877,26 @@
       "trig": {"type": "button",
                 "groupChain" : "NPC_SM_6_group",
                "time": 0}
+    },
+
+    {
+      "name": "NPC_SM_6_delete_360_colorful_skybox",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "NPC_SM_6_delete_360_colorful_skybox",
+                   "target": { "role": "general" },
+                   "action": { "type": "delete",
+                    "src" : "NPC_SM_2_load_360_skybox"
+                  }
+                  }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_6_group",
+               "time": 14000}
     },
     {
       "name": "NPC_SM_6_omni_anim_position",
@@ -4745,7 +4765,7 @@
                  "name": "NPC_SM_7_fade_colorful_skybox",
                  "target": { "role": "general" },
                  "action": { "type": "socket_fade_skybox_opacity",
-                  "mapItem" : "NPC_SM_2_load_360_skybox",
+                  "mapItem" : "NPC_SM_345_load_360_skybox",
                   "fadeDuration" : 3000}
               }
               },
@@ -4835,7 +4855,7 @@
                  "name": "NPC_SM_7_delete_360_colorful_skybox",
                  "target": { "role": "general" },
                  "action": { "type": "delete",
-                  "src" : "NPC_SM_2_load_360_skybox"
+                  "src" : "NPC_SM_345_load_360_skybox"
                 }
                 }
               },
