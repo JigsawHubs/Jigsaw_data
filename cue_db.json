@@ -6993,9 +6993,9 @@
                             {"x": -5.7276904046916947, "y": 185.7, "z": -2.620400784836581,"delay":0, "easing": "easeInSine", "duration": 6000},
                             {"x": -10.0276904046916947, "y": 185.7, "z": -5.520400784836581,"delay":0, "easing": "easeOutSine", "duration": 4000},
                             {"x": -10.0276904046916947, "y": 184.2, "z": -5.520400784836581,"delay":0, "easing": "easeInOutSine", "duration": 6000},
-                            {"x": -10.0276904046916947, "y": 184.8, "z": -9.5,"delay":5000, "easing": "easeInOutSine", "duration": 6000},
+                            {"x": -10.0276904046916947, "y": 184.8, "z": -9.5,"delay":7000, "easing": "easeInOutSine", "duration": 6000},
                             {"x": -7.8276904046916947, "y": 183.8, "z": -9.5,"delay":0, "easing": "easeInOutSine", "duration": 6000},
-                            {"x": -6.8276904046916947, "y": 184, "z": -5.7,"delay":0, "easing": "easeOutSine", "duration": 60000}
+                            {"x": -6.8276904046916947, "y": 184, "z": -5.7,"delay":0, "easing": "easeOutSine", "duration": 58000}
                            ]
                          }
                        }
