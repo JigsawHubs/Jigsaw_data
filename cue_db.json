@@ -1,3 +1,58 @@
 {
-    "listCue": []
+   "listCue": [
+       {
+           "name": "Avatar_Naomi",
+           "role":"naomi",
+           "target": { },
+           "action": {"type": "change_avatar",
+                      "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NAOMI_NaomiAvatar.glb"},
+           "trig": {"type": "button",
+                    "time": 0}
+       },
+       {
+           "name": "Avatar_Partner",
+           "role":"naomi",
+           "target": { },
+           "action": {"type": "change_avatar",
+                      "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NAOMI_PartnerAvatar.glb"},
+           "trig": {"type": "button",
+                    "time": 0}
+       },
+       {
+           "name": "Avatar_Kid",
+           "role":"naomi",
+           "target": { },
+           "action": {"type": "change_avatar",
+                      "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NAOMI_KidAvatar.glb"},
+           "trig": {"type": "button",
+                    "time": 0}
+       },
+              {
+           "name": "Avatar_Gremlin",
+           "role":"naomi",
+           "target": { },
+           "action": {"type": "change_avatar",
+                      "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NAOMI_GremlinAvatar.glb"},
+           "trig": {"type": "button",
+                    "time": 0}
+       },
+              {
+           "name": "Avatar_Student",
+           "role":"naomi",
+           "target": { },
+           "action": {"type": "change_avatar",
+                      "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NAOMI_StudentAvatar.glb"},
+           "trig": {"type": "button",
+                    "time": 0}
+       },
+              {
+           "name": "Avatar_Young_Partner",
+           "role":"naomi",
+           "target": { },
+           "action": {"type": "change_avatar",
+                      "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NAOMI_YoungPartnerAvatar.glb"},
+           "trig": {"type": "button",
+                    "time": 0}
+       }
+    ]
   }
