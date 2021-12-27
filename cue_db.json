@@ -81,6 +81,45 @@
                   "time": 0}
        },
        {
+         "name": "House_Kitchen_Scan",
+         "role": "naomi",
+         "target": { "type": "glb",
+                     "dest": "url",
+                     "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_house-kitchen-scan.glb"},
+         "action": {"type": "spawn_item",
+                 "pos": {"x": -39.518, "y":4.305, "z":11.768},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+         "trig": {"type": "button",
+                  "time": 0}
+       },
+       {
+         "name": "House_Parents_Bedroom_Scan",
+         "role": "naomi",
+         "target": { "type": "glb",
+                     "dest": "url",
+                     "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_house-parents-scan.glb"},
+         "action": {"type": "spawn_item",
+                 "pos": {"x": -32.136, "y":4.235, "z":17.059},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+         "trig": {"type": "button",
+                  "time": 0}
+       },
+       {
+         "name": "House_Smidge_Bedroom_Scan",
+         "role": "naomi",
+         "target": { "type": "glb",
+                     "dest": "url",
+                     "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_house-smidge-scan.glb"},
+         "action": {"type": "spawn_item",
+                 "pos": {"x": -27.335, "y":4.373, "z":12.725},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+         "trig": {"type": "button",
+                  "time": 0}
+       },
+       {
          "name": "Club_Jack_Daniel_Bottle",
          "role": "naomi",
          "target": { "type": "glb",
