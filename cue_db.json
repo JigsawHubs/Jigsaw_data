@@ -328,6 +328,87 @@
       "trig": {"type": "button",
         "groupChain": "PP_DVD_group",
                "time": 0}
+    },
+    {
+      "name": "PP_invis",
+      "role":"ari",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/PP_A_10.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "PP_dasha_pirate",
+      "role":"ari",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/PP_A_11.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "PP_codebeard_matrix",
+      "role":"ari",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/PP_A_12.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "PP_codebeard_angry",
+      "role":"ari",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/PP_A_13.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "PP_codebeard_confused",
+      "role":"ari",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/PP_A_14.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "PP_codebeard_confusedhappysad",
+      "role":"ari",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/PP_A_15.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "PP_codebeard_neutral",
+      "role":"ari",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/PP_A_16.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "PP_codebeard_sad",
+      "role":"ari",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/PP_A_17.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "PP_dasha_avatar",
+      "role":"ari",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/PP_A_18.glb"},
+      "trig": {"type": "button",
+               "time": 0}
     }
     ]
   }
