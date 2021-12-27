@@ -211,6 +211,123 @@
       "trig": {"type": "button",
         "groupChain" : "PP_2_transition_group",
                "time": 0}
+    },
+    {
+      "name": "PP_enable_god_mic",
+      "role": "ari",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_change_rolloff",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["Daaarrrsha", "Codebeard"],
+                    "rolloff": 0,
+                    "refDistance": 1
+                    }
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "PP_disable_god_mic",
+      "role": "ari",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_change_rolloff",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["Daaarrrsha", "Codebeard"],
+                    "rolloff": 1.2,
+                    "refDistance": 1
+                    }
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "PP_sub_prop",
+      "role": "ari",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/PP_A_4.glb"},
+      "action": {"type": "spawn_prop",
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 0.05, "y":0.05, "z":0.05}},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "PP_DVD_case",
+      "role": "ari",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/PP_A_5.glb"},
+      "action": {"type": "spawn_prop",
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x":1, "y":1, "z":1}},
+      "trig": {"type": "button",
+        "groupChain": "PP_DVD_group",
+               "time": 0}
+    },
+    {
+      "name": "PP_DVD_1",
+      "role": "ari",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/PP_A_6.glb"},
+      "action": {"type": "spawn_prop",
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+        "groupChain": "PP_DVD_group",
+               "time": 0}
+    },
+    {
+      "name": "PP_DVD_2",
+      "role": "ari",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/PP_A_7.glb"},
+      "action": {"type": "spawn_prop",
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+        "groupChain": "PP_DVD_group",
+               "time": 0}
+    },
+    {
+      "name": "PP_DVD_3",
+      "role": "ari",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/PP_A_8.glb"},
+      "action": {"type": "spawn_prop",
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+        "groupChain": "PP_DVD_group",
+               "time": 0}
+    },
+    {
+      "name": "DVD_4",
+      "role": "housemanager",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/PP_A_9.glb"},
+      "action": {"type": "spawn_prop",
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+        "groupChain": "PP_DVD_group",
+               "time": 0}
     }
     ]
   }
