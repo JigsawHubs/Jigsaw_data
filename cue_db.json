@@ -159,7 +159,7 @@
     },
     {
       "name": "PP_2_transition_music",
-      "role": "naom",
+      "role": "ari",
       "target": { "type": "audio",
                   "dest": "url",
                   "src":  "https://jigsawhubs.github.io/Jigsaw_data/audio/PP_A_2.mp3"},
