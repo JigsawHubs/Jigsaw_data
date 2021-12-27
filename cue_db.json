@@ -195,7 +195,7 @@
     },
     {
       "name": "PP_transition_music",
-      "role": "ari",
+      "role": "none",
       "target": { "type": "audio",
                   "dest": "url",
                   "src":  "https://jigsawhubs.github.io/Jigsaw_data/audio/PP_A_2.mp3"},
@@ -214,7 +214,7 @@
     },
     {
       "name": "PP_spawn_sub",
-      "role": "ari",
+      "role": "none",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
