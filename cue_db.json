@@ -158,7 +158,43 @@
                "time": 0}
     },
     {
-      "name": "PP_2_transition_music",
+      "name": "PP_spawn_sailfish",
+      "role": "ari",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/PP_A_1.glb"},
+      "action": {"type": "spawn_prop",
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "PP_spawn_sailfish",
+      "role": "ari",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/PP_A_1.glb"},
+      "action": {"type": "spawn_prop",
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "PP_spawn_narwhal",
+      "role": "ari",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/PP_A_3.glb"},
+      "action": {"type": "spawn_prop",
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "PP_transition_music",
       "role": "ari",
       "target": { "type": "audio",
                   "dest": "url",
@@ -173,6 +209,7 @@
                   "refDistance":100,
                   "maxDistance":10000},
       "trig": {"type": "button",
+        "groupChain" : "PP_2_transition_group",
                "time": 0}
     }
     ]
