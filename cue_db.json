@@ -317,8 +317,8 @@
                "time": 0}
     },
     {
-      "name": "DVD_4",
-      "role": "housemanager",
+      "name": "PP_DVD_4",
+      "role": "ari",
       "target": { "type": "glb",
                   "dest": "url",
                   "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/PP_A_9.glb"},
