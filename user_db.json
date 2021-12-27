@@ -20,6 +20,6 @@
   "part4": {"name": "part4", "role": "participant"},
   "cinematic" : {"name": "camera", "role": "cinematic"},
   "naomi": {"name":"naomi","role":"naomi"},
-  "arit":{"name":"Codebeard","role":"pier2pier"},
-  "dash":{"name":"Daaarrrsha", "role":"pier2pier"}
+  "arit":{"name":"Codebeard","role":"ari"},
+  "dash":{"name":"Daaarrrsha", "role":"ari"}
  }
