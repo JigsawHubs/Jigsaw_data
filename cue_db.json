@@ -61,8 +61,8 @@
                      "dest": "url",
                      "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/student-house-party-scan.glb"},
          "action": {"type": "spawn_item",
-                 "pos": {"x": -36, "y":46, "z":2.25},
-                 "rot": {"x": 90, "y":0, "z":0},
+                 "pos": {"x": 0, "y":0, "z":0},
+                 "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1}},
          "trig": {"type": "button",
                   "time": 0}
@@ -74,8 +74,8 @@
                      "dest": "url",
                      "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/student-house-bedroom-scan.glb"},
          "action": {"type": "spawn_item",
-                 "pos": {"x": -36, "y":46, "z":2.25},
-                 "rot": {"x": 90, "y":0, "z":0},
+                 "pos": {"x": 0, "y":0, "z":0},
+                 "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1}},
          "trig": {"type": "button",
                   "time": 0}
