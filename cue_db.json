@@ -59,7 +59,7 @@
          "role": "naomi",
          "target": { "type": "glb",
                      "dest": "url",
-                     "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_student-house-party-scan-b.glb"},
+                     "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_student-house-party-scan-c.glb"},
          "action": {"type": "spawn_item",
                  "pos": {"x": -6.971, "y":5.048, "z":-36.151},
                  "rot": {"x": 0, "y":0, "z":0},
