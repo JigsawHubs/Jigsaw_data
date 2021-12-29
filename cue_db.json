@@ -120,19 +120,6 @@
                   "time": 0}
        },
        {
-         "name": "Club_Jack_Daniel_Bottle",
-         "role": "naomi",
-         "target": { "type": "glb",
-                     "dest": "url",
-                     "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_jackDaniel.glb"},
-         "action": {"type": "spawn_item",
-                 "pos": {"x": -36, "y":46, "z":2.25},
-                 "rot": {"x": 90, "y":0, "z":0},
-                 "scale": {"x": 1, "y":1, "z":1}},
-         "trig": {"type": "button",
-                  "time": 0}
-       },
-       {
          "name": "camera",
          "role": "demz",
          "target": { "type": "webcam",
