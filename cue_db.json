@@ -393,9 +393,8 @@
                     "function_name": "cueSocket",
                     "_cue": { 
                       "name": "avatar_big",
-                      "target": { "role": ["naomi"],
-                        "aspect" : "scale" },
-                      "action": { "type": "manipulate_avatar",
+                      "target": {"role" : "individual", "name" : "naomi", "aspect" : "scale"},
+                      "action": { "type": "manipulate_avatar", "attr": "object3D",
                         "anime": {
                          "targets": "",
                          "delay" : 0,
@@ -413,7 +412,7 @@
          "trig": {"type": "button",
                   "time": 0}
        },
-       {
+              {
          "name": "avatar_small",
          "role": "naomi",
          "target": { },
@@ -422,9 +421,8 @@
                     "function_name": "cueSocket",
                     "_cue": { 
                       "name": "avatar_big",
-                      "target": { "role": ["naomi"],
-                        "aspect" : "scale" },
-                      "action": { "type": "manipulate_avatar",
+                      "target": {"role" : "individual", "name" : "naomi", "aspect" : "scale"},
+                      "action": { "type": "manipulate_avatar", "attr": "object3D",
                         "anime": {
                          "targets": "",
                          "delay" : 0,
