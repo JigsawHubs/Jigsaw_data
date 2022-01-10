@@ -333,7 +333,7 @@
                    "target": { "role": "general" },
                    "action": { "type": "change_rolloff",
                     "names": ["naomi"],
-                    "rolloff": 0.5,
+                    "rolloff": 0.2,
                     "refDistance": 1
                     }
                 }
