@@ -383,6 +383,64 @@
                  "scale": {"x": 1, "y":1, "z":1}},
          "trig": {"type": "button",
                   "time": 0}
+       },
+       {
+         "name": "avatar_big",
+         "role": "naomi",
+         "target": { },
+         "action": {"type": "call_method_from_object",
+                    "object_name": "sockSys",
+                    "function_name": "cueSocket",
+                    "_cue": { 
+                      "name": "avatar_big",
+                      "target": { "role": ["naomi"],
+                        "aspect" : "scale" },
+                      "action": { "type": "manipulate_avatar",
+                        "anime": {
+                         "targets": "",
+                         "delay" : 0,
+                         "loop": false,
+                         "autoplay": false,
+                         "easing": "easeInOutSine",
+                         "duration": 0
+                         },
+                         "timelines" : [
+                           { "x": 1.5, "y": 1.5, "z": 1.5}
+                         ]
+                       }
+                     }
+                   },
+         "trig": {"type": "button",
+                  "time": 0}
+       },
+       {
+         "name": "avatar_small",
+         "role": "naomi",
+         "target": { },
+         "action": {"type": "call_method_from_object",
+                    "object_name": "sockSys",
+                    "function_name": "cueSocket",
+                    "_cue": { 
+                      "name": "avatar_big",
+                      "target": { "role": ["naomi"],
+                        "aspect" : "scale" },
+                      "action": { "type": "manipulate_avatar",
+                        "anime": {
+                         "targets": "",
+                         "delay" : 0,
+                         "loop": false,
+                         "autoplay": false,
+                         "easing": "easeInOutSine",
+                         "duration": 0
+                         },
+                         "timelines" : [
+                           { "x": 1, "y": 1, "z": 1}
+                         ]
+                       }
+                     }
+                   },
+         "trig": {"type": "button",
+                  "time": 0}
        }
     ]
   }
