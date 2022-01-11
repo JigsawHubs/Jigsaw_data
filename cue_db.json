@@ -372,7 +372,7 @@
                   "time": 0}
        },
        {
-         "name": "HOUS_Smidge_Bedroom_Scan",
+         "name": "HOUS_Smidge_Bedroom",
          "role": "naomi",
          "target": { "type": "glb",
                      "dest": "url",
@@ -443,7 +443,7 @@
     },
     {
       "name": "AV_small",
-      "role": "naomi",
+      "role": "stgm",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -491,7 +491,7 @@
        },
        {
          "name": "STUD_Party",
-         "role": "naomi",
+         "role": "stgm",
          "target": { "type": "glb",
                      "dest": "url",
                      "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_student-house-party-scan-c.glb"},
@@ -504,7 +504,7 @@
        },
        {
          "name": "STUD_Bedroom",
-         "role": "naomi",
+         "role": "stgm",
          "target": { "type": "glb",
                      "dest": "url",
                      "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_student-house-bedroom-scan.glb"},
@@ -517,7 +517,7 @@
        },
        {
          "name": "HOUS_Kitchen",
-         "role": "naomi",
+         "role": "stgm",
          "target": { "type": "glb",
                      "dest": "url",
                      "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_house-kitchen-scan.glb"},
@@ -530,7 +530,7 @@
        },
        {
          "name": "HOUS_Parents_Bedroom",
-         "role": "naomi",
+         "role": "stgm",
          "target": { "type": "glb",
                      "dest": "url",
                      "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_house-parents-scan.glb"},
@@ -542,8 +542,8 @@
                   "time": 0}
        },
        {
-         "name": "HOUS_Smidge_Bedroom_Scan",
-         "role": "naomi",
+         "name": "HOUS_Smidge_Bedroom",
+         "role": "stgm",
          "target": { "type": "glb",
                      "dest": "url",
                      "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_house-smidge-scan.glb"},
