@@ -265,15 +265,163 @@
       "trig": {"type": "button",
                "time": 0}
     },
-    {
-      "name": "avatar_big",
-      "role": "naomi",
+      {
+           "name": "AV_Naomi",
+           "role":"naomi",
+           "target": { },
+           "action": {"type": "change_avatar",
+                      "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NAOMI_NaomiAvatar.glb"},
+           "trig": {"type": "button",
+                    "time": 0}
+       },
+       {
+           "name": "AV_Partner",
+           "role":"naomi",
+           "target": { },
+           "action": {"type": "change_avatar",
+                      "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NAOMI_PartnerAvatar.glb"},
+           "trig": {"type": "button",
+                    "time": 0}
+       },
+       {
+           "name": "AV_Kid",
+           "role":"naomi",
+           "target": { },
+           "action": {"type": "change_avatar",
+                      "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NAOMI_KidAvatar.glb"},
+           "trig": {"type": "button",
+                    "time": 0}
+       },
+              {
+           "name": "AV_Gremlin",
+           "role":"naomi",
+           "target": { },
+           "action": {"type": "change_avatar",
+                      "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NAOMI_GremlinAvatar.glb"},
+           "trig": {"type": "button",
+                    "time": 0}
+       },
+       {
+           "name": "AV_Student",
+           "role":"naomi",
+           "target": { },
+           "action": {"type": "change_avatar",
+                      "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NAOMI_StudentAvatar.glb"},
+           "trig": {"type": "button",
+                    "time": 0}
+       },
+       {
+           "name": "AV_Young_Partner",
+           "role":"naomi",
+           "target": { },
+           "action": {"type": "change_avatar",
+                      "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NAOMI_YoungPartnerAvatar.glb"},
+           "trig": {"type": "button",
+                    "time": 0}
+       },
+       {
+         "name": "STUD_Party",
+         "role": "naomi",
+         "target": { "type": "glb",
+                     "dest": "url",
+                     "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_student-house-party-scan-c.glb"},
+         "action": {"type": "spawn_item",
+                 "pos": {"x": -7.3, "y":5.674, "z":-36.2},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+         "trig": {"type": "button",
+                  "time": 0}
+       },
+       {
+         "name": "STUD_Bedroom",
+         "role": "naomi",
+         "target": { "type": "glb",
+                     "dest": "url",
+                     "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_student-house-bedroom-scan.glb"},
+         "action": {"type": "spawn_item",
+                 "pos": {"x": -8.8, "y":12.1, "z":-36.65},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+         "trig": {"type": "button",
+                  "time": 0}
+       },
+       {
+         "name": "HOUS_Kitchen",
+         "role": "naomi",
+         "target": { "type": "glb",
+                     "dest": "url",
+                     "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_house-kitchen-scan.glb"},
+         "action": {"type": "spawn_item",
+                 "pos": {"x": -39.6, "y":3.95, "z":11.7},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+         "trig": {"type": "button",
+                  "time": 0}
+       },
+       {
+         "name": "HOUS_Parents_Bedroom",
+         "role": "naomi",
+         "target": { "type": "glb",
+                     "dest": "url",
+                     "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_house-parents-scan.glb"},
+         "action": {"type": "spawn_item",
+                 "pos": {"x": -32.6, "y":3.9, "z":16.5},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+         "trig": {"type": "button",
+                  "time": 0}
+       },
+       {
+         "name": "HOUS_Smidge_Bedroom_Scan",
+         "role": "naomi",
+         "target": { "type": "glb",
+                     "dest": "url",
+                     "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_house-smidge-scan.glb"},
+         "action": {"type": "spawn_item",
+                 "pos": {"x": -27.335, "y":3.85, "z":12.725},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+         "trig": {"type": "button",
+                  "time": 0}
+       },
+      {
+        "name": "AV_inv",
+        "role":"stgm",
+        "target": { },
+        "action": {"type": "change_avatar",
+                   "link":"https://onboardxr.github.io/onboard_json/avatar/invisibleAv.glb"},
+        "trig": {"type": "button",
+                 "time": 0}
+       },
+       {
+         "name": "ROFF_stgm",
+         "role": "stgm",
+         "target": { },
+         "action": {"type": "call_method_from_object",
+                    "object_name": "sockSys",
+                    "function_name": "cueSocket",
+                    "_cue": { 
+                      "name": "test_change_rolloff",
+                      "target": { "role": "general" },
+                      "action": { "type": "change_rolloff",
+                       "names": ["stgm"],
+                       "rolloff": 0.2,
+                       "refDistance": 1
+                       }
+                   }
+                   },
+         "trig": {"type": "button",
+                  "time": 0}
+       },
+      {
+      "name": "AV_big",
+      "role": "stgm",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
                  "function_name": "cueSocket",
                  "_cue": { 
-                   "name": "avatar_big",
+                   "name": "AV_big",
                    "target": {"role" : "individual", "name" : "naomi", "aspect" : "scale"},
                    "action": { "type": "manipulate_avatar", "attr": "object3D",
                      "anime": {
@@ -294,14 +442,14 @@
                "time": 0}
     },
     {
-      "name": "avatar_small",
+      "name": "AV_small",
       "role": "naomi",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
                  "function_name": "cueSocket",
                  "_cue": { 
-                   "name": "avatar_big",
+                   "name": "AV_big",
                    "target": {"role" : "individual", "name" : "naomi", "aspect" : "scale"},
                    "action": { "type": "manipulate_avatar", "attr": "object3D",
                      "anime": {
@@ -321,82 +469,28 @@
       "trig": {"type": "button",
                "time": 0}
     },
-    {
-      "name": "naomi_rolloff",
-      "role": "naomi",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": { 
-                   "name": "test_change_rolloff",
-                   "target": { "role": "general" },
-                   "action": { "type": "change_rolloff",
-                    "names": ["naomi"],
-                    "rolloff": 0.2,
-                    "refDistance": 1
-                    }
-                }
-                },
-      "trig": {"type": "button",
-               "time": 0}
-    },
-      {
-           "name": "Avatar_Naomi",
-           "role":"naomi",
-           "target": { },
-           "action": {"type": "change_avatar",
-                      "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NAOMI_NaomiAvatar.glb"},
-           "trig": {"type": "button",
-                    "time": 0}
+   {
+         "name": "ROFF_naomi",
+         "role": "stgm",
+         "target": { },
+         "action": {"type": "call_method_from_object",
+                    "object_name": "sockSys",
+                    "function_name": "cueSocket",
+                    "_cue": { 
+                      "name": "test_change_rolloff",
+                      "target": { "role": "general" },
+                      "action": { "type": "change_rolloff",
+                       "names": ["naomi"],
+                       "rolloff": 0.2,
+                       "refDistance": 1
+                       }
+                   }
+                   },
+         "trig": {"type": "button",
+                  "time": 0}
        },
        {
-           "name": "Avatar_Partner",
-           "role":"naomi",
-           "target": { },
-           "action": {"type": "change_avatar",
-                      "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NAOMI_PartnerAvatar.glb"},
-           "trig": {"type": "button",
-                    "time": 0}
-       },
-       {
-           "name": "Avatar_Kid",
-           "role":"naomi",
-           "target": { },
-           "action": {"type": "change_avatar",
-                      "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NAOMI_KidAvatar.glb"},
-           "trig": {"type": "button",
-                    "time": 0}
-       },
-              {
-           "name": "Avatar_Gremlin",
-           "role":"naomi",
-           "target": { },
-           "action": {"type": "change_avatar",
-                      "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NAOMI_GremlinAvatar.glb"},
-           "trig": {"type": "button",
-                    "time": 0}
-       },
-              {
-           "name": "Avatar_Student",
-           "role":"naomi",
-           "target": { },
-           "action": {"type": "change_avatar",
-                      "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NAOMI_StudentAvatar.glb"},
-           "trig": {"type": "button",
-                    "time": 0}
-       },
-              {
-           "name": "Avatar_Young_Partner",
-           "role":"naomi",
-           "target": { },
-           "action": {"type": "change_avatar",
-                      "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NAOMI_YoungPartnerAvatar.glb"},
-           "trig": {"type": "button",
-                    "time": 0}
-       },
-       {
-         "name": "Student_Party_Scan",
+         "name": "STUD_Party",
          "role": "naomi",
          "target": { "type": "glb",
                      "dest": "url",
@@ -409,7 +503,7 @@
                   "time": 0}
        },
        {
-         "name": "Student_Bedroom_Scan",
+         "name": "STUD_Bedroom",
          "role": "naomi",
          "target": { "type": "glb",
                      "dest": "url",
@@ -422,7 +516,7 @@
                   "time": 0}
        },
        {
-         "name": "House_Kitchen_Scan",
+         "name": "HOUS_Kitchen",
          "role": "naomi",
          "target": { "type": "glb",
                      "dest": "url",
@@ -435,7 +529,7 @@
                   "time": 0}
        },
        {
-         "name": "House_Parents_Bedroom_Scan",
+         "name": "HOUS_Parents_Bedroom",
          "role": "naomi",
          "target": { "type": "glb",
                      "dest": "url",
@@ -448,7 +542,7 @@
                   "time": 0}
        },
        {
-         "name": "House_Smidge_Bedroom_Scan",
+         "name": "HOUS_Smidge_Bedroom_Scan",
          "role": "naomi",
          "target": { "type": "glb",
                      "dest": "url",
