@@ -498,7 +498,8 @@
          "action": {"type": "spawn_item",
                  "pos": {"x": -7.3, "y":5.674, "z":-36.2},
                  "rot": {"x": 0, "y":0, "z":0},
-                 "scale": {"x": 1, "y":1, "z":1}},
+                 "scale": {"x": 1, "y":1, "z":1},
+                 "pin_it": true},
          "trig": {"type": "button",
                   "time": 0}
        },
