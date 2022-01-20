@@ -403,6 +403,24 @@
          "trig": {"type": "button",
                   "time": 0}
        },
+    {
+      "name": "SCEN_Intro",
+      "role":"stgm",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"https://onboardxr.live/scenes/4pqAwKD"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "SCEN_MindLand",
+      "role":"stgm",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"https://onboardxr.live/scenes/4pqAwKD"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
       {
         "name": "AV_inv",
         "role":"stgm",
@@ -591,6 +609,24 @@
                  "pin_it": 3000},
          "trig": {"type": "button",
                   "time": 0}
-       }
+       },
+    {
+      "name": "SCEN_Intro",
+      "role":"stgm",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"https://onboardxr.live/scenes/4pqAwKD"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "SCEN_MindLand",
+      "role":"stgm",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"https://onboardxr.live/scenes/4pqAwKD"},
+      "trig": {"type": "button",
+               "time": 0}
+    }
     ]
   }
