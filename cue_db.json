@@ -627,6 +627,22 @@
                  "link":"https://onboardxr.live/scenes/2QvJvmB"},
       "trig": {"type": "button",
                "time": 0}
+    },
+      {
+      "name": "GHOST_to_spawn",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "ghost_to_spawn",
+                   "target": { "role": "ghost" },
+                   "action": { "type": "hop_to_spawn_point"}
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
     }
     ]
   }
