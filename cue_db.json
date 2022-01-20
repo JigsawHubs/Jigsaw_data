@@ -329,7 +329,7 @@
                  "pos": {"x": -7.3, "y":5.674, "z":-36.2},
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1},
-                 "pin_it": 3000},
+                 "pin_it": 7000},
          "trig": {"type": "button",
                   "time": 0}
        },
@@ -343,7 +343,7 @@
                  "pos": {"x": -8.8, "y":12.1, "z":-36.65},
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1},
-                 "pin_it": 3000},
+                 "pin_it": 7000},
          "trig": {"type": "button",
                   "time": 0}
        },
@@ -357,7 +357,7 @@
                  "pos": {"x": -39.6, "y":3.95, "z":11.7},
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1},
-                 "pin_it": 3000},
+                 "pin_it": 7000},
          "trig": {"type": "button",
                   "time": 0}
        },
@@ -371,7 +371,7 @@
                  "pos": {"x": -32.6, "y":3.9, "z":16.5},
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1},
-                 "pin_it": 3000},
+                 "pin_it": 7000},
          "trig": {"type": "button",
                   "time": 0}
        },
@@ -385,7 +385,7 @@
                  "pos": {"x": -27.335, "y":3.85, "z":12.725},
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1},
-                 "pin_it": 3000},
+                 "pin_it": 7000},
          "trig": {"type": "button",
                   "time": 0}
        },
@@ -399,7 +399,7 @@
                  "pos": {"x": -24.358, "y":3.7, "z":20.8},
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1},
-                 "pin_it": 3000},
+                 "pin_it": 7000},
          "trig": {"type": "button",
                   "time": 0}
        },
@@ -536,7 +536,7 @@
                  "pos": {"x": -7.3, "y":5.674, "z":-36.2},
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1},
-                 "pin_it": 3000},
+                 "pin_it": 7000},
          "trig": {"type": "button",
                   "time": 0}
        },
@@ -550,7 +550,7 @@
                  "pos": {"x": -8.8, "y":12.1, "z":-36.65},
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1},
-                 "pin_it": 3000},
+                 "pin_it": 7000},
          "trig": {"type": "button",
                   "time": 0}
        },
@@ -564,7 +564,7 @@
                  "pos": {"x": -39.6, "y":3.95, "z":11.7},
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1},
-                 "pin_it": 3000},
+                 "pin_it": 7000},
          "trig": {"type": "button",
                   "time": 0}
        },
@@ -578,7 +578,7 @@
                  "pos": {"x": -32.6, "y":3.9, "z":16.5},
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1},
-                 "pin_it": 3000},
+                 "pin_it": 7000},
          "trig": {"type": "button",
                   "time": 0}
        },
@@ -592,7 +592,7 @@
                  "pos": {"x": -27.335, "y":3.85, "z":12.725},
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1},
-                 "pin_it": 3000},
+                 "pin_it": 7000},
          "trig": {"type": "button",
                   "time": 0}
        },
@@ -606,7 +606,7 @@
                  "pos": {"x": -24.358, "y":3.7, "z":20.8},
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1},
-                 "pin_it": 3000},
+                 "pin_it": 7000},
          "trig": {"type": "button",
                   "time": 0}
        },
@@ -627,47 +627,6 @@
                  "link":"https://onboardxr.live/scenes/2QvJvmB"},
       "trig": {"type": "button",
                "time": 0}
-    },
-       {
-         "name": "HOUS_Parents_Bedroom_NO",
-         "role": "stgm",
-         "target": { "type": "glb",
-                     "dest": "url",
-                     "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_house-parents-scan.glb"},
-         "action": {"type": "spawn_item",
-                 "pos": {"x": -32.6, "y":3.9, "z":16.5},
-                 "rot": {"x": 0, "y":0, "z":0},
-                 "scale": {"x": 1, "y":1, "z":1}},
-         "trig": {"type": "button",
-                  "time": 0}
-       },
-       {
-         "name": "HOUS_Parents_Bedroom_TRUE",
-         "role": "stgm",
-         "target": { "type": "glb",
-                     "dest": "url",
-                     "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_house-parents-scan.glb"},
-         "action": {"type": "spawn_item",
-                 "pos": {"x": -32.6, "y":3.9, "z":16.5},
-                 "rot": {"x": 0, "y":0, "z":0},
-                 "scale": {"x": 1, "y":1, "z":1},
-                 "pin_it": true},
-         "trig": {"type": "button",
-                  "time": 0}
-       },
-       {
-         "name": "HOUS_Parents_Bedroom_7000",
-         "role": "stgm",
-         "target": { "type": "glb",
-                     "dest": "url",
-                     "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_house-parents-scan.glb"},
-         "action": {"type": "spawn_item",
-                 "pos": {"x": -32.6, "y":3.9, "z":16.5},
-                 "rot": {"x": 0, "y":0, "z":0},
-                 "scale": {"x": 1, "y":1, "z":1},
-                 "pin_it": 7000},
-         "trig": {"type": "button",
-                  "time": 0}
-       }
+    }
     ]
   }
