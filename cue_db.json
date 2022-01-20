@@ -417,7 +417,7 @@
       "role":"stgm",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"https://onboardxr.live/scenes/4pqAwKD"},
+                 "link":"https://onboardxr.live/scenes/2QvJvmB"},
       "trig": {"type": "button",
                "time": 0}
     },
@@ -624,7 +624,7 @@
       "role":"stgm",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"https://onboardxr.live/scenes/4pqAwKD"},
+                 "link":"https://onboardxr.live/scenes/2QvJvmB"},
       "trig": {"type": "button",
                "time": 0}
     }
