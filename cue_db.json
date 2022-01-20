@@ -627,6 +627,47 @@
                  "link":"https://onboardxr.live/scenes/2QvJvmB"},
       "trig": {"type": "button",
                "time": 0}
-    }
+    },
+       {
+         "name": "HOUS_Parents_Bedroom_NO",
+         "role": "stgm",
+         "target": { "type": "glb",
+                     "dest": "url",
+                     "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_house-parents-scan.glb"},
+         "action": {"type": "spawn_item",
+                 "pos": {"x": -32.6, "y":3.9, "z":16.5},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+         "trig": {"type": "button",
+                  "time": 0}
+       },
+       {
+         "name": "HOUS_Parents_Bedroom_TRUE",
+         "role": "stgm",
+         "target": { "type": "glb",
+                     "dest": "url",
+                     "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_house-parents-scan.glb"},
+         "action": {"type": "spawn_item",
+                 "pos": {"x": -32.6, "y":3.9, "z":16.5},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1},
+                 "pin_it": true},
+         "trig": {"type": "button",
+                  "time": 0}
+       },
+       {
+         "name": "HOUS_Parents_Bedroom_7000",
+         "role": "stgm",
+         "target": { "type": "glb",
+                     "dest": "url",
+                     "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_house-parents-scan.glb"},
+         "action": {"type": "spawn_item",
+                 "pos": {"x": -32.6, "y":3.9, "z":16.5},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1},
+                 "pin_it": 7000},
+         "trig": {"type": "button",
+                  "time": 0}
+       }
     ]
   }
