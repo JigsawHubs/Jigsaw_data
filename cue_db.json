@@ -405,7 +405,7 @@
        },
     {
       "name": "SCEN_Intro",
-      "role":"stgm",
+      "role":"naomi",
       "target": { },
       "action": {"type": "change_scene",
                  "link":"https://onboardxr.live/scenes/4pqAwKD"},
@@ -414,7 +414,7 @@
     },
     {
       "name": "SCEN_MindLand",
-      "role":"stgm",
+      "role":"naomi",
       "target": { },
       "action": {"type": "change_scene",
                  "link":"https://onboardxr.live/scenes/2QvJvmB"},
