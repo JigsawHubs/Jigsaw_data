@@ -643,6 +643,62 @@
                 },
       "trig": {"type": "button",
                "time": 0}
+    },
+    {
+      "name": "WP_rooftop",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_lock_waypoint",
+                   "target": { "role": "general" },
+                   "action": { "type" : "lock_waypoint",
+                     "waypoint" : "rooftop",
+                     "recallAud" : true,
+                     "maxDist" : 0.5,
+                     "anime" : {
+                      "targets": "",
+                      "delay" : 1000,
+                      "loop": false,
+                      "autoplay": true,
+                      "easing": "easeOutSine",
+                      "duration": 7500
+                      }
+                    }
+                  }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "WP_hs_bedroom",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_lock_waypoint",
+                   "target": { "role": "general" },
+                   "action": { "type" : "house_parents_bedroom",
+                     "waypoint" : "rooftop",
+                     "recallAud" : true,
+                     "maxDist" : 0.5,
+                     "anime" : {
+                      "targets": "",
+                      "delay" : 1000,
+                      "loop": false,
+                      "autoplay": true,
+                      "easing": "easeOutSine",
+                      "duration": 7500
+                      }
+                    }
+                  }
+                },
+      "trig": {"type": "button",
+               "time": 0}
     }
     ]
   }
