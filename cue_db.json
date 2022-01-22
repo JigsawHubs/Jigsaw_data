@@ -266,6 +266,15 @@
                "time": 0}
     },
       {
+           "name": "AV_Presenter",
+           "role":"naomi",
+           "target": { },
+           "action": {"type": "change_avatar",
+                      "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NAOMI_PresenterAvatar.glb"},
+           "trig": {"type": "button",
+                    "time": 0}
+       },
+      {
            "name": "AV_Naomi",
            "role":"naomi",
            "target": { },
