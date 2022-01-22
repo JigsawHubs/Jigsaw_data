@@ -673,7 +673,7 @@
                       "loop": false,
                       "autoplay": true,
                       "easing": "easeOutSine",
-                      "duration": 7500
+                      "duration": 10000
                       }
                     }
                   }
@@ -691,8 +691,8 @@
                  "_cue": { 
                    "name": "test_lock_waypoint",
                    "target": { "role": "general" },
-                   "action": { "type" : "house_parents_bedroom",
-                     "waypoint" : "rooftop",
+                   "action": { "type" : "lock_waypoint",
+                     "waypoint" : "house_parents_bedroom",
                      "recallAud" : true,
                      "maxDist" : 0.5,
                      "anime" : {
@@ -701,7 +701,7 @@
                       "loop": false,
                       "autoplay": true,
                       "easing": "easeOutSine",
-                      "duration": 7500
+                      "duration": 10000
                       }
                     }
                   }
