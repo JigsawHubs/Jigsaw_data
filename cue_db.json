@@ -426,7 +426,7 @@
       "role":"naomi",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"https://onboardxr.live/scenes/2QvJvmB"},
+                 "link":"https://onboardxr.live/scenes/2CNLtvQ"},
       "trig": {"type": "button",
                "time": 0}
     },
@@ -633,7 +633,7 @@
       "role":"stgm",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"https://onboardxr.live/scenes/2QvJvmB"},
+                 "link":"https://onboardxr.live/scenes/2CNLtvQ"},
       "trig": {"type": "button",
                "time": 0}
     },
