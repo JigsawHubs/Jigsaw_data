@@ -663,17 +663,17 @@
                  "_cue": { 
                    "name": "test_lock_waypoint",
                    "target": { "role": "general" },
-                   "action": { "type" : "lock_waypoint",
+                   "action": { "type" : "recall_audience",
                      "waypoint" : "rooftop",
                      "recallAud" : true,
-                     "maxDist" : 2,
+                     "maxDist" : 3,
                      "anime" : {
                       "targets": "",
-                      "delay" : 5000,
+                      "delay" : 1000,
                       "loop": false,
                       "autoplay": true,
                       "easing": "easeOutSine",
-                      "duration": 10000
+                      "duration": 1000
                       }
                     }
                   }
@@ -691,17 +691,17 @@
                  "_cue": { 
                    "name": "test_lock_waypoint",
                    "target": { "role": "general" },
-                   "action": { "type" : "lock_waypoint",
+                   "action": { "type" : "recall_audience",
                      "waypoint" : "house_parents_bedroom",
                      "recallAud" : true,
-                     "maxDist" : 2,
+                     "maxDist" : 3,
                      "anime" : {
                       "targets": "",
-                      "delay" : 5000,
+                      "delay" : 1000,
                       "loop": false,
                       "autoplay": true,
                       "easing": "easeOutSine",
-                      "duration": 10000
+                      "duration": 1000
                       }
                     }
                   }
