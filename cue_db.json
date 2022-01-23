@@ -682,7 +682,7 @@
                "time": 0}
     },
     {
-      "name": "WP_hs_bedroom",
+      "name": "WP_stu_party",
       "role": "stgm",
       "target": { },
       "action": {"type": "call_method_from_object",
@@ -692,7 +692,203 @@
                    "name": "test_lock_waypoint",
                    "target": { "role": "general" },
                    "action": { "type" : "recall_audience",
-                     "waypoint" : "house_parents_bedroom",
+                     "waypoint" : "student_party",
+                     "recallAud" : true,
+                     "maxDist" : 3,
+                     "anime" : {
+                      "targets": "",
+                      "delay" : 1000,
+                      "loop": false,
+                      "autoplay": true,
+                      "easing": "easeOutSine",
+                      "duration": 1000
+                      }
+                    }
+                  }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "WP_house",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_lock_waypoint",
+                   "target": { "role": "general" },
+                   "action": { "type" : "recall_audience",
+                     "waypoint" : "house",
+                     "recallAud" : true,
+                     "maxDist" : 3,
+                     "anime" : {
+                      "targets": "",
+                      "delay" : 1000,
+                      "loop": false,
+                      "autoplay": true,
+                      "easing": "easeOutSine",
+                      "duration": 1000
+                      }
+                    }
+                  }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "WP_cave",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_lock_waypoint",
+                   "target": { "role": "general" },
+                   "action": { "type" : "recall_audience",
+                     "waypoint" : "cave",
+                     "recallAud" : true,
+                     "maxDist" : 3,
+                     "anime" : {
+                      "targets": "",
+                      "delay" : 1000,
+                      "loop": false,
+                      "autoplay": true,
+                      "easing": "easeOutSine",
+                      "duration": 1000
+                      }
+                    }
+                  }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "WP_graveyard",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_lock_waypoint",
+                   "target": { "role": "general" },
+                   "action": { "type" : "recall_audience",
+                     "waypoint" : "graveyard",
+                     "recallAud" : true,
+                     "maxDist" : 3,
+                     "anime" : {
+                      "targets": "",
+                      "delay" : 1000,
+                      "loop": false,
+                      "autoplay": true,
+                      "easing": "easeOutSine",
+                      "duration": 1000
+                      }
+                    }
+                  }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "WP_caravan",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_lock_waypoint",
+                   "target": { "role": "general" },
+                   "action": { "type" : "recall_audience",
+                     "waypoint" : "caravan",
+                     "recallAud" : true,
+                     "maxDist" : 3,
+                     "anime" : {
+                      "targets": "",
+                      "delay" : 1000,
+                      "loop": false,
+                      "autoplay": true,
+                      "easing": "easeOutSine",
+                      "duration": 1000
+                      }
+                    }
+                  }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "WP_club",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_lock_waypoint",
+                   "target": { "role": "general" },
+                   "action": { "type" : "recall_audience",
+                     "waypoint" : "club",
+                     "recallAud" : true,
+                     "maxDist" : 3,
+                     "anime" : {
+                      "targets": "",
+                      "delay" : 1000,
+                      "loop": false,
+                      "autoplay": true,
+                      "easing": "easeOutSine",
+                      "duration": 1000
+                      }
+                    }
+                  }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "WP_treehouse",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_lock_waypoint",
+                   "target": { "role": "general" },
+                   "action": { "type" : "recall_audience",
+                     "waypoint" : "treehouse",
+                     "recallAud" : true,
+                     "maxDist" : 3,
+                     "anime" : {
+                      "targets": "",
+                      "delay" : 1000,
+                      "loop": false,
+                      "autoplay": true,
+                      "easing": "easeOutSine",
+                      "duration": 1000
+                      }
+                    }
+                  }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "WP_beach",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_lock_waypoint",
+                   "target": { "role": "general" },
+                   "action": { "type" : "recall_audience",
+                     "waypoint" : "beach",
                      "recallAud" : true,
                      "maxDist" : 3,
                      "anime" : {
