@@ -654,7 +654,7 @@
                "time": 0}
     },
     {
-      "name": "WP_rooftop",
+      "name": "REC_rooftop",
       "role": "stgm",
       "target": { },
       "action": {"type": "call_method_from_object",
@@ -682,7 +682,7 @@
                "time": 0}
     },
     {
-      "name": "WP_stu_party",
+      "name": "REC_stu_party",
       "role": "stgm",
       "target": { },
       "action": {"type": "call_method_from_object",
@@ -710,7 +710,7 @@
                "time": 0}
     },
     {
-      "name": "WP_house",
+      "name": "REC_house",
       "role": "stgm",
       "target": { },
       "action": {"type": "call_method_from_object",
@@ -738,7 +738,7 @@
                "time": 0}
     },
     {
-      "name": "WP_cave",
+      "name": "REC_cave",
       "role": "stgm",
       "target": { },
       "action": {"type": "call_method_from_object",
@@ -766,7 +766,7 @@
                "time": 0}
     },
     {
-      "name": "WP_graveyard",
+      "name": "REC_graveyard",
       "role": "stgm",
       "target": { },
       "action": {"type": "call_method_from_object",
@@ -794,7 +794,7 @@
                "time": 0}
     },
     {
-      "name": "WP_caravan",
+      "name": "REC_caravan",
       "role": "stgm",
       "target": { },
       "action": {"type": "call_method_from_object",
@@ -822,7 +822,7 @@
                "time": 0}
     },
     {
-      "name": "WP_club",
+      "name": "REC_club",
       "role": "stgm",
       "target": { },
       "action": {"type": "call_method_from_object",
@@ -850,7 +850,7 @@
                "time": 0}
     },
     {
-      "name": "WP_treehouse",
+      "name": "REC_treehouse",
       "role": "stgm",
       "target": { },
       "action": {"type": "call_method_from_object",
@@ -878,7 +878,7 @@
                "time": 0}
     },
     {
-      "name": "WP_beach",
+      "name": "REC_beach",
       "role": "stgm",
       "target": { },
       "action": {"type": "call_method_from_object",
@@ -902,6 +902,87 @@
                     }
                   }
                 },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "WP_rooftop",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"rooftop"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "WP_stu_party",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"student_party"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "WP_house",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"house"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "WP_cave",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"cave"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "WP_graveyard",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"graveyard"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "WP_caravan",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"caravan"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "WP_club",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"club"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "WP_treehouse",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"treehouse"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "WP_beach",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"beach"},
       "trig": {"type": "button",
                "time": 0}
     }
