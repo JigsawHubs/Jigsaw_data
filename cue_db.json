@@ -432,7 +432,7 @@
     },
     {
       "name": "SCEN_Credits",
-      "role":"stgm",
+      "role":"naomi",
       "target": { },
       "action": {"type": "change_scene",
                  "link":"https://onboardxr.live/scenes/vdbpHuz"},
