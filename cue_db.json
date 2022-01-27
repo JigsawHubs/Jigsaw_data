@@ -430,6 +430,15 @@
       "trig": {"type": "button",
                "time": 0}
     },
+    {
+      "name": "SCEN_Credits",
+      "role":"stgm",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"https://onboardxr.live/scenes/vdbpHuz"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
       {
         "name": "AV_inv",
         "role":"stgm",
@@ -454,6 +463,15 @@
       "target": { },
       "action": {"type": "change_scene",
                  "link":"https://onboardxr.live/scenes/MP2f2iz"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "SCEN_Credits",
+      "role":"stgm",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"https://onboardxr.live/scenes/vdbpHuz"},
       "trig": {"type": "button",
                "time": 0}
     },
