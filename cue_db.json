@@ -1091,7 +1091,7 @@
                       {"x": 0, "y": -1.16, "z": 0,"delay":15000, "easing": "easeInSine", "duration": 10000},
                       {"x": 0, "y": -1.96, "z": 0,"delay":0, "easing": "easeOutSine", "duration": 10000},
                       {"x": 0, "y": 1.18, "z": 0,"delay":28000, "easing": "easeInOutSine", "duration": 10000},
-                      {"x": 0, "y": 2.74, "z": 0,"delay":3000, "easing": "easeInOutSine", "duration": 15000}
+                      {"x": 0, "y": 2.44, "z": 0,"delay":3000, "easing": "easeInOutSine", "duration": 15000}
                      ]
                    }
                  }
