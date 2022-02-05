@@ -919,6 +919,186 @@
                  "anchor":"beach"},
       "trig": {"type": "button",
                "time": 0}
+    },
+    {
+      "name": "Polys_SM_1_load_red_skybox",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "Polys_SM_1_load_red_skybox",
+                   "target": { "role": "general" },
+                   "action": { "type": "load_360_image",
+                    "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/0133a85c-4f1a-40d5-b3ae-008add7fe5e4.png",
+                    "position" : {"x": -673.9999999999997, "y": 19.999999999999414, "z": -462.3500000000002},
+                    "rotation" : {"x": 0, "y": 0, "z": 0},
+                    "scale" : {"x": 415, "y": 415, "z": 415}
+                  }
+                  }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "Polys_SM_group1",
+               "time": 0}
+    },
+    {
+      "name": "Polys_SM_2_shrink_red_skybox",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "Polys_SM_2_shrink_red_skybox",
+                   "target": { "role": "general",
+                      "aspect": "scale"
+                  },
+                   "action": { "type": "manipulate_skybox_360",
+                    "mapItem" : "Polys_SM_1_load_red_skybox",
+                    "attr": "object3D",
+                    "anime": {
+                      "targets": "",
+                      "delay" : 0,
+                      "loop": false,
+                      "autoplay": false,
+                      "easing": "easeInSine",
+                      "duration": 1000
+                      },
+                      "timelines" : [
+                        {"x": 400, "y": 400, "z": 400,"delay": 0, "easing": "linear", "duration": 7000}
+                      ]
+                    }
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "Polys_SM_group2",
+               "time": 0}
+    },
+    {
+      "name": "Polys_SM_2_move_red_skybox",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "Polys_SM_2_shrink_red_skybox",
+                   "target": { "role": "general",
+                      "aspect": "position"
+                  },
+                   "action": { "type": "manipulate_skybox_360",
+                    "mapItem" : "Polys_SM_1_load_red_skybox",
+                    "attr": "object3D",
+                    "anime": {
+                      "targets": "",
+                      "delay" : 0,
+                      "loop": false,
+                      "autoplay": false,
+                      "easing": "easeInSine",
+                      "duration": 1000
+                      },
+                      "timelines" : [
+                        {"x": -673.9999999999997, "y": -75, "z": -462.3500000000002,"delay": 0, "easing": "linear", "duration": 7000}
+                      ]
+                    }
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "Polys_SM_group2",
+               "time": 0}
+    },
+    {
+      "name": "Test_Cam_Run",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "NPC_SM_9_CAM_position",
+                  "target": { "role" : "cinematic",
+                    "aspect" : "position" },
+                  "action": { "type": "manipulate_avatar",
+                    "attr": "object3D",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 0,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "linear",
+                     "duration": 1
+                     },
+                     "timelines" : [
+                      {"x": -682.3650254170542, "y": 6.1413266658803085, "z": -330.9385314948668,"delay":0, "easing": "easeOutSine", "duration": 0},
+                      {"x": -715.542500080495, "y": 6.1413266658803085, "z": -312.5780079310108,"delay":15000, "easing": "easeInSine", "duration": 10000},
+                      {"x": -730.1729698481583, "y": 6.141326665880334, "z": -334.82917501227774,"delay":0, "easing": "easeOutSine", "duration": 10000},
+                      {"x": -0.1696595080280385, "y": 7.637563693626752, "z": -12.306915307756618,"delay":5000, "easing": "easeInOutSine", "duration": 20000},
+                      {"x": 25.795738483934624, "y": 7.5126653138492525, "z": -5.170889163420923,"delay":3000, "easing": "easeInOutSine", "duration": 10000},
+                      {"x": 31.192129554966055, "y": -8.458756248014327, "z": 76.30984525259282,"delay":3000, "easing": "easeInOutSine", "duration": 15000},
+                      {"x": 3.1833161557782863, "y": -14.17288974375315, "z": 100.83677890793567,"delay":6000, "easing": "easeInSine", "duration": 7000}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "Test_Cam_group1",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_2_brnd2_to_invis",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "NPC_SM_2_brnd_to_hero",
+                  "role":"stagemanager",
+                  "target": { "role" : "cinematic"
+                  },
+                  "action": {"type": "change_avatar",
+                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_24.glb"}
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "Test_Cam_group1",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_2_brnd_starting_rotation",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "NPC_SM_2_brnd_starting_rotation",
+                  "target": { "role" : "cinematic",
+                    "aspect" : "rotation" },
+                  "action": { "type": "manipulate_avatar",
+                    "attr": "object3D",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 0,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "linear",
+                     "duration": 0
+                     },
+                     "timelines" : [
+                      {"x": 0, "y": 0.4, "z": 0,"delay":0, "easing": "easeOutSine", "duration": 0},
+                      {"x": 0, "y": -1.16, "z": 0,"delay":15000, "easing": "easeInSine", "duration": 10000},
+                      {"x": 0, "y": -1.96, "z": 0,"delay":0, "easing": "easeOutSine", "duration": 10000},
+                      {"x": 0, "y": 1.18, "z": 0,"delay":28000, "easing": "easeInOutSine", "duration": 10000},
+                      {"x": 0, "y": 2.74, "z": 0,"delay":3000, "easing": "easeInOutSine", "duration": 15000}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "Test_Cam_group1",
+               "time": 0}
     }
     ]
   }
