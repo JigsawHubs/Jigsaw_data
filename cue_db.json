@@ -1099,6 +1099,33 @@
       "trig": {"type": "button",
         "groupChain" : "Test_Cam_group1",
                "time": 0}
+    },
+    {
+      "name": "Polys_startPos",
+      "role": "clem",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"clemStartPos"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "Polys_startPos",
+      "role": "demz",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"clemStartPos"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "Polys_startPos",
+      "role": "demz",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"musicPos"},
+      "trig": {"type": "button",
+               "time": 0}
     }
     ]
   }
