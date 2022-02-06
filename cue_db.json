@@ -1346,13 +1346,31 @@
                "time": 0}
     },
     {
-      "name": "Polys_startPos",
+      "name": "Polys_musicPos",
       "role": "demz",
       "target": { },
       "action": {"type": "jump_to_waypoint",
                  "anchor":"musicPos"},
       "trig": {"type": "button",
                "time": 0}
-    }
+    },
+      {
+        "name": "AV_inv",
+        "role":"clem",
+        "target": { },
+        "action": {"type": "change_avatar",
+                   "link":"https://onboardxr.github.io/onboard_json/avatar/invisibleAv.glb"},
+        "trig": {"type": "button",
+                 "time": 0}
+       },
+      {
+        "name": "AV_inv",
+        "role":"demz",
+        "target": { },
+        "action": {"type": "change_avatar",
+                   "link":"https://onboardxr.github.io/onboard_json/avatar/invisibleAv.glb"},
+        "trig": {"type": "button",
+                 "time": 0}
+       }
     ]
   }
