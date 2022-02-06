@@ -921,6 +921,20 @@
                "time": 0}
     },
     {
+      "name": "Polys_SM_1_load_NPC_object",
+      "role": "stagemanager",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/62c3aeb7-d202-4a1e-9204-feacef64e059.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": {"x": -529.6143798828125, "y":-100, "z":-330.9290771484375},
+                 "rot": {"x": 0, "y":4.7, "z":0},
+                 "scale": {"x": 100, "y":75, "z":100}},
+      "trig": {"type": "button",
+                "groupChain": "Polys_SM_group1",
+               "time": 0}
+    },
+    {
       "name": "Polys_SM_1_load_red_skybox",
       "role": "stagemanager",
       "target": { },
@@ -940,6 +954,70 @@
                 },
       "trig": {"type": "button",
         "groupChain" : "Polys_SM_group1",
+               "time": 0}
+    },
+    {
+      "name": "Polys_SM_1_brnd_to_start",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Polys_SM_1_brnd_to_start",
+                  "role": "brnd",
+                  "target": { "role": "individual",
+                    "name": "Brendan"},
+                  "action": {"type": "jump_to_waypoint",
+                             "anchor":"#brndstart"},
+                  "trig": {"type": "button",
+                           "time": 0}
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "Polys_SM_group1",
+               "time": 0}
+    },
+    {
+      "name": "Polys_SM_1_brnd_to_NPC",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Polys_SM_1_brnd_to_NPC",
+                  "role":"stagemanager",
+                  "target": { "role" : "individual",
+                  "name" : "Brendan"
+                  },
+                  "action": {"type": "change_avatar",
+                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_25.glb"}
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "Polys_SM_group1",
+               "time": 0}
+    },
+    {
+      "name": "Polys_SM_1_brnd2_to_invis",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Polys_SM_1_brnd2_to_invis",
+                  "role":"stagemanager",
+                  "target": { "role" : "individual",
+                  "name" : "Brendan2"
+                  },
+                  "action": {"type": "change_avatar",
+                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_24.glb"}
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "Polys_SM_group1",
                "time": 0}
     },
     {
@@ -976,16 +1054,16 @@
                "time": 0}
     },
     {
-      "name": "Polys_SM_2_move_red_skybox",
+      "name": "Polys_SM_2_rotate_red_skybox",
       "role": "stagemanager",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
                  "function_name": "cueSocket",
                  "_cue": { 
-                   "name": "Polys_SM_2_shrink_red_skybox",
+                   "name": "Polys_SM_2_rotate_red_skybox",
                    "target": { "role": "general",
-                      "aspect": "position"
+                      "aspect": "rotation"
                   },
                    "action": { "type": "manipulate_skybox_360",
                     "mapItem" : "Polys_SM_1_load_red_skybox",
@@ -999,7 +1077,7 @@
                       "duration": 1000
                       },
                       "timelines" : [
-                        {"x": -673.9999999999997, "y": -75, "z": -462.3500000000002,"delay": 0, "easing": "linear", "duration": 7000}
+                        { "x": 0, "y": 75, "z": 0, "delay": 7000, "easing": "easeInSine", "duration": 64000 }
                       ]
                     }
                 }
@@ -1008,6 +1086,155 @@
                 "groupChain" : "Polys_SM_group2",
                "time": 0}
     },
+    {
+      "name": "Polys_SM_2_brnd_position",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "Polys_SM_2_brnd_position",
+                  "target": { "role" : "individual", "name": "Brendan",
+                    "aspect" : "position" },
+                  "action": { "type": "manipulate_avatar",
+                    "attr": "object3D",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 0,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "linear",
+                     "duration": 1
+                     },
+                     "timelines" : [
+                      {"x":-718.6125439346974, "y": 18.504095912974034, "z": -351.15849828867044,"delay":0, "easing": "easeInOutSine", "duration": 25000},
+                      {"x":-661.1795304376632, "y": 29.763629147066528, "z": -375.9961858341725,"delay":25000, "easing": "easeInOutSine", "duration": 10000},
+                      {"x":-662.4639309319524, "y": 30, "z": -374.9403192177719,"delay":0, "easing": "linear", "duration": 10000}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "Polys_SM_group2",
+               "time": 0}
+    },
+    {
+      "name": "Polys_SM_2_brnd_scale",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "Polys_SM_2_brnd_scale",
+                  "target": { "role" : "individual", "name": "Brendan",
+                    "aspect" : "scale" },
+                  "action": { "type": "manipulate_avatar",
+                    "attr": "object3D",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 0,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "linear",
+                     "duration": 1
+                     },
+                     "timelines" : [
+                      {"x":20, "y": 20, "z": 20,"delay":0, "easing": "linear", "duration": 60000}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "Polys_SM_group2",
+               "time": 0}
+    },
+    {
+      "name": "Polys_SM_2_brnd_to_invis",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Polys_SM_2_brnd_to_invis",
+                  "role":"stagemanager",
+                  "target": { "role" : "individual",
+                  "name" : "Brendan"
+                  },
+                  "action": {"type": "change_avatar",
+                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_24.glb"}
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "Polys_SM_group2",
+               "time": 67000}
+    },
+    {
+      "name": "Polys_SM_2_NPC_object_position",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "Polys_SM_2_NPC_object_position",
+                  "target": { "role": "general",
+                    "aspect" : "position" },
+                  "action": { "type": "socket_manipulate_object",
+                    "mapItem": "Polys_SM_1_load_NPC_object",
+                    "attr": "object3D",
+                    "anime": {
+                     "targets": "position",
+                     "delay" : 1000,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "easeInOutSine",
+                     "duration": 1000
+                     },
+                     "timelines" : [
+                      {"x": -383.1361999511719, "y": -100, "z": -359.56207275390625, "duration": 15000, "delay": 67000, "easing": "easeOutSine"}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "Polys_SM_group2",
+               "time": 0}
+      },
+      {
+        "name": "Polys_SM_2_NPC_object_scale",
+        "role": "stagemanager",
+        "target": { },
+        "action": {"type": "call_method_from_object",
+                   "object_name": "sockSys",
+                   "function_name": "cueSocket",
+                   "_cue": { 
+                    "name": "Polys_SM_2_NPC_object_scale",
+                    "target": { "role": "general",
+                      "aspect" : "scale" },
+                    "action": { "type": "socket_manipulate_object",
+                      "mapItem": "Polys_SM_1_load_NPC_object",
+                      "attr": "object3D",
+                      "anime": {
+                       "targets": "scale",
+                       "delay" : 1000,
+                       "loop": false,
+                       "autoplay": false,
+                       "easing": "easeInOutSine",
+                       "duration": 1000
+                       },
+                       "timelines" : [
+                        {"x": 500, "y": 375, "z": 500, "duration": 15000, "delay": 67000, "easing": "easeOutSine"}
+                       ]
+                     }
+                   }
+                  },
+        "trig": {"type": "button",
+          "groupChain" : "Polys_SM_group2",
+                 "time": 0}
+        },
     {
       "name": "Test_Cam_Run",
       "role": "stagemanager",
