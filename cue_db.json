@@ -1053,7 +1053,7 @@
                       "duration": 1000
                       },
                       "timelines" : [
-                        {"x": 400, "y": 400, "z": 400,"delay": 0, "easing": "linear", "duration": 7000}
+                        {"x": 390, "y": 390, "z": 390,"delay": 0, "easing": "linear", "duration": 3000}
                       ]
                     }
                 }
@@ -1086,7 +1086,7 @@
                       "duration": 1000
                       },
                       "timelines" : [
-                        { "x": 0, "y": 75, "z": 0, "delay": 7000, "easing": "easeInSine", "duration": 64000 }
+                        { "x": 0, "y": 75, "z": 0, "delay": 3000, "easing": "easeInSine", "duration": 70000 }
                       ]
                     }
                 }
@@ -1117,9 +1117,10 @@
                      "duration": 1
                      },
                      "timelines" : [
-                      {"x":-718.6125439346974, "y": 18.504095912974034, "z": -351.15849828867044,"delay":0, "easing": "easeInOutSine", "duration": 25000},
-                      {"x":-661.1795304376632, "y": 29.763629147066528, "z": -375.9961858341725,"delay":25000, "easing": "easeInOutSine", "duration": 10000},
-                      {"x":-662.4639309319524, "y": -30, "z": -374.9403192177719,"delay":0, "easing": "linear", "duration": 10000}
+                      {"x":-683.4664813684418, "y": 20, "z": -332.3444686613249,"delay":3000, "easing": "easeInOutSine", "duration": 16500},
+                      {"x":-711.055874329907, "y": 25, "z": -353.7214053300548,"delay":7500, "easing": "easeInOutSine", "duration": 12000},
+                      {"x":-665.8456768514221, "y": 45, "z": -373.3841354393278,"delay":0, "easing": "easeInOutSine", "duration": 4000},
+                      {"x":-665.8456768514221, "y": 10, "z": -373.3841354393278,"delay":0, "easing": "easeInSine", "duration": 4000}
                      ]
                    }
                  }
@@ -1150,8 +1151,7 @@
                      "duration": 1
                      },
                      "timelines" : [
-                      {"x":15, "y": 15, "z": 15,"delay":19500, "easing": "linear", "duration": 1500},
-                      {"x":20, "y": 20, "z": 20,"delay":8000, "easing": "linear", "duration": 10000}
+                      {"x":15, "y": 15, "z": 15,"delay":19500, "easing": "easeOutElastic", "duration": 2500}
                      ]
                    }
                  }
@@ -1179,7 +1179,7 @@
                 },
       "trig": {"type": "button",
                 "groupChain" : "Polys_SM_group2",
-               "time": 67000}
+               "time": 50000}
     },
     {
       "name": "Polys_SM_2_NPC_object_position",
@@ -1204,7 +1204,7 @@
                      "duration": 1000
                      },
                      "timelines" : [
-                      {"x": -383.1361999511719, "y": -100, "z": -359.56207275390625, "duration": 15000, "delay": 67000, "easing": "easeOutSine"}
+                      {"x": -383.1361999511719, "y": -100, "z": -359.56207275390625, "duration": 7500, "delay": 48000, "easing": "easeOutSine"}
                      ]
                    }
                  }
@@ -1236,7 +1236,7 @@
                        "duration": 1000
                        },
                        "timelines" : [
-                        {"x": 500, "y": 375, "z": 500, "duration": 15000, "delay": 67000, "easing": "easeOutSine"}
+                        {"x": 500, "y": 375, "z": 500, "duration": 7500, "delay": 48000, "easing": "easeOutSine"}
                        ]
                      }
                    }
@@ -1245,98 +1245,6 @@
           "groupChain" : "Polys_SM_group2",
                  "time": 0}
         },
-    {
-      "name": "Test_Cam_Run",
-      "role": "stagemanager",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": { 
-                  "name": "NPC_SM_9_CAM_position",
-                  "target": { "role" : "cinematic",
-                    "aspect" : "position" },
-                  "action": { "type": "manipulate_avatar",
-                    "attr": "object3D",
-                    "anime": {
-                     "targets": "",
-                     "delay" : 0,
-                     "loop": false,
-                     "autoplay": false,
-                     "easing": "linear",
-                     "duration": 1
-                     },
-                     "timelines" : [
-                      {"x": -682.3650254170542, "y": 6.1413266658803085, "z": -330.9385314948668,"delay":0, "easing": "easeOutSine", "duration": 0},
-                      {"x": -715.542500080495, "y": 6.1413266658803085, "z": -312.5780079310108,"delay":15000, "easing": "easeInSine", "duration": 10000},
-                      {"x": -730.1729698481583, "y": 6.141326665880334, "z": -334.82917501227774,"delay":0, "easing": "easeOutSine", "duration": 10000},
-                      {"x": -0.1696595080280385, "y": 7.637563693626752, "z": -12.306915307756618,"delay":5000, "easing": "easeInOutSine", "duration": 20000},
-                      {"x": 25.795738483934624, "y": 7.5126653138492525, "z": -5.170889163420923,"delay":3000, "easing": "easeInOutSine", "duration": 10000},
-                      {"x": 31.192129554966055, "y": -8.458756248014327, "z": 76.30984525259282,"delay":3000, "easing": "easeInOutSine", "duration": 15000},
-                      {"x": 3.1833161557782863, "y": -14.17288974375315, "z": 100.83677890793567,"delay":6000, "easing": "easeInSine", "duration": 7000}
-                     ]
-                   }
-                 }
-                },
-      "trig": {"type": "button",
-        "groupChain" : "Test_Cam_group1",
-               "time": 0}
-    },
-    {
-      "name": "NPC_SM_2_brnd2_to_invis",
-      "role": "stagemanager",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": {
-                  "name": "NPC_SM_2_brnd_to_hero",
-                  "role":"stagemanager",
-                  "target": { "role" : "cinematic"
-                  },
-                  "action": {"type": "change_avatar",
-                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_24.glb"}
-                }
-                },
-      "trig": {"type": "button",
-                "groupChain" : "Test_Cam_group1",
-               "time": 0}
-    },
-    {
-      "name": "NPC_SM_2_brnd_starting_rotation",
-      "role": "stagemanager",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": { 
-                  "name": "NPC_SM_2_brnd_starting_rotation",
-                  "target": { "role" : "cinematic",
-                    "aspect" : "rotation" },
-                  "action": { "type": "manipulate_avatar",
-                    "attr": "object3D",
-                    "anime": {
-                     "targets": "",
-                     "delay" : 0,
-                     "loop": false,
-                     "autoplay": false,
-                     "easing": "linear",
-                     "duration": 0
-                     },
-                     "timelines" : [
-                      {"x": 0, "y": 0.4, "z": 0,"delay":0, "easing": "easeOutSine", "duration": 0},
-                      {"x": 0, "y": -1.16, "z": 0,"delay":15000, "easing": "easeInSine", "duration": 10000},
-                      {"x": 0, "y": -1.96, "z": 0,"delay":0, "easing": "easeOutSine", "duration": 10000},
-                      {"x": 0, "y": 1.18, "z": 0,"delay":28000, "easing": "easeInOutSine", "duration": 10000},
-                      {"x": 0, "y": 2.44, "z": 0,"delay":3000, "easing": "easeInOutSine", "duration": 15000}
-                     ]
-                   }
-                 }
-                },
-      "trig": {"type": "button",
-        "groupChain" : "Test_Cam_group1",
-               "time": 0}
-    },
     {
       "name": "Polys_SM_1_cam_start",
       "role": "stagemanager",
@@ -1421,9 +1329,26 @@
                      "duration": 1
                      },
                      "timelines" : [
-                      {"x": -686.7176204636312, "y": 26.28175951299268, "z": -314.78016040587056,"delay":15000, "easing": "easeOutSine", "duration": 4500},
-                      {"x": -727.8532216446248, "y": 26.28175951296926, "z": -347.5270716283464,"delay":7500, "easing": "easeOutSine", "duration": 10000},
-                      {"x": -727.8532216446248, "y": 26.28175951296926, "z": -347.5270716283464,"delay":20000, "easing": "easeOutSine", "duration": 0}
+                      {"x": -683.3650254170542, "y": 24.5, "z": -310.9385314948668,"delay":3000, "easing": "easeInOutSine", "duration": 16500},
+                      {"x": -733.6452318506975, "y": 29.5, "z": -344.53600946811594,"delay":7500, "easing": "easeInOutSine", "duration": 12000},
+                      {"x": -292.693515585376, "y": 19.50000000000603, "z": -333.3641270956481,"delay":21000, "easing": "easeInSine", "duration": 4000},
+                      {"x": -216.85799144786088, "y": 19.50000000000603, "z": -320.3019925526787,"delay":0, "easing": "linear", "duration": 1500},
+                      {"x": -200.48890655060814, "y": 20.0000000000603, "z": -316.483027183825,"delay":0, "easing": "linear", "duration": 300},
+                      {"x": -188.92990561195896, "y": 20.50000000000603, "z": -310.5114707850576,"delay":0, "easing": "linear", "duration": 200},
+                      {"x": -140.98019300979394, "y": 20.50000000000603, "z": -221.63718200844167,"delay":0, "easing": "linear", "duration": 1500},
+                      {"x": -118.98909299231255, "y": 20.50000000000603, "z": -201.98847581200184,"delay":0, "easing": "linear", "duration": 500},
+                      {"x": -41.431996496220314, "y": 20.50000000000603, "z": -165.59461555527628,"delay":0, "easing": "linear", "duration": 1000},
+                      {"x": -24.448297012128197, "y": 20.50000000000603, "z": -146.72298717381594,"delay":0, "easing": "linear", "duration": 300},
+                      {"x": -3.4880817448062684, "y": 20.50000000000603, "z": -81.07357770513042,"delay":0, "easing": "linear", "duration": 600},
+                      {"x": -3.691428944891129, "y": 6.61077552355527, "z": -14.099046551452693,"delay":0, "easing": "easeOutSine", "duration": 1000},
+                      {"x": -10.097974863827815, "y": 6.787966796262289, "z": -9.711190318358868,"delay":3000, "easing": "easeInOutSine", "duration": 3000},
+                      {"x": 11.23028219910978, "y": 9, "z": -12.61478371178756,"delay":1000, "easing": "easeInOutSine", "duration": 6000},
+                      {"x": 10.537426319146412, "y": 7, "z": 5.049022347218697,"delay":15000, "easing": "easeInOutSine", "duration": 10000},
+                      {"x": 3.3500615992679013, "y": 6, "z": 12.954846161448144,"delay":4000, "easing": "easeInOutSine", "duration": 10000},
+                      {"x": -9.665653323075867, "y": 7, "z": 15.788984441885209,"delay":20000, "easing": "easeInOutSine", "duration": 35000},
+                      {"x": 6.974362111749976, "y": 6, "z": 23.055701145650584,"delay":30000, "easing": "easeInOutSine", "duration": 4000},
+                      {"x": 25.98810785442238, "y": -7.067961035883095, "z": 66.29902829233524,"delay":13000, "easing": "easeInSine", "duration": 12000},
+                      {"x": 9.57329964189488, "y": -15.25040607277935, "z": 95.12241346765049,"delay":0, "easing": "easeOutSine", "duration": 12000}
                      ]
                    }
                  }
@@ -1454,7 +1379,56 @@
                      "duration": 0
                      },
                      "timelines" : [
-                      {"x": -0.4, "y": 0, "z": 0,"delay":15000, "easing": "easeInOutSine", "duration": 4500}
+                      {"x": 0, "y": 0, "z": 0,"delay":0, "easing": "easeOutSine", "duration": 0},
+                      {"x": 0, "y": -1.1, "z": 0,"delay":27000, "easing": "easeInOutSine", "duration": 12000},
+                      {"x": 0, "y": -1.5, "z": 0,"delay":8000, "easing": "easeInOutSine", "duration": 3000},
+                      {"x": 0, "y": -1.6, "z": 0,"delay":10000, "easing": "easeInOutSine", "duration": 4000},
+                      {"x": 0, "y": -1.8, "z": 0,"delay":0, "easing": "easeInOutSine", "duration": 1500},
+                      {"x": 0, "y": -2.5, "z": 0,"delay":0, "easing": "easeInOutSine", "duration": 500},
+                      {"x": 0, "y": -2.3, "z": 0,"delay":0, "easing": "easeInOutSine", "duration": 1500},
+                      {"x": 0, "y": -1.9, "z": 0,"delay":0, "easing": "easeInOutSine", "duration": 500},
+                      {"x": 0, "y": -2.8, "z": 0,"delay":0, "easing": "easeInOutSine", "duration": 1300},
+                      {"x": 0, "y": -3, "z": 0,"delay":0, "easing": "easeInOutSine", "duration": 600},
+                      {"x": 0, "y": -2, "z": 0,"delay":3000, "easing": "easeInOutSine", "duration": 3000},
+                      {"x": 0, "y": -0.3, "z": 0,"delay":1000, "easing": "easeInOutSine", "duration": 6000},
+                      {"x": 0, "y": 0.6, "z": 0,"delay":15000, "easing": "easeInOutSine", "duration": 10000},
+                      {"x": 0, "y": 0.2, "z": 0,"delay":4000, "easing": "easeInOutSine", "duration": 10000},
+                      {"x": 0, "y": -0.8, "z": 0,"delay":20000, "easing": "easeInOutSine", "duration":35000},
+                      {"x": 0, "y": -2.3, "z": 0,"delay":27000, "easing": "easeInOutSine", "duration":3000},
+                      {"x": 0, "y": -2.7, "z": 0,"delay":10000, "easing": "easeInOutSine", "duration":3000},
+                      {"x": 0, "y": -3.8, "z": 0,"delay":12000, "easing": "easeInOutSine", "duration":3000}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "Polys_SM_group2",
+               "time": 0}
+    },
+    {
+      "name": "Polys_SM_2_cam_scale",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "Polys_SM_2_cam_scale",
+                  "target": { "role" : "cinematic",
+                    "aspect" : "scale" },
+                  "action": { "type": "manipulate_avatar",
+                    "attr": "object3D",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 0,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "linear",
+                     "duration": 0
+                     },
+                     "timelines" : [
+                      {"x": 3, "y": 2, "z": 1,"delay":57000, "easing": "easeInOutSine", "duration": 3000},
+                      {"x": 1, "y": 1, "z": 1,"delay":0, "easing": "easeOutSine", "duration": 1000}
                      ]
                    }
                  }
