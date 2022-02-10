@@ -957,25 +957,34 @@
                "time": 0}
     },
     {
-      "name": "Polys_SM_1_brnd_to_start",
+      "name": "Polys_SM_1_brnd_start",
       "role": "stagemanager",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
                  "function_name": "cueSocket",
-                 "_cue": {
-                  "name": "Polys_SM_1_brnd_to_start",
-                  "role": "brnd",
-                  "target": { "role": "individual",
-                    "name": "Brendan"},
-                  "action": {"type": "jump_to_waypoint",
-                             "anchor":"#brndstart"},
-                  "trig": {"type": "button",
-                           "time": 0}
-                }
+                 "_cue": { 
+                  "name": "Polys_SM_1_brnd_start",
+                  "target": { "role" : "individual", "name": "Brendan",
+                    "aspect" : "position" },
+                  "action": { "type": "manipulate_avatar",
+                    "attr": "object3D",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 0,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "linear",
+                     "duration": 1
+                     },
+                     "timelines" : [
+                      {"x":-683.4664813684418, "y": 6.14132666588187, "z": -332.3444686613249,"delay":0, "easing": "easeInOutSine", "duration": 0}
+                     ]
+                   }
+                 }
                 },
       "trig": {"type": "button",
-                "groupChain" : "Polys_SM_group1",
+        "groupChain" : "Polys_SM_group1",
                "time": 0}
     },
     {
@@ -1141,7 +1150,8 @@
                      "duration": 1
                      },
                      "timelines" : [
-                      {"x":20, "y": 20, "z": 20,"delay":0, "easing": "linear", "duration": 60000}
+                      {"x":15, "y": 15, "z": 15,"delay":19500, "easing": "linear", "duration": 1500},
+                      {"x":20, "y": 20, "z": 20,"delay":8000, "easing": "linear", "duration": 10000}
                      ]
                    }
                  }
@@ -1325,6 +1335,132 @@
                 },
       "trig": {"type": "button",
         "groupChain" : "Test_Cam_group1",
+               "time": 0}
+    },
+    {
+      "name": "Polys_SM_1_cam_start",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "NPC_SM_9_CAM_position",
+                  "target": { "role" : "cinematic",
+                    "aspect" : "position" },
+                  "action": { "type": "manipulate_avatar",
+                    "attr": "object3D",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 0,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "linear",
+                     "duration": 1
+                     },
+                     "timelines" : [
+                      {"x": -683.3650254170542, "y": 4.5, "z": -330.9385314948668,"delay":0, "easing": "easeOutSine", "duration": 0}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "Polys_SM_group1",
+               "time": 0}
+    },
+    {
+      "name": "Polys_SM_1_cam_rotate",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "NPC_SM_2_brnd_starting_rotation",
+                  "target": { "role" : "cinematic",
+                    "aspect" : "rotation" },
+                  "action": { "type": "manipulate_avatar",
+                    "attr": "object3D",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 0,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "linear",
+                     "duration": 0
+                     },
+                     "timelines" : [
+                      {"x": 0, "y": 0, "z": 0,"delay":0, "easing": "easeOutSine", "duration": 0}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "Polys_SM_group1",
+               "time": 0}
+    },
+    {
+      "name": "Polys_SM_2_cam_pos",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "Polys_SM_2_cam_pos",
+                  "target": { "role" : "cinematic",
+                    "aspect" : "position" },
+                  "action": { "type": "manipulate_avatar",
+                    "attr": "object3D",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 0,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "linear",
+                     "duration": 1
+                     },
+                     "timelines" : [
+                      {"x": -686.7176204636312, "y": 26.28175951299268, "z": -314.78016040587056,"delay":15000, "easing": "easeOutSine", "duration": 4500},
+                      {"x": -727.8532216446248, "y": 26.28175951296926, "z": -347.5270716283464,"delay":7500, "easing": "easeOutSine", "duration": 10000},
+                      {"x": -727.8532216446248, "y": 26.28175951296926, "z": -347.5270716283464,"delay":20000, "easing": "easeOutSine", "duration": 0}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "Polys_SM_group2",
+               "time": 0}
+    },
+    {
+      "name": "Polys_SM_2_cam_rotate",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "Polys_SM_2_cam_rotate",
+                  "target": { "role" : "cinematic",
+                    "aspect" : "rotation" },
+                  "action": { "type": "manipulate_avatar",
+                    "attr": "object3D",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 0,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "linear",
+                     "duration": 0
+                     },
+                     "timelines" : [
+                      {"x": -0.4, "y": 0, "z": 0,"delay":15000, "easing": "easeInOutSine", "duration": 4500}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "Polys_SM_group2",
                "time": 0}
     },
     {
