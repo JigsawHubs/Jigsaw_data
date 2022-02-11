@@ -935,6 +935,34 @@
                "time": 0}
     },
     {
+      "name": "Polys_SM_1_load_white_door",
+      "role": "stagemanager",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/a4c28bb2-e21e-4cd7-a322-4acddb9bfa7a.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": {"x": -1.02788507938385, "y":-15.534416198730469, "z":105.38802337646484},
+                 "rot": {"x": 0, "y":1, "z":0},
+                 "scale": {"x": 1, "y":3, "z":4}},
+      "trig": {"type": "button",
+                "groupChain": "Polys_SM_group1",
+               "time": 0}
+    },
+    {
+      "name": "Polys_SM_1_load_white_door",
+      "role": "stagemanager",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/356a5de6-5996-452a-868f-5a12b8bc1121.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": {"x": -467.36555840731467, "y":22.089446258639068, "z":-206.63260786525868},
+                 "rot": {"x": 0, "y":1, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+                "groupChain": "Polys_SM_group1",
+               "time": 0}
+    },
+    {
       "name": "Polys_SM_1_load_red_skybox",
       "role": "stagemanager",
       "target": { },
@@ -1318,6 +1346,39 @@
         "groupChain" : "Polys_SM_group1",
                "time": 0}
     },
+
+    {
+      "name": "Polys_SM_3_white_door_position",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "Polys_SM_3_white_door_position",
+                  "target": { "role": "general",
+                    "aspect" : "position" },
+                  "action": { "type": "socket_manipulate_object",
+                    "mapItem": "Polys_SM_1_load_white_door",
+                    "attr": "object3D",
+                    "anime": {
+                     "targets": "position",
+                     "delay" : 1000,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "easeInOutSine",
+                     "duration": 1000
+                     },
+                     "timelines" : [
+                      {"x": 1.9811240434646606, "y": -14.539060592651367, "z": 103.8626480102539, "duration": 1500, "delay": 0, "easing": "easeOutSine"}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "Polys_SM_group3",
+               "time": 0}
+      },
     {
       "name": "Polys_SM_1_cam_rotate",
       "role": "stagemanager",
@@ -1478,6 +1539,37 @@
                 },
       "trig": {"type": "button",
         "groupChain" : "Polys_SM_group2",
+               "time": 0}
+    },
+    {
+      "name": "Polys_SM_3_cam_pos",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "Polys_SM_3_cam_pos",
+                  "target": { "role" : "cinematic",
+                    "aspect" : "position" },
+                  "action": { "type": "manipulate_avatar",
+                    "attr": "object3D",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 0,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "linear",
+                     "duration": 1
+                     },
+                     "timelines" : [
+                      {"x": 2.1763912656718185, "y": -16.25040607277935, "z": 103.7459799209992,"delay":1500, "easing": "easeInSine", "duration": 3000}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "Polys_SM_group3",
                "time": 0}
     },
     {
