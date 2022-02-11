@@ -943,13 +943,13 @@
       "action": {"type": "spawn_item",
                  "pos": {"x": -1.02788507938385, "y":-15.534416198730469, "z":105.38802337646484},
                  "rot": {"x": 0, "y":1, "z":0},
-                 "scale": {"x": 1, "y":3, "z":4}},
+                 "scale": {"x": 1, "y":1.8, "z":2.3}},
       "trig": {"type": "button",
                 "groupChain": "Polys_SM_group1",
                "time": 0}
     },
     {
-      "name": "Polys_SM_1_load_white_door",
+      "name": "Polys_SM_1_load_ventricle",
       "role": "stagemanager",
       "target": { "type": "glb",
                   "dest": "url",
@@ -1370,7 +1370,7 @@
                      "duration": 1000
                      },
                      "timelines" : [
-                      {"x": 1.9811240434646606, "y": -14.539060592651367, "z": 103.8626480102539, "duration": 1500, "delay": 0, "easing": "easeOutSine"}
+                      {"x": 1.9513474225997925, "y": -15.784117698669434, "z": 102.81404418945312, "duration": 1000, "delay": 0, "easing": "easeOutSine"}
                      ]
                    }
                  }
@@ -1563,7 +1563,7 @@
                      "duration": 1
                      },
                      "timelines" : [
-                      {"x": 2.1763912656718185, "y": -16.25040607277935, "z": 103.7459799209992,"delay":1500, "easing": "easeInSine", "duration": 3000}
+                      {"x": 2.3152692185031403, "y": -17.630102365738974, "z": 102.53417479810814,"delay":1000, "easing": "easeInSine", "duration": 1500}
                      ]
                    }
                  }
