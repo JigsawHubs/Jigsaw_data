@@ -1512,7 +1512,7 @@
         "role":"clem",
         "target": { },
         "action": {"type": "change_avatar",
-                   "link":"https://onboardxr.github.io/onboard_json/avatar/invisibleAv.glb"},
+                   "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/mini-avatar.glb"},
         "trig": {"type": "button",
                  "time": 0}
        },
@@ -1521,9 +1521,36 @@
         "role":"demz",
         "target": { },
         "action": {"type": "change_avatar",
-                   "link":"https://onboardxr.github.io/onboard_json/avatar/invisibleAv.glb"},
+                   "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/mini-avatar.glb"},
         "trig": {"type": "button",
                  "time": 0}
-       }
+       },
+      {
+        "name": "AV_inv",
+        "role":"kristia",
+        "target": { },
+        "action": {"type": "change_avatar",
+                   "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/mini-avatar.glb"},
+        "trig": {"type": "button",
+                 "time": 0}
+       },
+    {
+      "name": "startPos",
+      "role": "kristia",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"clemStartPos"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "startPosRusalka",
+      "role": "clem",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"clemStartPos"},
+      "trig": {"type": "button",
+               "time": 0}
+    }
     ]
   }
