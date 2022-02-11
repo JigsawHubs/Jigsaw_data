@@ -1058,7 +1058,7 @@
     },
     {
       "name": "Polys_SM_1_brnd2_to_invis",
-      "role": "stagemanager",
+      "role": "none",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -1074,7 +1074,6 @@
                 }
                 },
       "trig": {"type": "button",
-                "groupChain" : "Polys_SM_group1",
                "time": 0}
     },
     {
