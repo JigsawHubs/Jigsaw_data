@@ -1469,7 +1469,7 @@
         "role":"clem",
         "target": { },
         "action": {"type": "change_avatar",
-                   "link":"https://onboardxr.github.io/onboard_json/avatar/mini-avatar.glb"},
+                   "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/mini-avatar.glb"},
         "trig": {"type": "button",
                  "time": 0}
        },
@@ -1478,7 +1478,7 @@
         "role":"demz",
         "target": { },
         "action": {"type": "change_avatar",
-                   "link":"https://onboardxr.github.io/onboard_json/avatar/mini-avatar.glb"},
+                   "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/mini-avatar.glb"},
         "trig": {"type": "button",
                  "time": 0}
        },
@@ -1487,7 +1487,7 @@
         "role":"kristia",
         "target": { },
         "action": {"type": "change_avatar",
-                   "link":"https://onboardxr.github.io/onboard_json/avatar/mini-avatar.glb"},
+                   "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/mini-avatar.glb"},
         "trig": {"type": "button",
                  "time": 0}
        },
