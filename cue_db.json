@@ -1009,6 +1009,27 @@
                "time": 0}
     },
     {
+      "name": "Polys_SM_1_brnd_mute",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "Polys_SM_1_brnd_mute",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["Brendan"],
+                    "rolloff": 1000000,
+                    "refDistance": 0.00000001
+                    }
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "Polys_SM_group1",
+               "time": 3000}
+    },
+    {
       "name": "Polys_SM_1_brnd2_to_invis",
       "role": "stagemanager",
       "target": { },
@@ -1117,10 +1138,10 @@
                      "duration": 1
                      },
                      "timelines" : [
-                      {"x":-683.4664813684418, "y": 20, "z": -332.3444686613249,"delay":3000, "easing": "easeInOutSine", "duration": 16500},
-                      {"x":-711.055874329907, "y": 25, "z": -353.7214053300548,"delay":7500, "easing": "easeInOutSine", "duration": 12000},
-                      {"x":-665.8456768514221, "y": 45, "z": -373.3841354393278,"delay":0, "easing": "easeInOutSine", "duration": 4000},
-                      {"x":-665.8456768514221, "y": 10, "z": -373.3841354393278,"delay":0, "easing": "easeInSine", "duration": 4000}
+                      {"x":-683.4664813684418, "y": 15, "z": -332.3444686613249,"delay":3000, "easing": "easeInOutSine", "duration": 16500},
+                      {"x":-711.055874329907, "y": 20, "z": -353.7214053300548,"delay":7500, "easing": "easeInOutSine", "duration": 12000},
+                      {"x":-665.8456768514221, "y": 40, "z": -373.3841354393278,"delay":0, "easing": "easeInOutSine", "duration": 4000},
+                      {"x":-665.8456768514221, "y": -10, "z": -373.3841354393278,"delay":0, "easing": "easeInSine", "duration": 4000}
                      ]
                    }
                  }
@@ -1151,7 +1172,7 @@
                      "duration": 1
                      },
                      "timelines" : [
-                      {"x":15, "y": 15, "z": 15,"delay":19500, "easing": "easeOutElastic", "duration": 2500}
+                      {"x":15, "y": 15, "z": 15,"delay":19500, "easing": "easeOutElastic", "duration": 4000}
                      ]
                    }
                  }
@@ -1180,6 +1201,27 @@
       "trig": {"type": "button",
                 "groupChain" : "Polys_SM_group2",
                "time": 50000}
+    },
+    {
+      "name": "Polys_SM_2_brnd_mute",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "Polys_SM_1_brnd_mute",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["Brendan"],
+                    "rolloff": 1000000,
+                    "refDistance": 0.00000001
+                    }
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "Polys_SM_group2",
+               "time": 53000}
     },
     {
       "name": "Polys_SM_2_NPC_object_position",
@@ -1267,7 +1309,7 @@
                      "duration": 1
                      },
                      "timelines" : [
-                      {"x": -683.3650254170542, "y": 4.5, "z": -330.9385314948668,"delay":0, "easing": "easeOutSine", "duration": 0}
+                      {"x": -683.3650254170542, "y": 6, "z": -330.9385314948668,"delay":0, "easing": "easeOutSine", "duration": 0}
                      ]
                    }
                  }
@@ -1329,8 +1371,9 @@
                      "duration": 1
                      },
                      "timelines" : [
-                      {"x": -683.3650254170542, "y": 24.5, "z": -310.9385314948668,"delay":3000, "easing": "easeInOutSine", "duration": 16500},
-                      {"x": -733.6452318506975, "y": 29.5, "z": -344.53600946811594,"delay":7500, "easing": "easeInOutSine", "duration": 12000},
+                      {"x": -683.3650254170542, "y": 15, "z": -330.9385314948668,"delay":3000, "easing": "easeInOutSine", "duration": 16500},
+                      {"x": -683.3650254170542, "y": 24.5, "z": -310.9385314948668,"delay":0, "easing": "easeOutElastic", "duration": 4000},
+                      {"x": -733.6452318506975, "y": 29.5, "z": -344.53600946811594,"delay":3500, "easing": "easeInOutSine", "duration": 12000},
                       {"x": -292.693515585376, "y": 19.50000000000603, "z": -333.3641270956481,"delay":21000, "easing": "easeInSine", "duration": 4000},
                       {"x": -216.85799144786088, "y": 19.50000000000603, "z": -320.3019925526787,"delay":0, "easing": "linear", "duration": 1500},
                       {"x": -200.48890655060814, "y": 20.0000000000603, "z": -316.483027183825,"delay":0, "easing": "linear", "duration": 300},
