@@ -950,7 +950,7 @@
     },
     {
       "name": "Polys_SM_1_load_ventricle",
-      "role": "stagemanager",
+      "role": "none",
       "target": { "type": "glb",
                   "dest": "url",
                   "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/356a5de6-5996-452a-868f-5a12b8bc1121.glb"},
@@ -959,7 +959,6 @@
                  "rot": {"x": 0, "y":1, "z":0},
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
-                "groupChain": "Polys_SM_group1",
                "time": 0}
     },
     {
@@ -1445,12 +1444,12 @@
                       {"x": -24.448297012128197, "y": 20.50000000000603, "z": -146.72298717381594,"delay":0, "easing": "linear", "duration": 300},
                       {"x": -3.4880817448062684, "y": 20.50000000000603, "z": -81.07357770513042,"delay":0, "easing": "linear", "duration": 600},
                       {"x": -3.691428944891129, "y": 6.61077552355527, "z": -14.099046551452693,"delay":0, "easing": "easeOutSine", "duration": 1000},
-                      {"x": -10.097974863827815, "y": 6.787966796262289, "z": -9.711190318358868,"delay":3000, "easing": "easeInOutSine", "duration": 3000},
-                      {"x": 11.23028219910978, "y": 9, "z": -12.61478371178756,"delay":1000, "easing": "easeInOutSine", "duration": 6000},
-                      {"x": 10.537426319146412, "y": 7, "z": 5.049022347218697,"delay":15000, "easing": "easeInOutSine", "duration": 10000},
-                      {"x": 3.3500615992679013, "y": 6, "z": 12.954846161448144,"delay":4000, "easing": "easeInOutSine", "duration": 10000},
-                      {"x": -9.665653323075867, "y": 7, "z": 15.788984441885209,"delay":20000, "easing": "easeInOutSine", "duration": 35000},
-                      {"x": 6.974362111749976, "y": 6, "z": 23.055701145650584,"delay":30000, "easing": "easeInOutSine", "duration": 4000},
+                      {"x": -10.097974863827815, "y": 6.787966796262289, "z": -9.711190318358868,"delay":8000, "easing": "easeInSine", "duration": 5500},
+                      {"x": 11.23028219910978, "y": 9, "z": -12.61478371178756,"delay":0, "easing": "easeOutSine", "duration": 9500},
+                      {"x": 10.537426319146412, "y": 7, "z": 5.049022347218697,"delay":20000, "easing": "easeInOutSine", "duration": 10000},
+                      {"x": 3.30222946533398, "y": 6, "z": 21.569225047082067,"delay":4000, "easing": "easeInOutSine", "duration": 10000},
+                      {"x": -9.665653323075867, "y": 7, "z": 15.788984441885209,"delay":15000, "easing": "easeInOutSine", "duration": 30000},
+                      {"x": 6.974362111749976, "y": 6, "z": 23.055701145650584,"delay":25000, "easing": "easeInOutSine", "duration": 4000},
                       {"x": 25.98810785442238, "y": -7.067961035883095, "z": 66.29902829233524,"delay":13000, "easing": "easeInSine", "duration": 12000},
                       {"x": 9.57329964189488, "y": -15.25040607277935, "z": 95.12241346765049,"delay":0, "easing": "easeOutSine", "duration": 12000}
                      ]
