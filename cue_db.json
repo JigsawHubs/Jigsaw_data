@@ -1346,6 +1346,45 @@
           "groupChain" : "Polys_SM_group2",
                  "time": 0}
         },
+        {
+          "name": "Polys_SM_2_delete_red_skybox",
+          "role": "stagemanager",
+          "target": { },
+          "action": {"type": "call_method_from_object",
+                     "object_name": "sockSys",
+                     "function_name": "cueSocket",
+                     "_cue": { 
+                       "name": "Polys_SM_2_delete_red_skybox",
+                       "target": { "role": "general" },
+                       "action": { "type": "delete",
+                        "src" : "Polys_SM_1_load_red_skybox"
+                      }
+                      }
+                    },
+          "trig": {"type": "button",
+            "groupChain" : "Polys_SM_group2",
+                   "time": 66000}
+        },
+        {
+          "name": "Polys_SM_2_delete_NPC_object",
+          "role": "stagemanager",
+          "target": { "type": "glb",
+                      "src": "Polys_SM_1_load_NPC_object"},
+          "action": {"type": "delete"},
+          "trig": {"type": "button",
+            "groupChain": "Polys_SM_group2",
+                   "time": 66000}
+        },
+        {
+          "name": "Polys_SM_2_delete_ventricle",
+          "role": "stagemanager",
+          "target": { "type": "glb",
+                      "src": "Polys_SM_1_load_ventricle"},
+          "action": {"type": "delete"},
+          "trig": {"type": "button",
+            "groupChain": "Polys_SM_group2",
+                   "time": 66000}
+        },
     {
       "name": "Polys_SM_1_cam_start",
       "role": "stagemanager",
