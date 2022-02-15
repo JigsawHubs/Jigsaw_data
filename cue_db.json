@@ -1750,21 +1750,115 @@
                "time": 0}
     },
     {
-      "name": "NPC_SM_2_spawn_prop_omni",
+      "name": "NPC_SM_345_omni_anim_rotation",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "NPC_SM_345_anim_rotation_omni",
+                  "target": { "role": "general",
+                    "aspect" : "rotation" },
+                  "action": { "type": "socket_manipulate_object",
+                    "mapItem": "NPC_SM_2_spawn_prop_omni",
+                    "attr": "object3D",
+                    "anime": {
+                     "targets": "rotation",
+                     "delay" : 1000,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "easeInOutSine",
+                     "duration": 1000
+                     },
+                     "timelines" : [
+                      {"x": 0, "y":0, "z":0, "duration": 0, "delay": 0, "easing": "easeOutSine"},
+                      {"x": 0, "y":6.28, "z":0, "duration": 12000, "delay": 0, "easing": "easeInOutSine"}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPC_SM_345_group",
+               "time": 0}
+      }
+    ,
+    {
+      "name": "test_track_object",
       "role": "stagemanager",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
                  "function_name": "cueSocket",
                  "_cue": {
-                  "name": "NPC_SM_2_spawn_prop_omni",
-                  "target": { "role": "general",
-                    "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/3ae6b25b-30e0-48f3-a147-75df2e3e41ec.glb"},
-                  "action": {"type": "socket_spawn_object",
-                    "applyGravityOnSpawn": false,
-                             "pos": {"x": 0, "y": 3, "z": 0},
-                             "rot": {"x": 0, "y":0, "z":0},
-                             "scale": {"x": 1, "y":1, "z":1}}
+                  "name": "test_track_object",
+                  "target": {
+                    "role": "general",
+                    "aspect": "position"
+                  },
+                  "action": {
+                    "type": "track_object",
+                    "mapItem": "NPC_SM_2_spawn_prop_omni",
+                    "attr": "object3D",
+                    "anime": {
+                      "targets": "position",
+                      "delay": 1000,
+                      "loop": false,
+                      "autoplay": false,
+                      "easing": "easeInOutSine",
+                      "duration": 1000
+                    },
+                    "timelines": [
+                      {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "rx": 0,
+                        "ry": 1.56,
+                        "rz": 0,
+                        "s": 1,
+                        "duration": 3000,
+                        "delay": 0,
+                        "easing": "easeInSine"
+                      },
+                      {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "rx": 0,
+                        "ry": 3.14,
+                        "rz": 0,
+                        "s": 3,
+                        "duration": 3000,
+                        "delay": 0,
+                        "easing": "linear"
+                      },
+                      {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "rx": 0,
+                        "ry": 4.7,
+                        "rz": 0,
+                        "s": 3,
+                        "duration": 3000,
+                        "delay": 0,
+                        "easing": "linear"
+                      },
+                      {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "rx": 0,
+                        "ry": 6.28,
+                        "rz": 0,
+                        "s": 1,
+                        "duration": 3000,
+                        "delay": 0,
+                        "easing": "easeOutSine"
+                      }
+                    ]
+                  }
                 }
                 },
       "trig": {"type": "button",
