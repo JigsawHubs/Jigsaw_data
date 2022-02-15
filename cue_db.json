@@ -1891,6 +1891,79 @@
                   },
       "trig": {"type": "button",
                 "time": 0}
+      },
+      {
+        "name": "OGJ_1",
+        "role":"arit",
+        "target": { },
+        "action": {"type": "change_scene",
+                   "link":"https://onboardxr.live/scenes/GhnAf3X"},
+        "trig": {"type": "button",
+          "groupChain" : "OGJ_group_1",
+                 "time": 0}
+      },
+      {
+        "name": "OBJ_2",
+        "role":"arit",
+        "target": { },
+        "action": {"type": "change_avatar",
+                   "link":"https://sketchfab.com/3d-models/heart-attracts-8980827fb8984c1fb6162fb6dd726355"},
+        "trig": {"type": "button",
+          "groupChain" : "OGJ_group_1",
+                 "time": 0}
+      },
+      {
+        "name": "OGJ_3",
+        "role": "arit",
+        "target": { "type": "glb",
+                    "dest": "url",
+                    "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/3f4c6faa-d904-4bbf-9f08-7b4b90664166.glb"},
+        "action": {"type": "spawn_prop",
+                   "rot": {"x": 0, "y":0, "z":0},
+                   "scale": {"x": 0.1, "y":0.1, "z":0.1}},
+        "trig": {"type": "button",
+          "groupChain" : "OGJ_group_1",
+                 "time": 5000}
+      },
+      {
+        "name": "OGJ_4",
+        "role": "arit",
+        "target": { "type": "audio",
+                    "dest": "url",
+                    "src":  "TBD"},
+        "action": { "type": "spawn_item",
+                    "pos": {"x": 4.455324649810791, "y":-0.933040201663971, "z":21.21452522277832},
+                    "rot": {"x": 0, "y":0, "z":0},
+                    "scale": {"x": 1, "y":1, "z":1},
+                    "volume":0.9,
+                    "distanceModel": "linear",
+                    "rolloffFactor":0,
+                    "refDistance":1000,
+                    "maxDistance":10000},
+        "trig": {"type": "button",
+          "groupChain" : "OGJ_group_1",
+                 "time": 0}
+      },
+      {
+        "name": "OGJ_5",
+        "role": "arit",
+        "target": { },
+        "action": {"type": "call_method_from_object",
+                   "object_name": "sockSys",
+                   "function_name": "cueSocket",
+                   "_cue": { 
+                     "name": "test_change_rolloff",
+                     "target": { "role": "general" },
+                     "action": { "type": "change_rolloff",
+                      "names": ["Codebeard"],
+                      "rolloff": 0,
+                      "refDistance": 1
+                      }
+                  }
+                  },
+        "trig": {"type": "button",
+          "groupChain" : "OGJ_group_1",
+                 "time": 5000}
       }
     ]
   }
