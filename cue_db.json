@@ -1677,33 +1677,6 @@
         "groupChain" : "Polys_SM_group3",
                "time": 0}
     },
-    {
-      "name": "Polys_startPos",
-      "role": "clem",
-      "target": { },
-      "action": {"type": "jump_to_waypoint",
-                 "anchor":"clemStartPos"},
-      "trig": {"type": "button",
-               "time": 0}
-    },
-    {
-      "name": "Polys_startPos",
-      "role": "demz",
-      "target": { },
-      "action": {"type": "jump_to_waypoint",
-                 "anchor":"clemStartPos"},
-      "trig": {"type": "button",
-               "time": 0}
-    },
-    {
-      "name": "Polys_musicPos",
-      "role": "demz",
-      "target": { },
-      "action": {"type": "jump_to_waypoint",
-                 "anchor":"musicPos"},
-      "trig": {"type": "button",
-               "time": 0}
-    },
       {
         "name": "AV_inv",
         "role":"clem",
@@ -1713,15 +1686,15 @@
         "trig": {"type": "button",
                  "time": 0}
        },
-      {
-        "name": "AV_inv",
-        "role":"demz",
-        "target": { },
-        "action": {"type": "change_avatar",
-                   "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/mini-avatar.glb"},
-        "trig": {"type": "button",
-                 "time": 0}
-       },
+    {
+      "name": "startPos",
+      "role": "clem",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"clemStartPos"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
       {
         "name": "AV_inv",
         "role":"kristia",
@@ -1736,16 +1709,36 @@
       "role": "kristia",
       "target": { },
       "action": {"type": "jump_to_waypoint",
-                 "anchor":"clemStartPos"},
+                 "anchor":"kristiaStartPos"},
       "trig": {"type": "button",
                "time": 0}
     },
+      {
+        "name": "AV_inv",
+        "role":"demz",
+        "target": { },
+        "action": {"type": "change_avatar",
+                   "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/mini-avatar.glb"},
+        "trig": {"type": "button",
+                 "time": 0}
+       },
     {
-      "name": "startPosRusalka",
-      "role": "clem",
+      "name": "music_rolloff",
+      "role": "demz",
       "target": { },
-      "action": {"type": "jump_to_waypoint",
-                 "anchor":"clemStartPos"},
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_change_rolloff",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["---"],
+                    "rolloff": 0.3,
+                    "refDistance": 10
+                    }
+                }
+                },
       "trig": {"type": "button",
                "time": 0}
     },
