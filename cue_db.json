@@ -1707,7 +1707,7 @@
                   "role":"test",
                   "target": { "role" : "participant"},
                   "action": {"type": "change_avatar",
-                             "link":"https://onboardxr.github.io/onboard_json/avatar/UW_audienceRusalka0.glb"}
+                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/UW_audienceRusalka0.glb"}
                 }
                 },
       "trig": {"type": "button",
@@ -1725,7 +1725,7 @@
                   "role":"test",
                   "target": { "role" : "participant"},
                   "action": {"type": "change_avatar",
-                             "link":"https://onboardxr.github.io/onboard_json/avatar/UW_audienceRusalka1.glb"}
+                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/UW_audienceRusalka1.glb"}
                 }
                 },
       "trig": {"type": "button",
@@ -1743,7 +1743,7 @@
                   "role":"test",
                   "target": { "role" : "participant"},
                   "action": {"type": "change_avatar",
-                             "link":"https://onboardxr.github.io/onboard_json/avatar/UW_audienceRusalka2.glb"}
+                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/UW_audienceRusalka2.glb"}
                 }
                 },
       "trig": {"type": "button",
@@ -1751,7 +1751,7 @@
     },
     {
       "name": "AUD_back",
-      "role": "test",
+      "role": "clem",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
