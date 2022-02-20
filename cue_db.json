@@ -2723,6 +2723,191 @@
                        "time": 30000}
             },
             {
+              "name": "HAT_1",
+              "role":"stagemanager",
+              "target": { },
+              "action": {"type": "change_scene",
+                         "link":"https://onboardxr.live/scenes/9fFY26x/here-and-there-2022"},
+              "trig": {"type": "button",
+                "groupChain" : "HAT_group_1",
+                       "time": 0}
+            },
+            {
+              "name": "HAT_2",
+              "role": "stagemanager",
+              "target": { },
+              "action": {"type": "call_method_from_object",
+                         "object_name": "sockSys",
+                         "function_name": "cueSocket",
+                         "_cue": { 
+                           "name": "HAT_2",
+                           "sceneLink": "https://onboardxr.live/scenes/9fFY26x/here-and-there-2022",
+                           "target": { "role": ["participant", "spectator"] },
+                           "action": { "type": "socket_toggle_movement",
+                            "movement" : true}
+                        }
+                        },
+              "trig": {"type": "button",
+                "groupChain" : "HAT_group_1",
+                       "time": 0}
+            },
+            {
+              "name": "HAT_3",
+              "role": "stagemanager",
+              "target": { "type": "glb",
+                          "dest": "url",
+                          "src":  "https://uploads-prod.reticulum.io/files/6dc3097e-d5d7-4830-ae60-3cb5e02ce2c9.glb"},
+              "action": {"type": "spawn_item",
+                "pos": {"x": -7.549557685852051, "y": 9.118122100830078, "z": 16.825786590576172},
+                "rot": {"x": 0, "y": -0.52, "z": 0},
+                "scale": {"x":1, "y":1, "z":1}},
+              "trig": {"type": "button",
+                "groupChain" : "HAT_group_1",
+                       "time": 0}
+            },
+            {
+              "name": "HAT_4",
+              "role": "stagemanager",
+              "target": { },
+              "action": {"type": "call_method_from_object",
+                         "object_name": "sockSys",
+                         "function_name": "cueSocket",
+                         "_cue": {
+                          "name": "HAT_4",
+                          "sceneLink": "https://onboardxr.live/scenes/9fFY26x/here-and-there-2022",
+                          "role":"stagemanager",
+                          "target": { "role" : "individual",
+                          "name" : "Nelly"
+                          },
+                          "action": {"type": "change_avatar",
+                                     "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/HAT_A_3.glb"}
+                        }
+                        },
+              "trig": {"type": "button",
+                "groupChain" : "HAT_group_2",
+                       "time": 0}
+            },
+            {
+              "name": "HAT_5",
+              "role": "stagemanager",
+              "target": { },
+              "action": {"type": "call_method_from_object",
+                         "object_name": "sockSys",
+                         "function_name": "cueSocket",
+                         "_cue": { 
+                          "name": "HAT_5",
+                          "sceneLink": "https://onboardxr.live/scenes/9fFY26x/here-and-there-2022",
+                          "target": { "role" : "individual",
+                            "name":"Nelly",
+                            "aspect" : "position" },
+                          "action": { "type": "manipulate_avatar",
+                            "attr": "object3D",
+                            "anime": {
+                             "targets": "",
+                             "delay" : 0,
+                             "loop": false,
+                             "autoplay": false,
+                             "easing": "linear",
+                             "duration": 0
+                             },
+                             "timelines" : [
+                              {"x": 4.010809895242104, "y": 47.93247905709168, "z": -0.5144033346498854,"delay":0, "easing": "easeOutSine", "duration": 0},
+                              {"x": 0.626953911068698, "y": 3.316223983764636, "z": -0.567851774234336,"delay":5000, "easing": "easeOutSine", "duration": 8000}
+                             ]
+                           }
+                         }
+                        },
+              "trig": {"type": "button",
+                "groupChain" : "HAT_group_2",
+                       "time": 0}
+            },
+            {
+              "name": "HAT_6",
+              "role": "stagemanager",
+              "target": { },
+              "action": {"type": "call_method_from_object",
+                         "object_name": "sockSys",
+                         "function_name": "cueSocket",
+                         "_cue": { 
+                          "name": "HAT_6",
+                          "sceneLink": "https://onboardxr.live/scenes/9fFY26x/here-and-there-2022",
+                          "target": { "role" : "individual",
+                            "name":"Nelly",
+                            "aspect" : "scale" },
+                          "action": { "type": "manipulate_avatar",
+                            "attr": "object3D",
+                            "anime": {
+                             "targets": "",
+                             "delay" : 0,
+                             "loop": false,
+                             "autoplay": false,
+                             "easing": "linear",
+                             "duration": 0
+                             },
+                             "timelines" : [
+                              {"x": 3, "y": 3, "z": 3,"delay":0, "easing": "easeOutSine", "duration": 0},
+                              {"x": 9, "y": 9, "z": 9,"delay":13000, "easing": "easeInSine", "duration": 3000},
+                              {"x": 3, "y": 3, "z": 3,"delay":0, "easing": "easeOutSine", "duration": 3000}
+                             ]
+                           }
+                         }
+                        },
+              "trig": {"type": "button",
+                "groupChain" : "HAT_group_2",
+                       "time": 0}
+            },
+            {
+              "name": "HAT_7",
+              "role": "stagemanager",
+              "target": { "type": "glb",
+                          "dest": "local",
+                          "src": "HAT_3"},
+              "action": {"type": "move",
+                         "duration": 5000,
+                         "loop": false,
+                         "pos": {"x": -20.229894638061523, "y":9.783094596862793, "z":-13.1953706741333},
+                         "rot": {"x": 0, "y":-1.935, "z":0},
+                         "scale": {"x": 1.5, "y":1.5, "z":1.5}},
+              "trig": {"type": "button",
+                "groupChain" : "HAT_group_2",
+                       "time": 0}
+            },
+            {
+              "name": "HAT_8",
+              "role": "none",
+              "target": { },
+              "action": {"type": "call_method_from_object",
+                         "object_name": "sockSys",
+                         "function_name": "cueSocket",
+                         "_cue": {
+                          "name": "HAT_8",
+                          "sceneLink": "https://onboardxr.live/scenes/9fFY26x/here-and-there-2022",
+                          "role":"stagemanager",
+                          "target": { "role" : ["participant"]},
+                          "action": {"type": "change_avatar",
+                                     "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/HAT_A_7.glb"}
+                        }
+                        },
+              "trig": {"type": "button",
+                       "time": 0}
+            },
+            {
+              "name": "HAT_12",
+              "role": "none",
+              "target": { },
+              "action": {"type": "call_method_from_object",
+                         "object_name": "sockSys",
+                         "function_name": "cueSocket",
+                         "_cue": { 
+                           "name": "test_avatar_change_back",
+                           "target": { "role": "participant" },
+                           "action": { "type": "avatar_change_back"}
+                        }
+                        },
+              "trig": {"type": "button",
+                       "time": 0}
+            },
+            {
               "name": "NPCe_1",
               "role": "stagemanager",
               "target": { },
