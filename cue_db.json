@@ -3545,6 +3545,94 @@
                     "trig": {"type": "button",
                       "groupChain" : "NPCe_group5",
                              "time": 0}
-                    }
+                    },
+                    {
+      "name": "ITL_1",
+      "role":"itlSM",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"https://onboardxr.live/scenes/r6DgZR3"},
+      "trig": {"type": "button",
+        "groupChain" : "ITL_group1",
+               "time": 0}
+    },
+    {
+      "name": "ITL_2_BROKEN",
+      "role": "itlSM",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "ITL_2",
+                  "sceneLink": "https://onboardxr.live/scenes/r6DgZR3/shape-shipters-underwater-scene",
+                  "role":"stagemanager",
+                  "target": { "role" : ["spectator", "participant"]
+                  },
+                  "action": {"type": "change_avatar",
+                             "link":"TBD"}
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "ITL_group1",
+               "time": 20000}
+    },
+    {
+      "name": "ITL_3",
+      "role":"itlSM",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"https://onboardxr.live/scenes/5XjCU4u"},
+      "trig": {"type": "button",
+        "groupChain" : "ITL_group2",
+               "time": 0}
+    },
+    {
+      "name": "ITL_4_A",
+      "role": "itlSM",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "NPCe_8",
+                  "sceneLink": "https://onboardxr.live/scenes/5XjCU4u/ob2-00-pier",
+                  "role": "brnd",
+                  "target": { "role": "individual",
+                    "name": "itlPerf1"},
+                  "action": {"type": "jump_to_waypoint",
+                             "anchor":"#Kraken"},
+                  "trig": {"type": "button",
+                           "time": 0}
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "ITL_group3",
+               "time": 0}
+    },
+    {
+      "name": "ITL_13",
+      "role":"itlSM",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"https://onboardxr.live/scenes/uRvqcFF"},
+      "trig": {"type": "button",
+        "groupChain" : "ITL_group13",
+               "time": 0}
+    },
+    {
+      "name": "ITL_14",
+      "role": "itlSM",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://sketchfab.com/3d-models/medal-8d2b7074affb44dd84a82c1515980540"},
+      "action": {"type": "spawn_prop",
+                 "pos": {"x": -0.6371493935585022, "y":7, "z":0.3122836947441101},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 200, "y":200, "z":200}},
+      "trig": {"type": "button",
+        "groupChain" : "ITL_group14",
+               "time": 0}
+    }
     ]
 }
