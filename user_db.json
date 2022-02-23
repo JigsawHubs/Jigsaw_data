@@ -28,5 +28,6 @@
   "nell":{"name":"Nelly", "role":"nell"},
   "mand":{"name":"Mandy", "role":"mand"},
   "avin":{"name":"Avin", "role":"avin"},
-  "mikeob4":{"name":"___", "role":"stagemanager"}
+  "mikeob4":{"name":"___", "role":"stagemanager"},
+  "itlSM" : {"name":"Jason", "role":"itlSM"}
  }
