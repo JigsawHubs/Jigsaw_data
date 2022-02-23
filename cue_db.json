@@ -3597,7 +3597,7 @@
                  "_cue": {
                   "name": "NPCe_8",
                   "sceneLink": "https://onboardxr.live/scenes/5XjCU4u/ob2-00-pier",
-                  "role": "brnd",
+                  "role": "itlSM",
                   "target": { "role": "individual",
                     "name": "itlPerf1"},
                   "action": {"type": "jump_to_waypoint",
