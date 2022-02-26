@@ -1707,7 +1707,7 @@
                   "role":"test",
                   "target": { "role" : "participant"},
                   "action": {"type": "change_avatar",
-                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/UW_audienceRusalka0.glb"}
+                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/UW_audienceRusalka0b.glb"}
                 }
                 },
       "trig": {"type": "button",
@@ -1725,7 +1725,7 @@
                   "role":"test",
                   "target": { "role" : "participant"},
                   "action": {"type": "change_avatar",
-                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/UW_audienceRusalka1.glb"}
+                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/UW_audienceRusalka1b.glb"}
                 }
                 },
       "trig": {"type": "button",
@@ -1743,7 +1743,7 @@
                   "role":"test",
                   "target": { "role" : "participant"},
                   "action": {"type": "change_avatar",
-                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/UW_audienceRusalka2.glb"}
+                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/UW_audienceRusalka2b.glb"}
                 }
                 },
       "trig": {"type": "button",
