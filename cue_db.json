@@ -2844,7 +2844,7 @@
                              "timelines" : [
                               {"x":0, "y": -10, "z":0,"delay":0, "easing": "easeOutSine", "duration": 0},
                               {"x": 0, "y": 10, "z": 0,"delay":2000, "easing": "easeOutSine", "duration": 8000},
-                              {"x": 0, "y": 3, "z": 0,"delay":0, "easing": "linear", "duration": 6000}
+                              {"x": 0, "y": 1.929677371978821, "z": 0,"delay":0, "easing": "linear", "duration": 6000}
                              ]
                            }
                          }
@@ -2916,7 +2916,7 @@
                          "scale": {"x": 0.07, "y":0.07, "z":0.07}},
               "trig": {"type": "button",
                 "groupChain" : "HAT_group_2",
-                       "time": 2000}
+                       "time": 4000}
             },
             {
               "name": "HAT_10",
@@ -2999,6 +2999,170 @@
               "trig": {"type": "button",
                 "groupChain" : "HAT_group_2",
                        "time": 92000}
+            },
+            {
+              "name": "HAT_15",
+              "role": "stagemanager",
+              "target": { },
+              "action": {"type": "call_method_from_object",
+                         "object_name": "sockSys",
+                         "function_name": "cueSocket",
+                         "_cue": { 
+                          "name": "HAT_15",
+                          "sceneLink": "https://onboardxr.live/scenes/4PU3gdn/here-and-there2",
+                          "target": { "role" : "individual",
+                            "name":"Nelly",
+                            "aspect" : "position" },
+                          "action": { "type": "manipulate_avatar",
+                            "attr": "object3D",
+                            "anime": {
+                             "targets": "",
+                             "delay" : 0,
+                             "loop": false,
+                             "autoplay": false,
+                             "easing": "linear",
+                             "duration": 0
+                             },
+                             "timelines" : [
+                              {"x":-5.397482465207239, "y": 5.586443916964242, "z":17.30059295348514,"delay":0, "easing": "easeInSine", "duration": 4000},
+                              {"x":23.400138611823635, "y": 5.679817533849244, "z":2.247939809494902,"delay":0, "easing": "linear", "duration": 4000},
+                              {"x":-5.066705980676874, "y": 5.679817533849244, "z":-22.882930440389764,"delay":0, "easing": "linear", "duration": 4000},
+                              {"x": 0, "y": 1.929677371978821, "z": 0,"delay":0, "easing": "easeOutSine", "duration": 4000}
+                             ]
+                           }
+                         }
+                        },
+              "trig": {"type": "button",
+                "groupChain" : "HAT_group_2",
+                       "time": 139000}
+            },
+            {
+              "name": "HAT_16",
+              "role": "stagemanager",
+              "target": { },
+              "action": {"type": "call_method_from_object",
+                         "object_name": "sockSys",
+                         "function_name": "cueSocket",
+                         "_cue": { 
+                          "name": "HAT_16",
+                          "sceneLink": "https://onboardxr.live/scenes/4PU3gdn/here-and-there2",
+                          "target": { "role" : "individual",
+                            "name":"Nelly",
+                            "aspect" : "scale" },
+                          "action": { "type": "manipulate_avatar",
+                            "attr": "object3D",
+                            "anime": {
+                             "targets": "",
+                             "delay" : 0,
+                             "loop": false,
+                             "autoplay": false,
+                             "easing": "linear",
+                             "duration": 0
+                             },
+                             "timelines" : [
+                              {"x": 6, "y": 6, "z": 6,"delay":0, "easing": "easeInSine", "duration": 16000},
+                              {"x": 6, "y": 10, "z": 30,"delay":0, "easing": "linear", "duration": 4000},
+                              {"x": 3, "y": 3, "z": 3,"delay":0, "easing": "easeOutSine", "duration": 4000}
+                             ]
+                           }
+                         }
+                        },
+              "trig": {"type": "button",
+                "groupChain" : "HAT_group_2",
+                       "time": 158000}
+            },
+            {
+              "name": "HAT_17",
+              "role": "stagemanager",
+              "target": { "type": "glb",
+                          "dest": "local",
+                          "src": "HAT_4"},
+              "action": {"type": "move",
+                         "duration": 5000,
+                         "loop": false,
+                         "pos": {"x": -10.253901481628418, "y": 30, "z": -1.838638424873352},
+                "rot": {"x": 0, "y": -1.01, "z": 0},
+                "scale": {"x":1.5, "y":1.5, "z":1.5}},
+              "trig": {"type": "button",
+                "groupChain" : "HAT_group_2",
+                       "time": 108000}
+            },
+            {
+              "name": "HAT_18",
+              "role": "stagemanager",
+              "target": { "type": "glb",
+                          "dest": "local",
+                          "src": "HAT_4"},
+              "action": {"type": "move",
+                         "duration": 5000,
+                         "loop": false,
+                         "pos": {"x": -10.253901481628418, "y": 9.65227222442627, "z": -1.838638424873352},
+                "rot": {"x": 0, "y": -1.01, "z": 0},
+                "scale": {"x":1.5, "y":1.5, "z":1.5}},
+              "trig": {"type": "button",
+                "groupChain" : "HAT_group_2",
+                       "time": 220000}
+            },
+            {
+              "name": "HAT_19",
+              "role": "stagemanager",
+              "target": { "type": "glb",
+                          "dest": "url",
+                          "src":  "https://jigsawhubs.github.io/Jigsaw_data/image/HAT_A_1.gif"},
+              "action": {"type": "spawn_item",
+                "pos": {"x": -19.861870195726794, "y": 14.919164826237207, "z": -17.548392201315355},
+                "rot": {"x": 0, "y": 0, "z": 0},
+                "scale": {"x":20, "y":20, "z":20}},
+              "trig": {"type": "button",
+                "groupChain" : "HAT_group_2",
+                       "time": 220000}
+            },
+            {
+              "name": "HAT_20",
+              "role": "stagemanager",
+              "target": { "type": "glb",
+                          "dest": "url",
+                          "src":  "https://jigsawhubs.github.io/Jigsaw_data/image/HAT_A_1.gif"},
+              "action": {"type": "spawn_item",
+                "pos": {"x": -27.997849033373, "y": 14.978206764744474, "z": 4.9160406889834105},
+                "rot": {"x": 0, "y": 0, "z": 0},
+                "scale": {"x":20, "y":20, "z":20}},
+              "trig": {"type": "button",
+                "groupChain" : "HAT_group_2",
+                       "time": 220000}
+            },
+            {
+              "name": "HAT_21",
+              "role": "stagemanager",
+              "target": { "type": "glb",
+                          "dest": "url",
+                          "src":  "https://jigsawhubs.github.io/Jigsaw_data/image/HAT_A_1.gif"},
+              "action": {"type": "spawn_item",
+                "pos": {"x": -21.0962729767404, "y": 16.43924597041691, "z": 18.04623234095759},
+                "rot": {"x": 0, "y": 0, "z": 0},
+                "scale": {"x":20, "y":20, "z":20}},
+              "trig": {"type": "button",
+                "groupChain" : "HAT_group_2",
+                       "time": 220000}
+            },
+            {
+              "name": "HAT_22",
+              "role": "stagemanager",
+              "target": { "type": "audio",
+                          "dest": "url",
+                          "src":  "https://jigsawhubs.github.io/Jigsaw_data/audio/HAT_A_1.mp3"},
+              "action": { "type": "spawn_item",
+                          "pos": {"x": 0, "y":-5, "z":0},
+                          "rot": {"x": 0, "y":0, "z":0},
+                          "scale": {"x": 0, "y":0, "z":0},
+                          "volume":1,
+                          "distanceModel": "linear",
+                          "rolloffFactor":0,
+                          "refDistance":100,
+                          "maxDistance":10000},
+              "trig": {"type": "button",
+                "groupChain" : "HAT_group_2",
+                       "time": 0}
             },
             {
               "name": "NPCe_1",
