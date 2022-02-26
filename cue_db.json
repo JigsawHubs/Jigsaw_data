@@ -2608,23 +2608,34 @@
           },
           {
             "name": "BTB_1",
-            "role":"mand",
+            "role": "stagemanager",
             "target": { },
-            "action": {"type": "change_avatar",
-                       "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/BTB_A_1.glb"},
+            "action": {"type": "call_method_from_object",
+                       "object_name": "sockSys",
+                       "function_name": "cueSocket",
+                       "_cue": {
+                        "name": "BTB_1",
+                        "role":"stagemanager",
+                        "target": { "role" : "individual",
+                        "name" : "Mandy"
+                        },
+                        "action": {"type": "change_avatar",
+                                   "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/BTB_A_1.glb"}
+                      }
+                      },
             "trig": {"type": "button",
-              "groupChain" : "BTB_group_1",
+                      "groupChain" : "BTB_group_1",
                      "time": 0}
           },
           {
             "name": "BTB_2",
-            "role":"mand",
+            "role":"stagemanager",
             "target": { },
             "action": {"type": "change_scene",
-                       "link":"https://onboardxr.live/scenes/6Px3ZGc"},
+                       "link":"https://onboardxr.live/scenes/cnEGPLi"},
             "trig": {"type": "button",
               "groupChain" : "BTB_group_1",
-                     "time": 0}
+                     "time": 3000}
           },
           {
             "name": "BTB_3",
@@ -2633,9 +2644,9 @@
                         "dest": "url",
                         "src":  "https://jigsawhubs.github.io/Jigsaw_data/audio/BTB_A_3.wav"},
             "action": { "type": "spawn_item",
-                        "pos": {"x": -53.240736196155844, "y":-5.371961472500828, "z":18.015875856288474},
+                        "pos": {"x": -92.89260277008137, "y": 0.13955284042021154, "z":16.032020761070353},
                         "rot": {"x": 0, "y":0, "z":0},
-                        "scale": {"x": 0, "y":0, "z":0},
+                        "scale": {"x": 1, "y":1, "z":1},
                         "volume":1,
                         "distanceModel": "linear",
                         "rolloffFactor":0.6,
@@ -2652,7 +2663,7 @@
                         "dest": "url",
                         "src":  "https://jigsawhubs.github.io/Jigsaw_data/audio/BTB_A_4.wav"},
             "action": { "type": "spawn_item",
-                        "pos": {"x": -53.240736196155844, "y":-5.371961472500828, "z":18.015875856288474},
+                        "pos": {"x": -92.89260277008137, "y": 0.13955284042021154, "z":16.032020761070353},
                         "rot": {"x": 0, "y":0, "z":0},
                         "scale": {"x": 0, "y":0, "z":0},
                         "volume":1,
@@ -2670,8 +2681,8 @@
             "target": { "type": "glb",
                         "dest": "url",
                         "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/67dbabb5-5ab6-448c-9473-f4fe3144a707.glb"},
-            "action": {"type": "spawn_prop",
-              "pos": {"x": 0, "y":0, "z":0},
+            "action": {"type": "spawn_item",
+              "pos": {"x": -77.89433792418514, "y": 5.048663776181288, "z": 6.549522132313907},
                        "rot": {"x": 0, "y":0, "z":0},
                        "scale": {"x": 4, "y":4, "z":4}},
             "trig": {"type": "button",
@@ -2687,9 +2698,9 @@
                        "function_name": "cueSocket",
                        "_cue": { 
                         "name": "BTB_6",
-                        "sceneLink": "https://onboardxr.live/scenes/6Px3ZGc",
+                        "sceneLink": "https://onboardxr.live/scenes/cnEGPLi/below-the-barracks-09-feb-22",
                         "target": { "role": "general",
-                          "aspect" : "scale" },
+                          "aspect" : "position" },
                         "action": { "type": "socket_manipulate_object",
                           "mapItem": "BTB_5",
                           "attr": "object3D",
@@ -2702,8 +2713,8 @@
                            "duration": 1000
                            },
                            "timelines" : [
-                            {"x": -40.77294921875, "y": 0.21423131227493286, "z": 24.803585052490234, "duration": 12000, "delay": 0, "easing": "easeInSine"},
-                            {"x": -38.40473556518555, "y": -26.12238883972168, "z": 79.75548553466797, "duration": 16000, "delay": 0, "easing": "easeOutSine"}
+                            {"x": -80.51838684082031, "y": 3.3720719814300537, "z": 22.78017234802246, "duration": 14000, "delay": 0, "easing": "easeInSine"},
+                            {"x": -76.67950439453125, "y": -11.053196907043457, "z": 86.020751953125, "duration": 16000, "delay": 0, "easing": "easeOutSine"}
                            ]
                          }
                        }
@@ -2720,7 +2731,7 @@
               "action": {"type": "delete"},
               "trig": {"type": "button",
                 "groupChain" : "BTB_group_4",
-                       "time": 30000}
+                       "time": 31000}
             },
             {
               "name": "HAT_1",
