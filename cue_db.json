@@ -3295,7 +3295,7 @@
                             "src":  "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb"},
                           "action": {"type": "socket_spawn_object",
                             "applyGravityOnSpawn": false,
-                            "pos": {"x": -35.828128814697266, "y":-0.38505184173584084, "z":-2.6486053466796875},
+                            "pos": {"x": -40, "y":-0.38505184173584084, "z":3},
                             "rot": {"x": 0, "y":0, "z":0},
                             "scale": {"x": 0.01, "y":0.01, "z":0.01}}
                         }
@@ -3321,7 +3321,7 @@
                           },
                 "trig": {"type": "button",
                   "groupChain" : "NPCe_group3",
-                         "time": 45000}
+                         "time": 15000}
               },
               {
                 "name": "NPCe_13",
@@ -3346,14 +3346,14 @@
                                "duration": 1
                                },
                                "timelines" : [
-                                {"x": 0.2, "y": 0.2, "z": 0.2, "delay": 0, "duration": 3000, "easing": "easeInSine"}
+                                {"x": 0.2, "y": 0.2, "z": 0.2, "delay": 0, "duration": 6000, "easing": "easeInSine"}
                                ]
                              }
                            }
                           },
                 "trig": {"type": "button",
                   "groupChain" : "NPCe_group3",
-                         "time": 45000}
+                         "time": 9000}
               },
               {
                 "name": "NPCe_14",
@@ -3375,7 +3375,7 @@
                           },
                 "trig": {"type": "button",
                   "groupChain" : "NPCe_group3",
-                         "time": 48000}
+                         "time": 16000}
               },
               {
                 "name": "NPCe_14a",
@@ -3398,7 +3398,7 @@
                           },
                 "trig": {"type": "button",
                           "groupChain" : "NPCe_group3",
-                         "time": 48000}
+                         "time": 17000}
               },
               {
                 "name": "NPCe_15",
@@ -3424,14 +3424,14 @@
                                "duration": 1000
                                },
                                "timelines" : [
-                                {"x": -35.828128814697266, "y": 2.3, "z": -2.6486053466796875, "duration": 12000, "delay": 0, "easing": "easeOutSine"}
+                                {"x": -40, "y": 2.3, "z": 3, "duration": 6000, "delay": 0, "easing": "easeOutSine"}
                                ]
                              }
                            }
                           },
                 "trig": {"type": "button",
                   "groupChain" : "NPCe_group3",
-                         "time": 36000}
+                         "time": 9000}
                 },
                 {
                   "name": "NPCe_16",
@@ -3457,14 +3457,14 @@
                                  "duration": 1000
                                  },
                                  "timelines" : [
-                                  {"x": 0, "y": 0, "z": 0, "duration": 12000, "delay": 0, "easing": "easeOutSine"}
+                                  {"x": 0, "y": 0, "z": 0, "duration": 6000, "delay": 0, "easing": "easeOutSine"}
                                  ]
                                }
                              }
                             },
                   "trig": {"type": "button",
                     "groupChain" : "NPCe_group3",
-                           "time": 36000}
+                           "time": 9000}
                   },
                   {
                     "name": "NPCe_17",
@@ -3490,14 +3490,14 @@
                                    "duration": 1000
                                    },
                                    "timelines" : [
-                                    {"x":0.3, "y": 0.3, "z": 0.3, "duration": 12000, "delay": 0, "easing": "easeOutSine"}
+                                    {"x":0.3, "y": 0.3, "z": 0.3, "duration": 6000, "delay": 0, "easing": "easeOutSine"}
                                    ]
                                  }
                                }
                               },
                     "trig": {"type": "button",
                       "groupChain" : "NPCe_group3",
-                             "time": 36000}
+                             "time": 9000}
                     },
                     {
                       "name": "NPCe_18",
@@ -3513,14 +3513,14 @@
                                     "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/29d210d8-b536-4f9c-ab2c-c4f7c1120cba.glb"},
                                   "action": {"type": "socket_spawn_object",
                                     "pauseOnSpawn": true,
-                                             "pos": {"x": -35.828128814697266, "y": 2.3, "z": -2.6486053466796875},
+                                             "pos": {"x": -40, "y": 2.3, "z": 3},
                                              "rot": {"x": 0, "y": 0, "z": 0},
                                              "scale": {"x":0.3, "y": 0.3, "z": 0.3}}
                                 }
                                 },
                       "trig": {"type": "button",
                         "groupChain" : "NPCe_group3",
-                               "time": 48000}
+                               "time": 17000}
                     },
                     {
                       "name": "NPCe_19",
@@ -3539,7 +3539,7 @@
                                 },
                       "trig": {"type": "button",
                         "groupChain" : "NPCe_group3",
-                               "time": 10000}
+                               "time": 17000}
                     },
                     {
                       "name": "NPCe_20",
@@ -3558,7 +3558,7 @@
                                 },
                     "trig": {"type": "button",
                       "groupChain" : "NPCe_group3",
-                              "time": 49600}
+                              "time": 18000}
                     },
                     {
                       "name": "NPCe_21",
