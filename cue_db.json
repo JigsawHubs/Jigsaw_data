@@ -3128,7 +3128,7 @@
                           "dest": "url",
                           "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/29d210d8-b536-4f9c-ab2c-c4f7c1120cba.glb"},
               "action": {"type": "spawn_item",
-                "pauseOnSpawn": false,
+                "pauseOnSpawn": true,
                 "pos": {"x": -47.2, "y":1.575, "z":-4.8},
                 "rot": {"x":0, "y":0, "z":0},
                 "scale": {"x": 0.015, "y":0.015, "z":0.015}},
@@ -3595,7 +3595,7 @@
                                         "ry": 0,
                                         "rz": 0,
                                         "s": 0.05,
-                                        "duration": 120000,
+                                        "duration": 12000,
                                         "delay": 0,
                                         "easing": "linear"
                                       },
@@ -3654,7 +3654,7 @@
                                         "ry": 0,
                                         "rz": 0,
                                         "s": 0.05,
-                                        "duration": 120000,
+                                        "duration": 12000,
                                         "delay": 0,
                                         "easing": "linear"
                                       }
