@@ -3124,17 +3124,26 @@
             {
               "name": "NPCe_6",
               "role": "stagemanager",
-              "target": { "type": "glb",
-                          "dest": "url",
-                          "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/29d210d8-b536-4f9c-ab2c-c4f7c1120cba.glb"},
-              "action": {"type": "spawn_item",
-                "pauseOnSpawn": true,
-                "pos": {"x": -47.2, "y":1.575, "z":-4.8},
+              "target": { },
+              "action": {"type": "call_method_from_object",
+                         "object_name": "sockSys",
+                         "function_name": "cueSocket",
+                         "_cue": {
+                          "name": "NPCe_6",
+                          "role": {},
+                          "target": { "type": "glb",
+                            "role": "individual", "name": "Brendan",
+                                      "dest": "url",
+                                      "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/29d210d8-b536-4f9c-ab2c-c4f7c1120cba.glb"},
+                          "action": {"type": "spawn_item",
+                            "pos": {"x": -47.2, "y":1.575, "z":-4.8},
                 "rot": {"x":0, "y":0, "z":0},
-                "scale": {"x": 0.015, "y":0.015, "z":0.015}},
-              "trig": {"type": "button",
-                "groupChain" : "NPCe_group1",
-                       "time": 0}
+                "scale": {"x": 0.015, "y":0.015, "z":0.015}}
+                        }
+                        },
+            "trig": {"type": "button",
+              "groupChain" : "NPCe_group1",
+                      "time": 0}
             },
             {
               "name": "NPCe_7",
@@ -3424,7 +3433,9 @@
                                "duration": 1000
                                },
                                "timelines" : [
-                                {"x": -40, "y": 2.3, "z": 3, "duration": 6000, "delay": 0, "easing": "easeOutSine"}
+                                {"x": -40, "y": 2.3, "z": 3, "duration": 6000, "delay": 0, "easing": "easeInOutSine"},
+                                {"x": -40, "y": -20, "z": 3, "duration": 0, "delay": 2000, "easing": "easeOutSine"},
+                                {"x": -47.2, "y":1.575, "z":-4.8, "duration": 0, "delay": 103000, "easing": "easeOutSine"}
                                ]
                              }
                            }
@@ -3441,7 +3452,7 @@
                              "object_name": "sockSys",
                              "function_name": "cueSocket",
                              "_cue": { 
-                              "name": "NPCe_6",
+                              "name": "NPCe_16",
                               "sceneLink": "https://onboardxr.live/scenes/eTGt3hu/npc-a-74-1029",
                               "target": { "role": "individual", "name": "Brendan",
                                 "aspect" : "rotation" },
@@ -3457,7 +3468,7 @@
                                  "duration": 1000
                                  },
                                  "timelines" : [
-                                  {"x": 0, "y": 0, "z": 0, "duration": 6000, "delay": 0, "easing": "easeOutSine"}
+                                  {"x": 0, "y": -1.9, "z": 0, "duration": 6000, "delay": 0, "easing": "easeOutSine"}
                                  ]
                                }
                              }
@@ -3490,7 +3501,8 @@
                                    "duration": 1000
                                    },
                                    "timelines" : [
-                                    {"x":0.3, "y": 0.3, "z": 0.3, "duration": 6000, "delay": 0, "easing": "easeOutSine"}
+                                    {"x":0.3, "y": 0.3, "z": 0.3, "duration": 6000, "delay": 0, "easing": "easeOutSine"},
+                                    {"x":0.015, "y": 0.015, "z": 0.015, "duration": 0, "delay": 40000, "easing": "easeOutSine"}
                                    ]
                                  }
                                }
@@ -3531,15 +3543,15 @@
                                  "function_name": "cueSocket",
                                  "_cue": { 
                                    "name": "NPCe_19",
-                                   "target": { "role": "individual", "name": "Brendan" },
+                                   "target": { "role": "general"},
                                    "action": { "type": "delete",
-                                    "src" : "NPCe_6"
+                                    "src" : "NPCe_18"
                                   }
                                   }
                                 },
                       "trig": {"type": "button",
                         "groupChain" : "NPCe_group3",
-                               "time": 17000}
+                               "time": 120000}
                     },
                     {
                       "name": "NPCe_20",
@@ -3790,7 +3802,7 @@
                                  "duration": 1000
                                  },
                                  "timelines" : [
-                                  {"x": 0, "y": 0, "z": 0, "duration": 12000, "delay": 0, "easing": "linear"}
+                                  {"x": 0, "y": -1.9, "z": 0, "duration": 12000, "delay": 0, "easing": "linear"}
                                  ]
                                }
                              }
