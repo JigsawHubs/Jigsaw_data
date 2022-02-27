@@ -4241,6 +4241,45 @@
       "trig": {"type": "button",
                 "groupChain" : "groupTopOfShow",
                "time": 0}
+    },
+    {
+      "name": "shareCamera",
+      "role": "kmac",
+      "target": { "type": "webcam" },
+      "action": { "type": "spawn_item",
+                  "pos": {"x": 0, "y":0, "z":0},
+                  "rot": {"x": 0, "y":0, "z":0},
+                  "scale": {"x": 1, "y":1, "z":1}
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "hidePos",
+      "role": "kmac",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"#kristiaHidePos"},
+      "trig": {"type": "button",
+                "time": 0}
+    },
+    {
+      "name": "hidePos",
+      "role": "demz",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"#clemHidePos"},
+      "trig": {"type": "button",
+                "time": 0}
+    },
+    {
+      "name": "hidePos",
+      "role": "clem",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"#clemHidePos"},
+      "trig": {"type": "button",
+                "time": 0}
     }
   
       
