@@ -3939,7 +3939,7 @@
     },
     {
       "name": "AUD_0",
-      "role": "clem",
+      "role": "demz",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -3957,7 +3957,7 @@
     },
     {
       "name": "AUD_1",
-      "role": "clem",
+      "role": "demz",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -3975,7 +3975,7 @@
     },
     {
       "name": "AUD_2",
-      "role": "clem",
+      "role": "demz",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -3993,7 +3993,7 @@
     },
     {
       "name": "AUD_back",
-      "role": "clem",
+      "role": "demz",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
