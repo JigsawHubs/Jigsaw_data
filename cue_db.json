@@ -4280,6 +4280,15 @@
                  "anchor":"#clemHidePos"},
       "trig": {"type": "button",
                 "time": 0}
+    },
+    {
+      "name": "hidePos",
+      "role": "kristia",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"#clemHidePos"},
+      "trig": {"type": "button",
+                "time": 0}
     }
   
       
