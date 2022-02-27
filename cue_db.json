@@ -3692,6 +3692,7 @@
                                 }
                                 },
                     "trig": {"type": "button",
+                      "groupChain" : "NPCe_group3",
                               "time": 49600}
                     },
                     {
@@ -3897,7 +3898,7 @@
                            }
                           },
                 "trig": {"type": "button",
-                  "groupChain" : "NPCe_group5",
+                  "groupChain" : "NPCe_group3",
                          "time": 85000}
                 },
                 {
@@ -3930,7 +3931,7 @@
                              }
                             },
                   "trig": {"type": "button",
-                    "groupChain" : "NPCe_group5",
+                    "groupChain" : "NPCe_group3",
                            "time": 85000}
                   },
                   {
@@ -3963,7 +3964,7 @@
                                }
                               },
                     "trig": {"type": "button",
-                      "groupChain" : "NPCe_group5",
+                      "groupChain" : "NPCe_group3",
                              "time": 85000}
                     },
                     {
