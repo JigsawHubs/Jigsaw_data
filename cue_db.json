@@ -4174,8 +4174,9 @@
                  "_cue": {
                   "name": "kmac_cam",
                   "role":"kmac",
-                  "target": { "role" : "individual",
-                  "name" : "kmac"}
+                  "target": { "type": "webcam", 
+                              "role" : "individual",
+                              "name" : "kmac"}
                   },
                   "action": { "type": "spawn_item",
                      "pos": {"x": 0, "y":0, "z":0},
