@@ -4052,6 +4052,7 @@
                 }
                 },
       "trig": {"type": "button",
+               "groupChain" : "groupReady",
                "time": 0}
     },
     {
@@ -4185,9 +4186,62 @@
         "trig": {"type": "button",
                "groupChain" : "groupReady",
                "time": 3000}
+    },
+    {
+      "name": "musicPos",
+      "role": "demz",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"#musicPos"},
+      "trig": {"type": "button",
+                "groupChain" : "groupTopOfShow",
+                "time": 0}
+    },
+    {
+      "name": "c_startPos",
+      "role": "demz",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "startPos",
+                  "role": "clem",
+                  "target": { "role": "individual",
+                    "name": "clem"},
+                  "action": {"type": "jump_to_waypoint",
+                             "anchor":"#clemStartPos"},
+                  "trig": {"type": "button",
+                           "time": 0}
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "groupTopOfShow",
+               "time": 0}
+    },
+    {
+      "name": "k_startPos",
+      "role": "demz",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "startPos",
+                  "role": "kristia",
+                  "target": { "role": "individual",
+                    "name": "kristia"},
+                  "action": {"type": "jump_to_waypoint",
+                             "anchor":"#kristiaStartPos"},
+                  "trig": {"type": "button",
+                           "time": 0}
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "groupTopOfShow",
+               "time": 0}
     }
-     
-      
+  
       
     ]
 }
