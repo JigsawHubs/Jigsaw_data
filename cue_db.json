@@ -3012,7 +3012,7 @@
             },
             {
               "name": "HAT_22",
-              "role": "stagemanager",
+              "role": "BROKEN",
               "target": { "type": "audio",
                           "dest": "url",
                           "src":  "https://jigsawhubs.github.io/Jigsaw_data/audio/HAT_A_1.mp3"},
@@ -3026,7 +3026,6 @@
                           "refDistance":100,
                           "maxDistance":10000},
               "trig": {"type": "button",
-                "groupChain" : "HAT_group_2",
                        "time": 0}
             },
             {
