@@ -4376,6 +4376,76 @@
     },
     {
       "name": "AUD_0",
+      "role": "demz",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Test_change_avatar",
+                  "role":"test",
+                  "target": { "role" : "participant"},
+                  "action": {"type": "change_avatar",
+                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/UW_audienceRusalka0b.glb"}
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "AUD_1",
+      "role": "demz",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Test_change_avatar",
+                  "role":"test",
+                  "target": { "role" : "participant"},
+                  "action": {"type": "change_avatar",
+                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/UW_audienceRusalka1b.glb"}
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "AUD_2",
+      "role": "demz",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Test_change_avatar",
+                  "role":"test",
+                  "target": { "role" : "participant"},
+                  "action": {"type": "change_avatar",
+                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/UW_audienceRusalka2b.glb"}
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "AUD_back",
+      "role": "demz",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_avatar_change_back",
+                   "target": { "role": "participant" },
+                   "action": { "type": "avatar_change_back"}
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "AUD_0",
       "role": "clem",
       "target": { },
       "action": {"type": "call_method_from_object",
@@ -4592,7 +4662,7 @@
       "role": "demz",
       "target": { "type": "webcam" },
       "action": { "type": "spawn_item",
-                  "pos": {"x": 0, "y":0, "z":0},
+                  "pos": {"x": 0, "y":-23.6, "z":3},
                   "rot": {"x": 0, "y":0, "z":0},
                   "scale": {"x": 1, "y":1, "z":1}
                 },
@@ -4615,7 +4685,7 @@
                               "role" : "individual",
                               "name" : "kmac"},
                       "action": { "type": "spawn_item",
-                     "pos": {"x": 0, "y":0, "z":0},
+                     "pos": {"x": -2.50, "y":-23.6, "z":3},
                      "rot": {"x": 0, "y":0, "z":0},
                      "scale": {"x": 1, "y":1, "z":1}
                      }
@@ -4684,7 +4754,7 @@
       "role": "kmac",
       "target": { "type": "webcam" },
       "action": { "type": "spawn_item",
-                  "pos": {"x": 0, "y":0, "z":0},
+                  "pos": {"x": -2.50, "y":-23.6, "z":3},
                   "rot": {"x": 0, "y":0, "z":0},
                   "scale": {"x": 1, "y":1, "z":1}
                 },
