@@ -1844,7 +1844,7 @@
       },
       {
         "name": "OGJ_1",
-        "role":"arit",
+        "role":"stagemanager",
         "target": { },
         "action": {"type": "change_scene",
                    "link":"https://onboardxr.live/scenes/GhnAf3X"},
@@ -1853,57 +1853,205 @@
                  "time": 0}
       },
       {
-        "name": "OBJ_2",
-        "role":"arit",
-        "target": { },
-        "action": {"type": "change_avatar",
-                   "link":"https://sketchfab.com/3d-models/heart-attracts-8980827fb8984c1fb6162fb6dd726355"},
+        "name": "OGJ_2",
+        "role": "stagemanager",
+        "target": { "type": "glb",
+                    "dest": "url",
+                    "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/9779c7c9-99fc-43d8-992d-4acb60228023.glb"},
+        "action": {"type": "spawn_item",
+          "pos": {"x": -0.1, "y":1.4, "z":-1.2},
+                   "rot": {"x": 0, "y":0, "z":0},
+                   "scale": {"x": 1, "y":1, "z":1}},
         "trig": {"type": "button",
-          "groupChain" : "OGJ_group_1",
+          "groupChain" : "OGJ_group_2",
                  "time": 0}
       },
       {
         "name": "OGJ_3",
-        "role": "arit",
-        "target": { "type": "glb",
-                    "dest": "url",
-                    "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/3f4c6faa-d904-4bbf-9f08-7b4b90664166.glb"},
-        "action": {"type": "spawn_prop",
-                   "rot": {"x": 0, "y":0, "z":0},
-                   "scale": {"x": 0.1, "y":0.1, "z":0.1}},
+        "role": "stagemanager",
+        "target": { },
+        "action": {"type": "call_method_from_object",
+                   "object_name": "sockSys",
+                   "function_name": "cueSocket",
+                   "_cue": {
+                    "name": "OGJ_3",
+                    "sceneLink": "https://onboardxr.live/scenes/GhnAf3X/arijuststage",
+                    "role":"stagemanager",
+                    "target": { "role" : "individual",
+                    "name" : "Avin"
+                    },
+                    "action": {"type": "change_avatar",
+                               "link":"https://jigsawhubs-1-assets.onboardxr.live/files/ed6d46e9-c26b-4669-8ec7-b10605f71a94.glb"}
+                  }
+                  },
         "trig": {"type": "button",
-          "groupChain" : "OGJ_group_1",
-                 "time": 5000}
-      },
-      {
-        "name": "OGJ_4",
-        "role": "arit",
-        "target": { "type": "audio",
-                    "dest": "url",
-                    "src":  "TBD"},
-        "action": { "type": "spawn_item",
-                    "pos": {"x": 4.455324649810791, "y":-0.933040201663971, "z":21.21452522277832},
-                    "rot": {"x": 0, "y":0, "z":0},
-                    "scale": {"x": 1, "y":1, "z":1},
-                    "volume":0.9,
-                    "distanceModel": "linear",
-                    "rolloffFactor":0,
-                    "refDistance":1000,
-                    "maxDistance":10000},
-        "trig": {"type": "button",
-          "groupChain" : "OGJ_group_1",
+                  "groupChain" : "OGJ_group_2",
                  "time": 0}
       },
       {
-        "name": "OGJ_5",
-        "role": "arit",
+        "name": "OGJ_4",
+        "role": "stagemanager",
         "target": { },
         "action": {"type": "call_method_from_object",
                    "object_name": "sockSys",
                    "function_name": "cueSocket",
                    "_cue": { 
-                     "name": "test_change_rolloff",
-                     "sceneLink": "https://onboardxr.live/scenes/GhnAf3X",
+                    "name": "OGJ_4",
+                    "sceneLink": "https://onboardxr.live/scenes/GhnAf3X/arijuststage",
+                    "target": { "role" : "individual",
+                      "name":"Avin",
+                      "aspect" : "position" },
+                    "action": { "type": "manipulate_avatar",
+                      "attr": "object3D",
+                      "anime": {
+                       "targets": "",
+                       "delay" : 0,
+                       "loop": false,
+                       "autoplay": false,
+                       "easing": "linear",
+                       "duration": 0
+                       },
+                       "timelines" : [
+                        {"x": -0.1, "y":0.6, "z":-1.2,"delay":0, "easing": "easeOutSine", "duration": 0}
+                       ]
+                     }
+                   }
+                  },
+        "trig": {"type": "button",
+          "groupChain" : "OGJ_group_2",
+                 "time": 0}
+      },
+      {
+        "name": "OGJ_5",
+        "role": "stagemanager",
+        "target": { },
+        "action": {"type": "call_method_from_object",
+                   "object_name": "sockSys",
+                   "function_name": "cueSocket",
+                   "_cue": { 
+                     "name": "OGJ_5",
+                     "sceneLink": "https://onboardxr.live/scenes/GhnAf3X/arijuststage",
+                     "target": { "role": ["individual"], "name": "Avin"},
+                     "action": { "type": "socket_toggle_movement",
+                      "movement" : true}
+                  }
+                  },
+        "trig": {"type": "button",
+          "groupChain" : "OGJ_group_2",
+                 "time": 0}
+      },
+      {
+        "name": "OGJ_6",
+        "role": "stagemanager",
+        "target": { },
+        "action": {"type": "call_method_from_object",
+                   "object_name": "sockSys",
+                   "function_name": "cueSocket",
+                   "_cue": {
+                    "name": "OGJ_6",
+                    "sceneLink": "https://onboardxr.live/scenes/GhnAf3X/arijuststage",
+                    "role":"stagemanager",
+                    "target": { "role" : "individual",
+                    "name" : "Codebeard"
+                    },
+                    "action": {"type": "change_avatar",
+                               "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_24.glb"}
+                  }
+                  },
+        "trig": {"type": "button",
+                  "groupChain" : "OGJ_group_2",
+                 "time": 0}
+      },
+      {
+        "name": "OGJ_7",
+        "role": "stagemanager",
+        "target": { },
+        "action": {"type": "call_method_from_object",
+                   "object_name": "sockSys",
+                   "function_name": "cueSocket",
+                   "_cue": { 
+                    "name": "OGJ_7",
+                    "sceneLink": "https://onboardxr.live/scenes/GhnAf3X/arijuststage",
+                    "target": { "role" : "individual",
+                      "name":"Codebeard",
+                      "aspect" : "scale" },
+                    "action": { "type": "manipulate_avatar",
+                      "attr": "object3D",
+                      "anime": {
+                       "targets": "",
+                       "delay" : 0,
+                       "loop": false,
+                       "autoplay": false,
+                       "easing": "linear",
+                       "duration": 0
+                       },
+                       "timelines" : [
+                        {"x": 0.66, "y":0.66, "z":0.66,"delay":0, "easing": "easeOutSine", "duration": 0}
+                       ]
+                     }
+                   }
+                  },
+        "trig": {"type": "button",
+          "groupChain" : "OGJ_group_2",
+                 "time": 0}
+      },
+      {
+        "name": "OGJ_8",
+        "role": "stagemanager",
+        "target": { "type": "glb",
+                    "dest": "url",
+                    "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/2849dec0-0968-4c2b-9a1d-57414e816235.glb"},
+        "action": {"type": "spawn_item",
+          "pos": {"x": -0.06773451715707779, "y": 1.4360880851745605, "z": -1.1518691778182983},
+                   "rot": {"x": 1.56, "y": 0, "z":0},
+                   "scale": {"x": 0.03, "y":0.03, "z":0.03}},
+        "trig": {"type": "button",
+          "groupChain" : "OGJ_group_2",
+                 "time": 10000}
+      },
+      {
+        "name": "OGJ_9",
+        "role": "stagemanager",
+        "target": { "type": "glb",
+                    "dest": "url",
+                    "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/2849dec0-0968-4c2b-9a1d-57414e816235.glb"},
+        "action": {"type": "spawn_item",
+          "pos": {"x": -0.13663725554943085, "y": 1.4408223628997803, "z": -1.1917232275009155},
+                   "rot": {"x": 1.727, "y":-0.183, "z":2.966},
+                   "scale": {"x": 0.03, "y":0.03, "z":0.03}},
+        "trig": {"type": "button",
+          "groupChain" : "OGJ_group_2",
+                 "time": 10000}
+      },
+      {
+        "name": "OGJ_10",
+        "role": "stagemanager",
+        "target": { "type": "audio",
+                    "dest": "url",
+                    "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/2937f162-7f28-4ad4-9aab-b5b885e2d459.mp3"},
+        "action": { "type": "spawn_item",
+                    "pos": {"x":0, "y":-2, "z":0},
+                    "rot": {"x": 0, "y":0, "z":0},
+                    "scale": {"x": 1, "y":1, "z":1},
+                    "volume":1,
+                    "distanceModel": "linear",
+                    "rolloffFactor":0,
+                    "refDistance":1000,
+                    "maxDistance":10000},
+        "trig": {"type": "button",
+          "groupChain" : "OGJ_group_2",
+                 "time": 0}
+      },
+      {
+        "name": "OGJ_11",
+        "role": "stagemanager",
+        "target": { },
+        "action": {"type": "call_method_from_object",
+                   "object_name": "sockSys",
+                   "function_name": "cueSocket",
+                   "_cue": { 
+                     "name": "OGJ_11",
+                     "sceneLink": "https://onboardxr.live/scenes/GhnAf3X/arijuststage",
                      "target": { "role": "general" },
                      "action": { "type": "change_rolloff",
                       "names": ["Codebeard"],
@@ -1913,9 +2061,267 @@
                   }
                   },
         "trig": {"type": "button",
-          "groupChain" : "OGJ_group_1",
-                 "time": 5000}
+          "groupChain" : "OGJ_group_2",
+                 "time": 0}
       },
+      {
+        "name": "OGJ_12",
+        "role": "stagemanager",
+        "target": { "type": "glb",
+                    "dest": "url",
+                    "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/eb50467b-ff52-4030-8998-7f4bb08df683.glb"},
+        "action": {"type": "spawn_item",
+          "pos": {"x": -0.1, "y": 1.425, "z": -1.2},
+                   "rot": {"x": 0, "y":0, "z":0},
+                   "scale": {"x": 0.6, "y":0.65, "z":0.1}},
+        "trig": {"type": "button",
+          "groupChain" : "OGJ_group_2",
+                 "time": 0}
+      },
+      {
+        "name": "OGJ_13",
+        "role": "stagemanager",
+        "target": { },
+        "action": {"type": "call_method_from_object",
+                   "object_name": "sockSys",
+                   "function_name": "cueSocket",
+                   "_cue": { 
+                    "name": "OGJ_13",
+                    "sceneLink": "https://onboardxr.live/scenes/GhnAf3X/arijuststage",
+                    "target": { "role": "general",
+                      "aspect" : "scale" },
+                    "action": { "type": "socket_manipulate_object",
+                      "mapItem": "OGJ_12",
+                      "attr": "object3D",
+                      "anime": {
+                       "targets": "position",
+                       "delay" : 1000,
+                       "loop": false,
+                       "autoplay": false,
+                       "easing": "easeInOutSine",
+                       "duration": 1000
+                       },
+                       "timelines" : [
+                        {"x": 0.6, "y":0.65, "z":0.7, "easing": "easeInSine", "duration": 4000, "delay": 0},
+                        {"x": 1, "y": 1, "z": 1, "easing": "easeOutSine", "duration": 4000, "delay": 0}
+                       ]
+                     }
+                   }
+                  },
+        "trig": {"type": "button",
+          "groupChain" : "OGJ_group_2",
+                 "time": 2000}
+        },
+        {
+          "name": "OGJ_14",
+          "role": "stagemanager",
+          "target": { },
+          "action": {"type": "call_method_from_object",
+                     "object_name": "sockSys",
+                     "function_name": "cueSocket",
+                     "_cue": { 
+                      "name": "OGJ_14",
+                      "sceneLink": "https://onboardxr.live/scenes/GhnAf3X/arijuststage",
+                      "target": { "role": "general",
+                        "aspect" : "position" },
+                      "action": { "type": "socket_manipulate_object",
+                        "mapItem": "OGJ_12",
+                        "attr": "object3D",
+                        "anime": {
+                         "targets": "position",
+                         "delay" : 1000,
+                         "loop": false,
+                         "autoplay": false,
+                         "easing": "easeInOutSine",
+                         "duration": 1000
+                         },
+                         "timelines" : [
+                          {"x": -0.09024689346551895, "y": 1.4291059970855713, "z": -1.1467955112457275, "easing": "easeInOutSine", "duration": 8000, "delay": 0}
+                         ]
+                       }
+                     }
+                    },
+          "trig": {"type": "button",
+            "groupChain" : "OGJ_group_2",
+                   "time": 2000}
+          },
+          {
+            "name": "OGJ_15",
+            "role": "stagemanager",
+            "target": { "type": "glb",
+                        "dest": "url",
+                        "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/60e55366-c235-4a89-9319-6b93ed19e53e.glb"},
+            "action": {"type": "spawn_item",
+              "pos": {"x": -0.12, "y": 1.4, "z": -1.2},
+                       "rot": {"x": 0, "y":0, "z":0},
+                       "scale": {"x": 1, "y":0.25, "z":2.22}},
+            "trig": {"type": "button",
+              "groupChain" : "OGJ_group_2",
+                     "time": 0}
+          },
+          {
+            "name": "OGJ_16",
+            "role": "stagemanager",
+            "target": { },
+            "action": {"type": "call_method_from_object",
+                       "object_name": "sockSys",
+                       "function_name": "cueSocket",
+                       "_cue": { 
+                        "name": "OGJ_16",
+                        "sceneLink": "https://onboardxr.live/scenes/GhnAf3X/arijuststage",
+                        "target": { "role": "general",
+                          "aspect" : "scale" },
+                        "action": { "type": "socket_manipulate_object",
+                          "mapItem": "OGJ_15",
+                          "attr": "object3D",
+                          "anime": {
+                           "targets": "position",
+                           "delay" : 1000,
+                           "loop": false,
+                           "autoplay": false,
+                           "easing": "easeInOutSine",
+                           "duration": 1000
+                           },
+                           "timelines" : [
+                            {"x": 1.6, "y":2.5, "z":2.22, "easing": "easeInOutSine", "duration": 8000, "delay": 0}
+                           ]
+                         }
+                       }
+                      },
+            "trig": {"type": "button",
+              "groupChain" : "OGJ_group_2",
+                     "time": 2000}
+            },
+            {
+              "name": "OGJ_17",
+              "role": "stagemanager",
+              "target": { },
+              "action": {"type": "call_method_from_object",
+                         "object_name": "sockSys",
+                         "function_name": "cueSocket",
+                         "_cue": { 
+                          "name": "OGJ_17",
+                          "sceneLink": "https://onboardxr.live/scenes/GhnAf3X/arijuststage",
+                          "target": { "role": "general",
+                            "aspect" : "position" },
+                          "action": { "type": "socket_manipulate_object",
+                            "mapItem": "OGJ_15",
+                            "attr": "object3D",
+                            "anime": {
+                             "targets": "position",
+                             "delay" : 1000,
+                             "loop": false,
+                             "autoplay": false,
+                             "easing": "easeInOutSine",
+                             "duration": 1000
+                             },
+                             "timelines" : [
+                              {"x": -0.08965478092432022, "y": 1.6135705709457397, "z": -1.245884895324707, "easing": "easeInOutSine", "duration": 8000, "delay": 0}
+                             ]
+                           }
+                         }
+                        },
+              "trig": {"type": "button",
+                "groupChain" : "OGJ_group_2",
+                       "time": 2000}
+              },
+              {
+                "name": "OGJ_18",
+                "role": "stagemanager",
+                "target": { "type": "glb",
+                            "dest": "url",
+                            "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/8ef7e1c5-eca8-48f2-83ac-1b30acd563f0.glb"},
+                "action": {"type": "spawn_item",
+                  "pos": {"x": -0.06, "y": 1.35, "z": -1.3},
+                           "rot": {"x": 1.56, "y":0, "z":0.035},
+                           "scale": {"x": 0.007, "y":0.0001, "z":0.01}},
+                "trig": {"type": "button",
+                  "groupChain" : "OGJ_group_2",
+                         "time": 0}
+              },
+              {
+                "name": "OGJ_19",
+                "role": "stagemanager",
+                "target": { },
+                "action": {"type": "call_method_from_object",
+                           "object_name": "sockSys",
+                           "function_name": "cueSocket",
+                           "_cue": { 
+                            "name": "OGJ_19",
+                            "sceneLink": "https://onboardxr.live/scenes/GhnAf3X/arijuststage",
+                            "target": { "role": "general",
+                              "aspect" : "position" },
+                            "action": { "type": "socket_manipulate_object",
+                              "mapItem": "OGJ_18",
+                              "attr": "object3D",
+                              "anime": {
+                               "targets": "position",
+                               "delay" : 1000,
+                               "loop": false,
+                               "autoplay": false,
+                               "easing": "easeInOutSine",
+                               "duration": 1000
+                               },
+                               "timelines" : [
+                                {"x": -0.09199122339487076, "y": 1.2938424348831177, "z": -0.882455050945282, "easing": "easeInOutSine", "duration": 8000, "delay": 0}
+                               ]
+                             }
+                           }
+                          },
+                "trig": {"type": "button",
+                  "groupChain" : "OGJ_group_2",
+                         "time": 7000}
+                },
+                {
+                  "name": "OGJ_20",
+                  "role": "stagemanager",
+                  "target": { },
+                  "action": {"type": "call_method_from_object",
+                             "object_name": "sockSys",
+                             "function_name": "cueSocket",
+                             "_cue": { 
+                              "name": "OGJ_20",
+                              "sceneLink": "https://onboardxr.live/scenes/GhnAf3X/arijuststage",
+                              "target": { "role": "general",
+                                "aspect" : "scale" },
+                              "action": { "type": "socket_manipulate_object",
+                                "mapItem": "OGJ_18",
+                                "attr": "object3D",
+                                "anime": {
+                                 "targets": "position",
+                                 "delay" : 1000,
+                                 "loop": false,
+                                 "autoplay": false,
+                                 "easing": "easeInOutSine",
+                                 "duration": 1000
+                                 },
+                                 "timelines" : [
+                                  {"x": 0.007, "y":0.01, "z":0.01, "easing": "easeInSine", "duration": 6000, "delay": 0},
+                                  {"x": 0.009, "y":0.01, "z":0.01, "easing": "easeOutSine", "duration": 2000, "delay": 0}
+                                 ]
+                               }
+                             }
+                            },
+                  "trig": {"type": "button",
+                    "groupChain" : "OGJ_group_2",
+                           "time": 7000}
+                  },
+                  {
+                    "name": "OGJ_21",
+                    "role": "stagemanager",
+                    "target": { "type": "glb",
+                                "dest": "url",
+                                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/8ef7e1c5-eca8-48f2-83ac-1b30acd563f0.glb"},
+                    "action": {"type": "spawn_item",
+                      "pos": {"x": -0.1, "y": 0.7, "z": -0.3},
+                               "rot": {"x": 1.56, "y":0, "z":0},
+                               "scale": {"x": 0.002, "y":0.002, "z":0.025}},
+                    "trig": {"type": "button",
+                      "groupChain" : "OGJ_group_2",
+                             "time": 0}
+                  },
+
+
       {
         "name": "OGJ_6",
         "role": "arit",
