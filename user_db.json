@@ -32,5 +32,6 @@
   "mikeob4":{"name":"___", "role":"stagemanager"},
   "itlSM" : {"name":"Jason", "role":"itlSM"},
   "itlPerf1" : {"name":"ITL1", "role":"itlPerf1"},
-  "itlPerf2" : {"name":"ITL2", "role":"itlPerf2"}
+  "itlPerf2" : {"name":"ITL2", "role":"itlPerf2"},
+  "llen" : {"name":"NellySM", "role":"llen"}
  }
