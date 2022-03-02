@@ -2631,25 +2631,6 @@
                      "time": 0}
           },
           {
-            "name": "BTB_4",
-            "role": "mand",
-            "target": { "type": "audio",
-                        "dest": "url",
-                        "src":  "https://jigsawhubs.github.io/Jigsaw_data/audio/BTB_A_4.wav"},
-            "action": { "type": "spawn_item",
-                        "pos": {"x": -92.89260277008137, "y": 0.13955284042021154, "z":16.032020761070353},
-                        "rot": {"x": 0, "y":0, "z":0},
-                        "scale": {"x": 0, "y":0, "z":0},
-                        "volume":1,
-                        "distanceModel": "linear",
-                        "rolloffFactor":0.6,
-                        "refDistance":1,
-                        "maxDistance":10000},
-            "trig": {"type": "button",
-              "groupChain" : "BTB_group_3",
-                     "time": 0}
-          },
-          {
             "name": "BTB_5",
             "role": "mand",
             "target": { "type": "glb",
@@ -2660,7 +2641,7 @@
                        "rot": {"x": 0, "y":0, "z":0},
                        "scale": {"x": 4, "y":4, "z":4}},
             "trig": {"type": "button",
-              "groupChain" : "BTB_group_4",
+              "groupChain" : "BTB_group_3",
                      "time": 0}
           },
           {
@@ -2694,7 +2675,7 @@
                        }
                       },
             "trig": {"type": "button",
-              "groupChain" : "BTB_group_4",
+              "groupChain" : "BTB_group_3",
                      "time": 1000}
             },
             {
@@ -2704,9 +2685,28 @@
                           "src": "BTB_5"},
               "action": {"type": "delete"},
               "trig": {"type": "button",
-                "groupChain" : "BTB_group_4",
+                "groupChain" : "BTB_group_3",
                        "time": 31000}
             },
+          {
+            "name": "BTB_4",
+            "role": "mand",
+            "target": { "type": "audio",
+                        "dest": "url",
+                        "src":  "https://jigsawhubs.github.io/Jigsaw_data/audio/BTB_A_4.wav"},
+            "action": { "type": "spawn_item",
+                        "pos": {"x": -92.89260277008137, "y": 0.13955284042021154, "z":16.032020761070353},
+                        "rot": {"x": 0, "y":0, "z":0},
+                        "scale": {"x": 0, "y":0, "z":0},
+                        "volume":1,
+                        "distanceModel": "linear",
+                        "rolloffFactor":0.6,
+                        "refDistance":1,
+                        "maxDistance":10000},
+            "trig": {"type": "button",
+              "groupChain" : "BTB_group_4",
+                     "time": 0}
+          },
             {
               "name": "HAT_1",
               "role":"stagemanager",
@@ -3235,7 +3235,7 @@
               "role": "stagemanager",
               "target": { "type": "glb",
                           "dest": "local",
-                          "src": "HAT_18a"},
+                          "src": "HAT_18d"},
               "action": {"type": "move",
                          "duration": 4000,
                          "loop": true,
@@ -3250,7 +3250,7 @@
               "name": "HAT_18f",
               "role": "stagemanager",
               "target": { "type": "glb",
-                          "src": "HAT_18a"},
+                          "src": "HAT_18d"},
               "action": {"type": "delete"},
               "trig": {"type": "button",
                 "groupChain" : "HAT_group_3",
