@@ -3298,20 +3298,23 @@
               "groupChain" : "HAT_group_3",
                      "time": 220000}
           },
-            {
-              "name": "HAT_22",
-              "role": "stagemanager",
-              "target": { "type": "audio",
-                          "dest": "url",
-                          "src":  "https://jigsawhubs.github.io/Jigsaw_data/audio/HAT_A_1.mp3"},
-              "action": { "type": "spawn_item",
-                          "pos": {"x": 0, "y":-2, "z":0},
-                          "rot": {"x": 0, "y":0, "z":0},
-                          "scale": {"x": 0, "y":0, "z":0}},
-              "trig": {"type": "button",
-                "groupChain" : "HAT_group_3",
-                       "time": 0}
-            },
+          {
+            "name": "HAT_22",
+            "role": "llen",
+            "target": { "type": "audio",
+                        "dest": "url",
+                        "src":  "https://jigsawhubs.github.io/Jigsaw_data/audio/HAT_A_1.mp3"},
+            "action": { "type": "spawn_item",
+                        "pos": {"x": 12.637018203735352, "y":2.8621883392333984, "z":-1.6537166833877563},
+                        "rot": {"x": 0, "y":0, "z":0},
+                        "scale": {"x": 0, "y":0, "z":0},
+                      "volume": 10,
+                       "rolloff": 0
+                      },
+            "trig": {"type": "button",
+              "groupChain" : "HAT_group_3",
+                     "time": 0}
+          },
             {
               "name": "HAT_23",
               "role": "stagemanager",
@@ -3936,20 +3939,23 @@
               "groupChain" : "HAT_group_3",
                      "time": 220000}
           },
-            {
-              "name": "HAT_22",
-              "role": "llen",
-              "target": { "type": "audio",
-                          "dest": "url",
-                          "src":  "https://jigsawhubs.github.io/Jigsaw_data/audio/HAT_A_1.mp3"},
-              "action": { "type": "spawn_item",
-                          "pos": {"x": 0, "y":-2, "z":0},
-                          "rot": {"x": 0, "y":0, "z":0},
-                          "scale": {"x": 0, "y":0, "z":0}},
-              "trig": {"type": "button",
-                "groupChain" : "HAT_group_3",
-                       "time": 0}
-            },
+          {
+            "name": "HAT_22",
+            "role": "llen",
+            "target": { "type": "audio",
+                        "dest": "url",
+                        "src":  "https://jigsawhubs.github.io/Jigsaw_data/audio/HAT_A_1.mp3"},
+            "action": { "type": "spawn_item",
+                        "pos": {"x": 12.637018203735352, "y":2.8621883392333984, "z":-1.6537166833877563},
+                        "rot": {"x": 0, "y":0, "z":0},
+                        "scale": {"x": 0, "y":0, "z":0},
+                      "volume": 10,
+                       "rolloff": 0
+                      },
+            "trig": {"type": "button",
+              "groupChain" : "HAT_group_3",
+                     "time": 0}
+          },
             {
               "name": "HAT_23",
               "role": "llen",
