@@ -4124,7 +4124,7 @@
           },
           {
             "name": "HAT_22",
-            "role": "llen",
+            "role": "stagemanager",
             "target": { "type": "audio",
                         "dest": "url",
                         "src":  "https://jigsawhubs.github.io/Jigsaw_data/audio/HAT_A_1.mp3"},
