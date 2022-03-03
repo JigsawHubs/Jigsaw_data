@@ -2028,7 +2028,7 @@
         "role": "stagemanager",
         "target": { "type": "audio",
                     "dest": "url",
-                    "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/2937f162-7f28-4ad4-9aab-b5b885e2d459.mp3"},
+                    "src":  "https://jigsawhubs.github.io/Jigsaw_data/audio/OGJ_A_1.mp3"},
         "action": { "type": "spawn_item",
                     "pos": {"x":0, "y":-2, "z":0},
                     "rot": {"x": 0, "y":0, "z":0},
