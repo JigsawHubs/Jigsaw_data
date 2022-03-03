@@ -2392,14 +2392,14 @@
                         "role": "stagemanager",
                         "target": { "type": "glb",
                                     "dest": "url",
-                                    "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/8ef7e1c5-eca8-48f2-83ac-1b30acd563f0.glb"},
+                                    "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/29bbf2ef-918d-4269-aefb-886c462fa9ed.glb"},
                         "action": {"type": "spawn_item",
-                          "pos": {"x": -0.09, "y": 1.4, "z": -0.8},
-                                   "rot": {"x": 3.14, "y":1.56, "z":0},
-                                   "scale": {"x": 0, "y":0, "z":0.2}},
+                          "pos": {"x": -0.11980419605970383, "y": 1.2678035497665405, "z": -0.7324101328849792},
+                                   "rot": {"x": 3.14, "y":-1.56, "z":0},
+                                   "scale": {"x": 0.0001, "y":0.0001, "z":0.01}},
                         "trig": {"type": "button",
                           "groupChain" : "OGJ_group_2",
-                                 "time": 0}
+                                 "time": 15500}
                       },
                       {
                         "name": "OGJ_21b",
@@ -2425,14 +2425,15 @@
                                        "duration": 1000
                                        },
                                        "timelines" : [
-                                        {"x": 0.052622970193624496, "y": 0.7916028499603271, "z": 0.0172407366335392, "easing": "easeInOutSine", "duration": 8000, "delay": 0}
+                                        {"x": -0.0635322704911232, "y": 1.2495819330215454, "z": -0.5132409930229187, "easing": "easeInSine", "duration": 2500, "delay": 0},
+                                        {"x": -0.09238379448652267, "y": 0.994808554649353, "z": -0.4469282329082489, "easing": "easeOutSine", "duration": 2500, "delay": 0}
                                        ]
                                      }
                                    }
                                   },
                         "trig": {"type": "button",
                           "groupChain" : "OGJ_group_2",
-                                 "time": 12000}
+                                 "time": 17500}
                         },
                         {
                           "name": "OGJ_21c",
@@ -2458,15 +2459,15 @@
                                          "duration": 1000
                                          },
                                          "timelines" : [
-                                          {"x": 0.002, "y":0.025, "z":0.025, "easing": "easeInSine", "duration": 5000, "delay": 0},
-                                          {"x": 0.025, "y":0.025, "z":0.025, "easing": "easeOutSine", "duration": 5000, "delay": 0}
+                                          {"x": 0.2, "y":0.0001, "z":0.05, "easing": "easeInSine", "duration": 2500, "delay": 0},
+                                          {"x": 0.2, "y":0.2, "z":0.13, "easing": "easeOutSine", "duration": 2500, "delay": 0}
                                          ]
                                        }
                                      }
                                     },
                           "trig": {"type": "button",
                             "groupChain" : "OGJ_group_2",
-                                   "time": 12000}
+                                   "time": 17500}
                           },
                       {
                         "name": "OGJ_24",
