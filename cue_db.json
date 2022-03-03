@@ -2025,7 +2025,7 @@
       },
       {
         "name": "OGJ_10",
-        "role": "none",
+        "role": "stagemanager",
         "target": { "type": "audio",
                     "dest": "url",
                     "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/2937f162-7f28-4ad4-9aab-b5b885e2d459.mp3"},
@@ -2039,6 +2039,7 @@
                     "refDistance":1000,
                     "maxDistance":10000},
         "trig": {"type": "button",
+          "groupChain" : "OGJ_group_2",
                  "time": 0}
       },
       {
@@ -2387,6 +2388,87 @@
                                "time": 12000}
                       },
                       {
+                        "name": "OGJ_21a",
+                        "role": "stagemanager",
+                        "target": { "type": "glb",
+                                    "dest": "url",
+                                    "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/8ef7e1c5-eca8-48f2-83ac-1b30acd563f0.glb"},
+                        "action": {"type": "spawn_item",
+                          "pos": {"x": -0.09, "y": 1.4, "z": -0.8},
+                                   "rot": {"x": 3.14, "y":1.56, "z":0},
+                                   "scale": {"x": 0, "y":0, "z":0.2}},
+                        "trig": {"type": "button",
+                          "groupChain" : "OGJ_group_2",
+                                 "time": 0}
+                      },
+                      {
+                        "name": "OGJ_21b",
+                        "role": "stagemanager",
+                        "target": { },
+                        "action": {"type": "call_method_from_object",
+                                   "object_name": "sockSys",
+                                   "function_name": "cueSocket",
+                                   "_cue": { 
+                                    "name": "OGJ_21b",
+                                    "sceneLink": "https://onboardxr.live/scenes/GhnAf3X/arijuststage",
+                                    "target": { "role": "general",
+                                      "aspect" : "position" },
+                                    "action": { "type": "socket_manipulate_object",
+                                      "mapItem": "OGJ_21a",
+                                      "attr": "object3D",
+                                      "anime": {
+                                       "targets": "position",
+                                       "delay" : 1000,
+                                       "loop": false,
+                                       "autoplay": false,
+                                       "easing": "easeInOutSine",
+                                       "duration": 1000
+                                       },
+                                       "timelines" : [
+                                        {"x": 0.052622970193624496, "y": 0.7916028499603271, "z": 0.0172407366335392, "easing": "easeInOutSine", "duration": 8000, "delay": 0}
+                                       ]
+                                     }
+                                   }
+                                  },
+                        "trig": {"type": "button",
+                          "groupChain" : "OGJ_group_2",
+                                 "time": 12000}
+                        },
+                        {
+                          "name": "OGJ_21c",
+                          "role": "stagemanager",
+                          "target": { },
+                          "action": {"type": "call_method_from_object",
+                                     "object_name": "sockSys",
+                                     "function_name": "cueSocket",
+                                     "_cue": { 
+                                      "name": "OGJ_21c",
+                                      "sceneLink": "https://onboardxr.live/scenes/GhnAf3X/arijuststage",
+                                      "target": { "role": "general",
+                                        "aspect" : "scale" },
+                                      "action": { "type": "socket_manipulate_object",
+                                        "mapItem": "OGJ_21a",
+                                        "attr": "object3D",
+                                        "anime": {
+                                         "targets": "position",
+                                         "delay" : 1000,
+                                         "loop": false,
+                                         "autoplay": false,
+                                         "easing": "easeInOutSine",
+                                         "duration": 1000
+                                         },
+                                         "timelines" : [
+                                          {"x": 0.002, "y":0.025, "z":0.025, "easing": "easeInSine", "duration": 5000, "delay": 0},
+                                          {"x": 0.025, "y":0.025, "z":0.025, "easing": "easeOutSine", "duration": 5000, "delay": 0}
+                                         ]
+                                       }
+                                     }
+                                    },
+                          "trig": {"type": "button",
+                            "groupChain" : "OGJ_group_2",
+                                   "time": 12000}
+                          },
+                      {
                         "name": "OGJ_24",
                         "role": "stagemanager",
                         "target": { "type": "glb",
@@ -2474,7 +2556,7 @@
                                    "scale": {"x": 2, "y":2, "z":2}},
                         "trig": {"type": "button",
                           "groupChain" : "OGJ_group_2",
-                                 "time": 45000}
+                                 "time": 44000}
                       },
                       {
                         "name": "OGJ_30",
@@ -2490,7 +2572,7 @@
                                    "scale": {"x": 2, "y":2, "z":2}},
                         "trig": {"type": "button",
                           "groupChain" : "OGJ_group_2",
-                                 "time": 5000}
+                                 "time": 45000}
                       },
                       {
                         "name": "OGJ_31",
@@ -2560,7 +2642,7 @@
                         "name": "OGJ_36",
                         "role": "stagemanager",
                         "target": { "type": "glb",
-                                    "src": "OGJ_31"},
+                                    "src": "OGJ_34"},
                         "action": {"type": "delete"},
                         "trig": {"type": "button",
                           "groupChain": "OGJ_group_2",
