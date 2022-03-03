@@ -2940,7 +2940,7 @@
                                          "scale": {"x": 0.001, "y":0.001, "z":0.001}},
                                 "trig": {"type": "button",
                                   "groupChain" : "OGJ_group_2",
-                                         "time": 128000}
+                                         "time": 124000}
                               },
                               {
                                 "name": "OGJ_50",
@@ -2973,7 +2973,7 @@
                                           },
                                 "trig": {"type": "button",
                                   "groupChain" : "OGJ_group_2",
-                                         "time": 130000}
+                                         "time": 132000}
                                 },
           {
             "name": "BTB_1",
