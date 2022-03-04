@@ -5623,6 +5623,16 @@
       "trig": {"type": "button",
         "groupChain" : "THE_HOOK_group",
                "time": 5000}
+    },
+    {
+      "name": "change_to_lobby",
+      "role":"stagemanager",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"https://onboardxr.live/scenes/72QcSZv"},
+      "trig": {"type": "button",
+        "groupChain" : "change_to_lobby_group",
+               "time": 0}
     }
     ]
 }
