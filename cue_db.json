@@ -3741,7 +3741,7 @@
                              "timelines" : [
                               {"x":0, "y": -10, "z":0,"delay":0, "easing": "easeOutSine", "duration": 0},
                               {"x": 0, "y": 10, "z": 0,"delay":2000, "easing": "easeOutSine", "duration": 8000},
-                              {"x": 0, "y": 1.929677371978821, "z": 0,"delay":0, "easing": "linear", "duration": 6000}
+                              {"x": 0, "y": 1.729677371978821, "z": 0,"delay":0, "easing": "linear", "duration": 6000}
                              ]
                            }
                          }
@@ -3774,9 +3774,9 @@
                              "duration": 0
                              },
                              "timelines" : [
-                              {"x": 3, "y": 3, "z": 3,"delay":0, "easing": "easeOutSine", "duration": 0},
-                              {"x": 9, "y": 9, "z": 9,"delay":48000, "easing": "easeInSine", "duration": 10000},
-                              {"x": 3, "y": 3, "z": 3,"delay":7000, "easing": "easeOutSine", "duration": 3000}
+                              {"x": 5, "y": 5, "z": 5,"delay":0, "easing": "easeOutSine", "duration": 0},
+                              {"x": 10, "y": 10, "z": 10,"delay":48000, "easing": "easeInSine", "duration": 10000},
+                              {"x": 5, "y": 5, "z": 5,"delay":7000, "easing": "easeOutSine", "duration": 3000}
                              ]
                            }
                          }
@@ -3921,6 +3921,7 @@
                              "duration": 0
                              },
                              "timelines" : [
+                              {"x": 0, "y": 1.729677371978821, "z": 0,"delay":0, "easing": "easeInOutSine", "duration": 3000},
                               {"x":-5.397482465207239, "y": 5.586443916964242, "z":17.30059295348514,"delay":0, "easing": "easeInSine", "duration": 4000},
                               {"x":23.400138611823635, "y": 5.679817533849244, "z":2.247939809494902,"delay":0, "easing": "linear", "duration": 4000},
                               {"x":-5.066705980676874, "y": 5.679817533849244, "z":-22.882930440389764,"delay":0, "easing": "linear", "duration": 4000},
@@ -4092,7 +4093,7 @@
                 "scale": {"x":40, "y":20, "z":20}},
               "trig": {"type": "button",
                 "groupChain" : "HAT_group_3",
-                       "time": 220000}
+                       "time": 270000}
             },
             {
               "name": "HAT_20",
@@ -4106,7 +4107,7 @@
                 "scale": {"x":40, "y":20, "z":20}},
               "trig": {"type": "button",
                 "groupChain" : "HAT_group_3",
-                       "time": 220000}
+                       "time": 270000}
             },
             {
             "name": "HAT_21",
@@ -4120,7 +4121,7 @@
               "scale": {"x":40, "y":20, "z":20}},
             "trig": {"type": "button",
               "groupChain" : "HAT_group_3",
-                     "time": 220000}
+                     "time": 270000}
           },
           {
             "name": "HAT_22",
@@ -5055,7 +5056,7 @@
                  "object_name": "sockSys",
                  "function_name": "cueSocket",
                  "_cue": {
-                  "name": "NPCe_8",
+                  "name": "ITL_4_A",
                   "sceneLink": "https://onboardxr.live/scenes/5XjCU4u/ob2-00-pier",
                   "role": "itlSM",
                   "target": { "role": "individual",
