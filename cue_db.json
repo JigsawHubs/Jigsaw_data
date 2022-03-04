@@ -5095,94 +5095,6 @@
         "groupChain" : "ITL_group14",
                "time": 0}
     },
-      {
-        "name": "AV_inv",
-        "role":"clem",
-        "target": { },
-        "action": {"type": "change_avatar",
-                   "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/mini-avatar.glb"},
-        "trig": {"type": "button",
-                 "time": 0}
-       },
-    {
-      "name": "startPos",
-      "role": "clem",
-      "target": { },
-      "action": {"type": "jump_to_waypoint",
-                 "anchor":"clemStartPos"},
-      "trig": {"type": "button",
-               "time": 0}
-    },
-    {
-      "name": "AUD_0",
-      "role": "demz",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": {
-                  "name": "Test_change_avatar",
-                  "role":"test",
-                  "target": { "role" : "participant"},
-                  "action": {"type": "change_avatar",
-                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/UW_audienceRusalka0b.glb"}
-                }
-                },
-      "trig": {"type": "button",
-               "time": 0}
-    },
-    {
-      "name": "AUD_1",
-      "role": "demz",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": {
-                  "name": "Test_change_avatar",
-                  "role":"test",
-                  "target": { "role" : "participant"},
-                  "action": {"type": "change_avatar",
-                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/UW_audienceRusalka1b.glb"}
-                }
-                },
-      "trig": {"type": "button",
-               "time": 0}
-    },
-    {
-      "name": "AUD_2",
-      "role": "demz",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": {
-                  "name": "Test_change_avatar",
-                  "role":"test",
-                  "target": { "role" : "participant"},
-                  "action": {"type": "change_avatar",
-                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/UW_audienceRusalka2b.glb"}
-                }
-                },
-      "trig": {"type": "button",
-               "time": 0}
-    },
-    {
-      "name": "AUD_back",
-      "role": "demz",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": { 
-                   "name": "test_avatar_change_back",
-                   "target": { "role": "participant" },
-                   "action": { "type": "avatar_change_back"}
-                }
-                },
-      "trig": {"type": "button",
-               "time": 0}
-    },
     {
       "name": "AUD_0",
       "role": "clem",
@@ -5253,33 +5165,6 @@
       "trig": {"type": "button",
                "time": 0}
     },
-      {
-        "name": "AV_inv",
-        "role":"kristia",
-        "target": { },
-        "action": {"type": "change_avatar",
-                   "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/mini-avatar.glb"},
-        "trig": {"type": "button",
-                 "time": 0}
-       },
-    {
-      "name": "startPos",
-      "role": "kristia",
-      "target": { },
-      "action": {"type": "jump_to_waypoint",
-                 "anchor":"kristiaStartPos"},
-      "trig": {"type": "button",
-               "time": 0}
-    },
-      {
-        "name": "AV_inv",
-        "role":"demz",
-        "target": { },
-        "action": {"type": "change_avatar",
-                   "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/mini-avatar.glb"},
-        "trig": {"type": "button",
-                 "time": 0}
-       },
     {
       "name": "music_rolloff",
       "role": "demz",
@@ -5489,18 +5374,6 @@
                "time": 0}
     },
     {
-      "name": "shareCamera",
-      "role": "kmac",
-      "target": { "type": "webcam" },
-      "action": { "type": "spawn_item",
-                  "pos": {"x": -2.50, "y":-23.6, "z":3},
-                  "rot": {"x": 0, "y":0, "z":0},
-                  "scale": {"x": 1, "y":1, "z":1}
-                },
-      "trig": {"type": "button",
-               "time": 0}
-    },
-    {
       "name": "hidePos",
       "role": "kmac",
       "target": { },
@@ -5535,6 +5408,130 @@
                  "anchor":"#clemHidePos"},
       "trig": {"type": "button",
                 "time": 0}
+    },
+    {
+      "name": "startPos",
+      "role": "clem",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"clemStartPos"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "startPos",
+      "role": "kristia",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"kristiaStartPos"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+        "name": "AV_inv",
+        "role":"clem",
+        "target": { },
+        "action": {"type": "change_avatar",
+                   "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/mini-avatar.glb"},
+        "trig": {"type": "button",
+                 "time": 0}
+     },
+    {
+        "name": "AV_inv",
+        "role":"demz",
+        "target": { },
+        "action": {"type": "change_avatar",
+                   "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/mini-avatar.glb"},
+        "trig": {"type": "button",
+                 "time": 0}
+     },
+    {
+        "name": "AV_inv",
+        "role":"kristia",
+        "target": { },
+        "action": {"type": "change_avatar",
+                   "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/mini-avatar.glb"},
+        "trig": {"type": "button",
+                 "time": 0}
+     },
+    {
+        "name": "AV_inv",
+        "role":"kmac",
+        "target": { },
+        "action": {"type": "change_avatar",
+                   "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/mini-avatar.glb"},
+        "trig": {"type": "button",
+                 "time": 0}
+     },
+    {
+      "name": "AUD_0",
+      "role": "demz",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Test_change_avatar",
+                  "role":"test",
+                  "target": { "role" : "participant"},
+                  "action": {"type": "change_avatar",
+                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/UW_audienceRusalka0b.glb"}
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "AUD_1",
+      "role": "demz",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Test_change_avatar",
+                  "role":"test",
+                  "target": { "role" : "participant"},
+                  "action": {"type": "change_avatar",
+                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/UW_audienceRusalka1b.glb"}
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "AUD_2",
+      "role": "demz",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Test_change_avatar",
+                  "role":"test",
+                  "target": { "role" : "participant"},
+                  "action": {"type": "change_avatar",
+                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/UW_audienceRusalka2b.glb"}
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "AUD_back",
+      "role": "demz",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_avatar_change_back",
+                   "target": { "role": "participant" },
+                   "action": { "type": "avatar_change_back"}
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
     }
     ]
 }
