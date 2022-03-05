@@ -4487,7 +4487,7 @@
                            "_cue": { 
                             "name": "NPCe_13",
                             "sceneLink": "https://onboardxr.live/scenes/eTGt3hu/npc-a-74-1029",
-                            "target": { "role" : ["spectator", "participant", "stagemanager"],
+                            "target": { "role" : ["spectator", "participant"],
                               "aspect" : "scale" },
                             "action": { "type": "manipulate_avatar",
                               "attr": "object3D",
