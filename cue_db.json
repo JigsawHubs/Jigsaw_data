@@ -4192,7 +4192,7 @@
                          "function_name": "cueSocket",
                          "_cue": { 
                            "name": "NPCe_2",
-                           "target": { "role": ["participant", "spectator", "stagemanager"] },
+                           "target": { "role": ["participant", "spectator"] },
                            "action": { "type": "socket_toggle_movement",
                             "movement" : true}
                         }
@@ -4426,7 +4426,7 @@
                          "_cue": { 
                            "name": "NPCe_11",
                            "sceneLink": "https://onboardxr.live/scenes/eTGt3hu/npc-a-74-1029",
-                           "target": { "role": ["participant", "spectator", "stagemanager"] },
+                           "target": { "role": ["participant", "spectator"] },
                            "action": { "type": "socket_toggle_movement",
                             "movement" : false}
                         }
@@ -4468,7 +4468,7 @@
                            "_cue": { 
                              "name": "NPCe_12",
                              "sceneLink": "https://onboardxr.live/scenes/eTGt3hu/npc-a-74-1029",
-                             "target": { "role": ["participant", "spectator", "stagemanager"]},
+                             "target": { "role": ["participant", "spectator"]},
                              "action": { "type": "socket_toggle_movement",
                               "movement" : true}
                           }
@@ -4914,7 +4914,7 @@
                                "duration": 1000
                                },
                                "timelines" : [
-                                {"x": -40, "y": 2.8, "z": 3, "duration": 0, "delay": 15000, "easing": "linear"},
+                                {"x": -40, "y": 2.8, "z": 3, "duration": 0, "delay": 0, "easing": "linear"},
                                 {"x": -47.2, "y": 1.575, "z": -4.8, "duration": 72000, "delay": 25000, "easing": "linear"}
                                ]
                              }
@@ -4922,7 +4922,7 @@
                           },
                 "trig": {"type": "button",
                   "groupChain" : "NPCe_group3",
-                         "time": 0}
+                         "time": 15000}
                 },
                 {
                   "name": "NPCe_24",
@@ -4948,7 +4948,7 @@
                                  "duration": 1000
                                  },
                                  "timelines" : [
-                                  {"x": 0, "y": -1.9, "z": 0, "duration": 72000, "delay": 0, "easing": "linear"}
+                                  {"x": 0, "y": -2.4, "z": 0, "duration": 72000, "delay": 0, "easing": "linear"}
                                  ]
                                }
                              }
