@@ -4529,7 +4529,7 @@
                           },
                 "trig": {"type": "button",
                   "groupChain" : "NPCe_group3",
-                         "time": 14500}
+                         "time": 14000}
               },
               {
                 "name": "NPCe_14a",
@@ -4552,7 +4552,7 @@
                           },
                 "trig": {"type": "button",
                           "groupChain" : "NPCe_group3",
-                         "time": 17000}
+                         "time": 16000}
               },
               {
                 "name": "NPCe_15",
@@ -4846,8 +4846,8 @@
                                      "duration": 1
                                      },
                                      "timelines" : [
-                                      {"x": -47.2, "y": 1.4, "z": -4.8, "delay": 13000, "duration": 3000, "easing": "easeInOutSine"},
-                                      {"x": -47.2, "y": 1.6, "z": -4.8, "delay": 0, "duration": 7000, "easing": "easeInOutSine"},
+                                      {"x": -47.2, "y": 1.4, "z": -4.8, "delay": 0, "duration": 3000, "easing": "easeInOutSine"},
+                                      {"x": -47.2, "y": 1.45, "z": -4.8, "delay": 13000, "duration": 7000, "easing": "easeInOutSine"},
                                       {"x": -45.940843817519756, "y": 6, "z": -4.748546512830794, "delay": 0, "duration": 100, "easing": "linear"},
                                       {"x": -45.940843817519756, "y": -0.14393400766099185, "z": -4.748546512830794, "delay": 3000, "duration": 9000, "easing": "easeOutSine"}
                                      ]
