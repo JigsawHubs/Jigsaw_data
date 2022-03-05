@@ -4519,7 +4519,7 @@
                            "_cue": { 
                              "name": "NPCe_16",
                              "sceneLink": "https://onboardxr.live/scenes/eTGt3hu/npc-a-74-1029",
-                             "target": { "role": ["participant", "spectator"]
+                             "target": { "role": ["participant", "spectator", "stagemanager"]
                             },
                              "action": { "type": "recall_audience",
                               "waypoint" : "lanternWaypoint",
