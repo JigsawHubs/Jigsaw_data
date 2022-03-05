@@ -4405,7 +4405,7 @@
                           "name": "NPCe_10",
                           "sceneLink": "https://onboardxr.live/scenes/eTGt3hu/npc-a-74-1029",
                           "role":"stagemanager",
-                          "target": { "role" : "individual",
+                          "target": { "role" : ["individual", "stagemanager"],
                           "name" : "Brendan2"
                           },
                           "action": {"type": "change_avatar",
@@ -4500,7 +4500,7 @@
                                "duration": 1
                                },
                                "timelines" : [
-                                {"x": 0.1, "y": 0.1, "z": 0.1, "delay": 0, "duration": 6000, "easing": "easeInSine"}
+                                {"x": 0.05, "y": 0.05, "z": 0.05, "delay": 0, "duration": 6000, "easing": "easeInSine"}
                                ]
                              }
                            }
@@ -4578,7 +4578,7 @@
                                "duration": 1000
                                },
                                "timelines" : [
-                                {"x": -40, "y": 2.8, "z": 3, "duration": 6000, "delay": 0, "easing": "easeInOutSine"},
+                                {"x": -40, "y": 2.8, "z": 3, "duration": 15000, "delay": 0, "easing": "easeInOutSine"},
                                 {"x": -40, "y": -20, "z": 3, "duration": 100, "delay": 0, "easing": "easeOutSine"},
                                 {"x": -47.2, "y":1.575, "z":-4.8, "duration": 100, "delay": 104500, "easing": "easeOutSine"}
                                ]
@@ -4587,7 +4587,7 @@
                           },
                 "trig": {"type": "button",
                   "groupChain" : "NPCe_group3",
-                         "time": 9000}
+                         "time": 0}
                 },
                 {
                   "name": "NPCe_16",
@@ -4715,7 +4715,7 @@
                                 },
                     "trig": {"type": "button",
                       "groupChain" : "NPCe_group3",
-                              "time": 20000}
+                              "time": 18000}
                     },
                     {
                       "name": "NPCe_21",
