@@ -4715,7 +4715,7 @@
                                 },
                     "trig": {"type": "button",
                       "groupChain" : "NPCe_group3",
-                              "time": 18000}
+                              "time": 26000}
                     },
                     {
                       "name": "NPCe_21",
@@ -4846,9 +4846,10 @@
                                      "duration": 1
                                      },
                                      "timelines" : [
-                                      {"x": -47.2, "y": 1.6, "z": -4.8, "delay": 13000, "duration": 10000, "easing": "linear"},
+                                      {"x": -47.2, "y": 1.6, "z": -4.8, "delay": 13000, "duration": 3000, "easing": "easeInOutSine"},
+                                      {"x": -47.2, "y": 1.44, "z": -4.8, "delay": 0, "duration": 7000, "easing": "easeInOutSine"},
                                       {"x": -45.940843817519756, "y": 6, "z": -4.748546512830794, "delay": 0, "duration": 100, "easing": "linear"},
-                                      {"x": -45.940843817519756, "y": -0.14393400766099185, "z": -4.748546512830794, "delay": 2000, "duration": 8000, "easing": "easeOutSine"}
+                                      {"x": -45.940843817519756, "y": -0.14393400766099185, "z": -4.748546512830794, "delay": 3000, "duration": 9000, "easing": "easeOutSine"}
                                      ]
                                    }
                                  }
@@ -4914,7 +4915,8 @@
                                },
                                "timelines" : [
                                 {"x": 0.03, "y": 0.03, "z": 0.03, "delay": 0, "duration": 72000, "easing": "linear"},
-                                {"x": 0.7, "y": 0.7, "z": 0.7, "delay": 23000, "duration": 2000, "easing": "linear"}
+                                {"x": 0.07, "y": 0.07, "z": 0.07, "delay": 0, "duration": 13000, "easing": "linear"},
+                                {"x": 0.7, "y": 0.7, "z": 0.7, "delay": 10000, "duration": 2000, "easing": "linear"}
                                ]
                              }
                            }
