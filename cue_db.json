@@ -1841,6 +1841,15 @@
                   },
       "trig": {"type": "button",
                 "time": 0}
+      },{
+        "name": "UW_1",
+        "role":"stagemanager",
+        "target": { },
+        "action": {"type": "change_scene",
+                   "link":"https://onboardxr.live/scenes/r6DgZR3"},
+        "trig": {"type": "button",
+          "groupChain" : "UW_group1",
+                 "time": 0}
       },
       {
         "name": "OGJ_1",
