@@ -4867,7 +4867,7 @@
                            "_cue": { 
                             "name": "NPCe_22",
                             "sceneLink": "https://onboardxr.live/scenes/eTGt3hu/npc-a-74-1029",
-                            "target": { "role" : ["participant", "spectator", "stagemanager", "individual"], "name": "Brendan",
+                            "target": { "role" : ["participant", "spectator", "stagemanager"],
                               "aspect" : "scale" },
                             "action": { "type": "manipulate_avatar",
                               "attr": "object3D",
@@ -4881,6 +4881,39 @@
                                },
                                "timelines" : [
                                 {"x": 0.01, "y": 0.01, "z": 0.01, "delay": 0, "duration": 72000, "easing": "linear"},
+                                {"x": 0.7, "y": 0.7, "z": 0.7, "delay": 23000, "duration": 2000, "easing": "linear"}
+                               ]
+                             }
+                           }
+                          },
+                "trig": {"type": "button",
+                  "groupChain" : "NPCe_group3",
+                         "time": 25000}
+              },
+              {
+                "name": "NPCe_22b",
+                "role": "stagemanager",
+                "target": { },
+                "action": {"type": "call_method_from_object",
+                           "object_name": "sockSys",
+                           "function_name": "cueSocket",
+                           "_cue": { 
+                            "name": "NPCe_22b",
+                            "sceneLink": "https://onboardxr.live/scenes/eTGt3hu/npc-a-74-1029",
+                            "target": { "role" : ["individual"], "name": "Brendan",
+                              "aspect" : "scale" },
+                            "action": { "type": "manipulate_avatar",
+                              "attr": "object3D",
+                              "anime": {
+                               "targets": "",
+                               "delay" : 0,
+                               "loop": false,
+                               "autoplay": false,
+                               "easing": "linear",
+                               "duration": 1
+                               },
+                               "timelines" : [
+                                {"x": 0.03, "y": 0.03, "z": 0.03, "delay": 0, "duration": 72000, "easing": "linear"},
                                 {"x": 0.7, "y": 0.7, "z": 0.7, "delay": 23000, "duration": 2000, "easing": "linear"}
                                ]
                              }
@@ -5008,6 +5041,25 @@
                       "trig": {"type": "button",
                                 "groupChain" : "NPCe_group3",
                                "time": 0}
+                    },
+                    {
+                      "name": "NPCe_27",
+                      "role": "stagemanager",
+                      "target": { },
+                      "action": {"type": "call_method_from_object",
+                                 "object_name": "sockSys",
+                                 "function_name": "cueSocket",
+                                 "_cue": { 
+                                   "name": "NPCe_12",
+                                   "sceneLink": "https://onboardxr.live/scenes/eTGt3hu/npc-a-74-1029",
+                                   "target": { "role": ["participant", "spectator"]},
+                                   "action": { "type": "socket_toggle_movement",
+                                    "movement" : false}
+                                }
+                                },
+                      "trig": {"type": "button",
+                        "groupChain" : "NPCe_group3",
+                               "time": 122000}
                     },
                     {
       "name": "ITL_1",
