@@ -4728,7 +4728,7 @@
                                   "name": "NPCe_21",
                                   "sceneLink": "https://onboardxr.live/scenes/eTGt3hu/npc-a-74-1029",
                                   "target": {
-                                    "role": ["spectator", "participant", "stagemanager"],
+                                    "role": ["spectator", "participant"],
                                     "aspect": "position"
                                   },
                                   "action": {
@@ -4867,7 +4867,7 @@
                            "_cue": { 
                             "name": "NPCe_22",
                             "sceneLink": "https://onboardxr.live/scenes/eTGt3hu/npc-a-74-1029",
-                            "target": { "role" : ["participant", "spectator", "stagemanager"],
+                            "target": { "role" : ["participant", "spectator"],
                               "aspect" : "scale" },
                             "action": { "type": "manipulate_avatar",
                               "attr": "object3D",
@@ -4881,7 +4881,7 @@
                                },
                                "timelines" : [
                                 {"x": 0.01, "y": 0.01, "z": 0.01, "delay": 0, "duration": 72000, "easing": "linear"},
-                                {"x": 0.7, "y": 0.7, "z": 0.7, "delay": 23000, "duration": 2000, "easing": "linear"}
+                                {"x": 0.7, "y": 0.7, "z": 0.7, "delay": 23000, "duration": 5000, "easing": "linear"}
                                ]
                              }
                            }
@@ -4948,7 +4948,7 @@
                                },
                                "timelines" : [
                                 {"x": -40, "y": 2.8, "z": 3, "duration": 0, "delay": 0, "easing": "linear"},
-                                {"x": -47.2, "y": 1.575, "z": -4.8, "duration": 72000, "delay": 10000, "easing": "linear"}
+                                {"x": -47.2, "y": 1.575, "z": -4.8, "duration": 72000, "delay": 10500, "easing": "linear"}
                                ]
                              }
                            }
