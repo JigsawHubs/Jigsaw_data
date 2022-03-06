@@ -2808,7 +2808,7 @@
                                     }
                                     },
                         "trig": {"type": "button",
-                          "groupChain" : "NPCe_group3",
+                          "groupChain" : "OGJ_group_2",
                                   "time": 115033.33333206176758}
                         },
                         {
