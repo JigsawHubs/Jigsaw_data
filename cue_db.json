@@ -4289,7 +4289,7 @@
                                       "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/917ccf6a-89db-477c-a6b9-b0c6d0abd420.glb"},
                           "action": {"type": "spawn_item",
                             "pauseOnSpawn": true,
-                            "pos": {"x": -47.2, "y":1.575, "z":-4.8},
+                            "pos": {"x": -47.2, "y":1.675, "z":-4.8},
                 "rot": {"x":0, "y":0, "z":0},
                 "scale": {"x": 0.015, "y":0.015, "z":0.015}}
                         }
@@ -4605,7 +4605,7 @@
                                "timelines" : [
                                 {"x": -40, "y": 2.8, "z": 3, "duration": 15000, "delay": 0, "easing": "easeInOutSine"},
                                 {"x": -40, "y": -20, "z": 3, "duration": 100, "delay": 0, "easing": "easeOutSine"},
-                                {"x": -47.2, "y":1.575, "z":-4.8, "duration": 100, "delay": 104500, "easing": "easeOutSine"}
+                                {"x": -47.2, "y":1.675, "z":-4.8, "duration": 100, "delay": 104500, "easing": "easeOutSine"}
                                ]
                              }
                            }
@@ -4672,7 +4672,7 @@
                                    },
                                    "timelines" : [
                                     {"x":0.28, "y": 0.28, "z": 0.28, "duration": 6000, "delay": 0, "easing": "easeOutElastic"},
-                                    {"x":0.015, "y": 0.015, "z": 0.015, "duration": 0, "delay": 40000, "easing": "easeOutSine"}
+                                    {"x":0.007, "y": 0.007, "z": 0.007, "duration": 0, "delay": 40000, "easing": "easeOutSine"}
                                    ]
                                  }
                                }
@@ -5287,6 +5287,181 @@
                       "trig": {"type": "button",
                         "groupChain" : "NPCe_group3",
                                "time": 122000}
+                    },
+                    {
+                      "name": "NPCe_28_jenga_1",
+                      "role": "stagemanager",
+                      "target": { "type": "glb",
+                                  "dest": "url",
+                                  "src":  "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb"},
+                      "action": {"type": "spawn_item",
+                                 "pos": {"x": -61.5, "y":8.3, "z":-11.72},
+                                 "rot": {"x": 2, "y":240.00000000000003, "z":186},
+                                 "scale": {"x": 0.85, "y":0.85, "z":0.85}},
+                      "trig": {"type": "button",
+                        "groupChain" : "NPCe_group3",
+                               "time": 196000}
+                    },
+                    {
+                      "name": "NPCe_28_jenga_2",
+                      "role": "stagemanager",
+                      "target": { "type": "glb",
+                                  "dest": "url",
+                                  "src":  "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb"},
+                      "action": {"type": "spawn_item",
+                                 "pos": {"x": -61.800000000000004, "y":8.8, "z":-11.02},
+                                 "rot": {"x": 105.00000000000001, "y":-7, "z":0},
+                                 "scale": {"x": 0.93, "y":0.93, "z":0.93}},
+                      "trig": {"type": "button",
+                        "groupChain" : "NPCe_group3",
+                        "time": 196000}
+                    },
+                    {
+                      "name": "NPCe_28_jenga_3",
+                      "role": "stagemanager",
+                      "target": { "type": "glb",
+                                  "dest": "url",
+                                  "src":  "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb"},
+                      "action": {"type": "spawn_item",
+                        "pos": {"x": -61.4, "y":9.2, "z":-12.019999999999999},
+                        "rot": {"x": 200, "y":177, "z":-92.00000000000001},
+                        "scale": {"x": 0.9, "y":0.9, "z":0.9}},
+                      "trig": {"type": "button",
+                        "groupChain" : "NPCe_group3",
+                        "time": 196000}
+                    },
+                    {
+                      "name": "NPCe_28_jenga_4",
+                      "role": "stagemanager",
+                      "target": { "type": "glb",
+                                  "dest": "url",
+                                  "src":  "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb"},
+                      "action": {"type": "spawn_item",
+                        "pos": {"x": -61.300000000000004, "y":10, "z":-11.420000000000002},
+                        "rot": {"x": -1, "y":60.99999999999997, "z":6.000000000000002},
+                        "scale": {"x": 0.9, "y":0.9, "z":0.9}},
+                      "trig": {"type": "button",
+                        "groupChain" : "NPCe_group3",
+                        "time": 196000}
+                    },
+                    {
+                      "name": "NPCe_28_jenga_5",
+                      "role": "stagemanager",
+                      "target": { "type": "glb",
+                                  "dest": "url",
+                                  "src":  "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb"},
+                      "action": {"type": "spawn_item",
+                        "pos": {"x": -61.4, "y":9.7000000000001, "z":-10.719999999999999},
+                        "rot": {"x": 63.999999999999986, "y":3.999999999999998, "z":94.99999999999999},
+                        "scale": {"x": 0.7, "y":0.7, "z":0.7}},
+                      "trig": {"type": "button",
+                        "groupChain" : "NPCe_group3",
+                        "time": 196000}
+                    },
+                    {
+                      "name": "NPCe_28_jenga_6",
+                      "role": "stagemanager",
+                      "target": { "type": "glb",
+                                  "dest": "url",
+                                  "src":  "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb"},
+                      "action": {"type": "spawn_item",
+                        "pos": {"x": -61.300000000000004, "y":10.9, "z":-11.020000000000002},
+                        "rot": {"x":-1.0000000000000002, "y":61, "z":6.000000000000004},
+                        "scale": {"x": 0.7000000000000001, "y":0.7000000000000001, "z":0.7000000000000001}},
+                      "trig": {"type": "button",
+                        "groupChain" : "NPCe_group3",
+                        "time": 196000}
+                    },
+                    {
+                      "name": "NPCe_29_delete_jenga_1",
+                      "role": "stagemanager",
+                      "target": { "type": "glb",
+                                  "src": "NPCe_28_jenga_1"},
+                      "action": {"type": "delete"},
+                      "trig": {"type": "button",
+                        "groupChain" : "NPCe_group4",
+                               "time": 0}
+                    },
+                    {
+                      "name": "NPCe_29_delete_jenga_2",
+                      "role": "stagemanager",
+                      "target": { "type": "glb",
+                                  "src": "NPCe_28_jenga_2"},
+                      "action": {"type": "delete"},
+                      "trig": {"type": "button",
+                        "groupChain" : "NPCe_group4",
+                               "time": 0}
+                    },
+                    {
+                      "name": "NPCe_29_delete_jenga_3",
+                      "role": "stagemanager",
+                      "target": { "type": "glb",
+                                  "src": "NPCe_28_jenga_3"},
+                      "action": {"type": "delete"},
+                      "trig": {"type": "button",
+                        "groupChain" : "NPCe_group4",
+                               "time": 0}
+                    },
+                    {
+                      "name": "NPCe_29_delete_jenga_4",
+                      "role": "stagemanager",
+                      "target": { "type": "glb",
+                                  "src": "NPCe_28_jenga_4"},
+                      "action": {"type": "delete"},
+                      "trig": {"type": "button",
+                        "groupChain" : "NPCe_group4",
+                               "time": 0}
+                    },
+                    {
+                      "name": "NPCe_29_delete_jenga_5",
+                      "role": "stagemanager",
+                      "target": { "type": "glb",
+                                  "src": "NPCe_28_jenga_5"},
+                      "action": {"type": "delete"},
+                      "trig": {"type": "button",
+                        "groupChain" : "NPCe_group4",
+                               "time": 0}
+                    },
+                    {
+                      "name": "NPCe_29_delete_jenga_6",
+                      "role": "stagemanager",
+                      "target": { "type": "glb",
+                                  "src": "NPCe_28_jenga_6"},
+                      "action": {"type": "delete"},
+                      "trig": {"type": "button",
+                        "groupChain" : "NPCe_group4",
+                               "time": 0}
+                    },
+                    {
+                      "name": "NPCe_30",
+                      "role": "stagemanager",
+                      "target": { },
+                      "action": {"type": "call_method_from_object",
+                                 "object_name": "sockSys",
+                                 "function_name": "cueSocket",
+                                 "_cue": { 
+                                  "name": "NPCe_30",
+                                  "target": { "role" : ["participant", "spectator"],
+                                    "aspect" : "position" },
+                                  "action": { "type": "manipulate_avatar",
+                                    "attr": "object3D",
+                                    "anime": {
+                                     "targets": "",
+                                     "delay" : 0,
+                                     "loop": false,
+                                     "autoplay": true,
+                                     "easing": "easeInSine",
+                                     "duration": 5000
+                                     },
+                                     "timelines" : [
+                                      {"x": -94.45810709134439, "y": 9.51494720458983, "z": -14.1648429624734}
+                                     ]
+                                   }
+                                 }
+                                },
+                      "trig": {"type": "button",
+                        "groupChain" : "NPCe_group4",
+                               "time": 0}
                     },
                     {
       "name": "ITL_1",
