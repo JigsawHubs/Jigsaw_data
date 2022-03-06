@@ -4299,6 +4299,31 @@
                       "time": 0}
             },
             {
+              "name": "NPCe_6a",
+              "role": "stagemanager",
+              "target": { },
+              "action": {"type": "call_method_from_object",
+                         "object_name": "sockSys",
+                         "function_name": "cueSocket",
+                         "_cue": {
+                          "name": "NPCe_6a",
+                          "role": {},
+                          "target": { "type": "glb",
+                            "role": "individual", "name": "Brendan",
+                                      "dest": "url",
+                                      "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/8ca5c1df-9206-4114-b524-714bbf236993.glb"},
+                          "action": {"type": "spawn_item",
+                            "pauseOnSpawn": true,
+                            "pos": {"x": -44.791836640689645, "y":-10, "z":-3.1617662202284227},
+                "rot": {"x":0, "y":0, "z":0},
+                "scale": {"x": 1, "y":1, "z":1}}
+                        }
+                        },
+            "trig": {"type": "button",
+              "groupChain" : "NPCe_group1",
+                      "time": 0}
+            },
+            {
               "name": "NPCe_7",
               "role": "cut",
               "target": { },
@@ -4613,6 +4638,77 @@
                 "trig": {"type": "button",
                   "groupChain" : "NPCe_group3",
                          "time": 0}
+                },
+                {
+                "name": "NPCe_15a",
+                "role": "stagemanager",
+                "target": { },
+                "action": {"type": "call_method_from_object",
+                           "object_name": "sockSys",
+                           "function_name": "cueSocket",
+                           "_cue": { 
+                            "name": "NPCe_15a",
+                            "sceneLink": "https://onboardxr.live/scenes/eTGt3hu/npc-a-74-1029",
+                            "target": { "role": "individual", "name": "Brendan",
+                              "aspect" : "position" },
+                            "action": { "type": "socket_manipulate_object",
+                              "mapItem": "NPCe_6a",
+                              "attr": "object3D",
+                              "anime": {
+                               "targets": "position",
+                               "delay" : 1000,
+                               "loop": false,
+                               "autoplay": false,
+                               "easing": "easeInOutSine",
+                               "duration": 1000
+                               },
+                               "timelines" : [
+                                {"x": -44.791836640689645, "y":-0.529, "z":-3.1617662202284227, "duration": 14000, "delay": 0, "easing": "linear"},
+                               {"x": -44.791836640689645, "y":-0.559, "z":-3.1617662202284227, "duration": 400, "delay": 0, "easing": "linear"},
+                               {"x": -44.791836640689645, "y":-0.529, "z":-3.1617662202284227, "duration": 100, "delay": 0, "easing": "linear"},
+                               {"x": -44.791836640689645, "y":-0.559, "z":-3.1617662202284227, "duration": 400, "delay": 0, "easing": "linear"},
+                               {"x": -44.791836640689645, "y":-0.529, "z":-3.1617662202284227, "duration": 100, "delay": 0, "easing": "linear"},
+                               {"x": -44.791836640689645, "y":-0.559, "z":-3.1617662202284227, "duration": 400, "delay": 0, "easing": "linear"},
+                               {"x": -44.791836640689645, "y":-0.529, "z":-3.1617662202284227, "duration": 100, "delay": 0, "easing": "linear"},
+                               {"x": -44.791836640689645, "y":-0.559, "z":-3.1617662202284227, "duration": 400, "delay": 0, "easing": "linear"},
+                               {"x": -44.791836640689645, "y":-0.529, "z":-3.1617662202284227, "duration": 100, "delay": 0, "easing": "linear"},
+                               {"x": -44.791836640689645, "y":-0.559, "z":-3.1617662202284227, "duration": 400, "delay": 0, "easing": "linear"},
+                               {"x": -44.791836640689645, "y":-0.529, "z":-3.1617662202284227, "duration": 100, "delay": 0, "easing": "linear"},
+                               {"x": -44.791836640689645, "y":-0.559, "z":-3.1617662202284227, "duration": 400, "delay": 0, "easing": "linear"},
+                               {"x": -44.791836640689645, "y":-0.529, "z":-3.1617662202284227, "duration": 100, "delay": 0, "easing": "linear"},
+                               {"x": -44.791836640689645, "y":-0.559, "z":-3.1617662202284227, "duration": 400, "delay": 0, "easing": "linear"},
+                               {"x": -44.791836640689645, "y":-0.529, "z":-3.1617662202284227, "duration": 100, "delay": 0, "easing": "linear"},
+                               {"x": -44.791836640689645, "y":-0.559, "z":-3.1617662202284227, "duration": 400, "delay": 0, "easing": "linear"},
+                               {"x": -44.791836640689645, "y":-0.529, "z":-3.1617662202284227, "duration": 100, "delay": 0, "easing": "linear"},
+                               {"x": -44.791836640689645, "y":-0.559, "z":-3.1617662202284227, "duration":400, "delay": 0, "easing": "linear"},
+                               {"x": -44.791836640689645, "y":-0.529, "z":-3.1617662202284227, "duration": 100, "delay": 0, "easing": "linear"},
+                               {"x": -44.791836640689645, "y":-0.559, "z":-3.1617662202284227, "duration": 400, "delay": 0, "easing": "linear"},
+                               {"x": -44.791836640689645, "y":-30, "z":-3.1617662202284227, "duration": 3000, "delay": 0, "easing": "linear"}]
+                             }
+                           }
+                          },
+                "trig": {"type": "button",
+                  "groupChain" : "NPCe_group3",
+                         "time": 157000}
+                },
+                {
+                  "name": "NPCe_6b",
+                  "role": "stagemanager",
+                  "target": { },
+                  "action": {"type": "call_method_from_object",
+                             "object_name": "sockSys",
+                             "function_name": "cueSocket",
+                             "_cue": { 
+                               "name": "NPCe_6b",
+                               "target": { "role": "individual", "name": "Brendan"},
+                               "action": { "type": "delete",
+                                "src" : "NPCe_6a"
+                              }
+                              }
+                            },
+                  "trig": {"type": "button",
+                    "groupChain" : "NPCe_group3",
+                           "time": 175000}
                 },
                 {
                   "name": "NPCe_16",
