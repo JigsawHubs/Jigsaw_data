@@ -4622,6 +4622,25 @@
                          "time": 7000}
               },
               {
+                "name": "NPCe_12a",
+                "role": "stagemanager",
+                "target": { },
+                "action": {"type": "call_method_from_object",
+                           "object_name": "sockSys",
+                           "function_name": "cueSocket",
+                           "_cue": { 
+                             "name": "NPCe_12",
+                             "sceneLink": "https://onboardxr.live/scenes/eTGt3hu/npc-a-74-1029",
+                             "target": { "role": ["participant", "spectator"]},
+                             "action": { "type": "socket_toggle_movement",
+                              "movement" : true}
+                          }
+                          },
+                "trig": {"type": "button",
+                  "groupChain" : "NPCe_group2",
+                         "time": 5000}
+              },
+              {
                 "name": "NPCe_13",
                 "role": "stagemanager",
                 "target": { },
