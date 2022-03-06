@@ -4930,7 +4930,7 @@
                                 },
                     "trig": {"type": "button",
                       "groupChain" : "NPCe_group3",
-                              "time": 15000}
+                              "time": 14000}
                     },
                     {
                       "name": "NPCe_21",
