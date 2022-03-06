@@ -5822,7 +5822,7 @@
               "time": 5000}
     },
     {
-      "name": "ITL_9",
+      "name": "ITL_10",
       "role": "stagemanager",
       "target": { },
       "action": {"type": "call_method_from_object",
@@ -5847,7 +5847,31 @@
               "time": 5000}
     },
     {
-      "name": "ITL_10",
+      "name": "ITL_11",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "ITL_11",
+                  "sceneLink": "https://onboardxr.live/scenes/5XjCU4u/ob2-00-pier",
+                  "role": {},
+                  "target": { "type": "glb",
+                    "role": "individual", "name": "ITL2",
+                              "dest": "url",
+                              "src":  "https://sketchfab.com/3d-models/lowpoly-magic-staff-3c4eaee92ce047ae9082f090e658bdcc"},
+                  "action": {"type": "spawn_prop",
+        "rot": {"x":0, "y":0, "z":0},
+        "scale": {"x": 0.05, "y":0.05, "z":0.05}}
+                }
+                },
+    "trig": {"type": "button",
+      "groupChain" : "ITL_group4",
+              "time": 10000}
+    },
+    {
+      "name": "ITL_12",
       "role": "stagemanager",
       "target": { "type": "audio",
                   "dest": "url",
@@ -5862,7 +5886,7 @@
                "time": 0}
     },
     {
-      "name": "ITL_11",
+      "name": "ITL_13",
       "role":"itlSM",
       "target": { },
       "action": {"type": "change_scene",
@@ -5872,7 +5896,7 @@
                "time": 0}
     },
     {
-      "name": "ITL_12",
+      "name": "ITL_14",
       "role": "itlSM",
       "target": { "type": "glb",
                   "dest": "url",
@@ -5886,7 +5910,7 @@
                "time": 0}
     },
     {
-      "name": "ITL_13",
+      "name": "ITL_15",
       "role": "stagemanager",
       "target": { "type": "audio",
                   "dest": "url",
