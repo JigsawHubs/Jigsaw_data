@@ -1846,7 +1846,7 @@
         "role":"stagemanager",
         "target": { },
         "action": {"type": "change_scene",
-                   "link":"https://onboardxr.live/scenes/r6DgZR3"},
+                   "link":"https://onboardxr.live/scenes/zxWEjFr"},
         "trig": {"type": "button",
           "groupChain" : "UW_group1",
                  "time": 0}
@@ -4194,7 +4194,7 @@
             },
             {
               "name": "NPCe_2",
-              "role": "stagemanager",
+              "role": "cut",
               "target": { },
               "action": {"type": "call_method_from_object",
                          "object_name": "sockSys",
@@ -4207,7 +4207,6 @@
                         }
                         },
               "trig": {"type": "button",
-                "groupChain" : "NPCe_group2",
                        "time": 0}
             },
             {
@@ -4301,7 +4300,7 @@
             },
             {
               "name": "NPCe_7",
-              "role": "stagemanager",
+              "role": "cut",
               "target": { },
               "action": {"type": "call_method_from_object",
                          "object_name": "sockSys",
@@ -4355,7 +4354,6 @@
                         }
                         },
               "trig": {"type": "button",
-                "groupChain" : "NPCe_group2",
                        "time": 0}
             },
             {
@@ -4427,7 +4425,7 @@
             },
             {
               "name": "NPCe_11",
-              "role": "stagemanager",
+              "role": "cut",
               "target": { },
               "action": {"type": "call_method_from_object",
                          "object_name": "sockSys",
@@ -4441,7 +4439,6 @@
                         }
                         },
               "trig": {"type": "button",
-                "groupChain" : "NPCe_group2",
                        "time": 20000}
             },
             {
@@ -4487,6 +4484,25 @@
                          "time": 15000}
               },
               {
+                "name": "NPCe_12a",
+                "role": "stagemanager",
+                "target": { },
+                "action": {"type": "call_method_from_object",
+                           "object_name": "sockSys",
+                           "function_name": "cueSocket",
+                           "_cue": { 
+                             "name": "NPCe_12",
+                             "sceneLink": "https://onboardxr.live/scenes/eTGt3hu/npc-a-74-1029",
+                             "target": { "role": ["participant", "spectator"]},
+                             "action": { "type": "socket_toggle_movement",
+                              "movement" : true}
+                          }
+                          },
+                "trig": {"type": "button",
+                  "groupChain" : "NPCe_group2",
+                         "time": 5000}
+              },
+              {
                 "name": "NPCe_13",
                 "role": "stagemanager",
                 "target": { },
@@ -4528,7 +4544,7 @@
                            "_cue": { 
                              "name": "NPCe_16",
                              "sceneLink": "https://onboardxr.live/scenes/eTGt3hu/npc-a-74-1029",
-                             "target": { "role": ["participant", "spectator", "stagemanager"]
+                             "target": { "role": ["participant", "spectator"]
                             },
                              "action": { "type": "recall_audience",
                               "waypoint" : "lanternWaypoint",
@@ -5091,9 +5107,8 @@
                  "function_name": "cueSocket",
                  "_cue": {
                   "name": "ITL_2",
-                  "sceneLink": "https://onboardxr.live/scenes/r6DgZR3/shape-shipters-underwater-scene",
                   "role":"stagemanager",
-                  "target": { "role" : ["individual"], "name": "itlPerf2"
+                  "target": { "role" : ["individual"], "name": "ITL2"
                   },
                   "action": {"type": "change_avatar",
                              "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/ITL_A_1.glb"}
@@ -5146,7 +5161,7 @@
                   "sceneLink": "https://onboardxr.live/scenes/5XjCU4u/ob2-00-pier",
                   "role": "itlSM",
                   "target": { "role": "individual",
-                    "name": "itlPerf1"},
+                    "name": "ITL1"},
                   "action": {"type": "jump_to_waypoint",
                              "anchor":"#Kraken"},
                   "trig": {"type": "button",
