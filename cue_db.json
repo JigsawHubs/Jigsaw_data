@@ -5728,7 +5728,7 @@
     },
     {
       "name": "ITL_5",
-      "role": "stagemanager",
+      "role": "cut",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -5744,7 +5744,6 @@
                 }
                 },
       "trig": {"type": "button",
-        "groupChain" : "ITL_group2",
                "time": 0}
     },
     {
@@ -5775,28 +5774,14 @@
                "time": 0}
     },
     {
-      "name": "ITL_84",
-      "role": "stagemanager",
-      "target": { "type": "glb",
-                  "dest": "url",
-                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/ITL_A_1.glb"},
-      "action": {"type": "spawn_prop",
-                 "pos": {"x": -0.6371493935585022, "y":7, "z":0.3122836947441101},
-                 "rot": {"x": 0, "y":0, "z":0},
-                 "scale": {"x": 200, "y":200, "z":200}},
-      "trig": {"type": "button",
-        "groupChain" : "ITL_group4",
-               "time": 0}
-    },
-    {
       "name": "ITL_8",
-      "role": "itlSM",
+      "role": "stagemanager",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
                  "function_name": "cueSocket",
                  "_cue": {
-                  "name": "ITL_4_A",
+                  "name": "ITL_8",
                   "sceneLink": "https://onboardxr.live/scenes/5XjCU4u/ob2-00-pier",
                   "role": "itlSM",
                   "target": { "role": "individual",
@@ -5808,7 +5793,72 @@
                 }
                 },
       "trig": {"type": "button",
-                "groupChain" : "ITL_group3",
+                "groupChain" : "ITL_group4",
+               "time": 0}
+    },
+    {
+      "name": "ITL_9",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "ITL_9",
+                  "sceneLink": "https://onboardxr.live/scenes/5XjCU4u/ob2-00-pier",
+                  "role": {},
+                  "target": { "type": "glb",
+                    "role": "individual", "name": "ITL1",
+                              "dest": "url",
+                              "src":  "https://sketchfab.com/3d-models/handpainted-tentacle-aab4b8198ac141f4907f89e7a89de8d4"},
+                  "action": {"type": "spawn_item",
+                    "pos": {"x":29, "y":20, "z":-24.678970550605687},
+        "rot": {"x":0, "y":0, "z":0},
+        "scale": {"x": 0.1, "y":0.1, "z":0.1}}
+                }
+                },
+    "trig": {"type": "button",
+      "groupChain" : "ITL_group4",
+              "time": 5000}
+    },
+    {
+      "name": "ITL_9",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "ITL_9",
+                  "sceneLink": "https://onboardxr.live/scenes/5XjCU4u/ob2-00-pier",
+                  "role": {},
+                  "target": { "type": "glb",
+                    "role": "individual", "name": "ITL1",
+                              "dest": "url",
+                              "src":  "https://sketchfab.com/3d-models/handpainted-tentacle-aab4b8198ac141f4907f89e7a89de8d4"},
+                  "action": {"type": "spawn_item",
+                    "pos": {"x":10, "y":20, "z":-24.678970550605687},
+        "rot": {"x":0, "y":-3.14, "z":0},
+        "scale": {"x": 0.1, "y":0.1, "z":0.1}}
+                }
+                },
+    "trig": {"type": "button",
+      "groupChain" : "ITL_group4",
+              "time": 5000}
+    },
+    {
+      "name": "ITL_10",
+      "role": "stagemanager",
+      "target": { "type": "audio",
+                  "dest": "url",
+                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/audio/ITL_A_3.wav"},
+      "action": { "type": "spawn_item",
+                  "pos": {"x": 18.118698167109226, "y":5.599075665521289, "z":-23.884059628452345},
+                  "rot": {"x": 0, "y":0, "z":0},
+                  "scale": {"x": 0, "y":0, "z":0},
+                  "volume":1},
+      "trig": {"type": "button",
+        "groupChain" : "ITL_group4",
                "time": 0}
     },
     {
