@@ -5655,23 +5655,24 @@
                     },
                     {
       "name": "ITL_1",
-      "role":"itlSM",
+      "role":"stagemanager",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"https://onboardxr.live/scenes/r6DgZR3"},
+                 "link":"https://onboardxr.live/scenes/JoWDMWF"},
       "trig": {"type": "button",
         "groupChain" : "ITL_group1",
                "time": 0}
     },
     {
-      "name": "ITL_2_BROKEN",
-      "role": "itlSM",
+      "name": "ITL_2",
+      "role": "stagemanager",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
                  "function_name": "cueSocket",
                  "_cue": {
                   "name": "ITL_2",
+                  "sceneLink": "https://onboardxr.live/scenes/JoWDMWF/shape-shipters-underwater-scene",
                   "role":"stagemanager",
                   "target": { "role" : ["individual"], "name": "ITL2"
                   },
@@ -5680,42 +5681,115 @@
                 }
                 },
       "trig": {"type": "button",
-        "groupChain" : "ITL_group1A",
+        "groupChain" : "ITL_group2",
                "time": 0}
     },
     {
-      "name": "ITL_2_BROKEN",
-      "role": "itlSM",
+      "name": "ITL_3",
+      "role": "stagemanager",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
                  "function_name": "cueSocket",
                  "_cue": {
-                  "name": "ITL_2",
-                  "sceneLink": "https://onboardxr.live/scenes/r6DgZR3/shape-shipters-underwater-scene",
+                  "name": "ITL_3",
+                  "sceneLink": "https://onboardxr.live/scenes/JoWDMWF/shape-shipters-underwater-scene",
                   "role":"stagemanager",
-                  "target": { "role" : ["spectator", "participant"]
+                  "target": { "role" : ["participant"]
                   },
                   "action": {"type": "change_avatar",
-                             "link":"TBD"}
+                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/ITL_A_2.glb"}
                 }
                 },
-      "trig": {"type": "button",
-        "groupChain" : "ITL_group1B",
-               "time": 0}
-    },
-    {
-      "name": "ITL_3",
-      "role":"itlSM",
-      "target": { },
-      "action": {"type": "change_scene",
-                 "link":"https://onboardxr.live/scenes/5XjCU4u"},
       "trig": {"type": "button",
         "groupChain" : "ITL_group2",
                "time": 0}
     },
     {
-      "name": "ITL_4_A",
+      "name": "ITL_4",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_change_rolloff",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["ITL2"],
+                    "rolloff": 0,
+                    "refDistance": 1
+                    }
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "ITL_group2",
+               "time": 5000}
+    },
+    {
+      "name": "ITL_5",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "ITL_5",
+                  "role":"stagemanager",
+                  "target": { "role" : "individual",
+                  "name" : "ITL1"
+                  },
+                  "action": {"type": "change_avatar",
+                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_24.glb"}
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "ITL_group2",
+               "time": 0}
+    },
+    {
+      "name": "ITL_6",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_avatar_change_back",
+                   "target": { "role": "participant" },
+                   "action": { "type": "avatar_change_back"}
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "ITL_group2",
+               "time": 0}
+    },
+    {
+      "name": "ITL_7",
+      "role":"stagemanager",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"'https://onboardxr.live/scenes/5XjCU4u"},
+      "trig": {"type": "button",
+        "groupChain" : "ITL_group3",
+               "time": 0}
+    },
+    {
+      "name": "ITL_84",
+      "role": "stagemanager",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/ITL_A_1.glb"},
+      "action": {"type": "spawn_prop",
+                 "pos": {"x": -0.6371493935585022, "y":7, "z":0.3122836947441101},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 200, "y":200, "z":200}},
+      "trig": {"type": "button",
+        "groupChain" : "ITL_group4",
+               "time": 0}
+    },
+    {
+      "name": "ITL_8",
       "role": "itlSM",
       "target": { },
       "action": {"type": "call_method_from_object",
