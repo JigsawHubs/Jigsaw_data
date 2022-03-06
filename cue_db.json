@@ -4481,7 +4481,7 @@
                           },
                 "trig": {"type": "button",
                   "groupChain" : "NPCe_group3",
-                         "time": 11000}
+                         "time": 9000}
               },
               {
                 "name": "NPCe_12a",
@@ -4554,7 +4554,7 @@
                           },
                 "trig": {"type": "button",
                   "groupChain" : "NPCe_group3",
-                         "time": 10000}
+                         "time": 8000}
               },
               {
                 "name": "NPCe_14a",
@@ -4638,14 +4638,14 @@
                                  "duration": 1000
                                  },
                                  "timelines" : [
-                                  {"x": 0, "y": -2.4, "z": 0, "duration": 6000, "delay": 0, "easing": "easeOutSine"}
+                                  {"x": 0, "y": -2.4, "z": 0, "duration": 15000, "delay": 0, "easing": "easeOutSine"}
                                  ]
                                }
                              }
                             },
                   "trig": {"type": "button",
                     "groupChain" : "NPCe_group3",
-                           "time": 9000}
+                           "time": 0}
                   },
                   {
                     "name": "NPCe_17",
@@ -4671,7 +4671,7 @@
                                    "duration": 1000
                                    },
                                    "timelines" : [
-                                    {"x":0.28, "y": 0.28, "z": 0.28, "duration": 3000, "delay": 3000, "easing": "easeOutElastic"},
+                                    {"x":0.28, "y": 0.28, "z": 0.28, "duration": 6000, "delay": 0, "easing": "easeOutElastic"},
                                     {"x":0.015, "y": 0.015, "z": 0.015, "duration": 0, "delay": 40000, "easing": "easeOutSine"}
                                    ]
                                  }
@@ -4740,7 +4740,7 @@
                                 },
                     "trig": {"type": "button",
                       "groupChain" : "NPCe_group3",
-                              "time": 18000}
+                              "time": 16000}
                     },
                     {
                       "name": "NPCe_21",
