@@ -4802,7 +4802,7 @@
                           },
                 "trig": {"type": "button",
                   "groupChain" : "NPCe_group3",
-                         "time": 157000}
+                         "time": 132000}
                 },
                 {
                   "name": "NPCe_6b",
