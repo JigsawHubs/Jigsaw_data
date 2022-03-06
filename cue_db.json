@@ -5768,7 +5768,7 @@
       "role":"stagemanager",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"'https://onboardxr.live/scenes/5XjCU4u"},
+                 "link":"https://onboardxr.live/scenes/5XjCU4u"},
       "trig": {"type": "button",
         "groupChain" : "ITL_group3",
                "time": 0}
