@@ -4847,7 +4847,7 @@
                                         "rx": 0,
                                         "ry": 1.56,
                                         "rz": 0,
-                                        "s": 0.04,
+                                        "s": 0.05,
                                         "duration": 1500,
                                         "delay": 5000,
                                         "easing": "easeInSine"
@@ -4859,7 +4859,7 @@
                                         "rx": 0,
                                         "ry": 3.14,
                                         "rz": 0,
-                                        "s": 0.03,
+                                        "s": 0.05,
                                         "duration": 1250,
                                         "delay": 0,
                                         "easing": "linear"
@@ -4871,7 +4871,7 @@
                                         "rx": 0,
                                         "ry": 4.71,
                                         "rz": 0,
-                                        "s": 0.025,
+                                        "s": 0.05,
                                         "duration": 1000,
                                         "delay": 0,
                                         "easing": "linear"
@@ -4883,7 +4883,7 @@
                                         "rx": 0,
                                         "ry": 4.71,
                                         "rz": 0,
-                                        "s": 0.02,
+                                        "s": 0.05,
                                         "duration": 900,
                                         "delay": 0,
                                         "easing": "linear"
@@ -4895,7 +4895,7 @@
                                         "rx": 0,
                                         "ry": 6.28,
                                         "rz": 0,
-                                        "s": 0.02,
+                                        "s": 0.05,
                                         "duration": 800,
                                         "delay": 0,
                                         "easing": "linear"
@@ -4907,7 +4907,7 @@
                                         "rx": 0,
                                         "ry": 7.84,
                                         "rz": 0,
-                                        "s": 0.015,
+                                        "s": 0.04,
                                         "duration": 700,
                                         "delay": 0,
                                         "easing": "linear"
@@ -4919,7 +4919,7 @@
                                         "rx": 0,
                                         "ry": 9.4,
                                         "rz": 0,
-                                        "s": 0.012,
+                                        "s": 0.04,
                                         "duration": 600,
                                         "delay": 0,
                                         "easing": "linear"
@@ -4931,7 +4931,7 @@
                                         "rx": 0,
                                         "ry": 10.96,
                                         "rz": 0,
-                                        "s": 0.01,
+                                        "s": 0.04,
                                         "duration": 500,
                                         "delay": 0,
                                         "easing": "linear"
@@ -4943,7 +4943,7 @@
                                         "rx": 0,
                                         "ry": 12.52,
                                         "rz": 0,
-                                        "s": 0.008,
+                                        "s": 0.04,
                                         "duration": 500,
                                         "delay": 0,
                                         "easing": "linear"
@@ -4955,7 +4955,7 @@
                                         "rx": 0,
                                         "ry": 14.08,
                                         "rz": 0,
-                                        "s": 0.006,
+                                        "s": 0.03,
                                         "duration": 500,
                                         "delay": 0,
                                         "easing": "linear"
@@ -4967,7 +4967,7 @@
                                         "rx": 0,
                                         "ry": 15.64,
                                         "rz": 0,
-                                        "s": 0.004,
+                                        "s": 0.02,
                                         "duration": 500,
                                         "delay": 0,
                                         "easing": "linear"
@@ -4979,7 +4979,7 @@
                                         "rx": 0,
                                         "ry": 17.2,
                                         "rz": 0,
-                                        "s": 0.002,
+                                        "s": 0.01,
                                         "duration": 500,
                                         "delay": 0,
                                         "easing": "linear"
