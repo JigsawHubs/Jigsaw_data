@@ -4399,7 +4399,7 @@
                           "target": { "type": "glb",
                             "role": "individual", "name": "Brendan",
                                       "dest": "url",
-                                      "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/917ccf6a-89db-477c-a6b9-b0c6d0abd420.glb"},
+                                      "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/ecb967dc-ed40-4e5d-a622-b9476bd52698.glb"},
                           "action": {"type": "spawn_item",
                             "pauseOnSpawn": true,
                             "pos": {"x": -47.2, "y":1.675, "z":-4.8},
@@ -4882,7 +4882,7 @@
                                   "name": "NPCe_18",
                                   "sceneLink": "https://onboardxr.live/scenes/eTGt3hu/npc-a-74-1029",
                                   "target": { "role": "general",
-                                    "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/917ccf6a-89db-477c-a6b9-b0c6d0abd420.glb"},
+                                    "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/ecb967dc-ed40-4e5d-a622-b9476bd52698.glb"},
                                   "action": {"type": "socket_spawn_object",
                                     "pauseOnSpawn": true,
                                              "pos": {"x": -40, "y": -40, "z": 3},
@@ -4930,7 +4930,7 @@
                                 },
                     "trig": {"type": "button",
                       "groupChain" : "NPCe_group3",
-                              "time": 16000}
+                              "time": 15000}
                     },
                     {
                       "name": "NPCe_21",
