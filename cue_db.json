@@ -5926,7 +5926,7 @@
     },
     {
       "name": "AUD_0",
-      "role": "clem",
+      "role": "stagemanager",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -5940,11 +5940,12 @@
                 }
                 },
       "trig": {"type": "button",
+        "groupChain" : "UW_Aud0_group",
                "time": 0}
     },
     {
       "name": "AUD_1",
-      "role": "clem",
+      "role": "stagemanager",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -5958,11 +5959,12 @@
                 }
                 },
       "trig": {"type": "button",
+        "groupChain" : "UW_Aud1_group",
                "time": 0}
     },
     {
       "name": "AUD_2",
-      "role": "clem",
+      "role": "stagemanager",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -5976,11 +5978,12 @@
                 }
                 },
       "trig": {"type": "button",
+        "groupChain" : "UW_Aud2_group",
                "time": 0}
     },
     {
       "name": "AUD_back",
-      "role": "clem",
+      "role": "stagemanager",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -5992,6 +5995,7 @@
                 }
                 },
       "trig": {"type": "button",
+        "groupChain" : "UW_AudBack_group",
                "time": 0}
     },
     {
