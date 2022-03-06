@@ -4802,7 +4802,7 @@
                           },
                 "trig": {"type": "button",
                   "groupChain" : "NPCe_group3",
-                         "time": 132000}
+                         "time": 157000}
                 },
                 {
                   "name": "NPCe_6b",
@@ -5384,7 +5384,7 @@
                                },
                                "timelines" : [
                                 {"x": -40, "y": 2.8, "z": 3, "duration": 0, "delay": 0, "easing": "linear"},
-                                {"x": -47.2, "y": 1.575, "z": -4.8, "duration": 72000, "delay": 10500, "easing": "linear"}
+                                {"x": -47.2, "y": 1.575, "z": -4.8, "duration": 72000, "delay": 10000, "easing": "linear"}
                                ]
                              }
                            }
