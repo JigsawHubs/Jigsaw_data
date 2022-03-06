@@ -5862,17 +5862,17 @@
                "time": 0}
     },
     {
-      "name": "ITL_13",
+      "name": "ITL_11",
       "role":"itlSM",
       "target": { },
       "action": {"type": "change_scene",
                  "link":"https://onboardxr.live/scenes/enh4pm9"},
       "trig": {"type": "button",
-        "groupChain" : "ITL_group13",
+        "groupChain" : "ITL_group5",
                "time": 0}
     },
     {
-      "name": "ITL_14",
+      "name": "ITL_12",
       "role": "itlSM",
       "target": { "type": "glb",
                   "dest": "url",
@@ -5882,11 +5882,11 @@
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 200, "y":200, "z":200}},
       "trig": {"type": "button",
-        "groupChain" : "ITL_group14",
+        "groupChain" : "ITL_group6",
                "time": 0}
     },
     {
-      "name": "ITL_15",
+      "name": "ITL_13",
       "role": "stagemanager",
       "target": { "type": "audio",
                   "dest": "url",
@@ -5897,7 +5897,7 @@
                   "scale": {"x": 0, "y":0, "z":0},
                   "volume":1},
       "trig": {"type": "button",
-        "groupChain" : "ITL_group14",
+        "groupChain" : "ITL_group6",
                "time": 0}
     },
     {
