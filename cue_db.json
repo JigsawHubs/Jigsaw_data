@@ -5887,7 +5887,7 @@
     },
     {
       "name": "ITL_13",
-      "role":"itlSM",
+      "role":"stagemanager",
       "target": { },
       "action": {"type": "change_scene",
                  "link":"https://onboardxr.live/scenes/enh4pm9"},
@@ -5897,7 +5897,7 @@
     },
     {
       "name": "ITL_14",
-      "role": "itlSM",
+      "role": "stagemanager",
       "target": { "type": "glb",
                   "dest": "url",
                   "src":  "https://sketchfab.com/3d-models/medal-8d2b7074affb44dd84a82c1515980540"},
