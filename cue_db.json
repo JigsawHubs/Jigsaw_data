@@ -5864,9 +5864,9 @@
                    "name": "test_change_rolloff",
                    "target": { "role": "general" },
                    "action": { "type": "change_rolloff",
-                    "names": ["---"],
-                    "rolloff": 0.3,
-                    "refDistance": 10
+                    "names": ["demz"],
+                    "rolloff": 0,
+                    "refDistance": 1
                     }
                 }
                 },
