@@ -3571,7 +3571,7 @@
           },
           {
             "name": "BTB_3",
-            "role": "mand",
+            "role": "stagemanager",
             "target": { "type": "audio",
                         "dest": "url",
                         "src":  "https://jigsawhubs.github.io/Jigsaw_data/audio/BTB_A_3.wav"},
@@ -3590,7 +3590,7 @@
           },
           {
             "name": "BTB_5",
-            "role": "mand",
+            "role": "stagemanager",
             "target": { "type": "glb",
                         "dest": "url",
                         "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/67dbabb5-5ab6-448c-9473-f4fe3144a707.glb"},
@@ -3604,7 +3604,7 @@
           },
           {
             "name": "BTB_6",
-            "role": "mand",
+            "role": "stagemanager",
             "target": { },
             "action": {"type": "call_method_from_object",
                        "object_name": "sockSys",
@@ -3648,7 +3648,7 @@
             },
           {
             "name": "BTB_4",
-            "role": "mand",
+            "role": "stagemanager",
             "target": { "type": "audio",
                         "dest": "url",
                         "src":  "https://jigsawhubs.github.io/Jigsaw_data/audio/BTB_A_4.wav"},
