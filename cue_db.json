@@ -1841,15 +1841,6 @@
                   },
       "trig": {"type": "button",
                 "time": 0}
-      },{
-        "name": "UW_1",
-        "role":"stagemanager",
-        "target": { },
-        "action": {"type": "change_scene",
-                   "link":"https://onboardxr.live/scenes/zxWEjFr"},
-        "trig": {"type": "button",
-          "groupChain" : "UW_group1",
-                 "time": 0}
       },
       {
         "name": "OGJ_1",
@@ -3537,7 +3528,7 @@
                         "name": "BTB_1",
                         "role":"stagemanager",
                         "target": { "role" : "individual",
-                        "name" : "Mandy"
+                        "name" : "Angie"
                         },
                         "action": {"type": "change_avatar",
                                    "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/BTB_A_1.glb"}
@@ -3546,6 +3537,27 @@
             "trig": {"type": "button",
                       "groupChain" : "BTB_group_1",
                      "time": 0}
+          },
+          {
+            "name": "BTB_1A",
+            "role": "stagemanager",
+            "target": { },
+            "action": {"type": "call_method_from_object",
+                       "object_name": "sockSys",
+                       "function_name": "cueSocket",
+                       "_cue": { 
+                         "name": "BTB_1A",
+                         "target": { "role": "general" },
+                         "action": { "type": "change_rolloff",
+                          "names": ["Angie"],
+                          "rolloff": 0,
+                          "refDistance": 1
+                          }
+                      }
+                      },
+            "trig": {"type": "button",
+              "groupChain" : "BTB_group_1",
+                     "time": 3000}
           },
           {
             "name": "BTB_2",
@@ -4404,7 +4416,7 @@
                             "pauseOnSpawn": true,
                             "pos": {"x": -47.2, "y":1.675, "z":-4.8},
                 "rot": {"x":0, "y":0, "z":0},
-                "scale": {"x": 0.007, "y":0.007, "z":0.007}}
+                "scale": {"x": 0.01, "y":0.01, "z":0.01}}
                         }
                         },
             "trig": {"type": "button",
@@ -4862,7 +4874,7 @@
                                    },
                                    "timelines" : [
                                     {"x":0.28, "y": 0.28, "z": 0.28, "duration": 6000, "delay": 0, "easing": "linear"},
-                                    {"x":0.007, "y": 0.007, "z": 0.007, "duration": 0, "delay": 40000, "easing": "easeOutSine"}
+                                    {"x":0.01, "y": 0.01, "z": 0.01, "duration": 0, "delay": 40000, "easing": "easeOutSine"}
                                    ]
                                  }
                                }
@@ -5029,174 +5041,6 @@
                                         "duration": 72000,
                                         "delay": 0,
                                         "easing": "linear"
-                                      },
-                                      {
-                                        "x": -47.2,
-                                        "y": 1.44079791,
-                                        "z": -4.8,
-                                        "rx": 0,
-                                        "ry": -1.56,
-                                        "rz": 0,
-                                        "s": 0.05,
-                                        "duration": 2500,
-                                        "delay": 2000,
-                                        "easing": "easeInSine"
-                                      },
-                                      {
-                                        "x": -47.2,
-                                        "y": 1.44079791,
-                                        "z": -4.8,
-                                        "rx": 0,
-                                        "ry": -3.14,
-                                        "rz": 0,
-                                        "s": 0.05,
-                                        "duration": 2250,
-                                        "delay": 0,
-                                        "easing": "linear"
-                                      },
-                                      {
-                                        "x": -47.2,
-                                        "y": 1.44079791,
-                                        "z": -4.8,
-                                        "rx": 0,
-                                        "ry": -4.71,
-                                        "rz": 0,
-                                        "s": 0.05,
-                                        "duration": 2000,
-                                        "delay": 0,
-                                        "easing": "linear"
-                                      },
-                                      {
-                                        "x": -47.2,
-                                        "y": 1.44079791,
-                                        "z": -4.8,
-                                        "rx": 0,
-                                        "ry": -6.28,
-                                        "rz": 0,
-                                        "s": 0.05,
-                                        "duration": 1400,
-                                        "delay": 0,
-                                        "easing": "linear"
-                                      },
-                                      {
-                                        "x": -47.2,
-                                        "y": 1.44079791,
-                                        "z": -4.8,
-                                        "rx": 0,
-                                        "ry": -7.84,
-                                        "rz": 0,
-                                        "s": 0.05,
-                                        "duration": 1300,
-                                        "delay": 0,
-                                        "easing": "linear"
-                                      },
-                                      {
-                                        "x": -47.2,
-                                        "y": 1.44079791,
-                                        "z": -4.8,
-                                        "rx": 0,
-                                        "ry": -9.4,
-                                        "rz": 0,
-                                        "s": 0.04,
-                                        "duration": 1200,
-                                        "delay": 0,
-                                        "easing": "linear"
-                                      },
-                                      {
-                                        "x": -47.2,
-                                        "y": 1.44079791,
-                                        "z": -4.8,
-                                        "rx": 0,
-                                        "ry": -10.96,
-                                        "rz": 0,
-                                        "s": 0.04,
-                                        "duration": 1100,
-                                        "delay": 0,
-                                        "easing": "linear"
-                                      },
-                                      {
-                                        "x": -47.2,
-                                        "y": 1.44079791,
-                                        "z": -4.8,
-                                        "rx": 0,
-                                        "ry": -12.52,
-                                        "rz": 0,
-                                        "s": 0.04,
-                                        "duration": 500,
-                                        "delay": 0,
-                                        "easing": "linear"
-                                      },
-                                      {
-                                        "x": -47.2,
-                                        "y": 1.44079791,
-                                        "z": -4.8,
-                                        "rx": 0,
-                                        "ry": -14.08,
-                                        "rz": 0,
-                                        "s": 0.04,
-                                        "duration": 500,
-                                        "delay": 0,
-                                        "easing": "linear"
-                                      },
-                                      {
-                                        "x": -47.2,
-                                        "y": 1.44079791,
-                                        "z": -4.8,
-                                        "rx": 0,
-                                        "ry": -15.64,
-                                        "rz": 0,
-                                        "s": 0.03,
-                                        "duration": 500,
-                                        "delay": 0,
-                                        "easing": "linear"
-                                      },
-                                      {
-                                        "x": -47.2,
-                                        "y": 1.44079791,
-                                        "z": -4.8,
-                                        "rx": 0,
-                                        "ry": -17.2,
-                                        "rz": 0,
-                                        "s": 0.02,
-                                        "duration": 500,
-                                        "delay": 0,
-                                        "easing": "linear"
-                                      },
-                                      {
-                                        "x": -47.2,
-                                        "y": 1.44079791,
-                                        "z": -4.8,
-                                        "rx": 0,
-                                        "ry": -18.76,
-                                        "rz": 0,
-                                        "s": 0.01,
-                                        "duration": 500,
-                                        "delay": 0,
-                                        "easing": "linear"
-                                      },
-                                      {
-                                        "x": -47.2,
-                                        "y": 1.44079791,
-                                        "z": -4.8,
-                                        "rx": 0,
-                                        "ry": -20.32,
-                                        "rz": 0,
-                                        "s": 0.0001,
-                                        "duration": 500,
-                                        "delay": 0,
-                                        "easing": "linear"
-                                      },
-                                      {
-                                        "x": -47.2,
-                                        "y": 1.44079791,
-                                        "z": -4.8,
-                                        "rx": 0,
-                                        "ry": -21.9,
-                                        "rz": 0,
-                                        "s": 0.00001,
-                                        "duration": 250,
-                                        "delay": 0,
-                                        "easing": "linear"
                                       }
                                     ]
                                   }
@@ -5229,15 +5073,15 @@
                                      "duration": 1
                                      },
                                      "timelines" : [
-                                      {"x": 0, "y": -21.9, "z": 0, "delay": 0, "duration": 0, "easing": "easeInSine"},
-                                      {"x": 0, "y": -100, "z": 0, "delay": 100, "duration": 8000, "easing": "easeInSine"}
+                                      {"x": 0, "y": 0, "z": 0, "delay": 0, "duration": 0, "easing": "easeInSine"},
+                                      {"x": 0, "y": -60, "z": 0, "delay": 0, "duration": 15000, "easing": "easeInSine"}
                                      ]
                                    }
                                  }
                                 },
                       "trig": {"type": "button",
                         "groupChain" : "NPCe_group3",
-                               "time": 112000}
+                               "time": 102000}
                     },
                     {
                       "name": "NPCe_21b",
@@ -5262,7 +5106,8 @@
                                      "duration": 1
                                      },
                                      "timelines" : [
-                                      {"x": -47.2, "y": 1.49079791,"z": -4.8, "delay": 0, "duration": 8000, "easing": "linear"},
+                                      {"x": -47.2, "y": 1.44079791, "z": -4.8, "delay": 0, "duration": 5000, "easing": "linear"},
+                                      {"x": -47.2, "y": 1.49079791,"z": -4.8, "delay": 5000, "duration": 5000, "easing": "linear"},
                                       {"x": -45.940843817519756, "y": 6, "z": -4.748546512830794, "delay": 0, "duration": 100, "easing": "linear"},
                                       {"x": -45.940843817519756, "y": -0.14393400766099185, "z": -4.748546512830794, "delay": 500, "duration": 4000, "easing": "easeOutSine"}
                                      ]
@@ -5271,7 +5116,7 @@
                                 },
                       "trig": {"type": "button",
                         "groupChain" : "NPCe_group3",
-                               "time": 112000}
+                               "time": 97000}
                     },
               {
                 "name": "NPCe_22",
@@ -5922,6 +5767,16 @@
                   "volume":1},
       "trig": {"type": "button",
         "groupChain" : "ITL_group6",
+               "time": 0}
+    },
+    {
+      "name": "UW_1",
+      "role":"stagemanager",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"https://onboardxr.live/scenes/K6DREfp"},
+      "trig": {"type": "button",
+        "groupChain" : "UW_group1",
                "time": 0}
     },
     {
