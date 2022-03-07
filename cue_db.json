@@ -6010,8 +6010,8 @@
                    "target": { "role": "general" },
                    "action": { "type": "change_rolloff",
                     "names": ["---"],
-                    "rolloff": 0.3,
-                    "refDistance": 10
+                    "rolloff": 0,
+                    "refDistance": 1
                     }
                 }
                 },
