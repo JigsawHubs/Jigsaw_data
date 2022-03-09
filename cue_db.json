@@ -5074,7 +5074,7 @@
                                      },
                                      "timelines" : [
                                       {"x": 0, "y": 0, "z": 0, "delay": 0, "duration": 0, "easing": "easeInSine"},
-                                      {"x": 0, "y": -120, "z": 0, "delay": 0, "duration": 20000, "easing": "easeInSine"}
+                                      {"x": 0, "y": -120, "z": 0, "delay": 0, "duration": 16000, "easing": "easeInSine"}
                                      ]
                                    }
                                  }
@@ -5107,7 +5107,7 @@
                                      },
                                      "timelines" : [
                                       {"x": -47.2, "y": 1.44079791, "z": -4.8, "delay": 0, "duration": 4000, "easing": "easeInOutSine"},
-                                      {"x": -47.2, "y": 1.5,"z": -4.8, "delay": 7000, "duration": 9000, "easing": "linear"},
+                                      {"x": -47.2, "y": 1.7,"z": -4.8, "delay": 7000, "duration": 12000, "easing": "linear"},
                                       {"x": -45.940843817519756, "y": 6, "z": -4.748546512830794, "delay": 0, "duration": 100, "easing": "linear"},
                                       {"x": -45.940843817519756, "y": -0.14393400766099185, "z": -4.748546512830794, "delay": 500, "duration": 4000, "easing": "easeOutSine"}
                                      ]
@@ -5116,7 +5116,7 @@
                                 },
                       "trig": {"type": "button",
                         "groupChain" : "NPCe_group3",
-                               "time": 100000}
+                               "time": 97000}
                     },
               {
                 "name": "NPCe_22",
