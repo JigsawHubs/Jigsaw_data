@@ -4708,7 +4708,7 @@
                           },
                 "trig": {"type": "button",
                           "groupChain" : "NPCe_group3",
-                         "time": 16000}
+                         "time": 14500}
               },
               {
                 "name": "NPCe_15",
@@ -4923,7 +4923,7 @@
                                 },
                       "trig": {"type": "button",
                         "groupChain" : "NPCe_group3",
-                               "time": 120000}
+                               "time": 120500}
                     },
                     {
                       "name": "NPCe_20",
@@ -5074,14 +5074,14 @@
                                      },
                                      "timelines" : [
                                       {"x": 0, "y": 0, "z": 0, "delay": 0, "duration": 0, "easing": "easeInSine"},
-                                      {"x": 0, "y": -120, "z": 0, "delay": 0, "duration": 22000, "easing": "easeInSine"}
+                                      {"x": 0, "y": -120, "z": 0, "delay": 0, "duration": 20000, "easing": "easeInSine"}
                                      ]
                                    }
                                  }
                                 },
                       "trig": {"type": "button",
                         "groupChain" : "NPCe_group3",
-                               "time": 98000}
+                               "time": 104000}
                     },
                     {
                       "name": "NPCe_21b",
@@ -5106,8 +5106,8 @@
                                      "duration": 1
                                      },
                                      "timelines" : [
-                                      {"x": -47.2, "y": 1.44079791, "z": -4.8, "delay": 0, "duration": 1000, "easing": "easeInOutSine"},
-                                      {"x": -47.2, "y": 3,"z": -4.8, "delay": 5000, "duration": 9000, "easing": "linear"},
+                                      {"x": -47.2, "y": 1.44079791, "z": -4.8, "delay": 0, "duration": 4000, "easing": "easeInOutSine"},
+                                      {"x": -47.2, "y": 1.5,"z": -4.8, "delay": 7000, "duration": 9000, "easing": "linear"},
                                       {"x": -45.940843817519756, "y": 6, "z": -4.748546512830794, "delay": 0, "duration": 100, "easing": "linear"},
                                       {"x": -45.940843817519756, "y": -0.14393400766099185, "z": -4.748546512830794, "delay": 500, "duration": 4000, "easing": "easeOutSine"}
                                      ]
@@ -5116,7 +5116,7 @@
                                 },
                       "trig": {"type": "button",
                         "groupChain" : "NPCe_group3",
-                               "time": 105000}
+                               "time": 100000}
                     },
               {
                 "name": "NPCe_22",
@@ -6317,7 +6317,7 @@
       "role":"stagemanager",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"https://onboardxr.live/scenes/72QcSZv"},
+                 "link":"https://onboardxr.live/scenes/crAzbEf"},
       "trig": {"type": "button",
         "groupChain" : "change_to_lobby_group",
                "time": 0}
