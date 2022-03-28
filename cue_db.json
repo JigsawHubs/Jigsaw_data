@@ -5418,16 +5418,27 @@
   {
     "name": "NPC_SM_10_variable_2_lantern",
     "role": "stagemanager",
-    "target": { "type": "glb",
-                "dest": "url",
-                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/ecb967dc-ed40-4e5d-a622-b9476bd52698.glb"},
-    "action": {"type": "spawn_item",
-               "pos": {"x": -47.2, "y":-300, "z":-4.8},
-               "rot": {"x":0, "y":0, "z":0},
-               "scale": {"x": 0.01, "y":0.01, "z":0.01}},
-    "trig": {"type": "button",
-              "groupChain": "NPC_SM_10_A_2_group",
-             "time": 30000}
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": {
+                "name": "NPC_SM_10_variable_2_lantern",
+                "role": {},
+                "target": { "type": "glb",
+                  "role": "individual", "name": "Brendan",
+                            "dest": "url",
+                            "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/ecb967dc-ed40-4e5d-a622-b9476bd52698.glb"},
+                "action": {"type": "spawn_item",
+                  "pauseOnSpawn": true,
+                  "pos": {"x": -47.2, "y":-300, "z":-4.8},
+      "rot": {"x":0, "y":0, "z":0},
+      "scale": {"x": 0.01, "y":0.01, "z":0.01}}
+              }
+              },
+  "trig": {"type": "button",
+    "groupChain" : "NPC_SM_10_A_2_group",
+            "time": 30000}
   },
   {
     "name": "NPC_SM_10_variable_2_light_gif",
@@ -5600,16 +5611,27 @@
   {
     "name": "NPC_SM_10_variable_2_lantern",
     "role": "stagemanager",
-    "target": { "type": "glb",
-                "dest": "url",
-                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/ecb967dc-ed40-4e5d-a622-b9476bd52698.glb"},
-    "action": {"type": "spawn_item",
-               "pos": {"x": -47.2, "y":-300, "z":-4.8},
-               "rot": {"x":0, "y":0, "z":0},
-               "scale": {"x": 0.01, "y":0.01, "z":0.01}},
-    "trig": {"type": "button",
-              "groupChain": "NPC_SM_10_B_2_group",
-             "time": 30000}
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": {
+                "name": "NPC_SM_10_variable_2_lantern",
+                "role": {},
+                "target": { "type": "glb",
+                  "role": "individual", "name": "Brendan",
+                            "dest": "url",
+                            "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/ecb967dc-ed40-4e5d-a622-b9476bd52698.glb"},
+                "action": {"type": "spawn_item",
+                  "pauseOnSpawn": true,
+                  "pos": {"x": -47.2, "y":-300, "z":-4.8},
+      "rot": {"x":0, "y":0, "z":0},
+      "scale": {"x": 0.01, "y":0.01, "z":0.01}}
+              }
+              },
+  "trig": {"type": "button",
+    "groupChain" : "NPC_SM_10_B_2_group",
+            "time": 30000}
   },
   {
     "name": "NPC_SM_10_B_2_repair_gif",
@@ -5757,16 +5779,27 @@
   {
     "name": "NPC_SM_10_variable_2_lantern",
     "role": "stagemanager",
-    "target": { "type": "glb",
-                "dest": "url",
-                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/ecb967dc-ed40-4e5d-a622-b9476bd52698.glb"},
-    "action": {"type": "spawn_item",
-               "pos": {"x": -47.2, "y":-300, "z":-4.8},
-               "rot": {"x":0, "y":0, "z":0},
-               "scale": {"x": 0.01, "y":0.01, "z":0.01}},
-    "trig": {"type": "button",
-              "groupChain": "NPC_SM_10_C_2_group",
-             "time": 30000}
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": {
+                "name": "NPC_SM_10_variable_2_lantern",
+                "role": {},
+                "target": { "type": "glb",
+                  "role": "individual", "name": "Brendan",
+                            "dest": "url",
+                            "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/ecb967dc-ed40-4e5d-a622-b9476bd52698.glb"},
+                "action": {"type": "spawn_item",
+                  "pauseOnSpawn": true,
+                  "pos": {"x": -47.2, "y":-300, "z":-4.8},
+      "rot": {"x":0, "y":0, "z":0},
+      "scale": {"x": 0.01, "y":0.01, "z":0.01}}
+              }
+              },
+  "trig": {"type": "button",
+    "groupChain" : "NPC_SM_10_C_2_group",
+            "time": 30000}
   },
   {
     "name": "NPC_SM_10_C_2_escape_gif",
