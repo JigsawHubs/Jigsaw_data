@@ -6117,10 +6117,10 @@
                 "name": "NPC_SM_12_brnd_to_NPC",
                 "role":"stagemanager",
                 "target": { "role" : "individual",
-                "name" : "Brendan"
+                "name" : "Brendan2"
                 },
                 "action": {"type": "change_avatar",
-                           "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_25.glb"}
+                           "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_24.glb"}
               }
               },
     "trig": {"type": "button",
@@ -6149,6 +6149,27 @@
              "time": 1500}
   },
   {
+    "name": "NPC_SM_12_brnd_mute",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                 "name": "NPC_SM_12_brnd_mute",
+                 "target": { "role": "general" },
+                 "action": { "type": "change_rolloff",
+                  "names": ["Brendan2"],
+                  "rolloff": 0,
+                  "refDistance": 100
+                  }
+              }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_12_group",
+             "time": 1500}
+  },
+  {
     "name": "NPC_SM_12_brnd_starting_pos",
     "role": "stagemanager",
     "target": { },
@@ -6161,7 +6182,7 @@
                 "target": { "role": "individual",
                   "name": "Brendan"},
                 "action": {"type": "jump_to_waypoint",
-                           "anchor":"#NPCWaypoint12"},
+                           "anchor":"#brndStart"},
                 "trig": {"type": "button",
                          "time": 0}
               }
