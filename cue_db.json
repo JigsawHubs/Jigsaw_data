@@ -3204,7 +3204,7 @@
         },
     {
       "name": "NPC_SM_345_gif",
-      "role": "stagemanager",
+      "role": "cut",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -3220,7 +3220,6 @@
                   }
                 },
       "trig": {"type": "button",
-        "groupChain" : "NPC_SM_345_group",
                "time": 57000}
     },
     {
@@ -5363,7 +5362,7 @@
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_10_A_2_group",
-             "time": 1500}
+             "time": 3000}
   },
   {
     "name": "NPC_SM_10_A_2_brnd_starting_pos",
@@ -5509,7 +5508,7 @@
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_10_B_2_group",
-             "time": 1500}
+             "time": 3000}
   },
   {
     "name": "NPC_SM_10_B_2_brnd_starting_pos",
@@ -5742,7 +5741,7 @@
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_10_C_2_group",
-             "time": 1500}
+             "time": 3000}
   },
   {
     "name": "NPC_SM_10_C_2_brnd_starting_pos",
@@ -6179,7 +6178,7 @@
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_12_group",
-             "time": 1500}
+             "time": 3000}
   },
   {
     "name": "NPC_SM_12_brnd_mute",
@@ -6200,7 +6199,7 @@
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_12_group",
-             "time": 1500}
+             "time": 3000}
   },
   {
     "name": "NPC_SM_12_brnd_starting_pos",
@@ -8061,7 +8060,7 @@
                         },
               "trig": {"type": "button",
                 "groupChain" : "NPCe_group3",
-                       "time": 6000}
+                       "time": 0}
             },
             {
               "name": "NPCe_14a",
@@ -8249,7 +8248,7 @@
                                  "duration": 1000
                                  },
                                  "timelines" : [
-                                  {"x":0.28, "y": 0.28, "z": 0.28, "duration": 6000, "delay": 0, "easing": "linear"},
+                                  {"x":0.28, "y": 0.28, "z": 0.28, "duration": 11000, "delay": 0, "easing": "linear"},
                                   {"x":0.01, "y": 0.01, "z": 0.01, "duration": 0, "delay": 40000, "easing": "easeOutSine"}
                                  ]
                                }
@@ -8257,7 +8256,7 @@
                             },
                   "trig": {"type": "button",
                     "groupChain" : "NPCe_group3",
-                           "time": 9000}
+                           "time": 4000}
                   },
                   {
                     "name": "NPCe_18",
