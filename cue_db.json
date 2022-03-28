@@ -2264,7 +2264,7 @@
                 },
       "trig": {"type": "button",
         "groupChain" : "NPC_SM_2_group",
-               "time": 3000}
+               "time": 5000}
     },
     {
       "name": "NPC_SM_2_part1_to_char",
@@ -4247,7 +4247,7 @@
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_6_group",
-             "time": 56500}
+             "time": 57500}
   },
   {
     "name": "NPC_SM_6_corpse_rock_1",
