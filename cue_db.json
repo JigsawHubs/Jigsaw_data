@@ -8247,8 +8247,8 @@
                                  "easing": "easeInOutSine",
                                  "duration": 1000
                                  },
-                                 "timelines" : [
-                                  {"x":0.28, "y": 0.28, "z": 0.28, "duration": 11000, "delay": 0, "easing": "linear"},
+                                 "timelines" : [{"x":0.08, "y": 0.08, "z": 0.08, "duration": 7000, "delay": 0, "easing": "linear"},
+                                  {"x":0.28, "y": 0.28, "z": 0.28, "duration": 4000, "delay": 0, "easing": "linear"},
                                   {"x":0.01, "y": 0.01, "z": 0.01, "duration": 0, "delay": 40000, "easing": "easeOutSine"}
                                  ]
                                }
