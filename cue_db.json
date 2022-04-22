@@ -6333,14 +6333,15 @@
                "time": 0}
     },
     {
-      "name": "Test_cue_1",
+      "name": "cue_1",
       "role":"brendanbradley",
-      "project" : "test_project_123",
+      "project" : "test_project_1",
       "target": { },
       "action": {"type": "change_scene",
                  "link":"https://onboardxr.live/scenes/2XedKMr"},
       "trig": {"type": "button",
-               "time": 0}
+          "groupChain" : "cue_1_group",
+               "time": 1000}
     }
     ]
 }
