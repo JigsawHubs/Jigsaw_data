@@ -6336,12 +6336,12 @@
       "name": "cue_1",
       "role":"brendanbradley",
       "project" : "test_project_1",
+      "sceneLink" : "https://onboardxr.live/scenes/bYxw7r9",
       "target": { },
       "action": {"type": "change_scene",
                  "link":"https://onboardxr.live/scenes/2XedKMr"},
       "trig": {"type": "button",
-          "groupChain" : "cue_1_group",
-               "time": 1000}
+               "time": 5000}
     }
     ]
 }
