@@ -2956,8 +2956,8 @@
                          "timelines" : [
                           {"x": 45, "y": 45, "z": 45, "delay": 4000, "easing" : "easeInOutSine", "duration": 7000},
                           {"x": 5, "y": 1, "z": 5, "delay": 22000, "easing" : "easeOutSine", "duration": 5000},
-                          {"x": 4, "y": 4, "z": 4, "delay": 0, "easing" : "linear", "duration": 600},
-                          {"x": 1.2, "y": 1.2, "z": 1.2, "delay": 0, "easing" : "easeOutSine", "duration": 600}
+                          {"x": 5, "y": 7, "z": 5, "delay": 0, "easing" : "linear", "duration": 600},
+                          {"x": 5, "y": 5, "z": 5, "delay": 0, "easing" : "easeOutSine", "duration": 600}
                          ]
                        }
                      }
