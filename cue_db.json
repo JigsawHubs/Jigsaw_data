@@ -2735,7 +2735,7 @@
                "time": 0}
     },
     {
-      "name": "NPCe_SM_345_part_position",
+      "name": "NPC_SM_345_part_position",
       "role": "stagemanager",
       "target": { },
       "action": {"type": "call_method_from_object",
