@@ -2777,7 +2777,7 @@
                 },
       "trig": {"type": "button",
         "groupChain" : "NPC_SM_345_group",
-               "time": 25000}
+               "time": 0}
     },
     {
       "name": "NPC_SM_345_disable_part_motion",
