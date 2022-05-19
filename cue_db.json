@@ -2955,7 +2955,7 @@
                          },
                          "timelines" : [
                           {"x": 45, "y": 45, "z": 45, "delay": 4000, "easing" : "easeInOutSine", "duration": 7000},
-                          {"x": 5, "y": 5, "z": 5, "delay": 24000, "easing" : "easeInSine", "duration": 5000}
+                          {"x": 5, "y": 5, "z": 5, "delay": 22000, "easing" : "easeInSine", "duration": 5000}
                          ]
                        }
                      }
