@@ -2776,7 +2776,7 @@
                 }
                 },
       "trig": {"type": "button",
-        "groupChain" : "NPCe_group3",
+        "groupChain" : "NPC_SM_345_group",
                "time": 25000}
     },
     {
