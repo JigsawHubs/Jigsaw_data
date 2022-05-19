@@ -2959,7 +2959,7 @@
                           {"x": 5, "y": 7, "z": 5, "delay": 0, "easing" : "linear", "duration": 600},
                           {"x": 5, "y": 5, "z": 5, "delay": 0, "easing" : "easeOutSine", "duration": 600},
                           {"x": 1.5, "y": 1.5, "z": 1.5, "delay": 9800, "easing" : "easeOutSine", "duration": 2000},
-                          {"x": 5, "y": 5, "z": 5, "delay": 2900, "easing" : "easeOutSine", "duration": 2000}
+                          {"x": 5, "y": 5, "z": 5, "delay": 29000, "easing" : "easeOutSine", "duration": 2000}
                          ]
                        }
                      }
