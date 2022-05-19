@@ -3298,7 +3298,7 @@
               },
   "trig": {"type": "button",
     "groupChain" : "NPC_SM_6_group",
-            "time": 54000}
+            "time": 103000}
   },
   {
     "name": "NPC_SM_345_delete_NPC",
