@@ -2956,8 +2956,8 @@
                          "timelines" : [
                           {"x": 45, "y": 45, "z": 45, "delay": 4000, "easing" : "easeInOutSine", "duration": 7000},
                           {"x": 5, "y": 1, "z": 5, "delay": 22000, "easing" : "easeOutSine", "duration": 5000},
-                          {"x": 4, "y": 4, "z": 4, "delay": 22000, "easing" : "easeOutSine", "duration": 500},
-                          {"x": 1.2, "y": 1.2, "z": 1.2, "delay": 22000, "easing" : "easeInSine", "duration": 500}
+                          {"x": 4, "y": 4, "z": 4, "delay": 0, "easing" : "linear", "duration": 600},
+                          {"x": 1.2, "y": 1.2, "z": 1.2, "delay": 0, "easing" : "easeOutSine", "duration": 600}
                          ]
                        }
                      }
@@ -2989,9 +2989,10 @@
                          "duration": 1000
                          },
                          "timelines" : [
-                          {"x": -10.769003271541825, "y":140, "z":21.386466372381896, "delay": 0, "easing" : "easeInSine", "duration": 11000},
-                          {"x": -9.130275558062639, "y": 183.40029290899673, "z": 20.89086328838054, "delay": 0, "easing": "linear", "duration": 1500},
-                          {"x": -13.13027555806264, "y": 184.40029290899673, "z": 9.89086328838054, "delay": 27000, "easing": "linear", "duration": 1500},
+                          {"x": -10.769003271541825, "y":150, "z":21.386466372381896, "delay": 0, "easing" : "easeInSine", "duration": 11000},
+                          {"x": -9.130275558062639, "y": 160.40029290899673, "z": 20.89086328838054, "delay": 0, "easing": "linear", "duration": 1500},
+                          {"x": -9.130275558062639, "y": 180.40029290899673, "z": 20.89086328838054, "delay": 20500, "easing": "linear", "duration": 5000},
+                          {"x": -13.13027555806264, "y": 184.40029290899673, "z": 9.89086328838054, "delay": 0, "easing": "linear", "duration": 1500},
                           {"x": -13.64754269898245, "y": 182.94054703667388, "z": 1.935316054249057, "delay": 0, "easing": "linear", "duration": 1500},
                           {"x": -36.64754269898245, "y": 187.94054703667388, "z": -19.935316054249057, "delay": 0, "easing": "linear", "duration": 5000},
                           {"x": -41.92570887738341, "y": 187.12296755186756, "z": -22.20536479904336, "delay": 0, "easing": "easeOutSine", "duration": 3000}
