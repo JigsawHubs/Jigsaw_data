@@ -3222,7 +3222,7 @@
                  "target": { "role": "general" },
                  "action": { "type": "load_360_image",
                   "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/7a093dfe-a0cf-40a7-9312-fab95078fb17.jpg",
-                  "position" : {"x": -7, "y": 100, "z": -5.5},
+                  "position" : {"x": -40, "y": 186, "z": -15},
                   "scale" : {"x": 400, "y": 400, "z": 400}
                 }
                 }
@@ -3255,7 +3255,7 @@
                     "duration": 1000
                     },
                     "timelines" : [
-                      { "x": 115, "y": 115, "z": 115, "delay": 0, "easing": "easeInOutSine", "duration": 5000 }
+                      { "x": 25, "y": 25, "z": 25, "delay": 0, "easing": "easeInOutSine", "duration": 5000 }
                     ]
                   }
               }
@@ -3502,6 +3502,39 @@
                     },
                     "timelines" : [
                       { "x": 400, "y": 400, "z": 400, "delay": 0, "easing": "easeInOutSine", "duration": 2000 }
+                    ]
+                  }
+              }
+              },
+    "trig": {"type": "button",
+              "groupChain" : "NPC_SM_6_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_6_shrink_grow_skybox",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                 "name": "NPC_SM_345_6_black_skybox",
+                 "target": { "role": "general",
+                    "aspect": "position"
+                },
+                 "action": { "type": "manipulate_skybox_360",
+                  "mapItem" : "NPC_SM_6_load_360_skybox",
+                  "attr": "object3D",
+                  "anime": {
+                    "targets": "",
+                    "delay" : 0,
+                    "loop": false,
+                    "autoplay": false,
+                    "easing": "easeInSine",
+                    "duration": 1000
+                    },
+                    "timelines" : [
+                      {"x": -7, "y": 100, "z": -5.5, "delay": 10000, "easing": "easeInOutSine", "duration": 2000 }
                     ]
                   }
               }
