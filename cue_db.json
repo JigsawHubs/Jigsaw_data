@@ -49,7 +49,7 @@
                  "anchor":"#clemStartPos"},
       "trig": {"type": "button",
                "time": 0}
-    },
+    }
     
     
  ]
