@@ -71,6 +71,27 @@
                "time": 0}
     },
     
+    {
+      "name": "UC_scene",
+      "role":"ucstage",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"https://onboardxr.live/scenes/caQ3Rzq"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    
+        {
+      "name": "forest_scene",
+      "role":"ucstage",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"https://onboardxr.live/scenes/vgpedek"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    
+    
      {
       "name": "AUD_0",
       "role": "ucstage",
