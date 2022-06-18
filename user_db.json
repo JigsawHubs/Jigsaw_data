@@ -6,6 +6,8 @@
   "spectator": {"name":"spectator","role":"participant"},
   "clem": {"name":"clem","role":"clem"},
   "demz":{"name":"demz","role":"demz"},
+  "ucstage":{"name":"ucstage","role":"ucstage"},
+  "uccam":{"name":"uccam","role":"uccam"},
   "charA":{"name":"--","role":"charA"},
   "charB":{"name":"--","role":"charB"},
   "charC":{"name":"--","role":"charC"},
