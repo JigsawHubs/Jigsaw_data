@@ -53,6 +53,16 @@
     
      {
       "name": "invisible",
+      "role":"uccam",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/mini-avatar.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    
+     {
+      "name": "invisible",
       "role":"ucstage",
       "target": { },
       "action": {"type": "change_avatar",
