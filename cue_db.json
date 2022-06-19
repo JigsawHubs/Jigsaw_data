@@ -108,7 +108,7 @@
                 }
                 },
       "trig": {"type": "button",
-        "groupChain" : "UW_Aud0_group",
+        "groupChain" : "0_audience_default_group",
                "time": 0}
     },
     {
@@ -127,7 +127,7 @@
                 }
                 },
       "trig": {"type": "button",
-        "groupChain" : "UW_Aud1_group",
+        "groupChain" : "1_audience_hair_group",
                "time": 0}
     },
     {
@@ -146,24 +146,7 @@
                 }
                 },
       "trig": {"type": "button",
-        "groupChain" : "UW_Aud2_group",
-               "time": 0}
-    },
-    {
-      "name": "AUD_back",
-      "role": "ucstage",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": { 
-                   "name": "test_avatar_change_back",
-                   "target": { "role": "participant" },
-                   "action": { "type": "avatar_change_back"}
-                }
-                },
-      "trig": {"type": "button",
-        "groupChain" : "UW_AudBack_group",
+        "groupChain" : "2_audience_flowers_group",
                "time": 0}
     }
     
