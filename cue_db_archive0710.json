@@ -1,0 +1,155 @@
+{
+  "listCue": [
+    
+    {
+      "name": "avatar_invisible",
+      "role":"demz",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/mini-avatar.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    
+    {
+      "name": "invisible",
+      "role":"clem",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/mini-avatar.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    
+    {
+      "name": "invisible",
+      "role":"kristia",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/mini-avatar.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    
+    {
+      "name": "start",
+      "role": "clem",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"#clemStartPos"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    
+    {
+      "name": "start",
+      "role": "kristia",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"#clemStartPos"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    
+     {
+      "name": "invisible",
+      "role":"uccam",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/mini-avatar.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    
+     {
+      "name": "invisible",
+      "role":"ucstage",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/mini-avatar.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    
+    {
+      "name": "UC_scene",
+      "role":"ucstage",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"https://onboardxr.live/scenes/caQ3Rzq"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    
+        {
+      "name": "forest_scene",
+      "role":"ucstage",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"https://onboardxr.live/scenes/vgpedek"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    
+    
+     {
+      "name": "AUD_0",
+      "role": "ucstage",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Test_change_avatar",
+                  "role":"test",
+                  "target": { "role" : "participant"},
+                  "action": {"type": "change_avatar",
+                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/UW_audienceRusalka0b.glb"}
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "0_audience_default_group",
+               "time": 0}
+    },
+    {
+      "name": "AUD_1",
+      "role": "ucstage",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Test_change_avatar",
+                  "role":"test",
+                  "target": { "role" : "participant"},
+                  "action": {"type": "change_avatar",
+                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/UW_audienceRusalka1b.glb"}
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "1_audience_hair_group",
+               "time": 0}
+    },
+    {
+      "name": "AUD_2",
+      "role": "ucstage",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Test_change_avatar",
+                  "role":"test",
+                  "target": { "role" : "participant"},
+                  "action": {"type": "change_avatar",
+                             "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/UW_audienceRusalka2b.glb"}
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "2_audience_flowers_group",
+               "time": 0}
+    }
+    
+    
+ ]
+}
