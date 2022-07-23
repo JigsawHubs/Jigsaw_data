@@ -63,7 +63,7 @@
                   "name": "Test_Char_1",
                   "role":"remoteAudioTest",
                   "target": { "role" : "individual",
-                  "name" : "brnd"
+                  "name" : "Brendan"
                   },
                   "action": {
                     "type": "remote_scale_audio",
@@ -88,7 +88,7 @@
                   "name": "Test_Char_2",
                   "role":"remoteAudioTest",
                   "target": { "role" : "individual",
-                  "name" : "brnd"
+                  "name" : "Brendan"
                   },
                   "action": {
                     "type": "remote_scale_audio",
@@ -113,7 +113,7 @@
                   "name": "Test_Char_3",
                   "role":"remoteAudioTest",
                   "target": { "role" : "individual",
-                  "name" : "brnd"
+                  "name" : "Brendan"
                   },
                   "action": {
                     "type": "remote_scale_audio",
@@ -138,7 +138,7 @@
                   "name": "Test_Char_4",
                   "role":"remoteAudioTest",
                   "target": { "role" : "individual",
-                  "name" : "brnd"
+                  "name" : "Brendan"
                   },
                   "action": {
                     "type": "remote_scale_audio",
