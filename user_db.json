@@ -36,5 +36,6 @@
   "itlPerf1" : {"name":"ITL1", "role":"itlPerf1"},
   "itlPerf2" : {"name":"ITL2", "role":"itlPerf2"},
   "llen" : {"name":"NellySM", "role":"llen"},
-  "brendanbradley": {"name": "Brendan", "role": "brendanbradley"}
+  "brendanbradley": {"name": "Brendan", "role": "brendanbradley"},
+  "remoteAudioTest": {"name": "Michael", "role": "remoteAudioTest"}
  }

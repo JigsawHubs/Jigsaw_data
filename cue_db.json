@@ -1,6 +1,183 @@
 {
   "listCue": [
     {
+      "name": "Spawn_Character_1",
+      "role": "remoteAudioTest",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_7.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": {"x": 0, "y":1.5, "z":0},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "Spawn_Character_2",
+      "role": "remoteAudioTest",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_8.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": {"x": 2, "y":1.2, "z":0},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 0.7, "y":0.7, "z":0.7}},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "Spawn_Character_3",
+      "role": "remoteAudioTest",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_9.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": {"x": 2, "y":1.2, "z":0},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 0.7, "y":0.7, "z":0.7}},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "Spawn_Character_4",
+      "role": "remoteAudioTest",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_10.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": {"x": 6, "y":1.2, "z":0},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 0.7, "y":0.7, "z":0.7}},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "Test_Char_1",
+      "role": "remoteAudioTest",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Test_Char_1",
+                  "role":"remoteAudioTest",
+                  "target": { "role" : "individual",
+                  "name" : "brnd"
+                  },
+                  "action": {
+                    "type": "remote_scale_audio",
+                    "minScale": 1,
+                    "maxScale": 3,
+                    "itemName": ["Spawn_Character_1"],
+                    "disableAvatar": true
+                  }
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "Test_Char_2",
+      "role": "remoteAudioTest",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Test_Char_2",
+                  "role":"remoteAudioTest",
+                  "target": { "role" : "individual",
+                  "name" : "brnd"
+                  },
+                  "action": {
+                    "type": "remote_scale_audio",
+                    "minScale": 1,
+                    "maxScale": 3,
+                    "itemName": ["Spawn_Character_2"],
+                    "disableAvatar": true
+                  }
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "Test_Char_3",
+      "role": "remoteAudioTest",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Test_Char_3",
+                  "role":"remoteAudioTest",
+                  "target": { "role" : "individual",
+                  "name" : "brnd"
+                  },
+                  "action": {
+                    "type": "remote_scale_audio",
+                    "minScale": 1,
+                    "maxScale": 3,
+                    "itemName": ["Spawn_Character_3"],
+                    "disableAvatar": true
+                  }
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "Test_Char_4",
+      "role": "remoteAudioTest",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Test_Char_4",
+                  "role":"remoteAudioTest",
+                  "target": { "role" : "individual",
+                  "name" : "brnd"
+                  },
+                  "action": {
+                    "type": "remote_scale_audio",
+                    "minScale": 1,
+                    "maxScale": 3,
+                    "itemName": ["Spawn_Character_4"],
+                    "disableAvatar": true
+                  }
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "Test_All_At_Once",
+      "role": "remoteAudioTest",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Test_All_At_Once",
+                  "role":"remoteAudioTest",
+                  "target": { "role" : "individual",
+                  "name" : "brnd"
+                  },
+                  "action": {
+                    "type": "remote_scale_audio",
+                    "minScale": 1,
+                    "maxScale": 3,
+                    "itemName": ["Spawn_Character_1", "Spawn_Character_2", "Spawn_Character_3", "Spawn_Character_4"],
+                    "disableAvatar": false
+                  }
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
       "name": "Test_1_spawn_item_avocado",
       "role": "test",
       "target": { "type": "glb",
