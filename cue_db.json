@@ -21,6 +21,247 @@
                 }
                 },
     "trig": {"type": "button",
+      "groupChain": "Spawn_Character_1_group",
+              "time": 0}
+    },
+    {
+      "name": "Spawn_Rock_1",
+      "role": "remoteAudioTest",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Spawn_Rock_1",
+                  "role": {},
+                  "target": { "type": "glb",
+                    "role": "individual", "name": "Brendan",
+                              "dest": "url",
+                              "src":  "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb"},
+                  "action": {"type": "spawn_item",
+                    "pos": {"x": 9.886645797532383, "y": -10, "z": -5.865964312359458},
+                    "rot": {"x": 3, "y":1, "z":6},
+                    "scale": {"x": 1, "y":1, "z":1}}
+                }
+                },
+    "trig": {"type": "button",
+      "groupChain": "Spawn_Character_1_group",
+              "time": 0}
+    },
+    {
+      "name": "Spawn_Rock_2",
+      "role": "remoteAudioTest",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Spawn_Rock_2",
+                  "role": {},
+                  "target": { "type": "glb",
+                    "role": "individual", "name": "Brendan",
+                              "dest": "url",
+                              "src":  "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb"},
+                  "action": {"type": "spawn_item",
+                    "pos": {"x": 4.230041824475542, "y": -20, "z": -6.0861225496546885},
+                    "rot": {"x": 3, "y":0, "z":8},
+                    "scale": {"x": 1, "y":1, "z":1}}
+                }
+                },
+    "trig": {"type": "button",
+      "groupChain": "Spawn_Character_1_group",
+              "time": 0}
+    },
+    {
+      "name": "Spawn_Rock_3",
+      "role": "remoteAudioTest",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Spawn_Rock_3",
+                  "role": {},
+                  "target": { "type": "glb",
+                    "role": "individual", "name": "Brendan",
+                              "dest": "url",
+                              "src":  "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb"},
+                  "action": {"type": "spawn_item",
+                    "pos": {"x": 3.7758088164793695, "y": -6, "z": -10.531911320219109},
+                    "rot": {"x": 3, "y":12, "z":0},
+                    "scale": {"x": 1, "y":1, "z":1}}
+                }
+                },
+    "trig": {"type": "button",
+      "groupChain": "Spawn_Character_1_group",
+              "time": 0}
+    },
+    {
+      "name": "Spawn_Rock_4",
+      "role": "remoteAudioTest",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Spawn_Rock_4",
+                  "role": {},
+                  "target": { "type": "glb",
+                    "role": "individual", "name": "Brendan",
+                              "dest": "url",
+                              "src":  "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb"},
+                  "action": {"type": "spawn_item",
+                    "pos": {"x": -7.228916448115192, "y": -11, "z": -2.1873974961889684},
+                    "rot": {"x": 0, "y":8, "z":0},
+                    "scale": {"x": 1, "y":1, "z":1}}
+                }
+                },
+    "trig": {"type": "button",
+      "groupChain": "Spawn_Character_1_group",
+              "time": 0}
+    },
+    {
+      "name": "Spawn_Rock_5",
+      "role": "remoteAudioTest",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Spawn_Rock_5",
+                  "role": {},
+                  "target": { "type": "glb",
+                    "role": "individual", "name": "Brendan",
+                              "dest": "url",
+                              "src":  "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb"},
+                  "action": {"type": "spawn_item",
+                    "pos": {"x": -6.001249444118333, "y": -16, "z": -10.006360157669752},
+                    "rot": {"x": 0, "y":8, "z":123},
+                    "scale": {"x": 1, "y":1, "z":1}}
+                }
+                },
+    "trig": {"type": "button",
+      "groupChain": "Spawn_Character_1_group",
+              "time": 0}
+    },
+    {
+      "name": "Spawn_Rock_6",
+      "role": "remoteAudioTest",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Spawn_Rock_6",
+                  "role": {},
+                  "target": { "type": "glb",
+                    "role": "individual", "name": "Brendan",
+                              "dest": "url",
+                              "src":  "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb"},
+                  "action": {"type": "spawn_item",
+                    "pos": {"x": 2.0491535502407126, "y": -30, "z": -7.296936105005282},
+                    "rot": {"x": 5, "y":8, "z":123},
+                    "scale": {"x": 1, "y":1, "z":1}}
+                }
+                },
+    "trig": {"type": "button",
+      "groupChain": "Spawn_Character_1_group",
+              "time": 0}
+    },
+    {
+      "name": "Spawn_Rock_7",
+      "role": "remoteAudioTest",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Spawn_Rock_7",
+                  "role": {},
+                  "target": { "type": "glb",
+                    "role": "individual", "name": "Brendan",
+                              "dest": "url",
+                              "src":  "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb"},
+                  "action": {"type": "spawn_item",
+                    "pos": {"x": 8.893293994556888, "y": -14, "z": -7.832434340526982},
+                    "rot": {"x": 5, "y":0, "z":0},
+                    "scale": {"x": 1, "y":1, "z":1}}
+                }
+                },
+    "trig": {"type": "button",
+      "groupChain": "Spawn_Character_1_group",
+              "time": 0}
+    },
+    {
+      "name": "Spawn_Rock_8",
+      "role": "remoteAudioTest",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Spawn_Rock_8",
+                  "role": {},
+                  "target": { "type": "glb",
+                    "role": "individual", "name": "Brendan",
+                              "dest": "url",
+                              "src":  "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb"},
+                  "action": {"type": "spawn_item",
+                    "pos": {"x": 4.697884593730361, "y": -25, "z": -4.2875126173682725},
+                    "rot": {"x": 9, "y":11, "z":0},
+                    "scale": {"x": 1, "y":1, "z":1}}
+                }
+                },
+    "trig": {"type": "button",
+      "groupChain": "Spawn_Character_1_group",
+              "time": 0}
+    },
+    {
+      "name": "Spawn_Rock_9",
+      "role": "remoteAudioTest",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Spawn_Rock_9",
+                  "role": {},
+                  "target": { "type": "glb",
+                    "role": "individual", "name": "Brendan",
+                              "dest": "url",
+                              "src":  "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb"},
+                  "action": {"type": "spawn_item",
+                    "pos": {"x": 6.667657888801241, "y": -10, "z": -13.454713739238263},
+                    "rot": {"x": 1, "y":5, "z":2},
+                    "scale": {"x": 1, "y":1, "z":1}}
+                }
+                },
+    "trig": {"type": "button",
+      "groupChain": "Spawn_Character_1_group",
+              "time": 0}
+    },
+    {
+      "name": "Spawn_Rock_10",
+      "role": "remoteAudioTest",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Spawn_Rock_10",
+                  "role": {},
+                  "target": { "type": "glb",
+                    "role": "individual", "name": "Brendan",
+                              "dest": "url",
+                              "src":  "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb"},
+                  "action": {"type": "spawn_item",
+                    "pos": {"x": 1.6900864475142225, "y": -0.06275398413937205, "z": -8.735793193451709},
+                    "rot": {"x": 0, "y":1, "z":0},
+                    "scale": {"x": 1, "y":1, "z":1}}
+                }
+                },
+    "trig": {"type": "button",
+      "groupChain": "Spawn_Character_1_group",
               "time": 0}
     },
     {
@@ -38,8 +279,8 @@
                               "dest": "url",
                               "src":  "https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_8.glb"},
                   "action": {"type": "spawn_item",
-                    "pos": {"x": 2, "y":1.5, "z":0},
-                    "rot": {"x": 0, "y":0, "z":0},
+                    "pos": {"x": -2, "y":1.5, "z":2},
+                    "rot": {"x": 0, "y":1.76, "z":0},
                     "scale": {"x": 1, "y":1, "z":1}}
                 }
                 },
@@ -61,8 +302,8 @@
                               "dest": "url",
                               "src":  "https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_9.glb"},
                   "action": {"type": "spawn_item",
-                    "pos": {"x": 4, "y":1.5, "z":0},
-                    "rot": {"x": 0, "y":0, "z":0},
+                    "pos": {"x": 2, "y":1.5, "z":2},
+                    "rot": {"x": 0, "y":-1.76, "z":0},
                     "scale": {"x": 1, "y":1, "z":1}}
                 }
                 },
@@ -84,8 +325,8 @@
                               "dest": "url",
                               "src":  "https://jigsawhubs.github.io/Jigsaw_data/avatar/NPC_A_10.glb"},
                   "action": {"type": "spawn_item",
-                    "pos": {"x": 6, "y":1.5, "z":0},
-                    "rot": {"x": 0, "y":0, "z":0},
+                    "pos": {"x": 0, "y":1.5, "z":4},
+                    "rot": {"x": 0, "y":3.14, "z":0},
                     "scale": {"x": 1, "y":1, "z":1}}
                 }
                 },
@@ -209,13 +450,324 @@
                     "type": "remote_scale_audio",
                     "minScale": 1,
                     "maxScale": 2,
-                    "itemName": ["Spawn_Character_1", "Spawn_Character_2", "Spawn_Character_3", "Spawn_Character_4"],
+                    "itemName": ["Spawn_Character_1", "Spawn_Character_2", "Spawn_Character_3", "Spawn_Character_4", "Spawn_Rock_1", "Spawn_Rock_2", "Spawn_Rock_2", "Spawn_Rock_3", "Spawn_Rock_4", "Spawn_Rock_5", "Spawn_Rock_6", "Spawn_Rock_7", "Spawn_Rock_8", "Spawn_Rock_9", "Spawn_Rock_10"],
                     "disableAvatar": false
                   }
                 }
                 },
       "trig": {"type": "button",
+        "groupChain": "EVERYTHING_AT_ONCE_group",
                "time": 0}
+    },
+    {
+      "name": "Raise_Rock_1",
+      "role": "remoteAudioTest",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "Raise_Rock_1",
+                   "target": { "role": "individual", "name": "Brendan", "aspect" : "position"},
+                   "action": { "type" : "socket_manipulate_object",
+                    "mapItem": "Spawn_Rock_1",
+                     "attr": "object3D",
+                     "anime" : {
+                      "targets": "position",
+                      "delay" : 0,
+                      "loop": false,
+                      "autoplay": true,
+                      "easing": "easeInOutSine",
+                      "duration": 8000
+                      },
+                      "timelines" : [
+                        {"x": 9.886645797532383, "y": 3, "z": -5.865964312359458}
+                      ]
+                    }
+                  }
+                },
+    "trig": {"type": "button",
+      "groupChain" : "EVERYTHING_AT_ONCE_group",
+              "time": 0}
+    },
+    {
+      "name": "Raise_Rock_2",
+      "role": "remoteAudioTest",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "Raise_Rock_2",
+                   "target": { "role": "individual", "name": "Brendan", "aspect" : "position"},
+                   "action": { "type" : "socket_manipulate_object",
+                    "mapItem": "Spawn_Rock_2",
+                     "attr": "object3D",
+                     "anime" : {
+                      "targets": "position",
+                      "delay" : 0,
+                      "loop": false,
+                      "autoplay": true,
+                      "easing": "easeInOutSine",
+                      "duration": 8000
+                      },
+                      "timelines" : [
+                        {"x": 4.230041824475542, "y": 5, "z": -6.0861225496546885}
+                      ]
+                    }
+                  }
+                },
+    "trig": {"type": "button",
+      "groupChain" : "EVERYTHING_AT_ONCE_group",
+              "time": 0}
+    },
+    {
+      "name": "Raise_Rock_3",
+      "role": "remoteAudioTest",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "Raise_Rock_3",
+                   "target": { "role": "individual", "name": "Brendan", "aspect" : "position"},
+                   "action": { "type" : "socket_manipulate_object",
+                    "mapItem": "Spawn_Rock_3",
+                     "attr": "object3D",
+                     "anime" : {
+                      "targets": "position",
+                      "delay" : 0,
+                      "loop": false,
+                      "autoplay": true,
+                      "easing": "easeInOutSine",
+                      "duration": 8000
+                      },
+                      "timelines" : [
+                        {"x": 3.7758088164793695, "y": 2.5, "z": -10.531911320219109}
+                      ]
+                    }
+                  }
+                },
+    "trig": {"type": "button",
+      "groupChain" : "EVERYTHING_AT_ONCE_group",
+              "time": 0}
+    },
+    {
+      "name": "Raise_Rock_4",
+      "role": "remoteAudioTest",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "Raise_Rock_4",
+                   "target": { "role": "individual", "name": "Brendan", "aspect" : "position"},
+                   "action": { "type" : "socket_manipulate_object",
+                    "mapItem": "Spawn_Rock_4",
+                     "attr": "object3D",
+                     "anime" : {
+                      "targets": "position",
+                      "delay" : 0,
+                      "loop": false,
+                      "autoplay": true,
+                      "easing": "easeInOutSine",
+                      "duration": 8000
+                      },
+                      "timelines" : [
+                        {"x": -7.228916448115192, "y": 4, "z": -2.1873974961889684}
+                      ]
+                    }
+                  }
+                },
+    "trig": {"type": "button",
+      "groupChain" : "EVERYTHING_AT_ONCE_group",
+              "time": 0}
+    },
+    {
+      "name": "Raise_Rock_5",
+      "role": "remoteAudioTest",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "Raise_Rock_5",
+                   "target": { "role": "individual", "name": "Brendan", "aspect" : "position"},
+                   "action": { "type" : "socket_manipulate_object",
+                    "mapItem": "Spawn_Rock_5",
+                     "attr": "object3D",
+                     "anime" : {
+                      "targets": "position",
+                      "delay" : 0,
+                      "loop": false,
+                      "autoplay": true,
+                      "easing": "easeInOutSine",
+                      "duration": 8000
+                      },
+                      "timelines" : [
+                        {"x": -6.001249444118333, "y": 3.5, "z": -10.006360157669752}
+                      ]
+                    }
+                  }
+                },
+    "trig": {"type": "button",
+      "groupChain" : "EVERYTHING_AT_ONCE_group",
+              "time": 0}
+    },
+    {
+      "name": "Raise_Rock_6",
+      "role": "remoteAudioTest",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "Raise_Rock_6",
+                   "target": { "role": "individual", "name": "Brendan", "aspect" : "position"},
+                   "action": { "type" : "socket_manipulate_object",
+                    "mapItem": "Spawn_Rock_6",
+                     "attr": "object3D",
+                     "anime" : {
+                      "targets": "position",
+                      "delay" : 0,
+                      "loop": false,
+                      "autoplay": true,
+                      "easing": "easeInOutSine",
+                      "duration": 8000
+                      },
+                      "timelines" : [
+                        {"x": 2.0491535502407126, "y": 7, "z": -7.296936105005282}
+                      ]
+                    }
+                  }
+                },
+    "trig": {"type": "button",
+      "groupChain" : "EVERYTHING_AT_ONCE_group",
+              "time": 0}
+    },
+    {
+      "name": "Raise_Rock_7",
+      "role": "remoteAudioTest",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "Raise_Rock_7",
+                   "target": { "role": "individual", "name": "Brendan", "aspect" : "position"},
+                   "action": { "type" : "socket_manipulate_object",
+                    "mapItem": "Spawn_Rock_7",
+                     "attr": "object3D",
+                     "anime" : {
+                      "targets": "position",
+                      "delay" : 0,
+                      "loop": false,
+                      "autoplay": true,
+                      "easing": "easeInOutSine",
+                      "duration": 8000
+                      },
+                      "timelines" : [
+                        {"x": 2.0491535502407126, "y": 7, "z": -7.296936105005282}
+                      ]
+                    }
+                  }
+                },
+    "trig": {"type": "button",
+      "groupChain" : "EVERYTHING_AT_ONCE_group",
+              "time": 0}
+    },
+    {
+      "name": "Raise_Rock_8",
+      "role": "remoteAudioTest",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "Raise_Rock_8",
+                   "target": { "role": "individual", "name": "Brendan", "aspect" : "position"},
+                   "action": { "type" : "socket_manipulate_object",
+                    "mapItem": "Spawn_Rock_8",
+                     "attr": "object3D",
+                     "anime" : {
+                      "targets": "position",
+                      "delay" : 0,
+                      "loop": false,
+                      "autoplay": true,
+                      "easing": "easeInOutSine",
+                      "duration": 8000
+                      },
+                      "timelines" : [
+                        {"x": 4.697884593730361, "y": 2.9, "z": -4.2875126173682725}
+                      ]
+                    }
+                  }
+                },
+    "trig": {"type": "button",
+      "groupChain" : "EVERYTHING_AT_ONCE_group",
+              "time": 0}
+    },
+    {
+      "name": "Raise_Rock_9",
+      "role": "remoteAudioTest",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "Raise_Rock_9",
+                   "target": { "role": "individual", "name": "Brendan", "aspect" : "position"},
+                   "action": { "type" : "socket_manipulate_object",
+                    "mapItem": "Spawn_Rock_9",
+                     "attr": "object3D",
+                     "anime" : {
+                      "targets": "position",
+                      "delay" : 0,
+                      "loop": false,
+                      "autoplay": true,
+                      "easing": "easeInOutSine",
+                      "duration": 8000
+                      },
+                      "timelines" : [
+                        {"x": 6.667657888801241, "y": 3.8, "z": -13.454713739238263}
+                      ]
+                    }
+                  }
+                },
+    "trig": {"type": "button",
+      "groupChain" : "EVERYTHING_AT_ONCE_group",
+              "time": 0}
+    },
+    {
+      "name": "Raise_Rock_10",
+      "role": "remoteAudioTest",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "Raise_Rock_10",
+                   "target": { "role": "individual", "name": "Brendan", "aspect" : "position"},
+                   "action": { "type" : "socket_manipulate_object",
+                    "mapItem": "Spawn_Rock_10",
+                     "attr": "object3D",
+                     "anime" : {
+                      "targets": "position",
+                      "delay" : 0,
+                      "loop": false,
+                      "autoplay": true,
+                      "easing": "easeInOutSine",
+                      "duration": 8000
+                      },
+                      "timelines" : [
+                        {"x": 6.667657888801241, "y": 2.3, "z": -13.454713739238263}
+                      ]
+                    }
+                  }
+                },
+    "trig": {"type": "button",
+      "groupChain" : "EVERYTHING_AT_ONCE_group",
+              "time": 0}
     },
     {
       "name": "Test_1_spawn_item_avocado",
