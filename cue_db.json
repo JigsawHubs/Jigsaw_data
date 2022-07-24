@@ -255,7 +255,7 @@
                               "dest": "url",
                               "src":  "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb"},
                   "action": {"type": "spawn_item",
-                    "pos": {"x": 1.6900864475142225, "y": -0.06275398413937205, "z": -8.735793193451709},
+                    "pos": {"x": 1.6900864475142225, "y": -4, "z": -8.735793193451709},
                     "rot": {"x": 0, "y":1, "z":0},
                     "scale": {"x": 1, "y":1, "z":1}}
                 }
@@ -478,7 +478,7 @@
                       "loop": false,
                       "autoplay": true,
                       "easing": "easeInOutSine",
-                      "duration": 8000
+                      "duration": 4000
                       },
                       "timelines" : [
                         {"x": 9.886645797532383, "y": 3, "z": -5.865964312359458}
@@ -509,7 +509,7 @@
                       "loop": false,
                       "autoplay": true,
                       "easing": "easeInOutSine",
-                      "duration": 8000
+                      "duration": 4000
                       },
                       "timelines" : [
                         {"x": 4.230041824475542, "y": 5, "z": -6.0861225496546885}
@@ -540,7 +540,7 @@
                       "loop": false,
                       "autoplay": true,
                       "easing": "easeInOutSine",
-                      "duration": 8000
+                      "duration": 4000
                       },
                       "timelines" : [
                         {"x": 3.7758088164793695, "y": 2.5, "z": -10.531911320219109}
@@ -571,7 +571,7 @@
                       "loop": false,
                       "autoplay": true,
                       "easing": "easeInOutSine",
-                      "duration": 8000
+                      "duration": 4000
                       },
                       "timelines" : [
                         {"x": -7.228916448115192, "y": 4, "z": -2.1873974961889684}
@@ -602,7 +602,7 @@
                       "loop": false,
                       "autoplay": true,
                       "easing": "easeInOutSine",
-                      "duration": 8000
+                      "duration": 4000
                       },
                       "timelines" : [
                         {"x": -6.001249444118333, "y": 3.5, "z": -10.006360157669752}
@@ -633,7 +633,7 @@
                       "loop": false,
                       "autoplay": true,
                       "easing": "easeInOutSine",
-                      "duration": 8000
+                      "duration": 4000
                       },
                       "timelines" : [
                         {"x": 2.0491535502407126, "y": 7, "z": -7.296936105005282}
@@ -664,7 +664,7 @@
                       "loop": false,
                       "autoplay": true,
                       "easing": "easeInOutSine",
-                      "duration": 8000
+                      "duration": 4000
                       },
                       "timelines" : [
                         {"x": 2.0491535502407126, "y": 7, "z": -7.296936105005282}
@@ -695,7 +695,7 @@
                       "loop": false,
                       "autoplay": true,
                       "easing": "easeInOutSine",
-                      "duration": 8000
+                      "duration": 4000
                       },
                       "timelines" : [
                         {"x": 4.697884593730361, "y": 2.9, "z": -4.2875126173682725}
@@ -726,7 +726,7 @@
                       "loop": false,
                       "autoplay": true,
                       "easing": "easeInOutSine",
-                      "duration": 8000
+                      "duration": 4000
                       },
                       "timelines" : [
                         {"x": 6.667657888801241, "y": 3.8, "z": -13.454713739238263}
@@ -757,7 +757,7 @@
                       "loop": false,
                       "autoplay": true,
                       "easing": "easeInOutSine",
-                      "duration": 8000
+                      "duration": 4000
                       },
                       "timelines" : [
                         {"x": 6.667657888801241, "y": 2.3, "z": -13.454713739238263}
