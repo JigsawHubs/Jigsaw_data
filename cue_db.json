@@ -448,35 +448,9 @@
                   },
                   "action": {
                     "type": "remote_scale_audio",
-                    "minScale": 1,
-                    "maxScale": 2,
-                    "itemName": ["Spawn_Character_1", "Spawn_Character_2", "Spawn_Character_3", "Spawn_Character_4"],
-                    "disableAvatar": false
-                  }
-                }
-                },
-      "trig": {"type": "button",
-        "groupChain": "EVERYTHING_AT_ONCE_group",
-               "time": 0}
-    },
-    {
-      "name": "Test_All_At_Once",
-      "role": "remoteAudioTest",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": {
-                  "name": "Test_All_At_Once",
-                  "role":"remoteAudioTest",
-                  "target": { "role" : "individual",
-                  "name" : "Brendan"
-                  },
-                  "action": {
-                    "type": "remote_scale_audio",
                     "minScale": 2,
                     "maxScale": 3.5,
-                    "itemName": ["Spawn_Rock_1", "Spawn_Rock_2", "Spawn_Rock_2", "Spawn_Rock_3", "Spawn_Rock_4", "Spawn_Rock_5", "Spawn_Rock_6", "Spawn_Rock_7", "Spawn_Rock_8", "Spawn_Rock_9", "Spawn_Rock_10"],
+                    "itemName": ["Spawn_Character_1", "Spawn_Character_2", "Spawn_Character_3", "Spawn_Character_4", "Spawn_Rock_1", "Spawn_Rock_2", "Spawn_Rock_2", "Spawn_Rock_3", "Spawn_Rock_4", "Spawn_Rock_5", "Spawn_Rock_6", "Spawn_Rock_7", "Spawn_Rock_8", "Spawn_Rock_9", "Spawn_Rock_10"],
                     "disableAvatar": false
                   }
                 }
