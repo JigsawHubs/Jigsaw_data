@@ -68,7 +68,7 @@
                   "action": {
                     "type": "remote_scale_audio",
                     "minScale": 1,
-                    "maxScale": 3,
+                    "maxScale": 2,
                     "itemName": ["Spawn_Character_1"],
                     "disableAvatar": true
                   }
@@ -93,7 +93,7 @@
                   "action": {
                     "type": "remote_scale_audio",
                     "minScale": 1,
-                    "maxScale": 3,
+                    "maxScale": 2,
                     "itemName": ["Spawn_Character_2"],
                     "disableAvatar": true
                   }
@@ -118,7 +118,7 @@
                   "action": {
                     "type": "remote_scale_audio",
                     "minScale": 1,
-                    "maxScale": 3,
+                    "maxScale": 2,
                     "itemName": ["Spawn_Character_3"],
                     "disableAvatar": true
                   }
@@ -143,7 +143,7 @@
                   "action": {
                     "type": "remote_scale_audio",
                     "minScale": 1,
-                    "maxScale": 3,
+                    "maxScale": 2,
                     "itemName": ["Spawn_Character_4"],
                     "disableAvatar": true
                   }
@@ -163,12 +163,12 @@
                   "name": "Test_All_At_Once",
                   "role":"remoteAudioTest",
                   "target": { "role" : "individual",
-                  "name" : "brnd"
+                  "name" : "Brendan"
                   },
                   "action": {
                     "type": "remote_scale_audio",
                     "minScale": 1,
-                    "maxScale": 3,
+                    "maxScale": 2,
                     "itemName": ["Spawn_Character_1", "Spawn_Character_2", "Spawn_Character_3", "Spawn_Character_4"],
                     "disableAvatar": false
                   }
