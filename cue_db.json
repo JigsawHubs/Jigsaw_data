@@ -1,6 +1,29 @@
 {
   "listCue": [
     {
+      "name": "Test_change_webapp",
+      "role": "webapptest",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Test_change_webapp",
+                  "role": {},
+                  "target": { "type": "glb",
+                    "role": "mobilewebapp"},
+                  "action": {
+                    "button1": {"limit": 1, "asset": "https://jigsawhubs-1-assets.onboardxr.live/files/4cecae72-e7ab-4745-8888-2aa2b980cb02.glb", "icon": "rock.svg"},
+                    "button2": {"asset": "https://jigsawhubs-1-assets.onboardxr.live/files/4cecae72-e7ab-4745-8888-2aa2b980cb02.glb", "icon": "rock.svg", "limit": 1},
+                    "button3": {"limit": 1, "icon": "rock.svg", "asset": "https://jigsawhubs-1-assets.onboardxr.live/files/4cecae72-e7ab-4745-8888-2aa2b980cb02.glb"},
+                    "button4": {"asset": "https://jigsawhubs-1-assets.onboardxr.live/files/4cecae72-e7ab-4745-8888-2aa2b980cb02.glb", "limit": 1, "icon": "rock.svg"},
+                    "target": "Brendan"}
+                }
+                },
+    "trig": {"type": "button",
+              "time": 0}
+    },
+    {
       "name": "Spawn_Character_1",
       "role": "remoteAudioTest",
       "target": { },
