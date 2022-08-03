@@ -17,7 +17,9 @@
                     "button2": {"asset": "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_19.glb", "icon": "rock.svg", "limit": 1},
                     "button3": {"limit": 1, "icon": "rock.svg", "asset": "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_19.glb"},
                     "button4": {"asset": "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_19.glb", "limit": 1, "icon": "rock.svg"},
-                    "target": "Brendan"}
+                    "target": "Brendan",
+                    "sceneLink": "https://onboardxr.live/scenes/bYxw7r9/crate",
+                    "lifetime": 2000}
                 }
                 },
     "trig": {"type": "button",
