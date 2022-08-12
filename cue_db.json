@@ -1,6 +1,54 @@
 {
   "listCue": [
     {
+      "name": "Spawn_Vent",
+      "role": "remoteAudioTest",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Spawn_Vent",
+                  "role": {},
+                  "target": { "type": "glb",
+                    "role": "individual", "name": "___",
+                              "dest": "url",
+                              "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/92d0881d-acdf-4973-bae4-e12ed5cb7823.glb"},
+                  "action": {"type": "spawn_item",
+                    "pos": {"x": 0, "y":1.5, "z":0},
+                    "rot": {"x": 0, "y":0, "z":0},
+                    "scale": {"x": 4, "y":4, "z":4}}
+                }
+                },
+    "trig": {"type": "button",
+              "time": 0}
+    },
+    {
+      "name": "MorphTest",
+      "role": "remoteAudioTest",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "MorphTest",
+                  "role":"remoteAudioTest",
+                  "target": { "role" : "individual",
+                  "name" : "___"
+                  },
+                  "action": {
+                    "type": "remote_morph_audio",
+                    "minValue": 1,
+                    "maxValue": 2,
+                    "itemName": ["Spawn_Vent"],
+                    "remoteAnalyserNetId": "avatar-rig"
+                  }
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
       "name": "Test_change_webapp",
       "role": "webapptest",
       "target": { },
@@ -13,13 +61,13 @@
                   "target": { "type": "glb",
                     "role": "mobilewebapp"},
                   "action": {
-                    "button1": {"limit": 1, "asset": "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_19.glb", "icon": "rock.svg"},
-                    "button2": {"asset": "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_19.glb", "icon": "rock.svg", "limit": 1},
-                    "button3": {"limit": 1, "icon": "rock.svg", "asset": "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_19.glb"},
-                    "button4": {"asset": "https://jigsawhubs.github.io/Jigsaw_data/object/NPC_A_19.glb", "limit": 1, "icon": "rock.svg"},
-                    "target": "Brendan",
-                    "sceneLink": "https://onboardxr.live/scenes/bYxw7r9/crate",
-                    "lifetime": 2000}
+                    "button1": {"limit": 100, "asset": "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb", "icon": "rock.svg", "target": "Brendan"},
+                    "button2": {"asset": "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb", "icon": "rock.svg", "limit": 100, "target": "Brendan"},
+                    "button3": {"limit": 100, "icon": "rock.svg", "asset": "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb", "target": "Brendan"},
+                    "button4": {"asset": "https://uploads-prod.reticulum.io/files/22c46825-f1e5-4f28-9b97-5cf78572d717.glb", "limit": 100, "icon": "rock.svg", "target": "Brendan"},
+                    "sceneLink": "https://onboardxr.live/scenes/bYxw7r9/crater",
+                    "gravity" : true,
+                    "lifetime": 10000}
                 }
                 },
     "trig": {"type": "button",
