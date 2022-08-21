@@ -13,11 +13,11 @@
                   "target": { "type": "glb",
                     "role": "individual", "name": "___",
                               "dest": "url",
-                              "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/92d0881d-acdf-4973-bae4-e12ed5cb7823.glb"},
+                              "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/509c8312-bf7a-43d6-8958-c43dec5f1d99.glb"},
                   "action": {"type": "spawn_item",
                     "pos": {"x": 0, "y":1.5, "z":0},
                     "rot": {"x": 0, "y":0, "z":0},
-                    "scale": {"x": 4, "y":4, "z":4}}
+                    "scale": {"x": 1, "y":1, "z":1}}
                 }
                 },
     "trig": {"type": "button",
@@ -40,6 +40,7 @@
                     "type": "remote_morph_audio",
                     "minValue": 1,
                     "maxValue": 2,
+                    "name": "ClosedMouth",
                     "itemName": ["Spawn_Vent"],
                     "remoteAnalyserNetId": "avatar-rig"
                   }
@@ -6269,7 +6270,7 @@
                 "target": { "type": "glb",
                   "role": "individual", "name": "Brendan",
                             "dest": "url",
-                            "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/ecb967dc-ed40-4e5d-a622-b9476bd52698.glb"},
+                            "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/892e768c-2492-4d11-8c86-ca8caf05d0cf.glb"},
                 "action": {"type": "spawn_item",
                   "pauseOnSpawn": true,
                   "pos": {"x": -47.2, "y":-300, "z":-4.8},
@@ -6462,7 +6463,7 @@
                 "target": { "type": "glb",
                   "role": "individual", "name": "Brendan",
                             "dest": "url",
-                            "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/ecb967dc-ed40-4e5d-a622-b9476bd52698.glb"},
+                            "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/892e768c-2492-4d11-8c86-ca8caf05d0cf.glb"},
                 "action": {"type": "spawn_item",
                   "pauseOnSpawn": true,
                   "pos": {"x": -47.2, "y":-300, "z":-4.8},
@@ -6630,7 +6631,7 @@
                 "target": { "type": "glb",
                   "role": "individual", "name": "Brendan",
                             "dest": "url",
-                            "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/ecb967dc-ed40-4e5d-a622-b9476bd52698.glb"},
+                            "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/892e768c-2492-4d11-8c86-ca8caf05d0cf.glb"},
                 "action": {"type": "spawn_item",
                   "pauseOnSpawn": true,
                   "pos": {"x": -47.2, "y":-300, "z":-4.8},
@@ -9111,7 +9112,7 @@
                                 "name": "NPCe_18",
                                 "sceneLink": "https://onboardxr.live/scenes/eTGt3hu/npc-a-74-1029",
                                 "target": { "role": "general",
-                                  "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/ecb967dc-ed40-4e5d-a622-b9476bd52698.glb"},
+                                  "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/892e768c-2492-4d11-8c86-ca8caf05d0cf.glb"},
                                 "action": {"type": "socket_spawn_object",
                                   "pauseOnSpawn": true,
                                            "pos": {"x": -40, "y": -40, "z": 3},
