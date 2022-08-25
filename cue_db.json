@@ -9983,7 +9983,7 @@
                             "target": { "role": "general",
                             "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/58b5a797-f4ac-461d-834a-3937fc7c730b.mp3"},
                             "action": {"type": "socket_spawn_object",
-                              "pos": {"pos": {"x": 0.04831861695428292, "y": -14, "z": -3.4674272971388915}},
+                              "pos": {"x": 0.04831861695428292, "y": -14, "z": -3.4674272971388915},
                               "rot": {"x": 0, "y":3.14, "z":0},
                               "scale": {"x": 1, "y":1, "z":1}}
                           }
@@ -10005,7 +10005,7 @@
                             "target": { "role": "general",
                             "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/0500025d-dbd0-4924-afa0-d3d702652aa9.mp3"},
                             "action": {"type": "socket_spawn_object",
-                              "pos": {"pos": {"x": 0.04831861695428292, "y": -14, "z": -3.4674272971388915}},
+                              "pos": {"x": 0.04831861695428292, "y": -14, "z": -3.4674272971388915},
                               "rot": {"x": 0, "y":3.14, "z":0},
                               "scale": {"x": 1, "y":1, "z":1}}
                           }
@@ -10027,7 +10027,7 @@
                             "target": { "role": "general",
                             "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/51fa3967-7718-435f-9530-39ededcd43ed.mp3"},
                             "action": {"type": "socket_spawn_object",
-                              "pos": {"pos": {"x": 0.04831861695428292, "y": -14, "z": -3.4674272971388915}},
+                              "pos": {"x": 0.04831861695428292, "y": -14, "z": -3.4674272971388915},
                               "rot": {"x": 0, "y":3.14, "z":0},
                               "scale": {"x": 1, "y":1, "z":1}}
                           }
@@ -10049,7 +10049,7 @@
                             "target": { "role": "general",
                             "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/1f764e98-f50a-4659-8861-8f8322f8f26e.mp3"},
                             "action": {"type": "socket_spawn_object",
-                              "pos": {"pos": {"x": 0.04831861695428292, "y": -14, "z": -3.4674272971388915}},
+                              "pos": {"x": 0.04831861695428292, "y": -14, "z": -3.4674272971388915},
                               "rot": {"x": 0, "y":3.14, "z":0},
                               "scale": {"x": 1, "y":1, "z":1}}
                           }
