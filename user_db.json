@@ -38,5 +38,7 @@
   "llen" : {"name":"NellySM", "role":"llen"},
   "brendanbradley": {"name": "Brendan", "role": "brendanbradley"},
   "remoteAudioTest": {"name": "Michael", "role": "remoteAudioTest"},
-  "webapptest": {"name": "Michael", "role": "webapptest"}
+  "webapptest": {"name": "Michael", "role": "webapptest"},
+  "listening": {"name": "NPCGuest","role":"listening"},
+  "listener": {"name": "NPCGuest","role":"listener"}
  }
