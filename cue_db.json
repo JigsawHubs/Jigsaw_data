@@ -10362,6 +10362,94 @@
                         "trig": {"type": "button",
                           "groupChain" : "Tutorial_1_group",
                                  "time": 32500}
-                        }
+                        },
+                        {
+                          "name": "Spawn_Audio_7",
+                          "role": "listening",
+                          "target": { },
+                          "action": {"type": "call_method_from_object",
+                                     "object_name": "sockSys",
+                                     "function_name": "cueSocket",
+                                     "_cue": {
+                                      "name": "Spawn_Audio_7",
+                                      "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                                      "target": { "role": "general",
+                                      "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/f37c6e0e-c828-4ec7-bc30-95c65aefdc77.mp3"},
+                                      "action": {"type": "socket_spawn_object",
+                                        "pos": {"x": 0.04831861695428292, "y": -14, "z": -3.4674272971388915},
+                                        "rot": {"x": 0, "y":3.14, "z":0},
+                                        "scale": {"x": 1, "y":1, "z":1}}
+                                    }
+                                    },
+                          "trig": {"type": "button",
+                          "groupChain" : "Tutorial_1_group",
+                                   "time": 0}
+                        },
+                        {
+                          "name": "Scale_NPC",
+                          "role": "listening",
+                          "target": { },
+                          "action": {"type": "call_method_from_object",
+                                     "object_name": "sockSys",
+                                     "function_name": "cueSocket",
+                                     "_cue": { 
+                                      "name": "Scale_NPC",
+                                      "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                                      "target": { "role": "general",
+                                        "aspect" : "scale" },
+                                      "action": { "type": "socket_manipulate_object",
+                                        "mapItem": "Spawn_NPC",
+                                        "attr": "object3D",
+                                        "anime": {
+                                         "targets": "scale",
+                                         "delay" : 1000,
+                                         "loop": false,
+                                         "autoplay": false,
+                                         "easing": "easeInOutSine",
+                                         "duration": 1000
+                                         },
+                                         "timelines" : [
+                                          {"x": 1.2, "y":1.2, "z":1.2, "duration": 4000, "delay": 0, "easing": "easeInOutElastic(1, 0.5)"}
+                                         ]
+                                       }
+                                     }
+                                    },
+                          "trig": {"type": "button",
+                            "groupChain" : "Tutorial_1_group",
+                                   "time": 4000}
+                          },
+                          {
+                            "name": "Move_NPC",
+                            "role": "listening",
+                            "target": { },
+                            "action": {"type": "call_method_from_object",
+                                       "object_name": "sockSys",
+                                       "function_name": "cueSocket",
+                                       "_cue": { 
+                                        "name": "Move_NPC",
+                                        "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                                        "target": { "role": "general",
+                                          "aspect" : "position" },
+                                        "action": { "type": "socket_manipulate_object",
+                                          "mapItem": "Spawn_NPC",
+                                          "attr": "object3D",
+                                          "anime": {
+                                           "targets": "scale",
+                                           "delay" : 1000,
+                                           "loop": false,
+                                           "autoplay": false,
+                                           "easing": "easeInOutSine",
+                                           "duration": 1000
+                                           },
+                                           "timelines" : [
+                                            {"x": 0, "y":1.2, "z":4, "duration": 4000, "delay": 0, "easing": "easeOutSine"}
+                                           ]
+                                         }
+                                       }
+                                      },
+                            "trig": {"type": "button",
+                              "groupChain" : "Tutorial_1_group",
+                                     "time": 4000}
+                            }
     ]
   }
