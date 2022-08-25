@@ -10251,7 +10251,7 @@
                                 {"x": 0.5, "y":1.2, "z":-4.5, "duration": 1500, "delay": 0, "easing": "easeInOutSine"},
                                 {"x": 1.8, "y":1.2, "z":-3, "duration": 1500, "delay": 1300, "easing": "easeInSine"},
                                 {"x": 0, "y":1.2, "z":4, "duration": 4000, "delay": 0, "easing": "easeOutSine"},
-                                {"x": 0, "y":0.7, "z":4, "duration": 500, "delay": 15700, "easing": "easeOutSine"}
+                                {"x": 0, "y":0.7, "z":4, "duration": 500, "delay": 15200, "easing": "easeOutSine"}
                                ]
                              }
                            }
@@ -10328,7 +10328,7 @@
                                    "scale": {"x": 2, "y":2, "z":2}},
                         "trig": {"type": "button",
                         "groupChain" : "Tutorial_1_group",
-                                 "time": 31000}
+                                 "time": 30000}
                       },
                       {
                         "name": "Scale_NPC",
@@ -10361,7 +10361,7 @@
                                   },
                         "trig": {"type": "button",
                           "groupChain" : "Tutorial_1_group",
-                                 "time": 32500}
+                                 "time": 32000}
                         },
                         {
                           "name": "Spawn_Audio_7",
