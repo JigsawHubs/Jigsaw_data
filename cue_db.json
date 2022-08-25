@@ -9990,7 +9990,7 @@
                           },
                 "trig": {"type": "button",
                 "groupChain" : "Tutorial_1_group",
-                         "time": 10500}
+                         "time": 0}
               },
               {
                 "name": "Spawn_Audio_4",
@@ -10156,7 +10156,7 @@
                           },
                 "trig": {"type": "button",
                   "groupChain" : "Tutorial_1_group",
-                         "time": 25000}
+                         "time": 27000}
               },
               {
                 "name": "Delete_Audio_6",
