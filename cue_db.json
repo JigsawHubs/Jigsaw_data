@@ -10409,7 +10409,7 @@
                                          "duration": 1000
                                          },
                                          "timelines" : [
-                                          {"x": 1.2, "y":1.2, "z":1.2, "duration": 4000, "delay": 0, "easing": "easeInOutElastic(1, 0.5)"}
+                                          {"x": 1.2, "y":1.2, "z":1.2, "duration": 4000, "delay": 0, "easing": "easeInOutSine"}
                                          ]
                                        }
                                      }
@@ -10450,6 +10450,26 @@
                             "trig": {"type": "button",
                               "groupChain" : "Tutorial_2_group",
                                      "time": 4000}
+                            },
+                            {
+                              "name": "Delete_Audio_7",
+                              "role": "listening",
+                              "target": { },
+                              "action": {"type": "call_method_from_object",
+                                         "object_name": "sockSys",
+                                         "function_name": "cueSocket",
+                                         "_cue": { 
+                                           "name": "Delete_Audio_7",
+                                           "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                                           "target": { "role": "general"},
+                                           "action": { "type": "delete",
+                                            "src" : "Spawn_Audio_7"
+                                          }
+                                          }
+                                        },
+                              "trig": {"type": "button",
+                                "groupChain" : "Tutorial_2_group",
+                                       "time": 30500}
                             }
     ]
   }
