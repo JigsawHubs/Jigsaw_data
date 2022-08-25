@@ -9981,7 +9981,7 @@
                             "name": "Spawn_Audio_3",
                             "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
                             "target": { "role": "general",
-                            "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/5b962d7e-e77a-44fa-9543-9b7ecbb99517.mp3"},
+                            "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/58b5a797-f4ac-461d-834a-3937fc7c730b.mp3"},
                             "action": {"type": "socket_spawn_object",
                               "pos": {"pos": {"x": 0.04831861695428292, "y": -14, "z": -3.4674272971388915}},
                               "rot": {"x": 0, "y":3.14, "z":0},
