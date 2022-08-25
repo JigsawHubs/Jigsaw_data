@@ -10047,7 +10047,7 @@
                             "name": "Spawn_Audio_6",
                             "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
                             "target": { "role": "general",
-                            "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/1f764e98-f50a-4659-8861-8f8322f8f26e.mp3"},
+                            "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/2c9fcea4-17ff-4f77-aca0-659da46bc3ba.mp3"},
                             "action": {"type": "socket_spawn_object",
                               "pos": {"x": 0.04831861695428292, "y": -14, "z": -3.4674272971388915},
                               "rot": {"x": 0, "y":3.14, "z":0},
@@ -10251,7 +10251,7 @@
                                 {"x": 0.5, "y":1.2, "z":-4.5, "duration": 1500, "delay": 0, "easing": "easeInOutSine"},
                                 {"x": 1.8, "y":1.2, "z":-3, "duration": 1500, "delay": 1300, "easing": "easeInSine"},
                                 {"x": 0, "y":1.2, "z":4, "duration": 4000, "delay": 0, "easing": "easeOutSine"},
-                                {"x": 0, "y":1.2, "z":4, "duration": 500, "delay": 16000, "easing": "easeOutSine"}
+                                {"x": 0, "y":0.7, "z":4, "duration": 500, "delay": 16000, "easing": "easeOutSine"}
                                ]
                              }
                            }
@@ -10323,7 +10323,7 @@
                         "action": {"type": "move",
                                    "duration": 2000,
                                    "loop": false,
-                                   "pos": {"x": 0, "y":3, "z":4},
+                                   "pos": {"x": 0, "y":2.2, "z":4},
                                    "rot": {"x": 0, "y":0, "z":0},
                                    "scale": {"x": 2, "y":2, "z":2}},
                         "trig": {"type": "button",
@@ -10341,7 +10341,7 @@
                                     "name": "Scale_NPC",
                                     "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
                                     "target": { "role": "general",
-                                      "aspect" : "position" },
+                                      "aspect" : "scale" },
                                     "action": { "type": "socket_manipulate_object",
                                       "mapItem": "Spawn_NPC",
                                       "attr": "object3D",
