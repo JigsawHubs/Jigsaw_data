@@ -9971,6 +9971,46 @@
                          "time": 22000}
               },
               {
+                "name": "Delete_Audio_1",
+                "role": "listening",
+                "target": { },
+                "action": {"type": "call_method_from_object",
+                           "object_name": "sockSys",
+                           "function_name": "cueSocket",
+                           "_cue": { 
+                             "name": "Delete_Audio_1",
+                             "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                             "target": { "role": "general"},
+                             "action": { "type": "delete",
+                              "src" : "Spawn_Audio_1"
+                            }
+                            }
+                          },
+                "trig": {"type": "button",
+                  "groupChain" : "Tutorial_1_group",
+                         "time": 0}
+              },
+              {
+                "name": "Delete_Audio_2",
+                "role": "listening",
+                "target": { },
+                "action": {"type": "call_method_from_object",
+                           "object_name": "sockSys",
+                           "function_name": "cueSocket",
+                           "_cue": { 
+                             "name": "Delete_Audio_2",
+                             "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                             "target": { "role": "general"},
+                             "action": { "type": "delete",
+                              "src" : "Spawn_Audio_2"
+                            }
+                            }
+                          },
+                "trig": {"type": "button",
+                  "groupChain" : "Tutorial_1_group",
+                         "time": 0}
+              },
+              {
                 "name": "Delete_Audio_ToolTip",
                 "role": "listening",
                 "target": { },
