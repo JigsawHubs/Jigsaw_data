@@ -10382,7 +10382,7 @@
                                     }
                                     },
                           "trig": {"type": "button",
-                          "groupChain" : "Tutorial_1_group",
+                          "groupChain" : "Tutorial_2_group",
                                    "time": 0}
                         },
                         {
@@ -10415,7 +10415,7 @@
                                      }
                                     },
                           "trig": {"type": "button",
-                            "groupChain" : "Tutorial_1_group",
+                            "groupChain" : "Tutorial_2_group",
                                    "time": 4000}
                           },
                           {
@@ -10448,7 +10448,7 @@
                                        }
                                       },
                             "trig": {"type": "button",
-                              "groupChain" : "Tutorial_1_group",
+                              "groupChain" : "Tutorial_2_group",
                                      "time": 4000}
                             }
     ]
