@@ -10015,6 +10015,28 @@
                          "time": 10500}
               },
               {
+                "name": "Spawn_Audio_5",
+                "role": "listening",
+                "target": { },
+                "action": {"type": "call_method_from_object",
+                           "object_name": "sockSys",
+                           "function_name": "cueSocket",
+                           "_cue": {
+                            "name": "Spawn_Audio_5",
+                            "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                            "target": { "role": "general",
+                            "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/51fa3967-7718-435f-9530-39ededcd43ed.mp3"},
+                            "action": {"type": "socket_spawn_object",
+                              "pos": {"pos": {"x": 0.04831861695428292, "y": -14, "z": -3.4674272971388915}},
+                              "rot": {"x": 0, "y":3.14, "z":0},
+                              "scale": {"x": 1, "y":1, "z":1}}
+                          }
+                          },
+                "trig": {"type": "button",
+                "groupChain" : "Spawn_Audio_1",
+                         "time": 18500}
+              },
+              {
                 "name": "Delete_Audio_1",
                 "role": "listening",
                 "target": { },
@@ -10095,6 +10117,26 @@
                          "time": 16500}
               },
               {
+                "name": "Delete_Audio_5",
+                "role": "listening",
+                "target": { },
+                "action": {"type": "call_method_from_object",
+                           "object_name": "sockSys",
+                           "function_name": "cueSocket",
+                           "_cue": { 
+                             "name": "Delete_Audio_5",
+                             "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                             "target": { "role": "general"},
+                             "action": { "type": "delete",
+                              "src" : "Spawn_Audio_5"
+                            }
+                            }
+                          },
+                "trig": {"type": "button",
+                  "groupChain" : "Tutorial_1_group",
+                         "time": 25000}
+              },
+              {
                 "name": "Delete_Audio_ToolTip",
                 "role": "listening",
                 "target": { },
@@ -10167,7 +10209,7 @@
                                 {"x": 0.5, "y":1.2, "z":-4.5, "duration": 1500, "delay": 0, "easing": "easeInOutSine"},
                                 {"x": 1.8, "y":1.2, "z":-3, "duration": 1500, "delay": 1300, "easing": "easeInSine"},
                                 {"x": 0, "y":1.2, "z":4, "duration": 4000, "delay": 0, "easing": "easeOutSine"},
-                                {"x": 0, "y":1.2, "z":4, "duration": 500, "delay": 500, "easing": "easeOutSine"}
+                                {"x": 0, "y":1.2, "z":4, "duration": 500, "delay": 16000, "easing": "easeOutSine"}
                                ]
                              }
                            }
@@ -10244,7 +10286,7 @@
                                    "scale": {"x": 2, "y":2, "z":2}},
                         "trig": {"type": "button",
                         "groupChain" : "Tutorial_1_group",
-                                 "time": 16000}
+                                 "time": 31000}
                       },
                       {
                         "name": "Scale_NPC",
@@ -10277,7 +10319,7 @@
                                   },
                         "trig": {"type": "button",
                           "groupChain" : "Tutorial_1_group",
-                                 "time": 17500}
+                                 "time": 32500}
                         }
     ]
   }
