@@ -10166,7 +10166,8 @@
                                 {"x": 1.2, "y":1.2, "z":-4.3, "duration": 1000, "delay": 0, "easing": "easeOutSine"},
                                 {"x": 0.5, "y":1.2, "z":-4.5, "duration": 1500, "delay": 0, "easing": "easeInOutSine"},
                                 {"x": 1.8, "y":1.2, "z":-3, "duration": 1500, "delay": 1300, "easing": "easeInSine"},
-                                {"x": 1.8, "y":1.2, "z":4, "duration": 4000, "delay": 0, "easing": "easeOutSine"}
+                                {"x": 0, "y":1.2, "z":4, "duration": 4000, "delay": 0, "easing": "easeOutSine"},
+                                {"x": 0, "y":1.2, "z":4, "duration": 500, "delay": 500, "easing": "easeOutSine"}
                                ]
                              }
                            }
@@ -10205,7 +10206,7 @@
                                   {"x": 0, "y":-0.6, "z":0, "duration": 1000, "delay": 0, "easing": "easeOutSine"},
                                   {"x": 0, "y":0, "z":0, "duration": 1500, "delay": 0, "easing": "easeInOutSine"},
                                   {"x": 0, "y":0.6, "z":0, "duration": 500, "delay": 1000, "easing": "easeInOutSine"},
-                                  {"x": 0, "y":0, "z":0, "duration": 500, "delay": 1500, "easing": "easeInOutSine"},
+                                  {"x": 0, "y":-0.4, "z":0, "duration": 500, "delay": 1500, "easing": "easeInOutSine"},
                                   {"x": 0, "y":-3.14, "z":0, "duration": 1000, "delay": 3300, "easing": "easeInOutSine"}
                                  ]
                                }
@@ -10215,71 +10216,68 @@
                     "groupChain" : "Tutorial_1_group",
                            "time": 0}
                   },
-                  {
-                    "name": "Scale_Audio_ToolTip",
-                    "role": "listening",
-                    "target": { },
-                    "action": {"type": "call_method_from_object",
-                               "object_name": "sockSys",
-                               "function_name": "cueSocket",
-                               "_cue": { 
-                                "name": "Scale_Audio_ToolTip",
-                                "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
-                                "target": { "role": "general",
-                                  "aspect" : "scale" },
-                                "action": { "type": "socket_manipulate_object",
-                                  "mapItem": "Spawn_Audio_ToolTip",
-                                  "attr": "object3D",
-                                  "anime": {
-                                   "targets": "scale",
-                                   "delay" : 1000,
+                      {
+                        "name": "Spawn_Boulder",
+                        "role": "listening",
+                        "target": { "type": "glb",
+                                    "dest": "url",
+                                    "src":  "https://xrtheater-assets.xrtheater.live/files/e0d03189-9182-44f1-b8b4-1295733fa7d5.glb"},
+                        "action": {"type": "spawn_item",
+                                   "pos": {"x": 0, "y":10, "z":4},
+                                   "rot": {"x": 0, "y":0, "z":0.9},
+                                   "scale": {"x": 2, "y":2, "z":2}},
+                        "trig": {"type": "button",
+                        "groupChain" : "Tutorial_1_group",
+                                 "time": 0}
+                      },
+                      {
+                        "name": "Move_Boulder",
+                        "role": "listening",
+                        "target": { "type": "glb",
+                                    "dest": "local",
+                                    "src": "Spawn_Boulder"},
+                        "action": {"type": "move",
+                                   "duration": 2000,
                                    "loop": false,
-                                   "autoplay": false,
-                                   "easing": "easeInOutSine",
-                                   "duration": 1000
-                                   },
-                                   "timelines" : [
-                                    {"x": 2.4, "y":2.4, "z":2.4, "duration": 1500, "delay": 0, "easing": "easeInOutElastic(1, 0.5)"}
-                                   ]
-                                 }
-                               }
-                              },
-                    "trig": {"type": "button",
-                      "groupChain" : "Tutorial_Start_group",
-                             "time": 10000}
-                    },
-                    {
-                      "name": "Move_Audio_ToolTip",
-                      "role": "listening",
-                      "target": { },
-                      "action": {"type": "call_method_from_object",
-                                 "object_name": "sockSys",
-                                 "function_name": "cueSocket",
-                                 "_cue": { 
-                                  "name": "Move_Audio_ToolTip",
-                                  "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
-                                  "target": { "role": "general",
-                                    "aspect" : "position" },
-                                  "action": { "type": "socket_manipulate_object",
-                                    "mapItem": "Spawn_Audio_ToolTip",
-                                    "attr": "object3D",
-                                    "anime": {
-                                     "targets": "scale",
-                                     "delay" : 1000,
-                                     "loop": false,
-                                     "autoplay": false,
-                                     "easing": "easeInOutSine",
-                                     "duration": 1000
-                                     },
-                                     "timelines" : [
-                                      {"x": -0.5, "y":1.9, "z":-6, "duration": 1500, "delay": 0, "easing": "easeInOutSine"}
-                                     ]
+                                   "pos": {"x": 0, "y":3, "z":4},
+                                   "rot": {"x": 0, "y":0, "z":0},
+                                   "scale": {"x": 2, "y":2, "z":2}},
+                        "trig": {"type": "button",
+                        "groupChain" : "Tutorial_1_group",
+                                 "time": 16000}
+                      },
+                      {
+                        "name": "Scale_NPC",
+                        "role": "listening",
+                        "target": { },
+                        "action": {"type": "call_method_from_object",
+                                   "object_name": "sockSys",
+                                   "function_name": "cueSocket",
+                                   "_cue": { 
+                                    "name": "Scale_NPC",
+                                    "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                                    "target": { "role": "general",
+                                      "aspect" : "position" },
+                                    "action": { "type": "socket_manipulate_object",
+                                      "mapItem": "Spawn_NPC",
+                                      "attr": "object3D",
+                                      "anime": {
+                                       "targets": "scale",
+                                       "delay" : 1000,
+                                       "loop": false,
+                                       "autoplay": false,
+                                       "easing": "easeInOutSine",
+                                       "duration": 1000
+                                       },
+                                       "timelines" : [
+                                        {"x": 1.2, "y":0.6, "z":1.2, "duration": 500, "delay": 0, "easing": "easeInOutSine"}
+                                       ]
+                                     }
                                    }
-                                 }
-                                },
-                      "trig": {"type": "button",
-                        "groupChain" : "Tutorial_Start_group",
-                               "time": 10000}
-                      }     
+                                  },
+                        "trig": {"type": "button",
+                          "groupChain" : "Tutorial_1_group",
+                                 "time": 17500}
+                        }
     ]
   }
