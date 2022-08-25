@@ -9725,10 +9725,10 @@
                  "object_name": "sockSys",
                  "function_name": "cueSocket",
                  "_cue": {
-                  "name": "Spawn_Audio_1",
+                  "name": "Spawn_Audio_2",
                   "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
                   "target": { "role": "general",
-                  "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/a43428e9-b6b0-4138-93c2-e5583c4a6701.mp3"},
+                  "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/c704b2f4-6182-49b2-b330-28bbd9eb05fc.mp3"},
                   "action": {"type": "socket_spawn_object",
                     "pos": {"x": 0.04831861695428292, "y": -14, "z": -3.4674272971388915},
                     "rot": {"x": 0, "y":3.14, "z":0},
