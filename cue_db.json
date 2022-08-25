@@ -9971,6 +9971,50 @@
                          "time": 22000}
               },
               {
+                "name": "Spawn_Audio_3",
+                "role": "listening",
+                "target": { },
+                "action": {"type": "call_method_from_object",
+                           "object_name": "sockSys",
+                           "function_name": "cueSocket",
+                           "_cue": {
+                            "name": "Spawn_Audio_3",
+                            "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                            "target": { "role": "general",
+                            "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/5b962d7e-e77a-44fa-9543-9b7ecbb99517.mp3"},
+                            "action": {"type": "socket_spawn_object",
+                              "pos": {"pos": {"x": 0.04831861695428292, "y": -14, "z": -3.4674272971388915}},
+                              "rot": {"x": 0, "y":3.14, "z":0},
+                              "scale": {"x": 1, "y":1, "z":1}}
+                          }
+                          },
+                "trig": {"type": "button",
+                "groupChain" : "Spawn_Audio_1",
+                         "time": 0}
+              },
+              {
+                "name": "Spawn_Audio_4",
+                "role": "listening",
+                "target": { },
+                "action": {"type": "call_method_from_object",
+                           "object_name": "sockSys",
+                           "function_name": "cueSocket",
+                           "_cue": {
+                            "name": "Spawn_Audio_4",
+                            "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                            "target": { "role": "general",
+                            "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/0500025d-dbd0-4924-afa0-d3d702652aa9.mp3"},
+                            "action": {"type": "socket_spawn_object",
+                              "pos": {"pos": {"x": 0.04831861695428292, "y": -14, "z": -3.4674272971388915}},
+                              "rot": {"x": 0, "y":3.14, "z":0},
+                              "scale": {"x": 1, "y":1, "z":1}}
+                          }
+                          },
+                "trig": {"type": "button",
+                "groupChain" : "Spawn_Audio_1",
+                         "time": 10500}
+              },
+              {
                 "name": "Delete_Audio_1",
                 "role": "listening",
                 "target": { },
@@ -10009,6 +10053,46 @@
                 "trig": {"type": "button",
                   "groupChain" : "Tutorial_1_group",
                          "time": 0}
+              },
+              {
+                "name": "Delete_Audio_3",
+                "role": "listening",
+                "target": { },
+                "action": {"type": "call_method_from_object",
+                           "object_name": "sockSys",
+                           "function_name": "cueSocket",
+                           "_cue": { 
+                             "name": "Delete_Audio_3",
+                             "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                             "target": { "role": "general"},
+                             "action": { "type": "delete",
+                              "src" : "Spawn_Audio_3"
+                            }
+                            }
+                          },
+                "trig": {"type": "button",
+                  "groupChain" : "Tutorial_1_group",
+                         "time": 10500}
+              },
+              {
+                "name": "Delete_Audio_4",
+                "role": "listening",
+                "target": { },
+                "action": {"type": "call_method_from_object",
+                           "object_name": "sockSys",
+                           "function_name": "cueSocket",
+                           "_cue": { 
+                             "name": "Delete_Audio_4",
+                             "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                             "target": { "role": "general"},
+                             "action": { "type": "delete",
+                              "src" : "Spawn_Audio_4"
+                            }
+                            }
+                          },
+                "trig": {"type": "button",
+                  "groupChain" : "Tutorial_1_group",
+                         "time": 16500}
               },
               {
                 "name": "Delete_Audio_ToolTip",
