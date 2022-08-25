@@ -9989,7 +9989,7 @@
                           }
                           },
                 "trig": {"type": "button",
-                "groupChain" : "Spawn_Audio_1",
+                "groupChain" : "Tutorial_1_group",
                          "time": 10500}
               },
               {
@@ -10011,7 +10011,7 @@
                           }
                           },
                 "trig": {"type": "button",
-                "groupChain" : "Spawn_Audio_1",
+                "groupChain" : "Tutorial_1_group",
                          "time": 10500}
               },
               {
@@ -10033,7 +10033,7 @@
                           }
                           },
                 "trig": {"type": "button",
-                "groupChain" : "Spawn_Audio_1",
+                "groupChain" : "Tutorial_1_group",
                          "time": 18500}
               },
               {
