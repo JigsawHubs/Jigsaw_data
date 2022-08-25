@@ -9990,7 +9990,7 @@
                           },
                 "trig": {"type": "button",
                 "groupChain" : "Spawn_Audio_1",
-                         "time": 0}
+                         "time": 10500}
               },
               {
                 "name": "Spawn_Audio_4",
