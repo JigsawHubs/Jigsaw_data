@@ -10386,6 +10386,26 @@
                                    "time": 0}
                         },
                         {
+                "name": "Delete_Audio_6",
+                "role": "listening",
+                "target": { },
+                "action": {"type": "call_method_from_object",
+                           "object_name": "sockSys",
+                           "function_name": "cueSocket",
+                           "_cue": { 
+                             "name": "Delete_Audio_6",
+                             "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                             "target": { "role": "individual", "name": "NPCGuest"},
+                             "action": { "type": "delete",
+                              "src" : "Spawn_Audio_6"
+                            }
+                            }
+                          },
+                "trig": {"type": "button",
+                  "groupChain" : "Tutorial_2_group",
+                         "time": 0}
+              },
+                        {
                           "name": "Scale_NPC",
                           "role": "listening",
                           "target": { },
