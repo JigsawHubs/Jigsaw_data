@@ -10416,7 +10416,7 @@
                                     },
                           "trig": {"type": "button",
                             "groupChain" : "Tutorial_2_group",
-                                   "time": 4000}
+                                   "time": 2000}
                           },
                           {
                             "name": "Move_NPC",
@@ -10442,15 +10442,82 @@
                                            "duration": 1000
                                            },
                                            "timelines" : [
-                                            {"x": 0, "y":1.2, "z":4, "duration": 4000, "delay": 0, "easing": "easeOutSine"}
+                                            {"x": 0, "y":1.2, "z":4, "duration": 4000, "delay": 0, "easing": "easeOutSine"},
+                                            {"x": -2, "y":1.2, "z":10, "duration": 2000, "delay": 4500, "easing": "easeOutSine"},
+                                            {"x": 0.2, "y":1.5, "z":-20, "duration": 3000, "delay": 7500, "easing": "easeOutSine"},
+                                            {"x": 0.2, "y":-6, "z":-20, "duration": 1500, "delay": 0, "easing": "easeOutSine"}
                                            ]
                                          }
                                        }
                                       },
                             "trig": {"type": "button",
                               "groupChain" : "Tutorial_2_group",
-                                     "time": 4000}
+                                     "time": 2000}
                             },
+                            {
+                              "name": "Rotate_NPC",
+                              "role": "listening",
+                              "target": { },
+                              "action": {"type": "call_method_from_object",
+                                         "object_name": "sockSys",
+                                         "function_name": "cueSocket",
+                                         "_cue": { 
+                                          "name": "Rotate_NPC",
+                                          "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                                          "target": { "role": "individual", "name": "NPCGuest",
+                                            "aspect" : "rotation" },
+                                          "action": { "type": "socket_manipulate_object",
+                                            "mapItem": "Spawn_NPC",
+                                            "attr": "object3D",
+                                            "anime": {
+                                             "targets": "scale",
+                                             "delay" : 1000,
+                                             "loop": false,
+                                             "autoplay": false,
+                                             "easing": "easeInOutSine",
+                                             "duration": 1000
+                                             },
+                                             "timelines" : [
+                                              {"x": 0, "y":-3.14, "z":0, "duration": 0, "delay": 0, "easing": "easeInOutSine"},
+                                              {"x": 0, "y":-1, "z":0, "duration": 1000, "delay": 0, "easing": "easeInOutSine"},
+                                              {"x": 0, "y":-3.14, "z":0, "duration": 500, "delay": 500, "easing": "easeInOutSine"},
+                                              {"x": 0, "y":-1, "z":0, "duration": 250, "delay": 500, "easing": "easeInOutSine"},
+                                              {"x": 0, "y":-3.14, "z":0, "duration": 250, "delay": 0, "easing": "easeInOutSine"},
+                                              {"x": 0, "y":-1, "z":0, "duration": 250, "delay": 0, "easing": "easeInOutSine"},
+                                              {"x": 0, "y":-3.14, "z":0, "duration": 250, "delay": 0, "easing": "easeInOutSine"},
+                                              {"x": 0, "y":-1, "z":0, "duration": 500, "delay": 500, "easing": "easeInOutSine"},
+                                              {"x": 0, "y":-0, "z":0, "duration": 1000, "delay": 0, "easing": "easeInOutSine"},
+                                              {"x": 0, "y":1.76, "z":0, "duration": 500, "delay": 3000, "easing": "easeInOutSine"},
+                                              {"x": 0, "y":-0.5, "z":0, "duration": 500, "delay": 1500, "easing": "easeInOutSine"},
+                                              {"x": -12.56, "y":0, "z":0, "duration": 3000, "delay": 3500, "easing": "easeInOutSine"}
+                                             ]
+                                           }
+                                         }
+                                        },
+                              "trig": {"type": "button",
+                                "groupChain" : "Tutorial_2_group",
+                                       "time": 6000}
+                              },
+                              {
+                                "name": "Delete_NPC",
+                                "role": "listening",
+                                "target": { },
+                                "action": {"type": "call_method_from_object",
+                                           "object_name": "sockSys",
+                                           "function_name": "cueSocket",
+                                           "_cue": { 
+                                             "name": "Delete_NPC",
+                                             "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                                             "target": { "role": "individual", "name": "NPCGuest"},
+                                             "action": { "type": "delete",
+                                              "src" : "Spawn_NPC"
+                                            }
+                                            }
+                                          },
+                                "trig": {"type": "button",
+                                  "groupChain" : "Tutorial_2_group",
+                                         "time": 24500}
+                              },
                             {
                               "name": "Delete_Audio_7",
                               "role": "listening",
