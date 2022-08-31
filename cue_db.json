@@ -10444,7 +10444,7 @@
                                            "timelines" : [
                                             {"x": 0, "y":1.2, "z":4, "duration": 4000, "delay": 0, "easing": "easeOutSine"},
                                             {"x": -2, "y":1.2, "z":10, "duration": 2000, "delay": 4500, "easing": "easeOutSine"},
-                                            {"x": 0.2, "y":1.5, "z":-20, "duration": 3000, "delay": 7500, "easing": "easeOutSine"},
+                                            {"x": 0.2, "y":1.5, "z":-20, "duration": 3000, "delay": 8500, "easing": "easeOutSine"},
                                             {"x": 0.2, "y":-6, "z":-20, "duration": 1500, "delay": 0, "easing": "easeOutSine"}
                                            ]
                                          }
