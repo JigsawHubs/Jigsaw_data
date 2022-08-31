@@ -10397,6 +10397,26 @@
                                  "time": 30200}
                         },
                         {
+                          "name": "Delete_Move_ToolTip",
+                          "role": "listening",
+                          "target": { },
+                          "action": {"type": "call_method_from_object",
+                                     "object_name": "sockSys",
+                                     "function_name": "cueSocket",
+                                     "_cue": { 
+                                       "name": "Delete_Move_ToolTip",
+                                       "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                                       "target": { "role": "individual", "name": "NPCGuest"},
+                                       "action": { "type": "delete",
+                                        "src" : "Spawn_Move_ToolTip"
+                                      }
+                                      }
+                                    },
+                          "trig": {"type": "button",
+                            "groupChain" : "Tutorial_2_group",
+                                   "time": 0}
+                        },
+                        {
                           "name": "Spawn_Audio_7",
                           "role": "listening",
                           "target": { },
@@ -10532,8 +10552,8 @@
                                              },
                                              "timelines" : [
                                               {"x": 0, "y":-3.14, "z":0, "duration": 0, "delay": 0, "easing": "easeInOutSine"},
-                                              {"x": 0, "y":-1, "z":0, "duration": 1000, "delay": 0, "easing": "easeInOutSine"},
-                                              {"x": 0, "y":-3.14, "z":0, "duration": 500, "delay": 500, "easing": "easeInOutSine"},
+                                              {"x": 0, "y":-1, "z":0, "duration": 700, "delay": 0, "easing": "easeInOutSine"},
+                                              {"x": 0, "y":-3.14, "z":0, "duration": 500, "delay": 300, "easing": "easeInOutSine"},
                                               {"x": 0, "y":-1, "z":0, "duration": 250, "delay": 500, "easing": "easeInOutSine"},
                                               {"x": 0, "y":-3.14, "z":0, "duration": 250, "delay": 0, "easing": "easeInOutSine"},
                                               {"x": 0, "y":-1, "z":0, "duration": 250, "delay": 0, "easing": "easeInOutSine"},
@@ -10549,7 +10569,7 @@
                                         },
                               "trig": {"type": "button",
                                 "groupChain" : "Tutorial_2_group",
-                                       "time": 6000}
+                                       "time": 6500}
                               },
                               {
                                 "name": "Delete_NPC",
