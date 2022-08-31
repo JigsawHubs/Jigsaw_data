@@ -10321,14 +10321,14 @@
                                     "dest": "local",
                                     "src": "Spawn_Boulder"},
                         "action": {"type": "move",
-                                   "duration": 100,
+                                   "duration": 1000,
                                    "loop": false,
                                    "pos": {"x": -0.2, "y":1.5, "z":4.5},
                                    "rot": {"x": 0, "y":0, "z":0},
                                    "scale": {"x": 2, "y":2, "z":2}},
                         "trig": {"type": "button",
                         "groupChain" : "Tutorial_1_group",
-                                 "time": 30000}
+                                 "time": 30800}
                       },
                       {
                         "name": "Scale_NPC",
