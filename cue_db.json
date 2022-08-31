@@ -10321,7 +10321,7 @@
                                     "dest": "local",
                                     "src": "Spawn_Boulder"},
                         "action": {"type": "move",
-                                   "duration": 2000,
+                                   "duration": 100,
                                    "loop": false,
                                    "pos": {"x": -0.2, "y":1.5, "z":4.5},
                                    "rot": {"x": 0, "y":0, "z":0},
