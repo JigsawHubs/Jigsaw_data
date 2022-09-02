@@ -9971,6 +9971,94 @@
                          "time": 22000}
               },
               {
+                "name": "Spawn_Rock1",
+                "role": "listening",
+                "target": { },
+                "action": {"type": "call_method_from_object",
+                           "object_name": "sockSys",
+                           "function_name": "cueSocket",
+                           "_cue": {
+                            "name": "Spawn_Rock1",
+                            "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                            "target": { "role": "individual", "name": "NPCGuest",
+                            "src":  "https://xrtheater-assets.xrtheater.live/files/e0d03189-9182-44f1-b8b4-1295733fa7d5.glb"},
+                            "action": {"type": "socket_spawn_object",
+                              "pos": {"x": -1.4171425104141235, "y": 1.6031843423843384, "z": 19.4704322814941},
+                              "rot": {"x": 0, "y":0, "z":0.9},
+                              "scale": {"x": 2.5, "y":2.5, "z":2.5}}
+                          }
+                          },
+                "trig": {"type": "button",
+                "groupChain" : "Tutorial_Start_group",
+                         "time": 0}
+              },
+              {
+                "name": "Spawn_Rock2",
+                "role": "listening",
+                "target": { },
+                "action": {"type": "call_method_from_object",
+                           "object_name": "sockSys",
+                           "function_name": "cueSocket",
+                           "_cue": {
+                            "name": "Spawn_Rock2",
+                            "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                            "target": { "role": "individual", "name": "NPCGuest",
+                            "src":  "https://xrtheater-assets.xrtheater.live/files/e0d03189-9182-44f1-b8b4-1295733fa7d5.glb"},
+                            "action": {"type": "socket_spawn_object",
+                              "pos": {"x": 0.7331685423851013, "y": 0.8075519800186157, "z": 19.219987869262695},
+                              "rot": {"x": 0, "y":0, "z":0},
+                              "scale": {"x": 1.5, "y":1.5, "z":1.5}}
+                          }
+                          },
+                "trig": {"type": "button",
+                "groupChain" : "Tutorial_Start_group",
+                         "time": 0}
+              },
+              {
+                "name": "Spawn_Rock3",
+                "role": "listening",
+                "target": { },
+                "action": {"type": "call_method_from_object",
+                           "object_name": "sockSys",
+                           "function_name": "cueSocket",
+                           "_cue": {
+                            "name": "Spawn_Rock3",
+                            "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                            "target": { "role": "individual", "name": "NPCGuest",
+                            "src":  "https://xrtheater-assets.xrtheater.live/files/e0d03189-9182-44f1-b8b4-1295733fa7d5.glb"},
+                            "action": {"type": "socket_spawn_object",
+                              "pos": {"x": 1.9691821336746216, "y": 2.419236421585083, "z": 20.147127151489258},
+                              "rot": {"x": 1, "y":0, "z":0},
+                              "scale": {"x": 2.5, "y":2.5, "z":2.5}}
+                          }
+                          },
+                "trig": {"type": "button",
+                "groupChain" : "Tutorial_Start_group",
+                         "time": 0}
+              },
+              {
+                "name": "Spawn_Rock4",
+                "role": "listening",
+                "target": { },
+                "action": {"type": "call_method_from_object",
+                           "object_name": "sockSys",
+                           "function_name": "cueSocket",
+                           "_cue": {
+                            "name": "Spawn_Rock4",
+                            "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                            "target": { "role": "individual", "name": "NPCGuest",
+                            "src":  "https://xrtheater-assets.xrtheater.live/files/e0d03189-9182-44f1-b8b4-1295733fa7d5.glb"},
+                            "action": {"type": "socket_spawn_object",
+                              "pos": {"x": -1, "y": 2.9324073791503906, "z": 21.7728214263916},
+                              "rot": {"x": 1.76, "y":0, "z":0},
+                              "scale": {"x": 3, "y":3, "z":3}}
+                          }
+                          },
+                "trig": {"type": "button",
+                "groupChain" : "Tutorial_Start_group",
+                         "time": 0}
+              },
+              {
                 "name": "Spawn_Audio_3",
                 "role": "listening",
                 "target": { },
@@ -10610,6 +10698,138 @@
                               "trig": {"type": "button",
                                 "groupChain" : "Tutorial_2_group",
                                        "time": 30500}
-                            }
+                            },
+                            {
+      "name": "Move_Rock1",
+      "role": "listening",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "Move_Rock1",
+                  "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                  "target": { "role": "individual", "name": "NPCGuest",
+                    "aspect" : "position" },
+                  "action": { "type": "socket_manipulate_object",
+                    "mapItem": "Spawn_Rock1",
+                    "attr": "object3D",
+                    "anime": {
+                     "targets": "scale",
+                     "delay" : 1000,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "easeInOutSine",
+                     "duration": 1000
+                     },
+                     "timelines" : [
+                      {"x": -1.4171425104141235, "y": 10, "z": 19.4704322814941, "duration": 4000, "delay": 0, "easing": "easeInOutSine"}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "Tutorial_2_group",
+               "time": 29000}
+      },
+      {
+        "name": "Move_Rock2",
+        "role": "listening",
+        "target": { },
+        "action": {"type": "call_method_from_object",
+                   "object_name": "sockSys",
+                   "function_name": "cueSocket",
+                   "_cue": { 
+                    "name": "Move_Rock2",
+                    "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                    "target": { "role": "individual", "name": "NPCGuest",
+                      "aspect" : "position" },
+                    "action": { "type": "socket_manipulate_object",
+                      "mapItem": "Spawn_Rock2",
+                      "attr": "object3D",
+                      "anime": {
+                       "targets": "scale",
+                       "delay" : 1000,
+                       "loop": false,
+                       "autoplay": false,
+                       "easing": "easeInOutSine",
+                       "duration": 1000
+                       },
+                       "timelines" : [
+                        {"x": 0.7331685423851013, "y": 10, "z": 19.219987869262695, "duration": 4000, "delay": 0, "easing": "easeInOutSine"}
+                       ]
+                     }
+                   }
+                  },
+        "trig": {"type": "button",
+          "groupChain" : "Tutorial_2_group",
+                 "time": 29300}
+        },
+        {
+          "name": "Move_Rock3",
+          "role": "listening",
+          "target": { },
+          "action": {"type": "call_method_from_object",
+                     "object_name": "sockSys",
+                     "function_name": "cueSocket",
+                     "_cue": { 
+                      "name": "Move_Rock3",
+                      "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                      "target": { "role": "individual", "name": "NPCGuest",
+                        "aspect" : "position" },
+                      "action": { "type": "socket_manipulate_object",
+                        "mapItem": "Spawn_Rock3",
+                        "attr": "object3D",
+                        "anime": {
+                         "targets": "scale",
+                         "delay" : 1000,
+                         "loop": false,
+                         "autoplay": false,
+                         "easing": "easeInOutSine",
+                         "duration": 1000
+                         },
+                         "timelines" : [
+                          {"x": 1.9691821336746216, "y": 10, "z": 20.147127151489258, "duration": 4000, "delay": 0, "easing": "easeInOutSine"}
+                         ]
+                       }
+                     }
+                    },
+          "trig": {"type": "button",
+            "groupChain" : "Tutorial_2_group",
+                   "time": 29600}
+          },
+          {
+            "name": "Move_Rock4",
+            "role": "listening",
+            "target": { },
+            "action": {"type": "call_method_from_object",
+                       "object_name": "sockSys",
+                       "function_name": "cueSocket",
+                       "_cue": { 
+                        "name": "Move_Rock4",
+                        "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                        "target": { "role": "individual", "name": "NPCGuest",
+                          "aspect" : "position" },
+                        "action": { "type": "socket_manipulate_object",
+                          "mapItem": "Spawn_Rock4",
+                          "attr": "object3D",
+                          "anime": {
+                           "targets": "scale",
+                           "delay" : 1000,
+                           "loop": false,
+                           "autoplay": false,
+                           "easing": "easeInOutSine",
+                           "duration": 1000
+                           },
+                           "timelines" : [
+                            {"x": -1, "y": 10, "z": 21.7728214263916, "duration": 4000, "delay": 0, "easing": "easeInOutSine"}
+                           ]
+                         }
+                       }
+                      },
+            "trig": {"type": "button",
+              "groupChain" : "Tutorial_2_group",
+                     "time": 29900}
+            }
     ]
   }
