@@ -10648,7 +10648,7 @@
                                               {"x": 0, "y":-3.14, "z":0, "duration": 250, "delay": 0, "easing": "easeInOutSine"},
                                               {"x": 0, "y":-1, "z":0, "duration": 500, "delay": 500, "easing": "easeInOutSine"},
                                               {"x": 0, "y":-0.5, "z":0, "duration": 1000, "delay": 0, "easing": "easeInOutSine"},
-                                              {"x": 0, "y":0.5, "z":0, "duration": 500, "delay": 3000, "easing": "easeInOutSine"},
+                                              {"x": 0, "y":1, "z":0, "duration": 500, "delay": 3000, "easing": "easeInOutSine"},
                                               {"x": 0, "y":-0.5, "z":0, "duration": 500, "delay": 1500, "easing": "easeInOutSine"},
                                               {"x": -12.56, "y":0, "z":0, "duration": 3000, "delay": 3500, "easing": "easeInOutSine"}
                                              ]
@@ -10830,6 +10830,86 @@
             "trig": {"type": "button",
               "groupChain" : "Tutorial_2_group",
                      "time": 29900}
+            },
+            {
+              "name": "Delete_Rock1",
+              "role": "listening",
+              "target": { },
+              "action": {"type": "call_method_from_object",
+                         "object_name": "sockSys",
+                         "function_name": "cueSocket",
+                         "_cue": { 
+                           "name": "Delete_Rock1",
+                           "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                           "target": { "role": "individual", "name": "NPCGuest"},
+                           "action": { "type": "delete",
+                            "src" : "Spawn_Rock1"
+                          }
+                          }
+                        },
+              "trig": {"type": "button",
+                "groupChain" : "Tutorial_2_group",
+                       "time": 34000}
+            },
+            {
+              "name": "Delete_Rock2",
+              "role": "listening",
+              "target": { },
+              "action": {"type": "call_method_from_object",
+                         "object_name": "sockSys",
+                         "function_name": "cueSocket",
+                         "_cue": { 
+                           "name": "Delete_Rock2",
+                           "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                           "target": { "role": "individual", "name": "NPCGuest"},
+                           "action": { "type": "delete",
+                            "src" : "Spawn_Rock2"
+                          }
+                          }
+                        },
+              "trig": {"type": "button",
+                "groupChain" : "Tutorial_2_group",
+                       "time": 34000}
+            },
+            {
+              "name": "Delete_Rock3",
+              "role": "listening",
+              "target": { },
+              "action": {"type": "call_method_from_object",
+                         "object_name": "sockSys",
+                         "function_name": "cueSocket",
+                         "_cue": { 
+                           "name": "Delete_Rock3",
+                           "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                           "target": { "role": "individual", "name": "NPCGuest"},
+                           "action": { "type": "delete",
+                            "src" : "Spawn_Rock3"
+                          }
+                          }
+                        },
+              "trig": {"type": "button",
+                "groupChain" : "Tutorial_2_group",
+                       "time": 34000}
+            },
+            {
+              "name": "Delete_Rock4",
+              "role": "listening",
+              "target": { },
+              "action": {"type": "call_method_from_object",
+                         "object_name": "sockSys",
+                         "function_name": "cueSocket",
+                         "_cue": { 
+                           "name": "Delete_Rock4",
+                           "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                           "target": { "role": "individual", "name": "NPCGuest"},
+                           "action": { "type": "delete",
+                            "src" : "Spawn_Rock4"
+                          }
+                          }
+                        },
+              "trig": {"type": "button",
+                "groupChain" : "Tutorial_2_group",
+                       "time": 34000}
             }
     ]
   }
