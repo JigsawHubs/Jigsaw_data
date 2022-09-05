@@ -5219,7 +5219,7 @@
                  "action": { "type": "load_360_image",
                   "src" : "https://jigsawhubs-1-assets.onboardxr.live/files/7a093dfe-a0cf-40a7-9312-fab95078fb17.jpg",
                   "position" : {"x": -7, "y": 100, "z": -5.5},
-                  "scale" : {"x": 350, "y": 300, "z": 300}
+                  "scale" : {"x": 450, "y": 400, "z": 400}
                 }
                 }
               },
