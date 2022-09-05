@@ -5072,7 +5072,7 @@
     "role": "stagemanager",
     "target": { "type": "glb",
                 "dest": "url",
-                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/de9ea485-9471-4788-a7de-c691ee609513.glb"},
+                "src":  "https://sketchfab.com/3d-models/low-poly-frypan-0d1971dfade24524aa4c3307b4104def"},
     "action": {"type": "spawn_item",
       "applyGravityOnSpawn" : false,
       "pos": {"x": -7.43428897857666, "y": 183.6910430908203, "z": -6.494771957397461},
@@ -5277,6 +5277,28 @@
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_6_group",
              "time": 61000}
+  },
+  {
+    "name": "NPC_SM_6_spawn_outline",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": {
+                "name": "NPC_SM_6_spawn_outline",
+                "target": { "role": "general",
+                  "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/72e83ffc-9e58-4a91-ba19-2e92191fc7aa.png"},
+                "action": {"type": "socket_spawn_object",
+                  "applyGravityOnSpawn": false,
+                           "pos": {"x": -7.3, "y": 181, "z": -5.352070424140043},
+                           "rot": {"x": 0, "y":10.995574287564276, "z":0},
+                           "scale": {"x": 1.5, "y":1.5, "z":1.5}}
+              }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_6_group",
+             "time": 0}
   },
   {
     "name": "NPC_SM_7_part1_anim_position",
@@ -5687,25 +5709,36 @@
              "time": 81000}
   },
   {
-    "name": "NPC_SM_8",
-    "role": "none",
+    "name": "NPC_SM_7_move_outline",
+    "role": "stagemanager",
     "target": { },
     "action": {"type": "call_method_from_object",
                "object_name": "sockSys",
                "function_name": "cueSocket",
-               "_cue": {
-                "name": "NPC_SM_8",
-                "target": { "role": "general" },
-                "action": {"type": "call_global_function",
-                           "function_name":"handleCueObjectAnim",
-                            "mapItem": "NPC_SM_6_corpse_rock_1", 
-                          "pause": false
-              }
-              }
-            },
-    "trig": {"type": "button",
-             "time": 33000}
-    },
+               "_cue": { 
+                 "name": "NPC_SM_7_move_outline",
+                 "target": { "role": "general", "aspect" : "position"},
+                 "action": { "type" : "socket_manipulate_object",
+                  "mapItem": "NPC_SM_6_spawn_outline",
+                   "attr": "object3D",
+                   "anime" : {
+                    "targets": "position",
+                    "delay" : 1000,
+                    "loop": false,
+                    "autoplay": true,
+                    "easing": "linear",
+                    "duration": 1000
+                    },
+                    "timelines" : [
+                      {"x": -7.3, "y": 184.1, "z": -5.352070424140043, "delay": 0, "easing" : "easeInOutSine", "duration": 5000}
+                    ]
+                  }
+                }
+              },
+  "trig": {"type": "button",
+    "groupChain" : "NPC_SM_7_group",
+            "time": 74000}
+  },
   {
     "name": "NPC_SM_9_fade_black_skybox",
     "role": "stagemanager",
