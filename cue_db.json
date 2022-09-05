@@ -5292,7 +5292,7 @@
                 "action": {"type": "socket_spawn_object",
                   "applyGravityOnSpawn": false,
                            "pos": {"x": -7.3, "y": 181, "z": -5.352070424140043},
-                           "rot": {"x": 0, "y":10.995574287564276, "z":0},
+                           "rot": {"x": 0, "y":7.853981633974483, "z":0},
                            "scale": {"x": 1.5, "y":1.5, "z":1.5}}
               }
               },
@@ -5730,7 +5730,38 @@
                     "duration": 1000
                     },
                     "timelines" : [
-                      {"x": -7.3, "y": 184.1, "z": -5.352070424140043, "delay": 0, "easing" : "easeInOutSine", "duration": 5000}
+                      {"x": -7.3, "y": 184.1, "z": -5.352070424140043, "delay": 0, "easing" : "easeOutSine", "duration": 5000}
+                    ]
+                  }
+                }
+              },
+  "trig": {"type": "button",
+    "groupChain" : "NPC_SM_7_group",
+            "time": 74000}
+  },
+  {
+    "name": "NPC_SM_7_rotate_outline",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                 "name": "NPC_SM_7_rotate_outline",
+                 "target": { "role": "general", "aspect" : "position"},
+                 "action": { "type" : "socket_manipulate_object",
+                  "mapItem": "NPC_SM_6_spawn_outline",
+                   "attr": "object3D",
+                   "anime" : {
+                    "targets": "rotation",
+                    "delay" : 1000,
+                    "loop": false,
+                    "autoplay": true,
+                    "easing": "linear",
+                    "duration": 1000
+                    },
+                    "timelines" : [
+                      {"x": 0, "y": 1.5707963267948966, "z": 0, "delay": 0, "easing" : "easeInOutSine", "duration": 5000}
                     ]
                   }
                 }
