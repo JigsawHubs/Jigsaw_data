@@ -5061,8 +5061,8 @@
       "pauseOnSpawn": false,
       "applyGravityOnSpawn" : false,
       "pos": {"x": -7.450033664703369, "y": 183.84788818359375, "z": -6.191864013671875},
-      "rot": {"x": 88.99999999999999, "y": 54.00000000000001, "z": 0},
-      "scale": {"x": 1.2, "y":1.2, "z":1.2}},
+      "rot": {"x": 0, "y": 0, "z": 0},
+      "scale": {"x": 1, "y":1, "z":1}},
     "trig": {"type": "button",
               "groupChain": "NPC_SM_6_group",
              "time": 53000}
@@ -5748,7 +5748,7 @@
                "function_name": "cueSocket",
                "_cue": { 
                  "name": "NPC_SM_7_rotate_outline",
-                 "target": { "role": "general", "aspect" : "position"},
+                 "target": { "role": "general", "aspect" : "rotation"},
                  "action": { "type" : "socket_manipulate_object",
                   "mapItem": "NPC_SM_6_spawn_outline",
                    "attr": "object3D",
@@ -5761,7 +5761,7 @@
                     "duration": 1000
                     },
                     "timelines" : [
-                      {"x": 0, "y": 1.5707963267948966, "z": 0, "delay": 0, "easing" : "easeInOutSine", "duration": 5000}
+                      {"x": 0, "y": -1.5707963267948966, "z": 0, "delay": 0, "easing" : "easeInOutSine", "duration": 5000}
                     ]
                   }
                 }
@@ -5769,6 +5769,74 @@
   "trig": {"type": "button",
     "groupChain" : "NPC_SM_7_group",
             "time": 74000}
+  },
+  {
+    "name": "NPC_SM_Corpse_Rock_1",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "local",
+                "src": "NPC_SM_6_corpse_rock_1"},
+                "action": {"type": "move",
+                  "duration": 500,
+                  "loop": true,
+                  "pos": {"x": -7.312511444091797, "y": 184.50086975097656, "z": -5.358240127563477},
+        "rot": {"x": 0, "y": 0, "z": 0},
+        "scale": {"x": 0.56, "y":0.56, "z":0.56}},
+    "trig": {"type": "button",
+    "groupChain" : "Corpse_1_group",
+      "time": 0
+    }
+  },
+  {
+    "name": "NPC_SM_Corpse_Rock_2",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "local",
+                "src": "NPC_SM_6_corpse_rock_2"},
+                "action": {"type": "move",
+                  "duration": 500,
+                  "loop": true,
+                  "pos": {"x": -7.2896013259887695, "y": 184.60797119140625, "z": -5.300339221954346},
+        "rot": {"x": 0, "y": 0, "z": 0},
+        "scale": {"x": 0.56, "y":0.56, "z":0.56}},
+    "trig": {"type": "button",
+    "groupChain" : "Corpse_2_group",
+      "time": 0
+    }
+  },
+  {
+    "name": "NPC_SM_Corpse_Rock_3",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "local",
+                "src": "NPC_SM_6_corpse_rock_3"},
+                "action": {"type": "move",
+                  "duration": 500,
+                  "loop": true,
+                  "pos": {"x": -7.267819404602051, "y": 184.14663696289062, "z": -5.352511405944824},
+        "rot": {"x": 0, "y": 0, "z": 0},
+        "scale": {"x": 0.56, "y":0.56, "z":0.56}},
+    "trig": {"type": "button",
+    "groupChain" : "Corpse_3_group",
+      "time": 0
+    }
+  },
+  {
+    "name": "NPC_SM_Corpse_Rock_4",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "local",
+                "src": "NPC_SM_6_corpse_rock_4"},
+                "action": {"type": "move",
+                  "duration": 500,
+                  "loop": true,
+                  "pos": {"x": -7.267819404602051, "y": 184.14663696289062, "z": -5.352511405944824},
+        "rot": {"x": 0, "y": 0, "z": 0},
+        "scale": {"x": 0.56, "y":0.56, "z":0.56}},
+    "trig": {"type": "button",
+    "groupChain" : "Corpse_4_group",
+      "time": 0
+    }
   },
   {
     "name": "NPC_SM_9_fade_black_skybox",
