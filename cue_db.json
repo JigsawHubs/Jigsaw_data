@@ -1,6 +1,26 @@
 {
   "listCue": [
     {
+      "name": "Test_changematcolor",
+      "role": "remoteAudioTest",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Test_changematcolor",
+                  "role": {},
+                  "target": {"role": "individual", "name": "___"},
+                  "action": {"type": "change_material_color",
+                    "color": `0xff0000`,
+                    "element" : ".Terrain_Crater1glb"
+                  }
+                }
+                },
+    "trig": {"type": "button",
+              "time": 0}
+    },
+    {
       "name": "Spawn_Vent",
       "role": "remoteAudioTest",
       "target": { },
