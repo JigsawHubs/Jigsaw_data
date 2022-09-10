@@ -75,6 +75,27 @@
               "time": 0}
     },
     {
+      "name": "Test_webapp_cuedPopup",
+      "role": "webapptest",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Test_webapp_cuedPopup",
+                  "role": {},
+                  "target": { "type": "glb",
+                    "role": "mobilewebapp"},
+                  "action": {
+                    "cuedPopup": true,
+                    "cuedPopupURL": "https://jigsawhubs.github.io/Jigsaw_data/image/color.gif"
+                  }
+                }
+                },
+    "trig": {"type": "button",
+              "time": 0}
+    },
+    {
       "name": "Spawn_Character_1",
       "role": "remoteAudioTest",
       "target": { },
