@@ -6846,7 +6846,7 @@
                   "rot": {"x": -1.76, "y":1.76, "z":0},
       "scale": {"x": 0.8, "y":0.8, "z":0.8}},
     "trig": {"type": "button",
-              "groupChain": "NPC_SM_6_group",
+              "groupChain": "Heart_Ascend_group",
              "time": 9900}
   },
   {
@@ -7080,23 +7080,65 @@
              "time": 10000}
   },
   {
-    "name": "NPC_SM_9_fade_black_skybox",
+    "name": "NPC_SM_9_delete_360_black_skybox",
     "role": "stagemanager",
     "target": { },
     "action": {"type": "call_method_from_object",
                "object_name": "sockSys",
                "function_name": "cueSocket",
                "_cue": { 
-                 "name": "NPC_SM_9_fade_black_skybox",
+                 "name": "NPC_SM_9_delete_360_black_skybox",
                  "target": { "role": "general" },
-                 "action": { "type": "socket_fade_skybox_opacity",
-                  "mapItem" : "NPC_SM_6_load_360_skybox",
-                  "fadeDuration" : 8000}
-              }
+                 "action": { "type": "delete",
+                  "src" : "NPC_SM_6_load_360_skybox"
+                }
+                }
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_9_group",
-             "time": 0}
+             "time": 3000}
+  },
+  {
+    "name": "NPC_SM_9_terrain_to_red",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": {
+                "name": "NPC_SM_9_terrain_to_red",
+                "role": {},
+                "target": {"role": "general"},
+                "action": {"type": "change_material_color",
+                  "color": "firebrick",
+                  "element" : ".STRTTerrain"
+                }
+              }
+              },
+  "trig": {"type": "button",
+  "groupChain" : "NPC_SM_9_group",
+            "time": 3000}
+  },
+  {
+    "name": "NPC_SM_9_terrain_to_red",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": {
+                "name": "NPC_SM_9_terrain_to_red",
+                "role": {},
+                "target": {"role": "general"},
+                "action": {"type": "change_material_color",
+                  "color": "firebrick",
+                  "element" : ".ATerrain"
+                }
+              }
+              },
+  "trig": {"type": "button",
+  "groupChain" : "NPC_SM_9_group",
+            "time": 3000}
   },
   {
     "name": "NPC_SM_9_rotate_red_skybox",
@@ -7387,25 +7429,6 @@
   "trig": {"type": "button",
     "groupChain" : "NPC_SM_9_group",
            "time": 63000}
-},
-{
-  "name": "NPC_SM_9_delete_360_black_skybox",
-  "role": "stagemanager",
-  "target": { },
-  "action": {"type": "call_method_from_object",
-             "object_name": "sockSys",
-             "function_name": "cueSocket",
-             "_cue": { 
-               "name": "NPC_SM_9_delete_360_black_skybox",
-               "target": { "role": "general" },
-               "action": { "type": "delete",
-                "src" : "NPC_SM_6_load_360_skybox"
-              }
-              }
-            },
-  "trig": {"type": "button",
-    "groupChain" : "NPC_SM_9_group",
-           "time": 8000}
 },
   {
     "name": "NPC_SM_10_A_1",
