@@ -6049,14 +6049,39 @@
     }
   },
   {
-    "name": "NPC_SM_7_move_outline",
+    "name": "NPC_SM_9_delete_corpse_rock_banana",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "src": "NPC_SM_6_corpse_rock_banana"},
+    "action": {"type": "delete"},
+    "trig": {"type": "button",
+      "groupChain" : "Banana_Ascend_group",
+             "time": 10000}
+  },
+  {
+    "name": "NPC_SM_rock_banana_B",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/e70fbe2e-826a-484a-a201-5a65d88c9967.glb"},
+    "action": {"type": "spawn_item",
+      "applyGravityOnSpawn" : true,
+      "pos": {"x": -7.286221027374268, "y": 204.27987670898438, "z": -5.284998893737793},
+        "rot": {"x": 0, "y": 0, "z":0},
+        "scale": {"x": 0.08, "y":0.08, "z":0.08}},
+    "trig": {"type": "button",
+              "groupChain": "Banana_Ascend_group",
+             "time": 9900}
+  },
+  {
+    "name": "NPC_SM_Ascend_outline",
     "role": "stagemanager",
     "target": { },
     "action": {"type": "call_method_from_object",
                "object_name": "sockSys",
                "function_name": "cueSocket",
                "_cue": { 
-                 "name": "NPC_SM_7_move_outline",
+                 "name": "NPC_SM_Ascend_outline",
                  "target": { "role": "general", "aspect" : "position"},
                  "action": { "type" : "socket_manipulate_object",
                   "mapItem": "NPC_SM_6_spawn_outline",
@@ -6284,6 +6309,31 @@
     "groupChain" : "Star_Ascend_group",
       "time": 0
     }
+  },
+  {
+    "name": "NPC_SM_9_delete_corpse_rock_star",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "src": "NPC_SM_6_corpse_rock_star"},
+    "action": {"type": "delete"},
+    "trig": {"type": "button",
+      "groupChain" : "Star_Ascend_group",
+             "time": 10000}
+  },
+  {
+    "name": "NPC_SM_rock_star_B",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/b489c230-fe4d-4b9e-8ba1-3dfaf4b406f8.glb"},
+    "action": {"type": "spawn_item",
+      "applyGravityOnSpawn" : true,
+      "pos": {"x": -7.286221027374268, "y": 184.27987670898438, "z": -5.284998893737793},
+        "rot": {"x": 0, "y": 0, "z":0},
+        "scale": {"x": 0.02, "y":0.02, "z":0.02}},
+    "trig": {"type": "button",
+              "groupChain": "Star_Ascend_group",
+             "time": 9900}
   },
   {
     "name": "NPC_SM_7_move_outline",
@@ -6523,6 +6573,31 @@
     }
   },
   {
+    "name": "NPC_SM_rock_shroom_B",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/2b82082c-46e5-4ce3-a758-fd1f44dd8753.glb"},
+    "action": {"type": "spawn_item",
+      "applyGravityOnSpawn" : true,
+      "pos": {"x": -7.286221027374268, "y": 184.27987670898438, "z": -5.284998893737793},
+                  "rot": {"x": -1.76, "y":0, "z":0},
+                  "scale": {"x": 0.8, "y":0.8, "z":0.8}},
+    "trig": {"type": "button",
+              "groupChain": "Shroom_Ascend_group",
+             "time": 9900}
+  },
+  {
+    "name": "NPC_SM_9_delete_corpse_rock_shroom",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "src": "NPC_SM_6_corpse_rock_shroom"},
+    "action": {"type": "delete"},
+    "trig": {"type": "button",
+      "groupChain" : "Shroom_Ascend_group",
+             "time": 10000}
+  },
+  {
     "name": "NPC_SM_7_move_outline",
     "role": "stagemanager",
     "target": { },
@@ -6760,14 +6835,39 @@
     }
   },
   {
-    "name": "NPC_SM_7_move_outline",
+    "name": "NPC_SM_rock_heart_B",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/6b7af24a-9615-4a80-9ee1-9bcd49edb645.glb"},
+    "action": {"type": "spawn_item",
+      "applyGravityOnSpawn" : true,
+      "pos": {"x": -7.286221027374268, "y": 184.27987670898438, "z": -5.284998893737793},
+                  "rot": {"x": -1.76, "y":1.76, "z":0},
+      "scale": {"x": 0.8, "y":0.8, "z":0.8}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_6_group",
+             "time": 9900}
+  },
+  {
+    "name": "NPC_SM_9_delete_corpse_rock_heart",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "src": "NPC_SM_6_corpse_rock_heart"},
+    "action": {"type": "delete"},
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_9_group",
+             "time": 10000}
+  },
+  {
+    "name": "NPC_SM_Ascend_move_outline",
     "role": "stagemanager",
     "target": { },
     "action": {"type": "call_method_from_object",
                "object_name": "sockSys",
                "function_name": "cueSocket",
                "_cue": { 
-                 "name": "NPC_SM_7_move_outline",
+                 "name": "NPC_SM_Ascend_move_outline",
                  "target": { "role": "general", "aspect" : "position"},
                  "action": { "type" : "socket_manipulate_object",
                   "mapItem": "NPC_SM_6_spawn_outline",
@@ -7306,46 +7406,6 @@
   "trig": {"type": "button",
     "groupChain" : "NPC_SM_9_group",
            "time": 8000}
-},
-{
-  "name": "NPC_SM_9_delete_corpse_rock_heart",
-  "role": "cut",
-  "target": { "type": "glb",
-              "src": "NPC_SM_6_corpse_rock_heart"},
-  "action": {"type": "delete"},
-  "trig": {"type": "button",
-    "groupChain" : "NPC_SM_9_group",
-           "time": 2000}
-},
-{
-  "name": "NPC_SM_9_delete_corpse_rock_star",
-  "role": "cut",
-  "target": { "type": "glb",
-              "src": "NPC_SM_6_corpse_rock_star"},
-  "action": {"type": "delete"},
-  "trig": {"type": "button",
-    "groupChain" : "NPC_SM_9_group",
-           "time": 2000}
-},
-{
-  "name": "NPC_SM_9_delete_corpse_rock_banana",
-  "role": "cut",
-  "target": { "type": "glb",
-              "src": "NPC_SM_6_corpse_rock_banana"},
-  "action": {"type": "delete"},
-  "trig": {"type": "button",
-    "groupChain" : "NPC_SM_9_group",
-           "time": 2000}
-},
-{
-  "name": "NPC_SM_9_delete_corpse_rock_shroom",
-  "role": "cut",
-  "target": { "type": "glb",
-              "src": "NPC_SM_6_corpse_rock_shroom"},
-  "action": {"type": "delete"},
-  "trig": {"type": "button",
-    "groupChain" : "NPC_SM_9_group",
-           "time": 2000}
 },
   {
     "name": "NPC_SM_10_A_1",
