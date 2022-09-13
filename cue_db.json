@@ -7209,8 +7209,9 @@
                    "duration": 1
                    },
                    "timelines" : [
-                    {"x": 3, "y": 2, "z": 3, "delay": 35000, "duration": 15000, "easing": "easeInSine"},
-                    {"x": 100, "y": 66, "z": 100, "delay": 0, "duration": 5000, "easing": "linear"}
+                    {"x": 1, "y": 0.66, "z": 1, "delay": 0, "duration": 43000, "easing": "easeInSine"},
+                    {"x": 1, "y": 0.2, "z": 1, "delay": 0, "duration": 1500, "easing": "easeInSine"},
+                    {"x": 1, "y": 0.66, "z": 1, "delay": 0, "duration": 750, "easing": "easeInSine"}
                    ]
                  }
                }
@@ -7242,15 +7243,15 @@
                    "duration": 1
                    },
                    "timelines" : [
-                    {"x":45.68229576961745, "y": 140.4445028474226, "z": 12.687293941817439, "delay": 0, "duration": 5000, "easing": "easeInSine"},
-                    {"x":45.68229576961745, "y": 120.4445028474226, "z": 12.687293941817439, "delay": 0, "duration": 7000, "easing": "linear"}
+                    {"x": 13.786734734366377, "y": 196.09904103336208, "z": -3.9040920662589156, "delay": 0, "duration": 2500, "easing": "easeOutSine"},
+                    {"x": 45.19736269328449, "y": 162.6461873284293, "z": 3.761492832207559, "delay": 0, "duration": 2500, "easing": "easeInSine"}
                    ]
                  }
                }
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_9_group",
-             "time": 50000}
+             "time": 44600}
   },
   {
     "name": "NPC_SM_9_anim_part_position",
