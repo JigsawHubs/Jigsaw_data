@@ -7211,7 +7211,8 @@
                    "timelines" : [
                     {"x": 1, "y": 0.66, "z": 1, "delay": 0, "duration": 43000, "easing": "easeInSine"},
                     {"x": 1, "y": 0.2, "z": 1, "delay": 0, "duration": 1500, "easing": "easeInSine"},
-                    {"x": 1, "y": 0.66, "z": 1, "delay": 0, "duration": 750, "easing": "easeInSine"}
+                    {"x": 1, "y": 0.66, "z": 1, "delay": 0, "duration": 750, "easing": "easeOutSine"},
+                    {"x": 2, "y": 1.2, "z": 2, "delay": 0, "duration": 2000, "easing": "linear"}
                    ]
                  }
                }
@@ -7219,6 +7220,39 @@
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_9_group",
              "time": 0}
+  },
+  {
+    "name": "NPC_SM_9_brnd_into_heart_rot",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                "name": "NPC_SM_9_brnd_into_heart_rot",
+                "target": { "role" : "individual",
+                  "name" : "Brendan",
+                  "aspect" : "rotation" },
+                "action": { "type": "manipulate_avatar",
+                  "attr": "object3D",
+                  "anime": {
+                   "targets": "",
+                   "delay" : 0,
+                   "loop": false,
+                   "autoplay": false,
+                   "easing": "linear",
+                   "duration": 1
+                   },
+                   "timelines" : [
+                    {"x": 0, "y": 1.5707963267948966, "z": 0, "delay": 0, "duration": 0, "easing": "easeInSine"},
+                    {"x": 0, "y": 20, "z": 0, "delay": 0, "duration": 4000, "easing": "easeOutSine"}
+                   ]
+                 }
+               }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_9_group",
+             "time": 44700}
   },
   {
     "name": "NPC_SM_9_brnd_into_heart_position",
@@ -7243,8 +7277,8 @@
                    "duration": 1
                    },
                    "timelines" : [
-                    {"x": 13.786734734366377, "y": 196.09904103336208, "z": -3.9040920662589156, "delay": 0, "duration": 2500, "easing": "easeOutSine"},
-                    {"x": 45.19736269328449, "y": 162.6461873284293, "z": 3.761492832207559, "delay": 0, "duration": 2500, "easing": "easeInSine"}
+                    {"x": 13.786734734366377, "y": 196.09904103336208, "z": -3.9040920662589156, "delay": 0, "duration": 2000, "easing": "easeOutSine"},
+                    {"x": 45.19736269328449, "y": 162.6461873284293, "z": 3.761492832207559, "delay": 0, "duration": 2000, "easing": "easeInSine"}
                    ]
                  }
                }
@@ -7343,7 +7377,7 @@
                "scale": {"x": 75, "y":55, "z":75}},
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_9_group",
-      "time": 43000
+      "time": 45000
     }
   },
   {
