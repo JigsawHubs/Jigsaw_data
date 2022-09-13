@@ -5224,21 +5224,6 @@
              "time": 53000}
   },
   {
-    "name": "NPC_SM_6_corpse_rock_7",
-    "role": "stagemanager",
-    "target": { "type": "glb",
-                "dest": "url",
-                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/425d9394-ea1e-47a6-8ed5-44e2d3b7536e.glb"},
-    "action": {"type": "spawn_item",
-      "applyGravityOnSpawn" : false,
-      "pos": {"x": -3.1371970176696777, "y": 183.56202697753906, "z": -9.296201705932617},
-      "rot": {"x": 0, "y":0, "z":0},
-      "scale": {"x": 0.8, "y":0.8, "z":0.8}},
-    "trig": {"type": "button",
-              "groupChain": "NPC_SM_6_group",
-             "time": 53000}
-  },
-  {
     "name": "NPC_SM_6_corpse_rock_banana",
     "role": "stagemanager",
     "target": { "type": "glb",
@@ -5825,7 +5810,7 @@
     "role": "stagemanager",
     "target": { "type": "glb",
                 "dest": "url",
-                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/18a38a93-2fc0-4633-b077-5dfec307b99e.glb"},
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/b6e951d5-43cf-48d2-bc28-645433cbf85f.glb"},
     "action": {"type": "spawn_item",
                "pos": {"x": 0, "y":-100, "z":0},
                "rot": {"x": 0, "y":0, "z":0},
@@ -5833,6 +5818,34 @@
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_7_group",
              "time": 81000}
+  },
+  {
+    "name": "Polys_SM_1_load_NPC_object",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/62c3aeb7-d202-4a1e-9204-feacef64e059.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": 45, "y":0, "z":5},
+               "rot": {"x": 0.4, "y":-1.76, "z":0},
+               "scale": {"x": 75, "y":55, "z":75}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_7_group",
+             "time": 81000}
+  },
+  {
+    "name": "Polys_SM_1_load_ventricle_piece",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/c8b74fe8-98a1-4d37-b5cd-8f6b9276ae89.glb"},
+    "action": {"type": "spawn_item",
+      "pos": {"x": 43, "y":0, "z":13},
+      "rot": {"x": 0.4, "y":-1.76, "z":0},
+      "scale": {"x": 1, "y":1, "z":0.178}},
+    "trig": {"type": "button",
+    "groupChain": "NPC_SM_7_group",
+    "time": 81000}
   },
   {
     "name": "NPC_SM_7_move_outline",
@@ -6856,7 +6869,7 @@
                 "src": "NPC_SM_6_corpse_rock_heart"},
     "action": {"type": "delete"},
     "trig": {"type": "button",
-      "groupChain" : "NPC_SM_9_group",
+      "groupChain" : "Heart_Ascend_group",
              "time": 10000}
   },
   {
@@ -7290,12 +7303,46 @@
                 "action": {"type": "move",
                   "duration": 0,
                   "loop": false,
-                  "pos": {"x": 220.40386951589255, "y": 205.0142558914274, "z": 145.24813225086168},
+                  "pos": {"x": 220.70513916015625, "y": 199.88998413085938, "z": 149.24774169921875},
                   "rot": {"x": 0, "y":-1.57, "z":0},
                   "scale": {"x": 1.5, "y":1.5, "z":1.5}},
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_9_group",
       "time": 58000
+    }
+  },
+  {
+    "name": "NPC_SM_9_move_ventricle_piece",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "local",
+                "src": "Polys_SM_1_load_ventricle_piece"},
+                "action": {"type": "move",
+                  "duration": 0,
+                  "loop": false,
+                  "pos": {"x": 43, "y":207, "z":13},
+      "rot": {"x": 0.4, "y":-1.76, "z":0},
+      "scale": {"x": 1, "y":1, "z":0.176}},
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_9_group",
+      "time": 58000
+    }
+  },
+  {
+    "name": "NPC_SM_9_move_NPC_obj",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "local",
+                "src": "Polys_SM_1_load_NPC_object"},
+                "action": {"type": "move",
+                  "duration": 7000,
+                  "loop": false,
+                  "pos": {"x": 45, "y":185, "z":5},
+               "rot": {"x": 0.4, "y":-1.76, "z":0},
+               "scale": {"x": 75, "y":55, "z":75}},
+    "trig": {"type": "button",
+      "groupChain" : "NPC_SM_9_group",
+      "time": 43000
     }
   },
   {
