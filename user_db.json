@@ -40,5 +40,9 @@
   "remoteAudioTest": {"name": "Michael", "role": "remoteAudioTest"},
   "webapptest": {"name": "Michael", "role": "webapptest"},
   "listening": {"name": "NPCGuest","role":"listening"},
-  "listener": {"name": "NPCGuest","role":"listener"}
+  "listener": {"name": "NPCGuest","role":"listener"},
+  "dancerA": {"name": "dancerA","role":"dancerA"},
+    "dancerB": {"name": "dancerB","role":"dancerB"},
+    "clemstgm": {"name": "clemstgm","role":"clemstgm"},
+    "clemcam": {"name": "clemcam","role":"clemcam"}
  }
