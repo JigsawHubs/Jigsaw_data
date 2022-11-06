@@ -44,5 +44,10 @@
   "dancerA": {"name": "dancerA","role":"dancerA"},
     "dancerB": {"name": "dancerB","role":"dancerB"},
     "clemstgm": {"name": "clemstgm","role":"clemstgm"},
-    "clemcam": {"name": "clemcam","role":"clemcam"}
+    "clemcam": {"name": "clemcam","role":"clemcam"},
+    "aud1": {"name": "aud1", "role": "participant"},
+    "aud2": {"name": "aud2", "role": "participant"},
+    "aud3": {"name": "aud3", "role": "participant"},
+    "aud4": {"name": "aud4", "role": "participant"},
+    "observer": {"name": "observer", "role": "observer"}
  }
