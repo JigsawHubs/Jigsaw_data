@@ -1,6 +1,46 @@
 {
   "listCue": [
     {
+      "name": "Test_shareCamera",
+      "role": "remoteAudioTest",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Test_shareCamera",
+                  "role": {},
+                  "target": {"role": "individual", "name": "___"},
+                  "action": {"type": "share_camera",
+                  "position" : {"x": 0, "y":10, "z":0},
+                  "scale" : {"x": 10, "y": 10, "z": 10},
+                  "rotation" : {"x": 0, "y": 0, "z": 0}
+                  }
+                }
+                },
+    "trig": {"type": "button",
+              "time": 0}
+    },
+    {
+      "name": "Test_changeScene",
+      "role": "remoteAudioTest",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Test_changeScene",
+                  "role": {},
+                  "target": {"role": "individual", "name": "___"},
+                  "action": {"type": "change_scene",
+                  "link":"https://onboardxr.live/scenes/DsJhAka"
+                  }
+                }
+                },
+    "trig": {"type": "button",
+              "time": 0}
+    },
+    {
       "name": "Test_applyGravity",
       "role": "remoteAudioTest",
       "target": { },
@@ -3768,6 +3808,86 @@
                "time": 0}
     },
     {
+      "name": "NPC_SM_2_spawn_smoke_monster",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "NPC_SM_2_spawn_smoke_monster",
+                  "role": {},
+                  "target": { "type": "glb",
+                    "role": "individual", "name": "___",
+                              "dest": "url",
+                              "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/adcb58d8-bf73-44dd-aeca-5440f6cb4015.glb"},
+                  "action": {"type": "spawn_item",
+                    "pos": {"x": -17.112110137939453, "y": 50, "z": 12.695967674255371},
+                    "rot": {"x": 0, "y":-0.2009189856929779, "z":0},
+                    "scale": {"x": 1, "y":1, "z":1}}
+                }
+                },
+    "trig": {"type": "button",
+    "groupChain" : "NPC_SM_2_group",
+              "time": 0}
+    },
+    {
+      "name": "NPC_SM_2_spawn_rock_banana",
+      "role": "stagemanager",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/7aed1176-921e-446d-8de9-bb87b76fe30c.glb"},
+      "action": {"type": "spawn_item",
+        "pos": {"x": -10.466019133078708, "y": 100, "z": 20.03271972312317},
+                    "rot": {"x": 0, "y":-9.42477796076938, "z":0},
+                    "scale": {"x": 3, "y":3, "z":3}},
+      "trig": {"type": "button",
+      "groupChain" : "NPC_SM_2_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_2_spawn_rock_shroom",
+      "role": "stagemanager",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/a8cad8f2-ed21-4f49-8619-76d6711c156d.glb"},
+      "action": {"type": "spawn_item",
+        "pos": {"x": -10.466019133078708, "y": 100, "z": 20.03271972312317},
+                    "rot": {"x": 0, "y":-9.42477796076938, "z":0},
+                    "scale": {"x": 3, "y":3, "z":3}},
+      "trig": {"type": "button",
+      "groupChain" : "NPC_SM_2_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_2_spawn_rock_star",
+      "role": "stagemanager",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/77bfd57b-dd1e-4409-b018-041f5f8e6367.glb"},
+      "action": {"type": "spawn_item",
+        "pos": {"x": -10.466019133078708, "y": 100, "z": 20.03271972312317},
+                    "rot": {"x": 0, "y":-9.42477796076938, "z":0},
+                    "scale": {"x": 3, "y":3, "z":3}},
+      "trig": {"type": "button",
+      "groupChain" : "NPC_SM_2_group",
+               "time": 0}
+    },
+    {
+      "name": "NPC_SM_2_spawn_rock_heart",
+      "role": "stagemanager",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/ce7afd0f-51d1-45ad-b62f-d8adc35da52d.glb"},
+      "action": {"type": "spawn_item",
+        "pos": {"x": -10.466019133078708, "y": 100, "z": 20.03271972312317},
+                    "rot": {"x": 0, "y":-9.42477796076938, "z":0},
+                    "scale": {"x": 3, "y":3, "z":3}},
+      "trig": {"type": "button",
+      "groupChain" : "NPC_SM_2_group",
+               "time": 0}
+    },
+    {
       "name": "NPC_SM_2_A_brnd_animate_in",
       "role": "stagemanager",
       "target": { },
@@ -4142,7 +4262,8 @@
                          "duration": 1
                          },
                          "timelines" : [
-                          {"x": 5, "y": 5, "z": 5, "delay": 4000, "easing" : "easeInSine", "duration": 7000}
+                          {"x":25, "y": 25, "z": 25, "delay": 4000, "easing" : "easeInSine", "duration": 7000},
+                          {"x":5, "y": 5, "z": 5, "delay": 38000, "easing" : "easeInOutSine", "duration": 2000}
                          ]
                        }
                      }
@@ -4174,16 +4295,8 @@
                          "duration": 1000
                          },
                          "timelines" : [
-                          {"x": -3.9390774669257507, "y": 286.12176238908467, "z": -44.145217835083066, "delay": 0, "easing" : "easeInSine", "duration": 11000},
-                          {"x": -3.9390774669257507, "y": 191.12176238908467, "z": -31.145217835083066, "delay": 0, "easing" : "easeOutSine", "duration": 9000},
-                          {"x": 13.868009655060277, "y": 191.12176238908467, "z": -7.417295773725213, "delay": 0, "easing" : "easeInSine", "duration": 5000},
-                          {"x": 16.939077466925756, "y": 191.12176238908467, "z": 39.145217835083066, "delay": 0, "easing" : "linear", "duration": 4000},
-                          {"x": -3.2922639436538272, "y": 190.3255253078421, "z": 61.38143215879137, "delay": 0, "easing" : "easeOutSine", "duration": 5000},
-                          {"x": -12.868491825995346, "y": 184.8240228794682, "z": 25.287204158887846, "delay": 0, "easing": "easeInSine", "duration": 4000},
-                          {"x": -13.13027555806264, "y": 184.40029290899673, "z": 9.89086328838054, "delay": 0, "easing": "linear", "duration": 1500},
-                          {"x": -13.64754269898245, "y": 182.94054703667388, "z": 1.935316054249057, "delay": 0, "easing": "linear", "duration": 1500},
-                          {"x": -36.64754269898245, "y": 187.94054703667388, "z": -19.935316054249057, "delay": 0, "easing": "linear", "duration": 5000},
-                          {"x": -41.92570887738341, "y": 187.12296755186756, "z": -22.20536479904336, "delay": 0, "easing": "easeOutSine", "duration": 3000}
+                          {"x": -11.225647098040106, "y": 170, "z": 27, "delay": 0, "easing" : "easeInSine", "duration": 11000},
+                          {"x": -40, "y": 187, "z": -20, "delay": 38000, "easing" : "easeInOutSine", "duration": 2000}
                          ]
                        }
                      }
@@ -4267,6 +4380,326 @@
             "groupChain" : "NPC_SM_345_group",
                    "time": 0}
         },
+        {
+          "name": "NPC_SM_345_smoke_attack",
+          "role": "stagemanager",
+          "target": { },
+          "action": {"type": "call_method_from_object",
+                     "object_name": "sockSys",
+                     "function_name": "cueSocket",
+                     "_cue": { 
+                       "name": "NPC_SM_345_smoke_attack",
+                       "target": { "role": "individual", "name": "___", "aspect" : "position"},
+                       "action": { "type" : "socket_manipulate_object",
+                        "mapItem": "NPC_SM_2_spawn_smoke_monster",
+                         "attr": "object3D",
+                         "anime" : {
+                          "targets": "position",
+                          "delay" : 0,
+                          "loop": false,
+                          "autoplay": true,
+                          "easing": "easeOutSine",
+                          "duration": 7000
+                          },
+                          "timelines" : [
+                            {"x": -2.9699618816375732, "y": 214.7714385986328, "z": -20.5493221282959, "easing": "easeInOutSine", "duration": 4000, "delay": 0},
+                            {"x": -11.879950523376465, "y": 213.06854248046875, "z": 23.192506790161133, "easing": "easeInSine", "duration": 1500, "delay": 5000},
+                            {"x": -20.044466018676758, "y": 225.76698303222656, "z": 57.20814895629883, "easing": "easeOutSine", "duration": 1500, "delay": 0},
+                            {"x": -20.044466018676758, "y": 110, "z": 57.20814895629883, "easing": "easeOutSine", "duration": 3000, "delay": 9000}
+                          ]
+                        }
+                      }
+                    },
+        "trig": {"type": "button",
+        "groupChain" : "NPC_SM_345_group",
+                  "time": 28000}
+        },
+        {
+          "name": "NPC_SM_345_smoke_attack_rot",
+          "role": "stagemanager",
+          "target": { },
+          "action": {"type": "call_method_from_object",
+                     "object_name": "sockSys",
+                     "function_name": "cueSocket",
+                     "_cue": { 
+                       "name": "NPC_SM_345_smoke_attack_rot",
+                       "target": { "role": "individual", "name": "___", "aspect" : "rotation"},
+                       "action": { "type" : "socket_manipulate_object",
+                        "mapItem": "NPC_SM_2_spawn_smoke_monster",
+                         "attr": "object3D",
+                         "anime" : {
+                          "targets": "position",
+                          "delay" : 0,
+                          "loop": false,
+                          "autoplay": true,
+                          "easing": "easeOutSine",
+                          "duration": 7000
+                          },
+                          "timelines" : [
+                            {"x": 0, "y":-3.5, "z":0, "easing": "easeInOutSine", "duration": 1500, "delay": 0},
+                            {"x": 0, "y":-3.5, "z":-0.5, "easing": "easeInOutSine", "duration": 2000, "delay": 8000}
+                          ]
+                        }
+                      }
+                    },
+        "trig": {"type": "button",
+        "groupChain" : "NPC_SM_345_group",
+                  "time": 38500}
+        },
+        {
+          "name": "NPC_SM_345_pos_rock_banana",
+          "role": "stagemanager",
+          "target": { "type": "glb",
+                      "dest": "local",
+                      "src": "NPC_SM_2_spawn_rock_banana"},
+                      "action": {"type": "move",
+                        "duration": 3000,
+                        "loop": false,
+                        "pos": {"x": -10.466019133078708, "y": 195, "z": 20.03271972312317},
+              "rot": {"x": 0, "y": -9.42477796076938, "z": 0},
+              "scale": {"x": 7, "y":7, "z":7}},
+          "trig": {"type": "button",
+          "groupChain" : "NPC_SM_345_group",
+            "time": 40000
+          }
+        },
+        {
+          "name": "NPC_SM_345_pos_rock_shroom",
+          "role": "stagemanager",
+          "target": { "type": "glb",
+                      "dest": "local",
+                      "src": "NPC_SM_2_spawn_rock_shroom"},
+                      "action": {"type": "move",
+                        "duration": 3000,
+                        "loop": false,
+                        "pos": {"x": -10.466019133078708, "y": 195, "z": 20.03271972312317},
+              "rot": {"x": 0, "y": -9.42477796076938, "z": 0},
+              "scale": {"x": 7, "y":7, "z":7}},
+          "trig": {"type": "button",
+          "groupChain" : "NPC_SM_345_group",
+            "time": 40000
+          }
+        },
+        {
+          "name": "NPC_SM_345_pos_rock_star",
+          "role": "stagemanager",
+          "target": { "type": "glb",
+                      "dest": "local",
+                      "src": "NPC_SM_2_spawn_rock_star"},
+                      "action": {"type": "move",
+                        "duration": 3000,
+                        "loop": false,
+                        "pos": {"x": -10.466019133078708, "y": 195, "z": 20.03271972312317},
+              "rot": {"x": 0, "y": -9.42477796076938, "z": 0},
+              "scale": {"x": 7, "y":7, "z":7}},
+          "trig": {"type": "button",
+          "groupChain" : "NPC_SM_345_group",
+            "time": 40000
+          }
+        },
+        {
+          "name": "NPC_SM_345_pos_rock_heart",
+          "role": "stagemanager",
+          "target": { "type": "glb",
+                      "dest": "local",
+                      "src": "NPC_SM_2_spawn_rock_heart"},
+                      "action": {"type": "move",
+                        "duration": 3000,
+                        "loop": false,
+                        "pos": {"x": -10.466019133078708, "y": 195, "z": 20.03271972312317},
+              "rot": {"x": 0, "y": -9.42477796076938, "z": 0},
+              "scale": {"x": 7, "y":7, "z":7}},
+          "trig": {"type": "button",
+          "groupChain" : "NPC_SM_345_group",
+            "time": 40000
+          }
+        },
+        {
+          "name": "NPC_SM_345_pos_rock_banana",
+          "role": "stagemanager",
+          "target": { "type": "glb",
+                      "dest": "local",
+                      "src": "NPC_SM_2_spawn_rock_banana"},
+                      "action": {"type": "move",
+                        "duration": 2000,
+                        "loop": false,
+                        "pos": {"x": 5, "y": 205, "z": 20.03271972312317},
+              "rot": {"x": 0, "y": 0, "z": 0},
+              "scale": {"x": 10, "y":10, "z":10}},
+          "trig": {"type": "button",
+          "groupChain" : "NPC_SM_345_group",
+            "time": 43000
+          }
+        },
+        {
+          "name": "NPC_SM_345_pos_rock_shroom",
+          "role": "stagemanager",
+          "target": { "type": "glb",
+                      "dest": "local",
+                      "src": "NPC_SM_2_spawn_rock_shroom"},
+                      "action": {"type": "move",
+                        "duration": 2000,
+                        "loop": false,
+                        "pos": {"x": -5, "y": 205, "z": 20.03271972312317},
+              "rot": {"x": 0, "y": 0, "z": 0},
+              "scale": {"x": 10, "y":10, "z":10}},
+          "trig": {"type": "button",
+          "groupChain" : "NPC_SM_345_group",
+            "time": 43000
+          }
+        },
+        {
+          "name": "NPC_SM_345_pos_rock_star",
+          "role": "stagemanager",
+          "target": { "type": "glb",
+                      "dest": "local",
+                      "src": "NPC_SM_2_spawn_rock_star"},
+                      "action": {"type": "move",
+                        "duration": 2000,
+                        "loop": false,
+                        "pos": {"x":-15, "y": 205, "z": 20.03271972312317},
+              "rot": {"x": 0, "y": 0, "z": 0},
+              "scale": {"x": 10, "y":10, "z":10}},
+          "trig": {"type": "button",
+          "groupChain" : "NPC_SM_345_group",
+            "time": 43000
+          }
+        },
+        {
+          "name": "NPC_SM_345_pos_rock_heart",
+          "role": "stagemanager",
+          "target": { "type": "glb",
+                      "dest": "local",
+                      "src": "NPC_SM_2_spawn_rock_heart"},
+                      "action": {"type": "move",
+                        "duration": 2000,
+                        "loop": false,
+                        "pos": {"x": -25, "y": 205, "z": 20.03271972312317},
+              "rot": {"x": 0, "y": 0, "z": 0},
+              "scale": {"x": 10, "y":10, "z":10}},
+          "trig": {"type": "button",
+          "groupChain" : "NPC_SM_345_group",
+            "time": 43000
+          }
+        },
+        {
+          "name": "NPC_SM_345_pos_rock_banana",
+          "role": "stagemanager",
+          "target": { "type": "glb",
+                      "dest": "local",
+                      "src": "NPC_SM_2_spawn_rock_banana"},
+                      "action": {"type": "move",
+                        "duration": 500,
+                        "loop": false,
+                        "pos": {"x": -23.56324433284965, "y": 210.0649797013175, "z": 76.17782981628436},
+              "rot": {"x": 0, "y": 0, "z": 0},
+              "scale": {"x": 0.1, "y":0.1, "z":0.1}},
+          "trig": {"type": "button",
+          "groupChain" : "NPC_SM_345_group",
+            "time": 47000
+          }
+        },
+        {
+          "name": "NPC_SM_345_pos_rock_shroom",
+          "role": "stagemanager",
+          "target": { "type": "glb",
+                      "dest": "local",
+                      "src": "NPC_SM_2_spawn_rock_shroom"},
+                      "action": {"type": "move",
+                        "duration": 500,
+                        "loop": false,
+                        "pos": {"x": -23.56324433284965, "y": 210.0649797013175, "z": 76.17782981628436},
+                        "rot": {"x": 0, "y": 0, "z": 0},
+                        "scale": {"x": 0.1, "y":0.1, "z":0.1}},
+          "trig": {"type": "button",
+          "groupChain" : "NPC_SM_345_group",
+            "time": 47500
+          }
+        },
+        {
+          "name": "NPC_SM_345_pos_rock_star",
+          "role": "stagemanager",
+          "target": { "type": "glb",
+                      "dest": "local",
+                      "src": "NPC_SM_2_spawn_rock_star"},
+                      "action": {"type": "move",
+                        "duration": 500,
+                        "loop": false,
+                        "pos": {"x": -23.56324433284965, "y": 210.0649797013175, "z": 76.17782981628436},
+              "rot": {"x": 0, "y": 0, "z": 0},
+              "scale": {"x": 0.1, "y":0.1, "z":0.1}},
+          "trig": {"type": "button",
+          "groupChain" : "NPC_SM_345_group",
+            "time": 48000
+          }
+        },
+        {
+          "name": "NPC_SM_345_pos_rock_heart",
+          "role": "stagemanager",
+          "target": { "type": "glb",
+                      "dest": "local",
+                      "src": "NPC_SM_2_spawn_rock_heart"},
+                      "action": {"type": "move",
+                        "duration": 500,
+                        "loop": false,
+                        "pos": {"x": -23.56324433284965, "y": 210.0649797013175, "z": 76.17782981628436},
+              "rot": {"x": 0, "y": 0, "z": 0},
+              "scale": {"x": 0.1, "y":0.1, "z":0.1}},
+          "trig": {"type": "button",
+          "groupChain" : "NPC_SM_345_group",
+            "time": 48500
+          }
+        },
+        {
+          "name": "NPC_SM_345_delete_rock_heart",
+          "role": "stagemanager",
+          "target": { "type": "glb",
+                      "src": "NPC_SM_2_spawn_rock_heart"},
+          "action": {"type": "delete"},
+          "trig": {"type": "button",
+            "groupChain": "NPC_SM_345_group",
+                   "time": 49000}
+        },
+        {
+          "name": "NPC_SM_345_delete_rock_shroom",
+          "role": "stagemanager",
+          "target": { "type": "glb",
+                      "src": "NPC_SM_2_spawn_rock_shroom"},
+          "action": {"type": "delete"},
+          "trig": {"type": "button",
+            "groupChain": "NPC_SM_345_group",
+                   "time": 49000}
+        },
+        {
+          "name": "NPC_SM_345_delete_rock_star",
+          "role": "stagemanager",
+          "target": { "type": "glb",
+                      "src": "NPC_SM_2_spawn_rock_star"},
+          "action": {"type": "delete"},
+          "trig": {"type": "button",
+            "groupChain": "NPC_SM_345_group",
+                   "time": 49000}
+        },
+        {
+          "name": "NPC_SM_345_delete_rock_banana",
+          "role": "stagemanager",
+          "target": { "type": "glb",
+                      "src": "NPC_SM_2_spawn_rock_banana"},
+          "action": {"type": "delete"},
+          "trig": {"type": "button",
+            "groupChain": "NPC_SM_345_group",
+                   "time": 49000}
+        },
+        {
+          "name": "NPC_SM_345_delete_smoke_monster",
+          "role": "stagemanager",
+          "target": { "type": "glb",
+                      "src": "NPC_SM_2_spawn_smoke_monster"},
+          "action": {"type": "delete"},
+          "trig": {"type": "button",
+            "groupChain": "NPC_SM_345_group",
+                   "time": 52000}
+        },
     {
       "name": "NPC_SM_345_gif",
       "role": "cut",
@@ -4307,16 +4740,6 @@
       "trig": {"type": "button",
                "time": 97000}
     },
-  {
-    "name": "NPC_SM_345_delete_NPC",
-    "role": "stagemanager",
-    "target": { "type": "glb",
-                "src": "NPC_SM_345_looping_NPC"},
-    "action": {"type": "delete"},
-    "trig": {"type": "button",
-      "groupChain": "NPC_SM_6_group",
-             "time": 0}
-  },
   {
     "name": "NPC_SM_345_rock_delete_rock_1",
     "role": "stagemanager",
@@ -4497,16 +4920,36 @@
                 "target": { "type": "glb",
                   "role": "individual", "name": "Brendan",
                             "dest": "url",
-                            "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/6aeb58d0-bc57-45a6-95c9-31c3985e68db.glb"},
+                            "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/adcb58d8-bf73-44dd-aeca-5440f6cb4015.glb"},
                 "action": {"type": "spawn_item",
                   "pos": {"x": -17.112110137939453, "y": 50, "z": 12.695967674255371},
                   "rot": {"x": 0, "y":-2.530778880601757, "z":0},
-                  "scale": {"x": 0.3, "y":0.3, "z":0.3}}
+                  "scale": {"x": 1, "y":1, "z":1}}
               }
               },
   "trig": {"type": "button",
     "groupChain" : "NPC_SM_345_attack_group",
             "time": 0}
+  },
+  {
+    "name": "NPC_SM_6_smoke_monster_disable_int",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": {
+                "name": "NPC_SM_6_smoke_monster_disable_int",
+                "role": {},
+                "target": {"role": "individual", "name": "Brendan"},
+                "action": {"type": "remove_interaction",
+                  "element" : "NPC_SM_6_smoke_monster"
+                }
+              }
+              },
+  "trig": {"type": "button",
+  "groupChain" : "NPC_SM_345_attack_group",
+            "time": 2000}
   },
   {
     "name": "NPC_SM_345_attack_track",
@@ -4530,9 +4973,9 @@
                     "duration": 7000
                     },
                     "timelines" : [
-                      {"x": -17.112110137939453, "y": 169.72943115234375, "z": 12.695967674255371, "easing": "easeInOutSine", "duration": 3000, "delay": 0},
-                      {"x": -22.631389617919922, "y": 197.7951202392578, "z": 4.77944278717041, "easing": "easeInOutSine", "duration": 1000, "delay": 10000},
-                      {"x": -88.84441375732422, "y": 175.65626525878906, "z": -127.09899139404297, "easing": "easeInOutSine", "duration": 1500, "delay": 1000}
+                      {"x": -17.112110137939453, "y": 186.72943115234375, "z": 12.695967674255371, "easing": "easeInOutSine", "duration": 3000, "delay": 0},
+                      {"x": -22.631389617919922, "y": 207.7951202392578, "z": 4.77944278717041, "easing": "easeInOutSine", "duration": 1000, "delay": 10000},
+                      {"x": -88.84441375732422, "y": 185.65626525878906, "z": -127.09899139404297, "easing": "easeInOutSine", "duration": 1500, "delay": 2000}
                     ]
                   }
                 }
@@ -4550,7 +4993,7 @@
                "function_name": "cueSocket",
                "_cue": { 
                  "name": "NPC_SM_345_attack_rot",
-                 "target": { "role": "individual", "name": "Brendan", "aspect" : "position"},
+                 "target": { "role": "individual", "name": "Brendan", "aspect" : "rotation"},
                  "action": { "type" : "socket_manipulate_object",
                   "mapItem": "NPC_SM_6_smoke_monster",
                    "attr": "object3D",
@@ -4564,7 +5007,8 @@
                     },
                     "timelines" : [
                       {"x": 0, "y":-2.530778880601757, "z":0, "easing": "easeInOutSine", "duration": 0, "delay": 0},
-                      {"x": 0, "y":-2.6598062372951814, "z":0, "easing": "easeInOutSine", "duration": 1000, "delay": 0}
+                      {"x": 0, "y":-2.6598062372951814, "z":0, "easing": "easeInOutSine", "duration": 1000, "delay": 0},
+                      {"x": 0, "y":1.68, "z":0, "easing": "easeInOutSine", "duration": 100, "delay": 4000}
                     ]
                   }
                 }
@@ -4572,6 +5016,16 @@
   "trig": {"type": "button",
     "groupChain" : "NPC_SM_345_attack_group",
             "time": 16000}
+  },
+  {
+    "name": "NPC_SM_345_delete_NPC",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "src": "NPC_SM_345_looping_NPC"},
+    "action": {"type": "delete"},
+    "trig": {"type": "button",
+      "groupChain": "NPC_SM_6_group",
+             "time": 0}
   },
   {
     "name": "NPC_SM_6_slide_in_smoke",
@@ -4664,9 +5118,11 @@
 {"x": -6.58119073244206, "y": 188.04637404254322, "z": 0.699177528463501, "delay": 0, "easing": "easeInOutSine", "duration": 400},
 {"x": -6.58119073244206, "y": 187.54637404254322, "z": -10.699177528463501, "delay": 0, "easing": "easeInOutSine", "duration": 400},
 {"x": -6.58119073244206, "y": 187.54637404254322, "z": -5.699177528463501, "delay": 0, "easing": "easeInOutSine", "duration": 400},
-{"x": -6.58119073244206, "y": 200.04637404254322, "z": -5.699177528463501, "delay": 0, "easing": "easeInSine", "duration": 1000},
-{"x": -8.58119073244206, "y": 190.04637404254322, "z": -5.699177528463501, "delay": 0, "easing": "easeOutSine", "duration": 5000},
-                        {"x": -8.58119073244206, "y": 183.04637404254322, "z": -5.699177528463501, "delay":2000, "easing": "easeInElastic(5, .6)", "duration": 2000}
+{"x": -6.58119073244206, "y": 220.04637404254322, "z": -5.699177528463501, "delay": 0, "easing": "easeInSine", "duration": 1000},
+{"x": -8.58119073244206, "y": 195.04637404254322, "z": -5.699177528463501, "delay": 0, "easing": "easeOutSine", "duration": 5000},
+                        {"x": -8.58119073244206, "y": 186.04637404254322, "z": -5.699177528463501, "delay":2000, "easing": "easeInOutElastic(5, .4)", "duration": 2000},
+                        {"x": -7.58119073244206, "y": 190.04637404254322, "z": -5.699177528463501, "delay":5000, "easing": "easeInOutSine", "duration": 3000},
+                        {"x": 18, "y": 260, "z": -5.699177528463501, "delay":500, "easing": "easeInOutSine", "duration": 3000}
                       ]
                   }
                 }
@@ -4675,6 +5131,55 @@
     "groupChain" : "NPC_SM_6_group",
             "time": 5000}
   }, 
+  {
+    "name": "NPC_SM_6_smoke_anim_rotation",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                 "name": "NPC_SM_6_smoke_anim_rotation",
+                 "target": { "role": "individual", "name": "Brendan", "aspect" : "rotation"},
+                 "action": { "type" : "socket_manipulate_object",
+                  "mapItem": "NPC_SM_6_smoke_monster",
+                   "attr": "object3D",
+                   "anime" : {
+                    "targets": "scale",
+                    "delay" : 1000,
+                    "loop": false,
+                    "autoplay": true,
+                    "easing": "linear",
+                    "duration": 1000
+                    },
+                    "timelines" : [
+                      {"x": 0, "y": 1.68, "z": 0, "delay": 0, "easing": "linear", "duration": 5000},
+                      {"x": 0, "y": 5, "z": 0, "delay": 22100, "easing": "linear", "duration": 500},
+                      {"x": 0, "y": 3.4, "z": 0, "delay": 1500, "easing": "linear", "duration": 300},
+                      {"x": 0, "y": 0.9, "z": 0, "delay": 200, "easing": "linear", "duration": 300},
+                      {"x": 0, "y": 3.2, "z": 0, "delay": 1500, "easing": "linear", "duration": 500},
+                      {"x": 0, "y": 0.4, "z": 0, "delay": 1000, "easing": "linear", "duration": 200},
+                      {"x": 0, "y": 3.2, "z": 0, "delay": 1000, "easing": "linear", "duration": 200},
+                      {"x": 0, "y": 0.4, "z": 0, "delay": 600, "easing": "linear", "duration": 200},
+                      {"x": 0, "y": 3.2, "z": 0, "delay": 600, "easing": "linear", "duration": 200},
+                      {"x": 0, "y": 0.4, "z": 0, "delay": 500, "easing": "linear", "duration": 150},
+                      {"x": 0, "y": 3.2, "z": 0, "delay": 500, "easing": "linear", "duration": 150},
+                      {"x": 0, "y": 0.4, "z": 0, "delay": 300, "easing": "linear", "duration": 100},
+                      {"x": 0, "y": 3.2, "z": 0, "delay": 300, "easing": "linear", "duration": 100},
+                      {"x": 0, "y": 0.4, "z": 0, "delay": 300, "easing": "linear", "duration": 100},
+                      {"x": 0, "y": 3.2, "z": 0, "delay": 300, "easing": "linear", "duration": 100},
+                      {"x": 1.4, "y": 1.68, "z": 0, "delay": 0, "easing": "linear", "duration": 1000},
+                      {"x": 1.4, "y": 1.68, "z": 36, "delay": 0, "easing": "easeInSine", "duration": 9000},
+                      {"x": 1400, "y": -1400, "z": 3400, "delay": 0, "easing": "linear", "duration": 5000},
+                      {"x": 1401, "y": -1399.6, "z": 3399.2, "delay": 0, "easing": "easeOutSine", "duration": 3000}
+                    ]
+                  }
+                }
+              },
+  "trig": {"type": "button",
+    "groupChain" : "NPC_SM_6_group",
+            "time": 0}
+  },
   {
     "name": "NPC_SM_6_smoke_anim_scale",
     "role": "stagemanager",
@@ -4697,8 +5202,8 @@
                     "duration": 1000
                     },
                     "timelines" : [
-                      {"x": 0.03, "y": 0.03, "z": 0.03, "delay": 0, "easing": "linear", "duration": 5000},
-                        {"x": 0.1, "y": 0.1, "z": 0.1, "delay": 36000, "easing": "linear", "duration": 5000}
+                      {"x": 0.18, "y": 0.18, "z": 0.18, "delay": 0, "easing": "linear", "duration": 5000},
+                        {"x": 0.4, "y": 0.4, "z": 0.4, "delay": 36000, "easing": "linear", "duration": 5000}
                     ]
                   }
                 }
@@ -4754,9 +5259,25 @@
                     {"x": -51.01625817594881, "y": 187.35275881163318, "z": -29.7170129047911, "delay": 0, "easing": "easeOutSine", "duration": 0},
                     {"x": -43.39892870904734, "y": 187.90577528755196, "z": 1.5811645083146515,"delay": 0, "easing": "easeInSine", "duration": 10000},
                     {"x": -29.223870931352888, "y": 184.5227975027902, "z": -0.6458496093749936,"delay": 0, "easing": "easeOutSine", "duration": 7000},
-                    {"x": -11.323870931352888, "y": 184.5227975027902, "z": -0.6458496093749936,"delay": 0, "easing": "linear", "duration": 6500},
-                    {"x": -5.372873824217489, "y": 184.5227975027902, "z": -2.496971577545676,"delay": 0, "easing": "linear", "duration": 7000},
-                    {"x": -0.31222514595534934, "y": 183.62279750279018, "z": -4.798980730159151,"delay": 0, "easing": "easeOutSine", "duration": 5000}
+                      {"x": -28.223870931352888, "y": 184.5227975027902, "z": -0.6458496093749936, "delay": 300, "easing": "easeInSine", "duration": 300},
+                        {"x": -27.223870931352888, "y": 184.5227975027902, "z": -0.6458496093749936, "delay": 300, "easing": "easeOutSine", "duration": 200},
+                        {"x": -26.223870931352888, "y": 184.5227975027902, "z": -0.6458496093749936, "delay": 300, "easing": "easeOutSine", "duration": 200},
+                        {"x": -25.223870931352888, "y": 184.5227975027902, "z": -0.6458496093749936, "delay": 300, "easing": "easeOutSine", "duration": 200},
+                        {"x": -24.223870931352888, "y": 184.5227975027902, "z": -0.6458496093749936, "delay": 100, "easing": "easeOutSine", "duration": 200},
+                        {"x": -23.223870931352888, "y": 184.5227975027902, "z": -0.6458496093749936, "delay": 50, "easing": "easeOutSine", "duration": 200},
+                        {"x": -22.223870931352888, "y": 184.5227975027902, "z": -0.6458496093749936, "delay": 50, "easing": "easeOutSine", "duration": 200},
+                        {"x": -21.223870931352888, "y": 184.5227975027902, "z": -0.6458496093749936, "delay": 400, "easing": "easeOutSine", "duration": 200},
+                        {"x": -20.223870931352888, "y": 184.5227975027902, "z": -0.6458496093749936, "delay": 100, "easing": "easeOutSine", "duration": 200},
+                        {"x": -19.223870931352888, "y": 184.5227975027902, "z": -0.6458496093749936, "delay": 50, "easing": "easeOutSine", "duration": 200},
+                        {"x": -18.223870931352888, "y": 184.5227975027902, "z": -0.6458496093749936, "delay": 150, "easing": "easeOutSine", "duration": 200},
+                        {"x": -17.223870931352888, "y": 184.5227975027902, "z": -0.6458496093749936, "delay": 50, "easing": "easeOutSine", "duration": 200},
+                        {"x": -16.223870931352888, "y": 184.5227975027902, "z": -0.6458496093749936, "delay": 150, "easing": "easeOutSine", "duration": 200},
+                        {"x": -15.223870931352888, "y": 184.5227975027902, "z": -0.6458496093749936, "delay": 50, "easing": "easeOutSine", "duration": 200},
+                        {"x": -14.223870931352888, "y": 184.5227975027902, "z": -0.6458496093749936, "delay": 150, "easing": "easeOutSine", "duration": 200},
+                        {"x": -13.223870931352888, "y": 184.5227975027902, "z": -0.6458496093749936, "delay": 150, "easing": "easeOutSine", "duration":200},
+                    {"x": -12.223870931352888, "y": 184.5227975027902, "z": -0.6458496093749936,"delay": 200, "easing": "easeInOutSine", "duration": 350},
+                    {"x": -5.372873824217489, "y": 184.5227975027902, "z": -2.496971577545676,"delay": 0, "easing": "easeInSine", "duration": 6000},
+                    {"x": -0.31222514595534934, "y": 183.62279750279018, "z": -4.798980730159151,"delay": 0, "easing": "easeOutSine", "duration": 6000}
                    ]
                  }
                }
@@ -4791,9 +5312,25 @@
                     {"x": -52.50118241644058, "y": 187.35275881163318, "z": -28.373510020536678, "delay": 0, "easing": "easeOutSine", "duration": 0},
                     {"x": -42.05542582479291, "y": 187.90577528755196, "z": 3.066088748806417,"delay": 0, "easing": "easeInSine", "duration": 10000},
                     {"x": -28.652442359924315, "y": 184.5227975027902, "z": -0.6172781808035586,"delay": 0, "easing": "easeOutSine", "duration": 7000},
-                    {"x": -10.7524423599243168, "y": 184.5227975027902, "z": -0.6172781808035586,"delay": 0, "easing": "linear", "duration": 6500},
-                    {"x": -4.948609755505556, "y": 184.5227975027902, "z": -2.8808295444755116,"delay": 0, "easing": "linear", "duration": 7000},
-                    {"x": -0.2836537173839143, "y": 183.62279750279018, "z": -5.370409301587722,"delay": 0, "easing": "easeOutSine", "duration": 5000}
+                    {"x": -27.652442359924315, "y": 184.5227975027902, "z": -0.6172781808035586, "delay": 300, "easing": "easeInSine", "duration": 300},
+                        {"x": -26.652442359924315, "y": 184.5227975027902, "z": -0.6172781808035586, "delay": 300, "easing": "easeOutSine", "duration": 200},
+                        {"x": -25.652442359924315, "y": 184.5227975027902, "z": -0.6172781808035586, "delay": 300, "easing": "easeOutSine", "duration": 200},
+                        {"x": -24.652442359924315, "y": 184.5227975027902, "z": -0.6172781808035586, "delay": 300, "easing": "easeOutSine", "duration": 200},
+                        {"x": -23.652442359924315, "y": 184.5227975027902, "z": -0.6172781808035586, "delay": 100, "easing": "easeOutSine", "duration": 200},
+                        {"x": -22.652442359924315, "y": 184.5227975027902, "z": -0.6172781808035586, "delay": 50, "easing": "easeOutSine", "duration": 200},
+                        {"x": -21.652442359924315, "y": 184.5227975027902, "z": -0.6172781808035586, "delay": 50, "easing": "easeOutSine", "duration": 200},
+                        {"x": -20.652442359924315, "y": 184.5227975027902, "z": -0.6172781808035586, "delay": 400, "easing": "easeOutSine", "duration": 200},
+                        {"x": -19.652442359924315, "y": 184.5227975027902, "z": -0.6172781808035586, "delay": 100, "easing": "easeOutSine", "duration": 200},
+                        {"x": -18.652442359924315, "y": 184.5227975027902, "z": -0.6172781808035586, "delay": 50, "easing": "easeOutSine", "duration": 200},
+                        {"x": -17.652442359924315, "y": 184.5227975027902, "z": -0.6172781808035586, "delay": 150, "easing": "easeOutSine", "duration": 200},
+                        {"x": -16.652442359924315, "y": 184.5227975027902, "z": -0.6172781808035586, "delay": 50, "easing": "easeOutSine", "duration": 200},
+                        {"x": -15.652442359924315, "y": 184.5227975027902, "z": -0.6172781808035586, "delay": 150, "easing": "easeOutSine", "duration": 200},
+                        {"x": -14.652442359924315, "y": 184.5227975027902, "z": -0.6172781808035586, "delay": 50, "easing": "easeOutSine", "duration": 200},
+                        {"x": -13.652442359924315, "y": 184.5227975027902, "z": -0.6172781808035586, "delay": 150, "easing": "easeOutSine", "duration": 200},
+                        {"x": -12.652442359924315, "y": 184.5227975027902, "z": -0.6172781808035586, "delay": 150, "easing": "easeOutSine", "duration":200},
+                    {"x": -11.652442359924315, "y": 184.5227975027902, "z": -0.6172781808035586,"delay": 200, "easing": "linear", "duration": 350},
+                    {"x": -4.948609755505556, "y": 184.5227975027902, "z": -2.8808295444755116,"delay": 0, "easing": "easeInSine", "duration": 6000},
+                    {"x": -0.2836537173839143, "y": 183.62279750279018, "z": -5.370409301587722,"delay": 0, "easing": "easeOutSine", "duration": 6000}
                    ]
                  }
                }
@@ -4828,9 +5365,25 @@
                     {"x": -53.5618425882204, "y": 187.35275881163318, "z": -27.312849848756855, "delay": 0, "easing": "easeOutSine", "duration": 0},
                     {"x": -40.9947656530131, "y": 187.90577528755196, "z": 4.126748920586238,"delay": 0, "easing": "easeInSine", "duration": 10000},
                     {"x": -28.223870931352888, "y": 184.5227975027902, "z": -0.6172781808035586,"delay": 0, "easing": "easeOutSine", "duration": 7000},
-                    {"x": -10.323870931352888, "y": 184.5227975027902, "z": -0.6172781808035586,"delay": 0, "easing": "linear", "duration": 6500},
-                    {"x": -4.645563992139892, "y": 184.5227975027902, "z": -3.1838753078411752,"delay": 0, "easing": "linear", "duration": 7000},
-                    {"x": -0.28365371738391454, "y": 183.62279750279018, "z": -5.798980730159151,"delay": 0, "easing": "easeOutSine", "duration": 5000}
+                    {"x": -27.223870931352888, "y": 184.5227975027902, "z": -0.6172781808035586, "delay": 300, "easing": "easeInSine", "duration": 300},
+                        {"x": -26.223870931352888, "y": 184.5227975027902, "z": -0.6172781808035586, "delay": 300, "easing": "easeOutSine", "duration": 200},
+                        {"x": -25.223870931352888, "y": 184.5227975027902, "z": -0.6172781808035586, "delay": 300, "easing": "easeOutSine", "duration": 200},
+                        {"x": -24.223870931352888, "y": 184.5227975027902, "z": -0.6172781808035586, "delay": 300, "easing": "easeOutSine", "duration": 200},
+                        {"x": -23.223870931352888, "y": 184.5227975027902, "z": -0.6172781808035586, "delay": 100, "easing": "easeOutSine", "duration": 200},
+                        {"x": -22.223870931352888, "y": 184.5227975027902, "z": -0.6172781808035586, "delay": 50, "easing": "easeOutSine", "duration": 200},
+                        {"x": -21.223870931352888, "y": 184.5227975027902, "z": -0.6172781808035586, "delay": 50, "easing": "easeOutSine", "duration": 200},
+                        {"x": -20.223870931352888, "y": 184.5227975027902, "z": -0.6172781808035586, "delay": 400, "easing": "easeOutSine", "duration": 200},
+                        {"x": -19.223870931352888, "y": 184.5227975027902, "z": -0.6172781808035586, "delay": 100, "easing": "easeOutSine", "duration": 200},
+                        {"x": -18.223870931352888, "y": 184.5227975027902, "z": -0.6172781808035586, "delay": 50, "easing": "easeOutSine", "duration": 200},
+                        {"x": -17.223870931352888, "y": 184.5227975027902, "z": -0.6172781808035586, "delay": 150, "easing": "easeOutSine", "duration": 200},
+                        {"x": -16.223870931352888, "y": 184.5227975027902, "z": -0.6172781808035586, "delay": 50, "easing": "easeOutSine", "duration": 200},
+                        {"x": -15.223870931352888, "y": 184.5227975027902, "z": -0.6172781808035586, "delay": 150, "easing": "easeOutSine", "duration": 200},
+                        {"x": -14.223870931352888, "y": 184.5227975027902, "z": -0.6172781808035586, "delay": 50, "easing": "easeOutSine", "duration": 200},
+                        {"x": -13.223870931352888, "y": 184.5227975027902, "z": -0.6172781808035586, "delay": 150, "easing": "easeOutSine", "duration": 200},
+                        {"x": -12.223870931352888, "y": 184.5227975027902, "z": -0.6172781808035586, "delay": 150, "easing": "easeOutSine", "duration":200},
+                    {"x": -11.223870931352888, "y": 184.5227975027902, "z": -0.6172781808035586,"delay": 200, "easing": "linear", "duration": 350},
+                    {"x": -4.645563992139892, "y": 184.5227975027902, "z": -3.1838753078411752,"delay": 0, "easing": "easeInSine", "duration": 6000},
+                    {"x": -0.28365371738391454, "y": 183.62279750279018, "z": -5.798980730159151,"delay": 0, "easing": "easeOutSine", "duration": 6000}
                    ]
                  }
                }
@@ -4865,9 +5418,25 @@
                     {"x": -54.551792081881544, "y": 187.35275881163318, "z": -26.181478998858363, "delay": 0, "easing": "easeOutSine", "duration": 0},
                     {"x": -39.8633948031146, "y": 187.90577528755196, "z": 5.116698414247389,"delay": 0, "easing": "easeInSine", "duration": 10000},
                     {"x": -27.795299502781457, "y": 184.5227975027902, "z": -0.6458496093749936,"delay": 0, "easing": "easeOutSine", "duration": 7000},
-                    {"x": -9.895299502781459, "y": 184.5227975027902, "z": -0.6458496093749936,"delay": 0, "easing": "linear", "duration": 6500},
-                    {"x": -4.362721279665278, "y": 184.5227975027902, "z": -3.5071241220978875,"delay": 0, "easing": "linear", "duration": 7000},
-                    {"x": -0.31222514595534956, "y": 183.62279750279018, "z": -6.227552158730579,"delay": 0, "easing": "easeOutSine", "duration": 5000}
+                    {"x": -26.795299502781457, "y": 184.5227975027902, "z": -0.6458496093749936, "delay": 300, "easing": "easeInSine", "duration": 300},
+                        {"x": -25.795299502781457, "y": 184.5227975027902, "z": -0.6458496093749936, "delay": 300, "easing": "easeOutSine", "duration": 200},
+                        {"x": -24.795299502781457, "y": 184.5227975027902, "z": -0.6458496093749936, "delay": 300, "easing": "easeOutSine", "duration": 200},
+                        {"x": -23.795299502781457, "y": 184.5227975027902, "z": -0.6458496093749936, "delay": 300, "easing": "easeOutSine", "duration": 200},
+                        {"x": -22.795299502781457, "y": 184.5227975027902, "z": -0.6458496093749936, "delay": 100, "easing": "easeOutSine", "duration": 200},
+                        {"x": -21.795299502781457, "y": 184.5227975027902, "z": -0.6458496093749936, "delay": 50, "easing": "easeOutSine", "duration": 200},
+                        {"x": -20.795299502781457, "y": 184.5227975027902, "z": -0.6458496093749936, "delay": 50, "easing": "easeOutSine", "duration": 200},
+                        {"x": -19.795299502781457, "y": 184.5227975027902, "z": -0.6458496093749936, "delay": 400, "easing": "easeOutSine", "duration": 200},
+                        {"x": -18.795299502781457, "y": 184.5227975027902, "z": -0.6458496093749936, "delay": 100, "easing": "easeOutSine", "duration": 200},
+                        {"x": -17.795299502781457, "y": 184.5227975027902, "z": -0.6458496093749936, "delay": 50, "easing": "easeOutSine", "duration": 200},
+                        {"x": -16.795299502781457, "y": 184.5227975027902, "z": -0.6458496093749936, "delay": 150, "easing": "easeOutSine", "duration": 200},
+                        {"x": -15.795299502781457, "y": 184.5227975027902, "z": -0.6458496093749936, "delay": 50, "easing": "easeOutSine", "duration": 200},
+                        {"x": -14.795299502781457, "y": 184.5227975027902, "z": -0.6458496093749936, "delay": 150, "easing": "easeOutSine", "duration": 200},
+                        {"x": -13.795299502781457, "y": 184.5227975027902, "z": -0.6458496093749936, "delay": 50, "easing": "easeOutSine", "duration": 200},
+                        {"x": -12.795299502781457, "y": 184.5227975027902, "z": -0.6458496093749936, "delay": 150, "easing": "easeOutSine", "duration": 200},
+                        {"x": -11.795299502781457, "y": 184.5227975027902, "z": -0.6458496093749936, "delay": 150, "easing": "easeOutSine", "duration": 200},
+                    {"x": -10.795299502781457, "y": 184.5227975027902, "z": -0.6458496093749936,"delay": 200, "easing": "linear", "duration": 350},
+                    {"x": -4.362721279665278, "y": 184.5227975027902, "z": -3.5071241220978875,"delay": 0, "easing": "easeInSine", "duration": 6000},
+                    {"x": -0.31222514595534956, "y": 183.62279750279018, "z": -6.227552158730579,"delay": 0, "easing": "easeOutSine", "duration": 6000}
                    ]
                  }
                }
@@ -5034,10 +5603,26 @@
                       },
                       "timelines" : [
                         {"x": -42.95834841516507, "y": 191.67598402778634, "z": 5.2185372711071059,"delay": 0, "easing": "easeInSine", "duration": 10000},
-                        {"x": -28.4, "y": 185.6, "z": 0,"delay": 0, "easing": "easeOutSine", "duration": 7000},
-                        {"x": -10.5, "y": 185.6, "z": 0,"delay": 0, "easing": "linear", "duration": 6500},
-                        {"x": -4.333624463419644, "y": 185.6, "z": -2.622851661512039,"delay": 0, "easing": "linear", "duration": 7000},
-                        {"x": 0.333624463419644, "y": 184.7, "z": -5.622851661512039,"delay": 0, "easing": "easeOutSine", "duration": 5000}
+                        {"x": -28.4, "y": 185.6, "z": 0,"delay": 0, "easing": "easeOutSine", "duration": 6980},
+                          {"x": -27.4, "y": 185.6, "z": 0, "delay": 300, "easing": "easeInSine", "duration": 300},
+                          {"x": -26.4, "y": 185.6, "z": 0, "delay": 300, "easing": "easeOutSine", "duration": 200},
+                          {"x": -25.4, "y": 185.6, "z": 0, "delay": 300, "easing": "easeOutSine", "duration": 200},
+                          {"x": -24.4, "y": 185.6, "z": 0, "delay": 300, "easing": "easeOutSine", "duration": 200},
+                          {"x": -23.4, "y": 185.6, "z": 0, "delay": 100, "easing": "easeOutSine", "duration": 200},
+                          {"x": -22.4, "y": 185.6, "z": 0, "delay": 50, "easing": "easeOutSine", "duration": 200},
+                          {"x": -21.4, "y": 185.6, "z": 0, "delay": 50, "easing": "easeOutSine", "duration": 200},
+                          {"x": -20.4, "y": 185.6, "z": 0, "delay": 400, "easing": "easeOutSine", "duration": 200},
+                          {"x": -19.4, "y": 185.6, "z": 0, "delay": 100, "easing": "easeOutSine", "duration": 200},
+                          {"x": -18.4, "y": 185.6, "z": 0, "delay": 50, "easing": "easeOutSine", "duration": 200},
+                          {"x": -17.4, "y": 185.6, "z": 0, "delay": 150, "easing": "easeOutSine", "duration": 200},
+                          {"x": -16.4, "y": 185.6, "z": 0, "delay": 50, "easing": "easeOutSine", "duration": 200},
+                          {"x": -15.4, "y": 185.6, "z": 0, "delay": 150, "easing": "easeOutSine", "duration": 200},
+                          {"x": -14.4, "y": 185.6, "z": 0, "delay": 50, "easing": "easeOutSine", "duration": 200},
+                          {"x": -13.4, "y": 185.6, "z": 0, "delay": 150, "easing": "easeOutSine", "duration": 200},
+                          {"x": -12.4, "y": 185.6, "z": 0, "delay": 150, "easing": "easeOutSine", "duration": 200},
+                        {"x": -11.4, "y": 185.6, "z": 0,"delay": 200, "easing": "linear", "duration": 350},
+                        {"x": -4.333624463419644, "y": 185.6, "z": -2.622851661512039,"delay": 0, "easing": "easeInSine", "duration": 6000},
+                        {"x": 0.333624463419644, "y": 184.7, "z": -5.622851661512039,"delay": 0, "easing": "easeOutSine", "duration": 6000}
                       ]
                     }
                   }
@@ -5375,10 +5960,27 @@
       "applyGravityOnSpawn" : false,
       "pos": {"x": -6.859153747558594, "y": 183.8, "z": -5.34213924407959},
       "rot": {"x": -1, "y": 0, "z": 0},
-      "scale": {"x": 1, "y":1, "z":1}},
+      "scale": {"x": 0.01, "y":0.01, "z":0.01}},
     "trig": {"type": "button",
-              "groupChain": "NPC_SM_6_group",
-             "time": 53000}
+              "groupChain": "NPC_SM_345_group",
+             "time": 80000}
+  },
+  {
+    "name": "NPC_SM_6_corpse_rock_1",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "local",
+                "src": "NPC_SM_6_corpse_rock_1"},
+                "action": {"type": "move",
+                  "duration": 1500,
+                  "loop": false,
+                  "pos": {"x": -6.859153747558594, "y": 183.8, "z": -5.34213924407959},
+                  "rot": {"x": -1, "y": 0, "z": 0},
+      "scale": {"x": 0.8, "y":0.8, "z":0.8}},
+    "trig": {"type": "button",
+    "groupChain": "NPC_SM_6_group",
+      "time": 58000
+    }
   },
   {
     "name": "NPC_SM_6_corpse_rock_2",
@@ -5390,10 +5992,27 @@
       "applyGravityOnSpawn" : false,
       "pos": {"x": -3.15, "y": 183.8, "z": -2.4173777103424072},
       "rot": {"x": 63, "y": 0, "z": 0},
+      "scale": {"x": 0.01, "y":0.01, "z":0.01}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_345_group",
+             "time": 83000}
+  },
+  {
+    "name": "NPC_SM_6_corpse_rock_2",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "local",
+                "src": "NPC_SM_6_corpse_rock_2"},
+                "action": {"type": "move",
+                  "duration": 1500,
+                  "loop": false,
+                  "pos": {"x": -3.15, "y": 183.8, "z": -2.4173777103424072},
+      "rot": {"x": 63, "y": 0, "z": 0},
       "scale": {"x": 0.8, "y":0.8, "z":0.8}},
     "trig": {"type": "button",
-              "groupChain": "NPC_SM_6_group",
-             "time": 53000}
+    "groupChain": "NPC_SM_6_group",
+      "time": 58000
+    }
   },
   {
     "name": "NPC_SM_6_corpse_rock_3",
@@ -5405,10 +6024,27 @@
       "applyGravityOnSpawn" : false,
       "pos": {"x": -8.293645858764648, "y": 183.7702880859375, "z": -9.883012771606445},
       "rot": {"x": 0, "y":0, "z":0},
+      "scale": {"x": 0.01, "y":0.01, "z":0.01}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_345_group",
+             "time": 86000}
+  },
+  {
+    "name": "NPC_SM_6_corpse_rock_3",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "local",
+                "src": "NPC_SM_6_corpse_rock_3"},
+                "action": {"type": "move",
+                  "duration": 1500,
+                  "loop": false,
+                  "pos": {"x": -8.293645858764648, "y": 183.7702880859375, "z": -9.883012771606445},
+                  "rot": {"x": 0, "y":0, "z":0},
       "scale": {"x": 0.8, "y":0.8, "z":0.8}},
     "trig": {"type": "button",
-              "groupChain": "NPC_SM_6_group",
-             "time": 53000}
+    "groupChain": "NPC_SM_6_group",
+      "time": 58000
+    }
   },
   {
     "name": "NPC_SM_6_corpse_rock_4",
@@ -5420,10 +6056,27 @@
       "applyGravityOnSpawn" : false,
       "pos": {"x": -5.142336845397949, "y": 183.6194854736328, "z": -9.385811805725098},
       "rot": {"x": -67, "y":1, "z":1},
+      "scale": {"x": 0.01, "y":0.01, "z":0.01}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_345_group",
+             "time": 89000}
+  },
+  {
+    "name": "NPC_SM_6_corpse_rock_4",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "local",
+                "src": "NPC_SM_6_corpse_rock_4"},
+                "action": {"type": "move",
+                  "duration": 1500,
+                  "loop": false,
+                  "pos": {"x": -5.142336845397949, "y": 183.6194854736328, "z": -9.385811805725098},
+                  "rot": {"x": -67, "y":1, "z":1},
       "scale": {"x": 0.8, "y":0.8, "z":0.8}},
     "trig": {"type": "button",
-              "groupChain": "NPC_SM_6_group",
-             "time": 53000}
+    "groupChain": "NPC_SM_6_group",
+      "time": 58000
+    }
   },
   {
     "name": "NPC_SM_6_corpse_rock_5",
@@ -5435,10 +6088,27 @@
       "applyGravityOnSpawn" : false,
       "pos": {"x": -7.873127460479736, "y": 183.67484436035156, "z": 0.2910960614681244},
       "rot": {"x": 0, "y":0, "z":0},
+      "scale": {"x": 0.01, "y":0.01, "z":0.01}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_345_group",
+             "time": 92000}
+  },
+  {
+    "name": "NPC_SM_6_corpse_rock_5",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "local",
+                "src": "NPC_SM_6_corpse_rock_5"},
+                "action": {"type": "move",
+                  "duration": 1500,
+                  "loop": false,
+                  "pos": {"x": -7.873127460479736, "y": 183.67484436035156, "z": 0.2910960614681244},
+                  "rot": {"x": 0, "y":0, "z":0},
       "scale": {"x": 0.8, "y":0.8, "z":0.8}},
     "trig": {"type": "button",
-              "groupChain": "NPC_SM_6_group",
-             "time": 53000}
+    "groupChain": "NPC_SM_6_group",
+      "time": 58000
+    }
   },
   {
     "name": "NPC_SM_6_corpse_rock_6",
@@ -5450,10 +6120,27 @@
       "applyGravityOnSpawn" : false,
       "pos": {"x": -10.55519962310791, "y": 184.16971740722656, "z": -4.878280162811279},
       "rot": {"x": 0, "y":0, "z":0},
+      "scale": {"x": 0.01, "y":0.01, "z":0.01}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_345_group",
+             "time": 95000}
+  },
+  {
+    "name": "NPC_SM_6_corpse_rock_6",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "local",
+                "src": "NPC_SM_6_corpse_rock_6"},
+                "action": {"type": "move",
+                  "duration": 1500,
+                  "loop": false,
+                  "pos": {"x": -10.55519962310791, "y": 184.16971740722656, "z": -4.878280162811279},
+                  "rot": {"x": 0, "y":0, "z":0},
       "scale": {"x": 0.8, "y":0.8, "z":0.8}},
     "trig": {"type": "button",
-              "groupChain": "NPC_SM_6_group",
-             "time": 53000}
+    "groupChain": "NPC_SM_6_group",
+      "time": 58000
+    }
   },
   {
     "name": "NPC_SM_6_corpse_rock_7",
@@ -5465,10 +6152,27 @@
       "applyGravityOnSpawn" : false,
       "pos": {"x": -3.1371970176696777, "y": 183.56202697753906, "z": -9.296201705932617},
       "rot": {"x": 0, "y":0, "z":0},
+      "scale": {"x": 0.01, "y":0.01, "z":0.01}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_345_group",
+             "time": 98000}
+  },
+  {
+    "name": "NPC_SM_6_corpse_rock_7",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "local",
+                "src": "NPC_SM_6_corpse_rock_7"},
+                "action": {"type": "move",
+                  "duration": 1500,
+                  "loop": false,
+                  "pos": {"x": -3.1371970176696777, "y": 183.56202697753906, "z": -9.296201705932617},
+                  "rot": {"x": 0, "y":0, "z":0},
       "scale": {"x": 0.8, "y":0.8, "z":0.8}},
     "trig": {"type": "button",
-              "groupChain": "NPC_SM_6_group",
-             "time": 53000}
+    "groupChain": "NPC_SM_6_group",
+      "time": 58000
+    }
   },
   {
     "name": "NPC_SM_6_corpse_rock_8",
@@ -5480,10 +6184,27 @@
       "applyGravityOnSpawn" : false,
       "pos": {"x": -7.466363430023193, "y": 183.70671997070312, "z": -5.530553817749023},
       "rot": {"x": 0, "y":0, "z":0},
+      "scale": {"x": 0.01, "y":0.01, "z":0.01}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_345_group",
+             "time": 101000}
+  },
+  {
+    "name": "NPC_SM_6_corpse_rock_8",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "local",
+                "src": "NPC_SM_6_corpse_rock_8"},
+                "action": {"type": "move",
+                  "duration": 1500,
+                  "loop": false,
+                  "pos": {"x": -7.466363430023193, "y": 183.70671997070312, "z": -5.530553817749023},
+                  "rot": {"x": 0, "y":0, "z":0},
       "scale": {"x": 0.8, "y":0.8, "z":0.8}},
     "trig": {"type": "button",
-              "groupChain": "NPC_SM_6_group",
-             "time": 53000}
+    "groupChain": "NPC_SM_6_group",
+      "time": 58000
+    }
   },
   {
     "name": "NPC_SM_6_corpse_rock_9",
@@ -5495,10 +6216,27 @@
       "applyGravityOnSpawn" : false,
       "pos": {"x": -4.069745063781738, "y": 183.6645294189453, "z": -1.820091962814331},
       "rot": {"x": 0, "y":0, "z":0},
+      "scale": {"x": 0.01, "y":0.01, "z":0.01}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_345_group",
+             "time": 104000}
+  },
+  {
+    "name": "NPC_SM_6_corpse_rock_9",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "local",
+                "src": "NPC_SM_6_corpse_rock_9"},
+                "action": {"type": "move",
+                  "duration": 1500,
+                  "loop": false,
+                  "pos": {"x": -4.069745063781738, "y": 183.6645294189453, "z": -1.820091962814331},
+                  "rot": {"x": 0, "y":0, "z":0},
       "scale": {"x": 0.8, "y":0.8, "z":0.8}},
     "trig": {"type": "button",
-              "groupChain": "NPC_SM_6_group",
-             "time": 53000}
+    "groupChain": "NPC_SM_6_group",
+      "time": 58000
+    }
   },
   {
     "name": "NPC_SM_6_corpse_rock_10",
@@ -5510,10 +6248,27 @@
       "applyGravityOnSpawn" : false,
       "pos": {"x": -7.732539176940918, "y": 183.60340270996094, "z": -5.038578510284424},
       "rot": {"x": 1.76, "y":0, "z":0},
+      "scale": {"x": 0.01, "y":0.01, "z":0.01}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_345_group",
+             "time": 107000}
+  },
+  {
+    "name": "NPC_SM_6_corpse_rock_10",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "local",
+                "src": "NPC_SM_6_corpse_rock_10"},
+                "action": {"type": "move",
+                  "duration": 1500,
+                  "loop": false,
+                  "pos": {"x": -7.732539176940918, "y": 183.60340270996094, "z": -5.038578510284424},
+                  "rot": {"x": 1.76, "y":0, "z":0},
       "scale": {"x": 0.8, "y":0.8, "z":0.8}},
     "trig": {"type": "button",
-              "groupChain": "NPC_SM_6_group",
-             "time": 53000}
+    "groupChain": "NPC_SM_6_group",
+      "time": 58000
+    }
   },
   {
     "name": "NPC_SM_6_corpse_rock_11",
@@ -5525,10 +6280,27 @@
       "applyGravityOnSpawn" : false,
       "pos": {"x": -2.6684510707855225, "y": 183.6157012939453, "z": -9.192094802856445},
       "rot": {"x": 0, "y":0, "z":0},
+      "scale": {"x": 0.01, "y":0.01, "z":0.01}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_345_group",
+             "time": 110000}
+  },
+  {
+    "name": "NPC_SM_6_corpse_rock_11",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "local",
+                "src": "NPC_SM_6_corpse_rock_11"},
+                "action": {"type": "move",
+                  "duration": 1500,
+                  "loop": false,
+                  "pos": {"x": -2.6684510707855225, "y": 183.6157012939453, "z": -9.192094802856445},
+                  "rot": {"x": 0, "y":0, "z":0},
       "scale": {"x": 0.8, "y":0.8, "z":0.8}},
     "trig": {"type": "button",
-              "groupChain": "NPC_SM_6_group",
-             "time": 53000}
+    "groupChain": "NPC_SM_6_group",
+      "time": 58000
+    }
   },
   {
     "name": "NPC_SM_6_corpse_rock_12",
@@ -5540,10 +6312,27 @@
       "applyGravityOnSpawn" : false,
       "pos": {"x": -9.221294403076172, "y": 183.62349853515625, "z": -4.3803935050964355},
       "rot": {"x": 0, "y":0, "z":0},
+      "scale": {"x": 0.01, "y":0.01, "z":0.01}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_345_group",
+             "time": 113000}
+  },
+  {
+    "name": "NPC_SM_6_corpse_rock_12",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "local",
+                "src": "NPC_SM_6_corpse_rock_12"},
+                "action": {"type": "move",
+                  "duration": 1500,
+                  "loop": false,
+                  "pos": {"x": -9.221294403076172, "y": 183.62349853515625, "z": -4.3803935050964355},
+      "rot": {"x": 0, "y":0, "z":0},
       "scale": {"x": 0.8, "y":0.8, "z":0.8}},
     "trig": {"type": "button",
-              "groupChain": "NPC_SM_6_group",
-             "time": 53000}
+    "groupChain": "NPC_SM_6_group",
+      "time": 58000
+    }
   },
   {
     "name": "NPC_SM_6_corpse_rock_banana",
@@ -5555,10 +6344,27 @@
       "applyGravityOnSpawn" : false,
       "pos": {"x": -1.6791740655899048, "y": 183.8576629638672, "z": -7.797260284423828},
       "rot": {"x": 0, "y":0, "z":0},
+      "scale": {"x": 0.01, "y":0.01, "z":0.01}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_345_group",
+             "time": 116000}
+  },
+  {
+    "name": "NPC_SM_6_corpse_rock_banana",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "local",
+                "src": "NPC_SM_6_corpse_rock_banana"},
+                "action": {"type": "move",
+                  "duration": 1500,
+                  "loop": false,
+                  "pos": {"x": -1.6791740655899048, "y": 183.8576629638672, "z": -7.797260284423828},
+      "rot": {"x": 0, "y":0, "z":0},
       "scale": {"x": 0.4, "y":0.4, "z":0.4}},
     "trig": {"type": "button",
-              "groupChain": "NPC_SM_6_group",
-             "time": 53000}
+    "groupChain": "NPC_SM_6_group",
+      "time": 58000
+    }
   },
   {
     "name": "NPC_SM_6_corpse_rock_shroom",
@@ -5570,10 +6376,27 @@
       "applyGravityOnSpawn" : false,
       "pos": {"x": -1.8330047130584717, "y": 183.74383850097656, "z": -0.8022998571395874},
       "rot": {"x": -1.76, "y":0, "z":0},
+      "scale": {"x": 0.01, "y":0.01, "z":0.01}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_345_group",
+             "time": 119000}
+  },
+  {
+    "name": "NPC_SM_6_corpse_rock_shroom",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "local",
+                "src": "NPC_SM_6_corpse_rock_shroom"},
+                "action": {"type": "move",
+                  "duration": 1500,
+                  "loop": false,
+                  "pos": {"x": -1.8330047130584717, "y": 183.74383850097656, "z": -0.8022998571395874},
+      "rot": {"x": -1.76, "y":0, "z":0},
       "scale": {"x": 0.8, "y":0.8, "z":0.8}},
     "trig": {"type": "button",
-              "groupChain": "NPC_SM_6_group",
-             "time": 53000}
+    "groupChain": "NPC_SM_6_group",
+      "time": 58000
+    }
   },
   {
     "name": "NPC_SM_6_corpse_rock_star",
@@ -5585,10 +6408,27 @@
       "applyGravityOnSpawn" : false,
       "pos": {"x": -9.373062133789062, "y": 183.85188598632812, "z": -7.013773441314697},
       "rot": {"x": 0, "y":1.76, "z":0},
+      "scale": {"x": 0.01, "y":0.01, "z":0.01}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_345_group",
+             "time": 122000}
+  },
+  {
+    "name": "NPC_SM_6_corpse_rock_star",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "local",
+                "src": "NPC_SM_6_corpse_rock_star"},
+                "action": {"type": "move",
+                  "duration": 1500,
+                  "loop": false,
+                  "pos": {"x": -9.373062133789062, "y": 183.85188598632812, "z": -7.013773441314697},
+      "rot": {"x": 0, "y":1.76, "z":0},
       "scale": {"x": 0.6, "y":0.6, "z":0.6}},
     "trig": {"type": "button",
-              "groupChain": "NPC_SM_6_group",
-             "time": 53000}
+    "groupChain": "NPC_SM_6_group",
+      "time": 58000
+    }
   },
   {
     "name": "NPC_SM_6_corpse_rock_heart",
@@ -5600,10 +6440,27 @@
       "applyGravityOnSpawn" : false,
       "pos": {"x": -3.929150342941284, "y": 183.7120391845703, "z": 0.7550966143608093},
       "rot": {"x": -1.76, "y":1.76, "z":0},
+      "scale": {"x": 0.01, "y":0.01, "z":0.01}},
+    "trig": {"type": "button",
+              "groupChain": "NPC_SM_345_group",
+             "time": 125000}
+  },
+  {
+    "name": "NPC_SM_6_corpse_rock_heart",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "local",
+                "src": "NPC_SM_6_corpse_rock_heart"},
+                "action": {"type": "move",
+                  "duration": 1500,
+                  "loop": false,
+                  "pos": {"x": -3.929150342941284, "y": 183.7120391845703, "z": 0.7550966143608093},
+      "rot": {"x": -1.76, "y":1.76, "z":0},
       "scale": {"x": 0.8, "y":0.8, "z":0.8}},
     "trig": {"type": "button",
-              "groupChain": "NPC_SM_6_group",
-             "time": 53000}
+    "groupChain": "NPC_SM_6_group",
+      "time": 58000
+    }
   },
   {
     "name": "NPC_SM_6_graveyard_light",
@@ -5637,7 +6494,7 @@
               },
     "trig": {"type": "button",
       "groupChain" : "NPC_SM_6_group",
-             "time": 56000}
+             "time": 61000}
   },
   {
     "name": "NPC_SM_6_load_360_skybox",
@@ -10851,6 +11708,32 @@
              "time": 30000}
   },
   {
+    "name": "Spawn_Seaweed",
+    "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": {
+                "name": "Spawn_Seaweed",
+                "role": {},
+                "target": { "type": "glb",
+                  "role": "mobilewebapp"},
+                "action": {
+                  "button1": {"limit": 1, "asset": "https://jigsawhubs-1-assets.onboardxr.live/files/b1346efc-9251-4089-b32d-87fd0625819f.glb", "icon": "greensea.svg", "target": "part1"},
+                  "button2": {"asset": "https://jigsawhubs-1-assets.onboardxr.live/files/0a482f82-b328-4e19-8fca-2da4722a2261.glb", "icon": "redsea.svg", "limit": 1, "target": "part2"},
+                  "button3": {"limit": 1, "icon": "bluesea.svg", "asset": "https://jigsawhubs-1-assets.onboardxr.live/files/11f2b174-f50d-4982-b109-195f420757b6.glb", "target": "part3"},
+                  "button4": {"asset": "https://jigsawhubs-1-assets.onboardxr.live/files/752c9cca-9af8-4b72-aa38-68dbb7193f7a.glb", "limit": 1, "icon": "pinksea.svg", "target": "part4"},
+                  "sceneLink": "https://onboardxr.live/scenes/bYxw7r9/crater",
+                  "gravity" : false,
+                  "lifetime": 10000}
+              }
+              },
+  "trig": {"type": "button",
+  "groupChain" : "NPC_SM_10_A_2_newseaweed_group",
+            "time": 0}
+  },
+  {
     "name": "NPC_SM_10_B_1",
     "role":"stagemanager",
     "target": { },
@@ -10924,7 +11807,7 @@
                    "duration": 1
                    },
                    "timelines" : [
-                    {"x": -62.931934163999415, "y": 9.871004502471495, "z": -45.86081363047737, "delay": 0, "duration": 0, "easing": "easeInSine"}
+                    {"x": -59.951681347934134, "y": 9.820584672651702, "z": -26.547969863103567, "delay": 0, "duration": 0, "easing": "easeInSine"}
                    ]
                  }
                }
@@ -10940,8 +11823,8 @@
                 "dest": "url",
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/09738326-ae5e-430e-99ed-7e5edf40ac64.glb"},
     "action": {"type": "spawn_item",
-               "pos": {"x": -70.15539730118883, "y": 14.782735628999365, "z": -35.62671508757299},
-               "rot": {"x":0, "y":0, "z":0},
+               "pos": {"x": -59.45402908325195, "y": 11.100330352783203, "z": -28.24769401550293},
+               "rot": {"x":-0.48361636112138573, "y":1.5049931285107265, "z":-1.066033998246845},
                "scale": {"x": 1, "y":1, "z":1}},
     "trig": {"type": "button",
     "groupChain" : "NPC_SM_10_B_2_group",
@@ -10954,8 +11837,8 @@
                 "dest": "url",
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/7ab61363-bf72-4b2e-8eb0-d3fc1c8e57c5.glb"},
     "action": {"type": "spawn_item",
-      "pos": {"x": -69.39024167812597, "y": 14.837564054252862, "z": -37.04364679564834},
-      "rot": {"x":0, "y":1, "z":0},
+      "pos": {"x": -61.152713775634766, "y": 10.071306228637695, "z": -27.725975036621094},
+      "rot": {"x":-0.000020193697638064757, "y":2.4059777883671196, "z":0.000015778094762701423},
       "scale": {"x": 1, "y":1, "z":1}},
     "trig": {"type": "button",
     "groupChain" : "NPC_SM_10_B_2_group",
@@ -10968,8 +11851,8 @@
                 "dest": "url",
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/b7519af1-32c6-4fc3-8416-2b69150d6dff.glb"},
     "action": {"type": "spawn_item",
-               "pos": {"x": -70.44882294715867, "y": 14.902812152653937, "z": -38.24979850107127},
-               "rot": {"x":0, "y":1.9, "z":0},
+               "pos": {"x": -63.87764358520508, "y": 10.686623573303223, "z": -27.7224178314209},
+               "rot": {"x":0.5692291656763084, "y":0.5543820124673189, "z":1.875799561219276},
                "scale": {"x": 1, "y":1, "z":1}},
     "trig": {"type": "button",
     "groupChain" : "NPC_SM_10_B_2_group",
@@ -10982,8 +11865,8 @@
                 "dest": "url",
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/f483f3cf-e771-47ea-be08-cd60281ce100.glb"},
     "action": {"type": "spawn_item",
-               "pos": {"x": -69.1617678296959, "y": 14.70196233799855, "z": -34.2931886039958},
-               "rot": {"x":0, "y":2.4, "z":0},
+               "pos": {"x": -60.392860412597656, "y": 10.682929992675781, "z": -30.085588455200195},
+               "rot": {"x":0.08184824475473104, "y":1.0872438244896971, "z":-1.7027444318778953},
                "scale": {"x": 1, "y":1, "z":1}},
     "trig": {"type": "button",
     "groupChain" : "NPC_SM_10_B_2_group",
@@ -10996,8 +11879,8 @@
                 "dest": "url",
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/d58883bf-a7aa-41f1-92c0-c031944456f4.glb"},
     "action": {"type": "spawn_item",
-               "pos": {"x": -70.32028147397511, "y": 14.825486803655187, "z": -36.52791866114543},
-               "rot": {"x":0, "y":0.2, "z":0},
+               "pos": {"x": -62.288612365722656, "y": 11.057690620422363, "z": -25.98486328125},
+               "rot": {"x":0.6262422018181716, "y":0.9939774602048999, "z":0.8587153511812788},
                "scale": {"x": 1, "y":1, "z":1}},
     "trig": {"type": "button",
     "groupChain" : "NPC_SM_10_B_2_group",
@@ -11074,43 +11957,79 @@
              "time": 0}
   },
   {
-    "name": "NPC_SM_10_B_2_mouth1",
+    "name": "NPC_SM_10_B_2_Delete_Mouth_1",
     "role": "stagemanager",
-    "target": { "type": "glb",
-                "src": "NPC_SM_9_Spawn_Mouth_1"},
-    "action": {"type": "delete"},
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                 "name": "NPC_SM_10_B_2_Delete_Mouth_1",
+                 "target": { "role": "individual", "name": "Brendan" },
+                 "action": { "type": "delete",
+                  "src" : "NPC_SM_9_Spawn_Mouth_1"
+                }
+                }
+              },
     "trig": {"type": "button",
-      "groupChain" : "NPC_SM_10_B_2_group",
+    "groupChain" : "NPC_SM_10_B_2_group",
              "time": 0}
   },
   {
-    "name": "NPC_SM_10_B_2_mouth2",
+    "name": "NPC_SM_10_B_2_Delete_Mouth_2",
     "role": "stagemanager",
-    "target": { "type": "glb",
-                "src": "NPC_SM_9_Spawn_Mouth_2"},
-    "action": {"type": "delete"},
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                 "name": "NPC_SM_10_B_2_Delete_Mouth_2",
+                 "target": { "role": "individual", "name": "Brendan" },
+                 "action": { "type": "delete",
+                  "src" : "NPC_SM_9_Spawn_Mouth_2"
+                }
+                }
+              },
     "trig": {"type": "button",
-      "groupChain" : "NPC_SM_10_B_2_group",
+    "groupChain" : "NPC_SM_10_B_2_group",
              "time": 0}
   },
   {
-    "name": "NPC_SM_10_B_2_mouth3",
+    "name": "NPC_SM_10_B_2_Delete_Mouth_3",
     "role": "stagemanager",
-    "target": { "type": "glb",
-                "src": "NPC_SM_9_Spawn_Mouth_3"},
-    "action": {"type": "delete"},
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                 "name": "NPC_SM_10_B_2_Delete_Mouth_3",
+                 "target": { "role": "individual", "name": "Brendan" },
+                 "action": { "type": "delete",
+                  "src" : "NPC_SM_9_Spawn_Mouth_3"
+                }
+                }
+              },
     "trig": {"type": "button",
-      "groupChain" : "NPC_SM_10_B_2_group",
+    "groupChain" : "NPC_SM_10_B_2_group",
              "time": 0}
   },
   {
-    "name": "NPC_SM_10_B_2_mouth4",
+    "name": "NPC_SM_10_B_2_Delete_Mouth_4",
     "role": "stagemanager",
-    "target": { "type": "glb",
-                "src": "NPC_SM_9_Spawn_Mouth_4"},
-    "action": {"type": "delete"},
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                 "name": "NPC_SM_10_B_2_Delete_Mouth_4",
+                 "target": { "role": "individual", "name": "Brendan" },
+                 "action": { "type": "delete",
+                  "src" : "NPC_SM_9_Spawn_Mouth_4"
+                }
+                }
+              },
     "trig": {"type": "button",
-      "groupChain" : "NPC_SM_10_B_2_group",
+    "groupChain" : "NPC_SM_10_B_2_group",
              "time": 0}
   },
   {
@@ -11164,34 +12083,14 @@
     "role": "stagemanager",
     "target": { "type": "glb",
                 "dest": "url",
-                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/6aeb58d0-bc57-45a6-95c9-31c3985e68db.glb"},
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/adcb58d8-bf73-44dd-aeca-5440f6cb4015.glb"},
     "action": {"type": "spawn_item",
-               "pos": {"x": -4.694037067800598, "y": 0, "z": -87.23003196151271},
+               "pos": {"x": -4.694037067800598, "y": 10, "z": -87.23003196151271},
                "rot": {"x":-2, "y":0, "z":0},
                "scale": {"x": 0.03, "y":0.03, "z":0.03}},
     "trig": {"type": "button",
     "groupChain" : "NPC_SM_10_B_2_group",
              "time": 30000}
-  },
-  {
-    "name": "Plank_4_Disable",
-    "role": "stagemanager",
-    "target": { },
-    "action": {"type": "call_method_from_object",
-               "object_name": "sockSys",
-               "function_name": "cueSocket",
-               "_cue": {
-                "name": "Plank_4_Disable",
-                "role": {},
-                "target": {"role": "individual", "name": "___"},
-                "action": {"type": "remove_interaction",
-                  "element" : "Spawn_Monster"
-                }
-              }
-              },
-  "trig": {"type": "button",
-  "groupChain" : "NPC_SM_10_B_2_group",
-            "time": 32000}
   },
   {
     "name": "Disable_monster",
@@ -11214,13 +12113,13 @@
             "time": 35000}
   },
   {
-    "name": "NPC_SM_10_B_Item_1",
+    "name": "NPC_SM_10_B_Item_1A",
     "role": "stagemanager",
     "target": { "type": "glb",
                 "dest": "url",
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/7aed1176-921e-446d-8de9-bb87b76fe30c.glb"},
     "action": {"type": "spawn_item",
-               "pos": {"x": -53.9222297668457, "y": 14.086686134338379, "z": -75.52893829345703},
+               "pos": {"x": -52.93452072143555, "y": 13.944225311279297, "z": -76.39749145507812},
                "rot": {"x":0, "y":0, "z":0},
                "scale": {"x": 3, "y":3, "z":3}},
     "trig": {"type": "button",
@@ -11228,41 +12127,125 @@
              "time": 0}
   },
   {
-    "name": "NPC_SM_10_B_Item_2",
+    "name": "NPC_SM_10_B_Item_1B",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/7aed1176-921e-446d-8de9-bb87b76fe30c.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -54.17084503173828, "y": 14.75959587097168, "z": -76.42237091064453},
+               "rot": {"x":0, "y":0, "z":0},
+               "scale": {"x": 3, "y":3, "z":3}},
+    "trig": {"type": "button",
+    "groupChain" : "NPC_Spawn_Bananas_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_B_Item_1C",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/7aed1176-921e-446d-8de9-bb87b76fe30c.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -52.88498306274414, "y": 15.66787338256836, "z": -76.04785919189453},
+               "rot": {"x":0, "y":0, "z":0},
+               "scale": {"x": 3, "y":3, "z":3}},
+    "trig": {"type": "button",
+    "groupChain" : "NPC_Spawn_Bananas_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_B_Item_2A",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/7aed1176-921e-446d-8de9-bb87b76fe30c.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -14.813765525817871, "y": 20.878171920776367, "z": -113.93955993652344},
+               "rot": {"x":0, "y":0, "z":0},
+               "scale": {"x": 3, "y":3, "z":3}},
+    "trig": {"type": "button",
+    "groupChain" : "NPC_Spawn_Bananas_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_B_Item_2B",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/7aed1176-921e-446d-8de9-bb87b76fe30c.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -16.793621063232422, "y": 20.876686096191406, "z": -114.11937713623047},
+               "rot": {"x":0, "y":0, "z":0},
+               "scale": {"x": 3, "y":3, "z":3}},
+    "trig": {"type": "button",
+    "groupChain" : "NPC_Spawn_Bananas_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_B_Item_2C",
     "role": "stagemanager",
     "target": { "type": "glb",
                 "dest": "url",
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/7aed1176-921e-446d-8de9-bb87b76fe30c.glb"},
     "action": {"type": "spawn_item",
                "pos": {"x": -12.648783683776855, "y": 20.876659393310547, "z": -113.81884002685547},
-               "rot": {"x":0, "y":-0.12789346888218447, "z":0},
+               "rot": {"x":0, "y":0, "z":0},
                "scale": {"x": 3, "y":3, "z":3}},
     "trig": {"type": "button",
     "groupChain" : "NPC_Spawn_Bananas_group",
              "time": 0}
   },
   {
-    "name": "NPC_SM_10_B_Item_3",
+    "name": "NPC_SM_10_B_Item_3A",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/7aed1176-921e-446d-8de9-bb87b76fe30c.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": 25.325035095214844, "y": 15.794076919555664, "z": -97.48471069335938},
+               "rot": {"x":0, "y":1.4, "z":0},
+               "scale": {"x": 3, "y":3, "z":3}},
+    "trig": {"type": "button",
+    "groupChain" : "NPC_Spawn_Bananas_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_B_Item_3B",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/7aed1176-921e-446d-8de9-bb87b76fe30c.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": 24.977664947509766, "y": 16.449071884155273, "z": -96.33248901367188},
+               "rot": {"x":0, "y":1.4, "z":0},
+               "scale": {"x": 3, "y":3, "z":3}},
+    "trig": {"type": "button",
+    "groupChain" : "NPC_Spawn_Bananas_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_B_Item_3C",
     "role": "stagemanager",
     "target": { "type": "glb",
                 "dest": "url",
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/7aed1176-921e-446d-8de9-bb87b76fe30c.glb"},
     "action": {"type": "spawn_item",
                "pos": {"x": 25.279342651367188, "y": 14.520320892333984, "z": -96.97966003417969},
-               "rot": {"x":0, "y":-1.8130992703387567, "z":0},
+               "rot": {"x":0, "y":1.4, "z":0},
                "scale": {"x": 3, "y":3, "z":3}},
     "trig": {"type": "button",
     "groupChain" : "NPC_Spawn_Bananas_group",
              "time": 0}
   },
   {
-    "name": "NPC_SM_10_B_Item_1",
+    "name": "NPC_SM_10_B_Item_1A",
     "role": "stagemanager",
     "target": { "type": "glb",
                 "dest": "url",
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/ce7afd0f-51d1-45ad-b62f-d8adc35da52d.glb"},
     "action": {"type": "spawn_item",
-               "pos": {"x": -53.9222297668457, "y": 14.086686134338379, "z": -75.52893829345703},
+               "pos": {"x": -52.93452072143555, "y": 13.944225311279297, "z": -76.39749145507812},
                "rot": {"x":0, "y":0, "z":0},
                "scale": {"x": 3, "y":3, "z":3}},
     "trig": {"type": "button",
@@ -11270,83 +12253,335 @@
              "time": 0}
   },
   {
-    "name": "NPC_SM_10_B_Item_2",
+    "name": "NPC_SM_10_B_Item_1B",
     "role": "stagemanager",
     "target": { "type": "glb",
                 "dest": "url",
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/ce7afd0f-51d1-45ad-b62f-d8adc35da52d.glb"},
     "action": {"type": "spawn_item",
-               "pos": {"x": -12.648783683776855, "y": 20.876659393310547, "z": -113.81884002685547},
-               "rot": {"x":0, "y":-0.12789346888218447, "z":0},
-               "scale": {"x": 3, "y":3, "z":3}},
-    "trig": {"type": "button",
-    "groupChain" : "NPC_Spawn_Hearts_group",
-             "time": 0}
-  },
-  {
-    "name": "NPC_SM_10_B_Item_3",
-    "role": "stagemanager",
-    "target": { "type": "glb",
-                "dest": "url",
-                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/ce7afd0f-51d1-45ad-b62f-d8adc35da52d.glb"},
-    "action": {"type": "spawn_item",
-               "pos": {"x": 25.279342651367188, "y": 14.520320892333984, "z": -96.97966003417969},
-               "rot": {"x":0, "y":-1.8130992703387567, "z":0},
-               "scale": {"x": 3, "y":3, "z":3}},
-    "trig": {"type": "button",
-    "groupChain" : "NPC_Spawn_Hearts_group",
-             "time": 0}
-  },
-  {
-    "name": "NPC_SM_10_B_Item_1",
-    "role": "stagemanager",
-    "target": { "type": "glb",
-                "dest": "url",
-                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/a8cad8f2-ed21-4f49-8619-76d6711c156d.glb"},
-    "action": {"type": "spawn_item",
-               "pos": {"x": -53.9222297668457, "y": 14.086686134338379, "z": -75.52893829345703},
+               "pos": {"x": -54.17084503173828, "y": 14.75959587097168, "z": -76.42237091064453},
                "rot": {"x":0, "y":0, "z":0},
-               "scale": {"x": 5, "y":5, "z":5}},
+               "scale": {"x": 3, "y":3, "z":3}},
+    "trig": {"type": "button",
+    "groupChain" : "NPC_Spawn_Hearts_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_B_Item_1C",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/ce7afd0f-51d1-45ad-b62f-d8adc35da52d.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -52.88498306274414, "y": 15.66787338256836, "z": -76.04785919189453},
+               "rot": {"x":0, "y":0, "z":0},
+               "scale": {"x": 3, "y":3, "z":3}},
+    "trig": {"type": "button",
+    "groupChain" : "NPC_Spawn_Hearts_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_B_Item_2A",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/ce7afd0f-51d1-45ad-b62f-d8adc35da52d.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -14.813765525817871, "y": 20.878171920776367, "z": -113.93955993652344},
+               "rot": {"x":0, "y":0, "z":0},
+               "scale": {"x": 3, "y":3, "z":3}},
+    "trig": {"type": "button",
+    "groupChain" : "NPC_Spawn_Hearts_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_B_Item_2B",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/ce7afd0f-51d1-45ad-b62f-d8adc35da52d.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -16.793621063232422, "y": 20.876686096191406, "z": -114.11937713623047},
+               "rot": {"x":0, "y":0, "z":0},
+               "scale": {"x": 3, "y":3, "z":3}},
+    "trig": {"type": "button",
+    "groupChain" : "NPC_Spawn_Hearts_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_B_Item_2C",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/ce7afd0f-51d1-45ad-b62f-d8adc35da52d.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -12.648783683776855, "y": 20.876659393310547, "z": -113.81884002685547},
+               "rot": {"x":0, "y":0, "z":0},
+               "scale": {"x": 3, "y":3, "z":3}},
+    "trig": {"type": "button",
+    "groupChain" : "NPC_Spawn_Hearts_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_B_Item_3A",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/ce7afd0f-51d1-45ad-b62f-d8adc35da52d.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": 25.325035095214844, "y": 15.794076919555664, "z": -97.48471069335938},
+               "rot": {"x":0, "y":1.4, "z":0},
+               "scale": {"x": 3, "y":3, "z":3}},
+    "trig": {"type": "button",
+    "groupChain" : "NPC_Spawn_Hearts_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_B_Item_3B",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/ce7afd0f-51d1-45ad-b62f-d8adc35da52d.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": 24.977664947509766, "y": 16.449071884155273, "z": -96.33248901367188},
+               "rot": {"x":0, "y":1.4, "z":0},
+               "scale": {"x": 3, "y":3, "z":3}},
+    "trig": {"type": "button",
+    "groupChain" : "NPC_Spawn_Hearts_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_B_Item_3C",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/ce7afd0f-51d1-45ad-b62f-d8adc35da52d.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": 25.279342651367188, "y": 14.520320892333984, "z": -96.97966003417969},
+               "rot": {"x":0, "y":1.4, "z":0},
+               "scale": {"x": 3, "y":3, "z":3}},
+    "trig": {"type": "button",
+    "groupChain" : "NPC_Spawn_Hearts_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_B_Item_1A",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/a8cad8f2-ed21-4f49-8619-76d6711c156d.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -52.93452072143555, "y": 13.944225311279297, "z": -76.39749145507812},
+               "rot": {"x":0, "y":1.4, "z":0},
+               "scale": {"x": 3, "y":3, "z":3}},
     "trig": {"type": "button",
     "groupChain" : "NPC_Spawn_Shrooms_group",
              "time": 0}
   },
   {
-    "name": "NPC_SM_10_B_Item_2",
+    "name": "NPC_SM_10_B_Item_1B",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/a8cad8f2-ed21-4f49-8619-76d6711c156d.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -54.17084503173828, "y": 14.75959587097168, "z": -76.42237091064453},
+               "rot": {"x":0, "y":1.4, "z":0},
+               "scale": {"x": 3, "y":3, "z":3}},
+    "trig": {"type": "button",
+    "groupChain" : "NPC_Spawn_Shrooms_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_B_Item_1C",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/a8cad8f2-ed21-4f49-8619-76d6711c156d.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -52.88498306274414, "y": 15.66787338256836, "z": -76.04785919189453},
+               "rot": {"x":0, "y":1.5, "z":0},
+               "scale": {"x": 3, "y":3, "z":3}},
+    "trig": {"type": "button",
+    "groupChain" : "NPC_Spawn_Shrooms_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_B_Item_2A",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/a8cad8f2-ed21-4f49-8619-76d6711c156d.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -14.813765525817871, "y": 20.878171920776367, "z": -113.93955993652344},
+               "rot": {"x":0, "y":1.4, "z":0},
+               "scale": {"x": 3, "y":3, "z":3}},
+    "trig": {"type": "button",
+    "groupChain" : "NPC_Spawn_Shrooms_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_B_Item_2B",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/a8cad8f2-ed21-4f49-8619-76d6711c156d.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -16.793621063232422, "y": 20.876686096191406, "z": -114.11937713623047},
+               "rot": {"x":0, "y":1.4, "z":0},
+               "scale": {"x": 3, "y":3, "z":3}},
+    "trig": {"type": "button",
+    "groupChain" : "NPC_Spawn_Shrooms_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_B_Item_2C",
     "role": "stagemanager",
     "target": { "type": "glb",
                 "dest": "url",
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/a8cad8f2-ed21-4f49-8619-76d6711c156d.glb"},
     "action": {"type": "spawn_item",
                "pos": {"x": -12.648783683776855, "y": 20.876659393310547, "z": -113.81884002685547},
-               "rot": {"x":0, "y":-0.12789346888218447, "z":0},
-               "scale": {"x": 5, "y":5, "z":5}},
+               "rot": {"x":0, "y":1.4, "z":0},
+               "scale": {"x": 3, "y":3, "z":3}},
     "trig": {"type": "button",
     "groupChain" : "NPC_Spawn_Shrooms_group",
              "time": 0}
   },
   {
-    "name": "NPC_SM_10_B_Item_3",
+    "name": "NPC_SM_10_B_Item_3A",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/a8cad8f2-ed21-4f49-8619-76d6711c156d.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": 25.325035095214844, "y": 15.794076919555664, "z": -97.48471069335938},
+               "rot": {"x":0, "y":0, "z":0},
+               "scale": {"x": 3, "y":3, "z":3}},
+    "trig": {"type": "button",
+    "groupChain" : "NPC_Spawn_Shrooms_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_B_Item_3B",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/a8cad8f2-ed21-4f49-8619-76d6711c156d.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": 24.977664947509766, "y": 16.449071884155273, "z": -96.33248901367188},
+               "rot": {"x":0, "y":0, "z":0},
+               "scale": {"x": 3, "y":3, "z":3}},
+    "trig": {"type": "button",
+    "groupChain" : "NPC_Spawn_Shrooms_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_B_Item_3C",
     "role": "stagemanager",
     "target": { "type": "glb",
                 "dest": "url",
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/a8cad8f2-ed21-4f49-8619-76d6711c156d.glb"},
     "action": {"type": "spawn_item",
                "pos": {"x": 25.279342651367188, "y": 14.520320892333984, "z": -96.97966003417969},
-               "rot": {"x":0, "y":-1.8130992703387567, "z":0},
-               "scale": {"x": 5, "y":5, "z":5}},
+               "rot": {"x":0, "y":0, "z":0},
+               "scale": {"x": 3, "y":3, "z":3}},
     "trig": {"type": "button",
     "groupChain" : "NPC_Spawn_Shrooms_group",
              "time": 0}
   },
   {
-    "name": "NPC_SM_10_B_Item_1",
+    "name": "NPC_SM_10_B_Item_1A",
     "role": "stagemanager",
     "target": { "type": "glb",
                 "dest": "url",
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/77bfd57b-dd1e-4409-b018-041f5f8e6367.glb"},
     "action": {"type": "spawn_item",
-               "pos": {"x": -53.9222297668457, "y": 14.086686134338379, "z": -75.52893829345703},
+               "pos": {"x": -52.93452072143555, "y": 13.944225311279297, "z": -76.39749145507812},
+               "rot": {"x":0, "y":1.4, "z":0},
+               "scale": {"x": 3, "y":3, "z":3}},
+    "trig": {"type": "button",
+    "groupChain" : "NPC_Spawn_Stars_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_B_Item_1B",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/77bfd57b-dd1e-4409-b018-041f5f8e6367.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -54.17084503173828, "y": 14.75959587097168, "z": -76.42237091064453},
+               "rot": {"x":0, "y":1.4, "z":0},
+               "scale": {"x": 3, "y":3, "z":3}},
+    "trig": {"type": "button",
+    "groupChain" : "NPC_Spawn_Stars_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_B_Item_1C",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/77bfd57b-dd1e-4409-b018-041f5f8e6367.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -52.88498306274414, "y": 15.66787338256836, "z": -76.04785919189453},
+               "rot": {"x":0, "y":1.5, "z":0},
+               "scale": {"x": 3, "y":3, "z":3}},
+    "trig": {"type": "button",
+    "groupChain" : "NPC_Spawn_Stars_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_B_Item_2A",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/77bfd57b-dd1e-4409-b018-041f5f8e6367.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -14.813765525817871, "y": 20.878171920776367, "z": -113.93955993652344},
+               "rot": {"x":0, "y":1.4, "z":0},
+               "scale": {"x": 3, "y":3, "z":3}},
+    "trig": {"type": "button",
+    "groupChain" : "NPC_Spawn_Stars_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_B_Item_2B",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/77bfd57b-dd1e-4409-b018-041f5f8e6367.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -16.793621063232422, "y": 20.876686096191406, "z": -114.11937713623047},
+               "rot": {"x":0, "y":1.4, "z":0},
+               "scale": {"x": 3, "y":3, "z":3}},
+    "trig": {"type": "button",
+    "groupChain" : "NPC_Spawn_Stars_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_B_Item_2C",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/77bfd57b-dd1e-4409-b018-041f5f8e6367.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -12.648783683776855, "y": 20.876659393310547, "z": -113.81884002685547},
+               "rot": {"x":0, "y":1.4, "z":0},
+               "scale": {"x": 3, "y":3, "z":3}},
+    "trig": {"type": "button",
+    "groupChain" : "NPC_Spawn_Stars_group",
+             "time": 0}
+  },
+  {
+    "name": "NPC_SM_10_B_Item_3A",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/77bfd57b-dd1e-4409-b018-041f5f8e6367.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": 25.325035095214844, "y": 15.794076919555664, "z": -97.48471069335938},
                "rot": {"x":0, "y":0, "z":0},
                "scale": {"x": 3, "y":3, "z":3}},
     "trig": {"type": "button",
@@ -11354,28 +12589,28 @@
              "time": 0}
   },
   {
-    "name": "NPC_SM_10_B_Item_2",
+    "name": "NPC_SM_10_B_Item_3B",
     "role": "stagemanager",
     "target": { "type": "glb",
                 "dest": "url",
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/77bfd57b-dd1e-4409-b018-041f5f8e6367.glb"},
     "action": {"type": "spawn_item",
-               "pos": {"x": -12.648783683776855, "y": 20.876659393310547, "z": -113.81884002685547},
-               "rot": {"x":0, "y":-0.12789346888218447, "z":0},
+               "pos": {"x": 24.977664947509766, "y": 16.449071884155273, "z": -96.33248901367188},
+               "rot": {"x":0, "y":0, "z":0},
                "scale": {"x": 3, "y":3, "z":3}},
     "trig": {"type": "button",
     "groupChain" : "NPC_Spawn_Stars_group",
              "time": 0}
   },
   {
-    "name": "NPC_SM_10_B_Item_3",
+    "name": "NPC_SM_10_B_Item_3C",
     "role": "stagemanager",
     "target": { "type": "glb",
                 "dest": "url",
                 "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/77bfd57b-dd1e-4409-b018-041f5f8e6367.glb"},
     "action": {"type": "spawn_item",
                "pos": {"x": 25.279342651367188, "y": 14.520320892333984, "z": -96.97966003417969},
-               "rot": {"x":0, "y":-1.8130992703387567, "z":0},
+               "rot": {"x":0, "y":0, "z":0},
                "scale": {"x": 3, "y":3, "z":3}},
     "trig": {"type": "button",
     "groupChain" : "NPC_Spawn_Stars_group",
@@ -11592,7 +12827,7 @@
                     "timelines" : [
                       { "x": 150, "y": 150, "z": 150, "delay": 0, "easing": "easeInOutSine", "duration": 5000 },
                       { "x": 350, "y": 350, "z": 350, "delay": 25000, "easing": "easeInOutSine", "duration": 7000 },
-                      { "x": 150, "y": 150, "z": 150, "delay": 13000, "easing": "easeInOutSine", "duration": 500 }
+                      { "x": 150, "y": 150, "z": 150, "delay": 18000, "easing": "easeInOutSine", "duration": 500 }
                     ]
                   }
               }
@@ -11612,7 +12847,7 @@
                   "loop": false,
                   "pos": {"x": -4.694037067800598, "y": 30, "z": -87.23003196151271},
                   "rot": {"x": 0.2, "y":0, "z":0},
-                  "scale": {"x": 0.3, "y":0.3, "z":0.3}},
+                  "scale": {"x": 0.7, "y":0.7, "z":0.7}},
     "trig": {"type": "button",
     "groupChain" : "NPC_SM_10_B_3_group",
       "time": 0
@@ -11642,8 +12877,8 @@
                     "duration": 1000
                     },
                     "timelines" : [
-                      { "x": -2.377090062137932, "y": 18, "z": -30, "delay": 0, "easing": "easeOutSine", "duration": 20000 },
-                      { "x": -4.694037067800598, "y": 30, "z": -87.23003196151271, "delay": 0, "easing": "easeInOutSine", "duration": 7000 },
+                      { "x": -2.377090062137932, "y": 38, "z": -30, "delay": 0, "easing": "easeOutSine", "duration": 20000 },
+                      { "x": -4.694037067800598, "y": 50, "z": -87.23003196151271, "delay": 0, "easing": "easeInOutSine", "duration": 7000 },
                       { "x": -4.694037067800598, "y": -10, "z": -87.23003196151271, "delay": 0, "easing": "easeInOutSine", "duration": 3000 },
                       { "x": 0.7648225702780118, "y": -40, "z": -4, "delay": 100, "easing": "easeInOutSine", "duration": 0 }
                     ]
@@ -11698,12 +12933,12 @@
                 "action": {"type": "move",
                   "duration": 500,
                   "loop": false,
-                  "pos": {"x": 0, "y": -7, "z": 4},
+                  "pos": {"x": 0, "y": 17, "z": 16},
                   "rot": {"x": 0.2, "y":3.14, "z":0},
-                  "scale": {"x": 0.9, "y":0.8, "z":0.7}},
+                  "scale": {"x": 1.4, "y":1.6, "z":1.4}},
     "trig": {"type": "button",
     "groupChain" : "NPC_SM_10_B_3_group",
-      "time": 50000
+      "time": 55000
     }
   },
   {
@@ -11728,14 +12963,14 @@
                    "duration": 1
                    },
                    "timelines" : [
-                    {"x": 25, "y": 0.1, "z": 25, "delay": 0, "duration": 4000, "easing": "easeInSine"}
+                    {"x": 25, "y": 0.1, "z": 25, "delay": 0, "duration": 2000, "easing": "easeInSine"}
                    ]
                  }
                }
               },
     "trig": {"type": "button",
     "groupChain" : "NPC_SM_10_B_3_group",
-             "time": 54000}
+             "time": 69000}
   },
   {
     "name": "NPC_SM_11_move_part",
@@ -11759,14 +12994,15 @@
                    "duration": 1
                    },
                    "timelines" : [
-                    {"x": 1.149804139699928, "y": 15.13923029116257, "z": -11.356110687820225, "delay": 0, "duration": 5000, "easing": "easeOutSine"}
+                    {"x": 1.163657335087317, "y": 14.178053019484263, "z": -1.9654388658282542, "delay": 0, "duration": 10000, "easing": "easeOutSine"},
+                    {"x": 1.2270349177816433, "y": -8.329630775511017, "z": -0.03426182049177992, "delay": 500, "duration": 2000, "easing": "easeOutSine"}
                    ]
                  }
                }
               },
     "trig": {"type": "button",
     "groupChain" : "NPC_SM_10_B_3_group",
-             "time": 53000}
+             "time": 58000}
   },
   {
     "name": "NPC_SM_11_brnd_to_invis",
@@ -11787,7 +13023,7 @@
               },
     "trig": {"type": "button",
     "groupChain" : "NPC_SM_10_B_3_group",
-             "time": 57000}
+             "time": 58000}
   },
   
   {
@@ -11798,37 +13034,97 @@
                "link":"https://onboardxr.live/scenes/eTGt3hu/npc-a-74-1029"},
     "trig": {"type": "button",
     "groupChain" : "NPC_SM_10_B_3_group",
-             "time": 55000}
+             "time": 70000}
   },
   {
-    "name": "Delete_item_1",
+    "name": "Delete_item_1A",
     "role": "stagemanager",
     "target": { "type": "glb",
-                "src": "NPC_SM_10_B_Item_1"},
+                "src": "NPC_SM_10_B_Item_1A"},
     "action": {"type": "delete"},
     "trig": {"type": "button",
     "groupChain" : "NPC_SM_10_B_3_group",
-             "time": 51000}
+             "time": 69000}
   },
   {
-    "name": "Delete_item_2",
+    "name": "Delete_item_1B",
     "role": "stagemanager",
     "target": { "type": "glb",
-                "src": "NPC_SM_10_B_Item_2"},
+                "src": "NPC_SM_10_B_Item_1B"},
     "action": {"type": "delete"},
     "trig": {"type": "button",
     "groupChain" : "NPC_SM_10_B_3_group",
-             "time": 56000}
+             "time": 69000}
   },
   {
-    "name": "Delete_item_3",
+    "name": "Delete_item_1C",
     "role": "stagemanager",
     "target": { "type": "glb",
-                "src": "NPC_SM_10_B_Item_3"},
+                "src": "NPC_SM_10_B_Item_1C"},
     "action": {"type": "delete"},
     "trig": {"type": "button",
     "groupChain" : "NPC_SM_10_B_3_group",
-             "time": 56000}
+             "time": 69000}
+  },
+  {
+    "name": "Delete_item_2A",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "src": "NPC_SM_10_B_Item_2A"},
+    "action": {"type": "delete"},
+    "trig": {"type": "button",
+    "groupChain" : "NPC_SM_10_B_3_group",
+             "time": 69000}
+  },
+  {
+    "name": "Delete_item_2B",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "src": "NPC_SM_10_B_Item_2B"},
+    "action": {"type": "delete"},
+    "trig": {"type": "button",
+    "groupChain" : "NPC_SM_10_B_3_group",
+             "time": 69000}
+  },
+  {
+    "name": "Delete_item_2C",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "src": "NPC_SM_10_B_Item_2C"},
+    "action": {"type": "delete"},
+    "trig": {"type": "button",
+    "groupChain" : "NPC_SM_10_B_3_group",
+             "time": 69000}
+  },
+  {
+    "name": "Delete_item_3A",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "src": "NPC_SM_10_B_Item_3A"},
+    "action": {"type": "delete"},
+    "trig": {"type": "button",
+    "groupChain" : "NPC_SM_10_B_3_group",
+             "time": 69000}
+  },
+  {
+    "name": "Delete_item_3B",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "src": "NPC_SM_10_B_Item_3B"},
+    "action": {"type": "delete"},
+    "trig": {"type": "button",
+    "groupChain" : "NPC_SM_10_B_3_group",
+             "time": 69000}
+  },
+  {
+    "name": "Delete_item_3C",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "src": "NPC_SM_10_B_Item_3C"},
+    "action": {"type": "delete"},
+    "trig": {"type": "button",
+    "groupChain" : "NPC_SM_10_B_3_group",
+             "time": 69000}
   },
   {
     "name": "Delete_plank_1",
@@ -11838,7 +13134,7 @@
     "action": {"type": "delete"},
     "trig": {"type": "button",
     "groupChain" : "NPC_SM_10_B_3_group",
-             "time": 56000}
+             "time": 69000}
   },
   {
     "name": "Delete_plank_2",
@@ -11848,7 +13144,7 @@
     "action": {"type": "delete"},
     "trig": {"type": "button",
     "groupChain" : "NPC_SM_10_B_3_group",
-             "time": 56000}
+             "time": 69000}
   },
   {
     "name": "Delete_plank_3",
@@ -11858,7 +13154,7 @@
     "action": {"type": "delete"},
     "trig": {"type": "button",
     "groupChain" : "NPC_SM_10_B_3_group",
-             "time": 56000}
+             "time": 69000}
   },
   {
     "name": "Delete_plank_4",
@@ -11868,7 +13164,7 @@
     "action": {"type": "delete"},
     "trig": {"type": "button",
     "groupChain" : "NPC_SM_10_B_3_group",
-             "time": 56000}
+             "time": 69000}
   },
   {
     "name": "Delete_plank_5",
@@ -11878,17 +13174,36 @@
     "action": {"type": "delete"},
     "trig": {"type": "button",
     "groupChain" : "NPC_SM_10_B_3_group",
-             "time": 56000}
+             "time": 69000}
   },
   {
     "name": "Delete_black_skybox",
     "role": "stagemanager",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                 "name": "Delete_black_skybox",
+                 "target": { "role": "general" },
+                 "action": { "type": "delete",
+                  "src" : "Load_Black_Skybox"
+                }
+                }
+              },
+    "trig": {"type": "button",
+    "groupChain" : "NPC_SM_10_B_3_group",
+             "time": 72000}
+  },
+  {
+    "name": "Delete_Smoke_Monster",
+    "role": "stagemanager",
     "target": { "type": "glb",
-                "src": "Load_Black_Skybox"},
+                "src": "Spawn_Monster"},
     "action": {"type": "delete"},
     "trig": {"type": "button",
     "groupChain" : "NPC_SM_10_B_3_group",
-             "time": 56000}
+             "time": 72000}
   },
   {
     "name": "NPC_SM_10_C_1",
@@ -16425,7 +17740,7 @@
                                 "role": {},
                                 "target": { "type": "glb",
                                   "role": "general"},
-                                "action": {"type": "change_animation", "mapItem": "NPCe_18","animName" : "act.01"}
+                                "action": {"type": "change_animation", "mapItem": "NPCe_18","animName" : "act.01", "networkedId": "nonNetworked"}
                               }
                               },
                   "trig": {"type": "button",
@@ -16590,7 +17905,7 @@
                                    "duration": 1
                                    },
                                    "timelines" : [
-                                    {"x": -45.64177543189558, "y": -0.06783847079387817, "z": -5.208814376627838, "delay": 0, "duration": 100, "easing": "easeInOutSine"}
+                                    {"x": -45.64177543189558, "y": -0.1, "z": -5.208814376627838, "delay": 0, "duration": 100, "easing": "easeInOutSine"}
                                    ]
                                  }
                                }
