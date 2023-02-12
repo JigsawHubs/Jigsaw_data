@@ -49,5 +49,6 @@
     "aud2": {"name": "aud2", "role": "participant"},
     "aud3": {"name": "aud3", "role": "participant"},
     "aud4": {"name": "aud4", "role": "participant"},
-    "observer": {"name": "observer", "role": "observer"}
+    "observer": {"name": "observer", "role": "observer"},
+    "mikeNPCSM": {"name":"___","role":"stagemanager"}
  }
